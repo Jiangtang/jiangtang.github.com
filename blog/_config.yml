@@ -1,0 +1,9 @@
+markdown: rdiscount
+permalink: /:year/:month/:title/
+url: http://www.jiangtanghu.com/blog
+author: Jiangtang Hu
+pygments: true
+name: From a Logical Point of View
+description: >
+  Hello World by A SAS programmer/CDISC
+  consultant
