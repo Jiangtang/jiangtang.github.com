@@ -1,9 +1,12 @@
 ---
-author: Jiangtang Hu
+id: 513
 title: GitHub and Weekend Programming
-excerpt:
+date: 2012-02-19T16:17:32+00:00
+author: Jiangtang Hu
 layout: post
-category:
+guid: http://www.jiangtanghu.com/blog/?p=513
+permalink: /2012/02/19/github-and-weekend-programming/
+categories:
   - CDISC
   - SAS
   - Uncategorized
@@ -12,29 +15,21 @@ tags:
   - GIThub
   - OpenCDISC
   - SAS
-post_format: [ ]
 ---
-[Yihui][1] of Iowa State just texted me that [GitHub][2] is programmers’ Facebook. Inspired by him(great thanks!), I also begin to play with GitHub now:
+<font size="1"><a href="https://github.com/yihui" target="_blank">Yihui</a> of Iowa State just texted me that <a href="https://github.com/" target="_blank">GitHub</a> is programmers’ Facebook. Inspired by him(great thanks!), I also begin to play with GitHub now:</font>
 
-> <https://github.com/Jiangtang>
+> [<font size="1">https://github.com/Jiangtang</font>](https://github.com/Jiangtang)
 
-Currently I only created one repo as [personal SAS code repository][3]. To kill weekend time, I uploaded piece of codes to [count the OpenCDISC validation rules by models][4]. To use it:
+<font size="1">Currently I only created one repo as <a href="https://github.com/Jiangtang/Programming-SAS" target="_blank">personal SAS code repository</a>. To kill weekend time, I uploaded piece of codes to <a href="https://github.com/Jiangtang/Programming-SAS/blob/master/Rules_Count_OpenCDISC_XML.sas" target="_blank">count the OpenCDISC validation rules by models</a>. To use it:</font>
 
-> filename CDISC url “[https://raw.github.com/Jiangtang/Programming-SAS/master/Rules\_Count\_OpenCDISC_XML.sas][5]”;
+> <font size="1">filename CDISC url “<a href="https://raw.github.com/Jiangtang/Programming-SAS/master/Rules_Count_OpenCDISC_XML.sas">https://raw.github.com/Jiangtang/Programming-SAS/master/Rules_Count_OpenCDISC_XML.sas</a>”;</font>
 > 
-> %include CDISC;
+> <font size="1">%include CDISC;</font>
 > 
-> %Rules\_Count\_OpenCDISC_XML(dir=C:tempOpenCDISCsoftwareopencdisc-validatorconfig)
+> <font size="1">%Rules_Count_OpenCDISC_XML(dir=C:tempOpenCDISCsoftwareopencdisc-validatorconfig)</font>
 
-while get:
+<font size="1">while get:</font>
 
-[![OC_by_model][7]][7]
+<font size="1"><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/OC_by_model.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="OC_by_model" border="0" alt="OC_by_model" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/OC_by_model_thumb.png" width="360" height="238" /></a></font>
 
-Happy weekend and happy programming.
-
- [1]: https://github.com/yihui
- [2]: https://github.com/
- [3]: https://github.com/Jiangtang/Programming-SAS
- [4]: https://github.com/Jiangtang/Programming-SAS/blob/master/Rules_Count_OpenCDISC_XML.sas
- [5]: https://raw.github.com/Jiangtang/Programming-SAS/master/Rules_Count_OpenCDISC_XML.sas
- []: http://dl.dropbox.com/u/69732603/OC_by_model.png
+<font size="1">Happy weekend and happy programming.</font>

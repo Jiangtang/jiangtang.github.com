@@ -1,17 +1,19 @@
 ---
-author: Jiangtang Hu
+id: 164
 title: 'A SAS Programmer&rsquo;s End Year Haiku'
-excerpt:
+date: 2010-12-30T16:18:20+00:00
+author: Jiangtang Hu
 layout: post
-category:
+guid: http://www.jiangtanghu.com/blog/2010/12/30/a-sas-programmers-end-year-haiku/
+permalink: /2010/12/30/a-sas-programmers-end-year-haiku/
+categories:
   - misc
   - SAS
 tags:
   - haiku
   - SAS
-post_format: [ ]
 ---
-[End year Haiku][1] again!
+<a href="http://www.jiangtanghu.com/blog/2008/12/10/haiku-from-sas-rd-staff-2/" target="_blank">End year Haiku</a> again!
 
 Yesterday I finished my project, wrote a Haiku to colleagues worldwide to say happy new year, then closed my desktop, said goodbye to colleagues still in office:
 
@@ -26,5 +28,3 @@ Yesterday I finished my project, wrote a Haiku to colleagues worldwide to say ha
 > Please take blessings from John
 
 Happy New Year!
-
- [1]: http://www.jiangtanghu.com/blog/2008/12/10/haiku-from-sas-rd-staff-2/

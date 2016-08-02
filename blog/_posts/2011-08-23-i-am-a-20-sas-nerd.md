@@ -1,18 +1,20 @@
 ---
-author: Jiangtang Hu
+id: 369
 title: I am a 20% SAS Nerd!
-excerpt:
+date: 2011-08-23T21:57:14+00:00
+author: Jiangtang Hu
 layout: post
-category:
+guid: http://www.jiangtanghu.com/blog/2011/08/23/i-am-a-20-sas-nerd/
+permalink: /2011/08/23/i-am-a-20-sas-nerd/
+categories:
   - misc
   - SAS
 tags:
   - SAS
-post_format: [ ]
 ---
-[Kirk Paul Lafler][1] drafted a checking list for identifying a SAS nerd (or geek, in its positive ways) in one of his intriguing papers:
+<a href="http://en.wikipedia.org/wiki/Kirk_Paul_Lafler" target="_blank">Kirk Paul Lafler</a> drafted a checking list for identifying a SAS nerd (or geek, in its positive ways) in one of his intriguing papers:
 
-> *[You Could be a SAS® Nerd If . . .][2]* 
+> _<a href="http://www.wuss.org/proceedings10/coders/2910_3_COD-Lafler2.pdf" target="_blank">You Could be a SAS® Nerd If . . .</a>_ 
 
 Here I’m glad to find that I am roughly a 20% SAS nerd (12 matched in all 57 lists):
 
@@ -41,6 +43,3 @@ Here I’m glad to find that I am roughly a 20% SAS nerd (12 matched in all 57 l
 > 51. You’re amazed when your fellow airline passenger replies, “What is a “SAS programmer?”.
 
 I also asked Kirk if he is a 100% SAS nerd and Kirk replied, NO. He said he is a 99% SAS nerd:)
-
- [1]: http://en.wikipedia.org/wiki/Kirk_Paul_Lafler
- [2]: http://www.wuss.org/proceedings10/coders/2910_3_COD-Lafler2.pdf

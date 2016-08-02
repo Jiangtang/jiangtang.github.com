@@ -1,22 +1,24 @@
 ---
-author: Jiangtang Hu
+id: 245
 title: ADJECTIVE Encounters
-excerpt:
+date: 2011-07-02T10:51:57+00:00
+author: Jiangtang Hu
 layout: post
-category:
+guid: http://www.jiangtanghu.com/blog/2011/07/02/adjective-encounters/
+permalink: /2011/07/02/adjective-encounters/
+categories:
   - misc
 tags:
   - adjective
   - English
-post_format: [ ]
 ---
 > Really she is the strangest creature in the world, far from heroic, variable as a weathercock, “**bashful, insolent; chaste, lustful; prating, silent; laborious, delicate; ingenious, heavy; melancholic, pleasant; lying, true; knowing, ignorant; liberal, covetous, and prodigal**”— in short, so complex, so indefinite, …
 > 
->             –Virginia Woolf, *The Common Reader*, First Series (1925)
+> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#8211;Virginia Woolf, _The Common Reader_, First Series (1925)
 
-I don’t know if Ernest Hemingway is still one of the recognized dominant writers in colleges English education. At least once  a time he WAS. In an extreme form, he used only nouns and verbs to construct sentences.
+I don’t know if Ernest Hemingway is still one of the recognized dominant writers in colleges English education. At least once&#160; a time he WAS. In an extreme form, he used only nouns and verbs to construct sentences.
 
-In my personal English education(as Second Language), admittedly that there is also an absence of adjectives. It is just wonderful, nice, great, cool, weird, awesome,  and all in all, everything is OK or not OK, good or not good. In writing, my sentences lack of tone and shades. I write only technical articles in English and people can often well manage the so-called technical borings when acquiring information, knowledge, and opinions. 
+In my personal English education(as Second Language), admittedly that there is also an absence of adjectives. It is just wonderful, nice, great, cool, weird, awesome,&#160; and all in all, everything is OK or not OK, good or not good. In writing, my sentences lack of tone and shades. I write only technical articles in English and people can often well manage the so-called technical borings when acquiring information, knowledge, and opinions. 
 
 In reading when I try to just read for the sake of reading itself, I also find it is difficult to dig into pure literature pages where rich adjectives assembled heavily. I only read smoothly technical papers. So when I happened to have a paper book of Woolf and also loaded a corresponding public domain e-book in Kindle, I read the most intensive instances of adjectives ever. It is really totally different experiences. 
 

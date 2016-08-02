@@ -1,30 +1,32 @@
 ---
-author: Jiangtang Hu
+id: 266
 title: 'Dive into CDISC Express (3): Navigate mapping file'
-excerpt:
+date: 2011-07-03T21:19:18+00:00
+author: Jiangtang Hu
 layout: post
-category:
+guid: http://www.jiangtanghu.com/blog/2011/07/03/dive-into-cdisc-express-3-navigate-mapping-file/
+permalink: /2011/07/03/dive-into-cdisc-express-3-navigate-mapping-file/
+categories:
   - CDISC
   - SAS
 tags:
   - CDISC
   - CDISC Express
   - SAS
-post_format: [ ]
 ---
-> [*Dive into CDISC Express (1): Introductory*][1]
+> <a href="http://www.jiangtanghu.com/blog/2011/06/28/dive-into-cdisc-express-1-introductory/" target="_blank"><em>Dive into CDISC Express (1): Introductory</em></a>
 > 
-> [Dive into CDISC Express (2): Create a New Study][2]
+> <a href="http://www.jiangtanghu.com/blog/2011/07/02/dive-into-cdisc-express-2-create-a-new-study/" target="_blank">Dive into CDISC Express (2): Create a New Study</a>
 
 ## 4. Step 2 of 6: Generate mapping file
 
-Generating template (blank) mapping file only needs pieces of effort by submitting *generate\_mapping\_template.sas*. The toughest one is to fill it with mapping rules according to specified study.
+Generating template (blank) mapping file only needs pieces of effort by submitting _generate\_mapping\_template.sas_. The toughest one is to fill it with mapping rules according to specified study.
 
 ### 4.1 Get the blank template mapping file (generate\_mapping\_template.sas)
 
 To get the blank template mapping file, just fill the one line of macro call in generate\_mapping\_template.sas:
 
-> %createmapping(filespec=SDTM\_Specs\_3\_1\_1.xls, Dom=CM AE TV, req=YES, perm=YES, exp=YES);
+> <font face="Courier New">%createmapping(filespec=SDTM_Specs_3_1_1.xls, Dom=CM AE TV, req=YES, perm=YES, exp=YES);</font>
 
 Also, you can specify SDTM implementation version, 3.1.1 or 3.1.2. For domains (&Dom), DM, CO and SUPPQUAL will be created automatically; you should list others accordingly:
 
@@ -38,43 +40,43 @@ You should also choose the “CORE” variable (REQUIRED, PERMISSIBLE and EXPECT
 > 
 > PERMISSIBLE variables included if needed (perm=YES or perm=NO)
 
-Submit *generate\_mapping\_template.sas* and you can get a blank template mapping file tmpmapping.xls in **C:Program FilesCDISC Expresstemp**. 
+Submit _generate\_mapping\_template.sas_ and you can get a blank template mapping file tmpmapping.xls in **C:Program FilesCDISC Expresstemp**. 
 
-[![clip_image002][4]][4]
+[<img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px" title="clip_image002" border="0" alt="clip_image002" align="left" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image002_thumb.jpg" width="478" height="436" />](http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image002.jpg)
 
-Copy it to **C:Program FilesCDISC ExpressstudiesCLINCAPdocMapping file – working version** for example used for study “CLINCAP” and then fill all the blank columns (it NEEDS efforts!). 
+Copy it to **C:Program FilesCDISC ExpressstudiesCLINCAPdocMapping file &#8211; working version** for example used for study “CLINCAP” and then fill all the blank columns (it NEEDS efforts!). 
 
-If this mapping file passes the validation process, a final version named mapping.xls will be copied automatically to **C:Program FilesCDISC ExpressstudiesCLINCAPdocMapping file – validated version** for later processing.
+If this mapping file passes the validation process, a final version named mapping.xls will be copied automatically to **C:Program FilesCDISC ExpressstudiesCLINCAPdocMapping file &#8211; validated version** for later processing.
 
 Note that if you already have some validated mapping file for other studies, it would serve as a good start rather than using the blank template from the scratch.
 
 ## 4.2 Navigate mapping file
 
-Let’s take a look at the “real” worked mapping file for a demo study first, in **C:Program FilesCDISC Expressstudiesexample1docMapping file – working version**.
+Let’s take a look at the “real” worked mapping file for a demo study first, in **C:Program FilesCDISC Expressstudiesexample1docMapping file &#8211; working version**.
 
 The first sheet is a welcome dashboard:
 
-[![clip_image004][5]][5]
+[<img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="clip_image004" border="0" alt="clip_image004" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image004_thumb.jpg" width="498" height="292" />](http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image004.jpg)
 
 Then StudyMetadata sheet, a XML metadata specification used to generate define.xml. you need only add some information in “Values” column:
 
-[![clip_image006][6]][6]
+[<img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="clip_image006" border="0" alt="clip_image006" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image006_thumb.jpg" width="491" height="377" />](http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image006.jpg)
 
 The FORMAT sheet:
 
-[![clip_image007][7]][7]
+[<img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="clip_image007" border="0" alt="clip_image007" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image007_thumb.gif" width="501" height="324" />](http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image007.gif)
 
 Such format structure is similar with the one we export the format from a format catalog using
 
-> **proc** **format** library=library cntlout=format_out;
+> <font face="Courier New"><b>proc</b> <b>format</b> library=library cntlout=format_out;</font>
 > 
-> **run**;
+> <font face="Courier New"><b>run</b>;</font>
 
 In most production environment, programmers get formats from clinical data management group. If the entire formats are assigned into proper libraries (work or library), you don’t need to export such formats into this spreadsheet. Of course in the format sheet, you can type some customized format.
 
 A typical domain sheet (AT LAST!) that needs efforts and our understanding of the software, DM for example:
 
-[![clip_image009][8]][8]
+[<img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="clip_image009" border="0" alt="clip_image009" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image009_thumb.jpg" width="480" height="439" />](http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image009.jpg)
 
 From the ‘Dataset’ column, three raw datasets from **C:Program FilesCDISC Expressstudiesexample1source** needed to map into DM domain, demog, siteinv and eligassess. Note that you can use any data step options such as drop=, rename=, where= for the input datasets.
 
@@ -92,81 +94,76 @@ It makes sense in practice. For example, the sequential variable, e.g. AESEQ is 
 
 Sum up, we can “translate” this mapping sheet to SAS codes for better understanding of CDISC Express architecture: 
 
+<!--more-->
+
+
   
+
+
 > data tem1;
 > 
->     set demog;
+> &#160;&#160;&#160; set demog;
 > 
->     STUDYID=study;
+> &#160;&#160;&#160; STUDYID=study;
 > 
->     DOMAIN =&domain;
+> &#160;&#160;&#160; DOMAIN =&domain;
 > 
->     USUBJID=%CONCATENATE(_variables=study sitecode patid);
+> &#160;&#160;&#160; USUBJID=%CONCATENATE(_variables=study sitecode patid);
 > 
->     SUBJID =patid;
+> &#160;&#160;&#160; SUBJID =patid;
 > 
 > RFSTDTC=%D\_RFST(\_dataset=trtinf,\_date=trtinfdt,\_key=patid,\_ivrsds=ivrs,\_ivrsdt=randdat);
 > 
 > RFENDTC=%SORTLOOKUP(\_dataset=disc,\_variable=fupdat,\_key=patid,\_sort\_variable=fupdat,\_keep=last);
 > 
->     SITEID =sitecode;
+> &#160;&#160;&#160; SITEID =sitecode;
 > 
->     INVID =invcode;
+> &#160;&#160;&#160; INVID =invcode;
 > 
->    BRTHDTC=%FORMAT(\_variable=brthdat,\_format=yymmdd10);
+> &#160;&#160; BRTHDTC=%FORMAT(\_variable=brthdat,\_format=yymmdd10);
 > 
->    SEX =%GENDER(_gender=sex);
+> &#160;&#160; SEX =%GENDER(_gender=sex);
 > 
->    RACE =%D_RACE();
+> &#160;&#160; RACE =%D_RACE();
 > 
->    ETHNIC =upcase(ethnic);
+> &#160;&#160; ETHNIC =upcase(ethnic);
 > 
->    COUNTRY="USA";
+> &#160;&#160; COUNTRY="USA";
 > 
->     DMDTC =%FORMAT(\_variable=formdat,\_format=yymmdd10);
+> &#160;&#160;&#160; DMDTC =%FORMAT(\_variable=formdat,\_format=yymmdd10);
 > 
->    ARMCD ="";
+> &#160;&#160; ARMCD ="";
 > 
->     ARM ="";
+> &#160;&#160;&#160; ARM ="";
 > 
 > run;
 > 
->  
+> &#160;
 > 
 > data tem2;
 > 
->     merge tem1 siteinv(drop=invcode);
+> &#160;&#160;&#160; merge tem1 siteinv(drop=invcode);
 > 
->     by sitecode;
+> &#160;&#160;&#160; by sitecode;
 > 
->     INVNAM=trim(lname)||","||fname;
+> &#160;&#160;&#160; INVNAM=trim(lname)||","||fname;
 > 
 > run;
 > 
->  
+> &#160;
 > 
 > data dm;
 > 
->     merge tem2 eligassess;
+> &#160;&#160;&#160; merge tem2 eligassess;
 > 
->     by patid;
+> &#160;&#160;&#160; by patid;
 > 
->   AGE =year(infcondt)-year(brthdat)-(month(brthdat)>month(infcondt))-(month(brthdat)=month(infcondt) and day(brthdat)>day(infcondt));
+> &#160; AGE =year(infcondt)-year(brthdat)-(month(brthdat)>month(infcondt))-(month(brthdat)=month(infcondt) and day(brthdat)>day(infcondt));
 > 
-> AGEU=%CONVERTIF([\_if\_variable=@AGE,\_if\_value=.,\_then\_value][8]=, \_else\_value=YEARS);
+> AGEU=%CONVERTIF([\_if\_variable=@AGE,\_if\_value=.,\_then\_value](mailto:_if_variable=@AGE,_if_value=.,_then_value)=, \_else\_value=YEARS);
 > 
 > run;
 
 Following will be some explore the data manipulation techniques in CDISC Express, such as merge, transpose.
 
-[![TobeContinued][10]][10]
-
- [1]: http://www.jiangtanghu.com/blog/2011/06/28/dive-into-cdisc-express-1-introductory/
- [2]: http://www.jiangtanghu.com/blog/2011/07/02/dive-into-cdisc-express-2-create-a-new-study/
- []: http://dl.dropbox.com/u/69732603/clip_image002.jpg
- []: http://dl.dropbox.com/u/69732603/clip_image004.jpg
- []: http://dl.dropbox.com/u/69732603/clip_image006.jpg
- []: http://dl.dropbox.com/u/69732603/clip_image007.gif
- []: http://dl.dropbox.com/u/69732603/clip_image009.jpg
- [8]: mailto:_if_variable=@AGE,_if_value=.,_then_value
- []: http://dl.dropbox.com/u/69732603/TobeContinued1.jpg
+[<img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="TobeContinued" border="0" alt="TobeContinued" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/TobeContinued_thumb1.jpg" width="246" height="187" />](http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/TobeContinued1.jpg)

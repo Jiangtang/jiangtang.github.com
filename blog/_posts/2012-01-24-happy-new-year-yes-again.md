@@ -1,65 +1,100 @@
 ---
-author: Jiangtang Hu
+id: 443
 title: Happy New Year (Yes Again)
-excerpt:
+date: 2012-01-24T12:06:11+00:00
+author: Jiangtang Hu
 layout: post
-category:
+guid: http://www.jiangtanghu.com/blog/?p=443
+permalink: /2012/01/24/happy-new-year-yes-again/
+categories:
   - misc
-tags: [ ]
-post_format: [ ]
 ---
 Then I feel great to reset my year of 2012 as brand new one.
 
-Today, Jan 23, is the first day of [Chinese New Year][1], and it is Monday, the first day of work week–it is always joyful to have such coincidenceJ. HAPPY NEW YEAR!
+Today, Jan 23, is the first day of [Chinese New Year](http://en.wikipedia.org/wiki/Chinese_New_Year), and it is Monday, the first day of work week&#8211;it is always joyful to have such coincidence<span style="font-family: Wingdings;">J</span>. HAPPY NEW YEAR!
 
-I had a big move this year. Actually I passed through multiply new years of 2012: I took my flight from Beijing in Jan 1 (*happy new year!*) and landed in Raleigh, North Carolina also in the same day due to the time difference among China and US where I take a new job as a Life Sciences Consultant at [d-Wise Technologies][2]. I’m not supposed to be a pure SAS programmer any more, but I don’t want to change the theme of my blog (“[*Hello World by A SAS Programmer*][3]“) since my most handy language is still SAS while my role will expose me more SAS products and solutions.
+I had a big move this year. Actually I passed through multiply new years of 2012: I took my flight from Beijing in Jan 1 (<span style="font-size: 7pt;"><em>happy new year!</em></span>) and landed in Raleigh, North Carolina also in the same day due to the time difference among China and US where I take a new job as a Life Sciences Consultant at [d-Wise Technologies](http://www.d-wise.com/). I&#8217;m not supposed to be a pure SAS programmer any more, but I don&#8217;t want to change the theme of my blog (&#8220;[_Hello World by A SAS Programmer_](http://www.jiangtanghu.com/blog/)&#8220;) since my most handy language is still SAS while my role will expose me more SAS products and solutions.
 
-Chinese New Year is also called “Spring Festival” and “spring” is always the key word for the holiday:
+Chinese New Year is also called &#8220;Spring Festival&#8221; and &#8220;spring&#8221; is always the key word for the holiday:
 
-![][4]
+<p style="text-align: center;">
+  <img class="aligncenter" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/01/012412_0406_HappyNewYea11.png" alt="" width="404" height="262" />
+</p>
 
-(Chinese Characters for “the Beauty of Spring”. I wrote these years before in Beijing)  
+<p style="text-align: center;">
+  <span style="font-size: 8pt;">(Chinese Characters for &#8220;the Beauty of Spring&#8221;. I wrote these years before in Beijing)<br /> </span>
+</p>
 
+And I also want to spread my spring greetings with few sentences from Walt Whitman, _These I Singing in Spring_:
 
-And I also want to spread my spring greetings with few sentences from Walt Whitman, *These I Singing in Spring*:
+<p style="margin-left: 36pt;">
+  THESE, I, singing in spring, collect for lovers,
+</p>
 
-THESE, I, singing in spring, collect for lovers,
+<p style="margin-left: 36pt;">
+  . . .
+</p>
 
-. . .
+<p style="margin-left: 36pt;">
+  Collecting, I traverse the garden, the world—but soon
+</p>
 
-Collecting, I traverse the garden, the world—but soon
+<p style="margin-left: 36pt;">
+  I pass the gates,
+</p>
 
-I pass the gates,
+<p style="margin-left: 36pt;">
+  Now along the pond-side—now wading in a little, fearing not the wet,
+</p>
 
-Now along the pond-side—now wading in a little, fearing not the wet,
+<p style="margin-left: 36pt;">
+  Now by the post-and-rail fences, where the old stones
+</p>
 
-Now by the post-and-rail fences, where the old stones
+<p style="margin-left: 36pt;">
+  thrown there, pick&#8217;d from the fields, have accumulated,
+</p>
 
-thrown there, pick’d from the fields, have accumulated,
+<p style="margin-left: 36pt;">
+  (Wild-flowers and vines and weeds come up through
+</p>
 
-(Wild-flowers and vines and weeds come up through
+<p style="margin-left: 36pt;">
+  the stones, and partly cover them—Beyond these I pass,)
+</p>
 
-the stones, and partly cover them—Beyond these I pass,)
+<p style="margin-left: 36pt;">
+  Far, far in the forest, before I think where I go,
+</p>
 
-Far, far in the forest, before I think where I go,
+<p style="margin-left: 36pt;">
+  Solitary, smelling the earthy smell, stopping now and then in the silence,
+</p>
 
-Solitary, smelling the earthy smell, stopping now and then in the silence,
+<p style="margin-left: 36pt;">
+  Alone I had thought—yet soon a troop gathers around me,
+</p>
 
-Alone I had thought—yet soon a troop gathers around me,
+<p style="margin-left: 36pt;">
+  Some walk by my side, and some behind, and some embrace my arms or neck,
+</p>
 
-Some walk by my side, and some behind, and some embrace my arms or neck,
+<p style="margin-left: 36pt;">
+  They, the spirits of dear friends, dead or alive—thicker
+</p>
 
-They, the spirits of dear friends, dead or alive—thicker
+<p style="margin-left: 36pt;">
+  they come, a great crowd, and I in the middle,
+</p>
 
-they come, a great crowd, and I in the middle,
+<p style="margin-left: 36pt;">
+  Collecting, dispensing, singing in spring, there I wander with them,
+</p>
 
-Collecting, dispensing, singing in spring, there I wander with them,
+<p style="margin-left: 36pt;">
+  Plucking something for tokens—tossing toward whoever is near me;
+</p>
 
-Plucking something for tokens—tossing toward whoever is near me;
-
-. . .
-
- [1]: http://en.wikipedia.org/wiki/Chinese_New_Year
- [2]: http://www.d-wise.com/
- [3]: http://www.jiangtanghu.com/blog/
- [4]: http://dl.dropbox.com/u/69732603/012412_0406_HappyNewYea11.png
+<p style="margin-left: 36pt;">
+  . . .
+</p>

@@ -1,37 +1,45 @@
 ---
-author: Jiangtang Hu
+id: 50
 title: 'Haiku from SAS R&amp;D staff'
-excerpt:
+date: 2008-12-10T11:37:00+00:00
+author: Jiangtang Hu
 layout: post
-category:
+guid: http://www.jiangtanghu.com/blog/2008/12/10/haiku-from-sas-rd-staff-2/
+permalink: /2008/12/10/haiku-from-sas-rd-staff-2/
+blogger_blog:
+  - jiangtanghu.blogspot.com
+blogger_author:
+  - John(Jiangtang) Huhttp://www.blogger.com/profile/04383471478195804254JiangtangHu@gmail.com
+blogger_permalink:
+  - /2008/12/haiku-from-sas-r-staff.html
+categories:
   - misc
   - SAS
 tags:
   - haiku
   - Matsuo Basho
   - SAS
-post_format: [ ]
 ---
-> First prompts are silent.  
-> Subsequent prompts loud and clear.  
+> First prompts are silent.
+  
+> Subsequent prompts loud and clear.
+  
 > Now all prompts are heard.
 
-Poem from R&D staff?  
-Yes. Rhyming sonnets were shakespeare-like complex;  
+Poem from R&D staff?
+  
+Yes. Rhyming sonnets were shakespeare-like complex;
+  
 they wrote Japanese haiku, showed as above.
 
-The SAS R&D staff should complete some paper work in defects system before changing a code. They use informal descriptive language(HAIKUUU!) in the early stage. [Chris Hemedinger][1], a senior software engineer at SAS, collected some [haikus][2] in his blog to show the humor side of SAS R&D staff. It’s interesting to cite one of the most famous haikus by [Matsuo Bashō][3] for comparison:
+The SAS R&D staff should complete some paper work in defects system before changing a code. They use informal descriptive language(HAIKUUU!) in the early stage. <a href="http://blogs.sas.com/sasdummy/" target="_blank">Chris Hemedinger</a>, a senior software engineer at SAS, collected some <a href="http://blogs.sas.com/sasdummy/index.php?/archives/62-Poetry-in-commotion.html" target="_blank">haikus</a> in his blog to show the humor side of SAS R&D staff. It&#8217;s interesting to cite one of the most famous haikus by <a href="http://en.wikipedia.org/wiki/Matsuo_Bash%C5%8D" target="_blank">Matsuo Bashō</a> for comparison:
 
-> Old pond  
-> a frog jumps  
+> Old pond
+  
+> a frog jumps
+  
 > the sound of water
 
-del.icio.us Tags: [haiku][4],[SAS][5],[R&D][6],[Matsuo Bashô][7]
-
- [1]: http://blogs.sas.com/sasdummy/
- [2]: http://blogs.sas.com/sasdummy/index.php?/archives/62-Poetry-in-commotion.html
- [3]: http://en.wikipedia.org/wiki/Matsuo_Bash%C5%8D
- [4]: http://del.icio.us/popular/haiku
- [5]: http://del.icio.us/popular/SAS
- [6]: http://del.icio.us/popular/R&D
- [7]: http://del.icio.us/popular/Matsuo%20Bash%c3%b4
+<div id="scid:0767317B-992E-4b12-91E0-4F059A8CECA8:e0bef7d3-3ec5-4580-99ea-fd432ffbdcce" class="wlWriterSmartContent" style="margin: 0px; padding: 0px; display: inline;">
+  del.icio.us Tags: <a rel="tag" href="http://del.icio.us/popular/haiku">haiku</a>,<a rel="tag" href="http://del.icio.us/popular/SAS">SAS</a>,<a rel="tag" href="http://del.icio.us/popular/R&D">R&D</a>,<a rel="tag" href="http://del.icio.us/popular/Matsuo%20Bash%c3%b4">Matsuo Bashô</a>
+</div>

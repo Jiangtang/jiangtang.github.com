@@ -1,93 +1,72 @@
 ---
-author: Jiangtang Hu
+id: 64
 title: 'FYI: Dashboard using SAS/Graph'
-excerpt:
+date: 2009-01-13T15:01:00+00:00
+author: Jiangtang Hu
 layout: post
-category:
+guid: http://www.jiangtanghu.com/blog/2009/01/13/fyi-dashboard-using-sasgraph-2/
+permalink: /2009/01/13/fyi-dashboard-using-sasgraph-2/
+blogger_blog:
+  - jiangtanghu.blogspot.com
+  - jiangtanghu.blogspot.com
+blogger_author:
+  - John(Jiangtang) Huhttp://www.blogger.com/profile/04383471478195804254JiangtangHu@gmail.com
+  - John(Jiangtang) Huhttp://www.blogger.com/profile/04383471478195804254JiangtangHu@gmail.com
+blogger_permalink:
+  - /2009/01/fyi-dashboard-using-sas.html
+  - /2009/01/fyi-dashboard-using-sas.html
+categories:
   - SAS
 tags:
   - Dashboard
   - Graph
   - SASk
-post_format: [ ]
 ---
-[![][2]][2]
+<a href="http://1.bp.blogspot.com/_qlX7zyUQhog/SWw8f0hrkmI/AAAAAAAABFs/kciTZXVbaTU/s1600-h/dashboard.gif" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img id="BLOGGER_PHOTO_ID_5290670179627012706" style="cursor: pointer; width: 320px; height: 240px;" src="http://1.bp.blogspot.com/_qlX7zyUQhog/SWw8f0hrkmI/AAAAAAAABFs/kciTZXVbaTU/s320/dashboard.gif" border="0" alt="" /></a>
 
-see,[ http://support.sas.com/kb/26/134.html][2]
+<span style="font-style: italic;">see</span>, <http://support.sas.com/kb/26/134.html>
 
-*   Slider chart indicator: 
-    *   [SAS program version][3]
-    *   [stored process version][4]
-    *   [portlet version][5]
-*   Slider chart dashboard: 
-    *   [SAS program version][6]
-    *   [stored process version][7]
-    *   [portlet version][8]
-*   Bullet graph indicator: 
-    *   [SAS program version][9]
-    *   [stored process version][10]
-    *   [portlet version][11]
-*   Bullet graph dashboard: 
-    *   [SAS program version][12]
-    *   [stored process version][13]
-    *   [portlet version][14]
-*   Dial meter indicator: 
-    *   [SAS program version][15]
-    *   [stored process version][16]
-    *   [portlet version][17]
-*   Dial meter dashboard: 
-    *   [SAS program version][18]
-    *   [stored process version][19]
-    *   [portlet version][20]
-*   Bar chart indicator: 
-    *   [SAS program version][21]
-    *   [stored process version][22]
-    *   [portlet version][23]
-*   Bar chart dashboard: 
-    *   [SAS program version][24]
-    *   [stored process version][25]
-    *   [portlet version][26]
-*   Telesales dashboard: 
-    *   [SAS program version][27]
-    *   [stored process version][28]
-    *   [portlet version][29]
-*   Web marketing analysis dashboard: 
-    *   [SAS program version][30]
-    *   [stored process version][31]
-    *   [portlet version][32]
+  * Slider chart indicator: 
+      * [SAS program version](http://support.sas.com/kb/26104.html)
+      * [stored process version](http://support.sas.com/kb/26114.html)
+      * [portlet version](http://support.sas.com/kb/26124.html)
+  * Slider chart dashboard: 
+      * [SAS program version](http://support.sas.com/kb/26105.html)
+      * [stored process version](http://support.sas.com/kb/26115.html)
+      * [portlet version](http://support.sas.com/kb/26125.html)
+  * Bullet graph indicator: 
+      * [SAS program version](http://support.sas.com/kb/26106.html)
+      * [stored process version](http://support.sas.com/kb/26116.html)
+      * [portlet version](http://support.sas.com/kb/26126.html)
+  * Bullet graph dashboard: 
+      * [SAS program version](http://support.sas.com/kb/26107.html)
+      * [stored process version](http://support.sas.com/kb/26117.html)
+      * [portlet version](http://support.sas.com/kb/26127.html)
+  * Dial meter indicator: 
+      * [SAS program version](http://support.sas.com/kb/26108.html)
+      * [stored process version](http://support.sas.com/kb/26118.html)
+      * [portlet version](http://support.sas.com/kb/26128.html)
+  * Dial meter dashboard: 
+      * [SAS program version](http://support.sas.com/kb/26109.html)
+      * [stored process version](http://support.sas.com/kb/26119.html)
+      * [portlet version](http://support.sas.com/kb/26129.html)
+  * Bar chart indicator: 
+      * [SAS program version](http://support.sas.com/kb/26110.html)
+      * [stored process version](http://support.sas.com/kb/26120.html)
+      * [portlet version](http://support.sas.com/kb/26130.html)
+  * Bar chart dashboard: 
+      * [SAS program version](http://support.sas.com/kb/26111.html)
+      * [stored process version](http://support.sas.com/kb/26121.html)
+      * [portlet version](http://support.sas.com/kb/26131.html)
+  * Telesales dashboard: 
+      * [SAS program version](http://support.sas.com/kb/26112.html)
+      * [stored process version](http://support.sas.com/kb/26122.html)
+      * [portlet version](http://support.sas.com/kb/26132.html)
+  * Web marketing analysis dashboard: 
+      * [SAS program version](http://support.sas.com/kb/26113.html)
+      * [stored process version](http://support.sas.com/kb/26123.html)
+      * [portlet version](http://support.sas.com/kb/26133.html)
 
-You would also like, Santa’s Dashboard:  
+You would also like, <span style="font-style: italic;">Santa&#8217;s Dashboard</span>:
+  
 <http://jiangtanghu.blogspot.com/2008/12/santa-and-sas-again-santa-dashboard.html>
-
- []: http://1.bp.blogspot.com/_qlX7zyUQhog/SWw8f0hrkmI/AAAAAAAABFs/kciTZXVbaTU/s1600-h/dashboard.gif
- [2]: http://support.sas.com/kb/26/134.html
- [3]: http://support.sas.com/kb/26104.html
- [4]: http://support.sas.com/kb/26114.html
- [5]: http://support.sas.com/kb/26124.html
- [6]: http://support.sas.com/kb/26105.html
- [7]: http://support.sas.com/kb/26115.html
- [8]: http://support.sas.com/kb/26125.html
- [9]: http://support.sas.com/kb/26106.html
- [10]: http://support.sas.com/kb/26116.html
- [11]: http://support.sas.com/kb/26126.html
- [12]: http://support.sas.com/kb/26107.html
- [13]: http://support.sas.com/kb/26117.html
- [14]: http://support.sas.com/kb/26127.html
- [15]: http://support.sas.com/kb/26108.html
- [16]: http://support.sas.com/kb/26118.html
- [17]: http://support.sas.com/kb/26128.html
- [18]: http://support.sas.com/kb/26109.html
- [19]: http://support.sas.com/kb/26119.html
- [20]: http://support.sas.com/kb/26129.html
- [21]: http://support.sas.com/kb/26110.html
- [22]: http://support.sas.com/kb/26120.html
- [23]: http://support.sas.com/kb/26130.html
- [24]: http://support.sas.com/kb/26111.html
- [25]: http://support.sas.com/kb/26121.html
- [26]: http://support.sas.com/kb/26131.html
- [27]: http://support.sas.com/kb/26112.html
- [28]: http://support.sas.com/kb/26122.html
- [29]: http://support.sas.com/kb/26132.html
- [30]: http://support.sas.com/kb/26113.html
- [31]: http://support.sas.com/kb/26123.html
- [32]: http://support.sas.com/kb/26133.html

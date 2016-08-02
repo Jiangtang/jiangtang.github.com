@@ -1,159 +1,102 @@
 ---
-author: Jiangtang Hu
+id: 137
 title: 'Play Matrix within SAS(1): basic files processing'
-excerpt:
+date: 2010-10-29T21:02:31+00:00
+author: Jiangtang Hu
 layout: post
-category:
+guid: http://www.jiangtanghu.com/blog/2010/10/29/sas-iml-basic/
+permalink: /2010/10/29/sas-iml-basic/
+categories:
   - SAS
 tags:
   - IML
   - Matrix
   - SAS
-post_format: [ ]
 ---
-Recently I read Rick Wicklin’s [IML blog][1] with great interests(and anticipation for his fore-coming IML book,  *[Statistical Programming with SAS/IML Software][2]*). SAS programmers have the following programming tools to facilitate their daily work:
+Recently I read Rick Wicklin’s [IML blog](http://blogs.sas.com/iml/index.php) with great interests(and anticipation for his fore-coming IML book,&#160; _[Statistical Programming with SAS/IML Software](http://support.sas.com/publishing/authors/wicklin.html)_). SAS programmers have the following programming tools to facilitate their daily work:
 
-*   SAS data step: the basic SAS; a generation IV programming language, similar with other procedural languages such as C. 
-*   SAS Proc SQL: SAS’s implementation of standard SQL([SQL-92][3]). 
-*   SAS IML(Interactive Matrix Language): SAS’s matrix manipulation language(like R and Matlab).  SAS IML Studio also supply IMLPlus programming language(IML+), an enhanced version of IML. 
-*   SAS SCL(SAS Component Language): build in SAS/AF software, an object oriented programming(OOP) language for applications development. 
+  * SAS data step: the basic SAS; a generation IV programming language, similar with other procedural languages such as C. 
+  * SAS Proc SQL: SAS’s implementation of standard SQL([SQL-92](http://en.wikipedia.org/wiki/SQL-92)). 
+  * SAS IML(Interactive Matrix Language): SAS’s matrix manipulation language(like R and Matlab).&#160; SAS IML Studio also supply IMLPlus programming language(IML+), an enhanced version of IML. 
+  * SAS SCL(SAS Component Language): build in SAS/AF software, an object oriented programming(OOP) language for applications development. 
 
 I am a heavy user of data steps and SQL and want to invest some bit on matrix manipulation. Although other wonderful languages available(such as R and Matlab), I found IML is a good choice for SAS programmers like me. It is well integrated within SAS system, and very important, almost all of the SAS Base functions and call routines are also supported by IML. Here some notes of IML 101(codes are self explanatory from a SAS Base point of view):
 
 # **1. IML style of ‘hello world’** 
 
-> proc iml;   
->     text="Hello World!";   
->     print "IML saying" text;   
-> quit;
+> <font face="Courier New"><font color="#ff0000">proc iml</font>; <br />&#160;&#160;&#160; text="Hello World!"; <br />&#160;&#160;&#160; <font color="#ff0000">print</font> "IML saying" text; <br /><font color="#ff0000">quit</font>;</font>
 
 and you got in output window:
 
 > IML saying Hello World!
 
-Like Proc SQL, IML begins with “proc iml” , end with ”quit”, and every statements end with a semicolon. The key word “print” (an IML statement), just like “put” statement in data steps.
+Like Proc SQL, IML begins with “<font face="Courier New"><font color="#ff0000">proc iml</font></font>” , end with ”<font color="#ff0000">quit</font>”, and every statements end with a semicolon. The key word “<font color="#ff0000">print</font>” (an IML statement), just like “put” statement in data steps.
 
 An enhanced version of Hello World: 
 
-> options nocenter nodate nonumber; 
+> <font face="Courier New"><font color="#ff0000">options </font>nocenter nodate nonumber; </font>
 > 
-> proc iml;   
->     reset printall; 
+> <font face="Courier New">proc iml; <br />&#160;&#160;&#160; <font color="#ff0000">reset</font> printall; </font>
 > 
->     text="Hello World!";   
->     print "in &sysdate. IML saying" text;   
-> quit;
+> <font face="Courier New">&#160;&#160;&#160; text="Hello World!"; <br />&#160;&#160;&#160; print "in &sysdate. IML saying" text; <br />quit;</font>
 
-Some SAS global options added(“nocenter nodate nonumber”). The IML statement “reset", works like “options” statement to set some processing options within the IML(and you can guess the meaning of the options “printall”, just print all. . . it is your turn to check the output window).
+Some SAS global options added(“<font face="Courier New">nocenter nodate nonumber</font>”). The IML statement “<font color="#ff0000">reset</font>", works like “<font face="Courier New"><font color="#ff0000">options</font></font>” statement to set some processing options within the IML(and you can guess the meaning of the options “printall”, just print all. . . it is your turn to check the output window).
 
 A SAS system macro variable “&sysdate” is presented to encourage you to add any programming elements in SAS Base to IML. 
 
 # **2. How to create a matrix manually**
 
-Actually, we have already create a matrix named “text” in the previous hello-world codes. It is a character scalar(matrix with only one element). If we want to avoid the SAS data steps’ style of assignment,  we can use *{}* to enclose matrix elements:
+Actually, we have already create a matrix named “text” in the previous hello-world codes. It is a character <font color="#ff0000">scalar</font>(matrix with only one element). If we want to avoid the SAS data steps’ style of assignment,&#160; we can use <font color="#ff0000"><em>{}</em></font> to enclose matrix elements:
 
-> a={“a”};  /*a \_char\_ scalar */   
-> b={1};     /*a \_num\_ scalar*/
+> a={“a”};&#160; /\*a \_char\_ scalar \*/   
+> b={1};&#160;&#160;&#160;&#160; /\*a \_num\_ scalar\*/
 
 and a 2*3 matrix:
 
-> c={1 2 3,   
->       2 3 4}; /*2 rows, 3 cols*/
+> c={1 2 3<font color="#ff0000">, <br /></font>&#160;&#160;&#160;&#160;&#160; 2 3 4}; /\*2 rows, 3 cols\*/
 
-Commas(,) are used to separate rows.
+Commas(<font color="#ff0000">,</font>) are used to separate rows.
 
 # 3. How to create a matrix by functions
 
 Some matrix reshaping functions:
 
-> a=I(3);     /*creates a 3*3 identity matrix*/   
-> b=J(2,3,5); /*creates a 2*3 matrix of identical values*/   
-> e=do(1,9,2); /*produces series, from 1 to 9, by increment 2*/   
-> c=block(a,b);/*forms a block-diagonal matrice*/   
-> d=diag(a);   /*creates a diagonal matrix*/   
-> m=repeat(a,4,3); /*create a (3\*4)\*(3*3) matrix by repeating*/   
-> n=T(b);   /\*transpose\*/
+> <font face="Courier New">a=<font color="#ff0000">I</font>(3);&#160;&#160;&#160;&#160; /*creates a 3*3 identity matrix*/ <br />b=<font color="#ff0000">J</font>(2,3,5); /*creates a 2*3 matrix of identical values*/ <br />e=<font color="#ff0000">do</font>(1,9,2); /*produces series, from 1 to 9, by increment 2*/ <br />c=<font color="#ff0000">block</font>(a,b);/*forms a block-diagonal matrice*/ <br />d=<font color="#ff0000">diag</font>(a);&#160;&#160; /*creates a diagonal matrix*/ <br />m=<font color="#ff0000">repeat</font>(a,4,3); /*create a (3*4)*(3*3) matrix by repeating*/ <br />n=<font color="#ff0000">T</font>(b);&#160;&#160; /*transpose*/</font>
 
 # 4. How to create a matrix by reading a SAS data set
 
-> proc iml;   
->     use sashelp.class;   
->     read all var \_char\_                    into class_char;   
->     read all var \_num\_                     into class_num;   
->     read all var {"Age" "Height" "Weight"} into class_num2;   
->     close sashelp.class; 
+> <font face="Courier New">proc iml; <br />&#160;&#160;&#160; <font color="#ff0000">use</font> sashelp.class; <br />&#160;&#160;&#160; <font color="#ff0000">read</font> all var <font color="#ff0000">_char_</font>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <font color="#ff0000">into</font> class_char; <br />&#160;&#160;&#160; read all var <font color="#ff0000">_num_</font>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; into class_num; <br />&#160;&#160;&#160; read all var <font color="#ff0000">{"Age" "Height" "Weight"}</font> into class_num2; <br />&#160;&#160;&#160; <font color="#ff0000">close</font> sashelp.class; </font>
 > 
->     print class\_char class\_num class_num2;   
-> quit;
+> <font face="Courier New">&#160;&#160;&#160; print class_char class_num class_num2; <br />quit;</font>
 
-Note that it is a good habit to close the data file after reading or using it(*see* Rick Wicklin’s *[Five Reasons to CLOSE Your Data Sets][4]*).
+Note that it is a good habit to close the data file after reading or using it(_see_ Rick Wicklin’s _[Five Reasons to CLOSE Your Data Sets](http://blogs.sas.com/iml/index.php?/archives/8-Five-Reasons-to-CLOSE-Your-Data-Sets.html)_).
 
 # 5. How to output a matrix to SAS dataset
 
-> proc iml;   
->     use sashelp.class;   
->     read all var \_num\_ into class_num;   
->     close sashelp.class; 
+> <font face="Courier New">proc iml; <br />&#160;&#160;&#160; use sashelp.class; <br />&#160;&#160;&#160; read all var _num_ into class_num; <br />&#160;&#160;&#160; close sashelp.class; </font>
 > 
->     create work.class_num from class_num;   
->     append from class_num;   
->     show datasets;   
-> quit;
+> <font face="Courier New">&#160;&#160;&#160; <font color="#ff0000">create</font> work.class_num <font color="#ff0000">from</font> class_num; <br />&#160;&#160;&#160; <font color="#ff0000">append</font> <font color="#ff0000">from</font> class_num; <br />&#160;&#160;&#160; <font color="#ff0000">show datasets</font>; <br />quit;</font>
 
-#  
+# &#160;
 
 # 6. How to format a matrix
 
-/*version I: use matrix options*/
+/\*version I: use matrix options\*/
 
-> proc iml;   
->         use sashelp.class;   
->         col={"Age" "Height" "Weight"};   
->         read all var col into class;   
->         read all var{name} into row;   
->         close sashelp.class; 
+> <font face="Courier New">proc iml; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; use sashelp.class; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; col={"Age" "Height" "Weight"}; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; read all var col into class; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; read all var{name} into row; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; close sashelp.class; </font>
 > 
->         print class[rowname=row   
->                     colname=col   
->                     format=5.2   
->                     label="test, label"];   
-> quit; 
+> <font face="Courier New">&#160;&#160;&#160;&#160;&#160;&#160;&#160; print class[<font color="#ff0000">rowname</font>=row <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <font color="#ff0000">colname</font>=col <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <font color="#ff0000">format</font>=5.2 <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <font color="#ff0000">label</font>="test, label"]; <br />quit;</font> 
 
-/*version II: use mattib statement*/
+/\*version II: use mattib statement\*/
 
-> proc iml;   
->         use sashelp.class;   
->         col={"Age" "Height" "Weight"};   
->         read all var col into class;   
->         read all var{name} into row;   
->         close sashelp.class; 
+> <font face="Courier New">proc iml; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; use sashelp.class; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; col={"Age" "Height" "Weight"}; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; read all var col into class; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; read all var{name} into row; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; close sashelp.class; </font>
 > 
->         mattrib class rowname=row   
->                       colname=col   
->                       label="test, label"   
->                      format=5.2;   
->         print class;   
-> quit; 
+> <font face="Courier New">&#160;&#160;&#160;&#160;&#160;&#160;&#160; <font color="#ff0000">mattrib</font> class rowname=row <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; colname=col <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; label="test, label" <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; format=5.2; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; print class; <br />quit;</font> 
 
-/*version III: avoid hardcoding—use IML function and operations*/
+/\*version III: avoid hardcoding—use IML function and operations\*/
 
-> proc iml;   
->         use sashelp.class;   
->         col=T(contents(sashelp,class)[3:5]);   
->         read all var col into class;   
->         read all var{name} into row;   
->         close sashelp.class; 
+> <font face="Courier New">proc iml; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; use sashelp.class; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; <font color="#ff0000">col=T(contents(sashelp,class)[3:5]);</font> <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; read all var col into class; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; read all var{name} into row; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; close sashelp.class; </font>
 > 
->         mattrib class rowname=row   
->                       colname=col   
->                       label="test, label"   
->                       format=5.2;   
->         print class;   
-> quit;
+> <font face="Courier New">&#160;&#160;&#160;&#160;&#160;&#160;&#160; mattrib class rowname=row <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; colname=col <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; label="test, label" <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; format=5.2; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; print class; <br />quit;</font>
 
-***(IML matrix operations: to be continued)***
-
- [1]: http://blogs.sas.com/iml/index.php
- [2]: http://support.sas.com/publishing/authors/wicklin.html
- [3]: http://en.wikipedia.org/wiki/SQL-92
- [4]: http://blogs.sas.com/iml/index.php?/archives/8-Five-Reasons-to-CLOSE-Your-Data-Sets.html
+<font face="Courier New"><em><strong>(IML matrix operations: to be continued)</strong></em></font>
