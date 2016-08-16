@@ -48,8 +48,8 @@ var site = {
 	Translation: {
 		lang: {
 			en: {
-				name: 'MythArcher Yan',
-				title: 'Web Engineer, Freelancer',
+				name: 'Jiangtang Hu',
+				title: 'Statistical SAS Programmer, Clinical Standards Consultant',
 				works: 'Works',
 				blog: 'Blog',
 				'google-plus': '+me',
@@ -58,7 +58,7 @@ var site = {
 				'programming-skills': 'Programming Skills',
 				'using-tools': 'Using Tools',
 				'contact-me': 'Contact Me',
-				'contact-me-description': 'I undertake various types of Web development in long term. If you can provide a payment not lower than $20/h, feel free contact me: ',
+				'contact-me-description': 'Contact me: ',
 				recently: 'Recently'
 			}
 		},
@@ -360,7 +360,7 @@ elf(function () {
 	}
 	site.Translation.translate(navigator.language || 'zh-CN');
 
-	elf('a.mail').attr('href', elf().template('mailto:#{0}@#{1}', 'mytharcher', 'gmail.com'));
+	elf('a.mail').attr('href', elf().template('mailto:#{0}@#{1}', 'JiangtangHu', 'gmail.com'));
 
 	var module = document.body.className.replace(/page-type-/g, '').split(' ');
 	module.forEach(function (item) {
