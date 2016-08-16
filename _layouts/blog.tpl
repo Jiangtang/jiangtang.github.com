@@ -22,7 +22,7 @@
 	{{ content }}
 
 	<footer>
-		<p>&copy; Since 2012 <a href="http://yanjunyi.com/">yanjunyi.com</a></p>
+		<p>&copy; Since 2008 <a href="http://jiangtanghu.com/">jiangtanghu.com</a></p>
 	</footer>
 </div>
 
@@ -36,32 +36,32 @@
 	</nav>
 	
 	<form action="/search/" class="block block-search">
-		<h3>搜索</h3>
-		<p><input type="search" name="q" placeholder="输入关键词按回车搜索" /></p>
+		<h3>Search</h3>
+		<p><input type="search" name="q" placeholder="Search" /></p>
 	</form>
 	
 	<div class="block block-about">
-		<h3>关于</h3>
+		<h3>About</h3>
 		<figure>
 			{% if site.meta.author.gravatar %}<img src="{{ site.meta.gravatar}}{{ site.meta.author.gravatar }}?s=48" />{% endif %}
 			<figcaption><strong>{{ site.meta.author.name }}</strong></figcaption>
 		</figure>
-		<p>由于经常造各种轮子，所以自诩为前端造轮子工程师。各种形式主义，工具癖，规划控，纠结帝……以及重度拖延症患者。</p>
+		<p>Statistical SAS Programmer, Clinical Standards Consultant</p>
 	</div>
 	
 	<div class="block block-license">
-		<h3>版权申明</h3>
-		<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.5/cn/" target="_blank" class="hide-target-icon" title="本站(博客)作品全部采用知识共享署名-非商业性使用-禁止演绎 2.5 中国大陆许可协议进行许可。转载请通知作者并注明出处。"><img alt="知识共享许可协议" src="http://i.creativecommons.org/l/by-nc-nd/2.5/cn/88x31.png" /></a></p>
+		<h3>license</h3>
+		<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.5/cn/" target="_blank" class="hide-target-icon" title="Creative Commons BY-NC-ND 4.0"><img alt="Creative Commons" src="http://i.creativecommons.org/l/by-nc-nd/2.5/cn/88x31.png" /></a></p>
 	</div>
 	
 	<div class="block block-thank">
 		<h3>Powered by</h3>
 		<p>
-			<a href="http://disqus.com/" target="_blank" title="云评论服务">Disqus</a>,
+			<a href="http://disqus.com/" target="_blank" title="Disqus">Disqus</a>,
 			<a href="http://elfjs.com/" target="_blank">elf+js</a>,
 			<a href="https://github.com/" target="_blank">GitHub</a>,
-			<a href="http://www.google.com/cse/" target="_blank" title="自定义站内搜索">Google Custom Search</a>,
-			<a href="http://en.gravatar.com/" target="_blank" title="统一头像标识服务">Gravatar</a>,
+			<a href="http://www.google.com/cse/" target="_blank" title="Google Custom Search">Google Custom Search</a>,
+			<a href="http://en.gravatar.com/" target="_blank" title="Gravatar">Gravatar</a>,
 			<a href="http://softwaremaniacs.org/soft/highlight/en/">HighlightJS</a>,
 			<a href="https://github.com/mojombo/jekyll" target="_blank">jekyll</a>,
 			<a href="https://github.com/mytharcher/SimpleGray" target="_blank">SimpleGray</a>
@@ -80,7 +80,7 @@ site.URL_DISCUS_COMMENT = '{{ site.meta.author.disqus }}' ? 'http://{{ site.meta
 
 site.VAR_SITE_NAME = '{{ site.blog.name }}';
 site.VAR_GOOGLE_CUSTOM_SEARCH_ID = '{{ site.meta.author.gcse }}';
-site.TPL_SEARCH_TITLE = '#{0} / 搜索：#{1}';
+site.TPL_SEARCH_TITLE = '#{0} / Serach：#{1}';
 site.VAR_AUTO_LOAD_ON_SCROLL = {{ site.custom.scrollingLoadCount }};
 </script>
 {% include baidu-stats.tpl %}
