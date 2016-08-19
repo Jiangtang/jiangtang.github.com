@@ -1,0 +1,35 @@
+markdown: kramdown
+safe: false
+permalink: /blog/posts/:title
+exclude:
+  - README.md
+
+host: jiangtanghu.com
+
+blog:
+    name: From A Logicl Point of View
+    desc: From A Logicl Point of View
+
+custom:
+    category:
+        SAS: SAS
+    categories:
+      - name:  SAS
+        title: SAS
+
+
+
+    scrollingLoadCount: 2                          # 滚屏自动加载文章数量，“0”为关闭
+
+meta:
+    author:
+        name: JiangtangHu
+        email: JiangtangHu@gmail.com
+        disqus: NULL                    # Disqus
+        gcse: NULL     # Google
+        github: Jiangtang                          # GitHub
+        gravatar: 1cd8c12591616d8c22aaa624f8c07834  # Gravatar
+
+    disqus: disqus.com/embed.js                     # Disqus评论的JS地址
+    gapi: http://www.google.com/jsapi               # Google API地址
+    gravatar: http://en.gravatar.com/avatar/        # Gravatar头像服务器地址
