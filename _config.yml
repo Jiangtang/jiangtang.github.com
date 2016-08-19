@@ -28,7 +28,7 @@ meta:
         disqus: NULL                    # Disqus
         gcse: NULL     # Google
         github: Jiangtang                          # GitHub
-        gravatar: 1cd8c12591616d8c22aaa624f8c07834  # Gravatar
+        gravatar: 00c33d59289d0a50961a5c170059e0a7  # Gravatar
 
     disqus: disqus.com/embed.js                     # Disqus评论的JS地址
     gapi: http://www.google.com/jsapi               # Google API地址
