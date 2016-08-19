@@ -6,8 +6,7 @@ author: Jiangtang Hu
 layout: post
 guid: http://www.jiangtanghu.com/blog/?p=1396
 permalink: /2015/09/04/sas-mapreduce-a-quick-followup-by-ds2/
-categories:
-  - SAS
+category: SAS
 tags:
   - DS2
   - MapReduce
