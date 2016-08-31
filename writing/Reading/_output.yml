@@ -10,7 +10,7 @@ bookdown::gitbook:
         <li><a href="https://bookdown.org" target="blank">Published with bookdown</a></li>
     download: [pdf, epub, mobi]
     edit:
-      link: https://github.com/jiangtang/master/inst/writing/%s
+      link: https://github.com/Jiangtang/jiangtang.github.com/edit/master/writing/Reading/%s
       text: "Edit"
 bookdown::html_chapters:
   css: [css/style.css, css/toc.css]
