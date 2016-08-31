@@ -1,0 +1,54 @@
+# Iliad
+
+Something to say?
+
+## Resources
+
+### English Translations and Audiobooks
+
+#### Translated by Ian Johnson {#Johnson-Iliad}
+
+[Ian Johnson](https://records.viu.ca/~johnstoi/homer/iliad_title.htm), *free*
+
+#### Translated by Samuel Butler, Revised by Gregory Nagy et al. {#Nagy-Iliad}
+
+in [Center For Hellenic Studies](http://chs.harvard.edu/CHS/article/display/5286), *free*
+
+
+
+### Video Courses
+
+#### The Ancient Greek Hero in 24 Hours (Hour 1-8 )
+
+In [edX](https://courses.edx.org/courses/course-v1%3AHarvardX%2BHUM2x%2B2T2016/info), taught by [Gregory Nagy](http://chs.harvard.edu/CHS/article/display/1234) of Harvard University. 
+
+Using text in Section \@ref(Nagy-Iliad)
+
+Homeric Iliad  
+Homeric Odyssey  
+The Epic Cycle  
+Hesiodic Theogony  
+Hesiodic Works and Days  
+Herodotus’ Histories  
+Homeric Hymn  
+Alcman’s Partheneion  
+The Poetry of Sappho  
+Aeschylus’ Agamemnon  
+Aeschylus’ Libation Bearers  
+Aeschylus’ Eumenides  
+Sophocles’ Oedipus at Colonus  
+Sophocles’ Oedipus Tyrannos  
+Euripides’ Hippolytus  
+Euripides’ Bacchae  
+Plato’s The Apology of Socrates  
+Plato’s Phaedo  
+Pausanias  
+Theognis of Megara  
+Pindar’s Pythian  
+Selections from Aristotle  
+
+#### Greeks at War: Homer at Troy
+
+In [edX](https://courses.edx.org/courses/course-v1%3AColgateX%2BGW101x%2B3T2015/info), taught by [Robert Garland](http://www.colgate.edu/facultysearch/facultydirectory/rgarland) of Colgate University. 
+
+

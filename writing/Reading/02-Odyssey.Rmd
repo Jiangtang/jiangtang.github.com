@@ -1,0 +1,41 @@
+# Odyssey
+
+Something to say?
+
+## Resources
+
+### English Translations and Audiobooks
+
+#### Translated by Ian Johnson
+
+[Ian Johnson](https://records.viu.ca/~johnstoi/homer/odysseytofc.htm), *free*
+
+#### Translated by Samuel Butler, Revised by Gregory Nagy et al.  {#Nagy-Odyssey}
+
+in [Center For Hellenic Studies](http://chs.harvard.edu/CHS/article/display/5287), *free*
+
+
+### Video Courses
+
+#### Greek and Roman Mythology (Week 1-4)
+
+In [Coursera](https://www.coursera.org/learn/mythology/home/welcome), taught by [Peter Struck](http://www.sas.upenn.edu/~struck/) of University of Pennsylvania. 
+
+Homer, Odyssey 《奥德赛》  
+Hesiod, Theogony 《神谱》  
+Homeric Hymns to Apollo and Demeter 荷马时代的诗歌  
+Aeschylus, Oresteia 埃斯库罗斯《俄瑞斯忒亚》三连剧  
+Sophocles, Oedipus the King 索福克勒斯《俄狄浦斯王》  
+Euripides, Bacchae 欧里庇得斯《酒神的女祭司》  
+Vergil, Aeneid 维吉尔《埃涅阿斯纪》  
+Ovid, Metamorphoses 奥维德《变形记》  
+
+
+#### The Ancient Greek Hero in 24 Hours (Hour 9-11)
+
+In [edX](https://courses.edx.org/courses/course-v1%3AHarvardX%2BHUM2x%2B2T2016/info), taught by [Gregory Nagy](http://chs.harvard.edu/CHS/article/display/1234) of Harvard University. 
+
+Using text in Section \@ref(Nagy-Odyssey)
+
+
+

@@ -1,0 +1,26 @@
+---
+title: "Books I am Reading"
+author: ["Jiangtang Hu"]
+date: "`r Sys.Date()`"
+knit: "bookdown::render_book"
+documentclass: book
+link-citations: yes
+site: bookdown::bookdown_site
+
+description: "Personal Notebook"
+url: 'http\://jiangtanghu.com/'
+github-repo: Jiangtang/Writing
+twitter-handle: JiangtangHu
+cover-image: images/cover.png
+
+
+---
+
+
+
+
+# Welcome {-}
+
+
+
+This work is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivs 3.0](http://creativecommons.org/licenses/by-nc-nd/3.0/us/) United States License. 
