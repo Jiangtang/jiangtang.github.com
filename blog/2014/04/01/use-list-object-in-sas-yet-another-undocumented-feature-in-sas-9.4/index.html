@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>Use List Object in SAS: Yet Another Undocumented Feature in SAS 9.4 - Lithium Theme</title>
+<meta property="og:title" content="Use List Object in SAS: Yet Another Undocumented Feature in SAS 9.4 - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">Use List Object in SAS: Yet Another Undocumented Feature in SAS 9.4</h1>
+
+    
+    <span class="article-date">April 1, 2014</span>
+    
+
+    <div class="article-content">
+      
+
+<p>Last year I gave a talk in SESUG 2013 on <a href="http://analytics.ncsu.edu/sesug/2013/BtB-18.pdf">list manipulation on SAS using a collection of function-like macros</a>. Today I just explored in my recently upgraded SAS 9.4 that I can play with list natively, which means I can create a list, slice a list and do other list operations in Data Steps! This is not documented yet(which means it will not be supported by the software vendor) and I can see warning message in Log window like “WARNING: List object is preproduction in this release”,  and it is still limited somehow, so use it in your own risk (and of course, fun).  Adding such versatile list object will definitely make SAS programmers more powerful. I will keep watch its further development.</p>
+
+<p>*<strong>*</strong>*<strong>*</strong>*<strong><span style="color: #ff0000;">Update</span></strong>*<strong>*</strong>**</p>
+
+<p>Some readers emailed to me that they can’t get the expected results as I did here. I think it’s best to check your own system:</p>
+
+<p>I. Make sure you use the latest SAS software. I only tested on a 64-bit Window 7 machine with SAS 9.4 TS1M1:</p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/SAS94.png"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;" title="SAS94" alt="SAS94" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/SAS94_thumb.png" width="442" height="186" border="0" /></a></p>
+
+<p>II. Make sure all hotfixes were applied (You can use this <a href="http://ftp.sas.com/techsup/download/hotfix/HF2/SASHFADD.html">SAS Hot Fix Analysis, Download and Deployment Tool</a>).</p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/hotfix.png"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;" title="hotfix" alt="hotfix" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/hotfix_thumb.png" width="432" height="252" border="0" /></a></p>
+
+<p>*<strong>*</strong>*<strong>*</strong>*<strong><span style="color: #ff0000;">Update End</span></strong>*<strong>*</strong>**</p>
+
+<p>The followings are some quick plays and I will report more after more research:</p>
+
+<h2 id="1-create-a-list">1. Create a List</h2>
+
+<p>It’s easy to create a list:</p>
+
+<blockquote>
+<p><span style="font-family: 'Courier New';">data <em>null</em>;<br /> a = [&#8216;apple&#8217;, &#8216;orange&#8217;, &#8216;banana&#8217;];<br /> put a;<br /> run;</span></p>
+</blockquote>
+
+<p>the output in Log window:</p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list1.png"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;" title="list1" alt="list1" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list1_thumb.png" width="448" height="84" border="0" /></a></p>
+
+<p>You can also transfer a string to a list:</p>
+
+<blockquote>
+<p><span style="font-family: 'Courier New';">data <em>null</em>;<br /> a = &#8216;SAS94&#8217;<br /> b =list(a)<br /> put b;<br /> run;</span></p>
+</blockquote>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list2.png"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;" title="list2" alt="list2" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list2_thumb.png" width="460" height="80" border="0" /></a></p>
+
+<h2 id="2-slice-a-list">2. Slice a List</h2>
+
+<p>Slicing a list is also pretty straightforward, like in R and Python:</p>
+
+<blockquote>
+<p><span style="font-family: 'Courier New';">data <em>null</em>;<br /> a = [&#8216;apple&#8217;, &#8216;orange&#8217;, &#8216;banana&#8217;];<br /> b = a[0];<br /> c = a[:-1];<br /> d = a[1:2];<br /> put a;<br /> put b;<br /> put c;<br /> put d;<br /> run;</span></p>
+</blockquote>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list3.png"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;" title="list3" alt="list3" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list3_thumb.png" width="406" height="110" border="0" /></a></p>
+
+<h2 id="3-list-is-immutable-in-sas">3. List is Immutable in SAS!?</h2>
+
+<p>I felt much confortable to play list operations in SAS but a weird thing just happened. I tried to change a value in a list:</p>
+
+<blockquote>
+<p><span style="font-family: 'Courier New';">data <em>null</em>;<br /> a = [&#8216;apple&#8217;, &#8216;orange&#8217;, &#8216;banana&#8217;];<br /> a[0] = &#8216;Kivi&#8217;;<br /> put a;<br /> run;</span></p>
+</blockquote>
+
+<p>Unexpectedly, I got an error:</p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list4.png"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;" title="list4" alt="list4" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list4_thumb.png" width="443" height="76" border="0" /></a></p>
+
+<p>hhh, I need to create a new list to hold such modification? This is funny.</p>
+
+<p>Based on my quick exploration, the list object in SAS is pretty intuitive from a programmers’ point of view. But since it’s undocumented and I don’t know how long it will stay in “preproduction” phase,  just be careful to implement it in your production work.</p>
+
+<p>Personally I feel very exciting to “hack” such wonderful list features in SAS 9.4. If well implemented, it will easily beat R and Python (which claim themselves supporting rich data types and objects) as a scripting language for SAS programmers. I will keep update in <a href="http://en.wikipedia.org/wiki/April_1">this page</a>.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

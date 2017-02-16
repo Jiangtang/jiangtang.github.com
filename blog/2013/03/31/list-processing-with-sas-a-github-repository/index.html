@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>List Processing With SAS: A Github Repository - Lithium Theme</title>
+<meta property="og:title" content="List Processing With SAS: A Github Repository - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">List Processing With SAS: A Github Repository</h1>
+
+    
+    <span class="article-date">March 31, 2013</span>
+    
+
+    <div class="article-content">
+      <p>I have <a href="http://jiangtanghu.com/docs/en/Latin2Eng.sas">a function like macro (recursive version) to create a sequence</a>:</p>
+
+<blockquote>
+<p><span style="font-family: 'Courier New';">%macro _list(n,pre=ff);<br /> %if &amp;n=1 %then &amp;pre.1;<br /> %else %_list(%eval(&amp;n-1)),&amp;pre.&n;<br /> %mend _list;</span></p>
+
+<p><span style="font-family: 'Courier New';">%put %_list(3); *produces ff1, ff2, ff3;</span></p>
+</blockquote>
+
+<p>But when I read one of Ian Whitlock’s papers, <em>Names, Names, Names &#8211; Make Me a List</em> (<a href="http://www2.sas.com/proceedings/forum2007/052-2007.pdf">SGF 2007</a>, <a href="http://analytics.ncsu.edu/sesug/2008/SBC-128.pdf">SESUG 2008</a>),  I say: stop! I&#8217;m gonna use Ian’s %range and I create <a href="https://github.com/Jiangtang/SAS_ListProcessing/" target="_blank">Github </a>page to hold it (with minimum modifications due to personal preference).</p>
+
+<p>I once posted <a href="http://www.jiangtanghu.com/blog/2011/11/08/my-collection-of-sas-macro-repositories/"><em>My Collection of SAS Macro Repositories</em></a>_ _credited to some SAS gurus like Richard DeVenezia. When facing a programming challenge, there is always a trade-off: should I take a look at what others wrote, or I just write from the scratch? Searching also needs lots of efforts, so I plan to utilize Github pages to minimum my own searching efforts and hope it would be helpful for you (no <em>intelligence waste anymore!</em>). I begin with SAS list processing:</p>
+
+<p><a href="https://github.com/Jiangtang/SAS_ListProcessing/">https://github.com/Jiangtang/SAS_ListProcessing/</a></p>
+
+<p>I got most of such utilities macros (with detailed comments, examples and sources) from papers, blogs and other websites and honors belong to their authors! Sometimes I will also add <a href="https://github.com/Jiangtang/SAS_ListProcessing/blob/master/slice.sas" target="_blank">my own</a> if I think there are some holes to fill up. To get start, you may read a _<a href="https://github.com/Jiangtang/SAS_ListProcessing/blob/master/README.md" target="_blank">READ ME </a>(will keep updated)_ first. Besides the individual macros, <a href="https://github.com/Jiangtang/SAS_ListProcessing/blob/master/_ListProcessing" target="_blank">a combined file</a> (trigged by <a href="https://github.com/Jiangtang/SAS_ListProcessing/blob/master/_ListProcessing_Combine.bat" target="_blank">a simple Dos command</a>) is also available.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

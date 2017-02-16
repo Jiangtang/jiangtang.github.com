@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>List Processing With SAS (1): List Creating I - Lithium Theme</title>
+<meta property="og:title" content="List Processing With SAS (1): List Creating I - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">List Processing With SAS (1): List Creating I</h1>
+
+    
+    <span class="article-date">July 11, 2013</span>
+    
+
+    <div class="article-content">
+      
+
+<p>Suppose you have 10 datasets, literally ds1, ds2, …ds10 and you need to concatenate them all. You may first get a quick shortcut <strong><font color="#ff0000">set ds1-ds10</font></strong>. If such list members were generated dynamically (and may hold a form like ds1a, ds2a,… ds10a) , you will probably come out a macro solution:</p>
+
+<blockquote>
+<p><font face="Courier New">&#160;&#160; %macro doit; <br />&#160;&#160;&#160;&#160;&#160;&#160; data combine; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; set <font color="#ff0000">%do i=1 %to &n; ds&amp;i %end;</font> ; <br />&#160;&#160;&#160;&#160;&#160;&#160; run; <br />&#160;&#160; %mend; <br />&#160;&#160; %doit</font></p>
+</blockquote>
+
+<p>where we conduct the list series in a %do loop. Also, suppose we need to fill out a list of datasets in a FROM clause of a SQL procedure. You can not copy the %do loop above because all elements should be separated by a comma. I <a href="http://www.jiangtanghu.com/blog/2013/03/31/list-processing-with-sas-a-github-repository/">once wrote a recursive macro to produce such list</a>:</p>
+
+<blockquote>
+<p><font face="Courier New">%macro _list(n,pre=ds); <br />&#160;&#160;&#160; %if &amp;n=1 %then &amp;pre.1; <br />&#160;&#160;&#160;&#160; %else %_list(%eval(&amp;n-1)),&amp;pre.&n; <br />%mend _list;</font></p>
+
+<p><font face="Courier New">%put %_list(10);</font></p>
+</blockquote>
+
+<p>The question is, how can we produce such list of values at a universal form? I put all my collected SAS list processing utilities (macro like functions) at Github:</p>
+
+<blockquote>
+<p><a href="https://github.com/Jiangtang/SAS_ListProcessing/">https://github.com/Jiangtang/SAS_ListProcessing/</a></p>
+</blockquote>
+
+<p>and we can begin with macro <a href="https://github.com/Jiangtang/SAS_ListProcessing/blob/master/range.sas">%range</a> by Ian Whitlock and Chang Chung:</p>
+
+<blockquote>
+<p><font face="Courier New">filename list url&#160; &ldquo;</font><a href="https://raw.github.com/Jiangtang/SAS_ListProcessing/master/_ListProcessing&quot;;"><font face="Courier New">https://raw.github.com/Jiangtang/SAS_ListProcessing/master/_ListProcessing&rdquo;;</font></a><br />
+<font face="Courier New">%inc list;</font></p>
+
+<p><font face="Courier New">%put %range(to=10); <br />%put %range(to=10, opre=%str(ds)); <br />%put %range(to=10, opre=%str(ds),osuf=%str(a)); <br />%put %range(from=2,to=10,step=3,osep=%str(,)); <br />%put %range(from=2,to=10,step=3,osep=%str(,),osuf=%str(ds));</font></p>
+
+<p><font face="Courier New"></font></p>
+</blockquote>
+
+<p>The outputs:</p>
+
+<blockquote>
+<p>1 2 3 4 5 6 7 8 9 10<br />
+ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10<br />
+ds1a ds2a ds3a ds4a ds5a ds6a ds7a ds8a ds9a ds10a<br />
+2,5,8<br />
+2ds,5ds,8ds</p>
+</blockquote>
+
+<p><a href="https://github.com/Jiangtang/SAS_ListProcessing/blob/master/range.sas">%range</a> is a very versatile macro like function which accepts lower and upper bounds, increments, separated symbol, prefix and suffix as parameters to create bunch of lists.</p>
+
+<h5 id="note">Note:</h5>
+
+<p>To create a non-integer list, use <a href="https://github.com/Jiangtang/SAS_ListProcessing/blob/master/range_non_int.sas">%range_non_int</a>:</p>
+
+<blockquote>
+<p><font face="Courier New">%put %range_non_int(start = 1 , end = 2 , by = .25 ) ;</font></p>
+</blockquote>
+
+<p>and you get</p>
+
+<blockquote>
+<p>1 1.25 1.5 1.75 2</p>
+</blockquote>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>Import .Rdata to SAS, along with Labels - Lithium Theme</title>
+<meta property="og:title" content="Import .Rdata to SAS, along with Labels - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">Import .Rdata to SAS, along with Labels</h1>
+
+    
+    <span class="article-date">May 12, 2015</span>
+    
+
+    <div class="article-content">
+      <p><span style="font-size: xx-small;">I didn’t </span><a href="http://www.jiangtanghu.com/blog/2010/10/29/sas-iml-basic/"><span style="font-size: xx-small;">play with SAS/IML</span></a> <span style="font-size: xx-small;">for a while. I call it back when I need to read some R format data.</span></p>
+
+<p><span style="font-size: xx-small;">Technically, .Rdata is not a data format. It’s rather a big container to hold bunch of R objects:</span></p>
+
+<p><span style="font-size: xx-small;"><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/Rdata1.png"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border: 0px;" title="Rdata" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/Rdata_thumb1.png" alt="Rdata" width="408" height="213" border="0" /></a></span></p>
+
+<p><span style="font-size: xx-small;">In this example, when a .Rdata is loaded, 3 objects are included where ‘data’(the ‘real’ data) and ‘desc’ (data description portion) are of our interests.</span></p>
+
+<p><span style="font-size: xx-small;">SAS/IML offers a nice interface to call R command which can be used to read the R format data:</span></p>
+
+<blockquote>
+<p><span style="font-family: 'Courier New'; font-size: xx-small;">proc iml;<br /> <strong>submit / R;</strong><br /> load(&#8220;C:/data/w5/R data sets for 5e/GPA1.RData&#8221;)<br /> <strong>endsubmit;</strong></span></p>
+
+<p><span style="font-family: 'Courier New'; font-size: xx-small;">    <strong>call</strong> <strong>ImportDataSetFromR</strong>(&#8220;work.GPA1&#8221;, &#8220;<span style="color: #ff0000;">data</span>&#8220;);<br /> <strong>call</strong> <strong>ImportDataSetFromR</strong>(&#8220;work.GPA1desc&#8221;, &#8220;<span style="color: #ff0000;">desc</span>&#8220;);</span></p>
+
+<p><span style="font-family: 'Courier New'; font-size: xx-small;">quit;</span></p>
+
+<p><span style="font-family: 'Courier New'; font-size: xx-small;">data <em>null</em>;<br /> set GPA1desc end = eof ;<br /> i+1;<br /> II=left(put(i,3.));<br /> call symputx(&#8216;var&#8217;||II,variable);<br /> call symputx(&#8216;label&#8217;||II,label);<br /> if eof then call symputx(&#8216;n&#8217;,II);<br /> run;</span></p>
+
+<p><span style="font-family: 'Courier New'; font-size: xx-small;">%macro labelit;<br /> data gpa1;<br /> set gpa1;</span></p>
+
+<p><span style="font-family: 'Courier New'; font-size: xx-small;">    label<br /> %do i=1 %to &n;<br /> &amp;&amp;var&amp;i = &amp;&amp;label&amp;i<br /> %end;<br /> ;<br /> run;<br /> %mend;</span></p>
+
+<p><span style="font-family: 'Courier New'; font-size: xx-small;">%labelit</span></p>
+</blockquote>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>Work With Oracle: A Quick Sheet for SAS Programmers - Lithium Theme</title>
+<meta property="og:title" content="Work With Oracle: A Quick Sheet for SAS Programmers - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/github.min.css' rel='stylesheet' type='text/css'>
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">Work With Oracle: A Quick Sheet for SAS Programmers</h1>
+
+    
+    <span class="article-date">December 4, 2009</span>
+    
+
+    <div class="article-content">
+      <p>(Note: All the followings are tested on Windows XP environment.)</p>
+
+<p><strong>0. Install Oracle Database 10g Express Edition</strong></p>
+
+<p>Fast (and free) to download, easy to deploy and simple to admin&#8211;for learning and testing purpose, Oracle Database 10g Express Edition (Oracle Database XE, a mini version of Oracle Database 10<em>g</em> Release 2) are strongly recommended:</p>
+
+<p>0.1 Download it at <a href="http://www.oracle.com/technology/software/products/database/xe/index.html">its homepage</a>(206MB);</p>
+
+<p>0.2 Install it following default settings;</p>
+
+<p>0.3 Unlock accounts for HR and SCOTT. In a windows DOS prompt, using the following scripts:</p>
+
+<blockquote>
+<pre>sqlplus sys/<span style="color:#ff0000;"><em>YourSysPassword</em> </span>as sysdba</pre>
+
+<pre>alter user HR account unlock</pre>
+
+<pre>alter user HR identified by <em><span style="color:#ff0000;">YourHRPassword</span></em></pre>
+
+<pre>alter user SCOTT account unlock</pre>
+
+<pre>alter user SCOTT identified by TIGER</pre>
+</blockquote>
+
+<pre>Or you can accomplish these tasks within the Oracle web application:</pre>
+
+<blockquote>
+<pre><a title="http://localhost:8081/apex" href="http://localhost:8081/apex">http://localhost:8081/apex</a></pre>
+</blockquote>
+
+<p><strong>1. Connect Oracle using SAS libname engine</strong></p>
+
+<blockquote>
+<p><em>libname SCOTT oracle user=&#8221;SCOTT&#8221; password=&#8221;TIGER&#8221; path=&#8217;xe&#8217; ;</em></p>
+</blockquote>
+
+<pre>Note: <em>xe</em> is the default path for Oracle Database XE.</pre>
+
+<p><strong>2. Connect Oracle using SQL Procedure Pass-Through Facility</strong></p>
+
+<blockquote>
+<p><em>proc sql ;<br />
+connect to oracle as orcl<br />
+(user=&#8221;SCOTT&#8221; password=&#8221;TIGER&#8221; path=&#8217;xe&#8217;);</em></p>
+
+<pre><code>_select *       
+</code></pre>
+
+<p>from connection to orcl_</p>
+
+<p><span style="color:#ff0000;"><em> (</em></span></p>
+
+<p><span style="color:#ff0000;"><em> <strong>SELECT …</strong></em></span></p>
+
+<p><span style="color:#ff0000;"><em><strong><span class="Apple-style-span" style="font-weight: normal; "> ) ;</span></strong></em></span></p>
+
+<pre><code>_disconnect from orcl;&lt;/p&gt; 
+</code></pre>
+
+<p>quit;</em></blockquote></p>
+
+<p>Note: 1) In this approach, Oracle, instead of SAS, processes the SQL statement (i.e., you use the more powerful and flexible Oracle SQL syntax instead of SAS Proc SQL procedure for querying. For more, se<em>e <a href="http://support.sas.com/documentation/cdl/en/lrcon/61722/HTML/default/a001044413.htm">SAS Doc</a></em>)<em>.</em></p>
+
+<pre><code>      __ 2) Your Oracle SQL codes should be placed in the &lt;span style=&quot;color:#ff0000;&quot;&gt;RED&lt;/span&gt; blocks, and end without a semicolon(;):
+</code></pre>
+
+<blockquote>
+<p>_select *</p></p>
+
+<p>from emp</em></blockquote></p>
+
+<p>3) Only basic Oracle SQL statements (<em>select, create table</em>, &hellip;)can pass through this facility.</p>
+
+<p><strong>3. Load SAS datasets to Oracle database</strong></p>
+
+<blockquote>
+<p>proc copy in=sashelp<br />
+out=scott;<br />
+select class;<br />
+run;</p>
+</blockquote>
+
+<p><strong>4. Misc: Some differences between Oracle SQL and SAS Proc SQL</strong></p>
+
+<p><strong>4.1 Table aliases</strong></p>
+
+<p>Oracle: <em>from employees a;</em></p>
+
+<p>SAS: <em>from employees a;</em> or</p>
+
+<blockquote>
+<p><em>from employees <span style="color:#ff0000;">as</span> a;</em></p>
+</blockquote>
+
+<p><strong>4.2 Column aliases</strong></p>
+
+<p>Oracle: don’t use single quotation marks(‘’).</p>
+
+<blockquote>
+<p>_select job_id <span style="color:#ff0000;">as job</span>, job_id <span style="color:#ff0000;">job</span>, job_id <span style="color:#ff0000;">as &#8220;job&#8221; <span style="color:#000000;">,</span> <strike>job<em>id <span style="color:#ff0000;">as ‘job’</span></strike></span></em></p>
+</blockquote>
+
+<p>SAS:</p>
+
+<blockquote>
+<p>_select job_id <span style="color:#ff0000;">as job</span>, job_id <span style="color:#ff0000;">&#8220;job&#8221;</span> , job_id <span style="color:#ff0000;">&#8216;job&#8217;</span>, <strike><span style="color:#ff0000;">job<em>id job</span></strike></em></p>
+</blockquote>
+
+<p><strong>4.3 Literal Character Strings</strong></p>
+
+<p>Oracle: Date and character literal values must be enclosed within single quotation marks(‘’).</p>
+
+<p>SAS: Use both single and double quotation marks.</p>
+
+<p><strong>4.4 Order the null value</strong></p>
+
+<p>Oracle: Null values are displayed last for ascending sequences and first for descending sequences.</p>
+
+<p>SAS: Null values are displayed first for ascending sequences and last for descending sequences.</p>
+
+<p><strong>4.5 Nesting Group Functions</strong></p>
+
+<blockquote>
+<p>_select max(avg(salary))<br />
+from employees<br />
+group by department<em>id</em></p>
+</blockquote>
+
+<p>SAS log:</p>
+
+<blockquote>
+<p>ERROR: Summary functions nested in this way are not supported.</p>
+</blockquote>
+
+<p>Optional approach for SAS:</p>
+
+<blockquote>
+<p>_select max(avg) as max<br />
+from(<br />
+select avg(salary) as avg<br />
+from employees<br />
+group by department<em>id )</em></p>
+</blockquote>
+
+<p><strong>4.6 row number(_n_)</strong></p>
+
+<p>Oracle:</p>
+
+<blockquote>
+<p>select <span style="color:#ff0000;">rownum</span><br />
+from employees</p>
+</blockquote>
+
+<p>SAS:</p>
+
+<blockquote>
+<p>select <span style="color:#ff0000;">monotonic()</span><br />
+from employees</p>
+</blockquote>
+
+<p>Note: <span style="color:#ff0000;">monotonic()</span> is an undocumented function of SAS, <em>see<span class="Apple-style-span" style="font-style: normal; "><a href="http://www2.sas.com/proceedings/sugi29/040-29.pdf">http://www2.sas.com/proceedings/sugi29/040-29.pdf</a></span></em></p>
+</blockquote>
+</blockquote>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+

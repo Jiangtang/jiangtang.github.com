@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>SAS Data Step&amp;rsquo;s Built-in Loop: An illustrated Example - Lithium Theme</title>
+<meta property="og:title" content="SAS Data Step&amp;rsquo;s Built-in Loop: An illustrated Example - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">SAS Data Step&amp;rsquo;s Built-in Loop: An illustrated Example</h1>
+
+    
+    <span class="article-date">January 3, 2011</span>
+    
+
+    <div class="article-content">
+      <p>Some newbie SAS programmers take SAS as their first programming language even learned. Sometimes they are confused by the concept of “data step’s built-in loop” even after reading the well-written <em>The Little SAS Book: A Primer</em>:</p>
+
+<blockquote>
+<p>DATA steps also have an underlying structure, an implicit, built-in loop. You don’t tell SAS to execute this loop: SAS does it automatically. Memorize this:</p>
+
+<p><strong>DATA steps execute line by line and observation by observation.</strong></p>
+</blockquote>
+
+<p>Programmers could memorize the statement above and apply it well in their programming practices, but still find it hard to get the vivid idea about the so called <strong>implicit</strong> built-in loop. –This post would make it easy.</p>
+
+<p>The following will show an <strong>explicit</strong> loop example in C++. Note that you do not need to know any about C++ to get the idea. Suppose that a data file <em>data.dat</em> in D driver holds three numbers</p>
+
+<blockquote>
+<p>1</p>
+
+<p>2</p>
+
+<p>3</p>
+</blockquote>
+
+<p>The question is how to (read and) print out these numbers and their sums.  Following is the C++ approach (<strong>just read the bold session</strong>):</p>
+
+<blockquote>
+<p><span style="font-family: 'Courier New';">#include <iostream><br /> #include <fstream><br /> using namespace std;<br /> int main()<br /> {<br /> int x;<br /> int sum=0;<br /> ifstream inFile;<br /> inFile.open(&#8220;d:data.dat&#8221;);<br /> inFile &gt;&gt; x; </span></p>
+
+<p><span style="font-family: 'Courier New';"><strong> while (<span style="color: #ff0000;">!inFile.eof( )</span>)<br /> {<br /> cout&lt;<x<<endl;<br /> sum = sum + x;<br /> inFile &gt;&gt; x;<br /> }</strong> </span></p>
+
+<p><span style="font-family: 'Courier New';">inFile.close( );<br /> cout &lt;&lt; &#8220;Sum = &#8221; &lt;&lt; sum &lt;&lt; endl;<br /> return 0;<br /> }</span></p>
+</blockquote>
+
+<p>There is an <strong>explicit</strong> loop in these C++ codes: while (<span style="color: #ff0000;">!inFile.eof( )</span>) .  While it is not at the end of infile, the codes above will keep print out the numbers and do the accumulation. The final output is</p>
+
+<blockquote>
+<p>1</p>
+
+<p>2</p>
+
+<p>3</p>
+
+<p>sum=6</p>
+</blockquote>
+
+<p>The following SAS codes produce the exactly same output:</p>
+
+<blockquote>
+<p><span style="font-family: 'Courier New';">data <em>null</em>;<br /> infile &#8220;d:data.dat&#8221; end=eof;<br /> input x;<br /> sum+x;<br /> put x;<br /> if eof then put sum=;<br /> run;</span></p>
+</blockquote>
+
+<p>Note that SAS codes do not need an <strong>explicit</strong> loop to reach to the end of file. There is a so called <strong>implicit</strong> built-in loop.<the end></p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

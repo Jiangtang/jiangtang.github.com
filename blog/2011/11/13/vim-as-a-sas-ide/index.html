@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>Vim as A SAS IDE - Lithium Theme</title>
+<meta property="og:title" content="Vim as A SAS IDE - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">Vim as A SAS IDE</h1>
+
+    
+    <span class="article-date">November 13, 2011</span>
+    
+
+    <div class="article-content">
+      <p>Few configurations (just copy this <a href="http://jiangtanghu.com/docs/en/sas.vim" target="_blank"><em>sas.vim</em></a> file to <em>C:\Program Files\vim\vim73\syntax</em> if you also use <a href="ftp://ftp.vim.org/pub/vim/pc/gvim73_46.ex" target="_blank">gVIM 7.3</a> at Windows) to make Vim as a simple <a href="http://www.jiangtanghu.com/blog/2011/11/05/get-start-with-wps-and-call-for-an-elegant-sas-ide/" target="_blank">SAS IDE</a> where</p>
+
+<blockquote>
+<p>F3: run SAS codes (in batch mode)</p>
+
+<p>F4: close other two windows (the current active window is Log window after F3 running; F4 jump to SAS file with full window)</p>
+
+<p>F5: jump to SAS file</p>
+
+<p>F6: jump to Log file</p>
+
+<p>F7: jump to lst file (list output)</p>
+
+<p>F8: keep only the current window (full window)</p>
+</blockquote>
+
+<p><img style="display: block; float: none; margin-left: auto; margin-right: auto;" alt="" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/11/VIM_SAS.png" /></p>
+
+<p>*<strong>*</strong>*<strong>*</strong>****</p>
+
+<p>Details and Credits</p>
+
+<ol>
+<li>The first post on Vim and SAS I read is by <a href="http://www.blog496.org/2011-7-17-win-use-vim-as-sas-r-editor.html" target="_blank">Xiaowei Wang</a> in Chinese.</li>
+</ol>
+
+<p>The original SAS syntax file took from <a href="http://www.vim.org/scripts/script.php?script_id=3522" target="_blank">Zhenhuan Hu</a>.</p>
+
+<p><a href="http://www-personal.umich.edu/~knassen/vim/sasfns.html" target="_blank">Kent Nassen</a> also maintains some Vim functions to run SAS codes and check log.</p>
+
+<ol>
+<li>To run SAS codes using F3:</li>
+</ol>
+
+<blockquote>
+<p><span style="font-family: 'Courier New';">map <F3> :w<CR>:!SAS % -CONFIG &#8220;<span style="color: #ff0000;">C:\Program Files\SAS\SASFoundation\9.2\nls\en\SASV9.CFG</span>&#8220;<CR>:sp  %&lt;.lst<CR>:sp  %&lt;.log<CR></span></p>
+</blockquote>
+
+<ol>
+<li>Close other windows using F4:</li>
+</ol>
+
+<blockquote>
+<p><span style="font-family: 'Courier New';">map <F4> :close<CR>:close<CR></span></p>
+</blockquote>
+
+<ol>
+<li>Keep only current window using F8:</li>
+</ol>
+
+<blockquote>
+<p><span style="font-family: 'Courier New';">map <F8> : only<CR></span></p>
+</blockquote>
+
+<ol>
+<li>Jump to SAS file using F5:</li>
+</ol>
+
+<blockquote>
+<p><span style="font-family: 'Courier New';">map <F5> :e %&lt;.sas<CR></span></p>
+</blockquote>
+
+<ol>
+<li>Jump to Log file using F6:</li>
+</ol>
+
+<blockquote>
+<p><span style="font-family: 'Courier New';">map <F6> :e %&lt;.log<CR></span></p>
+</blockquote>
+
+<ol>
+<li>Jump to Lst file using F7:</li>
+</ol>
+
+<blockquote>
+<p><span style="font-family: 'Courier New';">map <F7> :e %&lt;.lst<CR></span></p>
+</blockquote>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<script async type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+    
+  </body>
+</html>
+

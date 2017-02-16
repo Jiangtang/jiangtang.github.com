@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ods Template on Lithium Theme</title>
+    <link>/tags/ods-template/index.xml</link>
+    <description>Recent content in Ods Template on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/ods-template/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Get Started with SAS Tagsets.ExcelXP</title>
+      <link>/2013/01/05/get-started-with-sas-tagsets.excelxp/</link>
+      <pubDate>Sat, 05 Jan 2013 17:46:24 +0000</pubDate>
+      
+      <guid>/2013/01/05/get-started-with-sas-tagsets.excelxp/</guid>
+      <description>
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Hate it or not (&lt;em&gt;Yes I do&lt;/em&gt;), SAS programmers can’t just get rid of Microsoft Office Excel in their life.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Now my turn (with Tagsets.ExcelXP, I can at least get rid of DDE)…&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;0-sas-templates-window-img-style-background-image-none-border-right-width-0px-margin-3px-auto-5px-padding-left-0px-padding-right-0px-display-block-float-none-border-top-width-0px-border-bottom-width-0px-border-left-width-0px-padding-top-0px-title-odstemplates-border-0-alt-odstemplates-src-http-www-jiangtanghu-com-blog-wp-content-uploads-2013-01-odstemplates-thumb-png-width-470-height-296-http-www-jiangtanghu-com-blog-wp-content-uploads-2013-01-odstemplates-png&#34;&gt;0. SAS Templates window &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/ODSTEMPLATES.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;ODSTEMPLATES&#34; border=&#34;0&#34; alt=&#34;ODSTEMPLATES&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/ODSTEMPLATES_thumb.png&#34; width=&#34;470&#34; height=&#34;296&#34; /&gt;&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;A visual way to browse all ODS templates is to use windows command “ODSTEMPLATES” to invoke a SAS template window.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;1-160-check-the-current-excelxp-tagset-version&#34;&gt;1.&amp;#160; Check the current ExcelXP tagset version&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;filename temp temp; &lt;br /&gt;ods tagsets.ExcelXP file=temp options(doc=&amp;#8217;help&amp;#8217;); &lt;br /&gt;ods tagsets.ExcelXP close;&lt;/font&gt; &lt;/font&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Scroll down the Log window to the end and you get something like:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;NOTE: This is the Excel XP tagset (Compatible with SAS 9.1.3 and above, &lt;font color=&#34;#ff0000&#34;&gt;v1.122&lt;/font&gt;, 01/04/2011). &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;2-get-the-source-codes-of-current-excelxp-tagset-and-library-it-s-stored&#34;&gt;2. Get the source codes of current ExcelXP tagset and library it’s stored&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc template; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; source Tagsets.ExcelXP; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The Log window shows the template codes:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;15&amp;#160;&amp;#160; proc template; &lt;br /&gt;16&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; source Tagsets.ExcelXP; &lt;br /&gt;define tagset Tagsets.ExcelXP; &lt;br /&gt;&amp;#160;&amp;#160; parent = Tagsets.ExcelBase; &lt;br /&gt;end; &lt;br /&gt;NOTE: Path &amp;#8216;Tagsets.ExcelXP&amp;#8217; is in: &lt;font color=&#34;#ff0000&#34;&gt;SASHELP.TMPLMST&lt;/font&gt;. &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Note Tagsets.ExcelXP is subject to Tagsets.ExcelBase.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The template store path uses a two level name in which SASHELP is a SAS library and TMPLMST, a name assigned to distinguish a set of templates. You can also store your customized templates in SASHELP.mytpl1, WORK.forTLF and such.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;If want a the source codes in a separated file rather than in Log window, try&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc template;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;source Tagsets.ExcelXP/&lt;font color=&#34;#ff0000&#34;&gt;file=&amp;ldquo;a:\test\ExcelXP.tpl&amp;rdquo;&lt;/font&gt;; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The extension doesn’t matter and you can use anything you like (including .SAS).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;3-list-all-ods-template-store-path&#34;&gt;3. List all ODS template store path&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods path show;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Log:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Current ODS PATH list is:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. SASUSER.TEMPLAT(UPDATE) &lt;br /&gt;2. SASHELP.TMPLMST(READ)&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This order also indicates the ODS template searching priority, first SASUSER.TEMPLAT then SASHELP.TMPLMST. If two templates with same name exist in both library, the one in SASUSER.TEMPLAT will be used.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Templates in SASHELP.TMPLMST can’t be modified(read only).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;4-install-latest-version-in-sasuser-library&#34;&gt;4. Install latest version in SASUSER library&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The last version of ExcelXP tagset is v1.127 by far according to SAS ODS MARKUP portal:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/&#34; title=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://support.sas.com/rnd/base/ods/odsmarkup/&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;filename excltags url &amp;#8216;&lt;/font&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/excltags.tpl&#39;;&#34;&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;http://support.sas.com/rnd/base/ods/odsmarkup/excltags.tpl&amp;#8217;;&lt;/font&gt;&lt;/a&gt;        &lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&lt;br /&gt;%include excltags;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;log:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;NOTE: TAGSET &amp;#8216;Tagsets.ExcelBase&amp;#8217; has been saved to: SASUSER.TEMPLAT &lt;br /&gt;NOTE: Overwriting existing template/link: Tagsets.Config_debug &lt;br /&gt;NOTE: TAGSET &amp;#8216;Tagsets.Config_debug&amp;#8217; has been saved to: SASUSER.TEMPLAT &lt;br /&gt;&lt;font color=&#34;#ff0000&#34;&gt;NOTE: TAGSET &amp;#8216;Tagsets.ExcelXP&amp;#8217; has been saved to: SASUSER.TEMPLAT&lt;/font&gt; &lt;br /&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Since there is already an ExcelXP tagset in SASHELP.TMPLMST and it can’t be overwritten, this new added ExcelXP tagset is thrown to SASUSER.TEMPLAT by adding a STORE option (check the source code) and will be used when statement “ODS tagsets.ExcelXP” invoked.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;5-list-all-templates&#34;&gt;5. List all templates&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc template; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; list / store=sasuser.templat; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; list / store=sashelp.tmplmst; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Get output:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/sasuser_templat2.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;sasuser_templat2&#34; border=&#34;0&#34; alt=&#34;sasuser_templat2&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/sasuser_templat2_thumb.png&#34; width=&#34;332&#34; height=&#34;285&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;If only type “Tagset” need (&lt;em&gt;to save space!&lt;/em&gt;):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc template; &lt;br /&gt;list &lt;font color=&#34;#ff0000&#34;&gt;tagsets&lt;/font&gt;/store=sasuser.templat; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;160&#34;&gt;&amp;#160;&lt;/h1&gt;
+
+&lt;h1 id=&#34;6-delete-template&#34;&gt;6. Delete template&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;proc template; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; delete Tagsets.ExcelBase; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; delete Tagsets.ExcelXP; &lt;br /&gt;run;&lt;/font&gt; &lt;br /&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;It’s always safe to perform delete statements since &lt;font size=&#34;1&#34;&gt;items in SASHELP.TMPLMST are read only.&lt;/font&gt;&amp;#160; In this case, the ExcelXP tagset in SASUSER.TEMPLAT will be deleted.&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;log:&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;8617&amp;#160;&amp;#160; proc template; &lt;br /&gt;8618&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; delete Tagsets.ExcelBase; &lt;br /&gt;NOTE: &amp;#8216;Tagsets.ExcelBase&amp;#8217; has been deleted from: SASUSER.TEMPLAT &lt;br /&gt;8619&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; delete Tagsets.ExcelXP; &lt;br /&gt;NOTE: &lt;font color=&#34;#ff0000&#34;&gt;&amp;#8216;Tagsets.ExcelXP&amp;#8217; has been deleted from: SASUSER.TEMPLAT&lt;/font&gt; &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;check again following step #5 and get what’s in SASUSER.TEMPLAT (no ExcelXP tagset anymore):&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/sasuser_templat.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;sasuser_templat&#34; border=&#34;0&#34; alt=&#34;sasuser_templat&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/sasuser_templat_thumb.png&#34; width=&#34;333&#34; height=&#34;247&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;7-install-in-other-specified-library&#34;&gt;7 Install in other specified library&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Install ExcelXp tagset in a other library. It will be deleted if current SAS session is killed:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;libname excltags &amp;#8216;a:\test&amp;#8217;; &lt;br /&gt;ods path (prepend) excltags.templat(update); &lt;br /&gt;filename excltags url &amp;#8216;&lt;/font&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/excltags.tpl&#39;;&#34;&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;http://support.sas.com/rnd/base/ods/odsmarkup/excltags.tpl&amp;#8217;;&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt; &lt;br /&gt;%include excltags;&lt;/font&gt; &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;log:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: Overwriting existing template/link: Tagsets.ExcelBase&lt;br /&gt;
+NOTE: TAGSET &amp;#8216;Tagsets.ExcelBase&amp;#8217; has been saved to: EXCLTAGS.TEMPLAT&lt;br /&gt;
+NOTE: Overwriting existing template/link: Tagsets.Config_debug&lt;br /&gt;
+NOTE: TAGSET &amp;#8216;Tagsets.Config_debug&amp;#8217; has been saved to: EXCLTAGS.TEMPLAT&lt;br /&gt;
+NOTE: Overwriting existing template/link: Tagsets.ExcelXP&lt;br /&gt;
+NOTE: &lt;font color=&#34;#ff0000&#34;&gt;TAGSET &amp;#8216;Tagsets.ExcelXP&amp;#8217; has been saved to: EXCLTAGS.TEMPLAT&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;show path as step #3:&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p align=&#34;left&#34;&gt;
+  Current ODS PATH list is:
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  1. EXCLTAGS.TEMPLAT(UPDATE) &lt;br /&gt;2. SASUSER.TEMPLAT(UPDATE) &lt;br /&gt;3. SASHELP.TMPLMST(READ)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;font size=&#34;1&#34;&gt;If apply step #6 to delete ExcelXP tagset, the items in EXCLTAGS.TEMPLAT will be deleted(as same as the searching priority).&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&#34;8-hello-world&#34;&gt;8. Hello World&lt;/h1&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;Adopted from one of Vince DelGobbo’s papers(&lt;a href=&#34;http://support.sas.com/rnd/papers/index.html#excel2012&#34;&gt;2012&lt;/a&gt;):&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;title &amp;#8216;The CLASS Data Set&amp;#8217;; &lt;br /&gt;footnote &amp;#8216;(From the SASHELP Library)&amp;#8217;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;*Set some &amp;ldquo;global&amp;rdquo; tagset options that affect all worksheets;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;ods tagsets.ExcelXP path=&amp;ldquo;a:\test\&amp;rdquo; file=&amp;#8217;MyWorkbook.xml&amp;#8217; style=Printer &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; options(embedded_titles=&amp;#8217;yes&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; embedded_footnotes=&amp;#8217;yes&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; print_header=&amp;#8217;&amp;amp;C&amp;amp;A&amp;amp;RPage &amp;amp;P of &amp;amp;N&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; print_footer=&amp;#8217;&amp;amp;RPrinted &amp;amp;D at &amp;amp;T&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; autofilter=&amp;#8217;2&amp;#8242;);&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%macro doit;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc sort data=sashelp.class (keep=sex) out=class nodupkey; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; by sex; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set class end=eof; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; II=left(put(&lt;em&gt;n&lt;/em&gt;,2.)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; call symputx(&amp;#8216;sex&amp;#8217;||II,compress(sex)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; if eof then call symputx(&amp;#8216;total&amp;#8217;,II); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%do i=1 %to &amp;total; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; ods tagsets.ExcelXP options(sheet&lt;em&gt;name=&amp;ldquo;Students&lt;/em&gt;&amp;amp;&amp;amp;sex&amp;amp;i&amp;rdquo;);&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; proc print data=sashelp.class noobs style(Header)=[just=center]; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; where (sex eq &amp;ldquo;&amp;amp;&amp;amp;sex&amp;amp;i&amp;rdquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; var name age&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; / style(Column)=[background=#99ccff]; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; var height weight / style(Column)=[background=#99ccff tagattr=&amp;#8217;format:#.0&amp;#8242;]; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; run; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%end;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%mend doit;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%doit&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;ods tagsets.ExcelXP close;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;This .XML file can be opened by Office Excel:&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/SAS_ExcelXP.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_ExcelXP&#34; border=&#34;0&#34; alt=&#34;SAS_ExcelXP&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/SAS_ExcelXP_thumb.png&#34; width=&#34;372&#34; height=&#34;442&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&#34;9-get-help&#34;&gt;9. Get Help&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;As a new comer, I found the following materials useful and accessible:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;div align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/&#34;&gt;SAS ODS MARKUP homepage&lt;/a&gt;&lt;/font&gt;
+&lt;/div&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;div align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;SAS developer &lt;a href=&#34;http://www.sas.com/reg/gen/corp/867226?page=Resources&#34;&gt;Vince DelGobbo’s homepage on ExcelXP&lt;/a&gt;&lt;/font&gt;
+&lt;/div&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;div align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.sas.com/events/cm/867226/ExcelXPPaperIndex.pdf&#34;&gt;Vince DelGobbo&amp;#8217;s ExcelXP Tagset Paper Index&lt;/a&gt;&lt;/font&gt;
+&lt;/div&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;h4 id=&#34;font-size-1-a-href-http-support-sas-com-rnd-base-ods-odsmarkup-excelxp-help-html-quick-reference-for-the-tagsets-excelxp-tagset-a-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/excelxp_help.html&#34;&gt;Quick Reference for the TAGSETS.EXCELXP Tagset&lt;/a&gt;&lt;/font&gt;&lt;/h4&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;h4 id=&#34;font-size-1-a-href-http-support-sas-com-rnd-base-ods-odsmarkup-excelxp-demo-html-try-this-demo-the-excelxp-tagset-and-microsoft-excel-a-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/excelxp_demo.html&#34;&gt;Try This Demo: The ExcelXP Tagset and Microsoft Excel&lt;/a&gt;&lt;/font&gt;&lt;/h4&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;h4 id=&#34;font-size-1-a-href-http-support-sas-com-resources-papers-proceedings09-323-2009-pdf-modifying-ods-statistical-graphics-templates-in-sas-9-2-by-warren-f-kuhfeld-a-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://support.sas.com/resources/papers/proceedings09/323-2009.pdf&#34;&gt;Modifying ODS Statistical Graphics Templates in SAS 9.2 by Warren F. Kuhfeld&lt;/a&gt;&lt;/font&gt;&lt;/h4&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

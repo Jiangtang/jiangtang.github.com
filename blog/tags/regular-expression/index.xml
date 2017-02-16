@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Regular Expression on Lithium Theme</title>
+    <link>/tags/regular-expression/index.xml</link>
+    <description>Recent content in Regular Expression on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/regular-expression/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SAS Perl Regular Expression (PRX) Talk in the forthcoming SESUG 2012</title>
+      <link>/2012/10/11/sas-perl-regular-expression-prx-talk-in-the-forthcoming-sesug-2012/</link>
+      <pubDate>Thu, 11 Oct 2012 21:20:39 +0000</pubDate>
+      
+      <guid>/2012/10/11/sas-perl-regular-expression-prx-talk-in-the-forthcoming-sesug-2012/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Research Triangle will host SouthEast SAS Users Group (&lt;/font&gt;&lt;a href=&#34;http://www.sesug.org/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SESUG&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;) 2012 conference (October 14-16, Sheraton Imperial Hotel, Durham, NC; &lt;em&gt;back to the home of SAS!&lt;/em&gt;). It will be my first regional SAS user conference and I will have a talk on &lt;/font&gt;&lt;a href=&#34;http://www.sesug.org/SESUG2012/abstract.html#BB-04&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS Perl Regular Expression(PRX)&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, in the morning of next Monday, Oct 15.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/Iknow.jpg&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Iknow&#34; border=&#34;0&#34; alt=&#34;Iknow&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/Iknow_thumb.jpg&#34; width=&#34;482&#34; height=&#34;373&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS PRX is an old school topic somehow. After dumping the paper, I think I should restructure my talk in a more accessible way. Regular expression is the de facto standard tool for text processing (&lt;em&gt;you can get help from the whole world besides SAS!&lt;/em&gt;), and SAS 9.3 even incorporates it to Proc Format. My talk will go like this:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;No picnic! You are already using Regex: remember &lt;font color=&#34;#ff0000&#34;&gt;*&lt;/font&gt;.sas?&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Where to start? what you should do is only to fill the programming block&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Supporting tools: visually play with Regex&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Resources: how to get the Regex for immediate use without digging into the “hairy” metacharacters for days and weeks&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;A demo&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;A Joke&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;See you then!&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

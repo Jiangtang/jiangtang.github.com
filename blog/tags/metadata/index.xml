@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Metadata on Lithium Theme</title>
+    <link>/tags/metadata/index.xml</link>
+    <description>Recent content in Metadata on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/metadata/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>New Game in Town: SAS Metadata Administration</title>
+      <link>/2013/03/13/new-game-in-town-sas-metadata-administration/</link>
+      <pubDate>Wed, 13 Mar 2013 21:46:35 +0000</pubDate>
+      
+      <guid>/2013/03/13/new-game-in-town-sas-metadata-administration/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;You might also read that there were constant (although still not frequent) posts on SAS metadata querying and other administration tasks in SAS blogosphere since 2012 (&lt;em&gt;when I started to play with it^&lt;/em&gt;). It is yet another evidence that more and more SAS programmers switched from SAS foundation to the so called SAS intelligent platform. In the traditional SAS foundation world, a nice source of metadata is the Dictionary table (or V datasets in SASHELP library); In SAS intelligent platform, a much more comprehensive metadata is stored in a SAS Metadata Server (&lt;a href=&#34;http://www.guardian.co.uk/news/datablog/2010/jul/16/data-plural-singular&#34;&gt;&lt;em&gt;Is &amp;#8220;Data&amp;#8221; singular or plural?&lt;/em&gt;&lt;/a&gt;). &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;To get started, &lt;a href=&#34;http://blogs.sas.com/content/sgf/author/wendymchenry&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Wendy McHenry&lt;/span&gt;&lt;/a&gt; posted a nice introductory blog, &lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;a href=&#34;http://blogs.sas.com/content/sgf/2012/12/05/why-i-love-sas-metadata/&#34;&gt;&lt;em&gt;Why I love SAS metadata&lt;/em&gt;&lt;/a&gt; and &lt;a href=&#34;http://blogs.sas.com/content/bi/author/angelahall&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Angela Hall&lt;/span&gt;&lt;/a&gt;, &lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;em&gt;&lt;a href=&#34;http://blogs.sas.com/content/bi/2012/06/12/using-metabrowse-to-find-metadata/&#34;&gt;How did you find that metadata?&lt;/a&gt;, &lt;a href=&#34;http://blogs.sas.com/content/sgf/author/jenniferparks&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Jennifer Parks&lt;/span&gt;&lt;/a&gt;, &lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;a href=&#34;http://blogs.sas.com/content/sgf/2013/02/06/two-methods-for-editing-sas-metadata/&#34;&gt;Two methods for editing SAS metadata&lt;/a&gt;.&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;To communicate with SAS Metadata Server programmingly, you can use &lt;/span&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/omaref/63063/HTML/default/viewer.htm#titlepage.htm&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Java&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;or &lt;/span&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lrmeta/63180/HTML/default/viewer.htm#titlepage.htm&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Base SAS&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;  which are both well documented. &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/author/chrishemedinger&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Chris Hemedinger&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;recently shared bunch of posts on how to &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/tag/sas-integration-technologies/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;use PowerShell to talk with SAS Metadata Server&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Industry gurus &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/content/sgf/author/paulhomes&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Paul Homes&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;and &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/content/sgf/author/gregorynelson&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Gregory Nelson&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;also begin to blog in &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/content/sgf/&#34;&gt;&lt;em&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;SAS User Groups&lt;/span&gt;&lt;/em&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;em&gt; &lt;/em&gt;on this subject (&lt;/span&gt;&lt;a href=&#34;http://platformadmin.com/blogs/paul/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Paul’s own website&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;is a great source too). &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;A&lt;/span&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;community blog “&lt;em&gt;&lt;a href=&#34;http://www.bi-notes.com/&#34;&gt;BI Notes&lt;/a&gt;&lt;/em&gt;” also has some interesting posts on SAS metadata. Check it out.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#8212;&amp;#8212;&amp;#8212;update20140718: Useful Docs&amp;#8212;&amp;#8212;&amp;#8212;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;SAS 9.3 Metadata Model: Reference (&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/omamodref/63903/HTML/default/viewer.htm#titlepage.htm&#34;&gt;HTML&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;SAS 9.4 Open Metadata Interface: Reference and Usage (&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/omaref/64859/PDF/default/omaref.pdf&#34;&gt;PDF&lt;/a&gt;, &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/omaref/64859/HTML/default/viewer.htm#titlepage.htm&#34;&gt;HTML&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;SAS 9.4 Language Interfaces to Metadata (&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lrmeta/64857/PDF/default/lrmeta.pdf&#34;&gt;PDF&lt;/a&gt;, &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lrmeta/64857/HTML/default/viewer.htm#titlepage.htm&#34;&gt;HTML&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;SAS 9.4 Intelligence Platform: Security Administration Guide (&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/bisecag/67045/HTML/default/titlepage.htm&#34;&gt;HTML&lt;/a&gt;, &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/bisecag/67045/PDF/default/bisecag.pdf&#34;&gt;PDF&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Best of SAS: A Personal Nomination 2012</title>
+      <link>/2012/12/31/best-of-sas-a-personal-nomination-2012/</link>
+      <pubDate>Mon, 31 Dec 2012 01:13:03 +0000</pubDate>
+      
+      <guid>/2012/12/31/best-of-sas-a-personal-nomination-2012/</guid>
+      <description>
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;There SAS applications/procedures/features were not necessarily available since 2012. This year I paid special attention to them when began to use SAS 9.3. The following notes are&amp;#160; totally my personal endorsement purely based my own experience as a user:&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;xml-file-reading-sas-xml-mapper&#34;&gt;XML File Reading: SAS XML Mapper&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_XML_Mapper.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_XML_Mapper&#34; border=&#34;0&#34; alt=&#34;SAS_XML_Mapper&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_XML_Mapper_thumb.png&#34; width=&#34;363&#34; height=&#34;399&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS XML Mapper itself is not an elegant tool from software design perspective (an example: I keep multiple versions because the latest version seems not carry out all the functionalities from old ones), but it is best XML file processing tool for SAS programmers like me. The sweet part of SAS XML Mapper is that you can use it to get SAS datasets directly with a automatically generated XML mapping file. I use it to import XML files from &lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;CDISC ODM based files like define.xml &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;metadata querying results (XML) returned by SAS Metadata Server&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and it works pretty well and I just can’t live without it!&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;graphics-facility-ods-graphics&#34;&gt;Graphics Facility: ODS Graphics&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;ODS Graphics is the raising star among SAS products family since its advent and I also fall into love with her. This system contains&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;five procedures with “SG” in names,&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;a template language(GTL), and&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;two GUI tools, ODS Graphics Editor, and ODS Graphics Designer&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;in Base SAS and ODS Statistical Graphics in SAS/STAT (and in SAS/QC which I didn’t check out). ODS Graphics just makes SAS graph&amp;#160; much beautiful and graphics task much fun (and elegant!). &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Btw, it may not be a fair game but still nice to check out a SAS ODS graph and some random pick up R graphs:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This is &lt;a href=&#34;http://blogs.sas.com/content/iml/2011/08/26/visualizing-correlations-between-variables-in-sas/&#34;&gt;from Rick Wicklin&lt;/a&gt; with 3 lines of codes including one “RUN” statement:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;pre&gt;proc sgscatter data=sashelp.iris; 
+matrix SepalLength--PetalLength /group=Species diagonal=(histogram kernel);
+run;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_corr2.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS_corr2&#34; border=&#34;0&#34; alt=&#34;SAS_corr2&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_corr2_thumb.png&#34; width=&#34;400&#34; height=&#34;408&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and this is the R homepage graph(and the &lt;a href=&#34;http://www.r-project.org/misc/acpclust.R&#34;&gt;R codes&lt;/a&gt;):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/R_Graphics.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;R_Graphics&#34; border=&#34;0&#34; alt=&#34;R_Graphics&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/R_Graphics_thumb.png&#34; width=&#34;396&#34; height=&#34;294&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and this is &lt;a href=&#34;http://gallery.r-enthusiasts.com/&#34;&gt;R Graph Gallery&lt;/a&gt; homepage:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/r_graph_gallery.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;r_graph_gallery&#34; border=&#34;0&#34; alt=&#34;r_graph_gallery&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/r_graph_gallery_thumb.png&#34; width=&#34;403&#34; height=&#34;287&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I must say SAS ODS Graphics rocks!&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;statistical-procedure-proc-ttest-and-proc-freq&#34;&gt;Statistical Procedure: PROC TTEST and PROC FREQ&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In this category I list two because they are equally extremely relevant and important for me as statistical SAS programmer.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;PROC TTEST makes equivalence test (which is extremely popular in clinical research) much more accessible by adding a TOST(two one-side test) option. Years ago SAS programmers might use PROC MIXED or other methods for this kind of statistical test(&lt;font size=&#34;1&#34;&gt;I also took a note on this topic, see &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/tost-equivalence-test/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/font&gt;).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The new on PROC FREQ I checked out is to support much richer methods on calculating confidence intervals for binomial proportion (my note &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/15/confidence-intervals-binomial-proportion/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;) and confidence intervals for difference between independent binomial proportions (my note &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/23/statistical-notes-5-confidence-intervals-for-difference-between-independent-binomial-proportions-using-sas/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;) which are also extremely important in clinical research and I programmed a lot.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;report-writing-ods-report-writing-interface&#34;&gt;Report Writing: ODS Report Writing Interface&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;My first SAS version was 9.1.3 where PROC REPORT is the primary SAS reporting writing tool (with ODS) while PROC TABULATE not in fashion anymore (and you may merely hear the arguments among these two procedures since then). I used PROC REPORT for all my production work for reporting since recently I tried the &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/datastep/dsobject/index.html&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;ODS Report Writing Interface&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;in a project for non-rectangular tables. It’s great and everyone was happy! &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Basically it is an ODS enhanced DATA &lt;em&gt;NULL&lt;/em&gt; reporting writing method (&lt;em&gt;DATA &lt;em&gt;NULL&lt;/em&gt; with &lt;font color=&#34;#ff0000&#34;&gt;FILE PRINT&lt;/font&gt; statements: it’s an even older way for me&lt;/em&gt;);a new ODS output object declared within DATA &lt;em&gt;NULL&lt;/em&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;dcl odsout obj();&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I like this kind of reporting method: you can control your report line by line and cell by cell (although with more lines of structured codes!).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;metadata-querying-tool-proc-metadata&#34;&gt;Metadata Querying Tool: PROC METADATA&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In this category, the other two strong candidates are JAVA interface and SAS Data Step Functions. I like PROC Metadata against JAVA because it holds the same full functionality (while SAS Data Step Functions, no yet) while I can still work in SAS to produce reports (just add a new line to start to use ODS Report Writing Interface:)). Furthermore, I feel much comfortable working with SAS!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;PROC Metadata uses XML as inputs and outputs: it may be not admirable compared to Data Step Functions. Since I use SAS XML Mapper, it’s not a problem anymore!&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;documentation&#34;&gt;Documentation&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I like the totally new SAS help and documentation system both online and offline since SAS 9.3. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;First in Base SAS, lots of files were separated from “SAS Language Dictionary”,&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs_offline.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_Docs_offline&#34; border=&#34;0&#34; alt=&#34;SAS_Docs_offline&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs_offline_thumb.png&#34; width=&#34;420&#34; height=&#34;420&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and in all procedures guide, the &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/14/tab-is-a-tab-is-a-tab-is-a-tab/&#34;&gt;tab&lt;/a&gt; view looks great:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_Docs&#34; border=&#34;0&#34; alt=&#34;SAS_Docs&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs_thumb.png&#34; width=&#34;452&#34; height=&#34;271&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tony Barr on Lithium Theme</title>
+    <link>/tags/tony-barr/index.xml</link>
+    <description>Recent content in Tony Barr on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/tony-barr/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Tony Barr and the Early History of SAS</title>
+      <link>/2012/10/23/tony-barr-and-the-early-history-of-sas/</link>
+      <pubDate>Tue, 23 Oct 2012 22:32:17 +0000</pubDate>
+      
+      <guid>/2012/10/23/tony-barr-and-the-early-history-of-sas/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/Tony_Barr_SAS.jpg&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Tony_Barr_SAS&#34; border=&#34;0&#34; alt=&#34;Tony_Barr_SAS&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/Tony_Barr_SAS_thumb.jpg&#34; width=&#34;402&#34; height=&#34;281&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS historians (not all SAS users!) know &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Anthony_James_Barr&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Anthony James Barr&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;&lt;em&gt;(aka Tony Barr or Jim Barr&lt;/em&gt;) was the designer and implementor of SAS language (1966-1979) and the first Chairman and President of SAS Institute (1976-1979). In this picture was Tony Barr in the &lt;/font&gt;&lt;a href=&#34;http://www.lexjansen.com/cgi-bin/xsl_transform.php?x=sugi01&amp;s=sugi2&amp;c=sugi2&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;first SUGI&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;(January 26-28, 1976, Kissimmee, FL), taken by the first SUGI chair Julian Horwich. It’s said in 1970s, everyone had long hair!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I was particularly interested in the early history of SAS when traced back the SAS file system to FFS (&lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Formatted_File_System&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Formatted File System&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;) in Tony Barr’s statement, &lt;em&gt;&lt;a href=&#34;http://www.barrsystems.com/about_us/the_company/sas_history.asp&#34; target=&#34;_blank&#34;&gt;SAS Related History&lt;/a&gt;&lt;/em&gt;. It’s not relational in the sense of &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Relational_database_management_system&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;RDBMS&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, but definitely a database management system(&lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Database_management_system&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;DBMS&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;). Then you may understand why some people still call SAS library/datasets “database”. They are right in this non-relational point of view. Actually there are lots of parallel efforts to develop non-relational databases even after 1970 (when Codd introduced the concept of relational model). Google’s &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/BigTable&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;BigTable&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;for example is not&amp;#160; relational.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1960s-1970s was the emerging period for statistical computing technology (also golden age of technology). SAS as software was conceived in 1966, implemented in 1968 and got first massive distributed release in 1972 and then as a company incorporated in 1976 (you may know Apple also founded in this year; Microsoft 1975; Oracle, 1977; SPSS also in the same period). Around this time, &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/PL/I&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;PL/1&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;first appeared in 1964 (SAS was initially written by PL/1), C developed during 1969-1973 (SAS rewritten by C in 1980s), SQL 1978, S language 1976.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Putting Tony Barr’s work on SAS in such exciting historical background (they were in their 20-30s!), then you will also be interested to dig into such materials on early history of SAS:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;Barr, Anthony J. (2006), &lt;/font&gt;&lt;a href=&#34;http://www.barrsystems.com/about_us/the_company/professional_history.asp&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Professional History&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt; (&lt;em&gt;Tony Barr’s profile; also in &lt;/em&gt;&lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Anthony_James_Barr&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Wikipedia&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;)&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;Barr, Anthony J. (2006), &lt;em&gt;&lt;a href=&#34;http://www.barrsystems.com/about_us/the_company/sas_history.asp&#34; target=&#34;_blank&#34;&gt;SAS History&lt;/a&gt; (the early history of SAS, the software and company)&lt;/em&gt;&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;Barr, Anthony J. (2010), &lt;em&gt;&lt;a href=&#34;http://www.barrsystems.com/includes_content/about_us/the_company/SASBEGINNINGS/PlayVideo.html&#34; target=&#34;_blank&#34;&gt;SAS Beginnings&lt;/a&gt;&lt;/em&gt; (&lt;em&gt;talk in NCSU; also in &lt;/em&gt;&lt;/font&gt;&lt;a href=&#34;http://www.youtube.com/watch?v=5SV-H8qEeAc&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Youtube&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;)&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;a href=&#34;http://www.codecraftersinc.com/pdf/SAS_Communications.pdf&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;The early issues of &lt;em&gt;SAS Communications&lt;/em&gt;&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, achieved by &lt;/font&gt;&lt;a href=&#34;http://www.codecraftersinc.com/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;CodeCrafters&lt;/font&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;SASCommunity.org, &lt;/font&gt;&lt;a href=&#34;http://www.sascommunity.org/sugi/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;early SUGI papers collection&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt; (&lt;em&gt;also archived by &lt;/em&gt;&lt;/font&gt;&lt;a href=&#34;http://www.lexjansen.com/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Lex Jansen&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;)&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;a href=&#34;http://www.sas.com/company/about/history.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.sas.com/company/about/history.html&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, the official history of SAS&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;a href=&#34;http://en.wikipedia.org/wiki/SAS_(software)&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS (software) in Wikipedia&lt;/font&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;a href=&#34;http://en.wikipedia.org/wiki/SAS_Institute_Inc.&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS (company) in Wikipedia&lt;/font&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;a href=&#34;http://en.wikipedia.org/wiki/Jim_Goodnight&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Jim Goodnight in Wikipedia&lt;/font&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;a href=&#34;http://en.wikipedia.org/wiki/John_Sall&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;John Sall in Wikipedia&lt;/font&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;I’m not the SAS manual guy (I used SAS since 9.1.3). The early issues of SAS manuals are definitely good resources for SAS historians (&lt;em&gt;I’m waiting for a yard sale . . .&lt;/em&gt;).&amp;#160; For paper books, I only found&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p align=&#34;left&#34;&gt;
+  &lt;em&gt;&lt;a href=&#34;http://www.amazon.com/Hidden-Value-Companies-Extraordinary-Ordinary/dp/0875848982/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1351017888&amp;sr=1-1&amp;keywords=0875848982&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Hidden Value&lt;/font&gt;&lt;/a&gt;&lt;/em&gt;&lt;font size=&#34;1&#34;&gt; by Charles A. III O&amp;#8217;Reilly, had one chapter for SAS where we can learn bits of its early history.&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;em&gt;&lt;a href=&#34;http://www.amazon.com/Object-Lessons-Object-Oriented-Development-Technology/dp/0134724321/ref=la_B001KC6AME_1_1?ie=UTF8&amp;qid=1351018441&amp;sr=1-1&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Object Lessons&lt;/font&gt;&lt;/a&gt;&lt;/em&gt;&lt;font size=&#34;1&#34;&gt; by Tom Love: few pages for SAS that we can know the initial price of SAS software was $35.&lt;/font&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;Will keep updating and thank you for any inputs.&lt;/font&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

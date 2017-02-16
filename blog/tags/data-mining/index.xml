@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Mining on Lithium Theme</title>
+    <link>/tags/data-mining/index.xml</link>
+    <description>Recent content in Data Mining on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/data-mining/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>An Analytical Valley: Big Data and Data Scientists (and SAS Programmers)</title>
+      <link>/2011/09/14/an-analytical-valley-big-data-and-data-scientists-and-sas-programmers/</link>
+      <pubDate>Wed, 14 Sep 2011 22:15:17 +0000</pubDate>
+      
+      <guid>/2011/09/14/an-analytical-valley-big-data-and-data-scientists-and-sas-programmers/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/09/hadoop.jpg&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;hadoop&#34; border=&#34;0&#34; alt=&#34;hadoop&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/09/hadoop_thumb.jpg&#34; width=&#34;240&#34; height=&#34;180&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blogs.sas.com/content/sascom/author/tomdavenport&#34; target=&#34;_blank&#34;&gt;Tom Davenport&lt;/a&gt; reported an observation that &lt;a href=&#34;http://blogs.sas.com/content/sascom/2011/09/13/is-silicone-valley-becoming-more-analytical/&#34; target=&#34;_blank&#34;&gt;Silicon Valley is becoming more analytical&lt;/a&gt; since companies in the Valley such as Google, Facebook, eBay, LinkedLn all have strong presences in analytics. Besides such predominant companies, I’d also like to add Yahoo to the list although Yahoo is no longer in its peak. Yahoo is the largest sponsor and contributor of &lt;a href=&#34;http://hadoop.apache.org/&#34; target=&#34;_blank&#34;&gt;Hadoop&lt;/a&gt;, an open source framework for distributed processing of so called “big data”. When taking a look at the outstanding &lt;a href=&#34;www.facebook.com/data&#34; target=&#34;_blank&#34;&gt;Facebook data team&lt;/a&gt; or &lt;a href=&#34;http://sna-projects.com/sna/&#34; target=&#34;_blank&#34;&gt;LinkedIn data team&lt;/a&gt;, we can see that Hadoop is also one of the most overwhelmingly successful technical factors. Such Valley companies themselves are the huge consumers of big data and have strong incentives to develop analytical solutions beyond their high technology product pipelines.&lt;/p&gt;
+
+&lt;p&gt;Analytical staffs in LinkedLn also helps a lot to promote the widely usage of the term “data scientist”. They identify themselves as data scientists and that’s really cool. Now more and more statisticians are also very glad to accept this brand new title. According to a &lt;a href=&#34;http://blog.revolutionanalytics.com/2011/08/statisticians-at-jsm-consider-themselves-data-scientists.html&#34; target=&#34;_blank&#34;&gt;survey in JSM&lt;/a&gt; (2011, Miami), more than 85% (164) statisticians there considered themselves “data scientists”.&lt;/p&gt;
+
+&lt;p&gt;McKinsey also released a report this May &lt;a href=&#34;http://www.mckinsey.com/mgi/publications/big_data/pdfs/MGI_big_data_full_report.pdf&#34; target=&#34;_blank&#34;&gt;on big data&lt;/a&gt; and the huge gap of qualified analytical talents. You know when a management consulting firm begins to talk something technical, it is no longer a fashion to follow the discussion of the concept. To embrace the challenge of big data, one or the team needs multidiscipline background—basically speaking, computer science and statistics (and data mining or machine learning is just an interdisciplinary subject of them). Here is an ambitious list on “How do I become a data scientist”:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.quora.com/Educational-Resources/How-do-I-become-a-data-scientist&#34;&gt;http://www.quora.com/Educational-Resources/How-do-I-become-a-data-scientist&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For these learning plans, just feel the meaning and don’t take it too seriously. Check yourself and set up your own priority.&lt;/p&gt;
+
+&lt;h3 id=&#34;notes-for-sas-programmers&#34;&gt;Notes for SAS Programmers&lt;/h3&gt;
+
+&lt;p&gt;For SAS programmers, I read an exciting post besides High Performance Computing that &lt;a href=&#34;http://blogs.sas.com/content/datamanagement/2011/08/29/sas-hadoop-and-big-data&#34; target=&#34;_blank&#34;&gt;SAS will also play with Hadoop&lt;/a&gt; by introducing some functionality in SAS/Access and SAS Data Integration Studio.&lt;/p&gt;
+
+&lt;p&gt;For SAS programmers with no IT background, it is not a good idea to jump into algorithms and data structures and other hard core computer courses immediately. Instead I recommend to take the full advantages of SAS language and system itself to dive into computer world gradually:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Learn and practice and practice &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/sqlproc/63043/HTML/default/viewer.htm#titlepage.htm&#34; target=&#34;_blank&#34;&gt;SAS Proc SQL&lt;/a&gt; which is compliant with the &lt;a href=&#34;http://en.wikipedia.org/wiki/SQL-92&#34;&gt;SQL-92&lt;/a&gt; standard. SQL is the common language in database world and SAS Proc SQL can help you switch smoothly to Oracle SQL, Teradata SQL, MySql SQL and other SQL implementations although there are some non-critical &lt;a href=&#34;http://www.jiangtanghu.com/blog/2009/12/04/work-with-oracle-a-quick-sheet-for-sas-programmers-2/&#34; target=&#34;_blank&#34;&gt;differences&lt;/a&gt; in details.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Dig into the operating system specific documentation of SAS, for example in SAS 9.3,&amp;#160; _&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/hostwin/63047/HTML/default/viewer.htm#titlepage.htm&#34; target=&#34;_blank&#34;&gt;SAS 9.3 Companion for Windows&lt;/a&gt;_ or _&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/hostunx/63053/HTML/default/viewer.htm#titlepage.htm&#34; target=&#34;_blank&#34;&gt;SAS 9.3 Companion for UNIX Environments&lt;/a&gt;_ or others depending the OS you are working on. They are the critical important documentations but unfortunately often missed in SAS programmers’&amp;#160; reading list.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Such docs will help SAS programmers to deal with the machines and expose to the wide computer world in a way that a SAS programmer can understand. You can’t expect to be an expert on computer via such docs, but at least you can communicate fluently with internal IT staff.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Then you get all the confidences to play with computer and can switch to any other topics interested in &lt;a href=&#34;http://www.quora.com/Educational-Resources/How-do-I-become-a-data-scientist&#34; target=&#34;_blank&#34;&gt;the list above&lt;/a&gt;!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Feature Selection: Collections for Self Study</title>
+      <link>/2011/01/15/feature-selection-collections-for-self-study/</link>
+      <pubDate>Sat, 15 Jan 2011 10:58:44 +0000</pubDate>
+      
+      <guid>/2011/01/15/feature-selection-collections-for-self-study/</guid>
+      <description>&lt;p&gt;Recently I start to learn the algorithms and applications of &lt;a href=&#34;http://en.wikipedia.org/wiki/Feature_selection&#34; target=&#34;_blank&#34;&gt;feature selection&lt;/a&gt;. The term  “Feature”, wildly used in machine learning and data mining literatures,  simply means “Variable”. In some practices, for example, a neural network model uses a decision tree as input; the tree performs the function of variables selection.&lt;/p&gt;
+
+&lt;p&gt;The Arizona State University is maintaining a repository of feature selection, including original documentations, Matlab packages and user guide for the following popular algorithms so far:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;BLogReg&lt;/p&gt;
+
+&lt;p&gt;CFS&lt;/p&gt;
+
+&lt;p&gt;Chi Square&lt;/p&gt;
+
+&lt;p&gt;FCBF&lt;/p&gt;
+
+&lt;p&gt;Fisher Score&lt;/p&gt;
+
+&lt;p&gt;Gini Index&lt;/p&gt;
+
+&lt;p&gt;Information Gain&lt;/p&gt;
+
+&lt;p&gt;Kruskal-Wallis&lt;/p&gt;
+
+&lt;p&gt;mRMR&lt;/p&gt;
+
+&lt;p&gt;Relief-F&lt;/p&gt;
+
+&lt;p&gt;SBMLR&lt;/p&gt;
+
+&lt;p&gt;T-test&lt;/p&gt;
+
+&lt;p&gt;SPEC&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;see&lt;/span&gt;&lt;/em&gt; &lt;a href=&#34;http://featureselection.asu.edu/software.php&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://featureselection.asu.edu/software.php&#34;&gt;http://featureselection.asu.edu/software.php&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A R package, &lt;a href=&#34;http://cran.r-project.org/web/packages/FSelector/index.html&#34; target=&#34;_blank&#34;&gt;FSelector&lt;/a&gt;, is also useful for step-by-step studying. This package covers:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;**Filters:&lt;/p&gt;
+
+&lt;p&gt;** *cfs&lt;/p&gt;
+
+&lt;p&gt;*chi-squared&lt;/p&gt;
+
+&lt;p&gt;*consistency&lt;/p&gt;
+
+&lt;p&gt;*correlation&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211;linear.correlation&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211;rank.correlation&lt;/p&gt;
+
+&lt;p&gt;*entropy.based&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211;information.gain&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211;gain.ratio&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211;symmetrical.uncertainty&lt;/p&gt;
+
+&lt;p&gt;*OneR&lt;/p&gt;
+
+&lt;p&gt;*random.forest.importance&lt;/p&gt;
+
+&lt;p&gt;*relif-F&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wrappers:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;*best.first.search&lt;/p&gt;
+
+&lt;p&gt;*exhaustive.search&lt;/p&gt;
+
+&lt;p&gt;*greedy.search&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211;backward.search&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211;forward.search&lt;/p&gt;
+
+&lt;p&gt;*hill.climbing.search&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Decision Trees in SAS Enterprise Miner and SPSS Clementine</title>
+      <link>/2011/01/04/decision-trees-in-sas-enterprise-miner-and-spss-clementine/</link>
+      <pubDate>Tue, 04 Jan 2011 20:44:50 +0000</pubDate>
+      
+      <guid>/2011/01/04/decision-trees-in-sas-enterprise-miner-and-spss-clementine/</guid>
+      <description>&lt;p&gt;Decision trees are included in SAS Enterprise Miner(EM). The counterpart is SPSS Clementine, which should be called IBM SPSS Modeler for precision after IBM’s acquisition of SPSS.&lt;/p&gt;
+
+&lt;p&gt;Recently I read a paper on the comparisons of SAS EM, SPSS Clementine and IBM Intelligent Miner on their decision tree and cluster technology:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;_&lt;a href=&#34;http://www.gimi.us/CLUTE_INSTITUTE/ORLANDO_2010/Article%2520452.pdf&#34; target=&#34;_blank&#34;&gt;Decision Tree Induction &amp;amp; Clustering Techniques in SAS Enterprise Miner, SPSS Clementine, and IBM Intelligent Miner – A Comparative Analysis&lt;/a&gt;_ by Abdullah M. Al Ghoson, Virginia Commonwealth University&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The output is not that surprising. SAS EM plays better in performance, functionality and auxiliary task support but worse in usability.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SAS_VS_SPSS.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;SAS_VS_SPSS&#34; border=&#34;0&#34; alt=&#34;SAS_VS_SPSS&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SAS_VS_SPSS_thumb.png&#34; width=&#34;503&#34; height=&#34;476&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are few comments on decision trees implementations in SAS EM and SPSS Clementine based on my own experiences. Some advises for beginners are also supplied.&lt;/p&gt;
+
+&lt;p&gt;There are four nodes in SPSS Clementine to supports four trees algorithms respectively: &lt;font color=&#34;#ff0000&#34;&gt;C5.0&lt;/font&gt;, Classification And Regression Trees (&lt;font color=&#34;#ff0000&#34;&gt;CART&lt;/font&gt;),&amp;#160; Quick, Unbiased, Efficient Statistical Tree(&lt;font color=&#34;#ff0000&#34;&gt;QUEST&lt;/font&gt;) and Chi-squared Automatic Interaction Detector(&lt;font color=&#34;#ff0000&#34;&gt;CHAID&lt;/font&gt;),&amp;#160; which are most famous and popular in decision trees family.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SPSS_4_trees.png&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;SPSS_4_trees&#34; border=&#34;0&#34; alt=&#34;SPSS_4_trees&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SPSS_4_trees_thumb.png&#34; width=&#34;412&#34; height=&#34;105&#34; /&gt;&lt;/a&gt; Note that CART&amp;reg; is a registered trademark of California Statistical Software, Inc., and is licensed exclusively to Salford Systems, San Diego, California. So SPSS Clementine uses C&amp;amp;R Tree as name.&lt;/p&gt;
+
+&lt;p&gt;In SAS EM, there is only one decision tree node:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SAS_tree.png&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;SAS_tree&#34; border=&#34;0&#34; alt=&#34;SAS_tree&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SAS_tree_thumb.png&#34; width=&#34;155&#34; height=&#34;74&#34; /&gt;&lt;/a&gt; The algorithms behind this node is called SAS tree algorithms, which incorporate and extend the four mentioned before. Just change the settings in decision tree node, you can get the trees you want.&lt;/p&gt;
+
+&lt;p&gt;Obviously, SAS tree algorithms is superior than the separated ones in SPSS Clementine for expansibility and flexibility. But at the other hand, the complexities increase. For a newbie user of SAS EM, he/she may wonder which trees he/she is training. A SPSS Clementine users just picks up a node and says: OK, I am now training a CART or CHAID.—he/she would communicate with others more smoothly.&lt;/p&gt;
+
+&lt;p&gt;Regardless of the industry application, I think this is the educational benefit of SPSS Clementine. Since almost every data mining book introduces decision trees by separated algorithms(such as ID3/C4.5/C5.0, CART, QUEST, CHAID, &amp;hellip;), the beginners using SPSS Clementine as instructional tool may get the clear ideas about the algorithms one by one. Once he/she get the full understanding of the differences among tree algorithms, he/she would train trees in SAS EM more comfortable.&lt;/p&gt;
+
+&lt;p&gt;What’s more, SPSS Clementine supplies rich supporting documentations for beginners and self learners , such as Tutorial, User Guide, Algorithms Guide, Node Reference. The official documentations of SAS EM 5.x and 6.x are relatively poor. Yes there is a good SAS Help and Documentation for SAS EM 4.3 including &lt;em&gt;Getting Started with Enterprise Miner&lt;/em&gt;. EM4.3 is a traditional AF application but EM5.x and above are Java client incorporated in SAS analysis platform(they are totally different!). For EM5.x and above, only installation guides and a plain reference are available.&lt;/p&gt;
+
+&lt;p&gt;SAS Institute may have its own marketing strategies. No rich references available, the Institute DOES offer &lt;a href=&#34;https://support.sas.com/edu/prodcourses.html?code=MINER&amp;ctry=US&#34; target=&#34;_blank&#34;&gt;rich training programs&lt;/a&gt; in data mining and Enterprise Miner application. Wooo, the big-budget purchasers of SAS EM can also afford the trainings.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Run data mining codes following William Potts</title>
+      <link>/2009/03/20/run-data-mining-codes-following-william-potts/</link>
+      <pubDate>Fri, 20 Mar 2009 11:41:00 +0000</pubDate>
+      
+      <guid>/2009/03/20/run-data-mining-codes-following-william-potts/</guid>
+      <description>&lt;div&gt;
+  &lt;font face=Arial&gt;FYI: &lt;em&gt;SAS Enterprise Miner and SAS Text Miner Procedures: Reference for SAS 9.1.3&lt;/em&gt;, see:&lt;/font&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;font face=Arial&gt;&lt;/font&gt;&amp;nbsp;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;font face=Arial&gt;&lt;a  href=&#34;http://support.sas.com/documentation/onlinedoc/miner/emtmsas913/listing.html&#34;&gt;http://support.sas.com/documentation/onlinedoc/miner/emtmsas913/listing.html&lt;/a&gt;&lt;/font&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;font face=Arial&gt;&lt;/font&gt;&amp;nbsp;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;font face=Arial&gt;This entry DOES exist in the SAS Support website, but it can&amp;#8217;t be found by any search engine or documentation tree view. &lt;/font&gt;&lt;font face=Arial&gt;You&amp;#8217;re recommended to download these files immediately due to SAS&amp;#8217;s easy-dead hyperlinks.^-^ &lt;/font&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;font face=Arial&gt;&lt;/font&gt;&amp;nbsp;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;font face=Arial&gt;ps.SAS Institute provides no support for the use of Enterprise Miner and Text Miner Procedures when they are invoked directly, outside of the Enterprise Miner graphical user interface.&lt;/font&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SAS User Books and Data Mining Software Comparision: Quick Links</title>
+      <link>/2009/02/17/sas-user-books-and-data-mining-software-comparision-quick-links/</link>
+      <pubDate>Tue, 17 Feb 2009 14:55:00 +0000</pubDate>
+      
+      <guid>/2009/02/17/sas-user-books-and-data-mining-software-comparision-quick-links/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: x-small;&#34;&gt;&lt;a href=&#34;http://support.sas.com/publishing/pdfs/jan09.pdf&#34;&gt;SAS Books Catalog(Jan, 2009)&lt;/a&gt;&lt;/span&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: x-small;&#34;&gt;&lt;em&gt;&lt;a href=&#34;http://www.mayato.com/index.php?option=com_content&amp;task=view&amp;id=105&amp;Itemid=96&amp;lang=en&#34;&gt;Data Mining Software 2009: Succesul Analyses at Affordable Prices&lt;/a&gt;&lt;/em&gt;(Nov. 2008, by mayato)&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Industry Review: SAS and Teradata Partnership</title>
+      <link>/2008/12/19/industry-review-sas-and-teradata-partnership/</link>
+      <pubDate>Fri, 19 Dec 2008 10:44:00 +0000</pubDate>
+      
+      <guid>/2008/12/19/industry-review-sas-and-teradata-partnership/</guid>
+      <description>&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
+  &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;SAS and Teradata Partnership: Press&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
+  &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.sas.com/news/preleases/SASandTeradataAdvantageProgram.html&#34;&gt;Leading Companies See Value in SAS and Teradata Partnership&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.sas.com/news/preleases/TeradataAdvantageProgram.html&#34;&gt;SAS and Teradata Unveil Advantage Program to Bring Powerful In-Database Solutions and Services to Customers&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.teradata.com/t/page/173874/index.html&#34;&gt;SAS and Teradata Enter into Strategic Partnership&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;font-size: 100%;&#34;&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
+  &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
+  &lt;span style=&#34;font-size: 100%;&#34;&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
+  &lt;span style=&#34;font-size: 100%;&#34;&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;In BI industry, the pure players such as SAS, Teradata and Microstrategy, need to demonstrate their indispensable values against the megavendors, IBM (acquired Cognos), SAP (acquired Business Object), Oracle (acquired Hyperion) and Microsoft. Teradata is solely focused on enterprise data warehouse. SAS, dominating in business analytics (e.g. advanced statistics and data mining), will check and balance the BI industry due to the private-hold structure. SAS and Teradata Advantage Program partnership, includes wide business lines, such as Analytics, AML (Anti-Money Laundering), Credit Risk, Enterprise Intelligence and Optimization Services. I think It&amp;#8217;s a effective way to learn from each other in mutual emulation and&lt;/span&gt;&lt;span style=&#34;font-family: Times New Roman;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;counterbalance the &lt;/span&gt;&lt;span class=&#34;wbtrmn&#34;&gt;&lt;span style=&#34;font-family: Times New Roman;&#34;&gt;concentration&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt; market.&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data Mining in Stock Market</title>
+      <link>/2008/12/13/data-mining-in-stock-market/</link>
+      <pubDate>Sat, 13 Dec 2008 23:55:00 +0000</pubDate>
+      
+      <guid>/2008/12/13/data-mining-in-stock-market/</guid>
+      <description>&lt;p&gt;Data Mining in Stock Market? Is it crazy? or is it just a hopeless try? Every mentor in mathematics and finance educates us that the stock market is too chaotic and &lt;strong&gt;sentimental&lt;/strong&gt; to use mathematical models. Most of all gift rock scientists are concentrated in the study of interest of rates and fixed income securities. It sounds profitable to use mathematical and statistical models to predict the price of stock, but there are little successfull stories.&lt;/p&gt;
+
+&lt;p&gt;I know I might hold some academic doctrines, so I have interest to monitor any effort to try to forecast stock prices using data mining techniques. Some links from a popular data mining blog , &lt;a href=&#34;http://dataminingresearch.blogspot.com/&#34;&gt;&lt;em&gt;Data Mining Research&lt;/em&gt;&lt;/a&gt;, are listed as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://dataminingresearch.blogspot.com/2008/09/stock-prediction-using-decision-tree.html&#34;&gt;Stock Prediction using Decision Tree&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dataminingresearch.blogspot.com/2008/12/stock-picking-using-data-mining_12.html&#34;&gt;Stock Picking using Data Mining: Parameter Tuning&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

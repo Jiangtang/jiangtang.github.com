@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>T Test on Lithium Theme</title>
+    <link>/tags/t-test/index.xml</link>
+    <description>Recent content in T Test on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/t-test/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Best of SAS: A Personal Nomination 2012</title>
+      <link>/2012/12/31/best-of-sas-a-personal-nomination-2012/</link>
+      <pubDate>Mon, 31 Dec 2012 01:13:03 +0000</pubDate>
+      
+      <guid>/2012/12/31/best-of-sas-a-personal-nomination-2012/</guid>
+      <description>
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;There SAS applications/procedures/features were not necessarily available since 2012. This year I paid special attention to them when began to use SAS 9.3. The following notes are&amp;#160; totally my personal endorsement purely based my own experience as a user:&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;xml-file-reading-sas-xml-mapper&#34;&gt;XML File Reading: SAS XML Mapper&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_XML_Mapper.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_XML_Mapper&#34; border=&#34;0&#34; alt=&#34;SAS_XML_Mapper&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_XML_Mapper_thumb.png&#34; width=&#34;363&#34; height=&#34;399&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS XML Mapper itself is not an elegant tool from software design perspective (an example: I keep multiple versions because the latest version seems not carry out all the functionalities from old ones), but it is best XML file processing tool for SAS programmers like me. The sweet part of SAS XML Mapper is that you can use it to get SAS datasets directly with a automatically generated XML mapping file. I use it to import XML files from &lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;CDISC ODM based files like define.xml &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;metadata querying results (XML) returned by SAS Metadata Server&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and it works pretty well and I just can’t live without it!&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;graphics-facility-ods-graphics&#34;&gt;Graphics Facility: ODS Graphics&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;ODS Graphics is the raising star among SAS products family since its advent and I also fall into love with her. This system contains&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;five procedures with “SG” in names,&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;a template language(GTL), and&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;two GUI tools, ODS Graphics Editor, and ODS Graphics Designer&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;in Base SAS and ODS Statistical Graphics in SAS/STAT (and in SAS/QC which I didn’t check out). ODS Graphics just makes SAS graph&amp;#160; much beautiful and graphics task much fun (and elegant!). &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Btw, it may not be a fair game but still nice to check out a SAS ODS graph and some random pick up R graphs:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This is &lt;a href=&#34;http://blogs.sas.com/content/iml/2011/08/26/visualizing-correlations-between-variables-in-sas/&#34;&gt;from Rick Wicklin&lt;/a&gt; with 3 lines of codes including one “RUN” statement:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;pre&gt;proc sgscatter data=sashelp.iris; 
+matrix SepalLength--PetalLength /group=Species diagonal=(histogram kernel);
+run;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_corr2.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS_corr2&#34; border=&#34;0&#34; alt=&#34;SAS_corr2&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_corr2_thumb.png&#34; width=&#34;400&#34; height=&#34;408&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and this is the R homepage graph(and the &lt;a href=&#34;http://www.r-project.org/misc/acpclust.R&#34;&gt;R codes&lt;/a&gt;):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/R_Graphics.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;R_Graphics&#34; border=&#34;0&#34; alt=&#34;R_Graphics&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/R_Graphics_thumb.png&#34; width=&#34;396&#34; height=&#34;294&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and this is &lt;a href=&#34;http://gallery.r-enthusiasts.com/&#34;&gt;R Graph Gallery&lt;/a&gt; homepage:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/r_graph_gallery.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;r_graph_gallery&#34; border=&#34;0&#34; alt=&#34;r_graph_gallery&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/r_graph_gallery_thumb.png&#34; width=&#34;403&#34; height=&#34;287&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I must say SAS ODS Graphics rocks!&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;statistical-procedure-proc-ttest-and-proc-freq&#34;&gt;Statistical Procedure: PROC TTEST and PROC FREQ&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In this category I list two because they are equally extremely relevant and important for me as statistical SAS programmer.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;PROC TTEST makes equivalence test (which is extremely popular in clinical research) much more accessible by adding a TOST(two one-side test) option. Years ago SAS programmers might use PROC MIXED or other methods for this kind of statistical test(&lt;font size=&#34;1&#34;&gt;I also took a note on this topic, see &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/tost-equivalence-test/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/font&gt;).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The new on PROC FREQ I checked out is to support much richer methods on calculating confidence intervals for binomial proportion (my note &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/15/confidence-intervals-binomial-proportion/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;) and confidence intervals for difference between independent binomial proportions (my note &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/23/statistical-notes-5-confidence-intervals-for-difference-between-independent-binomial-proportions-using-sas/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;) which are also extremely important in clinical research and I programmed a lot.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;report-writing-ods-report-writing-interface&#34;&gt;Report Writing: ODS Report Writing Interface&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;My first SAS version was 9.1.3 where PROC REPORT is the primary SAS reporting writing tool (with ODS) while PROC TABULATE not in fashion anymore (and you may merely hear the arguments among these two procedures since then). I used PROC REPORT for all my production work for reporting since recently I tried the &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/datastep/dsobject/index.html&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;ODS Report Writing Interface&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;in a project for non-rectangular tables. It’s great and everyone was happy! &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Basically it is an ODS enhanced DATA &lt;em&gt;NULL&lt;/em&gt; reporting writing method (&lt;em&gt;DATA &lt;em&gt;NULL&lt;/em&gt; with &lt;font color=&#34;#ff0000&#34;&gt;FILE PRINT&lt;/font&gt; statements: it’s an even older way for me&lt;/em&gt;);a new ODS output object declared within DATA &lt;em&gt;NULL&lt;/em&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;dcl odsout obj();&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I like this kind of reporting method: you can control your report line by line and cell by cell (although with more lines of structured codes!).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;metadata-querying-tool-proc-metadata&#34;&gt;Metadata Querying Tool: PROC METADATA&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In this category, the other two strong candidates are JAVA interface and SAS Data Step Functions. I like PROC Metadata against JAVA because it holds the same full functionality (while SAS Data Step Functions, no yet) while I can still work in SAS to produce reports (just add a new line to start to use ODS Report Writing Interface:)). Furthermore, I feel much comfortable working with SAS!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;PROC Metadata uses XML as inputs and outputs: it may be not admirable compared to Data Step Functions. Since I use SAS XML Mapper, it’s not a problem anymore!&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;documentation&#34;&gt;Documentation&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I like the totally new SAS help and documentation system both online and offline since SAS 9.3. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;First in Base SAS, lots of files were separated from “SAS Language Dictionary”,&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs_offline.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_Docs_offline&#34; border=&#34;0&#34; alt=&#34;SAS_Docs_offline&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs_offline_thumb.png&#34; width=&#34;420&#34; height=&#34;420&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and in all procedures guide, the &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/14/tab-is-a-tab-is-a-tab-is-a-tab/&#34;&gt;tab&lt;/a&gt; view looks great:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_Docs&#34; border=&#34;0&#34; alt=&#34;SAS_Docs&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs_thumb.png&#34; width=&#34;452&#34; height=&#34;271&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Statistical Notes (2): Equivalence Testing and TOST (Two One-Sided Test)</title>
+      <link>/2012/09/12/statistical-notes-2-equivalence-testing-and-tost-two-one-sided-test/</link>
+      <pubDate>Wed, 12 Sep 2012 22:39:23 +0000</pubDate>
+      
+      <guid>/2012/09/12/statistical-notes-2-equivalence-testing-and-tost-two-one-sided-test/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;_&lt;a href=&#34;http://zedshaw.com/essays/programmer_stats.html&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Programmers Need to Learn Statistics Or I will Kill Them All&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;–Zed A. Shaw&lt;/font&gt;_&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In an &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_intropss_sect006.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;equivalence testing&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_ttest_examples05.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;example&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;against lognormal data,&amp;#160; a TOST (Two One-Sided Test)&amp;#160; option used in SAS TTEST procedure:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc ttest data=auc dist=lognormal &lt;font color=&#34;#ff0000&#34;&gt;tost(0.8, 1.25)&lt;/font&gt;; &lt;br /&gt;&amp;#160;&amp;#160; paired TestAUC*RefAUC; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;And the output:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/tost.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;tost&#34; border=&#34;0&#34; alt=&#34;tost&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/tost_thumb.png&#34; width=&#34;460&#34; height=&#34;177&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Since the 90% (&lt;em&gt;who not 95%? see below&lt;/em&gt;) limit of the geometric mean ratio (0.9412) , [0.8634,1.0260], lies in the FDA endorsed equivalence bounds [0.8,1.25],&amp;#160; then we can make a conclusion of “Equivalent” among these Test and Reference drugs. Following are the notes on how this so called TOST (Two One-Sided Test) works.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In its original form, the hypothesis of equivalence testing is written as &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_intropss_sect006.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;difference on means&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;(equivalence by definition: not above the upper limit, and not below the lower limit):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/hypo.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;hypo&#34; border=&#34;0&#34; alt=&#34;hypo&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/hypo_thumb.png&#34; width=&#34;244&#34; height=&#34;105&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Since our AUC example with lognormal data, the difference on means is transformed into a ratio,&amp;#160; &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/geomean/&#34; target=&#34;_blank&#34;&gt;geometric mean ratio&lt;/a&gt;: if no difference in means, then the ratio simply equals 1. The two one-sided tests are (with form of ratio, not difference anymore):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I) upper one-sided T-test with a null ratio as the left bound of predefined limits, here is 0.8&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;II) lower one-sided T-test with a null ratio as the right bound of predefined limits, here is 1.25.&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;T-test I can be done as (with option sides=U, where U means upper one-sided test. This option also only goes with SAS 9.2 and later)&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc ttest data=auc dist=lognormal h0=0.8&amp;#160; &lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;sides=U&lt;/font&gt;&lt;/strong&gt;; &lt;br /&gt;&amp;#160;&amp;#160; paired TestAUC*RefAUC; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;And the output:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/upper.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;upper&#34; border=&#34;0&#34; alt=&#34;upper&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/upper_thumb.png&#34; width=&#34;441&#34; height=&#34;162&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;T-test II, lower one-sided (with option sides=L, where L means lower one-sided test):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc ttest data=auc dist=lognormal h0=1.25 &lt;font color=&#34;#ff0000&#34;&gt;sides=L&lt;/font&gt;; &lt;br /&gt;&amp;#160;&amp;#160; paired TestAUC*RefAUC; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;And the output:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/lower.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;lower&#34; border=&#34;0&#34; alt=&#34;lower&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/lower_thumb.png&#34; width=&#34;435&#34; height=&#34;162&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;So, the two one-sided tests together get a limit of [0.8634,1.0260], which is exactly as same as we got before using TOST option, except the former noted as “95%” and the later, “90%”. That’s because, the 0.1 (&lt;em&gt;1-90%&lt;/em&gt;) should be dividend by 2 for the two one-sided tests to ensure they can both get their 0.05 significance respectively. Namely, at significant level α=5%, the equivalence test gets a&amp;#160; 100(1-2α)% = 90% interval.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;At last, the overall P-value, will take the maximum one in these two one-sided tests (here we get max{0.0031,&lt;0.0001} = 0.0031).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;sas-notes&#34;&gt;SAS Notes&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Just did a quick search, PROC MIXED seemed more popular for statisticians to perform equivalence test years before:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://onbiostatistics.blogspot.com/2012/04/cookbook-sas-codes-for-bioequivalence.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+blogspot%2FsVwyB+%28On+Biostatistics+and+Clinical+Trials%29&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Cookbook SAS Codes for Bioequivalence Test in 2x2x2 Crossover Design&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, by Chunqin Deng (2012)&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;_&lt;a href=&#34;http://www.lexjansen.com/pharmasug/2004/posters/po05.pdf&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;The Paired T-Test: Does PROC MIXED Produce the Same Results as PROC TTEST?&lt;/font&gt;&lt;/a&gt;_ &lt;font size=&#34;1&#34;&gt;by Jack Nyberg (2004)&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Section 8.2&lt;em&gt; Bioequivalence Testing,&lt;/em&gt; in&lt;/font&gt; __&lt;a href=&#34;http://www.amazon.com/Pharmaceutical-Statistics-Using-SAS-Practical/dp/159047886X&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Pharmaceutical Statistics Using SAS: A Practical Guide&lt;/em&gt;&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, by Alex Dmitrienko, Christy Chuang-Stein, and Ralph D&amp;#8217;Agostino (2007)&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;font-style-font-weight-bold-reference-font&#34;&gt;&lt;font style=&#34;font-weight: bold&#34;&gt;Reference&lt;/font&gt;&lt;/h1&gt;
+
+&lt;p&gt;_&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_ttest_syntax01.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS TTEST Procedure User Guide&lt;/font&gt;&lt;/a&gt;_&lt;/p&gt;
+
+&lt;p&gt;_&lt;a href=&#34;http://pubs.acs.org/doi/pdf/10.1021/ac053390m&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Beyond the t-Test&lt;/font&gt;&lt;/a&gt;_&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

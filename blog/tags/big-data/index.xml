@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Big Data on Lithium Theme</title>
+    <link>/tags/big-data/index.xml</link>
+    <description>Recent content in Big Data on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/big-data/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>An Analytical Valley: Big Data and Data Scientists (and SAS Programmers)</title>
+      <link>/2011/09/14/an-analytical-valley-big-data-and-data-scientists-and-sas-programmers/</link>
+      <pubDate>Wed, 14 Sep 2011 22:15:17 +0000</pubDate>
+      
+      <guid>/2011/09/14/an-analytical-valley-big-data-and-data-scientists-and-sas-programmers/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/09/hadoop.jpg&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;hadoop&#34; border=&#34;0&#34; alt=&#34;hadoop&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/09/hadoop_thumb.jpg&#34; width=&#34;240&#34; height=&#34;180&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blogs.sas.com/content/sascom/author/tomdavenport&#34; target=&#34;_blank&#34;&gt;Tom Davenport&lt;/a&gt; reported an observation that &lt;a href=&#34;http://blogs.sas.com/content/sascom/2011/09/13/is-silicone-valley-becoming-more-analytical/&#34; target=&#34;_blank&#34;&gt;Silicon Valley is becoming more analytical&lt;/a&gt; since companies in the Valley such as Google, Facebook, eBay, LinkedLn all have strong presences in analytics. Besides such predominant companies, I’d also like to add Yahoo to the list although Yahoo is no longer in its peak. Yahoo is the largest sponsor and contributor of &lt;a href=&#34;http://hadoop.apache.org/&#34; target=&#34;_blank&#34;&gt;Hadoop&lt;/a&gt;, an open source framework for distributed processing of so called “big data”. When taking a look at the outstanding &lt;a href=&#34;www.facebook.com/data&#34; target=&#34;_blank&#34;&gt;Facebook data team&lt;/a&gt; or &lt;a href=&#34;http://sna-projects.com/sna/&#34; target=&#34;_blank&#34;&gt;LinkedIn data team&lt;/a&gt;, we can see that Hadoop is also one of the most overwhelmingly successful technical factors. Such Valley companies themselves are the huge consumers of big data and have strong incentives to develop analytical solutions beyond their high technology product pipelines.&lt;/p&gt;
+
+&lt;p&gt;Analytical staffs in LinkedLn also helps a lot to promote the widely usage of the term “data scientist”. They identify themselves as data scientists and that’s really cool. Now more and more statisticians are also very glad to accept this brand new title. According to a &lt;a href=&#34;http://blog.revolutionanalytics.com/2011/08/statisticians-at-jsm-consider-themselves-data-scientists.html&#34; target=&#34;_blank&#34;&gt;survey in JSM&lt;/a&gt; (2011, Miami), more than 85% (164) statisticians there considered themselves “data scientists”.&lt;/p&gt;
+
+&lt;p&gt;McKinsey also released a report this May &lt;a href=&#34;http://www.mckinsey.com/mgi/publications/big_data/pdfs/MGI_big_data_full_report.pdf&#34; target=&#34;_blank&#34;&gt;on big data&lt;/a&gt; and the huge gap of qualified analytical talents. You know when a management consulting firm begins to talk something technical, it is no longer a fashion to follow the discussion of the concept. To embrace the challenge of big data, one or the team needs multidiscipline background—basically speaking, computer science and statistics (and data mining or machine learning is just an interdisciplinary subject of them). Here is an ambitious list on “How do I become a data scientist”:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.quora.com/Educational-Resources/How-do-I-become-a-data-scientist&#34;&gt;http://www.quora.com/Educational-Resources/How-do-I-become-a-data-scientist&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For these learning plans, just feel the meaning and don’t take it too seriously. Check yourself and set up your own priority.&lt;/p&gt;
+
+&lt;h3 id=&#34;notes-for-sas-programmers&#34;&gt;Notes for SAS Programmers&lt;/h3&gt;
+
+&lt;p&gt;For SAS programmers, I read an exciting post besides High Performance Computing that &lt;a href=&#34;http://blogs.sas.com/content/datamanagement/2011/08/29/sas-hadoop-and-big-data&#34; target=&#34;_blank&#34;&gt;SAS will also play with Hadoop&lt;/a&gt; by introducing some functionality in SAS/Access and SAS Data Integration Studio.&lt;/p&gt;
+
+&lt;p&gt;For SAS programmers with no IT background, it is not a good idea to jump into algorithms and data structures and other hard core computer courses immediately. Instead I recommend to take the full advantages of SAS language and system itself to dive into computer world gradually:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Learn and practice and practice &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/sqlproc/63043/HTML/default/viewer.htm#titlepage.htm&#34; target=&#34;_blank&#34;&gt;SAS Proc SQL&lt;/a&gt; which is compliant with the &lt;a href=&#34;http://en.wikipedia.org/wiki/SQL-92&#34;&gt;SQL-92&lt;/a&gt; standard. SQL is the common language in database world and SAS Proc SQL can help you switch smoothly to Oracle SQL, Teradata SQL, MySql SQL and other SQL implementations although there are some non-critical &lt;a href=&#34;http://www.jiangtanghu.com/blog/2009/12/04/work-with-oracle-a-quick-sheet-for-sas-programmers-2/&#34; target=&#34;_blank&#34;&gt;differences&lt;/a&gt; in details.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Dig into the operating system specific documentation of SAS, for example in SAS 9.3,&amp;#160; _&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/hostwin/63047/HTML/default/viewer.htm#titlepage.htm&#34; target=&#34;_blank&#34;&gt;SAS 9.3 Companion for Windows&lt;/a&gt;_ or _&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/hostunx/63053/HTML/default/viewer.htm#titlepage.htm&#34; target=&#34;_blank&#34;&gt;SAS 9.3 Companion for UNIX Environments&lt;/a&gt;_ or others depending the OS you are working on. They are the critical important documentations but unfortunately often missed in SAS programmers’&amp;#160; reading list.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Such docs will help SAS programmers to deal with the machines and expose to the wide computer world in a way that a SAS programmer can understand. You can’t expect to be an expert on computer via such docs, but at least you can communicate fluently with internal IT staff.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Then you get all the confidences to play with computer and can switch to any other topics interested in &lt;a href=&#34;http://www.quora.com/Educational-Resources/How-do-I-become-a-data-scientist&#34; target=&#34;_blank&#34;&gt;the list above&lt;/a&gt;!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

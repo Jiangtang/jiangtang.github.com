@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xml on Lithium Theme</title>
+    <link>/categories/xml/index.xml</link>
+    <description>Recent content in Xml on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/categories/xml/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SAS Proc Groovy in Action: JSON File Processing</title>
+      <link>/2013/12/12/sas-proc-groovy-in-action-json-file-processing/</link>
+      <pubDate>Thu, 12 Dec 2013 13:30:49 +0000</pubDate>
+      
+      <guid>/2013/12/12/sas-proc-groovy-in-action-json-file-processing/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Last year I took a bite of &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/10/28/hello-groovy-in-sas-9-3/&#34;&gt;&lt;font size=&#34;1&#34;&gt;the newly SAS Proc Groovy to read JSON data&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;since there was no direct “proc import” or “infile” or “libname” way to play with JSON. Here is an nice example from SAS official blog, by Falko Schulz where Proc Groovy is used to parse Twitter JSON file:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;a href=&#34;http://blogs.sas.com/content/sascom/2013/12/12/how-to-import-twitter-tweets-in-sas-data-step-using-oauth-2-authentication-style/&#34;&gt;&lt;font size=&#34;1&#34;&gt;How to import Twitter tweets in SAS DATA Step using OAuth 2 authentication style&lt;/font&gt;&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;PS: Since SAS 9.4, you can output a JSON file by &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/proc/64787/HTML/default/viewer.htm#n0nejfk9q0pzmnn181l92qk3ah2e.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;Proc JSON&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, but still no XML-libname-engine like JSON parser available.&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What&amp;rsquo;s New</title>
+      <link>/2013/03/20/whatrsquos-new/</link>
+      <pubDate>Wed, 20 Mar 2013 23:09:08 +0000</pubDate>
+      
+      <guid>/2013/03/20/whatrsquos-new/</guid>
+      <description>&lt;p&gt;I didn’t &lt;a href=&#34;http://www.jiangtanghu.com/blog/archives/&#34;&gt;blog&lt;/a&gt; for a while in this first half March and there are bunches of new stuff to catch up:&lt;/p&gt;
+
+&lt;p&gt;I had a new baby! He was delivered on time (and on budget!), &lt;em&gt;lions tigers and bears, oh my&amp;#8230;&lt;/em&gt; His brother is Tiger so I named him, Leo.&lt;/p&gt;
+
+&lt;p&gt;And I got the latest SAS 9.3 (TS1M2) installed! SAS is jus getting much beautiful.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/03/SAS9.3_12.1.png&#34;&gt;&lt;font color=&#34;#cbcbcb&#34;&gt;&lt;/font&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS9.3_12.1&#34; border=&#34;0&#34; alt=&#34;SAS9.3_12.1&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/03/SAS9.3_12.1_thumb.png&#34; width=&#34;383&#34; height=&#34;99&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.opencdisc.org/download&#34;&gt;OpenCDISC&lt;/a&gt; had the latest release, Version 1.4 with the new SDTM 3.1.3 validation checks,—and yes CDISC itself also had some significant updates:&lt;/p&gt;
+
+&lt;p&gt;SDTMv1.3 and SDTMIGv3.1.3 now have the &lt;a href=&#34;http://www.cdisc.org/sdtmv1-4-sdtmigv3-1-3-metadata&#34;&gt;machine readable metadata&lt;/a&gt; online. It’s a nice improvement (last year I just posted &lt;em&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/12/29/cdisc-in-pdf-format/&#34;&gt;The Great, Open, Vendor-neutral, Platform-independent Data Standards, &amp;hellip; Yet in PDF Formats&lt;/a&gt;)&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.cdisc.org/define-xml&#34;&gt;Define-XML&lt;/a&gt; now turns to 2.0 (finally).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://cran.rstudio.com/&#34;&gt;R&lt;/a&gt; had its final 2.* release, Version 2.15.3 and Version 3.0.0 will just come soon. &lt;a href=&#34;http://www.rstudio.com/ide/download/desktop&#34;&gt;RStudio&lt;/a&gt; also had a update recently. RStudio is the best IDE (not just R IDE) I used.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://googlereader.blogspot.com/2013/03/powering-down-google-reader.html&#34;&gt;Google will shut down Google Reader&lt;/a&gt;, the best RSS reader ever. It’s a huge loss and I tell you, for example, the famous SAS and statistical blogger Wensui Liu, once frequently posted on Windows Live Space, and then Blogspot and finally &lt;a href=&#34;http://statcompute.wordpress.com/&#34;&gt;WordPress&lt;/a&gt;. The former two blogs were closed and Google Reader feed is the only way to archive these lost posts!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blogging is Awesome: CDISC Bloggers</title>
+      <link>/2012/05/04/blogging-is-awesome-cdisc-bloggers/</link>
+      <pubDate>Fri, 04 May 2012 22:42:32 +0000</pubDate>
+      
+      <guid>/2012/05/04/blogging-is-awesome-cdisc-bloggers/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://peterdewolf.com/i-remember-when-blogging-was-cool/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;I remember when blogging was cool.&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Before the specializing and monetizing and Twitter-izing.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &amp;#8212;&lt;/font&gt;&lt;a href=&#34;http://peterdewolf.com/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Peter Dewolf&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Well I think blogging is still cool (&lt;em&gt;and &lt;/em&gt;&lt;/font&gt;&lt;a href=&#34;http://add-vodka.com/7-reasons-why-blogging-is-awesome/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;awesome&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;_ &lt;font size=&#34;1&#34;&gt;and &lt;/font&gt;_&lt;a href=&#34;http://elevenminuteawesome.com/12-reasons-blogging-awesome/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;awesome&lt;/font&gt;&lt;/em&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;…). The most appealing personal reason is, blog posts are Google searchable and suitable for archive while Tweets NOT. Admittedly I hold some sort of&amp;#160; &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/29/not-documented-not-exist/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Existentialism 2.0&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: &lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;if it is not Google searched, it doesn’t exit!&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Last month I placed a post on how to &lt;/font&gt;&lt;a href=&#34;http://www.d-wise.com/blog/2012/04/26/keep-pace-with-cdisc/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;keep pace with CDISC&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;&amp;#160;&lt;/em&gt;from its official channel&lt;em&gt;s &lt;/em&gt;and I feel cool to add an appendix of source from the &lt;em&gt;awesome&lt;/em&gt; blogosphere. Fortunately or not, CDISC is still in the niche market of topics and it takes few efforts to get the list(update me if someone else available! if you are a Google Reader user, just simply import &lt;/font&gt;&lt;a href=&#34;http://jiangtanghu.com/docs/en/google-reader-subscriptions_CDISC_JiangtangHu.xml&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;this file&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, my Google Reader subscription on CDISC):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;1. Blog @ &lt;/font&gt;&lt;/strong&gt;&lt;a href=&#34;http://www.assero.co.uk&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;Assero&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;** &lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;by &lt;/font&gt;&lt;strong&gt;&lt;a href=&#34;http://www.assero.co.uk/about/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;Dave Iberson-Hurst&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/strong&gt; &lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;(“Dave IH”)&lt;/font&gt;**&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.assero.co.uk/category/blog/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.assero.co.uk/category/blog/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Insightful and full of humor. I retweeted all of its latest posts and you can feel somehow on these tittles (YES on CDISC):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;h4 id=&#34;font-size-1-what-i-want-what-i-really-really-want-font-http-www-assero-co-uk-2012-what-i-want-what-i-really-really-want&#34;&gt;&lt;a href=&#34;http://www.assero.co.uk/2012/what-i-want-what-i-really-really-want/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;What I Want, What I Really Really Want&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&#34;font-size-1-churchill-the-fda-and-a-fall-font-http-www-assero-co-uk-2012-churchill-the-fda-and-a-fall&#34;&gt;&lt;a href=&#34;http://www.assero.co.uk/2012/churchill-the-fda-and-a-fall/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Churchill, the FDA and a Fall&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&#34;font-size-1-mad-march-and-the-fda-font-http-www-assero-co-uk-2012-mad-march-and-the-fda&#34;&gt;&lt;a href=&#34;http://www.assero.co.uk/2012/mad-march-and-the-fda/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Mad March and the FDA&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Btw, I write blogs casual way while it is very impressive to read IH reminding me the George Orwell style.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt;2. &lt;/strong&gt;&lt;/font&gt;&lt;a href=&#34;http://www.d-wise.com/&#34; target=&#34;_blank&#34;&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt;d-Wise Technologies&lt;/strong&gt;&lt;/font&gt;&lt;/a&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt; Blog&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.d-wise.com/blog/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.d-wise.com/blog/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It is my employer’s official blog site where &lt;/font&gt;&lt;a href=&#34;http://www.linkedin.com/pub/chris-decker/8/52/72&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Chris Decker&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;is the key contributor to CDISC. You can check out his latest posts on &lt;/font&gt;&lt;a href=&#34;http://www.phuse.eu/css&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;FDA/PhUSE Annual Computational Science Symposium&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;where he served as committee lead:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;h4 id=&#34;font-size-1-overcoming-industry-challenges-a-shift-to-collaboration-font-http-www-d-wise-com-blog-2012-03-08-overcoming-industry-challenges-a-shift-to-collaboration&#34;&gt;&lt;a href=&#34;http://www.d-wise.com/blog/2012/03/08/overcoming-industry-challenges-a-shift-to-collaboration/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Overcoming Industry Challenges: A Shift to Collaboration&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&#34;font-size-1-validation-and-quality-are-they-the-same-font-http-www-d-wise-com-blog-2012-03-19-validation-and-quality-are-they-the-same&#34;&gt;&lt;a href=&#34;http://www.d-wise.com/blog/2012/03/19/validation-and-quality-are-they-the-same/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Validation and Quality: Are They the Same?&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I will also commit to update this blog as my understanding on clinical standards goes. Here is the saying:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;look to the master, &lt;br /&gt;follow the master, &lt;br /&gt;walk with the master, &lt;br /&gt;see through the master, &lt;br /&gt;become the master.&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt;3.&amp;#160; &lt;/strong&gt;&lt;/font&gt;&lt;a href=&#34;http://www.xml4pharma.com/&#34; target=&#34;_blank&#34;&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt;XML4Pharma&lt;/strong&gt;&lt;/font&gt;&lt;/a&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt; Blog&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://cdiscguru.blogspot.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://cdiscguru.blogspot.com/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;with industry news and hard (while cool) way writing on XML (CDISC ODM, define.xml).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;4. &lt;/font&gt;&lt;/strong&gt;&lt;a href=&#34;http://blog.clinovo.com/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;eClinical Trends&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;** &lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;by &lt;/font&gt;&lt;a href=&#34;http://www.clinovo.com/&#34; target=&#34;_blank&#34;&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;Clinovo&lt;/font&gt;&lt;/a&gt;**&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.clinovo.com/category/cdisc/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://blog.clinovo.com/category/cdisc/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Clinovo jumps to this topic by launching a CDISC SDTM convertor CDISC Express.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;5. eClinicalOpinion&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://eclinicalopinion.blogspot.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://eclinicalopinion.blogspot.com/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This blog is most focused on EDC, the clinical data management part. I like its &lt;a href=&#34;http://eclinicalopinion.blogspot.com/2009/05/odm-tutorial-index.html&#34; target=&#34;_blank&#34;&gt;series discussion on CDISC ODM&lt;/a&gt;.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;6. eCTD Regulatory Submissions Network&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://ectdregulatorysubmissionsnetwork.blogspot.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://ectdregulatorysubmissionsnetwork.blogspot.com/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This is a personal blog by Shakul Hameed. I read it mostly to get some information on submission requirements from European regulatory.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://cdisc-end-to-end.blogspot.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt;7. HL7 Watch&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://hl7-watch.blogspot.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://hl7-watch.blogspot.com/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;while it is not CDISC directly related (#6 also), it’s nice to get some voice of &lt;/font&gt;&lt;a href=&#34;http://www.hl7.org/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;HL7&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;which would be the future of CDISC.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt;8. From a Logical Point of View-CDISC&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/category/cdisc/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.jiangtanghu.com/blog/category/cdisc/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Yes this one, my 2 cents. I will keep recording my personal immersion and understanding on CDISC and related clinical standards. (while it is privilege to cross reference oneself in his/her own blog! Keep awesome, keep blogging.) &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;font size=&#34;1&#34;&gt;9. Linked Data and URI&lt;font color=&#34;#ff0000&#34;&gt;:&lt;/font&gt;s for Enterprises&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://kerfors.blogspot.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://kerfors.blogspot.com/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Look at the colon (:) in the title of this blog and you’re right this blog plays (at least) with XML. I find it is good resource (thanks &lt;a href=&#34;https://twitter.com/kerfors&#34;&gt;@kerfors&lt;/a&gt; for referencing!) to learn ODM, the foundation of CDISC while the latest post is &lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;&lt;a href=&#34;http://kerfors.blogspot.com/2012/05/semantic-models-for-cdisc-based.html&#34; target=&#34;_blank&#34;&gt;Semantic models for CDISC based standard and metadata management&lt;/a&gt;&lt;/em&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;P.S.: Blogger &lt;/font&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Chris Hemedinger&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;maintains a nice &lt;/font&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/2010/12/02/aggregating-assault-sas-blogs-are-everywhere/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;list of SAS bloggers&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;(&lt;/font&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/2010/12/10/blogs-by-sas-employees-google-reader-bundle/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;blogs by SAS employees&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, and &lt;/font&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/2010/12/10/blogs-by-sas-community-google-reader-bundle/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;blogs by SAS customers, consultants, and the analytics community&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;).&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>OpenCDISC Validator V1.3: An Unboxing Review (1): counting issue</title>
+      <link>/2012/03/31/opencdisc-validator-v1.3-an-unboxing-review-1-counting-issue/</link>
+      <pubDate>Sat, 31 Mar 2012 16:58:00 +0000</pubDate>
+      
+      <guid>/2012/03/31/opencdisc-validator-v1.3-an-unboxing-review-1-counting-issue/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;
+  The lasted &lt;a href=&#34;http://www.opencdisc.org&#34; target=&#34;_blank&#34;&gt;OpenCDISC&lt;/a&gt; Validator version 1.3 was released at 29 March, 2012 (btw, there is a typo in the Line 1 of &lt;em&gt;CHANGELOG.txt&lt;/em&gt; within the package: “2012” not “2011”). &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/19/github-and-weekend-programming/&#34; target=&#34;_blank&#34;&gt;As usual&lt;/a&gt;, you can submit the following SAS scripts to get some basic information(remember to customize your directory):
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+    &lt;font face=&#34;Courier New&#34;&gt;filename CDISC url &#34;&lt;/font&gt;&lt;a href=&#34;https://raw.github.com/Jiangtang/Programming-SAS/master/Rules_Count_OpenCDISC_XML.sas&amp;quot;;&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;https://raw.github.com/Jiangtang/Programming-SAS/master/Rules_Count_OpenCDISC_XML.sas&#34;;&lt;/font&gt;&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;font face=&#34;Courier New&#34;&gt;%include CDISC;&lt;/font&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;font face=&#34;Courier New&#34;&gt;%Rules_Count_OpenCDISC_XML(dir=C:OpenCDISC1.3compareopencdisc-validator_1.3config)&lt;/font&gt;
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+  and you get a summary of validation rules of OpenCDISC Validator V1.3 (&lt;strong&gt;499&lt;/strong&gt; total unique rules):
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/OpenCDISC_V1.3.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;OpenCDISC_V1.3&#34; border=&#34;0&#34; alt=&#34;OpenCDISC_V1.3&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/OpenCDISC_V1.3_thumb.png&#34; width=&#34;444&#34; height=&#34;312&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  where
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+    AD: Analytical Data &lt;br /&gt;CT: Controlled Terminology &lt;br /&gt;DD: Data Definition &lt;br /&gt;OD: Operation Data Model &lt;br /&gt;SD: Study Data &lt;br /&gt;SE: &lt;a href=&#34;http://www.cdisc.org/send&#34; target=&#34;_blank&#34;&gt;SEND&lt;/a&gt; data
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+  As comparison, a summary of V1.2.1 (&lt;strong&gt;385&lt;/strong&gt; total unique rules) posted before:
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;img style=&#34;margin: 3px auto 5px; display: block; float: none&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/OC_by_model.png&#34; width=&#34;446&#34; height=&#34;292&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  The most significant enhancement of V1.3 against V1.2.1 is the adding of rules for &lt;a href=&#34;http://www.cdisc.org/stuff/contentmgr/files/0/3fa5f30f40ce5ecc7b3f91e558b55f73/misc/amendment_1_to_study_data_tabulation_model_v1_2_and_sdtmig_v3_1_2_final_2011_12_14.pdf&#34; target=&#34;_blank&#34;&gt;SDTM 3.1.2 with Amendment 1&lt;/a&gt; and &lt;a href=&#34;http://www.cdisc.org/send&#34; target=&#34;_blank&#34;&gt;SEND 3.0&lt;/a&gt;. You can see there are also some changes among others modules, such ADaM 1.0 and SDTM 3.1.2. The OpenCDISC release newsletter said that there are &lt;strong&gt;43&lt;/strong&gt; new SDTM rules added. Well, rules deleted, rules added, rules commented, we now have some arithmetical discrepancies.
+&lt;/p&gt;
+
+&lt;p&gt;
+  The scripts above capture all instances of validation rule IDs (also delete some commented for example in &lt;em&gt;config-&lt;strong&gt;define&lt;/strong&gt;-1.0.xml&lt;/em&gt;, four rules commented: OD0004, OD0005, OD0007, OD0008). We can also double validate the counts manually:
+&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    copy all contents for example in &lt;a href=&#34;http://www.opencdisc.org/projects/validator/cdisc-sdtm-3.1.2-validation-rules&#34; target=&#34;_blank&#34;&gt;SDTM 3.1.2&lt;/a&gt; in its website into Notepad++ (where line numbers displayed)
+  &lt;/li&gt;
+  &lt;li&gt;
+    delete all unnecessary entries
+  &lt;/li&gt;
+  &lt;li&gt;
+    then the last line number is the total number of the rules (227 in this case).
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+  Another way to check the rules is to &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/11/xml/&#34; target=&#34;_blank&#34;&gt;open the XML configuration files using a web browser&lt;/a&gt;:
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;img style=&#34;margin: 3px auto 5px; display: block; float: none&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_IE1.png&#34; width=&#34;455&#34; height=&#34;405&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  Theoretically the three ways are identical in counting, but there is an open bug in the style sheet file in …OpenCDISC1.3opencdisc-validatorconfigresourcesxsl&lt;strong&gt;config.xsl&lt;/strong&gt;, Line 175:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+    &lt;font face=&#34;Courier New&#34;&gt;&lt;xsl:template match=&#34;val:Unique|val:Condition|val:Match|val:Regex&lt;/font&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;font face=&#34;Courier New&#34;&gt;|val:Required|val:Lookup|val:Metadata&#34;&gt;&lt;/font&gt;
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+  There is no “val:Find” to render all the Find validation rules (AD0061 in config-&lt;strong&gt;adam&lt;/strong&gt;-1.0.xml) so all Find validators are not displayed. A suggested workaround is just to add “val:Find” to the file:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+    &lt;font face=&#34;Courier New&#34;&gt;&lt;xsl:template match=&#34;val:Unique|val:Condition|val:Match|val:Regex&lt;/font&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    &lt;font face=&#34;Courier New&#34;&gt;|val:Required|val:Lookup|val:Metadata&lt;font color=&#34;#ff0000&#34;&gt;|val:Find&lt;/font&gt;&#34;&gt;&lt;/font&gt;
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+  Actually in the “&lt;em&gt;&lt;a href=&#34;http://www.opencdisc.org/projects/validator/opencdisc-validation-framework#validation-rules&#34; target=&#34;_blank&#34;&gt;OpenCDISC Validation Framework&lt;/a&gt;&lt;/em&gt;” page of OpenCDISC website, the “Find”validator is not &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/29/not-documented-not-exist/&#34; target=&#34;_blank&#34;&gt;documented&lt;/a&gt; yet.
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;&lt;em&gt;to be continued&lt;/em&gt;&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;/font&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Face Off: Review OpenCDISC XML files</title>
+      <link>/2012/02/11/face-off-review-opencdisc-xml-files/</link>
+      <pubDate>Sat, 11 Feb 2012 16:35:35 +0000</pubDate>
+      
+      <guid>/2012/02/11/face-off-review-opencdisc-xml-files/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.opencdisc.org/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;OpenCDISC&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, the first open source CDISC validator, is already in the toolbox of FDA reviewers (CDER/CBER, see &lt;em&gt;&lt;a href=&#34;http://www.cdisc.org/stuff/contentmgr/files/0/8d99d69f1195d2a2954e62d2fbb3470f/misc/cdisc_standards_in_fda_submissions_2012_01_26pdf.pdf&#34; target=&#34;_blank&#34;&gt;CDISC Standards in the Regulatory Submission Process&lt;/a&gt;&lt;/em&gt;, 26 January 2012, P.33). The key features in OpenCDISC is a &lt;a href=&#34;http://www.opencdisc.org/projects/validator/opencdisc-validation-framework&#34; target=&#34;_blank&#34;&gt;dichotomy of validation rules (XML based) and application logic&lt;/a&gt;. &lt;/font&gt;&lt;font size=&#34;1&#34;&gt;Currently OpenCDISC Validator (&lt;a href=&#34;http://www.opencdisc.org/download&#34; target=&#34;_blank&#34;&gt;Version 1.2.1&lt;/a&gt;) officially supports the four following CDISC modules:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.opencdisc.org/projects/validator/cdisc-sdtm-3.1.2-validation-rules&#34;&gt;SDTM 3.1.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.opencdisc.org/projects/validator/cdisc-sdtm-3.1.1-validation-rules&#34;&gt;SDTM 3.1.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.opencdisc.org/projects/validator/cdisc-define.xml-1.0-validation-rules&#34;&gt;Define.xml 1.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.opencdisc.org/projects/validator/cdisc-adam-1.0-validation-rules&#34;&gt;ADaM 1.0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You can get the corresponding configuration files (validation rules) &lt;/font&gt;&lt;a href=&#34;http://www.opencdisc.org/download&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;online&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;or in the software folder (in ..&lt;em&gt;opencdisc-validatorconfig &lt;/em&gt;with extension of .xml). Since SDTM 3.1.2 has the most rich set of validation rules from Janus, WebSDM and of course additional&amp;#160; OpenCDISC rules by itself, its configuration file (&lt;em&gt;&lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;config-sdtm-3.1.2.xml&lt;/a&gt;&lt;/em&gt;) deserves more attention. Better understanding of &lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;&lt;/a&gt;&lt;em&gt;&amp;#160;&lt;/em&gt;is the first step to customize the software according to business needs. Followings are some personal tips and tricks to play and even “torture” the file, using Notepad++, web browsers (IE and Firefox), Excel with MSXML and SAS XML Mapper. &lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;1-don-t-use-the-windows-default-notepad-to-open-and-edit-the-xml-file&#34;&gt;1. DON’T use the Windows default Notepad to open and edit the xml file&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad2.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_Notepad&#34; border=&#34;0&#34; alt=&#34;XML_Notepad&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad_thumb2.png&#34; width=&#34;453&#34; height=&#34;275&#34; /&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;while the reason:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;if you use Notepad to open a XML file, almost you get nothing but strings and strings.&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and another supporting reason, see bellowing picture.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;2-use-a-href-http-notepad-plus-plus-org-target-blank-notepad-a-or-other-real-text-editors-to-open-and-edit-it&#34;&gt;2. USE &lt;a href=&#34;http://notepad-plus-plus.org/&#34; target=&#34;_blank&#34;&gt;Notepad++&lt;/a&gt; or other REAL text editors to open and edit it&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad3.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_Notepad  &#34; border=&#34;0&#34; alt=&#34;XML_Notepad  &#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad_thumb3.png&#34; width=&#34;441&#34; height=&#34;321&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Notepad++ makes the difference. It supports multiple tabs view, XML syntax highlighting and XML tags match and other fancy stuff never in the plain Notepad. And like OpenCDISC, it’s free, both in sense of free beer and free speech.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Other real text editor, include Vim, UltraEdit and such, but for most users, I still think Notepad++ is the most handy one.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;3-at-first-use-a-web-browsers-to-review-it&#34;&gt;3. At first, use a web browsers to review it&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_IE1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_IE&#34; border=&#34;0&#34; alt=&#34;XML_IE&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_IE_thumb1.png&#34; width=&#34;423&#34; height=&#34;398&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It is the web view of &lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;&lt;/a&gt;&lt;em&gt;. &lt;/em&gt;The secret is a style file, &lt;strong&gt;define-1.0.xsl&lt;/strong&gt; in ..opencdisc-validatorconfigschematron. This is another story of dichotomy. The &lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;&lt;/a&gt; file itself is only used to store metadata (machine-readable), while the style file (also a XML file) used to instruct how to display it (human-readable). Within some proper internal interface, web browsers (I tested in IE and Firefox; Google Chrome doesn’t work). Excel can also render this XML file well (only test on Excel 2010 and 2007) while &lt;/font&gt;&lt;font size=&#34;1&#34;&gt;Web view is much better&lt;/font&gt;&lt;font size=&#34;1&#34;&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Excel.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;XML_Excel&#34; border=&#34;0&#34; alt=&#34;XML_Excel&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Excel_thumb.png&#34; width=&#34;401&#34; height=&#34;577&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;4-the-real-awesome-job-use-microsoft-xml-parser-or-other-xml-parsers-to-dig-into-xml-structure&#34;&gt;4. The real awesome job: use Microsoft XML parser or other XML parsers to dig into XML structure&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_Tags_Excel&#34; border=&#34;0&#34; alt=&#34;XML_Tags_Excel&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel_thumb1.png&#34; width=&#34;406&#34; height=&#34;622&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I use Excel 2010 with Microsoft XML parser (&lt;a href=&#34;http://en.wikipedia.org/wiki/MSXML&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;MSXML 6.0&lt;/em&gt;&lt;/a&gt;&lt;em&gt;. &lt;/em&gt;You can get the version of your MSXML by visiting &lt;a href=&#34;http://home.arcor.de/martin.honnen/xslt/processorTest.xml&#34; target=&#34;_blank&#34;&gt;this website&lt;/a&gt; in IE and you will get the different results when switching to other web browsers because Firefox and Chrome use other parsers). &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You can also get a instance of each XML tag:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel_preview1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_Tags_Excel_preview&#34; border=&#34;0&#34; alt=&#34;XML_Tags_Excel_preview&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel_preview_thumb1.png&#34; width=&#34;416&#34; height=&#34;640&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;5-the-real-awesome-job-use-sas-xml-mapper-to-get-the-tabulation-view&#34;&gt;5. The real awesome job: use SAS XML Mapper to get the tabulation view&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;And you may want to exact all the tables in the XML file with tabulation view, ideally, in SAS dataset:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For example, the first few rows in &lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_xml_tab1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;ODM_xml_tab&#34; border=&#34;0&#34; alt=&#34;ODM_xml_tab&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_xml_tab_thumb1.png&#34; width=&#34;399&#34; height=&#34;148&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;and the corresponding SAS dataset:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_tab1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;ODM_tab&#34; border=&#34;0&#34; alt=&#34;ODM_tab&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_tab_thumb1.png&#34; width=&#34;414&#34; height=&#34;48&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Actually you can put all the data in XML into a big dataset but with lots of redundancies. To use SAS XML Mapper (the latest version is 9.3), you should design a mapping file to tell the structure of the XML file. For the simple ODM dataset, you indicate the table name, column name and path, type and length:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/map.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;map&#34; border=&#34;0&#34; alt=&#34;map&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/map_thumb.png&#34; width=&#34;357&#34; height=&#34;150&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It never be fun to play with XML files. SAS XML Mapper is supposed to read CDISC ODM based XML files automatically (OpenCDISC XML files are called ODM compliant), but at least for this config-sdtm-3.1.2.xml, it failed and that’s why we should create a mapping file (&lt;em&gt;see above&lt;/em&gt;) by ourselves. Fortunately you don’t need to write it from scratch (it would be thousands of lines of codes):&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;find a CDISC ODM based XML file that SAS XML Mapper can read automatically, e.g., in &lt;a href=&#34;http://www.cdisc.org/define-xml&#34;&gt;http://www.cdisc.org/define-xml&lt;/a&gt;, a file named &lt;em&gt;define-example1.xml&lt;/em&gt; works well.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;use AutoMap function in SAS XML Mapper to get the mapping file.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;modify the mapping file to fit your needs.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;for details, refer SAS XML mapping syntax.&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;6-final-notes-for-excel&#34;&gt;6. Final Notes for Excel&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Right click &lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;&lt;/a&gt; then open with “Microsoft Excel”:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel11.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Excel1&#34; border=&#34;0&#34; alt=&#34;Excel1&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel1_thumb1.png&#34; width=&#34;412&#34; height=&#34;163&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Option 2 will go to section 3. If go with option 1:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel21.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;Excel2&#34; border=&#34;0&#34; alt=&#34;Excel2&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel2_thumb1.png&#34; width=&#34;320&#34; height=&#34;181&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Option 1-1 and 1-2:&amp;#160;&amp;#160; tabulation view in section 5&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Option&amp;#160; &lt;/font&gt;&lt;font size=&#34;1&#34;&gt;1-3:&amp;#160; tag view in section 4.&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dive into CDISC Express (1): Introductory</title>
+      <link>/2011/06/28/dive-into-cdisc-express-1-introductory/</link>
+      <pubDate>Tue, 28 Jun 2011 21:24:33 +0000</pubDate>
+      
+      <guid>/2011/06/28/dive-into-cdisc-express-1-introductory/</guid>
+      <description>
+
+&lt;p&gt;Recently I did for my personal project some research on &lt;a href=&#34;http://www.clinovo.com&#34; target=&#34;_blank&#34;&gt;Clinovo&lt;/a&gt;’s open source application, &lt;a href=&#34;http://www.clinovo.com/cdisc&#34; target=&#34;_blank&#34;&gt;CDISC Express&lt;/a&gt;, a SAS application based on Excel framework designed to map clinical data to CDISC SDTM domains automatically. Not perfect yet, but it is easily understandable and practically usable after few hours’ of exploration of user guide. And most important, it is on the right way: an automatic CDISC converter is the magic weapon in almost every clinical programmer’s dream.&lt;/p&gt;
+
+&lt;p&gt;CDISC Express is the first and only practically usable open source CDISC converter I even met. I wrote &lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/05/16/cdisc-express-a-glance&#34; target=&#34;_blank&#34;&gt;a post a month ago&lt;/a&gt; when I first tested it with great interests and reported some issues to its &lt;a href=&#34;http://cdiscsupport.clinovo.com/&#34; target=&#34;_blank&#34;&gt;fix system&lt;/a&gt;. Then I also had the great opportunity to discuss the software via email with its core developer, Romain Miralles. This post is just my personal notes on how to use and dig into the software, and will be best serve as a working documentation. You can return to me for any questions and comments.&lt;/p&gt;
+
+&lt;p&gt;By the way, there is an opportunity for your practicing and you will also have a change to win an iPad2 from Clinovo’s CDISC Express Contest:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.clinovo.com/cdisc/game&#34;&gt;http://www.clinovo.com/cdisc/game&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The due day is July 15&lt;sup&gt;th&lt;/sup&gt; and I already submitted my work. That’s fun.&lt;/p&gt;
+
+&lt;h1 id=&#34;1-download-and-installation&#34;&gt;1. Download and Installation&lt;/h1&gt;
+
+&lt;p&gt;You can get CDISC Express for free in&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.clinovo.com/cdisc/download&#34;&gt;http://www.clinovo.com/cdisc/download&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It is a window application and will be installed by default in&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;C:Program FilesCDISC Express&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/06/clip_image0024.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;clip_image002[4]&#34; border=&#34;0&#34; alt=&#34;clip_image002[4]&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/06/clip_image0024_thumb.jpg&#34; width=&#34;420&#34; height=&#34;333&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;After installation, this path will be coded as a macro variable &lt;font color=&#34;#ff0000&#34;&gt;&amp;amp;CDISCPATH&lt;/font&gt; in the following six SAS files which are all located in &lt;strong&gt;C:Program FilesCDISC Expressprograms&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;create_new_study.sas&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;_generate&lt;em&gt;Definexml.sas&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;generate_mapping_template.sas&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;_generate&lt;em&gt;SDTM.sas&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Validate_Mapping_File.sas&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Validate_SDTM_Domains.sas&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The macro variable reads as&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%LET CDISCPATH = C:Program FilesCDISC Express;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If you change the destination folder at the installation stage, e.g., to &lt;strong&gt;D:CDISC Express&lt;/strong&gt;, the value of the macro variable &lt;font color=&#34;#ff0000&#34;&gt;&amp;amp;CDISCPATH&lt;/font&gt; will be changed accordingly in the six files mentioned before:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%LET CDISCPATH = D:CDISC Express;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Note that if you want copy the whole folder of files to another destination, you should at least manually change the value of &lt;font color=&#34;#ff0000&#34;&gt;&amp;amp;CDISCPATH&lt;/font&gt; in such six files or add some codes to capture the path accordingly. From this point of view, the path setting of CDISC Express is not completely portable. Recommend that if you have such needs, just re-install the software in any destination you want. It will not write any records into registry and you can have many copies in one machine.&lt;/p&gt;
+
+&lt;p&gt;The following discussion assumes the software roots in &lt;strong&gt;C:Program FilesCDISC Express.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;2-working-flow&#34;&gt;&lt;strong&gt;2.&lt;/strong&gt; &lt;strong&gt;Working Flow&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;You can follow all the 6 action steps one by one coded in&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;C:Program FilesCDISC Expressprograms&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id=&#34;1-create-a-new-study-create-new-study-sas&#34;&gt;1) Create a new study (&lt;em&gt;create_new_study.sas&lt;/em&gt;)&lt;/h5&gt;
+
+&lt;p&gt;Simple and easy. Just assign a new study name in a macro call and run.&lt;/p&gt;
+
+&lt;h5 id=&#34;2-generate-mapping-file-generate-mapping-template-sas&#34;&gt;2) Generate mapping file (&lt;em&gt;generate_mapping_template.sas&lt;/em&gt;)&lt;/h5&gt;
+
+&lt;p&gt;This is the critical and most time consuming part. You should design mapping rules for every domain needed in Excel spreadsheets (the MAPPING FILE). If done, all other tasks, such as generate SDTM datasets, SAS transport files, define.xml and validation, can be well done by just clicking&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/06/clip_image0034.gif&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px&#34; title=&#34;clip_image003[4]&#34; border=&#34;0&#34; alt=&#34;clip_image003[4]&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/06/clip_image0034_thumb.gif&#34; width=&#34;37&#34; height=&#34;33&#34; /&gt;&lt;/a&gt; buttons&lt;/p&gt;
+
+&lt;p&gt;.&lt;/p&gt;
+
+&lt;h5 id=&#34;3-validate-mapping-file-validate-mapping-file-sas&#34;&gt;3) Validate mapping file (&lt;em&gt;Validate_Mapping_File.sas&lt;/em&gt;)&lt;/h5&gt;
+
+&lt;p&gt;For validating the mapping file, just click the button. As mentioned, the most important work is designing mapping file. It would be back and forth to design mapping file and validate it.&lt;/p&gt;
+
+&lt;h5 id=&#34;4-generate-sdtm-datasets-generate-sdtm-sas&#34;&gt;4) Generate SDTM datasets (_generate&lt;em&gt;SDTM.sas&lt;/em&gt;)&lt;/h5&gt;
+
+&lt;p&gt;If mapping file is OK, click the button.&lt;/p&gt;
+
+&lt;h5 id=&#34;5-validate-sdtm-datasets-validate-sdtm-domains-sas&#34;&gt;5) Validate SDTM datasets (&lt;em&gt;Validate_SDTM_Domains.sas&lt;/em&gt;)&lt;/h5&gt;
+
+&lt;p&gt;Click the button.&lt;/p&gt;
+
+&lt;h5 id=&#34;6-generate-define-xml-generate-definexml-sas&#34;&gt;6) Generate Define.xml (_generate&lt;em&gt;Definexml.sas&lt;/em&gt;)&lt;/h5&gt;
+
+&lt;p&gt;Click the button.&lt;/p&gt;
+
+&lt;p&gt;Following part will dig into the software step by step.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/06/TobeContinued.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;TobeContinued&#34; border=&#34;0&#34; alt=&#34;TobeContinued&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/06/TobeContinued_thumb.jpg&#34; width=&#34;240&#34; height=&#34;181&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>XML and SAS</title>
+      <link>/2010/10/07/xml-and-sas/</link>
+      <pubDate>Thu, 07 Oct 2010 11:44:38 +0000</pubDate>
+      
+      <guid>/2010/10/07/xml-and-sas/</guid>
+      <description>&lt;p&gt;Last month, I gave a talk, &lt;em&gt;XML: the SAS Approach&lt;/em&gt;, in &lt;a href=&#34;http://www.cdisc.org/interchange-china#2329&#34;&gt;CDISC Interchange China 2010&lt;/a&gt;(at the Medical School of Fudan University, Shanghai, 2010-09-15). &lt;a href=&#34;http://www.fda.gov/&#34;&gt;FDA&lt;/a&gt; favors &lt;a href=&#34;http://www.cdisc.org/&#34;&gt;CDISC&lt;/a&gt; and &lt;a href=&#34;http://www.hl7.org/&#34;&gt;HL7&lt;/a&gt;, the two XML based standards, and SAS programmers in biopharmaceutical industry&amp;#160; need incorporate the XML technology into their toolboxes. Fortunately, you don’t need to be an XML expert then to play XML in your daily work, and, SAS system DOES offer multiple tools and applications to handle XML files, i.e. import and export XML data:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SAS data steps approach:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; import and export&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/xmlengine/sxle913/index.html&#34;&gt;SAS XML Libname engine&lt;/a&gt;:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; import and export&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/odsxml/&#34;&gt;SAS ODS XML statement&lt;/a&gt;(ODS MARKUP):&amp;#160;&amp;#160; export&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/cdisc/proccdisc/index.html&#34;&gt;PROC CDISC&lt;/a&gt;:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; import and export&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sas.com/apps/demosdownloads/92_SDL_sysdep.jsp;jsessionid=75E543A04B4ED91EFE8B8D16B73954A1.tc4j3apps1?packageID=000513&amp;amp;jmpflag=N&#34;&gt;SAS XML Mapper&lt;/a&gt;:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; import&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sas.com/apps/demosdownloads/cdiscviewer_PROD__sysdep.jsp;jsessionid=75E543A04B4ED91EFE8B8D16B73954A1.tc4j3apps1?packageID=000343&amp;amp;jmpflag=N&#34;&gt;SAS CDISC Viewer&lt;/a&gt;:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;em&gt;as if&lt;/em&gt;&amp;#160; import&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The &lt;a href=&#34;http://www.sas.com/apps/demosdownloads/cdiscviewer_PROD__sysdep.jsp;jsessionid=75E543A04B4ED91EFE8B8D16B73954A1.tc4j3apps1?packageID=000343&amp;amp;jmpflag=N&#34;&gt;SAS CDISC Viewer&lt;/a&gt; and &lt;a href=&#34;http://support.sas.com/rnd/base/cdisc/proccdisc/index.html&#34;&gt;PROC CDISC&lt;/a&gt; procedure are some bit toys, and the rest really work. The Perl Regular Expression(PRX) approach is also presented to export and import XML data.&lt;/p&gt;
+
+&lt;p&gt;A simple demo. First, use FILE and PUT statements to generate an XML file:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;data _null_;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; file &amp;ldquo;export.xml&amp;rdquo;;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; put &amp;#8216;&amp;lt;?xml version=&amp;ldquo;1.0&amp;rdquo; encoding=&amp;ldquo;windows-1252&amp;rdquo; ?&amp;gt;&amp;#8217;;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; put &amp;#8216;&lt;ROWSET&gt;&amp;#8217;;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; put &amp;#8216;&lt;ROW&gt;&amp;#8217;;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; put &amp;#8216;&lt;text&gt; &lt;font color=&#34;#ff0000&#34;&gt;Welcome to CDISC Interchange 2010 China&lt;/font&gt; &lt;/text&gt;&amp;#8217;;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; put &amp;#8216;&lt;/ROW&gt;&amp;#8217;;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; put &amp;#8216;&lt;ROW&gt;&amp;#8217;;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; put &amp;#8216;&lt;text&gt; &lt;font color=&#34;#ff0000&#34;&gt;We are in Shanghai!&lt;/font&gt; &lt;/text&gt;&amp;#8217;;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; put &amp;#8216;&lt;/ROW&gt;&amp;#8217;;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; put &amp;#8216;&lt;/ROWSET&gt;&amp;#8217;;&amp;#160;&lt;br /&gt;
+run;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Then read the whole XML file to SAS dataset:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;data import0 ;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; infile &amp;ldquo;export.xml&amp;rdquo; dsd missover truncover lrecl = 1024;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; input line $1024.;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; if line = &amp;#8221; then delete;&lt;br /&gt;
+run;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Third step, extract the information you want(the text between &lt;text&gt; and &lt;/text&gt; tags) using&amp;#160; Perl Regular Expression:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;data import (keep = line );&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160; retain queName ;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160; retain line ;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160; set import0;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; /*use PRX to capture the structure of XML data;*/&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160; If _n_=1 then do;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; queName=prxparse(&amp;#8216;/^&lt;text&gt; /&amp;#8217;);&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160; end;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160; queNameN=prxmatch(queName,line);&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; /*use PRX to remove the XXML tags;*/&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160; if queNameN&amp;gt;0 then do;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; rx1=prxparse(&amp;ldquo;s/&amp;lt;.*?&amp;gt;//&amp;ldquo;);&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; call prxchange(rx1,99,line);&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; output;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160; end;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;br /&gt;
+run;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The logic of PRX approach to process XML data is very simple and can be easily modified according to your needs:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;complicate and utilize the PRX codes to capture the hierarchical structure of XML data.&lt;/li&gt;
+&lt;li&gt;remove XML tags and output the information to SAS dataset.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

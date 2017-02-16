@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Excel on Lithium Theme</title>
+    <link>/tags/excel/index.xml</link>
+    <description>Recent content in Excel on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/excel/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Get Started with SAS Tagsets.ExcelXP</title>
+      <link>/2013/01/05/get-started-with-sas-tagsets.excelxp/</link>
+      <pubDate>Sat, 05 Jan 2013 17:46:24 +0000</pubDate>
+      
+      <guid>/2013/01/05/get-started-with-sas-tagsets.excelxp/</guid>
+      <description>
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Hate it or not (&lt;em&gt;Yes I do&lt;/em&gt;), SAS programmers can’t just get rid of Microsoft Office Excel in their life.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Now my turn (with Tagsets.ExcelXP, I can at least get rid of DDE)…&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;0-sas-templates-window-img-style-background-image-none-border-right-width-0px-margin-3px-auto-5px-padding-left-0px-padding-right-0px-display-block-float-none-border-top-width-0px-border-bottom-width-0px-border-left-width-0px-padding-top-0px-title-odstemplates-border-0-alt-odstemplates-src-http-www-jiangtanghu-com-blog-wp-content-uploads-2013-01-odstemplates-thumb-png-width-470-height-296-http-www-jiangtanghu-com-blog-wp-content-uploads-2013-01-odstemplates-png&#34;&gt;0. SAS Templates window &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/ODSTEMPLATES.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;ODSTEMPLATES&#34; border=&#34;0&#34; alt=&#34;ODSTEMPLATES&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/ODSTEMPLATES_thumb.png&#34; width=&#34;470&#34; height=&#34;296&#34; /&gt;&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;A visual way to browse all ODS templates is to use windows command “ODSTEMPLATES” to invoke a SAS template window.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;1-160-check-the-current-excelxp-tagset-version&#34;&gt;1.&amp;#160; Check the current ExcelXP tagset version&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;filename temp temp; &lt;br /&gt;ods tagsets.ExcelXP file=temp options(doc=&amp;#8217;help&amp;#8217;); &lt;br /&gt;ods tagsets.ExcelXP close;&lt;/font&gt; &lt;/font&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Scroll down the Log window to the end and you get something like:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;NOTE: This is the Excel XP tagset (Compatible with SAS 9.1.3 and above, &lt;font color=&#34;#ff0000&#34;&gt;v1.122&lt;/font&gt;, 01/04/2011). &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;2-get-the-source-codes-of-current-excelxp-tagset-and-library-it-s-stored&#34;&gt;2. Get the source codes of current ExcelXP tagset and library it’s stored&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc template; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; source Tagsets.ExcelXP; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The Log window shows the template codes:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;15&amp;#160;&amp;#160; proc template; &lt;br /&gt;16&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; source Tagsets.ExcelXP; &lt;br /&gt;define tagset Tagsets.ExcelXP; &lt;br /&gt;&amp;#160;&amp;#160; parent = Tagsets.ExcelBase; &lt;br /&gt;end; &lt;br /&gt;NOTE: Path &amp;#8216;Tagsets.ExcelXP&amp;#8217; is in: &lt;font color=&#34;#ff0000&#34;&gt;SASHELP.TMPLMST&lt;/font&gt;. &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Note Tagsets.ExcelXP is subject to Tagsets.ExcelBase.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The template store path uses a two level name in which SASHELP is a SAS library and TMPLMST, a name assigned to distinguish a set of templates. You can also store your customized templates in SASHELP.mytpl1, WORK.forTLF and such.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;If want a the source codes in a separated file rather than in Log window, try&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc template;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;source Tagsets.ExcelXP/&lt;font color=&#34;#ff0000&#34;&gt;file=&amp;ldquo;a:\test\ExcelXP.tpl&amp;rdquo;&lt;/font&gt;; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The extension doesn’t matter and you can use anything you like (including .SAS).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;3-list-all-ods-template-store-path&#34;&gt;3. List all ODS template store path&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods path show;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Log:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Current ODS PATH list is:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. SASUSER.TEMPLAT(UPDATE) &lt;br /&gt;2. SASHELP.TMPLMST(READ)&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This order also indicates the ODS template searching priority, first SASUSER.TEMPLAT then SASHELP.TMPLMST. If two templates with same name exist in both library, the one in SASUSER.TEMPLAT will be used.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Templates in SASHELP.TMPLMST can’t be modified(read only).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;4-install-latest-version-in-sasuser-library&#34;&gt;4. Install latest version in SASUSER library&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The last version of ExcelXP tagset is v1.127 by far according to SAS ODS MARKUP portal:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/&#34; title=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://support.sas.com/rnd/base/ods/odsmarkup/&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;filename excltags url &amp;#8216;&lt;/font&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/excltags.tpl&#39;;&#34;&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;http://support.sas.com/rnd/base/ods/odsmarkup/excltags.tpl&amp;#8217;;&lt;/font&gt;&lt;/a&gt;        &lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&lt;br /&gt;%include excltags;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;log:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;NOTE: TAGSET &amp;#8216;Tagsets.ExcelBase&amp;#8217; has been saved to: SASUSER.TEMPLAT &lt;br /&gt;NOTE: Overwriting existing template/link: Tagsets.Config_debug &lt;br /&gt;NOTE: TAGSET &amp;#8216;Tagsets.Config_debug&amp;#8217; has been saved to: SASUSER.TEMPLAT &lt;br /&gt;&lt;font color=&#34;#ff0000&#34;&gt;NOTE: TAGSET &amp;#8216;Tagsets.ExcelXP&amp;#8217; has been saved to: SASUSER.TEMPLAT&lt;/font&gt; &lt;br /&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Since there is already an ExcelXP tagset in SASHELP.TMPLMST and it can’t be overwritten, this new added ExcelXP tagset is thrown to SASUSER.TEMPLAT by adding a STORE option (check the source code) and will be used when statement “ODS tagsets.ExcelXP” invoked.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;5-list-all-templates&#34;&gt;5. List all templates&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc template; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; list / store=sasuser.templat; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; list / store=sashelp.tmplmst; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Get output:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/sasuser_templat2.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;sasuser_templat2&#34; border=&#34;0&#34; alt=&#34;sasuser_templat2&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/sasuser_templat2_thumb.png&#34; width=&#34;332&#34; height=&#34;285&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;If only type “Tagset” need (&lt;em&gt;to save space!&lt;/em&gt;):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc template; &lt;br /&gt;list &lt;font color=&#34;#ff0000&#34;&gt;tagsets&lt;/font&gt;/store=sasuser.templat; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;160&#34;&gt;&amp;#160;&lt;/h1&gt;
+
+&lt;h1 id=&#34;6-delete-template&#34;&gt;6. Delete template&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;proc template; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; delete Tagsets.ExcelBase; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; delete Tagsets.ExcelXP; &lt;br /&gt;run;&lt;/font&gt; &lt;br /&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;It’s always safe to perform delete statements since &lt;font size=&#34;1&#34;&gt;items in SASHELP.TMPLMST are read only.&lt;/font&gt;&amp;#160; In this case, the ExcelXP tagset in SASUSER.TEMPLAT will be deleted.&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;log:&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;8617&amp;#160;&amp;#160; proc template; &lt;br /&gt;8618&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; delete Tagsets.ExcelBase; &lt;br /&gt;NOTE: &amp;#8216;Tagsets.ExcelBase&amp;#8217; has been deleted from: SASUSER.TEMPLAT &lt;br /&gt;8619&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; delete Tagsets.ExcelXP; &lt;br /&gt;NOTE: &lt;font color=&#34;#ff0000&#34;&gt;&amp;#8216;Tagsets.ExcelXP&amp;#8217; has been deleted from: SASUSER.TEMPLAT&lt;/font&gt; &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;check again following step #5 and get what’s in SASUSER.TEMPLAT (no ExcelXP tagset anymore):&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/sasuser_templat.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;sasuser_templat&#34; border=&#34;0&#34; alt=&#34;sasuser_templat&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/sasuser_templat_thumb.png&#34; width=&#34;333&#34; height=&#34;247&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;7-install-in-other-specified-library&#34;&gt;7 Install in other specified library&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Install ExcelXp tagset in a other library. It will be deleted if current SAS session is killed:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;libname excltags &amp;#8216;a:\test&amp;#8217;; &lt;br /&gt;ods path (prepend) excltags.templat(update); &lt;br /&gt;filename excltags url &amp;#8216;&lt;/font&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/excltags.tpl&#39;;&#34;&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;http://support.sas.com/rnd/base/ods/odsmarkup/excltags.tpl&amp;#8217;;&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt; &lt;br /&gt;%include excltags;&lt;/font&gt; &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;log:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: Overwriting existing template/link: Tagsets.ExcelBase&lt;br /&gt;
+NOTE: TAGSET &amp;#8216;Tagsets.ExcelBase&amp;#8217; has been saved to: EXCLTAGS.TEMPLAT&lt;br /&gt;
+NOTE: Overwriting existing template/link: Tagsets.Config_debug&lt;br /&gt;
+NOTE: TAGSET &amp;#8216;Tagsets.Config_debug&amp;#8217; has been saved to: EXCLTAGS.TEMPLAT&lt;br /&gt;
+NOTE: Overwriting existing template/link: Tagsets.ExcelXP&lt;br /&gt;
+NOTE: &lt;font color=&#34;#ff0000&#34;&gt;TAGSET &amp;#8216;Tagsets.ExcelXP&amp;#8217; has been saved to: EXCLTAGS.TEMPLAT&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;show path as step #3:&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p align=&#34;left&#34;&gt;
+  Current ODS PATH list is:
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  1. EXCLTAGS.TEMPLAT(UPDATE) &lt;br /&gt;2. SASUSER.TEMPLAT(UPDATE) &lt;br /&gt;3. SASHELP.TMPLMST(READ)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;font size=&#34;1&#34;&gt;If apply step #6 to delete ExcelXP tagset, the items in EXCLTAGS.TEMPLAT will be deleted(as same as the searching priority).&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&#34;8-hello-world&#34;&gt;8. Hello World&lt;/h1&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;Adopted from one of Vince DelGobbo’s papers(&lt;a href=&#34;http://support.sas.com/rnd/papers/index.html#excel2012&#34;&gt;2012&lt;/a&gt;):&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;title &amp;#8216;The CLASS Data Set&amp;#8217;; &lt;br /&gt;footnote &amp;#8216;(From the SASHELP Library)&amp;#8217;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;*Set some &amp;ldquo;global&amp;rdquo; tagset options that affect all worksheets;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;ods tagsets.ExcelXP path=&amp;ldquo;a:\test\&amp;rdquo; file=&amp;#8217;MyWorkbook.xml&amp;#8217; style=Printer &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; options(embedded_titles=&amp;#8217;yes&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; embedded_footnotes=&amp;#8217;yes&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; print_header=&amp;#8217;&amp;amp;C&amp;amp;A&amp;amp;RPage &amp;amp;P of &amp;amp;N&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; print_footer=&amp;#8217;&amp;amp;RPrinted &amp;amp;D at &amp;amp;T&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; autofilter=&amp;#8217;2&amp;#8242;);&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%macro doit;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc sort data=sashelp.class (keep=sex) out=class nodupkey; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; by sex; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set class end=eof; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; II=left(put(&lt;em&gt;n&lt;/em&gt;,2.)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; call symputx(&amp;#8216;sex&amp;#8217;||II,compress(sex)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; if eof then call symputx(&amp;#8216;total&amp;#8217;,II); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%do i=1 %to &amp;total; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; ods tagsets.ExcelXP options(sheet&lt;em&gt;name=&amp;ldquo;Students&lt;/em&gt;&amp;amp;&amp;amp;sex&amp;amp;i&amp;rdquo;);&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; proc print data=sashelp.class noobs style(Header)=[just=center]; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; where (sex eq &amp;ldquo;&amp;amp;&amp;amp;sex&amp;amp;i&amp;rdquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; var name age&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; / style(Column)=[background=#99ccff]; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; var height weight / style(Column)=[background=#99ccff tagattr=&amp;#8217;format:#.0&amp;#8242;]; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; run; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%end;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%mend doit;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%doit&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;ods tagsets.ExcelXP close;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;This .XML file can be opened by Office Excel:&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/SAS_ExcelXP.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_ExcelXP&#34; border=&#34;0&#34; alt=&#34;SAS_ExcelXP&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/SAS_ExcelXP_thumb.png&#34; width=&#34;372&#34; height=&#34;442&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&#34;9-get-help&#34;&gt;9. Get Help&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;As a new comer, I found the following materials useful and accessible:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;div align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/&#34;&gt;SAS ODS MARKUP homepage&lt;/a&gt;&lt;/font&gt;
+&lt;/div&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;div align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;SAS developer &lt;a href=&#34;http://www.sas.com/reg/gen/corp/867226?page=Resources&#34;&gt;Vince DelGobbo’s homepage on ExcelXP&lt;/a&gt;&lt;/font&gt;
+&lt;/div&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;div align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.sas.com/events/cm/867226/ExcelXPPaperIndex.pdf&#34;&gt;Vince DelGobbo&amp;#8217;s ExcelXP Tagset Paper Index&lt;/a&gt;&lt;/font&gt;
+&lt;/div&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;h4 id=&#34;font-size-1-a-href-http-support-sas-com-rnd-base-ods-odsmarkup-excelxp-help-html-quick-reference-for-the-tagsets-excelxp-tagset-a-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/excelxp_help.html&#34;&gt;Quick Reference for the TAGSETS.EXCELXP Tagset&lt;/a&gt;&lt;/font&gt;&lt;/h4&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;h4 id=&#34;font-size-1-a-href-http-support-sas-com-rnd-base-ods-odsmarkup-excelxp-demo-html-try-this-demo-the-excelxp-tagset-and-microsoft-excel-a-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/excelxp_demo.html&#34;&gt;Try This Demo: The ExcelXP Tagset and Microsoft Excel&lt;/a&gt;&lt;/font&gt;&lt;/h4&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;h4 id=&#34;font-size-1-a-href-http-support-sas-com-resources-papers-proceedings09-323-2009-pdf-modifying-ods-statistical-graphics-templates-in-sas-9-2-by-warren-f-kuhfeld-a-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://support.sas.com/resources/papers/proceedings09/323-2009.pdf&#34;&gt;Modifying ODS Statistical Graphics Templates in SAS 9.2 by Warren F. Kuhfeld&lt;/a&gt;&lt;/font&gt;&lt;/h4&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Face Off: Review OpenCDISC XML files</title>
+      <link>/2012/02/11/face-off-review-opencdisc-xml-files/</link>
+      <pubDate>Sat, 11 Feb 2012 16:35:35 +0000</pubDate>
+      
+      <guid>/2012/02/11/face-off-review-opencdisc-xml-files/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.opencdisc.org/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;OpenCDISC&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, the first open source CDISC validator, is already in the toolbox of FDA reviewers (CDER/CBER, see &lt;em&gt;&lt;a href=&#34;http://www.cdisc.org/stuff/contentmgr/files/0/8d99d69f1195d2a2954e62d2fbb3470f/misc/cdisc_standards_in_fda_submissions_2012_01_26pdf.pdf&#34; target=&#34;_blank&#34;&gt;CDISC Standards in the Regulatory Submission Process&lt;/a&gt;&lt;/em&gt;, 26 January 2012, P.33). The key features in OpenCDISC is a &lt;a href=&#34;http://www.opencdisc.org/projects/validator/opencdisc-validation-framework&#34; target=&#34;_blank&#34;&gt;dichotomy of validation rules (XML based) and application logic&lt;/a&gt;. &lt;/font&gt;&lt;font size=&#34;1&#34;&gt;Currently OpenCDISC Validator (&lt;a href=&#34;http://www.opencdisc.org/download&#34; target=&#34;_blank&#34;&gt;Version 1.2.1&lt;/a&gt;) officially supports the four following CDISC modules:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.opencdisc.org/projects/validator/cdisc-sdtm-3.1.2-validation-rules&#34;&gt;SDTM 3.1.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.opencdisc.org/projects/validator/cdisc-sdtm-3.1.1-validation-rules&#34;&gt;SDTM 3.1.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.opencdisc.org/projects/validator/cdisc-define.xml-1.0-validation-rules&#34;&gt;Define.xml 1.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.opencdisc.org/projects/validator/cdisc-adam-1.0-validation-rules&#34;&gt;ADaM 1.0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You can get the corresponding configuration files (validation rules) &lt;/font&gt;&lt;a href=&#34;http://www.opencdisc.org/download&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;online&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;or in the software folder (in ..&lt;em&gt;opencdisc-validatorconfig &lt;/em&gt;with extension of .xml). Since SDTM 3.1.2 has the most rich set of validation rules from Janus, WebSDM and of course additional&amp;#160; OpenCDISC rules by itself, its configuration file (&lt;em&gt;&lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;config-sdtm-3.1.2.xml&lt;/a&gt;&lt;/em&gt;) deserves more attention. Better understanding of &lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;&lt;/a&gt;&lt;em&gt;&amp;#160;&lt;/em&gt;is the first step to customize the software according to business needs. Followings are some personal tips and tricks to play and even “torture” the file, using Notepad++, web browsers (IE and Firefox), Excel with MSXML and SAS XML Mapper. &lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;1-don-t-use-the-windows-default-notepad-to-open-and-edit-the-xml-file&#34;&gt;1. DON’T use the Windows default Notepad to open and edit the xml file&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad2.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_Notepad&#34; border=&#34;0&#34; alt=&#34;XML_Notepad&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad_thumb2.png&#34; width=&#34;453&#34; height=&#34;275&#34; /&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;while the reason:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;if you use Notepad to open a XML file, almost you get nothing but strings and strings.&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and another supporting reason, see bellowing picture.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;2-use-a-href-http-notepad-plus-plus-org-target-blank-notepad-a-or-other-real-text-editors-to-open-and-edit-it&#34;&gt;2. USE &lt;a href=&#34;http://notepad-plus-plus.org/&#34; target=&#34;_blank&#34;&gt;Notepad++&lt;/a&gt; or other REAL text editors to open and edit it&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad3.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_Notepad  &#34; border=&#34;0&#34; alt=&#34;XML_Notepad  &#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad_thumb3.png&#34; width=&#34;441&#34; height=&#34;321&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Notepad++ makes the difference. It supports multiple tabs view, XML syntax highlighting and XML tags match and other fancy stuff never in the plain Notepad. And like OpenCDISC, it’s free, both in sense of free beer and free speech.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Other real text editor, include Vim, UltraEdit and such, but for most users, I still think Notepad++ is the most handy one.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;3-at-first-use-a-web-browsers-to-review-it&#34;&gt;3. At first, use a web browsers to review it&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_IE1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_IE&#34; border=&#34;0&#34; alt=&#34;XML_IE&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_IE_thumb1.png&#34; width=&#34;423&#34; height=&#34;398&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It is the web view of &lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;&lt;/a&gt;&lt;em&gt;. &lt;/em&gt;The secret is a style file, &lt;strong&gt;define-1.0.xsl&lt;/strong&gt; in ..opencdisc-validatorconfigschematron. This is another story of dichotomy. The &lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;&lt;/a&gt; file itself is only used to store metadata (machine-readable), while the style file (also a XML file) used to instruct how to display it (human-readable). Within some proper internal interface, web browsers (I tested in IE and Firefox; Google Chrome doesn’t work). Excel can also render this XML file well (only test on Excel 2010 and 2007) while &lt;/font&gt;&lt;font size=&#34;1&#34;&gt;Web view is much better&lt;/font&gt;&lt;font size=&#34;1&#34;&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Excel.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;XML_Excel&#34; border=&#34;0&#34; alt=&#34;XML_Excel&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Excel_thumb.png&#34; width=&#34;401&#34; height=&#34;577&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;4-the-real-awesome-job-use-microsoft-xml-parser-or-other-xml-parsers-to-dig-into-xml-structure&#34;&gt;4. The real awesome job: use Microsoft XML parser or other XML parsers to dig into XML structure&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_Tags_Excel&#34; border=&#34;0&#34; alt=&#34;XML_Tags_Excel&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel_thumb1.png&#34; width=&#34;406&#34; height=&#34;622&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I use Excel 2010 with Microsoft XML parser (&lt;a href=&#34;http://en.wikipedia.org/wiki/MSXML&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;MSXML 6.0&lt;/em&gt;&lt;/a&gt;&lt;em&gt;. &lt;/em&gt;You can get the version of your MSXML by visiting &lt;a href=&#34;http://home.arcor.de/martin.honnen/xslt/processorTest.xml&#34; target=&#34;_blank&#34;&gt;this website&lt;/a&gt; in IE and you will get the different results when switching to other web browsers because Firefox and Chrome use other parsers). &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You can also get a instance of each XML tag:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel_preview1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_Tags_Excel_preview&#34; border=&#34;0&#34; alt=&#34;XML_Tags_Excel_preview&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel_preview_thumb1.png&#34; width=&#34;416&#34; height=&#34;640&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;5-the-real-awesome-job-use-sas-xml-mapper-to-get-the-tabulation-view&#34;&gt;5. The real awesome job: use SAS XML Mapper to get the tabulation view&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;And you may want to exact all the tables in the XML file with tabulation view, ideally, in SAS dataset:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For example, the first few rows in &lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_xml_tab1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;ODM_xml_tab&#34; border=&#34;0&#34; alt=&#34;ODM_xml_tab&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_xml_tab_thumb1.png&#34; width=&#34;399&#34; height=&#34;148&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;and the corresponding SAS dataset:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_tab1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;ODM_tab&#34; border=&#34;0&#34; alt=&#34;ODM_tab&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_tab_thumb1.png&#34; width=&#34;414&#34; height=&#34;48&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Actually you can put all the data in XML into a big dataset but with lots of redundancies. To use SAS XML Mapper (the latest version is 9.3), you should design a mapping file to tell the structure of the XML file. For the simple ODM dataset, you indicate the table name, column name and path, type and length:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/map.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;map&#34; border=&#34;0&#34; alt=&#34;map&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/map_thumb.png&#34; width=&#34;357&#34; height=&#34;150&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It never be fun to play with XML files. SAS XML Mapper is supposed to read CDISC ODM based XML files automatically (OpenCDISC XML files are called ODM compliant), but at least for this config-sdtm-3.1.2.xml, it failed and that’s why we should create a mapping file (&lt;em&gt;see above&lt;/em&gt;) by ourselves. Fortunately you don’t need to write it from scratch (it would be thousands of lines of codes):&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;find a CDISC ODM based XML file that SAS XML Mapper can read automatically, e.g., in &lt;a href=&#34;http://www.cdisc.org/define-xml&#34;&gt;http://www.cdisc.org/define-xml&lt;/a&gt;, a file named &lt;em&gt;define-example1.xml&lt;/em&gt; works well.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;use AutoMap function in SAS XML Mapper to get the mapping file.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;modify the mapping file to fit your needs.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;for details, refer SAS XML mapping syntax.&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;6-final-notes-for-excel&#34;&gt;6. Final Notes for Excel&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Right click &lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;&lt;/a&gt; then open with “Microsoft Excel”:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel11.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Excel1&#34; border=&#34;0&#34; alt=&#34;Excel1&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel1_thumb1.png&#34; width=&#34;412&#34; height=&#34;163&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Option 2 will go to section 3. If go with option 1:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel21.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;Excel2&#34; border=&#34;0&#34; alt=&#34;Excel2&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel2_thumb1.png&#34; width=&#34;320&#34; height=&#34;181&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Option 1-1 and 1-2:&amp;#160;&amp;#160; tabulation view in section 5&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Option&amp;#160; &lt;/font&gt;&lt;font size=&#34;1&#34;&gt;1-3:&amp;#160; tag view in section 4.&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Too Big to Be Accurate(1): Which is the Most Powerful Calculator in the World?</title>
+      <link>/2011/01/22/too-big-to-be-accurate1-which-is-the-most-powerful-calculator-in-the-world/</link>
+      <pubDate>Sat, 22 Jan 2011 17:05:17 +0000</pubDate>
+      
+      <guid>/2011/01/22/too-big-to-be-accurate1-which-is-the-most-powerful-calculator-in-the-world/</guid>
+      <description>&lt;p&gt;Calculate the factorial of 171 (171!)? Just TRY! It is equal to 171*170*169*….2*1.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-google-calculator&#34;&gt;1. Google calculator&lt;/h3&gt;
+
+&lt;p&gt;As Google fanatics, I first try to search the answer via Google:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Google171.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;Google171&#34; border=&#34;0&#34; alt=&#34;Google171&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Google171_thumb.png&#34; width=&#34;336&#34; height=&#34;116&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Whoops, nothing interested returned! Type “170!” and get the output:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Google170.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;Google170&#34; border=&#34;0&#34; alt=&#34;Google170&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Google170_thumb.png&#34; width=&#34;244&#34; height=&#34;110&#34; /&gt;&lt;/a&gt; Why kinda things happened in this calculator? 171! is just equal to 171*170!.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-excel&#34;&gt;2. Excel&lt;/h3&gt;
+
+&lt;p&gt;Switch to Excel spreadsheet. Function fact(*) used:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Excel170.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;Excel170&#34; border=&#34;0&#34; alt=&#34;Excel170&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Excel170_thumb.png&#34; width=&#34;228&#34; height=&#34;66&#34; /&gt;&lt;/a&gt; &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Excel171.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;Excel171&#34; border=&#34;0&#34; alt=&#34;Excel171&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Excel171_thumb.png&#34; width=&#34;244&#34; height=&#34;64&#34; /&gt;&lt;/a&gt; Oo, interesting. The same.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-sas&#34;&gt;3. SAS&lt;/h3&gt;
+
+&lt;p&gt;Google and Excel may be the niche players in calculators’ family. Why not try to use some programming languages?&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;As a SAS programmer, my handy tool is SAS of course.&lt;/p&gt;
+
+&lt;p&gt;First, I use &lt;strong&gt;SAS data step&lt;/strong&gt; with its build-in function fact(*):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; x=fact(170); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; y=fact(171); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; put x= y=; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and I get&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: Invalid argument to function FACT at line 49 column 7.&lt;br /&gt;
+&lt;font color=&#34;#ff0000&#34;&gt;x=7.257416E306 y=.&lt;/font&gt;&lt;br /&gt;
+&lt;font color=&#34;#ff0000&#34;&gt;x=7.257416E306 y=. &lt;em&gt;ERROR&lt;/em&gt;=1 &lt;em&gt;N&lt;/em&gt;=1&lt;/font&gt;&lt;br /&gt;
+NOTE: Mathematical operations could not be performed at the following places. The results of the operations have been set to missing values.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Expected or unexpected? I don’t know how this fact(*) function is defined, and&amp;#160; try to define a function to calculate the factorials by myself. In SAS 9.2, you can use &lt;strong&gt;PROC FCMP&lt;/strong&gt;(also available at 9.1.3 as a experimental procedure):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc fcmp outlib = work.funcs.math ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; function factorial(k) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; if k = 0 then return(1) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; z = k ; *preserve k ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; x = factorial(k-1) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; k = z ; *recover k ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; k = k * x ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; return(k) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; endsub ; &lt;br /&gt;quit ; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;options cmplib=work.funcs ; &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Use this self-defined function to get 170!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc fcmp ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; x = factorial (170) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; put x = ; &lt;br /&gt;run ; &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The FCMP procedure returns&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;x=7.257416E306&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Try to calculate 171! ?&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc fcmp ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; y = factorial (171) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; put y = ; &lt;br /&gt;run ;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Just get the overflow error. The interaction stops at 170!:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;ERROR: An overflow occurred during execution in function &amp;#8216;factorial&amp;#8217; in statement number 7 at&amp;#160;&amp;#160; line 10 column 1.&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; The statement was:&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; 1&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; (10:1)&amp;#160;&amp;#160;&amp;#160; k = (k=171) * (&lt;font color=&#34;#ff0000&#34;&gt;x=7.257416E306&lt;/font&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The above function definitions use recursion. Recursion may have some limitation on efficiency. We could try the loop without recursion. &lt;strong&gt;SAS/IML&lt;/strong&gt; doesn’t support recursion. Let SAS/IML to the court:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc iml; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; start factorial (n); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; fact=1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; do i=1 to n; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; fact=fact*i; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; end; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; return (fact); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; finish factorial;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; x= factorial (170); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; print x;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; y= factorial (171); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; print y; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Again, I get 170!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; x&lt;br /&gt;
+7.257E306&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and a overflow error for 171!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; y= factorial (171);&lt;br /&gt;
+ERROR: Overflow error in *.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Turing, Von Neumann and Tony, what happened?&lt;/p&gt;
+
+&lt;h3 id=&#34;4-r&#34;&gt;4. R&lt;/h3&gt;
+
+&lt;p&gt;When SAS failed, lots of voices pop up: use R! OK, Rction!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;&amp;gt; x=factorial(170);x&lt;/font&gt;&lt;br /&gt;
+[1] 7.257416e+306&lt;br /&gt;
+&lt;font color=&#34;#ff0000&#34;&gt;&amp;gt; y=factorial(171);y&lt;/font&gt;&lt;br /&gt;
+Warning message:&lt;br /&gt;
+In factorial(171) : value out of range in &amp;#8216;gammafn&amp;#8217;&lt;br /&gt;
+[1] Inf&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;5-c&#34;&gt;5. C++&lt;/h3&gt;
+
+&lt;p&gt;I don’t want to lose my patience. Think C++(use both recursive and non-recursive methods):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;#include &lt;iostream&gt; &lt;br /&gt;using namespace std; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;double factRecursive(double num); &lt;br /&gt;double factNonRecursive(double num); &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;int main() &lt;br /&gt;{ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&lt;endl;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&amp;lt;&amp;ldquo;Recursive: the factorial of 170 is &amp;ldquo;&amp;lt;&lt;factRecursive(170)&lt;&lt;endl; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&amp;lt;&amp;ldquo;Recursive: the factorial of 171 is &amp;ldquo;&amp;lt;&lt;factRecursive(171)&lt;&lt;endl; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&lt;endl;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&amp;lt;&amp;ldquo;NonRecursive: the factorial of 170 is &amp;ldquo;&amp;lt;&lt;factNonRecursive(170)&lt;&lt;endl; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&amp;lt;&amp;ldquo;NonRecursive: the factorial of 171 is &amp;ldquo;&amp;lt;&lt;factNonRecursive(171)&lt;&lt;endl; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&lt;endl;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;return 0; &lt;br /&gt;} &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;double factRecursive (double num) &lt;br /&gt;{ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; if (num==0) &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; return 1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; else &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; return num*factRecursive(num-1); &lt;br /&gt;} &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;double factNonRecursive (double num) &lt;br /&gt;{ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; double fact=1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; for (double i=2;i&amp;lt;=num;i++) fact *=i; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; return fact; &lt;br /&gt;}&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Unfortunately, same story once more:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Cpp.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;Cpp&#34; border=&#34;0&#34; alt=&#34;Cpp&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Cpp_thumb.png&#34; width=&#34;449&#34; height=&#34;121&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Well. The story&amp;#8217;s played out like this. It may be not the limitable of the language but the machine. I check which is the largest numbers my computer supports:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;#include &lt;iostream&gt; &lt;br /&gt;#include &lt;cfloat&gt; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;using namespace std; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;int main() &lt;br /&gt;{ &lt;br /&gt;&amp;#160; cout&amp;lt;&amp;lt;&amp;ldquo;maxinum double value of machine: &amp;ldquo;&amp;lt;&lt;DBL_MAX&lt;&lt;endl; &lt;br /&gt;&amp;#160; return 0; &lt;/font&gt;&lt;font face=&#34;Courier New&#34;&gt;}&lt;/font&gt;&lt;/p&gt;
+
+&lt;pre&gt;maxinum double value of machine: &lt;font color=&#34;#ff0000&#34;&gt;1.79769e+308&lt;/font&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now everything’s in the open. The factorial of 170 is about 7.257416e+306. 171! is too big to be supported by my PC.&lt;/p&gt;
+
+&lt;p&gt;(Note: I put these codes in &lt;a href=&#34;http://codepad.org&#34;&gt;http://codepad.org&lt;/a&gt;, a online complier. if you don’t have any C++ complier in your machine, you can see the codes and outputs in:&lt;a href=&#34;http://codepad.org/xnneavsw&#34;&gt;http://codepad.org/xnneavsw&lt;/a&gt;&amp;#160; and &lt;a href=&#34;http://codepad.org/3FeEC9t2&#34;&gt;http://codepad.org/3FeEC9t2&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h3 id=&#34;6-a-href-http-www-wolframalpha-com-target-blank-wolframalpha-a&#34;&gt;6. &lt;a href=&#34;http://www.wolframalpha.com/&#34; target=&#34;_blank&#34;&gt;WolframAlpha&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Struggled for hours, I turn to &lt;a href=&#34;http://www.wolframalpha.com&#34; target=&#34;_blank&#34;&gt;WolframAlpha&lt;/a&gt; computing platform. It returns &lt;a href=&#34;http://www.wolframalpha.com/input/?i=171!&#34; target=&#34;_blank&#34;&gt;the factorial of 171&lt;/a&gt; AT LAST:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/WA171.gif&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;WA171&#34; border=&#34;0&#34; alt=&#34;WA171&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/WA171_thumb.gif&#34; width=&#34;454&#34; height=&#34;128&#34; /&gt;&lt;/a&gt;&amp;#160;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/WA171_s.gif&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;WA171_s&#34; border=&#34;0&#34; alt=&#34;WA171_s&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/WA171_s_thumb.gif&#34; width=&#34;477&#34; height=&#34;52&#34; /&gt;&lt;/a&gt;&amp;#160; AT LAST we know the factorial of 171 has 310 digits.&lt;/p&gt;
+
+&lt;h3 id=&#34;7-windows-calculator&#34;&gt;7. Windows Calculator&lt;/h3&gt;
+
+&lt;p&gt;I try to use Windows build-in calculator. Amazing, it is powerful:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/winCalc.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;winCalc&#34; border=&#34;0&#34; alt=&#34;winCalc&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/winCalc_thumb.png&#34; width=&#34;323&#34; height=&#34;250&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;8-python&#34;&gt;8. Python&lt;/h3&gt;
+
+&lt;p&gt;Return to programming language.&amp;#160; First, I defined a function(recursive version) in Python and then use its MATH library:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def factorial(n):&lt;br /&gt; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; if n==0: &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;
+  &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; return 1
+&lt;/p&gt;
+
+&lt;p&gt;
+  &amp;#160;&amp;#160;&amp;#160; else:
+&lt;/p&gt;
+
+&lt;p&gt;
+  &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; return n*factorial(n-1) &lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;font face=&#34;Courier New&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;&gt;&gt;&gt; factorial(170)&lt;/font&gt; &lt;/p&gt; 
+  
+
+&lt;p&gt;&lt;p&gt;
+    7257415615307998967396728211129263114716991681296451376
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    5435777989005618434017061578523507492426174595114909912
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    3783852077666602256544275302532890077320751090240043028
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    0058295603966612599658257104398558294257568966313439612
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    2625710949468067112055688804571933402126614528000000000
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    00000000000000000000000000000000L
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    &lt;font color=&#34;#ff0000&#34;&gt;&amp;gt;&amp;gt;&amp;gt; factorial(171)&lt;/font&gt;
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    1241018070217667823424840524103103992616605577501693185
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    3889518036119960752216917529927519781204875855764649595
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    0167038705280988985869071076733124203221848436431047357
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    7889968548278290754541561964852153468318044293239598173
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    6968996572359039476161522785581800611763651084288000000
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    00000000000000000000000000000000000L&lt;/font&gt;
+  &lt;/p&gt;&lt;/blockquote&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote&gt;
+    &lt;p&gt;
+      &amp;gt;&amp;gt;&amp;gt; import math&lt;br /&gt; &lt;br /&gt;&lt;font color=&#34;#ff0000&#34;&gt;&amp;gt;&amp;gt;&amp;gt; math.factorial(171)&lt;/font&gt;
+    &lt;/p&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;
+  1241018070217667823424840524103103992616605577501693185
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  3889518036119960752216917529927519781204875855764649595
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  0167038705280988985869071076733124203221848436431047357
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  7889968548278290754541561964852153468318044293239598173
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  6968996572359039476161522785581800611763651084288000000
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  00000000000000000000000000000000000L
+&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/blockquote&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    Amazing, Python beats up C++!
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    &lt;em&gt;(to be continued :&lt;/em&gt;
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    &lt;em&gt;Too Big to Be Accurate(2): &lt;font color=&#34;#ff0000&#34;&gt;Approximation&lt;/font&gt; &lt;/em&gt;
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    &lt;em&gt;)&lt;/em&gt;
+  &lt;/p&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

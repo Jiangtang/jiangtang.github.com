@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation on Lithium Theme</title>
+    <link>/tags/documentation/index.xml</link>
+    <description>Recent content in Documentation on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Not Documented, Not Exist?!</title>
+      <link>/2012/02/29/not-documented-not-exist/</link>
+      <pubDate>Wed, 29 Feb 2012 19:48:44 +0000</pubDate>
+      
+      <guid>/2012/02/29/not-documented-not-exist/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Weeks before I first got the &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/12/column-mode-in-sas-9-3-enhanced-editor/&#34; target=&#34;_blank&#34;&gt;column edit mode in SAS 9.3 Enhanced Editor&lt;/a&gt;. Since had no previous SAS versions in machine, I just checked the &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/hostwin/63285/HTML/default/viewer.htm#editor_enhanced.htm&#34; target=&#34;_blank&#34;&gt;online documentation of SAS 9.2&lt;/a&gt; in which it’s not mentioned (while documented in &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/hostwin/63047/HTML/default/viewer.htm#editor_enhanced.htm&#34; target=&#34;_blank&#34;&gt;SAS 9.3&lt;/a&gt;) then I concluded the column mode is an exciting new feature in SAS 9.3: if it is not documented, it doesn’t exist!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Then it turns that I was wrong. My friend &lt;a href=&#34;http://www.linkedin.com/pub/venkat-veerisetty/5/33/8b9&#34; target=&#34;_blank&#34;&gt;Venkat Veerisetty&lt;/a&gt; just told me that this feature was available since SAS v8. I also found a machine with SAS v9.2 and it works.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;While not-documented-not-exist is obviously an arbitrary assumption regardless of facts, I still hold it somehow when emphasizing the importance of documentation.&amp;#160; &lt;a href=&#34;http://blogs.sas.com/content/sasdummy&#34; target=&#34;_blank&#34;&gt;Chris Hemedinger&lt;/a&gt; gave &lt;a href=&#34;http://blogs.sas.com/content/sasdummy/2011/03/29/undocumented-features-theres-a-reason-they-are-not-documented/&#34; target=&#34;_blank&#34;&gt;a reason why there are some undocumented “behaviors” in SAS&lt;/a&gt;. It makes sense, while in this case, it would be just happened to be missed in other documents and then newly added in v9.3.&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

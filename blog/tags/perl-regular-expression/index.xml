@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Perl Regular Expression on Lithium Theme</title>
+    <link>/tags/perl-regular-expression/index.xml</link>
+    <description>Recent content in Perl Regular Expression on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/perl-regular-expression/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How to Write a Check? Use SAS Format!</title>
+      <link>/2013/02/24/how-to-write-a-check-use-sas-format/</link>
+      <pubDate>Sun, 24 Feb 2013 21:59:02 +0000</pubDate>
+      
+      <guid>/2013/02/24/how-to-write-a-check-use-sas-format/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/5write_a_check_step5_sign_memo.jpg&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;5write_a_check_step5_sign_memo&#34; border=&#34;0&#34; alt=&#34;5write_a_check_step5_sign_memo&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/5write_a_check_step5_sign_memo_thumb.jpg&#34; width=&#34;441&#34; height=&#34;208&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;During my initial stay in US last year, one of the interesting exercises was &lt;/font&gt;&lt;a href=&#34;http://banking.about.com/od/checkingaccounts/ig/How-to-Write-a-Check/How-to-Write-a-Check---Step-7.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;to write a check&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. The Arabic numerals (&lt;em&gt;the universal language!&lt;/em&gt;) were pretty intuitive while I didn’t feel much comfortable on spelling the face value in words: I never played the game! &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;But the good side of this story was, as a SAS programmer and I used a &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/leforinforref/63324/HTML/default/viewer.htm#n1ncdkav4uqfwin1k5mow7z69avw.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;WORDFw. Format&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; money=8.15; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; put money &lt;font color=&#34;#ff0000&#34;&gt;wordf&lt;/font&gt;100.; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and got:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/SAS_Format_Check.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_Format_Check&#34; border=&#34;0&#34; alt=&#34;SAS_Format_Check&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/SAS_Format_Check_thumb.png&#34; width=&#34;395&#34; height=&#34;158&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Another check with a bigger value:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/SAS_Format_Check2.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_Format_Check2&#34; border=&#34;0&#34; alt=&#34;SAS_Format_Check2&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/SAS_Format_Check2_thumb.png&#34; width=&#34;410&#34; height=&#34;157&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;font-size-1-strong-2-strong-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;2&lt;/strong&gt;&lt;/font&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I paid specially interested on SAS Format recently because of the introducing Perl Regular Expression into PROC FORMAT invalue statement since SAS 9.3(&lt;em&gt;an old procedure plays a new game!&lt;/em&gt;). For example, a labeled TIME8. informat created by&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc format; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; invalue xxx (default=20) &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &amp;#8216;&lt;font color=&#34;#ff0000&#34;&gt;/(\d+):(\d\d)(?:.(\d+))?/&lt;/font&gt;&amp;#8216; (REGEXP) = [time8.]; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For more, see Rick Langston’s paper, &lt;em&gt;&lt;a href=&#34;http://support.sas.com/resources/papers/proceedings12/245-2012.pdf&#34;&gt;Using the New Features in PROC FORMAT&lt;/a&gt;&lt;/em&gt; (2012).&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Extract the Version of SAS and OS of a SAS Format or Macro Catalog: A Little Bit of Perl Regular Expression</title>
+      <link>/2012/11/25/extract-the-version-of-sas-and-os-of-a-sas-format-or-macro-catalog-a-little-bit-of-perl-regular-expression/</link>
+      <pubDate>Sun, 25 Nov 2012 20:36:52 +0000</pubDate>
+      
+      <guid>/2012/11/25/extract-the-version-of-sas-and-os-of-a-sas-format-or-macro-catalog-a-little-bit-of-perl-regular-expression/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;SAS Sample 34444(&lt;em&gt;&lt;a href=&#34;http://support.sas.com/kb/34/443.html&#34; target=&#34;_blank&#34;&gt;Determine the operating system in which a format catalog was created&lt;/a&gt;&lt;/em&gt;) posts piece of codes to get the version of SAS and OS of a SAS format catalog. It is useful since a SAS catalog can be only read in the operating systems same to its source machine.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;2 cents add to this note:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;First, we do not need to write codes to get to know the machine version for a catalog(&lt;em&gt;&lt;strong&gt;formats.sas7bcat &lt;/strong&gt;&lt;/em&gt;or&lt;strong&gt; &lt;em&gt;sasmacr.sas7bcat&lt;/em&gt;&lt;/strong&gt;). Just open the catalog using a text editor, Notepad++, then you get&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;a SAS format catalog created by SAS 9.1 in a Windows XP Pro machine:&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/SAS_Format.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;SAS_Format&#34; alt=&#34;SAS_Format&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/SAS_Format_thumb.png&#34; width=&#34;475&#34; height=&#34;408&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;and a SAS macro catalog by SAS 9.3 in a 64 bits Windows 7 Pro machine:&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/SAS_Macro.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;SAS_Macro&#34; alt=&#34;SAS_Macro&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/SAS_Macro_thumb.png&#34; width=&#34;464&#34; height=&#34;375&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Second, if do want programming (for curiosity purpose; I like this idea), we can also improve the sample codes since the position and length information were hard coded in Line 21 (the question is: how can we know that?):&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;test=substr(theline,&lt;span style=&#34;color: #ff0000;&#34;&gt;210&lt;/span&gt;,&lt;span style=&#34;color: #ff0000;&#34;&gt;20&lt;/span&gt;);&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;To get rid of hard coding, I use Perl Regular Expression. Just copy the archived codes for &lt;/span&gt;&lt;a href=&#34;http://www.sesug.org/SESUG2012/abstract.html#BB-04&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;my SESUG 2012 talk&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;with tiny modification (I always use the same programming blocks if possible):&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/Jiangtang/SESUG2012/blob/master/read_SAP.sas&#34; title=&#34;https://github.com/Jiangtang/SESUG2012/blob/master/read_SAP.sas&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;https://github.com/Jiangtang/SESUG2012/blob/master/read_SAP.sas&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;The following codes can be also used to run against SAS macro catalog:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;filename fmt &amp;#8220;a:formats.sas7bcat&amp;#8221;;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data fmt;&lt;br /&gt; infile fmt lrecl=1000 truncover;&lt;br /&gt; input line $1000.;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; set fmt;&lt;br /&gt; if &lt;em&gt;n&lt;/em&gt;=1 then do;&lt;br /&gt; retain queVer;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;            &lt;span style=&#34;color: #ff0000;&#34;&gt;ver=&amp;#8221;/(\d+).[\d\w]+_[\d\w]+/&amp;#8221;;&lt;/span&gt;&lt;br /&gt; queVer  = prxparse(ver);&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;            if missing(queVer) then do;&lt;br /&gt; putlog &amp;#8220;ERROR: Invalid regexp&amp;#8221; ver;&lt;br /&gt; stop;&lt;br /&gt; end;&lt;br /&gt; end;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;      queVerN  = prxmatch(queVer ,line);&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;      if queVerN &amp;gt; 0  then do ;&lt;br /&gt; call PRXsubstr(queVer,line,position,length);&lt;br /&gt; version = compress(substr(line, position, length));&lt;br /&gt; output;&lt;br /&gt; end;    &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;      put position= length=;&lt;br /&gt; put version=;&lt;br /&gt; run;&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Test it against five Windows machines: &lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=221 length=16&lt;br /&gt; version=9.0301M1X64_7PRO&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=217 length=15&lt;br /&gt; version=9.0202M2NET_SRV &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=221 length=17&lt;br /&gt; version=9.0202M3X64_SRV08 &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=217 length=14&lt;br /&gt; version=9.0100A0XP_PRO&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=217 length=15&lt;br /&gt; version=9.0101M3NET_SRV &lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;P.S.: The pattern &lt;strong&gt;(d+).[dw]+_[dw]+&lt;/strong&gt;  can be read as&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;number(s)                       +&lt;br /&gt; .                                      +&lt;br /&gt; some digits and words     +&lt;br /&gt; _                                     +&lt;br /&gt; some digits and words&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Since the underscore “_” is also included in meta-character &lt;strong&gt;w&lt;/strong&gt;, it seems OK to simplify the pattern above to &lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;(d+).[dw]+ &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;But in a Window Server 2003 machine with SAS 9.2, it also returns the following unrelated information:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=998 length=3&lt;br /&gt; version=2.S &lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>XML and SAS</title>
+      <link>/2010/10/07/xml-and-sas/</link>
+      <pubDate>Thu, 07 Oct 2010 11:44:38 +0000</pubDate>
+      
+      <guid>/2010/10/07/xml-and-sas/</guid>
+      <description>&lt;p&gt;Last month, I gave a talk, &lt;em&gt;XML: the SAS Approach&lt;/em&gt;, in &lt;a href=&#34;http://www.cdisc.org/interchange-china#2329&#34;&gt;CDISC Interchange China 2010&lt;/a&gt;(at the Medical School of Fudan University, Shanghai, 2010-09-15). &lt;a href=&#34;http://www.fda.gov/&#34;&gt;FDA&lt;/a&gt; favors &lt;a href=&#34;http://www.cdisc.org/&#34;&gt;CDISC&lt;/a&gt; and &lt;a href=&#34;http://www.hl7.org/&#34;&gt;HL7&lt;/a&gt;, the two XML based standards, and SAS programmers in biopharmaceutical industry&amp;#160; need incorporate the XML technology into their toolboxes. Fortunately, you don’t need to be an XML expert then to play XML in your daily work, and, SAS system DOES offer multiple tools and applications to handle XML files, i.e. import and export XML data:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SAS data steps approach:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; import and export&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/xmlengine/sxle913/index.html&#34;&gt;SAS XML Libname engine&lt;/a&gt;:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; import and export&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/odsxml/&#34;&gt;SAS ODS XML statement&lt;/a&gt;(ODS MARKUP):&amp;#160;&amp;#160; export&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/cdisc/proccdisc/index.html&#34;&gt;PROC CDISC&lt;/a&gt;:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; import and export&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sas.com/apps/demosdownloads/92_SDL_sysdep.jsp;jsessionid=75E543A04B4ED91EFE8B8D16B73954A1.tc4j3apps1?packageID=000513&amp;amp;jmpflag=N&#34;&gt;SAS XML Mapper&lt;/a&gt;:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; import&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sas.com/apps/demosdownloads/cdiscviewer_PROD__sysdep.jsp;jsessionid=75E543A04B4ED91EFE8B8D16B73954A1.tc4j3apps1?packageID=000343&amp;amp;jmpflag=N&#34;&gt;SAS CDISC Viewer&lt;/a&gt;:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;em&gt;as if&lt;/em&gt;&amp;#160; import&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The &lt;a href=&#34;http://www.sas.com/apps/demosdownloads/cdiscviewer_PROD__sysdep.jsp;jsessionid=75E543A04B4ED91EFE8B8D16B73954A1.tc4j3apps1?packageID=000343&amp;amp;jmpflag=N&#34;&gt;SAS CDISC Viewer&lt;/a&gt; and &lt;a href=&#34;http://support.sas.com/rnd/base/cdisc/proccdisc/index.html&#34;&gt;PROC CDISC&lt;/a&gt; procedure are some bit toys, and the rest really work. The Perl Regular Expression(PRX) approach is also presented to export and import XML data.&lt;/p&gt;
+
+&lt;p&gt;A simple demo. First, use FILE and PUT statements to generate an XML file:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;data _null_;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; file &amp;ldquo;export.xml&amp;rdquo;;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; put &amp;#8216;&amp;lt;?xml version=&amp;ldquo;1.0&amp;rdquo; encoding=&amp;ldquo;windows-1252&amp;rdquo; ?&amp;gt;&amp;#8217;;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; put &amp;#8216;&lt;ROWSET&gt;&amp;#8217;;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; put &amp;#8216;&lt;ROW&gt;&amp;#8217;;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; put &amp;#8216;&lt;text&gt; &lt;font color=&#34;#ff0000&#34;&gt;Welcome to CDISC Interchange 2010 China&lt;/font&gt; &lt;/text&gt;&amp;#8217;;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; put &amp;#8216;&lt;/ROW&gt;&amp;#8217;;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; put &amp;#8216;&lt;ROW&gt;&amp;#8217;;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; put &amp;#8216;&lt;text&gt; &lt;font color=&#34;#ff0000&#34;&gt;We are in Shanghai!&lt;/font&gt; &lt;/text&gt;&amp;#8217;;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; put &amp;#8216;&lt;/ROW&gt;&amp;#8217;;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; put &amp;#8216;&lt;/ROWSET&gt;&amp;#8217;;&amp;#160;&lt;br /&gt;
+run;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Then read the whole XML file to SAS dataset:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;data import0 ;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; infile &amp;ldquo;export.xml&amp;rdquo; dsd missover truncover lrecl = 1024;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; input line $1024.;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; if line = &amp;#8221; then delete;&lt;br /&gt;
+run;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Third step, extract the information you want(the text between &lt;text&gt; and &lt;/text&gt; tags) using&amp;#160; Perl Regular Expression:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;data import (keep = line );&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160; retain queName ;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160; retain line ;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160; set import0;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; /*use PRX to capture the structure of XML data;*/&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160; If _n_=1 then do;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; queName=prxparse(&amp;#8216;/^&lt;text&gt; /&amp;#8217;);&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160; end;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160; queNameN=prxmatch(queName,line);&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; /*use PRX to remove the XXML tags;*/&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160; if queNameN&amp;gt;0 then do;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; rx1=prxparse(&amp;ldquo;s/&amp;lt;.*?&amp;gt;//&amp;ldquo;);&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; call prxchange(rx1,99,line);&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; output;&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160; end;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;br /&gt;
+run;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The logic of PRX approach to process XML data is very simple and can be easily modified according to your needs:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;complicate and utilize the PRX codes to capture the hierarchical structure of XML data.&lt;/li&gt;
+&lt;li&gt;remove XML tags and output the information to SAS dataset.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

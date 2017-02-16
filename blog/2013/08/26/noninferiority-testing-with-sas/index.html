@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>Noninferiority Testing with SAS - Lithium Theme</title>
+<meta property="og:title" content="Noninferiority Testing with SAS - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Noninferiority Testing with SAS</h1>
+
+    
+    <span class="article-date">August 26, 2013</span>
+    
+
+    <div class="article-content">
+      <p><font size="1">I planed to extend nonWinferiority testing to one of my statistical notes,&#160; <em><a href="http://www.jiangtanghu.com/blog/2012/09/12/tost-equivalence-test/">Equivalence Testing and TOST (Two One-Sided Test)</a></em> since noninferiority test is simply half part of the equivalence test. Today I’m glad to find an even better explanation from</font></p>
+
+<blockquote>
+<p><em><a href="http://support.sas.com/kb/48/616.html"><font size="1">SAS Usage Note 48616: Design and analysis of noninferiority studies</font></a></em></p>
+</blockquote>
+
+<p><font size="1">You will love it if you are interested in this subject (bookmark this link since it looks like unfinished somehow). Few comments:</font></p>
+
+<ul>
+<li><font size="1">It’s better not to use a two-side test for noninferiority testing. In PROC TTEST, you can add option like “<font face="Courier New">side=U</font>” or “<font face="Courier New">side=L</font>”. </font></li>
+<li><font size="1">If you do like a two-side test for noninferiority testing, it’s OK but DO remember assign an alpha value of 0.1 since the default value is 0.05 (if you’re lost by this statement, read this </font><a href="http://www.jiangtanghu.com/blog/2012/09/12/tost-equivalence-test/"><font size="1">post</font></a> <font size="1">again). It’s pretty tricky and I saw lots of mistakes due to ignoring of this point.</font></li>
+<li><font size="1">In note </font><a href="http://support.sas.com/kb/48/616.html"><font size="1">48616</font></a><font size="1">, it is said only test of mean(s) is supported by PROC TTEST. Actually, PROC TTEST can also test ratios (a </font><a href="http://www.jiangtanghu.com/blog/2012/09/12/geomean/"><font size="1">log-transformation</font></a> <font size="1">will be applied) by a&#160; “<font face="Courier New">dist=lognormal</font>” option.</font></li>
+<li><font size="1">To make decision in noninferiority, superiority, and equivalence testings, lower or/and upper limits are used to compare with the margin(s) rather than the P-value. They are of course equivalent but the former approach is much more accessible and meaningful for non-statistician researchers.</font></li>
+</ul>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oracle on Lithium Theme</title>
+    <link>/tags/oracle/index.xml</link>
+    <description>Recent content in Oracle on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Who is Alfred?</title>
+      <link>/2011/08/31/who-is-alfred/</link>
+      <pubDate>Wed, 31 Aug 2011 22:18:09 +0000</pubDate>
+      
+      <guid>/2011/08/31/who-is-alfred/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Tell me something about Alfred, male or female? age? height and weight?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Oracle database (version 9 and below) had a well known default demo account SCOTT with a password, TIGER (and TIGER was the name of the real person Bruce Scott ’s cat, &lt;a href=&#34;http://www.dba-oracle.com/t_scott_tiger.htm&#34; target=&#34;_blank&#34;&gt;see&lt;/a&gt;) and in this account, there are some tables named DEPT, EMP, BONUS and SALGRADE (you can read their meaning). Almost every Oracle DBA learn SQL using these database and an joke just says that in DBA’s meetings, people just&amp;#160; warm up saying “how about Smith?” And you should know that in the database, Smith is a clerk and his boss is Ford (whose boss is Jones)!&lt;/p&gt;
+
+&lt;p&gt;In the beginning I also raise a question for SAS programmers: who is Alfred? Don’t give quick answer such that “Alfred who”. Actually, you should already go through with Alfred very well as a SAS programmer:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc print data=sashelp.class; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; where name=&amp;ldquo;Alfred&amp;rdquo;; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As a clinical SAS programmer, I play with data, get acquaintance with the data and subjects and then subjects are no longer “subject”. They have identities and&amp;#160; Alfred is a 14 years old boy. I have such habit mostly because in clinical world, data are very expensive (not like the massive transaction data in financial industry) and should be took more care.&lt;/p&gt;
+
+&lt;p&gt;I dare say that “class” is the most famous SAS dataset in sashelp library and then in the SAS world. The first dataset used for demo is almost this “class”. I just did a quick Google search, “&lt;a href=&#34;http://www.google.com/search?hl=en&amp;source=hp&amp;biw=1111&amp;bih=561&amp;q=sas+sashelp.class&amp;btnG=Google+Search&amp;aq=f&amp;aqi=g10&amp;aql=&amp;oq=&amp;gs_rfai=#pq=+sas+sashelp.class&amp;hl=en&amp;cp=0&amp;gs_id=t&amp;xhr=t&amp;q=sas+sashelp.class&amp;qe=c2FzIHNhc2hlbHAuY2xhc3M&amp;qesig=-1hRQj8XDofruHqJt-7o1Q&amp;pkc=AFgZ2tkn99yjg_kNxO238PUOVve2MCFJUcgPCK-pXmvfyldpJvG0DchYcRuz_Azx9jhciBgWit8jDgrY6zs4T42InGlJtSBhGQ&amp;pf=p&amp;sclient=psy&amp;source=hp&amp;pbx=1&amp;oq=sas+sashelp.class&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=&amp;gs_upl=&amp;bav=on.2,or.r_gc.r_pw.r_cp.&amp;fp=265f5e3edf2ec82b&amp;biw=1166&amp;bih=665&amp;bs=1&#34; target=&#34;_blank&#34;&gt;sas sashelp.class&lt;/a&gt;” returns about 44,400 results. Hope you can find any other SAS datasets to beat it.&lt;/p&gt;
+
+&lt;p&gt;Alfred in “class” pops into my mind because today, I do find a strong candidate. In SAS 9.2 (and 9.3), the sashelp library has a new member, Iris. YES, it is the “&lt;a href=&#34;http://en.wikipedia.org/wiki/Iris_flower_data_set&#34; target=&#34;_blank&#34;&gt;Fisher Iris Flower Data&lt;/a&gt;”, which can be safely considered the most famous and most&amp;#160; used dataset in machine learning and data mining papers and statistical applications. Currently it has &lt;a href=&#34;http://www.google.com/search?hl=en&amp;source=hp&amp;biw=1111&amp;bih=561&amp;q=sas+sashelp.class&amp;btnG=Google+Search&amp;aq=f&amp;aqi=g10&amp;aql=&amp;oq=&amp;gs_rfai=#sclient=psy&amp;hl=en&amp;source=hp&amp;q=sas+sashelp.iris+&amp;pbx=1&amp;oq=sas+sashelp.iris+&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=e&amp;gs_upl=277383l277383l5l277945l1l1l0l0l0l0l0l0ll0l0&amp;bav=on.2,or.r_gc.r_pw.r_cp.&amp;fp=265f5e3edf2ec82b&amp;biw=1166&amp;bih=665&#34; target=&#34;_blank&#34;&gt;only 859 hits in Google&lt;/a&gt;, I think the number will reach high accompany with the wide use of SAS 9.2 and above, and to enforce my prediction, I will definitely play with the Iris data in the following future!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Work With Oracle: A Quick Sheet for SAS Programmers</title>
+      <link>/2009/12/04/work-with-oracle-a-quick-sheet-for-sas-programmers/</link>
+      <pubDate>Fri, 04 Dec 2009 09:33:00 +0000</pubDate>
+      
+      <guid>/2009/12/04/work-with-oracle-a-quick-sheet-for-sas-programmers/</guid>
+      <description>&lt;p&gt;(Note: All the followings are tested on Windows XP environment.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;0. Install Oracle Database 10g Express Edition&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Fast (and free) to download, easy to deploy and simple to admin&amp;#8211;for learning and testing purpose, Oracle Database 10g Express Edition (Oracle Database XE, a mini version of Oracle Database 10&lt;em&gt;g&lt;/em&gt; Release 2) are strongly recommended:&lt;/p&gt;
+
+&lt;p&gt;0.1 Download it at &lt;a href=&#34;http://www.oracle.com/technology/software/products/database/xe/index.html&#34;&gt;its homepage&lt;/a&gt;(206MB);&lt;/p&gt;
+
+&lt;p&gt;0.2 Install it following default settings;&lt;/p&gt;
+
+&lt;p&gt;0.3 Unlock accounts for HR and SCOTT. In a windows DOS prompt, using the following scripts:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;pre&gt;sqlplus sys/&lt;span style=&#34;color:#ff0000;&#34;&gt;&lt;em&gt;YourSysPassword&lt;/em&gt; &lt;/span&gt;as sysdba&lt;/pre&gt;
+
+&lt;pre&gt;alter user HR account unlock&lt;/pre&gt;
+
+&lt;pre&gt;alter user HR identified by &lt;em&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;YourHRPassword&lt;/span&gt;&lt;/em&gt;&lt;/pre&gt;
+
+&lt;pre&gt;alter user SCOTT account unlock&lt;/pre&gt;
+
+&lt;pre&gt;alter user SCOTT identified by TIGER&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;Or you can accomplish these tasks within the Oracle web application:&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;pre&gt;&lt;a title=&#34;http://localhost:8081/apex&#34; href=&#34;http://localhost:8081/apex&#34;&gt;http://localhost:8081/apex&lt;/a&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Connect Oracle using SAS libname engine&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;libname SCOTT oracle user=&amp;#8221;SCOTT&amp;#8221; password=&amp;#8221;TIGER&amp;#8221; path=&amp;#8217;xe&amp;#8217; ;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;Note: &lt;em&gt;xe&lt;/em&gt; is the default path for Oracle Database XE.&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Connect Oracle using SQL Procedure Pass-Through Facility&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;proc sql ;&lt;br /&gt;
+connect to oracle as orcl&lt;br /&gt;
+(user=&amp;#8221;SCOTT&amp;#8221; password=&amp;#8221;TIGER&amp;#8221; path=&amp;#8217;xe&amp;#8217;);&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;_select *       
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;from connection to orcl_&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;&lt;em&gt; (&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;&lt;em&gt; &lt;strong&gt;SELECT …&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;&lt;em&gt;&lt;strong&gt;&lt;span class=&#34;Apple-style-span&#34; style=&#34;font-weight: normal; &#34;&gt; ) ;&lt;/span&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;_disconnect from orcl;&amp;lt;/p&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;quit;&lt;/em&gt;&lt;/blockquote&gt;&lt;/p&gt;
+
+&lt;p&gt;Note: 1) In this approach, Oracle, instead of SAS, processes the SQL statement (i.e., you use the more powerful and flexible Oracle SQL syntax instead of SAS Proc SQL procedure for querying. For more, se&lt;em&gt;e &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lrcon/61722/HTML/default/a001044413.htm&#34;&gt;SAS Doc&lt;/a&gt;&lt;/em&gt;)&lt;em&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;      __ 2) Your Oracle SQL codes should be placed in the &amp;lt;span style=&amp;quot;color:#ff0000;&amp;quot;&amp;gt;RED&amp;lt;/span&amp;gt; blocks, and end without a semicolon(;):
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;_select *&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;from emp&lt;/em&gt;&lt;/blockquote&gt;&lt;/p&gt;
+
+&lt;p&gt;3) Only basic Oracle SQL statements (&lt;em&gt;select, create table&lt;/em&gt;, &amp;hellip;)can pass through this facility.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. Load SAS datasets to Oracle database&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;proc copy in=sashelp&lt;br /&gt;
+out=scott;&lt;br /&gt;
+select class;&lt;br /&gt;
+run;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;4. Misc: Some differences between Oracle SQL and SAS Proc SQL&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.1 Table aliases&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Oracle: &lt;em&gt;from employees a;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;SAS: &lt;em&gt;from employees a;&lt;/em&gt; or&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;from employees &lt;span style=&#34;color:#ff0000;&#34;&gt;as&lt;/span&gt; a;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;4.2 Column aliases&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Oracle: don’t use single quotation marks(‘’).&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;_select job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;as job&lt;/span&gt;, job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;job&lt;/span&gt;, job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;as &amp;#8220;job&amp;#8221; &lt;span style=&#34;color:#000000;&#34;&gt;,&lt;/span&gt; &lt;strike&gt;job&lt;em&gt;id &lt;span style=&#34;color:#ff0000;&#34;&gt;as ‘job’&lt;/span&gt;&lt;/strike&gt;&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;SAS:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;_select job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;as job&lt;/span&gt;, job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;&amp;#8220;job&amp;#8221;&lt;/span&gt; , job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;&amp;#8216;job&amp;#8217;&lt;/span&gt;, &lt;strike&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;job&lt;em&gt;id job&lt;/span&gt;&lt;/strike&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;4.3 Literal Character Strings&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Oracle: Date and character literal values must be enclosed within single quotation marks(‘’).&lt;/p&gt;
+
+&lt;p&gt;SAS: Use both single and double quotation marks.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.4 Order the null value&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Oracle: Null values are displayed last for ascending sequences and first for descending sequences.&lt;/p&gt;
+
+&lt;p&gt;SAS: Null values are displayed first for ascending sequences and last for descending sequences.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4.5 Nesting Group Functions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;_select max(avg(salary))&lt;br /&gt;
+from employees&lt;br /&gt;
+group by department&lt;em&gt;id&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;SAS log:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;ERROR: Summary functions nested in this way are not supported.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Optional approach for SAS:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;_select max(avg) as max&lt;br /&gt;
+from(&lt;br /&gt;
+select avg(salary) as avg&lt;br /&gt;
+from employees&lt;br /&gt;
+group by department&lt;em&gt;id )&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;4.6 row number(_n_)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Oracle:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;select &lt;span style=&#34;color:#ff0000;&#34;&gt;rownum&lt;/span&gt;&lt;br /&gt;
+from employees&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;SAS:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;select &lt;span style=&#34;color:#ff0000;&#34;&gt;monotonic()&lt;/span&gt;&lt;br /&gt;
+from employees&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Note: &lt;span style=&#34;color:#ff0000;&#34;&gt;monotonic()&lt;/span&gt; is an undocumented function of SAS, &lt;em&gt;see&lt;span class=&#34;Apple-style-span&#34; style=&#34;font-style: normal; &#34;&gt;&lt;a href=&#34;http://www2.sas.com/proceedings/sugi29/040-29.pdf&#34;&gt;http://www2.sas.com/proceedings/sugi29/040-29.pdf&lt;/a&gt;&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Industry Review: SAS and Teradata Partnership</title>
+      <link>/2008/12/19/industry-review-sas-and-teradata-partnership/</link>
+      <pubDate>Fri, 19 Dec 2008 10:44:00 +0000</pubDate>
+      
+      <guid>/2008/12/19/industry-review-sas-and-teradata-partnership/</guid>
+      <description>&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
+  &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;SAS and Teradata Partnership: Press&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
+  &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.sas.com/news/preleases/SASandTeradataAdvantageProgram.html&#34;&gt;Leading Companies See Value in SAS and Teradata Partnership&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.sas.com/news/preleases/TeradataAdvantageProgram.html&#34;&gt;SAS and Teradata Unveil Advantage Program to Bring Powerful In-Database Solutions and Services to Customers&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.teradata.com/t/page/173874/index.html&#34;&gt;SAS and Teradata Enter into Strategic Partnership&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;font-size: 100%;&#34;&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
+  &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
+  &lt;span style=&#34;font-size: 100%;&#34;&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
+  &lt;span style=&#34;font-size: 100%;&#34;&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;In BI industry, the pure players such as SAS, Teradata and Microstrategy, need to demonstrate their indispensable values against the megavendors, IBM (acquired Cognos), SAP (acquired Business Object), Oracle (acquired Hyperion) and Microsoft. Teradata is solely focused on enterprise data warehouse. SAS, dominating in business analytics (e.g. advanced statistics and data mining), will check and balance the BI industry due to the private-hold structure. SAS and Teradata Advantage Program partnership, includes wide business lines, such as Analytics, AML (Anti-Money Laundering), Credit Risk, Enterprise Intelligence and Optimization Services. I think It&amp;#8217;s a effective way to learn from each other in mutual emulation and&lt;/span&gt;&lt;span style=&#34;font-family: Times New Roman;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;counterbalance the &lt;/span&gt;&lt;span class=&#34;wbtrmn&#34;&gt;&lt;span style=&#34;font-family: Times New Roman;&#34;&gt;concentration&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt; market.&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

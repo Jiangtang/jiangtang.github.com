@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sas Xml Mapper on Lithium Theme</title>
+    <link>/tags/sas-xml-mapper/index.xml</link>
+    <description>Recent content in Sas Xml Mapper on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/sas-xml-mapper/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Best of SAS: A Personal Nomination 2012</title>
+      <link>/2012/12/31/best-of-sas-a-personal-nomination-2012/</link>
+      <pubDate>Mon, 31 Dec 2012 01:13:03 +0000</pubDate>
+      
+      <guid>/2012/12/31/best-of-sas-a-personal-nomination-2012/</guid>
+      <description>
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;There SAS applications/procedures/features were not necessarily available since 2012. This year I paid special attention to them when began to use SAS 9.3. The following notes are&amp;#160; totally my personal endorsement purely based my own experience as a user:&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;xml-file-reading-sas-xml-mapper&#34;&gt;XML File Reading: SAS XML Mapper&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_XML_Mapper.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_XML_Mapper&#34; border=&#34;0&#34; alt=&#34;SAS_XML_Mapper&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_XML_Mapper_thumb.png&#34; width=&#34;363&#34; height=&#34;399&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS XML Mapper itself is not an elegant tool from software design perspective (an example: I keep multiple versions because the latest version seems not carry out all the functionalities from old ones), but it is best XML file processing tool for SAS programmers like me. The sweet part of SAS XML Mapper is that you can use it to get SAS datasets directly with a automatically generated XML mapping file. I use it to import XML files from &lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;CDISC ODM based files like define.xml &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;metadata querying results (XML) returned by SAS Metadata Server&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and it works pretty well and I just can’t live without it!&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;graphics-facility-ods-graphics&#34;&gt;Graphics Facility: ODS Graphics&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;ODS Graphics is the raising star among SAS products family since its advent and I also fall into love with her. This system contains&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;five procedures with “SG” in names,&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;a template language(GTL), and&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;two GUI tools, ODS Graphics Editor, and ODS Graphics Designer&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;in Base SAS and ODS Statistical Graphics in SAS/STAT (and in SAS/QC which I didn’t check out). ODS Graphics just makes SAS graph&amp;#160; much beautiful and graphics task much fun (and elegant!). &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Btw, it may not be a fair game but still nice to check out a SAS ODS graph and some random pick up R graphs:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This is &lt;a href=&#34;http://blogs.sas.com/content/iml/2011/08/26/visualizing-correlations-between-variables-in-sas/&#34;&gt;from Rick Wicklin&lt;/a&gt; with 3 lines of codes including one “RUN” statement:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;pre&gt;proc sgscatter data=sashelp.iris; 
+matrix SepalLength--PetalLength /group=Species diagonal=(histogram kernel);
+run;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_corr2.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS_corr2&#34; border=&#34;0&#34; alt=&#34;SAS_corr2&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_corr2_thumb.png&#34; width=&#34;400&#34; height=&#34;408&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and this is the R homepage graph(and the &lt;a href=&#34;http://www.r-project.org/misc/acpclust.R&#34;&gt;R codes&lt;/a&gt;):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/R_Graphics.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;R_Graphics&#34; border=&#34;0&#34; alt=&#34;R_Graphics&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/R_Graphics_thumb.png&#34; width=&#34;396&#34; height=&#34;294&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and this is &lt;a href=&#34;http://gallery.r-enthusiasts.com/&#34;&gt;R Graph Gallery&lt;/a&gt; homepage:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/r_graph_gallery.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;r_graph_gallery&#34; border=&#34;0&#34; alt=&#34;r_graph_gallery&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/r_graph_gallery_thumb.png&#34; width=&#34;403&#34; height=&#34;287&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I must say SAS ODS Graphics rocks!&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;statistical-procedure-proc-ttest-and-proc-freq&#34;&gt;Statistical Procedure: PROC TTEST and PROC FREQ&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In this category I list two because they are equally extremely relevant and important for me as statistical SAS programmer.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;PROC TTEST makes equivalence test (which is extremely popular in clinical research) much more accessible by adding a TOST(two one-side test) option. Years ago SAS programmers might use PROC MIXED or other methods for this kind of statistical test(&lt;font size=&#34;1&#34;&gt;I also took a note on this topic, see &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/tost-equivalence-test/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/font&gt;).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The new on PROC FREQ I checked out is to support much richer methods on calculating confidence intervals for binomial proportion (my note &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/15/confidence-intervals-binomial-proportion/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;) and confidence intervals for difference between independent binomial proportions (my note &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/23/statistical-notes-5-confidence-intervals-for-difference-between-independent-binomial-proportions-using-sas/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;) which are also extremely important in clinical research and I programmed a lot.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;report-writing-ods-report-writing-interface&#34;&gt;Report Writing: ODS Report Writing Interface&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;My first SAS version was 9.1.3 where PROC REPORT is the primary SAS reporting writing tool (with ODS) while PROC TABULATE not in fashion anymore (and you may merely hear the arguments among these two procedures since then). I used PROC REPORT for all my production work for reporting since recently I tried the &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/datastep/dsobject/index.html&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;ODS Report Writing Interface&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;in a project for non-rectangular tables. It’s great and everyone was happy! &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Basically it is an ODS enhanced DATA &lt;em&gt;NULL&lt;/em&gt; reporting writing method (&lt;em&gt;DATA &lt;em&gt;NULL&lt;/em&gt; with &lt;font color=&#34;#ff0000&#34;&gt;FILE PRINT&lt;/font&gt; statements: it’s an even older way for me&lt;/em&gt;);a new ODS output object declared within DATA &lt;em&gt;NULL&lt;/em&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;dcl odsout obj();&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I like this kind of reporting method: you can control your report line by line and cell by cell (although with more lines of structured codes!).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;metadata-querying-tool-proc-metadata&#34;&gt;Metadata Querying Tool: PROC METADATA&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In this category, the other two strong candidates are JAVA interface and SAS Data Step Functions. I like PROC Metadata against JAVA because it holds the same full functionality (while SAS Data Step Functions, no yet) while I can still work in SAS to produce reports (just add a new line to start to use ODS Report Writing Interface:)). Furthermore, I feel much comfortable working with SAS!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;PROC Metadata uses XML as inputs and outputs: it may be not admirable compared to Data Step Functions. Since I use SAS XML Mapper, it’s not a problem anymore!&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;documentation&#34;&gt;Documentation&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I like the totally new SAS help and documentation system both online and offline since SAS 9.3. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;First in Base SAS, lots of files were separated from “SAS Language Dictionary”,&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs_offline.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_Docs_offline&#34; border=&#34;0&#34; alt=&#34;SAS_Docs_offline&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs_offline_thumb.png&#34; width=&#34;420&#34; height=&#34;420&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and in all procedures guide, the &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/14/tab-is-a-tab-is-a-tab-is-a-tab/&#34;&gt;tab&lt;/a&gt; view looks great:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_Docs&#34; border=&#34;0&#34; alt=&#34;SAS_Docs&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs_thumb.png&#34; width=&#34;452&#34; height=&#34;271&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Face Off: Review OpenCDISC XML files</title>
+      <link>/2012/02/11/face-off-review-opencdisc-xml-files/</link>
+      <pubDate>Sat, 11 Feb 2012 16:35:35 +0000</pubDate>
+      
+      <guid>/2012/02/11/face-off-review-opencdisc-xml-files/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.opencdisc.org/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;OpenCDISC&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, the first open source CDISC validator, is already in the toolbox of FDA reviewers (CDER/CBER, see &lt;em&gt;&lt;a href=&#34;http://www.cdisc.org/stuff/contentmgr/files/0/8d99d69f1195d2a2954e62d2fbb3470f/misc/cdisc_standards_in_fda_submissions_2012_01_26pdf.pdf&#34; target=&#34;_blank&#34;&gt;CDISC Standards in the Regulatory Submission Process&lt;/a&gt;&lt;/em&gt;, 26 January 2012, P.33). The key features in OpenCDISC is a &lt;a href=&#34;http://www.opencdisc.org/projects/validator/opencdisc-validation-framework&#34; target=&#34;_blank&#34;&gt;dichotomy of validation rules (XML based) and application logic&lt;/a&gt;. &lt;/font&gt;&lt;font size=&#34;1&#34;&gt;Currently OpenCDISC Validator (&lt;a href=&#34;http://www.opencdisc.org/download&#34; target=&#34;_blank&#34;&gt;Version 1.2.1&lt;/a&gt;) officially supports the four following CDISC modules:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.opencdisc.org/projects/validator/cdisc-sdtm-3.1.2-validation-rules&#34;&gt;SDTM 3.1.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.opencdisc.org/projects/validator/cdisc-sdtm-3.1.1-validation-rules&#34;&gt;SDTM 3.1.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.opencdisc.org/projects/validator/cdisc-define.xml-1.0-validation-rules&#34;&gt;Define.xml 1.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.opencdisc.org/projects/validator/cdisc-adam-1.0-validation-rules&#34;&gt;ADaM 1.0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You can get the corresponding configuration files (validation rules) &lt;/font&gt;&lt;a href=&#34;http://www.opencdisc.org/download&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;online&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;or in the software folder (in ..&lt;em&gt;opencdisc-validatorconfig &lt;/em&gt;with extension of .xml). Since SDTM 3.1.2 has the most rich set of validation rules from Janus, WebSDM and of course additional&amp;#160; OpenCDISC rules by itself, its configuration file (&lt;em&gt;&lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;config-sdtm-3.1.2.xml&lt;/a&gt;&lt;/em&gt;) deserves more attention. Better understanding of &lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;&lt;/a&gt;&lt;em&gt;&amp;#160;&lt;/em&gt;is the first step to customize the software according to business needs. Followings are some personal tips and tricks to play and even “torture” the file, using Notepad++, web browsers (IE and Firefox), Excel with MSXML and SAS XML Mapper. &lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;1-don-t-use-the-windows-default-notepad-to-open-and-edit-the-xml-file&#34;&gt;1. DON’T use the Windows default Notepad to open and edit the xml file&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad2.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_Notepad&#34; border=&#34;0&#34; alt=&#34;XML_Notepad&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad_thumb2.png&#34; width=&#34;453&#34; height=&#34;275&#34; /&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;while the reason:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;if you use Notepad to open a XML file, almost you get nothing but strings and strings.&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and another supporting reason, see bellowing picture.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;2-use-a-href-http-notepad-plus-plus-org-target-blank-notepad-a-or-other-real-text-editors-to-open-and-edit-it&#34;&gt;2. USE &lt;a href=&#34;http://notepad-plus-plus.org/&#34; target=&#34;_blank&#34;&gt;Notepad++&lt;/a&gt; or other REAL text editors to open and edit it&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad3.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_Notepad  &#34; border=&#34;0&#34; alt=&#34;XML_Notepad  &#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad_thumb3.png&#34; width=&#34;441&#34; height=&#34;321&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Notepad++ makes the difference. It supports multiple tabs view, XML syntax highlighting and XML tags match and other fancy stuff never in the plain Notepad. And like OpenCDISC, it’s free, both in sense of free beer and free speech.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Other real text editor, include Vim, UltraEdit and such, but for most users, I still think Notepad++ is the most handy one.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;3-at-first-use-a-web-browsers-to-review-it&#34;&gt;3. At first, use a web browsers to review it&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_IE1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_IE&#34; border=&#34;0&#34; alt=&#34;XML_IE&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_IE_thumb1.png&#34; width=&#34;423&#34; height=&#34;398&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It is the web view of &lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;&lt;/a&gt;&lt;em&gt;. &lt;/em&gt;The secret is a style file, &lt;strong&gt;define-1.0.xsl&lt;/strong&gt; in ..opencdisc-validatorconfigschematron. This is another story of dichotomy. The &lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;&lt;/a&gt; file itself is only used to store metadata (machine-readable), while the style file (also a XML file) used to instruct how to display it (human-readable). Within some proper internal interface, web browsers (I tested in IE and Firefox; Google Chrome doesn’t work). Excel can also render this XML file well (only test on Excel 2010 and 2007) while &lt;/font&gt;&lt;font size=&#34;1&#34;&gt;Web view is much better&lt;/font&gt;&lt;font size=&#34;1&#34;&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Excel.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;XML_Excel&#34; border=&#34;0&#34; alt=&#34;XML_Excel&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Excel_thumb.png&#34; width=&#34;401&#34; height=&#34;577&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;4-the-real-awesome-job-use-microsoft-xml-parser-or-other-xml-parsers-to-dig-into-xml-structure&#34;&gt;4. The real awesome job: use Microsoft XML parser or other XML parsers to dig into XML structure&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_Tags_Excel&#34; border=&#34;0&#34; alt=&#34;XML_Tags_Excel&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel_thumb1.png&#34; width=&#34;406&#34; height=&#34;622&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I use Excel 2010 with Microsoft XML parser (&lt;a href=&#34;http://en.wikipedia.org/wiki/MSXML&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;MSXML 6.0&lt;/em&gt;&lt;/a&gt;&lt;em&gt;. &lt;/em&gt;You can get the version of your MSXML by visiting &lt;a href=&#34;http://home.arcor.de/martin.honnen/xslt/processorTest.xml&#34; target=&#34;_blank&#34;&gt;this website&lt;/a&gt; in IE and you will get the different results when switching to other web browsers because Firefox and Chrome use other parsers). &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You can also get a instance of each XML tag:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel_preview1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_Tags_Excel_preview&#34; border=&#34;0&#34; alt=&#34;XML_Tags_Excel_preview&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel_preview_thumb1.png&#34; width=&#34;416&#34; height=&#34;640&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;5-the-real-awesome-job-use-sas-xml-mapper-to-get-the-tabulation-view&#34;&gt;5. The real awesome job: use SAS XML Mapper to get the tabulation view&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;And you may want to exact all the tables in the XML file with tabulation view, ideally, in SAS dataset:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For example, the first few rows in &lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_xml_tab1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;ODM_xml_tab&#34; border=&#34;0&#34; alt=&#34;ODM_xml_tab&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_xml_tab_thumb1.png&#34; width=&#34;399&#34; height=&#34;148&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;and the corresponding SAS dataset:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_tab1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;ODM_tab&#34; border=&#34;0&#34; alt=&#34;ODM_tab&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_tab_thumb1.png&#34; width=&#34;414&#34; height=&#34;48&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Actually you can put all the data in XML into a big dataset but with lots of redundancies. To use SAS XML Mapper (the latest version is 9.3), you should design a mapping file to tell the structure of the XML file. For the simple ODM dataset, you indicate the table name, column name and path, type and length:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/map.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;map&#34; border=&#34;0&#34; alt=&#34;map&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/map_thumb.png&#34; width=&#34;357&#34; height=&#34;150&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It never be fun to play with XML files. SAS XML Mapper is supposed to read CDISC ODM based XML files automatically (OpenCDISC XML files are called ODM compliant), but at least for this config-sdtm-3.1.2.xml, it failed and that’s why we should create a mapping file (&lt;em&gt;see above&lt;/em&gt;) by ourselves. Fortunately you don’t need to write it from scratch (it would be thousands of lines of codes):&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;find a CDISC ODM based XML file that SAS XML Mapper can read automatically, e.g., in &lt;a href=&#34;http://www.cdisc.org/define-xml&#34;&gt;http://www.cdisc.org/define-xml&lt;/a&gt;, a file named &lt;em&gt;define-example1.xml&lt;/em&gt; works well.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;use AutoMap function in SAS XML Mapper to get the mapping file.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;modify the mapping file to fit your needs.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;for details, refer SAS XML mapping syntax.&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;6-final-notes-for-excel&#34;&gt;6. Final Notes for Excel&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Right click &lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;&lt;/a&gt; then open with “Microsoft Excel”:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel11.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Excel1&#34; border=&#34;0&#34; alt=&#34;Excel1&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel1_thumb1.png&#34; width=&#34;412&#34; height=&#34;163&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Option 2 will go to section 3. If go with option 1:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel21.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;Excel2&#34; border=&#34;0&#34; alt=&#34;Excel2&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel2_thumb1.png&#34; width=&#34;320&#34; height=&#34;181&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Option 1-1 and 1-2:&amp;#160;&amp;#160; tabulation view in section 5&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Option&amp;#160; &lt;/font&gt;&lt;font size=&#34;1&#34;&gt;1-3:&amp;#160; tag view in section 4.&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

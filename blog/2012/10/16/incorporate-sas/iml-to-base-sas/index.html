@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>Incorporate SAS/IML to Base SAS? - Lithium Theme</title>
+<meta property="og:title" content="Incorporate SAS/IML to Base SAS? - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../../" class="nav-logo">
+    <img src="../../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Incorporate SAS/IML to Base SAS?</h1>
+
+    
+    <span class="article-date">October 16, 2012</span>
+    
+
+    <div class="article-content">
+      <p><font size="1">Since SAS 9.3, ODS Graphics was moved into Base SAS and other statistical procedures, which means the SAS/Graph license is not needed anymore to access ODS Graphics facilities. It’s definitely nice, but from customers’ point of view, it is not critical necessary: since the “minimum set of SAS system” in most SAS sessions includes the Base SAS, SAS/Stat and SAS/Graph, there is almost no impact for SAS users to switch the license of ODS Graphics. Actually, I do think SAS/IML is better to be included in BASE SAS (play Proc IML in BASE SAS; a MATRIX statement in data step is definitely another bonus) :</font></p>
+
+<ul>
+<li><font size="1">IML itself, seems have no intention to replace SAS/Stat, SAS/ETS, SAS/QC and other SAS statistical facilities in matrix way like R or Matlab. Instead, by enhancing the abilities to call SAS data steps(including macros), SAS Procedures and R inside,&#160; IML seems to be glad as glue to leverage multiple programming elements. </font></li>
+<li><font size="1">BASE SAS is a collection of lots of programming elements: data step, macro, SQL, array, hash, Java objects, ODS, XML and bunches of procedures. IML is clearly a programming tool rather than a specific application(SAS/Stat and such) and if it is added to BASE SAS, then the SAS programmers&#160; will have one more data structure (matrix) to play with besides SAS table (R copies this idea as data frame), array and hash table (dictionary).</font></li>
+<li><font size="1">Actually it is an emergent need (for a matrix). Processing different rows in variable(s) is not an easy task in SAS data steps. Mostly SAS programmers utilize arrays (plus some tricky functions like LAG and DIF) and Dow-loop after its advent. There are really advanced programming techniques, but in matrix with index, such manipulation is pretty easy and straightforward (and saving your loops).</font></li>
+<li><font size="1">Although IML can communicate with BASE SAS, but for portable purpose (IML is not expected in every SAS session), most SAS programmers prefer to submit pure BASE codes for data processing. Furthermore, we can even understand why SAS programmers in general invest less in IML. It’s not good: just think about a BASE SAS programmer without a handy matrix manipulation tool (<em>and think about R</em>)!</font></li>
+</ul>
+
+<p><font size="1">Personally I played IML for a while and still keep eyes on its updates. But since I had some SAS machines without IML, I realize that IML can’t be used as a production language in my clinical SAS programming life: just can’t afford the latency&#160; to ask IT administrators (including in clients side) to manage it!</font></p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

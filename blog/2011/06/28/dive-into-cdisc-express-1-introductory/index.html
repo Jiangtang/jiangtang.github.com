@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>Dive into CDISC Express (1): Introductory - Lithium Theme</title>
+<meta property="og:title" content="Dive into CDISC Express (1): Introductory - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">Dive into CDISC Express (1): Introductory</h1>
+
+    
+    <span class="article-date">June 28, 2011</span>
+    
+
+    <div class="article-content">
+      
+
+<p>Recently I did for my personal project some research on <a href="http://www.clinovo.com" target="_blank">Clinovo</a>’s open source application, <a href="http://www.clinovo.com/cdisc" target="_blank">CDISC Express</a>, a SAS application based on Excel framework designed to map clinical data to CDISC SDTM domains automatically. Not perfect yet, but it is easily understandable and practically usable after few hours’ of exploration of user guide. And most important, it is on the right way: an automatic CDISC converter is the magic weapon in almost every clinical programmer’s dream.</p>
+
+<p>CDISC Express is the first and only practically usable open source CDISC converter I even met. I wrote <a href="http://www.jiangtanghu.com/blog/2011/05/16/cdisc-express-a-glance" target="_blank">a post a month ago</a> when I first tested it with great interests and reported some issues to its <a href="http://cdiscsupport.clinovo.com/" target="_blank">fix system</a>. Then I also had the great opportunity to discuss the software via email with its core developer, Romain Miralles. This post is just my personal notes on how to use and dig into the software, and will be best serve as a working documentation. You can return to me for any questions and comments.</p>
+
+<p>By the way, there is an opportunity for your practicing and you will also have a change to win an iPad2 from Clinovo’s CDISC Express Contest:</p>
+
+<blockquote>
+<p><a href="http://www.clinovo.com/cdisc/game">http://www.clinovo.com/cdisc/game</a></p>
+</blockquote>
+
+<p>The due day is July 15<sup>th</sup> and I already submitted my work. That’s fun.</p>
+
+<h1 id="1-download-and-installation">1. Download and Installation</h1>
+
+<p>You can get CDISC Express for free in</p>
+
+<blockquote>
+<p><a href="http://www.clinovo.com/cdisc/download">http://www.clinovo.com/cdisc/download</a></p>
+</blockquote>
+
+<p>It is a window application and will be installed by default in</p>
+
+<blockquote>
+<p><strong>C:Program FilesCDISC Express</strong></p>
+</blockquote>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/06/clip_image0024.jpg"><img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="clip_image002[4]" border="0" alt="clip_image002[4]" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/06/clip_image0024_thumb.jpg" width="420" height="333" /></a></p>
+
+<p>After installation, this path will be coded as a macro variable <font color="#ff0000">&amp;CDISCPATH</font> in the following six SAS files which are all located in <strong>C:Program FilesCDISC Expressprograms</strong>:</p>
+
+<blockquote>
+<p><em>create_new_study.sas</em></p>
+
+<p>_generate<em>Definexml.sas</em></p>
+
+<p><em>generate_mapping_template.sas</em></p>
+
+<p>_generate<em>SDTM.sas</em></p>
+
+<p><em>Validate_Mapping_File.sas</em></p>
+
+<p><em>Validate_SDTM_Domains.sas</em></p>
+</blockquote>
+
+<p>The macro variable reads as</p>
+
+<blockquote>
+<p><font face="Courier New">%LET CDISCPATH = C:Program FilesCDISC Express;</font></p>
+</blockquote>
+
+<p>If you change the destination folder at the installation stage, e.g., to <strong>D:CDISC Express</strong>, the value of the macro variable <font color="#ff0000">&amp;CDISCPATH</font> will be changed accordingly in the six files mentioned before:</p>
+
+<blockquote>
+<p><font face="Courier New">%LET CDISCPATH = D:CDISC Express;</font></p>
+</blockquote>
+
+<p>Note that if you want copy the whole folder of files to another destination, you should at least manually change the value of <font color="#ff0000">&amp;CDISCPATH</font> in such six files or add some codes to capture the path accordingly. From this point of view, the path setting of CDISC Express is not completely portable. Recommend that if you have such needs, just re-install the software in any destination you want. It will not write any records into registry and you can have many copies in one machine.</p>
+
+<p>The following discussion assumes the software roots in <strong>C:Program FilesCDISC Express.</strong></p>
+
+<h1 id="2-working-flow"><strong>2.</strong> <strong>Working Flow</strong></h1>
+
+<p>You can follow all the 6 action steps one by one coded in</p>
+
+<blockquote>
+<p><strong>C:Program FilesCDISC Expressprograms</strong></p>
+</blockquote>
+
+<h5 id="1-create-a-new-study-create-new-study-sas">1) Create a new study (<em>create_new_study.sas</em>)</h5>
+
+<p>Simple and easy. Just assign a new study name in a macro call and run.</p>
+
+<h5 id="2-generate-mapping-file-generate-mapping-template-sas">2) Generate mapping file (<em>generate_mapping_template.sas</em>)</h5>
+
+<p>This is the critical and most time consuming part. You should design mapping rules for every domain needed in Excel spreadsheets (the MAPPING FILE). If done, all other tasks, such as generate SDTM datasets, SAS transport files, define.xml and validation, can be well done by just clicking<a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/06/clip_image0034.gif"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="clip_image003[4]" border="0" alt="clip_image003[4]" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/06/clip_image0034_thumb.gif" width="37" height="33" /></a> buttons</p>
+
+<p>.</p>
+
+<h5 id="3-validate-mapping-file-validate-mapping-file-sas">3) Validate mapping file (<em>Validate_Mapping_File.sas</em>)</h5>
+
+<p>For validating the mapping file, just click the button. As mentioned, the most important work is designing mapping file. It would be back and forth to design mapping file and validate it.</p>
+
+<h5 id="4-generate-sdtm-datasets-generate-sdtm-sas">4) Generate SDTM datasets (_generate<em>SDTM.sas</em>)</h5>
+
+<p>If mapping file is OK, click the button.</p>
+
+<h5 id="5-validate-sdtm-datasets-validate-sdtm-domains-sas">5) Validate SDTM datasets (<em>Validate_SDTM_Domains.sas</em>)</h5>
+
+<p>Click the button.</p>
+
+<h5 id="6-generate-define-xml-generate-definexml-sas">6) Generate Define.xml (_generate<em>Definexml.sas</em>)</h5>
+
+<p>Click the button.</p>
+
+<p>Following part will dig into the software step by step.</p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/06/TobeContinued.jpg"><img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="TobeContinued" border="0" alt="TobeContinued" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/06/TobeContinued_thumb.jpg" width="240" height="181" /></a></p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

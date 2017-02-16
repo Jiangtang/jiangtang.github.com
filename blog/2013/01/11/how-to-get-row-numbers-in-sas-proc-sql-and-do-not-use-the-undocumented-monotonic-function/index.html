@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>How to Get Row Numbers in SAS Proc SQL (and DO NOT Use the Undocumented MONOTONIC Function) - Lithium Theme</title>
+<meta property="og:title" content="How to Get Row Numbers in SAS Proc SQL (and DO NOT Use the Undocumented MONOTONIC Function) - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">How to Get Row Numbers in SAS Proc SQL (and DO NOT Use the Undocumented MONOTONIC Function)</h1>
+
+    
+    <span class="article-date">January 11, 2013</span>
+    
+
+    <div class="article-content">
+      <p><span style="font-size: xx-small;">SAS programmers are longing for row number function used in Proc SQL, like </span><a href="http://docs.oracle.com/cd/B19306_01/server.102/b14200/functions137.htm"><span style="font-size: xx-small;">ROW_NUMBER() in Oracle SQL</span></a> <span style="font-size: xx-small;">and it will act like data step system variable <em>N</em>. When you google this question, most likely you will get MONOTONIC() function, which might be one of the most famous </span><a href="www2.sas.com/proceedings/sugi29/040-29.pdf"><span style="font-size: xx-small;">undocumented features shipped by SAS</span></a><span style="font-size: xx-small;">. You can of course use it, but at your own risk! In SAS Usage Note 15138, it&#8217;s said:</span></p>
+
+<blockquote>
+<p><span style="font-size: xx-small;">The MONOTONIC() function is not supported in PROC SQL. Using the MONOTONIC() function in PROC SQL can cause missing or non-sequential values to be returned.</span></p>
+</blockquote>
+
+<p><span style="font-size: xx-small;">Here question is, why stick to the function? Actually there is a long-existing Proc SQL option (<em>at least since SAS 9.1.3 which was my first SAS version</em>), </span><a href="http://support.sas.com/documentation/cdl/en/sqlproc/63043/HTML/default/viewer.htm"><span style="font-size: xx-small;">NUMBER</span></a> <span style="font-size: xx-small;">to return the row numbers:</span></p>
+
+<blockquote>
+<p><span style="font-size: xx-small;"><span style="font-family: 'Courier New';">proc sql number outobs=5;<br /> select Species<br /> from sashelp.iris<br /> ;<br /> quit;</span></span></p>
+</blockquote>
+
+<p><span style="font-size: xx-small;">See a new column &#8220;Row&#8221; was created in response to this NUMBER option.</span></p>
+
+<p style="text-align: center;">
+  <span style="font-size: xx-small;"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;" alt="" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/011113_2003_HowtoGetRow1.png" border="0" /></span>
+</p>
+
+<p>[update 2014/03/19] A reader asked how to capture such row number in a data set since the NUMBER option only affects in output. Well, if it shows up in output, we can always use ODS to retrieve it. Submit the follow codes to check which output table will be generated (which is <strong>SQL_Results</strong>):</p>
+
+<blockquote>
+<p><span style="font-family: 'Courier New';">ods trace on;</span></p>
+
+<p><span style="font-family: 'Courier New';">proc sql number outobs=5;<br /> select Species<br /> from sashelp.iris<br /> ;<br /> quit;</span></p>
+
+<p><span style="font-family: 'Courier New';">ods trace off;</span></p>
+</blockquote>
+
+<p>Then  use the standard ODS OUTPUT statement to get it:</p>
+
+<blockquote>
+<p><span style="font-family: 'Courier New';">ods output SQL_Results=rownumber;</span></p>
+
+<p><span style="font-family: 'Courier New';">proc sql number outobs=5;<br /> select Species<br /> from sashelp.iris<br /> ;<br /> quit;</span></p>
+</blockquote>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

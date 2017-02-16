@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Lithium Theme</title>
+    <link>/tags/blog/index.xml</link>
+    <description>Recent content in Blog on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>What&amp;rsquo;s New</title>
+      <link>/2013/03/20/whatrsquos-new/</link>
+      <pubDate>Wed, 20 Mar 2013 23:09:08 +0000</pubDate>
+      
+      <guid>/2013/03/20/whatrsquos-new/</guid>
+      <description>&lt;p&gt;I didn’t &lt;a href=&#34;http://www.jiangtanghu.com/blog/archives/&#34;&gt;blog&lt;/a&gt; for a while in this first half March and there are bunches of new stuff to catch up:&lt;/p&gt;
+
+&lt;p&gt;I had a new baby! He was delivered on time (and on budget!), &lt;em&gt;lions tigers and bears, oh my&amp;#8230;&lt;/em&gt; His brother is Tiger so I named him, Leo.&lt;/p&gt;
+
+&lt;p&gt;And I got the latest SAS 9.3 (TS1M2) installed! SAS is jus getting much beautiful.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/03/SAS9.3_12.1.png&#34;&gt;&lt;font color=&#34;#cbcbcb&#34;&gt;&lt;/font&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS9.3_12.1&#34; border=&#34;0&#34; alt=&#34;SAS9.3_12.1&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/03/SAS9.3_12.1_thumb.png&#34; width=&#34;383&#34; height=&#34;99&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.opencdisc.org/download&#34;&gt;OpenCDISC&lt;/a&gt; had the latest release, Version 1.4 with the new SDTM 3.1.3 validation checks,—and yes CDISC itself also had some significant updates:&lt;/p&gt;
+
+&lt;p&gt;SDTMv1.3 and SDTMIGv3.1.3 now have the &lt;a href=&#34;http://www.cdisc.org/sdtmv1-4-sdtmigv3-1-3-metadata&#34;&gt;machine readable metadata&lt;/a&gt; online. It’s a nice improvement (last year I just posted &lt;em&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/12/29/cdisc-in-pdf-format/&#34;&gt;The Great, Open, Vendor-neutral, Platform-independent Data Standards, &amp;hellip; Yet in PDF Formats&lt;/a&gt;)&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.cdisc.org/define-xml&#34;&gt;Define-XML&lt;/a&gt; now turns to 2.0 (finally).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://cran.rstudio.com/&#34;&gt;R&lt;/a&gt; had its final 2.* release, Version 2.15.3 and Version 3.0.0 will just come soon. &lt;a href=&#34;http://www.rstudio.com/ide/download/desktop&#34;&gt;RStudio&lt;/a&gt; also had a update recently. RStudio is the best IDE (not just R IDE) I used.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://googlereader.blogspot.com/2013/03/powering-down-google-reader.html&#34;&gt;Google will shut down Google Reader&lt;/a&gt;, the best RSS reader ever. It’s a huge loss and I tell you, for example, the famous SAS and statistical blogger Wensui Liu, once frequently posted on Windows Live Space, and then Blogspot and finally &lt;a href=&#34;http://statcompute.wordpress.com/&#34;&gt;WordPress&lt;/a&gt;. The former two blogs were closed and Google Reader feed is the only way to archive these lost posts!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New Game in Town: SAS Metadata Administration</title>
+      <link>/2013/03/13/new-game-in-town-sas-metadata-administration/</link>
+      <pubDate>Wed, 13 Mar 2013 21:46:35 +0000</pubDate>
+      
+      <guid>/2013/03/13/new-game-in-town-sas-metadata-administration/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;You might also read that there were constant (although still not frequent) posts on SAS metadata querying and other administration tasks in SAS blogosphere since 2012 (&lt;em&gt;when I started to play with it^&lt;/em&gt;). It is yet another evidence that more and more SAS programmers switched from SAS foundation to the so called SAS intelligent platform. In the traditional SAS foundation world, a nice source of metadata is the Dictionary table (or V datasets in SASHELP library); In SAS intelligent platform, a much more comprehensive metadata is stored in a SAS Metadata Server (&lt;a href=&#34;http://www.guardian.co.uk/news/datablog/2010/jul/16/data-plural-singular&#34;&gt;&lt;em&gt;Is &amp;#8220;Data&amp;#8221; singular or plural?&lt;/em&gt;&lt;/a&gt;). &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;To get started, &lt;a href=&#34;http://blogs.sas.com/content/sgf/author/wendymchenry&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Wendy McHenry&lt;/span&gt;&lt;/a&gt; posted a nice introductory blog, &lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;a href=&#34;http://blogs.sas.com/content/sgf/2012/12/05/why-i-love-sas-metadata/&#34;&gt;&lt;em&gt;Why I love SAS metadata&lt;/em&gt;&lt;/a&gt; and &lt;a href=&#34;http://blogs.sas.com/content/bi/author/angelahall&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Angela Hall&lt;/span&gt;&lt;/a&gt;, &lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;em&gt;&lt;a href=&#34;http://blogs.sas.com/content/bi/2012/06/12/using-metabrowse-to-find-metadata/&#34;&gt;How did you find that metadata?&lt;/a&gt;, &lt;a href=&#34;http://blogs.sas.com/content/sgf/author/jenniferparks&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Jennifer Parks&lt;/span&gt;&lt;/a&gt;, &lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;a href=&#34;http://blogs.sas.com/content/sgf/2013/02/06/two-methods-for-editing-sas-metadata/&#34;&gt;Two methods for editing SAS metadata&lt;/a&gt;.&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;To communicate with SAS Metadata Server programmingly, you can use &lt;/span&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/omaref/63063/HTML/default/viewer.htm#titlepage.htm&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Java&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;or &lt;/span&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lrmeta/63180/HTML/default/viewer.htm#titlepage.htm&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Base SAS&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;  which are both well documented. &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/author/chrishemedinger&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Chris Hemedinger&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;recently shared bunch of posts on how to &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/tag/sas-integration-technologies/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;use PowerShell to talk with SAS Metadata Server&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Industry gurus &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/content/sgf/author/paulhomes&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Paul Homes&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;and &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/content/sgf/author/gregorynelson&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Gregory Nelson&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;also begin to blog in &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/content/sgf/&#34;&gt;&lt;em&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;SAS User Groups&lt;/span&gt;&lt;/em&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;em&gt; &lt;/em&gt;on this subject (&lt;/span&gt;&lt;a href=&#34;http://platformadmin.com/blogs/paul/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Paul’s own website&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;is a great source too). &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;A&lt;/span&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;community blog “&lt;em&gt;&lt;a href=&#34;http://www.bi-notes.com/&#34;&gt;BI Notes&lt;/a&gt;&lt;/em&gt;” also has some interesting posts on SAS metadata. Check it out.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#8212;&amp;#8212;&amp;#8212;update20140718: Useful Docs&amp;#8212;&amp;#8212;&amp;#8212;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;SAS 9.3 Metadata Model: Reference (&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/omamodref/63903/HTML/default/viewer.htm#titlepage.htm&#34;&gt;HTML&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;SAS 9.4 Open Metadata Interface: Reference and Usage (&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/omaref/64859/PDF/default/omaref.pdf&#34;&gt;PDF&lt;/a&gt;, &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/omaref/64859/HTML/default/viewer.htm#titlepage.htm&#34;&gt;HTML&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;SAS 9.4 Language Interfaces to Metadata (&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lrmeta/64857/PDF/default/lrmeta.pdf&#34;&gt;PDF&lt;/a&gt;, &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lrmeta/64857/HTML/default/viewer.htm#titlepage.htm&#34;&gt;HTML&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;SAS 9.4 Intelligence Platform: Security Administration Guide (&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/bisecag/67045/HTML/default/titlepage.htm&#34;&gt;HTML&lt;/a&gt;, &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/bisecag/67045/PDF/default/bisecag.pdf&#34;&gt;PDF&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blog Statistics: 2012</title>
+      <link>/2013/01/01/blog-statistics-2012/</link>
+      <pubDate>Tue, 01 Jan 2013 23:47:44 +0000</pubDate>
+      
+      <guid>/2013/01/01/blog-statistics-2012/</guid>
+      <description>
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;(This blog’s page view data from Google Analytics; &lt;/span&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/archives/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;43 posts in total in 2012&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;)&lt;/span&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;top-10-countries-territories-and-cities&#34;&gt;Top 10 countries/territories and cities&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_country.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;blog_country&#34; alt=&#34;blog_country&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_country_thumb.png&#34; width=&#34;382&#34; height=&#34;384&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Most of my readers come from US and I’m glad my Chinese fellows still fork me since I moved to US this year (&lt;em&gt;today is my one year anniversary in US&lt;/em&gt;).&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;To my surprising there are much more readers from South Korea than from Japan(#12) and Singapore(#22).&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Readers from a secret city (#7) are watching me! &lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;top-10-referral-social-networks&#34;&gt;Top 10 referral social networks&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_social-network.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;blog_social network&#34; alt=&#34;blog_social network&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_social-network_thumb.png&#34; width=&#34;168&#34; height=&#34;514&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;I’m happy that people navigating through Facebook also click this technical blog!&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;top-10-mobile-devices&#34;&gt;Top 10 mobile devices&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_mobile.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;blog_mobile&#34; alt=&#34;blog_mobile&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_mobile_thumb.png&#34; width=&#34;396&#34; height=&#34;411&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;I think myself contributed a lot via Google Nexus 7 (#7) visiting my own blog (&lt;em&gt;one upon a time in 2012, I had two new released Nexus 7 tablets at hand until one dropped down and another sold out…&lt;/em&gt;).&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;top-10-most-viewed-posts&#34;&gt;Top 10 most viewed posts&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/13/sublimetext2-sas/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Sublime Text 2 for SAS Programmers: A Quick Note&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/10/23/tony-barr-and-the-early-history-of-sas/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Tony Barr and the Early History of SAS&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/11/xml/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Face Off: Review OpenCDISC XML files&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/12/07/sas-books-2012/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;My SAS Books: Shopping List 2012&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/16/hypothesis-testing/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Statistical Notes (4): Dragon’s Teeth and Fleas: Hypothesis Testing in Plain English&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/geomean/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Statistical Notes (1): Geometric Mean and Geometric Mean Ratio&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/12/column-mode-in-sas-9-3-enhanced-editor/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Column Mode in SAS 9.3 Enhanced Editor&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/11/30/weekend-clip-data-scientist/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Weekend Clip: Data Scientist&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/tost-equivalence-test/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Statistical Notes (2): Equivalence Testing and TOST (Two One-Sided Test)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/19/publishing-cdisc-standards/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Is There Any Better Way? Publishing Process For CDISC Standards Documentation&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Thank you my fellow readers and happy new year (if you like to have another break, follow me to celebrate Chinese new year at Feb 10, 2013 )!&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>WordPress and Black Friday</title>
+      <link>/2012/11/23/wordpress-and-black-friday/</link>
+      <pubDate>Fri, 23 Nov 2012 23:04:03 +0000</pubDate>
+      
+      <guid>/2012/11/23/wordpress-and-black-friday/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Yes it’s BLACK that today this WordPress based blog was down for a while with a 500 error:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The website encountered an error while retrieving &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.jiangtanghu.com/blog/&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. It may be down for maintenance or configured incorrectly.&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I checked web log and it says:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;[24-Nov-2012 02:58:49] PHP Parse error:&amp;#160; syntax error, unexpected T_STRING, expecting &amp;#8216;,&amp;#8217; or &amp;#8216;;&amp;#8217; in ../public_html/jiangtanghu/blog/wp-content/plugins/wp-conditional-captcha/wp-conditional-captcha.php on line 401&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;So the problem comes from a WordPress plugin “&lt;/font&gt;&lt;a href=&#34;http://wordpress.org/extend/plugins/wp-conditional-captcha/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Conditional CAPTCHA for WordPress&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;” . The line 401 in &lt;em&gt;wp-conditional-captcha.php&lt;/em&gt; is&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;li&gt;&lt;input type=&#34;radio&#34; name=&#34;pass_action&#34; id=&#34;pass_action_hold&#34; value=&#34;hold&#34; &lt;?php checked( $opts[&amp;#8216;pass_action&amp;#8217;], &amp;#8216;hold&amp;#8217;);?&gt; /&amp;gt; &lt;label for=&#34;pass_action_hold&#34;&gt;&amp;lt;?php _e(&amp;#8216;Queue the comment for moderation&amp;#8217;, &amp;#8216;wp-conditional-captcha&amp;#8217;);?&amp;gt;&lt;/label&gt;&lt;/li&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I use WordPress v3.4.2 and “&lt;/font&gt;&lt;a href=&#34;http://wordpress.org/extend/plugins/wp-conditional-captcha/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Conditional CAPTCHA for WordPress&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;” v3.2.6. I didn’t notice this error before and it may be a compatibility issue (I know 0 about PHP). So my solution: delete the plugin.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Furthermore, I plan to switch to Github+&lt;/font&gt;&lt;a href=&#34;https://github.com/mojombo/jekyll&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;jekyll&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and get rid of WordPress (sorry, you are wonderful; I&amp;#8217;m just an emotional customer in this crazy Black Friday) .&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blogging is Awesome: CDISC Bloggers</title>
+      <link>/2012/05/04/blogging-is-awesome-cdisc-bloggers/</link>
+      <pubDate>Fri, 04 May 2012 22:42:32 +0000</pubDate>
+      
+      <guid>/2012/05/04/blogging-is-awesome-cdisc-bloggers/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://peterdewolf.com/i-remember-when-blogging-was-cool/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;I remember when blogging was cool.&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Before the specializing and monetizing and Twitter-izing.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &amp;#8212;&lt;/font&gt;&lt;a href=&#34;http://peterdewolf.com/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Peter Dewolf&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Well I think blogging is still cool (&lt;em&gt;and &lt;/em&gt;&lt;/font&gt;&lt;a href=&#34;http://add-vodka.com/7-reasons-why-blogging-is-awesome/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;awesome&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;_ &lt;font size=&#34;1&#34;&gt;and &lt;/font&gt;_&lt;a href=&#34;http://elevenminuteawesome.com/12-reasons-blogging-awesome/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;awesome&lt;/font&gt;&lt;/em&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;…). The most appealing personal reason is, blog posts are Google searchable and suitable for archive while Tweets NOT. Admittedly I hold some sort of&amp;#160; &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/29/not-documented-not-exist/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Existentialism 2.0&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: &lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;if it is not Google searched, it doesn’t exit!&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Last month I placed a post on how to &lt;/font&gt;&lt;a href=&#34;http://www.d-wise.com/blog/2012/04/26/keep-pace-with-cdisc/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;keep pace with CDISC&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;&amp;#160;&lt;/em&gt;from its official channel&lt;em&gt;s &lt;/em&gt;and I feel cool to add an appendix of source from the &lt;em&gt;awesome&lt;/em&gt; blogosphere. Fortunately or not, CDISC is still in the niche market of topics and it takes few efforts to get the list(update me if someone else available! if you are a Google Reader user, just simply import &lt;/font&gt;&lt;a href=&#34;http://jiangtanghu.com/docs/en/google-reader-subscriptions_CDISC_JiangtangHu.xml&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;this file&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, my Google Reader subscription on CDISC):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;1. Blog @ &lt;/font&gt;&lt;/strong&gt;&lt;a href=&#34;http://www.assero.co.uk&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;Assero&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;** &lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;by &lt;/font&gt;&lt;strong&gt;&lt;a href=&#34;http://www.assero.co.uk/about/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;Dave Iberson-Hurst&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/strong&gt; &lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;(“Dave IH”)&lt;/font&gt;**&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.assero.co.uk/category/blog/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.assero.co.uk/category/blog/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Insightful and full of humor. I retweeted all of its latest posts and you can feel somehow on these tittles (YES on CDISC):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;h4 id=&#34;font-size-1-what-i-want-what-i-really-really-want-font-http-www-assero-co-uk-2012-what-i-want-what-i-really-really-want&#34;&gt;&lt;a href=&#34;http://www.assero.co.uk/2012/what-i-want-what-i-really-really-want/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;What I Want, What I Really Really Want&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&#34;font-size-1-churchill-the-fda-and-a-fall-font-http-www-assero-co-uk-2012-churchill-the-fda-and-a-fall&#34;&gt;&lt;a href=&#34;http://www.assero.co.uk/2012/churchill-the-fda-and-a-fall/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Churchill, the FDA and a Fall&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&#34;font-size-1-mad-march-and-the-fda-font-http-www-assero-co-uk-2012-mad-march-and-the-fda&#34;&gt;&lt;a href=&#34;http://www.assero.co.uk/2012/mad-march-and-the-fda/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Mad March and the FDA&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Btw, I write blogs casual way while it is very impressive to read IH reminding me the George Orwell style.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt;2. &lt;/strong&gt;&lt;/font&gt;&lt;a href=&#34;http://www.d-wise.com/&#34; target=&#34;_blank&#34;&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt;d-Wise Technologies&lt;/strong&gt;&lt;/font&gt;&lt;/a&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt; Blog&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.d-wise.com/blog/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.d-wise.com/blog/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It is my employer’s official blog site where &lt;/font&gt;&lt;a href=&#34;http://www.linkedin.com/pub/chris-decker/8/52/72&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Chris Decker&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;is the key contributor to CDISC. You can check out his latest posts on &lt;/font&gt;&lt;a href=&#34;http://www.phuse.eu/css&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;FDA/PhUSE Annual Computational Science Symposium&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;where he served as committee lead:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;h4 id=&#34;font-size-1-overcoming-industry-challenges-a-shift-to-collaboration-font-http-www-d-wise-com-blog-2012-03-08-overcoming-industry-challenges-a-shift-to-collaboration&#34;&gt;&lt;a href=&#34;http://www.d-wise.com/blog/2012/03/08/overcoming-industry-challenges-a-shift-to-collaboration/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Overcoming Industry Challenges: A Shift to Collaboration&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&#34;font-size-1-validation-and-quality-are-they-the-same-font-http-www-d-wise-com-blog-2012-03-19-validation-and-quality-are-they-the-same&#34;&gt;&lt;a href=&#34;http://www.d-wise.com/blog/2012/03/19/validation-and-quality-are-they-the-same/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Validation and Quality: Are They the Same?&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I will also commit to update this blog as my understanding on clinical standards goes. Here is the saying:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;look to the master, &lt;br /&gt;follow the master, &lt;br /&gt;walk with the master, &lt;br /&gt;see through the master, &lt;br /&gt;become the master.&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt;3.&amp;#160; &lt;/strong&gt;&lt;/font&gt;&lt;a href=&#34;http://www.xml4pharma.com/&#34; target=&#34;_blank&#34;&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt;XML4Pharma&lt;/strong&gt;&lt;/font&gt;&lt;/a&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt; Blog&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://cdiscguru.blogspot.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://cdiscguru.blogspot.com/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;with industry news and hard (while cool) way writing on XML (CDISC ODM, define.xml).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;4. &lt;/font&gt;&lt;/strong&gt;&lt;a href=&#34;http://blog.clinovo.com/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;eClinical Trends&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;** &lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;by &lt;/font&gt;&lt;a href=&#34;http://www.clinovo.com/&#34; target=&#34;_blank&#34;&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;Clinovo&lt;/font&gt;&lt;/a&gt;**&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.clinovo.com/category/cdisc/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://blog.clinovo.com/category/cdisc/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Clinovo jumps to this topic by launching a CDISC SDTM convertor CDISC Express.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;5. eClinicalOpinion&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://eclinicalopinion.blogspot.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://eclinicalopinion.blogspot.com/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This blog is most focused on EDC, the clinical data management part. I like its &lt;a href=&#34;http://eclinicalopinion.blogspot.com/2009/05/odm-tutorial-index.html&#34; target=&#34;_blank&#34;&gt;series discussion on CDISC ODM&lt;/a&gt;.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;6. eCTD Regulatory Submissions Network&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://ectdregulatorysubmissionsnetwork.blogspot.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://ectdregulatorysubmissionsnetwork.blogspot.com/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This is a personal blog by Shakul Hameed. I read it mostly to get some information on submission requirements from European regulatory.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://cdisc-end-to-end.blogspot.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt;7. HL7 Watch&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://hl7-watch.blogspot.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://hl7-watch.blogspot.com/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;while it is not CDISC directly related (#6 also), it’s nice to get some voice of &lt;/font&gt;&lt;a href=&#34;http://www.hl7.org/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;HL7&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;which would be the future of CDISC.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt;8. From a Logical Point of View-CDISC&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/category/cdisc/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.jiangtanghu.com/blog/category/cdisc/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Yes this one, my 2 cents. I will keep recording my personal immersion and understanding on CDISC and related clinical standards. (while it is privilege to cross reference oneself in his/her own blog! Keep awesome, keep blogging.) &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;font size=&#34;1&#34;&gt;9. Linked Data and URI&lt;font color=&#34;#ff0000&#34;&gt;:&lt;/font&gt;s for Enterprises&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://kerfors.blogspot.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://kerfors.blogspot.com/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Look at the colon (:) in the title of this blog and you’re right this blog plays (at least) with XML. I find it is good resource (thanks &lt;a href=&#34;https://twitter.com/kerfors&#34;&gt;@kerfors&lt;/a&gt; for referencing!) to learn ODM, the foundation of CDISC while the latest post is &lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;&lt;a href=&#34;http://kerfors.blogspot.com/2012/05/semantic-models-for-cdisc-based.html&#34; target=&#34;_blank&#34;&gt;Semantic models for CDISC based standard and metadata management&lt;/a&gt;&lt;/em&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;P.S.: Blogger &lt;/font&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Chris Hemedinger&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;maintains a nice &lt;/font&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/2010/12/02/aggregating-assault-sas-blogs-are-everywhere/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;list of SAS bloggers&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;(&lt;/font&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/2010/12/10/blogs-by-sas-employees-google-reader-bundle/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;blogs by SAS employees&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, and &lt;/font&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/2010/12/10/blogs-by-sas-community-google-reader-bundle/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;blogs by SAS customers, consultants, and the analytics community&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;).&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Retrieve blogs using SAS</title>
+      <link>/2011/07/20/retrieve-blogs-using-sas/</link>
+      <pubDate>Wed, 20 Jul 2011 21:47:46 +0000</pubDate>
+      
+      <guid>/2011/07/20/retrieve-blogs-using-sas/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Recently I posted a &lt;/span&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/07/17/sas-bloggers-in-action1-rick-wicklin-sasiml-and-color-revolution/&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;frequency analysis&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: small;&#34;&gt;on Rick Wicklin’s popular &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/iml/&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;SAS/IML blog&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: small;&#34;&gt;. Sanjay Matange also produced a nice &lt;/span&gt;&lt;a href=&#34;https://sites.google.com/site/odsgraphics/general/rick-s-blog-history-heatmap&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;heatmap on Rick’s blogging history&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: small;&#34;&gt;using the summary data I published. Here just release the ideas and SAS codes to get data from Rick’s blog dynamically. You may modify the codes slightly to obtain data from all other SAS in-house blogs (&lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/index.php&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;http://blogs.sas.com/index.php&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: small;&#34;&gt;) since they share the same template. For other blogs, you should research the web pages accordingly to get the best suitable methods and this post can also serve as an example.&lt;/span&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;first-step-define-the-scope&#34;&gt;&lt;strong&gt;First step: define the scope&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;For my purpose, I only need the titles and publish dates of Rick’s posts. It is so called the “metadata” of the blog. I do not need all the post contents. By the way, if all information needed, you can use a blog backup tool, or write codes to retrieve all the pages of &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/iml&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;http://blogs.sas.com/iml&lt;/span&gt;&lt;/a&gt; at the maximum depth&lt;span style=&#34;font-size: small;&#34;&gt;, or simply, you can write to Rick and say: hey Rick, could you please send me all the contents of your blog? And Rick may go to the management console of his own blog, export all the contents to an XML file and get back to you.&lt;/span&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;second-step-analyze-the-web-pages&#34;&gt;&lt;strong&gt;Second step: analyze the web pages&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Browse to the right panel of Rick’s blog, in the ARCHIVES frame, click “&lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archive&#34; target=&#34;_blank&#34;&gt;Older&lt;/a&gt;”&lt;/span&gt;&lt;span style=&#34;font-size: small;&#34;&gt;:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0026.jpg&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image002&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image002_thumb1.jpg&#34; alt=&#34;clip_image002&#34; width=&#34;235&#34; height=&#34;298&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;And you get &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0035.gif&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image003&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image003_thumb.gif&#34; alt=&#34;clip_image003&#34; width=&#34;362&#34; height=&#34;274&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;This page just gives a big picture of Rick’s blog (ARCHIVE section is always a good place to get such metadata, for example, &lt;a href=&#34;http://www.jiangtanghu.com/blog/archives/&#34; target=&#34;_blank&#34;&gt;archives for my blog&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;font-size: small;&#34;&gt;). But we need more. Click “&lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archives/2010/09/summary.html&#34; target=&#34;_blank&#34;&gt;view topics&lt;/a&gt;” for example of September, 2010:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0045.gif&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image004&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image004_thumb.gif&#34; alt=&#34;clip_image004&#34; width=&#34;372&#34; height=&#34;443&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;This page is exactly what we want with titles and dates. Open an editor to write codes immediately to read all the information in this page?—wait. Currently this blog has posts across 11 months and you can expect the increase. You should design a dynamic method to read all the topics pages: Sep 2010, Oct 2010, … and, &lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;today()&lt;/span&gt;.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Return to the &lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archive&#34; target=&#34;_blank&#34;&gt;archives page&lt;/a&gt;. RCM (right click your mouse) and select “View page source” if you use Google Chrome web browser (“View Source” in IE; “View Page Source” in Firefox) and you get all the HTML scripts (&lt;strong&gt;Note: you DO not need any knowledge of HTML to understand this post&lt;/strong&gt;). Copy and paste them into a text editor supporting HTML syntax highlighting (such as Notepad++). Search all instances of “view topics” we mentioned before:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0067.jpg&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image006&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image006_thumb2.jpg&#34; alt=&#34;clip_image006&#34; width=&#34;519&#34; height=&#34;312&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;We are lucky. They are 11 instances of “view topics” accompanying with 11 hyperlinks for the currently 11 months’ archives of Rick’s blog. We can read such 11 hyperlinks to a macro array for dynamic retrieval.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Then we return to the single &lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archives/2010/09/summary.html&#34; target=&#34;_blank&#34;&gt;topics page&lt;/a&gt;, for example of September, 2010&lt;/span&gt;&lt;span style=&#34;font-size: small;&#34;&gt;. Review the HTML source file. Search for “posted_by_date” and we get 14 instances which is same as the number of posts in September 2010:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0086.jpg&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image008&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image008_thumb1.jpg&#34; alt=&#34;clip_image008&#34; width=&#34;518&#34; height=&#34;307&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;We should also need to locate all the instances of titles. Search “/iml/index.php?/archives/” and we get 17 responses:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0106.jpg&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image010&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image010_thumb1.jpg&#34; alt=&#34;clip_image010&#34; width=&#34;517&#34; height=&#34;298&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;We see 3 instances at end of the finding results don’t contain any titles. You can check other pages to confirm such pattern. Yes we can use regular expressions to parse the HTML pages to locate more exactly for the titles. But for a quick job and due to the relative simple HTML pages, some basic SAS character functions are enough for our purpose. In the following codes, limited regular expressions are used only to remove HTML tags such as “&lt;a href=”.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;After such explorative search of HTML scripts, we can get the basic idea where can we find the interested information. Then we begin to coding work.&lt;/span&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;third-step-coding-at-last&#34;&gt;&lt;strong&gt;Third step: Coding at last!&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;For our purpose, we should first read the archive page to get all the topics links to a macro array, then read the all the topics pages dynamically. Finally, we should also add the all the calendar dates with holidays. Some friends may find that they met piece of the following codes before. Yes, such codes just assembled some skills what I learned from Art Carpenter, Richard DeVenezia, Jian Dai and lots of programmers before!&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;3-1-read-archive-page&#34;&gt;3-1: read archive page&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%let URL=&lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archive;&#34;&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;http://blogs.sas.com/iml/index.php?/archive;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;filename archive URL &amp;#8220;&amp;amp;URL&amp;#8221;; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data archive;&lt;br /&gt; length text $1024;&lt;br /&gt; infile archive lrecl=1024;&lt;br /&gt; input text $;&lt;br /&gt; text= &lt;em&gt;infile&lt;/em&gt;;&lt;br /&gt; if index(text, &amp;#8220;&amp;gt;view topics&amp;lt;&amp;#8220;) then output;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data  archive1;&lt;br /&gt; set archive;&lt;br /&gt; summary=scan(text,4,&amp;rsquo;&amp;#8221;&amp;#8216;);&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;3-2-read-all-topics-pages&#34;&gt;3-2: read all topics pages&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; set  archive1 end=eof;&lt;br /&gt; I+1;&lt;br /&gt; II=left(put(I,2.));&lt;br /&gt; call symputx(&amp;#8216;summary&amp;#8217;||II,summary);&lt;br /&gt; if eof then call symputx(&amp;#8216;total&amp;#8217;,II);&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%macro readit;&lt;br /&gt; %do i=1 %to &amp;total;&lt;br /&gt; filename f&amp;amp;i URL &amp;#8220;&amp;amp;&amp;amp;summary&amp;amp;i&amp;#8221;;    &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;        data f&amp;i;&lt;br /&gt; length text $1024;&lt;br /&gt; infile f&amp;amp;i lrecl=1024;&lt;br /&gt; input text $;&lt;br /&gt; text= &lt;em&gt;infile&lt;/em&gt;;&lt;br /&gt; if index(text, &amp;#8220;/iml/index.php?/archives/&amp;#8221;) or index(text, &amp;#8220;posted_by_date&amp;#8221;) then output;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;    &lt;span style=&#34;color: #ff0000;&#34;&gt;/&lt;em&gt;remove HTML tags;&lt;/em&gt;/&lt;/span&gt;&lt;br /&gt; data ff&amp;i;&lt;br /&gt; set f&amp;i;&lt;br /&gt; prx=prxparse(&amp;#8220;s/&amp;lt;.*?&amp;gt;//&amp;#8221;);&lt;br /&gt; call prxchange(prx,99,text);&lt;br /&gt; drop prx; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;        flag=ifn(mod(&lt;em&gt;n&lt;/em&gt;,2),1,2);&lt;br /&gt; grpn=&amp;i;&lt;br /&gt; if index(text,&amp;#8221;201&amp;#8243;) and length(text)&lt;10 then delete;&lt;span style=&#34;color: #ff0000;&#34;&gt;/&lt;em&gt;be carefull! hard coding;&lt;/em&gt;/&lt;br /&gt; &lt;/span&gt;        seq=&lt;em&gt;n&lt;/em&gt;;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;     /&lt;em&gt;transpose data;&lt;/em&gt;/&lt;br /&gt; data fff&amp;i;&lt;br /&gt; set ff&amp;i;&lt;br /&gt; by grpn seq flag; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;        &lt;span style=&#34;color: #ff0000;&#34;&gt;retain&lt;/span&gt; title;&lt;br /&gt; if first.flag then title=lag(text);&lt;br /&gt; if flag=1 then delete;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;    %end; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%mend readit;&lt;br /&gt; %readit &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%macro getall;&lt;br /&gt; data Rick;&lt;br /&gt; set %do i=1 %to &amp;total; fff&amp;amp;i %end; ;&lt;br /&gt; seq=seq/2;&lt;br /&gt; drop flag;&lt;br /&gt; run;&lt;br /&gt; %mend getall;&lt;br /&gt; %getall &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data rick2;&lt;br /&gt; set rick; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;    datetime=scan(text,2,&amp;#8221;,&amp;#8221;);&lt;br /&gt; year=scan(text,2,&amp;#8221;.&amp;#8221;);&lt;br /&gt; month=scan(scan(text,2,&amp;#8221;,&amp;#8221;),1);&lt;br /&gt; day=scan(scan(text,2,&amp;#8221;,&amp;#8221;),2);&lt;br /&gt; week=scan(text,6);&lt;br /&gt; dt=compress(catx(&amp;#8220;&amp;#8221;,day,substr(month,1,3),year));&lt;br /&gt; worddat=input(dt,date9.);&lt;br /&gt; format worddat  ddmmyy10.;                         &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;    m=scan(put(worddat,ddmmyy10.),2);&lt;br /&gt; my=compress(catx(&amp;#8220;&amp;#8221;,year,m));&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;proc sort ;&lt;br /&gt; by  worddat descending seq ;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;It is also interesting to add additional information for further analysis, such as all calendar dates during Rick’s blogging history and holidays.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-3-get-all-calendar-dates&#34;&gt;3-3: get all calendar dates&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;proc sort data=rick2 out=rick3 nodupkey;&lt;br /&gt; by my;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; set rick3 end=eof;&lt;br /&gt; I+1;&lt;br /&gt; II=left(put(I,2.));&lt;br /&gt; call symputx(&amp;#8216;year&amp;#8217;||II,year);&lt;br /&gt; call symputx(&amp;#8216;month&amp;#8217;||II,m);&lt;br /&gt; if eof then call symputx(&amp;#8216;total&amp;#8217;,II);&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%macro getCalendar;&lt;br /&gt; %do i=1 %to &amp;total;&lt;br /&gt; data calendar&amp;i;&lt;br /&gt; date1 = mdy (&amp;amp;&amp;amp;month&amp;amp;i,1,&amp;amp;&amp;amp;year&amp;amp;i);&lt;br /&gt; date2 = intnx (&amp;#8216;month&amp;#8217;, date1, 1) &amp;#8211; 1; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;            do worddat = date1 to date2;&lt;br /&gt; wim = intck (&amp;#8216;week&amp;#8217;, date1, worddat);&lt;br /&gt; dim = worddat-date1+1;&lt;br /&gt; output;&lt;br /&gt; end; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;            format worddat  ddmmyy10.;&lt;br /&gt; keep   worddat  dim ;&lt;br /&gt; run;&lt;br /&gt; %end;&lt;br /&gt; %mend getCalendar;&lt;br /&gt; %getCalendar; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%macro allCalendar;&lt;br /&gt; data Calendar;&lt;br /&gt; set %do i=1 %to &amp;total; calendar&amp;amp;i %end; ;&lt;br /&gt; run;&lt;br /&gt; %mend allCalendar;&lt;br /&gt; %allCalendar&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;3-4-get-holidays&#34;&gt;3-4: get holidays&lt;/h3&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;I have no specific idea about US holidays and just referenced the two pages:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;[&lt;span style=&#34;font-size: small;&#34;&gt;Recently I posted a &lt;/span&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/07/17/sas-bloggers-in-action1-rick-wicklin-sasiml-and-color-revolution/&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;frequency analysis&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: small;&#34;&gt;on Rick Wicklin’s popular &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/iml/&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;SAS/IML blog&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: small;&#34;&gt;. Sanjay Matange also produced a nice &lt;/span&gt;&lt;a href=&#34;https://sites.google.com/site/odsgraphics/general/rick-s-blog-history-heatmap&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;heatmap on Rick’s blogging history&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: small;&#34;&gt;using the summary data I published. Here just release the ideas and SAS codes to get data from Rick’s blog dynamically. You may modify the codes slightly to obtain data from all other SAS in-house blogs (&lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/index.php&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;http://blogs.sas.com/index.php&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: small;&#34;&gt;) since they share the same template. For other blogs, you should research the web pages accordingly to get the best suitable methods and this post can also serve as an example.&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;first-step-define-the-scope-1&#34;&gt;&lt;strong&gt;First step: define the scope&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;For my purpose, I only need the titles and publish dates of Rick’s posts. It is so called the “metadata” of the blog. I do not need all the post contents. By the way, if all information needed, you can use a blog backup tool, or write codes to retrieve all the pages of &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/iml&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;http://blogs.sas.com/iml&lt;/span&gt;&lt;/a&gt; at the maximum depth&lt;span style=&#34;font-size: small;&#34;&gt;, or simply, you can write to Rick and say: hey Rick, could you please send me all the contents of your blog? And Rick may go to the management console of his own blog, export all the contents to an XML file and get back to you.&lt;/span&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;second-step-analyze-the-web-pages-1&#34;&gt;&lt;strong&gt;Second step: analyze the web pages&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Browse to the right panel of Rick’s blog, in the ARCHIVES frame, click “&lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archive&#34; target=&#34;_blank&#34;&gt;Older&lt;/a&gt;”&lt;/span&gt;&lt;span style=&#34;font-size: small;&#34;&gt;:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0026.jpg&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image002&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image002_thumb1.jpg&#34; alt=&#34;clip_image002&#34; width=&#34;235&#34; height=&#34;298&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;And you get &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0035.gif&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image003&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image003_thumb.gif&#34; alt=&#34;clip_image003&#34; width=&#34;362&#34; height=&#34;274&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;This page just gives a big picture of Rick’s blog (ARCHIVE section is always a good place to get such metadata, for example, &lt;a href=&#34;http://www.jiangtanghu.com/blog/archives/&#34; target=&#34;_blank&#34;&gt;archives for my blog&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;font-size: small;&#34;&gt;). But we need more. Click “&lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archives/2010/09/summary.html&#34; target=&#34;_blank&#34;&gt;view topics&lt;/a&gt;” for example of September, 2010:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0045.gif&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image004&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image004_thumb.gif&#34; alt=&#34;clip_image004&#34; width=&#34;372&#34; height=&#34;443&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;This page is exactly what we want with titles and dates. Open an editor to write codes immediately to read all the information in this page?—wait. Currently this blog has posts across 11 months and you can expect the increase. You should design a dynamic method to read all the topics pages: Sep 2010, Oct 2010, … and, &lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;today()&lt;/span&gt;.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Return to the &lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archive&#34; target=&#34;_blank&#34;&gt;archives page&lt;/a&gt;. RCM (right click your mouse) and select “View page source” if you use Google Chrome web browser (“View Source” in IE; “View Page Source” in Firefox) and you get all the HTML scripts (&lt;strong&gt;Note: you DO not need any knowledge of HTML to understand this post&lt;/strong&gt;). Copy and paste them into a text editor supporting HTML syntax highlighting (such as Notepad++). Search all instances of “view topics” we mentioned before:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0067.jpg&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image006&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image006_thumb2.jpg&#34; alt=&#34;clip_image006&#34; width=&#34;519&#34; height=&#34;312&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;We are lucky. They are 11 instances of “view topics” accompanying with 11 hyperlinks for the currently 11 months’ archives of Rick’s blog. We can read such 11 hyperlinks to a macro array for dynamic retrieval.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Then we return to the single &lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archives/2010/09/summary.html&#34; target=&#34;_blank&#34;&gt;topics page&lt;/a&gt;, for example of September, 2010&lt;/span&gt;&lt;span style=&#34;font-size: small;&#34;&gt;. Review the HTML source file. Search for “posted_by_date” and we get 14 instances which is same as the number of posts in September 2010:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0086.jpg&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image008&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image008_thumb1.jpg&#34; alt=&#34;clip_image008&#34; width=&#34;518&#34; height=&#34;307&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;We should also need to locate all the instances of titles. Search “/iml/index.php?/archives/” and we get 17 responses:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0106.jpg&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image010&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image010_thumb1.jpg&#34; alt=&#34;clip_image010&#34; width=&#34;517&#34; height=&#34;298&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;We see 3 instances at end of the finding results don’t contain any titles. You can check other pages to confirm such pattern. Yes we can use regular expressions to parse the HTML pages to locate more exactly for the titles. But for a quick job and due to the relative simple HTML pages, some basic SAS character functions are enough for our purpose. In the following codes, limited regular expressions are used only to remove HTML tags such as “&lt;a href=”.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;After such explorative search of HTML scripts, we can get the basic idea where can we find the interested information. Then we begin to coding work.&lt;/span&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;third-step-coding-at-last-1&#34;&gt;&lt;strong&gt;Third step: Coding at last!&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;For our purpose, we should first read the archive page to get all the topics links to a macro array, then read the all the topics pages dynamically. Finally, we should also add the all the calendar dates with holidays. Some friends may find that they met piece of the following codes before. Yes, such codes just assembled some skills what I learned from Art Carpenter, Richard DeVenezia, Jian Dai and lots of programmers before!&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;3-1-read-archive-page-1&#34;&gt;3-1: read archive page&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%let URL=&lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archive;&#34;&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;http://blogs.sas.com/iml/index.php?/archive;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;filename archive URL &amp;#8220;&amp;amp;URL&amp;#8221;; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data archive;&lt;br /&gt; length text $1024;&lt;br /&gt; infile archive lrecl=1024;&lt;br /&gt; input text $;&lt;br /&gt; text= &lt;em&gt;infile&lt;/em&gt;;&lt;br /&gt; if index(text, &amp;#8220;&amp;gt;view topics&amp;lt;&amp;#8220;) then output;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data  archive1;&lt;br /&gt; set archive;&lt;br /&gt; summary=scan(text,4,&amp;rsquo;&amp;#8221;&amp;#8216;);&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;3-2-read-all-topics-pages-1&#34;&gt;3-2: read all topics pages&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; set  archive1 end=eof;&lt;br /&gt; I+1;&lt;br /&gt; II=left(put(I,2.));&lt;br /&gt; call symputx(&amp;#8216;summary&amp;#8217;||II,summary);&lt;br /&gt; if eof then call symputx(&amp;#8216;total&amp;#8217;,II);&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%macro readit;&lt;br /&gt; %do i=1 %to &amp;total;&lt;br /&gt; filename f&amp;amp;i URL &amp;#8220;&amp;amp;&amp;amp;summary&amp;amp;i&amp;#8221;;    &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;        data f&amp;i;&lt;br /&gt; length text $1024;&lt;br /&gt; infile f&amp;amp;i lrecl=1024;&lt;br /&gt; input text $;&lt;br /&gt; text= &lt;em&gt;infile&lt;/em&gt;;&lt;br /&gt; if index(text, &amp;#8220;/iml/index.php?/archives/&amp;#8221;) or index(text, &amp;#8220;posted_by_date&amp;#8221;) then output;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;    &lt;span style=&#34;color: #ff0000;&#34;&gt;/&lt;em&gt;remove HTML tags;&lt;/em&gt;/&lt;/span&gt;&lt;br /&gt; data ff&amp;i;&lt;br /&gt; set f&amp;i;&lt;br /&gt; prx=prxparse(&amp;#8220;s/&amp;lt;.*?&amp;gt;//&amp;#8221;);&lt;br /&gt; call prxchange(prx,99,text);&lt;br /&gt; drop prx; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;        flag=ifn(mod(&lt;em&gt;n&lt;/em&gt;,2),1,2);&lt;br /&gt; grpn=&amp;i;&lt;br /&gt; if index(text,&amp;#8221;201&amp;#8243;) and length(text)&lt;10 then delete;&lt;span style=&#34;color: #ff0000;&#34;&gt;/&lt;em&gt;be carefull! hard coding;&lt;/em&gt;/&lt;br /&gt; &lt;/span&gt;        seq=&lt;em&gt;n&lt;/em&gt;;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;     /&lt;em&gt;transpose data;&lt;/em&gt;/&lt;br /&gt; data fff&amp;i;&lt;br /&gt; set ff&amp;i;&lt;br /&gt; by grpn seq flag; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;        &lt;span style=&#34;color: #ff0000;&#34;&gt;retain&lt;/span&gt; title;&lt;br /&gt; if first.flag then title=lag(text);&lt;br /&gt; if flag=1 then delete;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;    %end; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%mend readit;&lt;br /&gt; %readit &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%macro getall;&lt;br /&gt; data Rick;&lt;br /&gt; set %do i=1 %to &amp;total; fff&amp;amp;i %end; ;&lt;br /&gt; seq=seq/2;&lt;br /&gt; drop flag;&lt;br /&gt; run;&lt;br /&gt; %mend getall;&lt;br /&gt; %getall &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data rick2;&lt;br /&gt; set rick; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;    datetime=scan(text,2,&amp;#8221;,&amp;#8221;);&lt;br /&gt; year=scan(text,2,&amp;#8221;.&amp;#8221;);&lt;br /&gt; month=scan(scan(text,2,&amp;#8221;,&amp;#8221;),1);&lt;br /&gt; day=scan(scan(text,2,&amp;#8221;,&amp;#8221;),2);&lt;br /&gt; week=scan(text,6);&lt;br /&gt; dt=compress(catx(&amp;#8220;&amp;#8221;,day,substr(month,1,3),year));&lt;br /&gt; worddat=input(dt,date9.);&lt;br /&gt; format worddat  ddmmyy10.;                         &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;    m=scan(put(worddat,ddmmyy10.),2);&lt;br /&gt; my=compress(catx(&amp;#8220;&amp;#8221;,year,m));&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;proc sort ;&lt;br /&gt; by  worddat descending seq ;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;It is also interesting to add additional information for further analysis, such as all calendar dates during Rick’s blogging history and holidays.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-3-get-all-calendar-dates-1&#34;&gt;3-3: get all calendar dates&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;proc sort data=rick2 out=rick3 nodupkey;&lt;br /&gt; by my;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; set rick3 end=eof;&lt;br /&gt; I+1;&lt;br /&gt; II=left(put(I,2.));&lt;br /&gt; call symputx(&amp;#8216;year&amp;#8217;||II,year);&lt;br /&gt; call symputx(&amp;#8216;month&amp;#8217;||II,m);&lt;br /&gt; if eof then call symputx(&amp;#8216;total&amp;#8217;,II);&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%macro getCalendar;&lt;br /&gt; %do i=1 %to &amp;total;&lt;br /&gt; data calendar&amp;i;&lt;br /&gt; date1 = mdy (&amp;amp;&amp;amp;month&amp;amp;i,1,&amp;amp;&amp;amp;year&amp;amp;i);&lt;br /&gt; date2 = intnx (&amp;#8216;month&amp;#8217;, date1, 1) &amp;#8211; 1; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;            do worddat = date1 to date2;&lt;br /&gt; wim = intck (&amp;#8216;week&amp;#8217;, date1, worddat);&lt;br /&gt; dim = worddat-date1+1;&lt;br /&gt; output;&lt;br /&gt; end; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;            format worddat  ddmmyy10.;&lt;br /&gt; keep   worddat  dim ;&lt;br /&gt; run;&lt;br /&gt; %end;&lt;br /&gt; %mend getCalendar;&lt;br /&gt; %getCalendar; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%macro allCalendar;&lt;br /&gt; data Calendar;&lt;br /&gt; set %do i=1 %to &amp;total; calendar&amp;amp;i %end; ;&lt;br /&gt; run;&lt;br /&gt; %mend allCalendar;&lt;br /&gt; %allCalendar&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;3-4-get-holidays-1&#34;&gt;3-4: get holidays&lt;/h3&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;I have no specific idea about US holidays and just referenced the two pages:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;](&lt;a href=&#34;http://support.sas.com/kb/24/655.html &#34;&gt;http://support.sas.com/kb/24/655.html &lt;/a&gt; &amp;ldquo;&lt;a href=&#34;http://support.sas.com/kb/24/655.html&#34;&gt;http://support.sas.com/kb/24/655.html&lt;/a&gt;  &amp;ldquo;)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.opm.gov/Operating_Status_Schedules/fedhol/2011.asp&#34; title=&#34;http://www.opm.gov/Operating_Status_Schedules/fedhol/2011.asp&#34;&gt;http://www.opm.gov/Operating_Status_Schedules/fedhol/2011.asp&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Also, the holidays and observances should manully modified according to personal working schedule. So this section serves only for demonstration.&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;filename hld url &amp;#8220;&lt;/span&gt;&lt;a href=&#34;http://jiangtanghu.com/docs/en/US_holiday.sas&amp;quot;;&#34;&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;http://jiangtanghu.com/docs/en/US_holiday.sas&amp;#8221;;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%include hld; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%US_holiday(2010)&lt;br /&gt; %US_holiday(2011) &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data holiday;&lt;br /&gt; set holiday2010 holiday2011;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;proc sort ;&lt;br /&gt; by  worddat;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;3-5-put-all-together&#34;&gt;3-5: put all together&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data rick_all;&lt;br /&gt; merge rick2 calendar holiday;&lt;br /&gt; by worddat;&lt;br /&gt; &lt;/span&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;if worddat &amp;lt;&amp;#8217;03Sep2010&amp;#8217;d then delete;&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;if worddat &amp;gt;&amp;#8217;15Jul2011&amp;#8217;d then delete;&lt;/span&gt;&lt;br /&gt; drop today;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;A pooled version (beta) also available at&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://jiangtanghu.com/docs/en/SAS_Blogs.sas&#34;&gt;http://jiangtanghu.com/docs/en/SAS_Blogs.sas&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blogging SAS</title>
+      <link>/2010/11/30/blogging-sas/</link>
+      <pubDate>Tue, 30 Nov 2010 21:16:52 +0000</pubDate>
+      
+      <guid>/2010/11/30/blogging-sas/</guid>
+      <description>&lt;p&gt;Almost at the same time, there are two SAS blogs aggregators popping up to the web for SAS programmers worldwide, one in Chinese, the other, English:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://saslist.com/&#34;&gt;http://saslist.com/&lt;/a&gt;&amp;#160; in Chinese, maintained by &lt;a href=&#34;http://saslist.com/sxlion/&#34;&gt;sxlion&lt;/a&gt;, also the owner of a SAS information site,&amp;#160; &lt;a href=&#34;http://saslist.net/&#34;&gt;http://saslist.net/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://sas-x.com/&#34;&gt;http://sas-x.com/&lt;/a&gt;&amp;#160;&amp;#160; in English, maintained by &lt;a href=&#34;http://www.r-statistics.com/&#34;&gt;Tal Galili&lt;/a&gt;, also the owner of R blogs aggregator, &lt;a href=&#34;http://r-bloggers.com/&#34;&gt;http://r-bloggers.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I try to express in a very symmetrical way. What’s more (and interesting), these two aggregators share a same WordPress template. My blogs, &lt;a href=&#34;http://jiangtanghu.com/cn&#34;&gt;in Chinese&lt;/a&gt; and &lt;a href=&#34;http://www.jiangtanghu.com/blog&#34;&gt;in English&lt;/a&gt;, are also the members of these aggregators respectively.&lt;/p&gt;
+
+&lt;p&gt;I view this is the first wave for SAS programmers to embrace the Web2.0 world. If interested, you could also add your SAS blogs in&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://sas-x.com/add-your-blog/&#34;&gt;http://sas-x.com/add-your-blog/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

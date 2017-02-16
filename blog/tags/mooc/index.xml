@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mooc on Lithium Theme</title>
+    <link>/tags/mooc/index.xml</link>
+    <description>Recent content in Mooc on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/mooc/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>LearningR!</title>
+      <link>/2013/02/08/learningr/</link>
+      <pubDate>Fri, 08 Feb 2013 23:37:49 +0000</pubDate>
+      
+      <guid>/2013/02/08/learningr/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Computing_for_data_analysis_Coursera.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Computing_for_data_analysis_Coursera&#34; border=&#34;0&#34; alt=&#34;Computing_for_data_analysis_Coursera&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Computing_for_data_analysis_Coursera_thumb.png&#34; width=&#34;475&#34; height=&#34;422&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I spent almost all of my blogging time last month to follow an online course in &lt;/font&gt;&lt;a href=&#34;https://www.coursera.org&#34;&gt;&lt;font size=&#34;1&#34;&gt;Coursera&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, &lt;em&gt;&lt;a href=&#34;https://www.coursera.org/course/compdata&#34;&gt;Computing for Data Analysis&lt;/a&gt;&lt;/em&gt; (with R) by Dr. &lt;/font&gt;&lt;a href=&#34;http://simplystatistics.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Roger&amp;#160; Peng&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;of Johns Hopkins, Biostatistics Department. I already checked out bunch of Coursera courses just to take a look at what else &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Massive_open_online_course&#34;&gt;&lt;font size=&#34;1&#34;&gt;MOOC&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;look like, this R course was the first and only one I took seriously: I reviewed all slides (although didn’t watch the videos since I didn’t have enough time) and most important, finished all programming assignments(and got full score!).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Not a frequent R user, I used some R packages for learning purpose (mostly in &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/01/15/feature-selection-collections-for-self-study/&#34;&gt;&lt;font size=&#34;1&#34;&gt;data mining&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;). This &lt;em&gt;&lt;a href=&#34;https://www.coursera.org/course/compdata&#34;&gt;Computing for Data Analysis&lt;/a&gt;&lt;/em&gt; course focused mostly on data manipulation and that’s why I chose it to dig into R. R by design is not a tool for data management (where SAS excels), but it’s nice to have (no hurt since it’s free). Those days I put most of my efforts on R data structures(vector, matrix, array, list, data frame) and by grouping processing(*ply functions). Few resource I found extremely useful as a starter:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/tagged/r&#34; title=&#34;http://stackoverflow.com/questions/tagged/r&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://stackoverflow.com/questions/tagged/r&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160; when I google a specific R programming technique, mostly I will reach to stackoverflow website, a new generation Q&amp;amp;A hub to replace user forum, mailing list.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;_&lt;a href=&#34;https://www.google.com/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;ved=0CDIQFjAA&amp;amp;url=http%3A%2F%2Fcran.r-project.org%2Fdoc%2Fcontrib%2FLam-IntroductionToR_LHL.pdf&amp;amp;ei=O84VUfK7HIue8gSr5YGYBQ&amp;amp;usg=AFQjCNGmMLsnqaHAxGH368m32E8s4STNTA&amp;amp;sig2=Gz7gjUqiPqD-nq_Sg5X57w&amp;amp;bvm=bv.42080656,d.eWU&#34;&gt;&lt;font size=&#34;1&#34;&gt;An introduction to R&lt;/font&gt;&lt;/a&gt;_ &lt;font size=&#34;1&#34;&gt;by Longhow Lam, a free book. I like its Chapter 2,&lt;em&gt; Data Objects&lt;/em&gt;, including R data types and data structures.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Data Manipulation with R&lt;/em&gt; by Phil Spector, one of the Use R! books. I used its Chapter 8, &lt;em&gt;Data Aggregation &lt;/em&gt;on R by group processing.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.rstudio.com/ide/&#34;&gt;&lt;font size=&#34;1&#34;&gt;RStudio&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, a must have R IDE, the best of best. &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Package &lt;/font&gt;&lt;a href=&#34;http://cran.r-project.org/web/packages/plyr/index.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;plyr&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, tools for splitting, applying and combining data. Actually, it is awful to use R to manipulate data from a SAS programmer point of view. Use plyr to alleviate the pain.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Package &lt;/font&gt;&lt;a href=&#34;http://code.google.com/p/sqldf/&#34;&gt;&lt;font size=&#34;1&#34;&gt;sqldf&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, like SAS Proc SQL against data frame. Reason, ibid. Use sqldf won’t enhance your R programming skill, but sometime when you feel down at R, you may want to launch piece of SQL scripts you really like.&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Lithium Theme</title>
+    <link>/tags/r/index.xml</link>
+    <description>Recent content in R on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Import .Rdata to SAS, along with Labels</title>
+      <link>/2015/05/12/import-.rdata-to-sas-along-with-labels/</link>
+      <pubDate>Tue, 12 May 2015 13:06:28 +0000</pubDate>
+      
+      <guid>/2015/05/12/import-.rdata-to-sas-along-with-labels/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;I didn’t &lt;/span&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2010/10/29/sas-iml-basic/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;play with SAS/IML&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;for a while. I call it back when I need to read some R format data.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Technically, .Rdata is not a data format. It’s rather a big container to hold bunch of R objects:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/Rdata1.png&#34;&gt;&lt;img style=&#34;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border: 0px;&#34; title=&#34;Rdata&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/Rdata_thumb1.png&#34; alt=&#34;Rdata&#34; width=&#34;408&#34; height=&#34;213&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;In this example, when a .Rdata is loaded, 3 objects are included where ‘data’(the ‘real’ data) and ‘desc’ (data description portion) are of our interests.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;SAS/IML offers a nice interface to call R command which can be used to read the R format data:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;proc iml;&lt;br /&gt; &lt;strong&gt;submit / R;&lt;/strong&gt;&lt;br /&gt; load(&amp;#8220;C:/data/w5/R data sets for 5e/GPA1.RData&amp;#8221;)&lt;br /&gt; &lt;strong&gt;endsubmit;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;    &lt;strong&gt;call&lt;/strong&gt; &lt;strong&gt;ImportDataSetFromR&lt;/strong&gt;(&amp;#8220;work.GPA1&amp;#8221;, &amp;#8220;&lt;span style=&#34;color: #ff0000;&#34;&gt;data&lt;/span&gt;&amp;#8220;);&lt;br /&gt; &lt;strong&gt;call&lt;/strong&gt; &lt;strong&gt;ImportDataSetFromR&lt;/strong&gt;(&amp;#8220;work.GPA1desc&amp;#8221;, &amp;#8220;&lt;span style=&#34;color: #ff0000;&#34;&gt;desc&lt;/span&gt;&amp;#8220;);&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;quit;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; set GPA1desc end = eof ;&lt;br /&gt; i+1;&lt;br /&gt; II=left(put(i,3.));&lt;br /&gt; call symputx(&amp;#8216;var&amp;#8217;||II,variable);&lt;br /&gt; call symputx(&amp;#8216;label&amp;#8217;||II,label);&lt;br /&gt; if eof then call symputx(&amp;#8216;n&amp;#8217;,II);&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;%macro labelit;&lt;br /&gt; data gpa1;&lt;br /&gt; set gpa1;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;    label&lt;br /&gt; %do i=1 %to &amp;n;&lt;br /&gt; &amp;amp;&amp;amp;var&amp;amp;i = &amp;amp;&amp;amp;label&amp;amp;i&lt;br /&gt; %end;&lt;br /&gt; ;&lt;br /&gt; run;&lt;br /&gt; %mend;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;%labelit&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Use List Object in SAS: Yet Another Undocumented Feature in SAS 9.4</title>
+      <link>/2014/04/01/use-list-object-in-sas-yet-another-undocumented-feature-in-sas-9.4/</link>
+      <pubDate>Tue, 01 Apr 2014 23:42:24 +0000</pubDate>
+      
+      <guid>/2014/04/01/use-list-object-in-sas-yet-another-undocumented-feature-in-sas-9.4/</guid>
+      <description>
+
+&lt;p&gt;Last year I gave a talk in SESUG 2013 on &lt;a href=&#34;http://analytics.ncsu.edu/sesug/2013/BtB-18.pdf&#34;&gt;list manipulation on SAS using a collection of function-like macros&lt;/a&gt;. Today I just explored in my recently upgraded SAS 9.4 that I can play with list natively, which means I can create a list, slice a list and do other list operations in Data Steps! This is not documented yet(which means it will not be supported by the software vendor) and I can see warning message in Log window like “WARNING: List object is preproduction in this release”,  and it is still limited somehow, so use it in your own risk (and of course, fun).  Adding such versatile list object will definitely make SAS programmers more powerful. I will keep watch its further development.&lt;/p&gt;
+
+&lt;p&gt;*&lt;strong&gt;*&lt;/strong&gt;*&lt;strong&gt;*&lt;/strong&gt;*&lt;strong&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;Update&lt;/span&gt;&lt;/strong&gt;*&lt;strong&gt;*&lt;/strong&gt;**&lt;/p&gt;
+
+&lt;p&gt;Some readers emailed to me that they can’t get the expected results as I did here. I think it’s best to check your own system:&lt;/p&gt;
+
+&lt;p&gt;I. Make sure you use the latest SAS software. I only tested on a 64-bit Window 7 machine with SAS 9.4 TS1M1:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/SAS94.png&#34;&gt;&lt;img style=&#34;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;&#34; title=&#34;SAS94&#34; alt=&#34;SAS94&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/SAS94_thumb.png&#34; width=&#34;442&#34; height=&#34;186&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;II. Make sure all hotfixes were applied (You can use this &lt;a href=&#34;http://ftp.sas.com/techsup/download/hotfix/HF2/SASHFADD.html&#34;&gt;SAS Hot Fix Analysis, Download and Deployment Tool&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/hotfix.png&#34;&gt;&lt;img style=&#34;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;&#34; title=&#34;hotfix&#34; alt=&#34;hotfix&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/hotfix_thumb.png&#34; width=&#34;432&#34; height=&#34;252&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;*&lt;strong&gt;*&lt;/strong&gt;*&lt;strong&gt;*&lt;/strong&gt;*&lt;strong&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;Update End&lt;/span&gt;&lt;/strong&gt;*&lt;strong&gt;*&lt;/strong&gt;**&lt;/p&gt;
+
+&lt;p&gt;The followings are some quick plays and I will report more after more research:&lt;/p&gt;
+
+&lt;h2 id=&#34;1-create-a-list&#34;&gt;1. Create a List&lt;/h2&gt;
+
+&lt;p&gt;It’s easy to create a list:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; a = [&amp;#8216;apple&amp;#8217;, &amp;#8216;orange&amp;#8217;, &amp;#8216;banana&amp;#8217;];&lt;br /&gt; put a;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;the output in Log window:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list1.png&#34;&gt;&lt;img style=&#34;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;&#34; title=&#34;list1&#34; alt=&#34;list1&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list1_thumb.png&#34; width=&#34;448&#34; height=&#34;84&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also transfer a string to a list:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; a = &amp;#8216;SAS94&amp;#8217;&lt;br /&gt; b =list(a)&lt;br /&gt; put b;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list2.png&#34;&gt;&lt;img style=&#34;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;&#34; title=&#34;list2&#34; alt=&#34;list2&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list2_thumb.png&#34; width=&#34;460&#34; height=&#34;80&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;2-slice-a-list&#34;&gt;2. Slice a List&lt;/h2&gt;
+
+&lt;p&gt;Slicing a list is also pretty straightforward, like in R and Python:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; a = [&amp;#8216;apple&amp;#8217;, &amp;#8216;orange&amp;#8217;, &amp;#8216;banana&amp;#8217;];&lt;br /&gt; b = a[0];&lt;br /&gt; c = a[:-1];&lt;br /&gt; d = a[1:2];&lt;br /&gt; put a;&lt;br /&gt; put b;&lt;br /&gt; put c;&lt;br /&gt; put d;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list3.png&#34;&gt;&lt;img style=&#34;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;&#34; title=&#34;list3&#34; alt=&#34;list3&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list3_thumb.png&#34; width=&#34;406&#34; height=&#34;110&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;3-list-is-immutable-in-sas&#34;&gt;3. List is Immutable in SAS!?&lt;/h2&gt;
+
+&lt;p&gt;I felt much confortable to play list operations in SAS but a weird thing just happened. I tried to change a value in a list:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; a = [&amp;#8216;apple&amp;#8217;, &amp;#8216;orange&amp;#8217;, &amp;#8216;banana&amp;#8217;];&lt;br /&gt; a[0] = &amp;#8216;Kivi&amp;#8217;;&lt;br /&gt; put a;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Unexpectedly, I got an error:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list4.png&#34;&gt;&lt;img style=&#34;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;&#34; title=&#34;list4&#34; alt=&#34;list4&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list4_thumb.png&#34; width=&#34;443&#34; height=&#34;76&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;hhh, I need to create a new list to hold such modification? This is funny.&lt;/p&gt;
+
+&lt;p&gt;Based on my quick exploration, the list object in SAS is pretty intuitive from a programmers’ point of view. But since it’s undocumented and I don’t know how long it will stay in “preproduction” phase,  just be careful to implement it in your production work.&lt;/p&gt;
+
+&lt;p&gt;Personally I feel very exciting to “hack” such wonderful list features in SAS 9.4. If well implemented, it will easily beat R and Python (which claim themselves supporting rich data types and objects) as a scripting language for SAS programmers. I will keep update in &lt;a href=&#34;http://en.wikipedia.org/wiki/April_1&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What&amp;rsquo;s New</title>
+      <link>/2013/03/20/whatrsquos-new/</link>
+      <pubDate>Wed, 20 Mar 2013 23:09:08 +0000</pubDate>
+      
+      <guid>/2013/03/20/whatrsquos-new/</guid>
+      <description>&lt;p&gt;I didn’t &lt;a href=&#34;http://www.jiangtanghu.com/blog/archives/&#34;&gt;blog&lt;/a&gt; for a while in this first half March and there are bunches of new stuff to catch up:&lt;/p&gt;
+
+&lt;p&gt;I had a new baby! He was delivered on time (and on budget!), &lt;em&gt;lions tigers and bears, oh my&amp;#8230;&lt;/em&gt; His brother is Tiger so I named him, Leo.&lt;/p&gt;
+
+&lt;p&gt;And I got the latest SAS 9.3 (TS1M2) installed! SAS is jus getting much beautiful.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/03/SAS9.3_12.1.png&#34;&gt;&lt;font color=&#34;#cbcbcb&#34;&gt;&lt;/font&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS9.3_12.1&#34; border=&#34;0&#34; alt=&#34;SAS9.3_12.1&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/03/SAS9.3_12.1_thumb.png&#34; width=&#34;383&#34; height=&#34;99&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.opencdisc.org/download&#34;&gt;OpenCDISC&lt;/a&gt; had the latest release, Version 1.4 with the new SDTM 3.1.3 validation checks,—and yes CDISC itself also had some significant updates:&lt;/p&gt;
+
+&lt;p&gt;SDTMv1.3 and SDTMIGv3.1.3 now have the &lt;a href=&#34;http://www.cdisc.org/sdtmv1-4-sdtmigv3-1-3-metadata&#34;&gt;machine readable metadata&lt;/a&gt; online. It’s a nice improvement (last year I just posted &lt;em&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/12/29/cdisc-in-pdf-format/&#34;&gt;The Great, Open, Vendor-neutral, Platform-independent Data Standards, &amp;hellip; Yet in PDF Formats&lt;/a&gt;)&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.cdisc.org/define-xml&#34;&gt;Define-XML&lt;/a&gt; now turns to 2.0 (finally).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://cran.rstudio.com/&#34;&gt;R&lt;/a&gt; had its final 2.* release, Version 2.15.3 and Version 3.0.0 will just come soon. &lt;a href=&#34;http://www.rstudio.com/ide/download/desktop&#34;&gt;RStudio&lt;/a&gt; also had a update recently. RStudio is the best IDE (not just R IDE) I used.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://googlereader.blogspot.com/2013/03/powering-down-google-reader.html&#34;&gt;Google will shut down Google Reader&lt;/a&gt;, the best RSS reader ever. It’s a huge loss and I tell you, for example, the famous SAS and statistical blogger Wensui Liu, once frequently posted on Windows Live Space, and then Blogspot and finally &lt;a href=&#34;http://statcompute.wordpress.com/&#34;&gt;WordPress&lt;/a&gt;. The former two blogs were closed and Google Reader feed is the only way to archive these lost posts!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Github for Clinical/Statistical Programmers</title>
+      <link>/2013/02/20/github-for-clinical/statistical-programmers/</link>
+      <pubDate>Wed, 20 Feb 2013 22:01:03 +0000</pubDate>
+      
+      <guid>/2013/02/20/github-for-clinical/statistical-programmers/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;PhUSE-FDA Working Group 5 (&lt;/font&gt;&lt;a href=&#34;http://www.phusewiki.org/wiki/index.php?title=Development_of_Standard_Scripts_for_Analysis_and_Programming&#34;&gt;&lt;font size=&#34;1&#34;&gt;Development of Standard Scripts for Analysis and Programming&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;) just adopted &lt;/font&gt;&lt;a href=&#34;http://code.google.com/p/phuse-scripts/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Code&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;as collaborative programming platform. &lt;/font&gt;&lt;a href=&#34;http://code.google.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Code&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;is one of the most popular and respected open source software hosting sites in the world and it is definitely a good choice for PhUSE-FDA WG5.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;But after viewing one of WG5’s working reports, &lt;em&gt;&lt;a href=&#34;http://www.phusewiki.org/wiki/index.php?title=Platform_for_Standard_Script_Development:_Progress_as_of_September_18_2012&#34;&gt;Sharing Standard Statistical Scripts&lt;/a&gt;&lt;/em&gt; and getting to know why they finally chose Google Code (rather than &lt;/font&gt;&lt;a href=&#34;https://github.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Github&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;which was also tested by WG5 members), I think it’s necessary to clarify some misunderstanding against Github where I’m also &lt;a href=&#34;https://github.com/Jiangtang&#34;&gt;an occasional user&lt;/a&gt;. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;As stated in &lt;/font&gt;&lt;a href=&#34;http://www.phusewiki.org/wiki/index.php?title=Platform_for_Standard_Script_Development:_Progress_as_of_September_18_2012&#34;&gt;&lt;font size=&#34;1&#34;&gt;Slide 11&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;in the report mentioned before, Github,&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Too complicated an interface &lt;br /&gt;Too much overhead for simple development &lt;br /&gt;Too much training and education needed&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;designed for classic programming languages like C and Java (not for things like R and SAS)&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For the first point regarding &lt;strong&gt;interface&lt;/strong&gt;, it seems only &lt;/font&gt;&lt;a href=&#34;http://git-scm.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Git&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;command line tested, and it may be too complicated to “&lt;strong&gt;classic&lt;/strong&gt; statistical programming users”. Actually, Github offers a great GUI tool, for example, &lt;em&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;GitHub for Windows&lt;/a&gt;&lt;/em&gt; to help users visually clone repositories, commit changes and other management tasks without typing Git commands: &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Github_GUI.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;Github_GUI&#34; border=&#34;0&#34; alt=&#34;Github_GUI&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Github_GUI_thumb.png&#34; width=&#34;487&#34; height=&#34;427&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It’s also worthy to mention that with &lt;/font&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;GitHub for Windows&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;, &lt;/em&gt;users don’t need to install any separated version control software like Git, CVS or SVN. &lt;/font&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;GitHub for Windows&lt;/font&gt;&lt;/em&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;already includes a fully functional version of &lt;/font&gt;&lt;a href=&#34;http://msysgit.github.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;msysGit&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. It just makes users’ life much simpler. To use Google Code, you must install and configure something like TortoiseSVN.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The second, is Github suitable for “&lt;strong&gt;things like R and SAS&lt;/strong&gt;”? It’s true that all hosts including &lt;/font&gt;&lt;a href=&#34;https://github.com/languages&#34;&gt;&lt;font size=&#34;1&#34;&gt;Github&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;are dominated by “classic programming languages like C and Java”. For SAS, SAS programmers as a whole are just not active in&amp;#160; any social coding activities, but for &lt;/font&gt;&lt;a href=&#34;https://github.com/languages/R&#34;&gt;&lt;font size=&#34;1&#34;&gt;R&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, actually it is &lt;/font&gt;&lt;a href=&#34;https://www.google.com/webhp?sourceid=chrome-instant&amp;amp;ion=1&amp;amp;ie=UTF-8#q=github+top+languages+R&amp;amp;hl=en&amp;amp;ei=T4QlUeH-HJP62AXxqYGAAQ&amp;amp;start=10&amp;amp;sa=N&amp;amp;bav=on.2,or.r_gc.r_pw.r_cp.r_qf.&amp;amp;fp=50b26647ad5972f8&amp;amp;ion=1&amp;amp;biw=1536&amp;amp;bih=784&#34;&gt;&lt;font size=&#34;1&#34;&gt;one of the mostly used languages in Github&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Google Code is good and a “Google Code vs Github” question is just mostly subjective. It seems to me the pickup of Google Code by WG5 rather than Github was based on incomplete information. I personally prefer Github and there are also some good reasons:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Use the GUI tool, &lt;/font&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;GitHub for Windows&lt;/font&gt;&lt;/em&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;to maintain a minimum Git/SVN/CVS setup.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Github supplies much richer statistics reports, including charts.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Github is more social oriented which makes it cool in this Web2.0 world.&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LearningR!</title>
+      <link>/2013/02/08/learningr/</link>
+      <pubDate>Fri, 08 Feb 2013 23:37:49 +0000</pubDate>
+      
+      <guid>/2013/02/08/learningr/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Computing_for_data_analysis_Coursera.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Computing_for_data_analysis_Coursera&#34; border=&#34;0&#34; alt=&#34;Computing_for_data_analysis_Coursera&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Computing_for_data_analysis_Coursera_thumb.png&#34; width=&#34;475&#34; height=&#34;422&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I spent almost all of my blogging time last month to follow an online course in &lt;/font&gt;&lt;a href=&#34;https://www.coursera.org&#34;&gt;&lt;font size=&#34;1&#34;&gt;Coursera&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, &lt;em&gt;&lt;a href=&#34;https://www.coursera.org/course/compdata&#34;&gt;Computing for Data Analysis&lt;/a&gt;&lt;/em&gt; (with R) by Dr. &lt;/font&gt;&lt;a href=&#34;http://simplystatistics.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Roger&amp;#160; Peng&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;of Johns Hopkins, Biostatistics Department. I already checked out bunch of Coursera courses just to take a look at what else &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Massive_open_online_course&#34;&gt;&lt;font size=&#34;1&#34;&gt;MOOC&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;look like, this R course was the first and only one I took seriously: I reviewed all slides (although didn’t watch the videos since I didn’t have enough time) and most important, finished all programming assignments(and got full score!).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Not a frequent R user, I used some R packages for learning purpose (mostly in &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/01/15/feature-selection-collections-for-self-study/&#34;&gt;&lt;font size=&#34;1&#34;&gt;data mining&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;). This &lt;em&gt;&lt;a href=&#34;https://www.coursera.org/course/compdata&#34;&gt;Computing for Data Analysis&lt;/a&gt;&lt;/em&gt; course focused mostly on data manipulation and that’s why I chose it to dig into R. R by design is not a tool for data management (where SAS excels), but it’s nice to have (no hurt since it’s free). Those days I put most of my efforts on R data structures(vector, matrix, array, list, data frame) and by grouping processing(*ply functions). Few resource I found extremely useful as a starter:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/tagged/r&#34; title=&#34;http://stackoverflow.com/questions/tagged/r&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://stackoverflow.com/questions/tagged/r&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160; when I google a specific R programming technique, mostly I will reach to stackoverflow website, a new generation Q&amp;amp;A hub to replace user forum, mailing list.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;_&lt;a href=&#34;https://www.google.com/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;ved=0CDIQFjAA&amp;amp;url=http%3A%2F%2Fcran.r-project.org%2Fdoc%2Fcontrib%2FLam-IntroductionToR_LHL.pdf&amp;amp;ei=O84VUfK7HIue8gSr5YGYBQ&amp;amp;usg=AFQjCNGmMLsnqaHAxGH368m32E8s4STNTA&amp;amp;sig2=Gz7gjUqiPqD-nq_Sg5X57w&amp;amp;bvm=bv.42080656,d.eWU&#34;&gt;&lt;font size=&#34;1&#34;&gt;An introduction to R&lt;/font&gt;&lt;/a&gt;_ &lt;font size=&#34;1&#34;&gt;by Longhow Lam, a free book. I like its Chapter 2,&lt;em&gt; Data Objects&lt;/em&gt;, including R data types and data structures.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Data Manipulation with R&lt;/em&gt; by Phil Spector, one of the Use R! books. I used its Chapter 8, &lt;em&gt;Data Aggregation &lt;/em&gt;on R by group processing.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.rstudio.com/ide/&#34;&gt;&lt;font size=&#34;1&#34;&gt;RStudio&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, a must have R IDE, the best of best. &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Package &lt;/font&gt;&lt;a href=&#34;http://cran.r-project.org/web/packages/plyr/index.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;plyr&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, tools for splitting, applying and combining data. Actually, it is awful to use R to manipulate data from a SAS programmer point of view. Use plyr to alleviate the pain.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Package &lt;/font&gt;&lt;a href=&#34;http://code.google.com/p/sqldf/&#34;&gt;&lt;font size=&#34;1&#34;&gt;sqldf&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, like SAS Proc SQL against data frame. Reason, ibid. Use sqldf won’t enhance your R programming skill, but sometime when you feel down at R, you may want to launch piece of SQL scripts you really like.&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Incorporate SAS/IML to Base SAS?</title>
+      <link>/2012/10/16/incorporate-sas/iml-to-base-sas/</link>
+      <pubDate>Tue, 16 Oct 2012 22:28:41 +0000</pubDate>
+      
+      <guid>/2012/10/16/incorporate-sas/iml-to-base-sas/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Since SAS 9.3, ODS Graphics was moved into Base SAS and other statistical procedures, which means the SAS/Graph license is not needed anymore to access ODS Graphics facilities. It’s definitely nice, but from customers’ point of view, it is not critical necessary: since the “minimum set of SAS system” in most SAS sessions includes the Base SAS, SAS/Stat and SAS/Graph, there is almost no impact for SAS users to switch the license of ODS Graphics. Actually, I do think SAS/IML is better to be included in BASE SAS (play Proc IML in BASE SAS; a MATRIX statement in data step is definitely another bonus) :&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;IML itself, seems have no intention to replace SAS/Stat, SAS/ETS, SAS/QC and other SAS statistical facilities in matrix way like R or Matlab. Instead, by enhancing the abilities to call SAS data steps(including macros), SAS Procedures and R inside,&amp;#160; IML seems to be glad as glue to leverage multiple programming elements. &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;BASE SAS is a collection of lots of programming elements: data step, macro, SQL, array, hash, Java objects, ODS, XML and bunches of procedures. IML is clearly a programming tool rather than a specific application(SAS/Stat and such) and if it is added to BASE SAS, then the SAS programmers&amp;#160; will have one more data structure (matrix) to play with besides SAS table (R copies this idea as data frame), array and hash table (dictionary).&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Actually it is an emergent need (for a matrix). Processing different rows in variable(s) is not an easy task in SAS data steps. Mostly SAS programmers utilize arrays (plus some tricky functions like LAG and DIF) and Dow-loop after its advent. There are really advanced programming techniques, but in matrix with index, such manipulation is pretty easy and straightforward (and saving your loops).&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Although IML can communicate with BASE SAS, but for portable purpose (IML is not expected in every SAS session), most SAS programmers prefer to submit pure BASE codes for data processing. Furthermore, we can even understand why SAS programmers in general invest less in IML. It’s not good: just think about a BASE SAS programmer without a handy matrix manipulation tool (&lt;em&gt;and think about R&lt;/em&gt;)!&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Personally I played IML for a while and still keep eyes on its updates. But since I had some SAS machines without IML, I realize that IML can’t be used as a production language in my clinical SAS programming life: just can’t afford the latency&amp;#160; to ask IT administrators (including in clients side) to manage it!&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Set Up R (for SAS Programmers)</title>
+      <link>/2012/09/30/set-up-r-for-sas-programmers/</link>
+      <pubDate>Sun, 30 Sep 2012 21:19:31 +0000</pubDate>
+      
+      <guid>/2012/09/30/set-up-r-for-sas-programmers/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;h1 id=&#34;font-size-1-yep-i-am-a-sas-programmer-during-the-day-time-i-use-sas-for-my-work-at-the-evening-i-use-r-for-entertainment-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;Yep, I am a SAS programmer: during the day time, I use SAS for my work; at the evening, I use R for entertainment.—&lt;/font&gt;&lt;/h1&gt;
+
+&lt;h1 id=&#34;a-href-http-www-sasanalysis-com-2011-05-support-vector-machine-for-html-target-blank-font-size-1-charlie-huang-font-a&#34;&gt;&lt;a href=&#34;http://www.sasanalysis.com/2011/05/support-vector-machine-for.html&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Charlie Huang&lt;/font&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Getting start to play with R (it is really a wonderful learning tool):&lt;/p&gt;
+
+&lt;h5 id=&#34;12-a-href-http-support-sas-com-documentation-cdl-en-imlsstat-65548-html-default-viewer-htm-imlsstat-statr-toc-htm-target-blank-sas-iml-studio-and-r-integration-a-not-tested&#34;&gt;12. &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/imlsstat/65548/HTML/default/viewer.htm#imlsstat_statr_toc.htm&#34; target=&#34;_blank&#34;&gt;SAS IML Studio and R Integration&lt;/a&gt; (&lt;em&gt;not tested&lt;/em&gt;)&lt;/h5&gt;
+
+&lt;h5 id=&#34;11-a-href-http-support-sas-com-documentation-cdl-en-imlug-65547-html-default-viewer-htm-imlug-r-sect001-htm-target-blank-sas-iml-and-r-integration-a-not-tested&#34;&gt;11. &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/imlug/65547/HTML/default/viewer.htm#imlug_r_sect001.htm&#34; target=&#34;_blank&#34;&gt;SAS IML and R Integration&lt;/a&gt; (&lt;em&gt;not tested&lt;/em&gt;)&lt;/h5&gt;
+
+&lt;h5 id=&#34;10-a-href-http-www-jstatsoft-org-v46-c02-target-blank-sas-base-and-r-integration-proc-r-a&#34;&gt;10. &lt;a href=&#34;http://www.jstatsoft.org/v46/c02&#34; target=&#34;_blank&#34;&gt;SAS Base and R Integration: PROC R&lt;/a&gt;&lt;/h5&gt;
+
+&lt;p&gt;also &lt;a href=&#34;http://sas-and-r.blogspot.com/2012/01/sas-macro-simplifies-sas-and-r.html&#34; target=&#34;_blank&#34;&gt;a blog post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h5 id=&#34;9-data-transfer-among-r-and-sas-xpt&#34;&gt;9. Data transfer among R and SAS(xpt)&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS: &lt;em&gt;&lt;a href=&#34;http://www.sas.com/industry/government/fda/macro.html&#34; target=&#34;_blank&#34;&gt;SAS Macros that Convert a Directory of Transport Files&lt;/a&gt;&lt;/em&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;R: use &lt;a href=&#34;http://stat.ethz.ch/R-manual/R-devel/library/foreign/html/read.xport.html&#34; target=&#34;_blank&#34;&gt;read.xport&lt;/a&gt; function in Foreign package and write.xport in &lt;a href=&#34;http://cran.cnr.berkeley.edu/web/packages/SASxport/index.html&#34; target=&#34;_blank&#34;&gt;SASXport&lt;/a&gt; package to read/write xpt file&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;8-data-transfer-among-r-and-sas-csv&#34;&gt;8. Data transfer among R and SAS(CSV)&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS: use &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lebaseutilref/63492/HTML/default/viewer.htm#n0yo3bszlrh0byn1j4fxh4ndei8u.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;%DS2CSV Macro&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;to export SAS dataset to CSV file&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;R: use &lt;a href=&#34;http://stat.ethz.ch/R-manual/R-devel/library/utils/html/read.table.html&#34; target=&#34;_blank&#34;&gt;read.csv&lt;/a&gt; /&lt;a href=&#34;http://stat.ethz.ch/R-manual/R-devel/library/utils/html/write.table.html&#34; target=&#34;_blank&#34;&gt;write.csv&lt;/a&gt;&lt;/font&gt; &lt;font size=&#34;1&#34;&gt;function to read/write CSV file&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;font-style-font-weight-bold-7-font-font-style-font-weight-bold-a-href-http-gallery-r-enthusiasts-com-target-blank-the-r-graph-gallery-a-font&#34;&gt;&lt;font style=&#34;font-weight: bold&#34;&gt;7. &lt;/font&gt;&lt;font style=&#34;font-weight: bold&#34;&gt;&lt;a href=&#34;http://gallery.r-enthusiasts.com/&#34; target=&#34;_blank&#34;&gt;The R Graph Gallery&lt;/a&gt;&lt;/font&gt;&lt;/h5&gt;
+
+&lt;h5 id=&#34;6-a-href-http-www-r-bloggers-com-target-blank-r-blogs-a&#34;&gt;6. &lt;a href=&#34;http://www.r-bloggers.com/&#34; target=&#34;_blank&#34;&gt;R blogs&lt;/a&gt;&lt;/h5&gt;
+
+&lt;h5 id=&#34;5-a-href-http-www-r-project-org-search-html-target-blank-r-search-a&#34;&gt;5. &lt;a href=&#34;http://www.r-project.org/search.html&#34; target=&#34;_blank&#34;&gt;R search&lt;/a&gt;&lt;/h5&gt;
+
+&lt;h5 id=&#34;4-a-href-http-cran-r-project-org-web-views-target-blank-r-task-view-a-packages-recommended&#34;&gt;4. &lt;a href=&#34;http://cran.r-project.org/web/views/&#34; target=&#34;_blank&#34;&gt;R Task View&lt;/a&gt;: packages recommended&lt;/h5&gt;
+
+&lt;h5 id=&#34;3-a-href-http-cran-cnr-berkeley-edu-web-packages-available-packages-by-name-html-target-blank-all-r-packages-a&#34;&gt;3. &lt;a href=&#34;http://cran.cnr.berkeley.edu/web/packages/available_packages_by_name.html&#34; target=&#34;_blank&#34;&gt;All R packages&lt;/a&gt;&lt;/h5&gt;
+
+&lt;h5 id=&#34;2-install-a-href-http-www-rstudio-org-download-target-blank-rstudio-a-a-much-better-r-ide&#34;&gt;2. Install &lt;a href=&#34;http://www.rstudio.org/download/&#34; target=&#34;_blank&#34;&gt;RStudio&lt;/a&gt;, a much better R IDE&lt;/h5&gt;
+
+&lt;h5 id=&#34;1-get-a-href-http-cran-cnr-berkeley-edu-target-blank-r-software-a&#34;&gt;1. Get &lt;a href=&#34;http://cran.cnr.berkeley.edu/&#34; target=&#34;_blank&#34;&gt;R software&lt;/a&gt;&lt;/h5&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Statistical Notes (5): Confidence Intervals for Difference Between Independent Binomial Proportions Using SAS</title>
+      <link>/2012/09/23/statistical-notes-5-confidence-intervals-for-difference-between-independent-binomial-proportions-using-sas/</link>
+      <pubDate>Sun, 23 Sep 2012 21:23:59 +0000</pubDate>
+      
+      <guid>/2012/09/23/statistical-notes-5-confidence-intervals-for-difference-between-independent-binomial-proportions-using-sas/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;A guy notices a bunch of targets scattered over a barn wall, and in the center of each, in the &amp;ldquo;bulls-eye,&amp;rdquo; is a bullet hole. &amp;ldquo;Wow,&amp;rdquo; he says to the farmer, &amp;ldquo;that&amp;#8217;s pretty good shooting. How&amp;#8217;d you do it?&amp;rdquo; &amp;ldquo;Oh,&amp;rdquo; says the farmer, &amp;ldquo;it was easy. I painted the targets after I shot the holes.&amp;rdquo; – An Old Joke&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Note on how to get the difference between independent binomial proportions using SAS &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_freq_toc.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;PROC FREQ&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;(tested in SAS 9.3M1).&amp;#160; Also, benchmarks took from Prof. Newcombe ’s paper:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;cite&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=9595617&amp;query_hl=1&#34;&gt;&lt;strong&gt;&lt;font size=&#34;1&#34;&gt;Interval estimation for the difference between independent proportions: comparison of eleven methods.&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt; &lt;/font&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/Newcombe_diff4.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;Newcombe_diff&#34; border=&#34;0&#34; alt=&#34;Newcombe_diff&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/Newcombe_diff_thumb4.png&#34; width=&#34;291&#34; height=&#34;297&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Key findings (SAS output):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/CI8.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;CI8&#34; border=&#34;0&#34; alt=&#34;CI8&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/CI8_thumb.png&#34; width=&#34;436&#34; height=&#34;255&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. SAS Proc Freq offers 8 ( including 4 of total 11 in Prof. Newcombe ’s paper) methods to compute confidence intervals for difference between independent binomial proportions:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Wald &lt;font color=&#34;#ff0000&#34;&gt;#1&lt;/font&gt;&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Wald (Corrected) &lt;font color=&#34;#ff0000&#34;&gt;#2&lt;/font&gt;&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Exact&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Exact (FM Score)&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Newcombe Score &lt;font color=&#34;#ff0000&#34;&gt;#10&lt;/font&gt;&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Newcombe Score (Corrected) &lt;font color=&#34;#ff0000&#34;&gt;#11&lt;/font&gt;&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Farrington-Manning&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Hauck-Anderson&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Note that #1 method is the most popular one in textbook, #10 might&amp;#160; be the most wildly used method in industry.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2. There is a big discrepancy in the outputs in the&amp;#160; so called “&lt;strong&gt;exact&lt;/strong&gt;” method among&amp;#160; SAS Proc Freq and Prof. Newcombe ’s paper. Seems they used different methods (in the same “exact” families) under same name. Needs further investigation.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The SAS codes:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;2*2 table &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; response0 response1 &lt;br /&gt;group1&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 56&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 14 &lt;br /&gt;group2&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 48&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 32 &lt;br /&gt;*/&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data ci; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input grp res count; &lt;br /&gt;datalines; &lt;br /&gt;1 0 56 &lt;br /&gt;1 1 14 &lt;br /&gt;2 0 48 &lt;br /&gt;2 1 32 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;methods: &lt;br /&gt;Exact &lt;br /&gt;Farrington-Manning &lt;br /&gt;Hauck-Anderson &lt;br /&gt;Newcombe Score &lt;br /&gt;Wald &lt;br /&gt;*/ &lt;br /&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci1; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CL=(EXACT FM HA WILSON WALD)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; exact riskdiff; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;methods: &lt;br /&gt;Exact (FM Score) &lt;br /&gt;*/ &lt;br /&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci2; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CL=(EXACT)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; exact riskdiff(fmscore); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;methods: &lt;br /&gt;Newcombe Score (Corrected) &lt;br /&gt;Wald (Corrected) &lt;br /&gt;*/ &lt;br /&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci3; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CORRECT CL=(WILSON WALD)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; exact riskdiff; &lt;br /&gt;run; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;put them all&lt;/em&gt;/ &lt;br /&gt;data CI_all; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set ci3 ci2 ci1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; CI=&amp;lsquo;(&amp;#8216;||compress(put(LowerCL,8.4))||&amp;#8217;, &amp;#8216;||compress(put(UpperCL,8.4))||&amp;#8217;)&amp;#8217;; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc sql; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; select &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; case Type &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Wald&amp;rdquo; then &amp;ldquo;a&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Wald (Corrected)&amp;rdquo; then &amp;ldquo;b&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Exact&amp;rdquo; then &amp;ldquo;c&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Exact (FM Score)&amp;rdquo; then &amp;ldquo;d&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Newcombe Score&amp;rdquo; then &amp;ldquo;e&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Newcombe Score (Corrected)&amp;rdquo; then &amp;ldquo;f&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Farrington-Manning&amp;rdquo; then &amp;ldquo;g&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Hauck-Anderson&amp;rdquo; then &amp;ldquo;h&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; else &amp;ldquo;i&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; end as order, &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Type &amp;ldquo;method&amp;rdquo;, &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; CI &amp;ldquo;95% Confidence Limits&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; from CI_all &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; order by order &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You may be also interested in this post on calculating confidence intervals for single proportion: &lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/15/confidence-intervals-binomial-proportion/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Statistical Notes (3): Confidence Intervals for Binomial Proportion Using SAS&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;using the following 11 methods:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;1.&amp;#160; Simple asymptotic, Without CC | Wald&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;2.&amp;#160; Simple asymptotic, With CC&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;3.&amp;#160; Score method, Without CC | Wilson&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;4.&amp;#160; Score method, With CC&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;5. Binomial-based, &amp;#8216;Exact&amp;#8217; | Clopper-Pearson&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;6.&amp;#160; Binomial-based, Mid-p&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;7.&amp;#160; Likelihood-based&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;8.&amp;#160; Jeffreys&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;9.&amp;#160; Agresti-Coull,z^&lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; successes&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;10. Agresti-Coull,2 successes and 2 fail&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;11. Logit&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Where is SAS Output Anyway?</title>
+      <link>/2012/09/22/where-is-sas-output-anyway/</link>
+      <pubDate>Sat, 22 Sep 2012 22:10:12 +0000</pubDate>
+      
+      <guid>/2012/09/22/where-is-sas-output-anyway/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It is said in &lt;em&gt;&lt;a href=&#34;http://cran.cnr.berkeley.edu/doc/manuals/R-intro.html#R-and-statistics&#34; target=&#34;_blank&#34;&gt;An Introduction to R&lt;/a&gt;&lt;/em&gt;, one of R official documents (Current Version: 2.15.1):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;There is an important difference in philosophy between S (and hence R) and the other main statistical systems. In S a statistical analysis is normally done as a series of steps, with intermediate results being stored in objects. &lt;strong&gt;Thus whereas SAS and SPSS will give copious output from a regression or discriminant analysis&lt;/strong&gt;, R will give minimal output and store the results in a fit object for subsequent interrogation by further R functions.&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For SAS, it’s true, but not exactly the whole story. Actually all outputs generated by SAS procedures are stored in datasets besides the “copious output” in Output Window for further processing if needed. It is totally controllable like object in R. Take &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_reg_examples02.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;a regression example&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, You can use &lt;em&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34;&gt;ODS Select&lt;/font&gt;&lt;/strong&gt;&lt;/em&gt; statement to select what you want to be displayed in Output Window, and &lt;em&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34;&gt;ODS Output&lt;/font&gt;&lt;/strong&gt;&lt;/em&gt; statement to fetch the output datasets(&lt;em&gt;test on SAS 9.3M1 in Windows 7&lt;/em&gt;):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods select&lt;/font&gt; Anova ResidualPlot; &lt;br /&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods output&lt;/font&gt; Anova=Anova;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc reg data=fitness; &lt;br /&gt;&amp;#160;&amp;#160; model Oxygen=Age Weight RunTime RunPulse RestPulse MaxPulse / selection=forward;&amp;#160; &lt;br /&gt;run; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;or, you can use &lt;em&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34;&gt;ODS Exclude&lt;/font&gt;&lt;/strong&gt;&lt;/em&gt; statement to just drop some outputs in Output Window:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods exclude&lt;/font&gt; ResidualPlot;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc reg data=fitness; &lt;br /&gt;&amp;#160;&amp;#160; model Oxygen=Age Weight RunTime RunPulse RestPulse MaxPulse / selection=forward;&amp;#160; &lt;br /&gt;run; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;To get a list all the ODS outputs like Anova, ResidualPlot, you can trigger on &lt;strong&gt;&lt;em&gt;&lt;font color=&#34;#ff0000&#34;&gt;&lt;font color=&#34;#ffffff&#34;&gt;ODS Trace ON&lt;/font&gt; &lt;/font&gt;&lt;/em&gt;&lt;/strong&gt;statement:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods trace on&lt;/font&gt;;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc reg data=fitness; &lt;br /&gt;&amp;#160;&amp;#160; model Oxygen=Age Weight RunTime RunPulse RestPulse MaxPulse &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; / selection=forward;&amp;#160; &lt;br /&gt;run; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods trace off&lt;/font&gt;;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;then you get a full list in Log Window like:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;- &lt;br /&gt;Name:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;NObs&lt;/font&gt; &lt;br /&gt;Label:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Number of Observations &lt;br /&gt;Template:&amp;#160;&amp;#160; Stat.Reg.NObs &lt;br /&gt;Path:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Reg.MODEL1.SelectionMethod.Oxygen.NObs &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;Output Added: &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;- &lt;br /&gt;Name:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;ANOVA&lt;/font&gt; &lt;br /&gt;Label:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ANOVA &lt;br /&gt;Template:&amp;#160;&amp;#160; Stat.REG.ANOVA &lt;br /&gt;Path:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Reg.MODEL1.SelectionMethod.Oxygen.Step1.ANOVA &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;Output Added: &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;- &lt;br /&gt;Name:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;SelParmEst&lt;/font&gt; &lt;br /&gt;Label:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Parameter Estimates &lt;br /&gt;Template:&amp;#160;&amp;#160; Stat.REG.SelParmEst &lt;br /&gt;Path:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Reg.MODEL1.SelectionMethod.Oxygen.Step1.SelParmEst &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New Book on Confidence Intervals for Proportions by Prof. Newcombe</title>
+      <link>/2012/09/21/new-book-on-confidence-intervals-for-proportions-by-prof.-newcombe/</link>
+      <pubDate>Fri, 21 Sep 2012 21:18:45 +0000</pubDate>
+      
+      <guid>/2012/09/21/new-book-on-confidence-intervals-for-proportions-by-prof.-newcombe/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Check it out: a new book on confidence intervals for proportions by Prof. Robert G. Newcombe&amp;#160; just recently available from CRC Press:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/CI.jpg&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;CI&#34; border=&#34;0&#34; alt=&#34;CI&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/CI_thumb.jpg&#34; width=&#34;321&#34; height=&#34;517&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.crcpress.com/product/isbn/9781439812785&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Confidence Intervals for Proportions and Related Measures of Effect Size&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This book also supplies a set of Excel spreadsheets to calculating CIs, &lt;em&gt;see&lt;/em&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.crcpress.com/product/isbn/9781439812785&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.crcpress.com/product/isbn/9781439812785&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Other users may be interested on a &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/15/confidence-intervals-binomial-proportion/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;or &lt;/font&gt;&lt;a href=&#34;http://www2.jura.uni-hamburg.de/instkrim/kriminologie/Mitarbeiter/Enzmann/Software/prop.CI.r&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;R&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;implementation.&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Statistical Notes (3): Confidence Intervals for Binomial Proportion Using SAS</title>
+      <link>/2012/09/15/statistical-notes-3-confidence-intervals-for-binomial-proportion-using-sas/</link>
+      <pubDate>Sat, 15 Sep 2012 00:13:03 +0000</pubDate>
+      
+      <guid>/2012/09/15/statistical-notes-3-confidence-intervals-for-binomial-proportion-using-sas/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;A guy notices a bunch of targets scattered over a barn wall, and in the center of each, in the &amp;#8220;bulls-eye,&amp;#8221; is a bullet hole. &amp;#8220;Wow,&amp;#8221; he says to the farmer, &amp;#8220;that&amp;#8217;s pretty good shooting. How&amp;#8217;d you do it?&amp;#8221; &amp;#8220;Oh,&amp;#8221; says the farmer, &amp;#8220;it was easy. I painted the targets after I shot the holes.&amp;#8221; – An Old Joke&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Last year I dumped piece of &lt;/span&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/07/14/a-sas-implementation-of-confidence-intervals-for-single-proportion-eleven-methods/&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;SAS codes to compute confidence intervals&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;for single proportion using 11 methods including 7 presented by one of Prof. Newcombe‘s  most wildly cited papers, &lt;strong&gt;&lt;em&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/9595616?dopt=Abstract&#34; target=&#34;_blank&#34;&gt;Two-sided confidence intervals for the single proportion: comparison of seven methods&lt;/a&gt;&lt;/em&gt; &lt;/strong&gt;(r is the number of event in total cases of n):&lt;/span&gt;&lt;/p&gt;
+
+&lt;p style=&#34;text-align: center;&#34;&gt;
+  &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/newcombe1.png&#34; target=&#34;_blank&#34;&gt;&lt;img class=&#34;size-medium wp-image-1220 aligncenter&#34; style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border: 0px;&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/newcombe1-240x300.png&#34; alt=&#34;newcombe&#34; width=&#34;240&#34; height=&#34;300&#34; border=&#34;0&#34; srcset=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/newcombe1-240x300.png 240w, http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/newcombe1.png 300w&#34; sizes=&#34;(max-width: 240px) 100vw, 240px&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;To get such results using my macro, just submit the following SAS codes:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;filename CI url &amp;#8216;&lt;/span&gt;&lt;a href=&#34;https://raw.github.com/Jiangtang/Programming-SAS/master/CI_Single_Proportion.sas&#34;&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;https://raw.github.com/Jiangtang/Programming-SAS/master/CI_Single_Proportion.sas&amp;#8217;;&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;%include CI;&lt;br /&gt; %CI_Single_Proportion(&lt;span style=&#34;color: #ff0000;&#34;&gt;r=81,n=263&lt;/span&gt;);&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;And the outputs(plus 4 additional methods):&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Jiangtang.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;Jiangtang&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Jiangtang_thumb.png&#34; alt=&#34;Jiangtang&#34; width=&#34;490&#34; height=&#34;303&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;In SAS 9.2 and 9.3, 6 of the 11 intervals can be calculated by &lt;/span&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_freq_syntax08.htm&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;PROC FREQ&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;. First, method 1, 3, 9 ,8, 5 via a &lt;em&gt;binomial&lt;/em&gt; option: &lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data test;&lt;br /&gt; input grp outcome $ count;&lt;br /&gt; datalines;&lt;br /&gt; 1 f 81&lt;br /&gt; 1 u 182&lt;br /&gt; ;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;ods select BinomialCLs;&lt;br /&gt; proc freq data=test;&lt;br /&gt; tables outcome / binomial(all);&lt;br /&gt; weight Count;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;The outputs:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/SASFreqCI.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;SASFreqCI&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/SASFreqCI_thumb.png&#34; alt=&#34;SASFreqCI&#34; width=&#34;461&#34; height=&#34;223&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;And you can get another Wald interval with a continuity correction (method 2) via &lt;em&gt;binomialC&lt;/em&gt; option:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;ods select BinomialCLs;&lt;br /&gt; proc freq data=test;&lt;br /&gt; tables outcome / &lt;span style=&#34;color: #ff0000;&#34;&gt;binomialc&lt;/span&gt;(all);&lt;br /&gt; weight Count;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;get:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/SASFreqCI_CC.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;SASFreqCI_CC&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/SASFreqCI_CC_thumb.png&#34; alt=&#34;SASFreqCI_CC&#34; width=&#34;417&#34; height=&#34;240&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;span-style-font-weight-bold-r-notes-span&#34;&gt;&lt;span style=&#34;font-weight: bold;&#34;&gt;R Notes&lt;/span&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;These two R packages contain a bunch of CI calculations:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://cran.r-project.org/web/packages/binom/&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Binom&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://cran.r-project.org/web/packages/PropCIs/&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;PropCIS&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;For SAS macro %CI_Single_Proportion, I borrowed a lot from this R implementation:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www2.jura.uni-hamburg.de/instkrim/kriminologie/Mitarbeiter/Enzmann/Software/prop.CI.r&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;http://www2.jura.uni-hamburg.de/instkrim/kriminologie/Mitarbeiter/Enzmann/Software/prop.CI.r&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;span-style-font-weight-bold-additional-notes-span&#34;&gt;&lt;span style=&#34;font-weight: bold;&#34;&gt;Additional Notes&lt;/span&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;If interested, a nice paper on binomial intervals with ties, the paper &lt;em&gt;&lt;a href=&#34;http://stats-www.open.ac.uk/TechnicalReports/BinTies1.pdf&#34; target=&#34;_blank&#34;&gt;Confidence intervals for a binomial proportionin the presence of ties&lt;/a&gt;&lt;/em&gt;,  and&lt;em&gt; &lt;a href=&#34;http://homepages.abdn.ac.uk/j.crawford/pages/dept/Binomial_Ties_CIs.htm&#34; target=&#34;_blank&#34;&gt;the program&lt;/a&gt;&lt;/em&gt;. &lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A SAS Implementation of Confidence Intervals for Single Proportion: Eleven Methods</title>
+      <link>/2011/07/14/a-sas-implementation-of-confidence-intervals-for-single-proportion-eleven-methods/</link>
+      <pubDate>Thu, 14 Jul 2011 22:05:44 +0000</pubDate>
+      
+      <guid>/2011/07/14/a-sas-implementation-of-confidence-intervals-for-single-proportion-eleven-methods/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The following two papers by Professor &lt;/font&gt;&lt;a href=&#34;http://medicine.cf.ac.uk/en/person/prof-robert-gordon-newcombe/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Robert Newcombe&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, in my limit observation, are the most frequently cited papers in the industry for CI calculation:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;cite&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=9595616&amp;query_hl=1&#34;&gt;&lt;strong&gt;&lt;font size=&#34;1&#34;&gt;Two-sided confidence intervals for the single proportion: comparison of seven methods.&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt; &lt;/font&gt;&lt;/cite&gt;&lt;br /&gt;
+&lt;font size=&#34;1&#34;&gt;Newcombe RG, &lt;cite&gt;Stat Med&lt;/cite&gt; , Volume 17 , 8 (April 1998) pp.857-&lt;strong&gt;872&lt;/strong&gt;&lt;strong&gt;&lt;/strong&gt; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;cite&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=9595617&amp;query_hl=1&#34;&gt;&lt;strong&gt;&lt;font size=&#34;1&#34;&gt;Interval estimation for the difference between independent proportions: comparison of eleven methods.&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt; &lt;/font&gt;&lt;/cite&gt;&lt;br /&gt;
+&lt;font size=&#34;1&#34;&gt;Newcombe RG, &lt;cite&gt;Stat Med&lt;/cite&gt; , Volume 17 , 8 (April 1998) pp.&lt;strong&gt;873&lt;/strong&gt;-890 &lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;This post serves as an implementation using SAS accompany with the first paper on confidence intervals for single proportion(method 1-7). Additional 4 methods also provided:&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1.&amp;#160; Simple asymptotic, Without CC&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;2.&amp;#160; Simple asymptotic, With CC&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;3.&amp;#160; Score method, Without CC&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;4.&amp;#160; Score method, With CC&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;5.&amp;#160; Binomial-based, &amp;#8216;Exact&amp;#8217;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;6.&amp;#160; Binomial-based, Mid-p&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;7.&amp;#160; Likelihood-based&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;8.&amp;#160; Jeffreys&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;9.&amp;#160; Agresti-Coull,z^&lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; successes&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;10. Agresti-Coull,2 successes and 2 fail&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;11. Logit &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;The codes are available at&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;a href=&#34;http://jiangtanghu.com/docs/en/CI_Single_Proportion.sas&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://jiangtanghu.com/docs/en/CI_Single_Proportion.sas&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;/font&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;It is a purely SAS/Base(data step and SQL) approach. I prefer data steps because it can be seamlessly incorporate into production work which looks like:&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;r is the observed number of events/responders in n observations;&lt;/em&gt;/ &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%macro _Wald(r,n,alpha=0.05); &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; p=&amp;amp;r/&amp;n; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; z = probit (1-&amp;amp;alpha/2); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; sd=sqrt(&amp;amp;n&lt;em&gt;p&lt;/em&gt;(1-p)); *Standard Deviation ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; se=sd/&amp;n;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; *standard error; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; me=z*se;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; *margin of error; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; p_CI_low = p-me; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; p_CI_up&amp;#160; = p+me; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; p_CI=compress(catx(&amp;ldquo;&amp;rdquo;,&amp;rdquo;[&amp;ldquo;,put(round(p_CI_low,0.0001),6.4),&amp;ldquo;,&amp;rdquo;,put(round(p_CI_up,0.0001),6.4),&amp;ldquo;]&amp;rdquo;)); &lt;br /&gt;%mend _Wald; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data test; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; input r n; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;%_Wald(r,n);&lt;/font&gt; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; keep r n p p_CI; &lt;br /&gt;datalines; &lt;br /&gt;81 263 &lt;br /&gt;15 148 &lt;br /&gt;0 20 &lt;br /&gt;1 29 &lt;br /&gt;29 29 &lt;br /&gt;;&amp;#160;&amp;#160; &lt;br /&gt;run; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc print data=test;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;But when simulation required (in methods 6-7), some SQL clauses pop up. Admit that It makes the codes less elegant. In this situation, matrix operation language such as SAS/IML or R will do a better job.&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;Note that in SAS 9.2, PROC FREQ can produce the following five intervals(method 1, 3, 9 ,8, 5):&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Wald (also with method 2)&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;Wilson&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;Agresti-Coull&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;Jeffreys&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;Clopper-Pearson (Exact)&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;For the five intervals in SAS 9.2, a good reference is &lt;em&gt;Confidence Intervals for the Binomial Proportion with Zero Frequency&lt;/em&gt; by Xiaomin He and Shwu-Jen Wu:&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;a href=&#34;www.pharmasug.org/download/papers/SP10.pdf&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;www.pharmasug.org/download/papers/SP10.pdf&lt;/font&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;Also, an equivalent R version of the eleven methods by Abteilung Kriminologie is also available at&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;a href=&#34;http://www2.jura.uni-hamburg.de/instkrim/kriminologie/Mitarbeiter/Enzmann/Software/prop.CI.r&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www2.jura.uni-hamburg.de/instkrim/kriminologie/Mitarbeiter/Enzmann/Software/prop.CI.r&lt;/font&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Such R repository is also a good resource for SAS users. I almost “translate” R implementations directly to SAS for this post.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Too Big to Be Accurate(1): Which is the Most Powerful Calculator in the World?</title>
+      <link>/2011/01/22/too-big-to-be-accurate1-which-is-the-most-powerful-calculator-in-the-world/</link>
+      <pubDate>Sat, 22 Jan 2011 17:05:17 +0000</pubDate>
+      
+      <guid>/2011/01/22/too-big-to-be-accurate1-which-is-the-most-powerful-calculator-in-the-world/</guid>
+      <description>&lt;p&gt;Calculate the factorial of 171 (171!)? Just TRY! It is equal to 171*170*169*….2*1.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-google-calculator&#34;&gt;1. Google calculator&lt;/h3&gt;
+
+&lt;p&gt;As Google fanatics, I first try to search the answer via Google:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Google171.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;Google171&#34; border=&#34;0&#34; alt=&#34;Google171&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Google171_thumb.png&#34; width=&#34;336&#34; height=&#34;116&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Whoops, nothing interested returned! Type “170!” and get the output:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Google170.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;Google170&#34; border=&#34;0&#34; alt=&#34;Google170&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Google170_thumb.png&#34; width=&#34;244&#34; height=&#34;110&#34; /&gt;&lt;/a&gt; Why kinda things happened in this calculator? 171! is just equal to 171*170!.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-excel&#34;&gt;2. Excel&lt;/h3&gt;
+
+&lt;p&gt;Switch to Excel spreadsheet. Function fact(*) used:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Excel170.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;Excel170&#34; border=&#34;0&#34; alt=&#34;Excel170&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Excel170_thumb.png&#34; width=&#34;228&#34; height=&#34;66&#34; /&gt;&lt;/a&gt; &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Excel171.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;Excel171&#34; border=&#34;0&#34; alt=&#34;Excel171&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Excel171_thumb.png&#34; width=&#34;244&#34; height=&#34;64&#34; /&gt;&lt;/a&gt; Oo, interesting. The same.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-sas&#34;&gt;3. SAS&lt;/h3&gt;
+
+&lt;p&gt;Google and Excel may be the niche players in calculators’ family. Why not try to use some programming languages?&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;As a SAS programmer, my handy tool is SAS of course.&lt;/p&gt;
+
+&lt;p&gt;First, I use &lt;strong&gt;SAS data step&lt;/strong&gt; with its build-in function fact(*):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; x=fact(170); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; y=fact(171); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; put x= y=; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and I get&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: Invalid argument to function FACT at line 49 column 7.&lt;br /&gt;
+&lt;font color=&#34;#ff0000&#34;&gt;x=7.257416E306 y=.&lt;/font&gt;&lt;br /&gt;
+&lt;font color=&#34;#ff0000&#34;&gt;x=7.257416E306 y=. &lt;em&gt;ERROR&lt;/em&gt;=1 &lt;em&gt;N&lt;/em&gt;=1&lt;/font&gt;&lt;br /&gt;
+NOTE: Mathematical operations could not be performed at the following places. The results of the operations have been set to missing values.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Expected or unexpected? I don’t know how this fact(*) function is defined, and&amp;#160; try to define a function to calculate the factorials by myself. In SAS 9.2, you can use &lt;strong&gt;PROC FCMP&lt;/strong&gt;(also available at 9.1.3 as a experimental procedure):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc fcmp outlib = work.funcs.math ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; function factorial(k) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; if k = 0 then return(1) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; z = k ; *preserve k ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; x = factorial(k-1) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; k = z ; *recover k ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; k = k * x ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; return(k) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; endsub ; &lt;br /&gt;quit ; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;options cmplib=work.funcs ; &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Use this self-defined function to get 170!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc fcmp ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; x = factorial (170) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; put x = ; &lt;br /&gt;run ; &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The FCMP procedure returns&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;x=7.257416E306&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Try to calculate 171! ?&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc fcmp ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; y = factorial (171) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; put y = ; &lt;br /&gt;run ;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Just get the overflow error. The interaction stops at 170!:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;ERROR: An overflow occurred during execution in function &amp;#8216;factorial&amp;#8217; in statement number 7 at&amp;#160;&amp;#160; line 10 column 1.&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; The statement was:&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; 1&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; (10:1)&amp;#160;&amp;#160;&amp;#160; k = (k=171) * (&lt;font color=&#34;#ff0000&#34;&gt;x=7.257416E306&lt;/font&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The above function definitions use recursion. Recursion may have some limitation on efficiency. We could try the loop without recursion. &lt;strong&gt;SAS/IML&lt;/strong&gt; doesn’t support recursion. Let SAS/IML to the court:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc iml; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; start factorial (n); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; fact=1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; do i=1 to n; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; fact=fact*i; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; end; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; return (fact); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; finish factorial;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; x= factorial (170); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; print x;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; y= factorial (171); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; print y; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Again, I get 170!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; x&lt;br /&gt;
+7.257E306&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and a overflow error for 171!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; y= factorial (171);&lt;br /&gt;
+ERROR: Overflow error in *.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Turing, Von Neumann and Tony, what happened?&lt;/p&gt;
+
+&lt;h3 id=&#34;4-r&#34;&gt;4. R&lt;/h3&gt;
+
+&lt;p&gt;When SAS failed, lots of voices pop up: use R! OK, Rction!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;&amp;gt; x=factorial(170);x&lt;/font&gt;&lt;br /&gt;
+[1] 7.257416e+306&lt;br /&gt;
+&lt;font color=&#34;#ff0000&#34;&gt;&amp;gt; y=factorial(171);y&lt;/font&gt;&lt;br /&gt;
+Warning message:&lt;br /&gt;
+In factorial(171) : value out of range in &amp;#8216;gammafn&amp;#8217;&lt;br /&gt;
+[1] Inf&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;5-c&#34;&gt;5. C++&lt;/h3&gt;
+
+&lt;p&gt;I don’t want to lose my patience. Think C++(use both recursive and non-recursive methods):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;#include &lt;iostream&gt; &lt;br /&gt;using namespace std; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;double factRecursive(double num); &lt;br /&gt;double factNonRecursive(double num); &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;int main() &lt;br /&gt;{ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&lt;endl;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&amp;lt;&amp;ldquo;Recursive: the factorial of 170 is &amp;ldquo;&amp;lt;&lt;factRecursive(170)&lt;&lt;endl; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&amp;lt;&amp;ldquo;Recursive: the factorial of 171 is &amp;ldquo;&amp;lt;&lt;factRecursive(171)&lt;&lt;endl; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&lt;endl;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&amp;lt;&amp;ldquo;NonRecursive: the factorial of 170 is &amp;ldquo;&amp;lt;&lt;factNonRecursive(170)&lt;&lt;endl; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&amp;lt;&amp;ldquo;NonRecursive: the factorial of 171 is &amp;ldquo;&amp;lt;&lt;factNonRecursive(171)&lt;&lt;endl; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&lt;endl;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;return 0; &lt;br /&gt;} &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;double factRecursive (double num) &lt;br /&gt;{ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; if (num==0) &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; return 1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; else &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; return num*factRecursive(num-1); &lt;br /&gt;} &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;double factNonRecursive (double num) &lt;br /&gt;{ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; double fact=1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; for (double i=2;i&amp;lt;=num;i++) fact *=i; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; return fact; &lt;br /&gt;}&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Unfortunately, same story once more:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Cpp.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;Cpp&#34; border=&#34;0&#34; alt=&#34;Cpp&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Cpp_thumb.png&#34; width=&#34;449&#34; height=&#34;121&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Well. The story&amp;#8217;s played out like this. It may be not the limitable of the language but the machine. I check which is the largest numbers my computer supports:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;#include &lt;iostream&gt; &lt;br /&gt;#include &lt;cfloat&gt; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;using namespace std; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;int main() &lt;br /&gt;{ &lt;br /&gt;&amp;#160; cout&amp;lt;&amp;lt;&amp;ldquo;maxinum double value of machine: &amp;ldquo;&amp;lt;&lt;DBL_MAX&lt;&lt;endl; &lt;br /&gt;&amp;#160; return 0; &lt;/font&gt;&lt;font face=&#34;Courier New&#34;&gt;}&lt;/font&gt;&lt;/p&gt;
+
+&lt;pre&gt;maxinum double value of machine: &lt;font color=&#34;#ff0000&#34;&gt;1.79769e+308&lt;/font&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now everything’s in the open. The factorial of 170 is about 7.257416e+306. 171! is too big to be supported by my PC.&lt;/p&gt;
+
+&lt;p&gt;(Note: I put these codes in &lt;a href=&#34;http://codepad.org&#34;&gt;http://codepad.org&lt;/a&gt;, a online complier. if you don’t have any C++ complier in your machine, you can see the codes and outputs in:&lt;a href=&#34;http://codepad.org/xnneavsw&#34;&gt;http://codepad.org/xnneavsw&lt;/a&gt;&amp;#160; and &lt;a href=&#34;http://codepad.org/3FeEC9t2&#34;&gt;http://codepad.org/3FeEC9t2&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h3 id=&#34;6-a-href-http-www-wolframalpha-com-target-blank-wolframalpha-a&#34;&gt;6. &lt;a href=&#34;http://www.wolframalpha.com/&#34; target=&#34;_blank&#34;&gt;WolframAlpha&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Struggled for hours, I turn to &lt;a href=&#34;http://www.wolframalpha.com&#34; target=&#34;_blank&#34;&gt;WolframAlpha&lt;/a&gt; computing platform. It returns &lt;a href=&#34;http://www.wolframalpha.com/input/?i=171!&#34; target=&#34;_blank&#34;&gt;the factorial of 171&lt;/a&gt; AT LAST:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/WA171.gif&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;WA171&#34; border=&#34;0&#34; alt=&#34;WA171&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/WA171_thumb.gif&#34; width=&#34;454&#34; height=&#34;128&#34; /&gt;&lt;/a&gt;&amp;#160;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/WA171_s.gif&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;WA171_s&#34; border=&#34;0&#34; alt=&#34;WA171_s&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/WA171_s_thumb.gif&#34; width=&#34;477&#34; height=&#34;52&#34; /&gt;&lt;/a&gt;&amp;#160; AT LAST we know the factorial of 171 has 310 digits.&lt;/p&gt;
+
+&lt;h3 id=&#34;7-windows-calculator&#34;&gt;7. Windows Calculator&lt;/h3&gt;
+
+&lt;p&gt;I try to use Windows build-in calculator. Amazing, it is powerful:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/winCalc.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;winCalc&#34; border=&#34;0&#34; alt=&#34;winCalc&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/winCalc_thumb.png&#34; width=&#34;323&#34; height=&#34;250&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;8-python&#34;&gt;8. Python&lt;/h3&gt;
+
+&lt;p&gt;Return to programming language.&amp;#160; First, I defined a function(recursive version) in Python and then use its MATH library:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def factorial(n):&lt;br /&gt; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; if n==0: &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;
+  &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; return 1
+&lt;/p&gt;
+
+&lt;p&gt;
+  &amp;#160;&amp;#160;&amp;#160; else:
+&lt;/p&gt;
+
+&lt;p&gt;
+  &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; return n*factorial(n-1) &lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;font face=&#34;Courier New&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;&gt;&gt;&gt; factorial(170)&lt;/font&gt; &lt;/p&gt; 
+  
+
+&lt;p&gt;&lt;p&gt;
+    7257415615307998967396728211129263114716991681296451376
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    5435777989005618434017061578523507492426174595114909912
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    3783852077666602256544275302532890077320751090240043028
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    0058295603966612599658257104398558294257568966313439612
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    2625710949468067112055688804571933402126614528000000000
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    00000000000000000000000000000000L
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    &lt;font color=&#34;#ff0000&#34;&gt;&amp;gt;&amp;gt;&amp;gt; factorial(171)&lt;/font&gt;
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    1241018070217667823424840524103103992616605577501693185
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    3889518036119960752216917529927519781204875855764649595
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    0167038705280988985869071076733124203221848436431047357
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    7889968548278290754541561964852153468318044293239598173
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    6968996572359039476161522785581800611763651084288000000
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    00000000000000000000000000000000000L&lt;/font&gt;
+  &lt;/p&gt;&lt;/blockquote&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote&gt;
+    &lt;p&gt;
+      &amp;gt;&amp;gt;&amp;gt; import math&lt;br /&gt; &lt;br /&gt;&lt;font color=&#34;#ff0000&#34;&gt;&amp;gt;&amp;gt;&amp;gt; math.factorial(171)&lt;/font&gt;
+    &lt;/p&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;
+  1241018070217667823424840524103103992616605577501693185
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  3889518036119960752216917529927519781204875855764649595
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  0167038705280988985869071076733124203221848436431047357
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  7889968548278290754541561964852153468318044293239598173
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  6968996572359039476161522785581800611763651084288000000
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  00000000000000000000000000000000000L
+&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/blockquote&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    Amazing, Python beats up C++!
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    &lt;em&gt;(to be continued :&lt;/em&gt;
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    &lt;em&gt;Too Big to Be Accurate(2): &lt;font color=&#34;#ff0000&#34;&gt;Approximation&lt;/font&gt; &lt;/em&gt;
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    &lt;em&gt;)&lt;/em&gt;
+  &lt;/p&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Feature Selection: Collections for Self Study</title>
+      <link>/2011/01/15/feature-selection-collections-for-self-study/</link>
+      <pubDate>Sat, 15 Jan 2011 10:58:44 +0000</pubDate>
+      
+      <guid>/2011/01/15/feature-selection-collections-for-self-study/</guid>
+      <description>&lt;p&gt;Recently I start to learn the algorithms and applications of &lt;a href=&#34;http://en.wikipedia.org/wiki/Feature_selection&#34; target=&#34;_blank&#34;&gt;feature selection&lt;/a&gt;. The term  “Feature”, wildly used in machine learning and data mining literatures,  simply means “Variable”. In some practices, for example, a neural network model uses a decision tree as input; the tree performs the function of variables selection.&lt;/p&gt;
+
+&lt;p&gt;The Arizona State University is maintaining a repository of feature selection, including original documentations, Matlab packages and user guide for the following popular algorithms so far:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;BLogReg&lt;/p&gt;
+
+&lt;p&gt;CFS&lt;/p&gt;
+
+&lt;p&gt;Chi Square&lt;/p&gt;
+
+&lt;p&gt;FCBF&lt;/p&gt;
+
+&lt;p&gt;Fisher Score&lt;/p&gt;
+
+&lt;p&gt;Gini Index&lt;/p&gt;
+
+&lt;p&gt;Information Gain&lt;/p&gt;
+
+&lt;p&gt;Kruskal-Wallis&lt;/p&gt;
+
+&lt;p&gt;mRMR&lt;/p&gt;
+
+&lt;p&gt;Relief-F&lt;/p&gt;
+
+&lt;p&gt;SBMLR&lt;/p&gt;
+
+&lt;p&gt;T-test&lt;/p&gt;
+
+&lt;p&gt;SPEC&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;see&lt;/span&gt;&lt;/em&gt; &lt;a href=&#34;http://featureselection.asu.edu/software.php&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://featureselection.asu.edu/software.php&#34;&gt;http://featureselection.asu.edu/software.php&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A R package, &lt;a href=&#34;http://cran.r-project.org/web/packages/FSelector/index.html&#34; target=&#34;_blank&#34;&gt;FSelector&lt;/a&gt;, is also useful for step-by-step studying. This package covers:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;**Filters:&lt;/p&gt;
+
+&lt;p&gt;** *cfs&lt;/p&gt;
+
+&lt;p&gt;*chi-squared&lt;/p&gt;
+
+&lt;p&gt;*consistency&lt;/p&gt;
+
+&lt;p&gt;*correlation&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211;linear.correlation&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211;rank.correlation&lt;/p&gt;
+
+&lt;p&gt;*entropy.based&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211;information.gain&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211;gain.ratio&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211;symmetrical.uncertainty&lt;/p&gt;
+
+&lt;p&gt;*OneR&lt;/p&gt;
+
+&lt;p&gt;*random.forest.importance&lt;/p&gt;
+
+&lt;p&gt;*relif-F&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Wrappers:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;*best.first.search&lt;/p&gt;
+
+&lt;p&gt;*exhaustive.search&lt;/p&gt;
+
+&lt;p&gt;*greedy.search&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211;backward.search&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211;forward.search&lt;/p&gt;
+
+&lt;p&gt;*hill.climbing.search&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R or SAS: Quick Links to the Recent Debates</title>
+      <link>/2009/01/13/r-or-sas-quick-links-to-the-recent-debates/</link>
+      <pubDate>Tue, 13 Jan 2009 10:37:00 +0000</pubDate>
+      
+      <guid>/2009/01/13/r-or-sas-quick-links-to-the-recent-debates/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-family: Arial;&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;strong&gt;&lt;br /&gt; Original post, 7 Jan, 2009&lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;strong&gt; &lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  New York Times, &lt;a href=&#34;http://www.nytimes.com/2009/01/07/technology/business-computing/07program.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Data Analysts Captivated by R&amp;#8217;s Power&lt;/span&gt;&lt;/em&gt;&lt;/a&gt; by&lt;a href=&#34;http://topics.nytimes.com/top/reference/timestopics/people/v/ashlee_vance/index.html?inline=nyt-per&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Ashlee Vance&lt;/span&gt;&lt;/a&gt;.
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;strong&gt;&lt;br /&gt; Key Point&lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  The popularity of R at universities could threaten SAS Institute.
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;strong&gt;&lt;br /&gt; A Controversial Review by Anee Milley from SAS&lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;strong&gt; &lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  We have customers who build engines for aircraft. I am happy they are not using freeware when I get on a jet.
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;strong&gt;&lt;br /&gt; 7 Jan, 2009, &lt;/strong&gt;&lt;a href=&#34;http://www.listserv.uga.edu/cgi-bin/wa?A1=ind0901b&amp;L=sas-l#44&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;&lt;strong&gt;SAS-L&lt;/strong&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  Discussion in &lt;a href=&#34;http://www.listserv.uga.edu/cgi-bin/wa?A1=ind0901b&amp;L=sas-l#44&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;SAS-L&lt;/span&gt;&lt;/a&gt;, the most popular SAS mailing list. Most voices call for the incorporate both R and SAS.
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;strong&gt;&lt;br /&gt; 7 Jan, 2009, &lt;/strong&gt;&lt;a href=&#34;http://groups.google.com/group/r-help-archive/browse_thread/thread/5502fdc60d063833/352fc11a5b833f12&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;&lt;strong&gt;R-help&lt;/strong&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  Cheer for the victory of R.
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;strong&gt;&lt;br /&gt; 8 Jan, 2009, &lt;/strong&gt;&lt;a href=&#34;http://topics.nytimes.com/top/reference/timestopics/people/v/ashlee_vance/index.html?inline=nyt-per&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;&lt;strong&gt;Ashlee Vance&lt;/strong&gt;&lt;/span&gt;&lt;/a&gt;&lt;strong&gt;&amp;#8216;s blog&lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;a href=&#34;http://bits.blogs.nytimes.com/2009/01/08/r-you-ready-for-r/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;span style=&#34;color: #669966;&#34;&gt;R You Ready for R&lt;/span&gt;&lt;/em&gt;&lt;/a&gt;, with lots of comments
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;strong&gt;&lt;br /&gt; 9 Jan, 2009, &lt;/strong&gt;&lt;a href=&#34;http://groups.google.com/group/sasconsulting/topics&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;&lt;strong&gt;SAS Consulting&lt;/strong&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;strong&gt;&lt;br /&gt; 9 Jan, 2009, Anee Milley&lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;a href=&#34;http://blogs.sas.com/sascom/index.php?/archives/434-This-post-is-rated-R.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;span style=&#34;color: #669966;&#34;&gt;This Post Is Rated R&lt;/span&gt;&lt;/em&gt;&lt;/a&gt;, stating the viewpoints from SAS about open source software: support and participant.
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  For more, see &lt;a href=&#34;http://blogsearch.google.com/blogsearch?hl=en&amp;ie=UTF-8&amp;q=R+SAS&amp;btnG=Search+Blogs&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Google Blog Search&lt;/span&gt;&lt;/a&gt;.
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

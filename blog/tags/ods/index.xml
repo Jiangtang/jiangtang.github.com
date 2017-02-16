@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ods on Lithium Theme</title>
+    <link>/tags/ods/index.xml</link>
+    <description>Recent content in Ods on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/ods/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Order Matters: A Weird Behavior of SAS ODS Style Options</title>
+      <link>/2014/09/04/order-matters-a-weird-behavior-of-sas-ods-style-options/</link>
+      <pubDate>Thu, 04 Sep 2014 14:24:16 +0000</pubDate>
+      
+      <guid>/2014/09/04/order-matters-a-weird-behavior-of-sas-ods-style-options/</guid>
+      <description>&lt;p&gt;The codes to push a dataset to Excel (&lt;em&gt;technically XML&lt;/em&gt;):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;ods tagsets.excelxp file=&amp;ldquo;test.xls&amp;rdquo;; &lt;br /&gt;&amp;#160; &lt;br /&gt;*#1; &lt;br /&gt;ods tagsets.excelxp options( sheet_name=&amp;#8217;test 1&amp;#8242;); &lt;br /&gt;proc print data=sashelp.class noobs; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; var height / &lt;font color=&#34;#ff0000&#34;&gt;style={tagattr=&amp;#8217;format:text&amp;#8217;}&lt;/font&gt; style(column)={cellwidth=.5 in}; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;*#2;&amp;#160; &lt;br /&gt;ods tagsets.excelxp options( sheet_name=&amp;#8217;test 2&amp;#8242;); &lt;br /&gt;proc print data=sashelp.class noobs; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; var height / style(column)={cellwidth=.5 in} &lt;font color=&#34;#ff0000&#34;&gt;style={tagattr=&amp;#8217;format:text&amp;#8217;}&lt;/font&gt; ; &lt;br /&gt;run; &lt;br /&gt;&amp;#160; &lt;br /&gt;ods tagsets.excelxp close;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The output of #1:&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/09/SAS_ODS_options1.png&#34;&gt;&lt;img title=&#34;SAS_ODS_options1&#34; style=&#34;border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; border-left: 0px; display: block; padding-right: 0px&#34; border=&#34;0&#34; alt=&#34;SAS_ODS_options1&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/09/SAS_ODS_options1_thumb.png&#34; width=&#34;295&#34; height=&#34;575&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;#2:&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/09/SAS_ODS_options2.png&#34;&gt;&lt;img title=&#34;SAS_ODS_options2&#34; style=&#34;border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; border-left: 0px; display: block; padding-right: 0px&#34; border=&#34;0&#34; alt=&#34;SAS_ODS_options2&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/09/SAS_ODS_options2_thumb.png&#34; width=&#34;318&#34; height=&#34;567&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The difference among the two pieces of code, #1 and #2 is trivial, as far as observed: only the position of the ODS style options was swapped. The weird thing is that they produced different outputs with different column width and cell format.&lt;/p&gt;
+
+&lt;p&gt;The answer: I don’t know. I threw this question to SAS-L and SAS tech and we might come back to this question days later.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>3 Ways to Convert SAS Datasets to Plain Codes</title>
+      <link>/2013/11/04/3-ways-to-convert-sas-datasets-to-plain-codes/</link>
+      <pubDate>Mon, 04 Nov 2013 21:19:49 +0000</pubDate>
+      
+      <guid>/2013/11/04/3-ways-to-convert-sas-datasets-to-plain-codes/</guid>
+      <description>
+
+&lt;h5 id=&#34;1-if-you-have-sas-enterprise-guide-installed&#34;&gt;1. If you have SAS Enterprise Guide installed&lt;/h5&gt;
+
+&lt;p&gt;Try one of Chris Hemedinger’s EG plug-ins, “_&lt;a href=&#34;http://support.sas.com/documentation/onlinedoc/guide/customtasks/book/&#34;&gt;Data Set to DATA Step&lt;/a&gt;_”. Chris also wrote a post for it, &lt;em&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/2013/01/21/turn-your-data-set-into-a-data-step-program/&#34;&gt;Turn your data set into a DATA step program&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h5 id=&#34;2-if-you-need-to-embed-the-dataset-to-sql-clauses&#34;&gt;2. If you need to embed the dataset to SQL Clauses&lt;/h5&gt;
+
+&lt;p&gt;Use one of Eric Gebhart’s ODS tagsets, “&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/sql.html&#34;&gt;SQL Tagset&lt;/a&gt;”.&lt;/p&gt;
+
+&lt;h5 id=&#34;3-if-you-want-to-make-your-hands-dirty&#34;&gt;3. If you want to make your hands dirty…&lt;/h5&gt;
+
+&lt;p&gt;You can also take a bite of some SAS base codes by Rick Langston. Check out his 2011 paper, &lt;em&gt;&lt;a href=&#34;http://support.sas.com/resources/papers/proceedings11/064-2011.pdf&#34;&gt;Recreating SAS Data Sets via SAS Code Generation&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SAS ODS Tagsets Guru Eric Gebhart on Github</title>
+      <link>/2013/09/17/sas-ods-tagsets-guru-eric-gebhart-on-github/</link>
+      <pubDate>Tue, 17 Sep 2013 15:59:12 +0000</pubDate>
+      
+      <guid>/2013/09/17/sas-ods-tagsets-guru-eric-gebhart-on-github/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Check it out:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/EricGebhart&#34;&gt;&lt;font size=&#34;1&#34;&gt;https://github.com/EricGebhart&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Also, his homepage:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://ericgebhart.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://ericgebhart.com/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Shameless Ad: I will have a talk on Github for SAS programmers in the forthcoming &lt;/font&gt;&lt;a href=&#34;http://www.sesug.org/SESUG2013/index.php&#34;&gt;&lt;font size=&#34;1&#34;&gt;SESUG (Oct 20-23, 2013) at St.Pete Beach, FL&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. Welcome to drop by if you are on the spot!&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SAS ODS Report Writing Interface: A Quick Demo</title>
+      <link>/2013/02/17/sas-ods-report-writing-interface-a-quick-demo/</link>
+      <pubDate>Sun, 17 Feb 2013 20:21:00 +0000</pubDate>
+      
+      <guid>/2013/02/17/sas-ods-report-writing-interface-a-quick-demo/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/IRIS.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;IRIS&#34; border=&#34;0&#34; alt=&#34;IRIS&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/IRIS_thumb.png&#34; width=&#34;335&#34; height=&#34;451&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I personally nominated &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/datastep/dsobject/index.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS ODS Report Writing Interface&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;was the one of the &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/12/31/best-of-sas-a-personal-nomination-2012/&#34;&gt;&lt;font size=&#34;1&#34;&gt;best technology I found in SAS in 2012&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. It can generates reports cell by cell and row by row and has much flexibility to produce highly customized reports. Basically, to use it,&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;first assign an ODS destination. Nothing new, and I prefer HTML like&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods html&amp;#160;&amp;#160; file=&amp;ldquo;output.html&amp;rdquo; style=sasweb;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;then create a object(instance) based on the ODS Report Writing class, odsout,&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;declare odsout myout();&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;ODS Report Writing Interface holds some so called object oriented features. Odsout is a predefined class (or, a SET, a CONTAINER), then you take from it a instance or an object, myout(or any other legal SAS variable names). Suppose Odsout is a class for apples, then myout is a specific apple.&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;apply methods associated with the Odsout class, like CELL, ROW, TABLE to generate reports.&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Roughly methods are just the functions (subroutines, procedures) in the object oriented world. For example, in SAS Data Steps, you use function &lt;font face=&#34;Courier New&#34;&gt;weight(apple)&lt;/font&gt; to get the weight of the apple; in object oriented world, you use &lt;font face=&#34;Courier New&#34;&gt;apple.weight()&lt;/font&gt; to return the same thing. In ODS Report Writing Interface, if you want to get a table, use TABLE methods:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;myout.TABLE_START() to start a table&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;myout.TABLE_END to end a table&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Then all we need to do next is to use the flexible SAS data steps to leverage the ODS Report Writing Interface methods (see docs). The codes, you can see below, are pretty verbose compared to its counterparts, PROC REPORT, but that’s why it gains power to build highly customized reports. It’s also very structural (and easy to build, like playing blocks):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;making a sortable HTML table&lt;/em&gt;/ &lt;br /&gt;%macro ods_html_sort_table; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; &lt;script src=&amp;#8217;&lt;/font&gt;&lt;a href=&#34;http://goo.gl/Pg0GB&#34;&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;http://goo.gl/Pg0GB&amp;#8217;&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;gt;&lt;/script&gt; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; &lt;script src=&amp;#8217;&lt;/font&gt;&lt;a href=&#34;http://goo.gl/ruKEb&#34;&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;http://goo.gl/ruKEb&amp;#8217;&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;gt;&lt;/script&gt; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; &lt;script&gt;$(document).ready(function(){$(&amp;#8216;.table&amp;#8217;).tablesorter({widgets: [&amp;#8216;zebra&amp;#8217;]});});&lt;/script&gt; &lt;br /&gt;%mend;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;title ; &lt;br /&gt;ods listing close; &lt;br /&gt;ods html&amp;#160;&amp;#160; file=&amp;ldquo;a:\test\iris.html&amp;rdquo; style=sasweb headtext=&amp;ldquo;%ods_html_sort_table&amp;rdquo;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data _null; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set sashelp.iris; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; by Species; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;/&lt;em&gt;&amp;#160;&amp;#160;&amp;#160; create an object, obj, based on the ODS Report Writing class, odsout&lt;/em&gt;/ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; if &lt;em&gt;n&lt;/em&gt; = 1 then do; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; dcl odsout obj(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; end;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; if (first.Species) then do; *by group processing; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.title(text: &amp;ldquo;Fisher&amp;#8217;s Iris Data Set by Species&amp;rdquo;); *title;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; start a table&lt;/em&gt;/ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.table_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; if (Species = &amp;ldquo;Setosa&amp;rdquo;) then &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.image(file: &amp;ldquo;Iris_setosa.jpg&amp;rdquo; );*insert image; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; else if (Species = &amp;ldquo;Versicolor&amp;rdquo;) then &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.image(file: &amp;ldquo;Iris_versicolor.jpg&amp;rdquo; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; else if (Species = &amp;ldquo;Virginica&amp;rdquo;) then &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.image(file: &amp;ldquo;Iris_virginica.jpg&amp;rdquo; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_end();&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Iris Species&amp;rdquo;,&amp;#160; overrides: &amp;ldquo;fontweight=bold just=right&amp;rdquo; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: Species, column_span: 3, overrides: &amp;ldquo;just=left&amp;rdquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_end();&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Unit&amp;rdquo;,&amp;#160; overrides: &amp;ldquo;fontweight=bold just=right&amp;rdquo; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;(mm)&amp;rdquo;, column_span: 3, overrides: &amp;ldquo;just=left&amp;rdquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_end(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.table_end();&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; /* start another table */ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.table_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.head_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Sepal Length&amp;rdquo; , overrides: &amp;ldquo;fontweight=bold&amp;rdquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Sepal Width&amp;rdquo; , overrides: &amp;ldquo;fontweight=bold&amp;rdquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Petal Length&amp;rdquo; , overrides: &amp;ldquo;fontweight=bold&amp;rdquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Petal Width&amp;rdquo; , overrides: &amp;ldquo;fontweight=bold&amp;rdquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_end(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.head_end(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; end;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(data: SepalLength); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(data: SepalWidth); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(data: PetalWidth); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(data: SepalLength); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_end();&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; if (last.Species) then do; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.table_end();&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.note(data: &amp;ldquo;Note: These Tables are Sortable.&amp;ldquo;); *note;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.foot_start(); *footer; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.cell_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_text(data: &amp;ldquo;Footer: Data from SAS V&amp;amp;sysver at &amp;amp;sysscp &amp;amp;sysscpl Sashelp.iris&amp;rdquo;,just:&amp;ldquo;C&amp;rdquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.cell_end(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_end(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.foot_end();&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.page(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; end; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods html close; &lt;br /&gt;ods listing;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Note:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;A flavor added to get a sortable HTML report. Thanks to &lt;/font&gt;&lt;a href=&#34;http://www.sasanalysis.com/2013/01/make-all-sas-tables-sortable-in-output.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;Charlie Huang&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and then &lt;/font&gt;&lt;a href=&#34;https://heuristically.wordpress.com/2013/01/17/sortable-html-tables-sas-ods/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Andrew Z&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;to introduce a Javascript library JQury to SAS HTML report.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;The full report, see &lt;/font&gt;&lt;a href=&#34;https://heuristically.wordpress.com/2013/01/17/sortable-html-tables-sas-ods/&#34;&gt;&lt;font size=&#34;1&#34;&gt;here&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;font size=&#34;1&#34;&gt;If column spannings needed, use the following codes as header (and the report &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/docs/en/demo/iris_spanning.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;here&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;):&lt;/font&gt;
+&amp;gt; &lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;obj.head_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; obj.row_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Sepal&amp;rdquo; , overrides: &amp;ldquo;fontweight=bold&amp;rdquo;,column_span: 2); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Petal&amp;rdquo; , overrides: &amp;ldquo;fontweight=bold&amp;rdquo;,column_span: 2); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; obj.row_end();&lt;/font&gt;
+&amp;gt;
+&amp;gt; &lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; obj.row_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Length&amp;rdquo; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Width&amp;rdquo; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Length&amp;rdquo; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Width&amp;rdquo; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; obj.row_end(); &lt;br /&gt;obj.head_end();&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;font size=&#34;1&#34;&gt;ODS Report Writing Interface will get rid of its preproduction hat since SAS 9.4, but you can use it somehow since SAS 9.1.3. For more, see the &lt;a href=&#34;http://support.sas.com/documentation/solutions/early/&#34;&gt;draft SAS 9.4 ODS documentation&lt;/a&gt; with &lt;font size=&#34;1&#34;&gt;ODS Report Writing Interface.&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;font size=&#34;1&#34;&gt;To get started, see &lt;a href=&#34;http://support.sas.com/rnd/base/datastep/dsobject/Power_to_show_paper.pdf&#34;&gt;the developer’s paper&lt;/a&gt;.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Get Started with SAS Tagsets.ExcelXP</title>
+      <link>/2013/01/05/get-started-with-sas-tagsets.excelxp/</link>
+      <pubDate>Sat, 05 Jan 2013 17:46:24 +0000</pubDate>
+      
+      <guid>/2013/01/05/get-started-with-sas-tagsets.excelxp/</guid>
+      <description>
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Hate it or not (&lt;em&gt;Yes I do&lt;/em&gt;), SAS programmers can’t just get rid of Microsoft Office Excel in their life.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Now my turn (with Tagsets.ExcelXP, I can at least get rid of DDE)…&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;0-sas-templates-window-img-style-background-image-none-border-right-width-0px-margin-3px-auto-5px-padding-left-0px-padding-right-0px-display-block-float-none-border-top-width-0px-border-bottom-width-0px-border-left-width-0px-padding-top-0px-title-odstemplates-border-0-alt-odstemplates-src-http-www-jiangtanghu-com-blog-wp-content-uploads-2013-01-odstemplates-thumb-png-width-470-height-296-http-www-jiangtanghu-com-blog-wp-content-uploads-2013-01-odstemplates-png&#34;&gt;0. SAS Templates window &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/ODSTEMPLATES.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;ODSTEMPLATES&#34; border=&#34;0&#34; alt=&#34;ODSTEMPLATES&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/ODSTEMPLATES_thumb.png&#34; width=&#34;470&#34; height=&#34;296&#34; /&gt;&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;A visual way to browse all ODS templates is to use windows command “ODSTEMPLATES” to invoke a SAS template window.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;1-160-check-the-current-excelxp-tagset-version&#34;&gt;1.&amp;#160; Check the current ExcelXP tagset version&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;filename temp temp; &lt;br /&gt;ods tagsets.ExcelXP file=temp options(doc=&amp;#8217;help&amp;#8217;); &lt;br /&gt;ods tagsets.ExcelXP close;&lt;/font&gt; &lt;/font&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Scroll down the Log window to the end and you get something like:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;NOTE: This is the Excel XP tagset (Compatible with SAS 9.1.3 and above, &lt;font color=&#34;#ff0000&#34;&gt;v1.122&lt;/font&gt;, 01/04/2011). &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;2-get-the-source-codes-of-current-excelxp-tagset-and-library-it-s-stored&#34;&gt;2. Get the source codes of current ExcelXP tagset and library it’s stored&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc template; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; source Tagsets.ExcelXP; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The Log window shows the template codes:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;15&amp;#160;&amp;#160; proc template; &lt;br /&gt;16&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; source Tagsets.ExcelXP; &lt;br /&gt;define tagset Tagsets.ExcelXP; &lt;br /&gt;&amp;#160;&amp;#160; parent = Tagsets.ExcelBase; &lt;br /&gt;end; &lt;br /&gt;NOTE: Path &amp;#8216;Tagsets.ExcelXP&amp;#8217; is in: &lt;font color=&#34;#ff0000&#34;&gt;SASHELP.TMPLMST&lt;/font&gt;. &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Note Tagsets.ExcelXP is subject to Tagsets.ExcelBase.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The template store path uses a two level name in which SASHELP is a SAS library and TMPLMST, a name assigned to distinguish a set of templates. You can also store your customized templates in SASHELP.mytpl1, WORK.forTLF and such.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;If want a the source codes in a separated file rather than in Log window, try&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc template;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;source Tagsets.ExcelXP/&lt;font color=&#34;#ff0000&#34;&gt;file=&amp;ldquo;a:\test\ExcelXP.tpl&amp;rdquo;&lt;/font&gt;; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The extension doesn’t matter and you can use anything you like (including .SAS).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;3-list-all-ods-template-store-path&#34;&gt;3. List all ODS template store path&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods path show;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Log:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Current ODS PATH list is:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. SASUSER.TEMPLAT(UPDATE) &lt;br /&gt;2. SASHELP.TMPLMST(READ)&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This order also indicates the ODS template searching priority, first SASUSER.TEMPLAT then SASHELP.TMPLMST. If two templates with same name exist in both library, the one in SASUSER.TEMPLAT will be used.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Templates in SASHELP.TMPLMST can’t be modified(read only).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;4-install-latest-version-in-sasuser-library&#34;&gt;4. Install latest version in SASUSER library&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The last version of ExcelXP tagset is v1.127 by far according to SAS ODS MARKUP portal:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/&#34; title=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://support.sas.com/rnd/base/ods/odsmarkup/&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;filename excltags url &amp;#8216;&lt;/font&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/excltags.tpl&#39;;&#34;&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;http://support.sas.com/rnd/base/ods/odsmarkup/excltags.tpl&amp;#8217;;&lt;/font&gt;&lt;/a&gt;        &lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&lt;br /&gt;%include excltags;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;log:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;NOTE: TAGSET &amp;#8216;Tagsets.ExcelBase&amp;#8217; has been saved to: SASUSER.TEMPLAT &lt;br /&gt;NOTE: Overwriting existing template/link: Tagsets.Config_debug &lt;br /&gt;NOTE: TAGSET &amp;#8216;Tagsets.Config_debug&amp;#8217; has been saved to: SASUSER.TEMPLAT &lt;br /&gt;&lt;font color=&#34;#ff0000&#34;&gt;NOTE: TAGSET &amp;#8216;Tagsets.ExcelXP&amp;#8217; has been saved to: SASUSER.TEMPLAT&lt;/font&gt; &lt;br /&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Since there is already an ExcelXP tagset in SASHELP.TMPLMST and it can’t be overwritten, this new added ExcelXP tagset is thrown to SASUSER.TEMPLAT by adding a STORE option (check the source code) and will be used when statement “ODS tagsets.ExcelXP” invoked.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;5-list-all-templates&#34;&gt;5. List all templates&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc template; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; list / store=sasuser.templat; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; list / store=sashelp.tmplmst; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Get output:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/sasuser_templat2.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;sasuser_templat2&#34; border=&#34;0&#34; alt=&#34;sasuser_templat2&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/sasuser_templat2_thumb.png&#34; width=&#34;332&#34; height=&#34;285&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;If only type “Tagset” need (&lt;em&gt;to save space!&lt;/em&gt;):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc template; &lt;br /&gt;list &lt;font color=&#34;#ff0000&#34;&gt;tagsets&lt;/font&gt;/store=sasuser.templat; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;160&#34;&gt;&amp;#160;&lt;/h1&gt;
+
+&lt;h1 id=&#34;6-delete-template&#34;&gt;6. Delete template&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;proc template; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; delete Tagsets.ExcelBase; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; delete Tagsets.ExcelXP; &lt;br /&gt;run;&lt;/font&gt; &lt;br /&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;It’s always safe to perform delete statements since &lt;font size=&#34;1&#34;&gt;items in SASHELP.TMPLMST are read only.&lt;/font&gt;&amp;#160; In this case, the ExcelXP tagset in SASUSER.TEMPLAT will be deleted.&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;log:&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;8617&amp;#160;&amp;#160; proc template; &lt;br /&gt;8618&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; delete Tagsets.ExcelBase; &lt;br /&gt;NOTE: &amp;#8216;Tagsets.ExcelBase&amp;#8217; has been deleted from: SASUSER.TEMPLAT &lt;br /&gt;8619&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; delete Tagsets.ExcelXP; &lt;br /&gt;NOTE: &lt;font color=&#34;#ff0000&#34;&gt;&amp;#8216;Tagsets.ExcelXP&amp;#8217; has been deleted from: SASUSER.TEMPLAT&lt;/font&gt; &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;check again following step #5 and get what’s in SASUSER.TEMPLAT (no ExcelXP tagset anymore):&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/sasuser_templat.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;sasuser_templat&#34; border=&#34;0&#34; alt=&#34;sasuser_templat&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/sasuser_templat_thumb.png&#34; width=&#34;333&#34; height=&#34;247&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;7-install-in-other-specified-library&#34;&gt;7 Install in other specified library&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Install ExcelXp tagset in a other library. It will be deleted if current SAS session is killed:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;libname excltags &amp;#8216;a:\test&amp;#8217;; &lt;br /&gt;ods path (prepend) excltags.templat(update); &lt;br /&gt;filename excltags url &amp;#8216;&lt;/font&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/excltags.tpl&#39;;&#34;&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;http://support.sas.com/rnd/base/ods/odsmarkup/excltags.tpl&amp;#8217;;&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt; &lt;br /&gt;%include excltags;&lt;/font&gt; &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;log:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: Overwriting existing template/link: Tagsets.ExcelBase&lt;br /&gt;
+NOTE: TAGSET &amp;#8216;Tagsets.ExcelBase&amp;#8217; has been saved to: EXCLTAGS.TEMPLAT&lt;br /&gt;
+NOTE: Overwriting existing template/link: Tagsets.Config_debug&lt;br /&gt;
+NOTE: TAGSET &amp;#8216;Tagsets.Config_debug&amp;#8217; has been saved to: EXCLTAGS.TEMPLAT&lt;br /&gt;
+NOTE: Overwriting existing template/link: Tagsets.ExcelXP&lt;br /&gt;
+NOTE: &lt;font color=&#34;#ff0000&#34;&gt;TAGSET &amp;#8216;Tagsets.ExcelXP&amp;#8217; has been saved to: EXCLTAGS.TEMPLAT&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;show path as step #3:&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p align=&#34;left&#34;&gt;
+  Current ODS PATH list is:
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  1. EXCLTAGS.TEMPLAT(UPDATE) &lt;br /&gt;2. SASUSER.TEMPLAT(UPDATE) &lt;br /&gt;3. SASHELP.TMPLMST(READ)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;font size=&#34;1&#34;&gt;If apply step #6 to delete ExcelXP tagset, the items in EXCLTAGS.TEMPLAT will be deleted(as same as the searching priority).&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&#34;8-hello-world&#34;&gt;8. Hello World&lt;/h1&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;Adopted from one of Vince DelGobbo’s papers(&lt;a href=&#34;http://support.sas.com/rnd/papers/index.html#excel2012&#34;&gt;2012&lt;/a&gt;):&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;title &amp;#8216;The CLASS Data Set&amp;#8217;; &lt;br /&gt;footnote &amp;#8216;(From the SASHELP Library)&amp;#8217;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;*Set some &amp;ldquo;global&amp;rdquo; tagset options that affect all worksheets;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;ods tagsets.ExcelXP path=&amp;ldquo;a:\test\&amp;rdquo; file=&amp;#8217;MyWorkbook.xml&amp;#8217; style=Printer &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; options(embedded_titles=&amp;#8217;yes&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; embedded_footnotes=&amp;#8217;yes&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; print_header=&amp;#8217;&amp;amp;C&amp;amp;A&amp;amp;RPage &amp;amp;P of &amp;amp;N&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; print_footer=&amp;#8217;&amp;amp;RPrinted &amp;amp;D at &amp;amp;T&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; autofilter=&amp;#8217;2&amp;#8242;);&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%macro doit;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc sort data=sashelp.class (keep=sex) out=class nodupkey; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; by sex; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set class end=eof; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; II=left(put(&lt;em&gt;n&lt;/em&gt;,2.)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; call symputx(&amp;#8216;sex&amp;#8217;||II,compress(sex)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; if eof then call symputx(&amp;#8216;total&amp;#8217;,II); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%do i=1 %to &amp;total; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; ods tagsets.ExcelXP options(sheet&lt;em&gt;name=&amp;ldquo;Students&lt;/em&gt;&amp;amp;&amp;amp;sex&amp;amp;i&amp;rdquo;);&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; proc print data=sashelp.class noobs style(Header)=[just=center]; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; where (sex eq &amp;ldquo;&amp;amp;&amp;amp;sex&amp;amp;i&amp;rdquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; var name age&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; / style(Column)=[background=#99ccff]; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; var height weight / style(Column)=[background=#99ccff tagattr=&amp;#8217;format:#.0&amp;#8242;]; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; run; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%end;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%mend doit;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%doit&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;ods tagsets.ExcelXP close;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;This .XML file can be opened by Office Excel:&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/SAS_ExcelXP.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_ExcelXP&#34; border=&#34;0&#34; alt=&#34;SAS_ExcelXP&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/SAS_ExcelXP_thumb.png&#34; width=&#34;372&#34; height=&#34;442&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&#34;9-get-help&#34;&gt;9. Get Help&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;As a new comer, I found the following materials useful and accessible:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;div align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/&#34;&gt;SAS ODS MARKUP homepage&lt;/a&gt;&lt;/font&gt;
+&lt;/div&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;div align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;SAS developer &lt;a href=&#34;http://www.sas.com/reg/gen/corp/867226?page=Resources&#34;&gt;Vince DelGobbo’s homepage on ExcelXP&lt;/a&gt;&lt;/font&gt;
+&lt;/div&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;div align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.sas.com/events/cm/867226/ExcelXPPaperIndex.pdf&#34;&gt;Vince DelGobbo&amp;#8217;s ExcelXP Tagset Paper Index&lt;/a&gt;&lt;/font&gt;
+&lt;/div&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;h4 id=&#34;font-size-1-a-href-http-support-sas-com-rnd-base-ods-odsmarkup-excelxp-help-html-quick-reference-for-the-tagsets-excelxp-tagset-a-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/excelxp_help.html&#34;&gt;Quick Reference for the TAGSETS.EXCELXP Tagset&lt;/a&gt;&lt;/font&gt;&lt;/h4&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;h4 id=&#34;font-size-1-a-href-http-support-sas-com-rnd-base-ods-odsmarkup-excelxp-demo-html-try-this-demo-the-excelxp-tagset-and-microsoft-excel-a-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/ods/odsmarkup/excelxp_demo.html&#34;&gt;Try This Demo: The ExcelXP Tagset and Microsoft Excel&lt;/a&gt;&lt;/font&gt;&lt;/h4&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;h4 id=&#34;font-size-1-a-href-http-support-sas-com-resources-papers-proceedings09-323-2009-pdf-modifying-ods-statistical-graphics-templates-in-sas-9-2-by-warren-f-kuhfeld-a-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://support.sas.com/resources/papers/proceedings09/323-2009.pdf&#34;&gt;Modifying ODS Statistical Graphics Templates in SAS 9.2 by Warren F. Kuhfeld&lt;/a&gt;&lt;/font&gt;&lt;/h4&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Best of SAS: A Personal Nomination 2012</title>
+      <link>/2012/12/31/best-of-sas-a-personal-nomination-2012/</link>
+      <pubDate>Mon, 31 Dec 2012 01:13:03 +0000</pubDate>
+      
+      <guid>/2012/12/31/best-of-sas-a-personal-nomination-2012/</guid>
+      <description>
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;There SAS applications/procedures/features were not necessarily available since 2012. This year I paid special attention to them when began to use SAS 9.3. The following notes are&amp;#160; totally my personal endorsement purely based my own experience as a user:&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;xml-file-reading-sas-xml-mapper&#34;&gt;XML File Reading: SAS XML Mapper&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_XML_Mapper.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_XML_Mapper&#34; border=&#34;0&#34; alt=&#34;SAS_XML_Mapper&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_XML_Mapper_thumb.png&#34; width=&#34;363&#34; height=&#34;399&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS XML Mapper itself is not an elegant tool from software design perspective (an example: I keep multiple versions because the latest version seems not carry out all the functionalities from old ones), but it is best XML file processing tool for SAS programmers like me. The sweet part of SAS XML Mapper is that you can use it to get SAS datasets directly with a automatically generated XML mapping file. I use it to import XML files from &lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;CDISC ODM based files like define.xml &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;metadata querying results (XML) returned by SAS Metadata Server&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and it works pretty well and I just can’t live without it!&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;graphics-facility-ods-graphics&#34;&gt;Graphics Facility: ODS Graphics&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;ODS Graphics is the raising star among SAS products family since its advent and I also fall into love with her. This system contains&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;five procedures with “SG” in names,&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;a template language(GTL), and&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;two GUI tools, ODS Graphics Editor, and ODS Graphics Designer&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;in Base SAS and ODS Statistical Graphics in SAS/STAT (and in SAS/QC which I didn’t check out). ODS Graphics just makes SAS graph&amp;#160; much beautiful and graphics task much fun (and elegant!). &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Btw, it may not be a fair game but still nice to check out a SAS ODS graph and some random pick up R graphs:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This is &lt;a href=&#34;http://blogs.sas.com/content/iml/2011/08/26/visualizing-correlations-between-variables-in-sas/&#34;&gt;from Rick Wicklin&lt;/a&gt; with 3 lines of codes including one “RUN” statement:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;pre&gt;proc sgscatter data=sashelp.iris; 
+matrix SepalLength--PetalLength /group=Species diagonal=(histogram kernel);
+run;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_corr2.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS_corr2&#34; border=&#34;0&#34; alt=&#34;SAS_corr2&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_corr2_thumb.png&#34; width=&#34;400&#34; height=&#34;408&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and this is the R homepage graph(and the &lt;a href=&#34;http://www.r-project.org/misc/acpclust.R&#34;&gt;R codes&lt;/a&gt;):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/R_Graphics.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;R_Graphics&#34; border=&#34;0&#34; alt=&#34;R_Graphics&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/R_Graphics_thumb.png&#34; width=&#34;396&#34; height=&#34;294&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and this is &lt;a href=&#34;http://gallery.r-enthusiasts.com/&#34;&gt;R Graph Gallery&lt;/a&gt; homepage:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/r_graph_gallery.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;r_graph_gallery&#34; border=&#34;0&#34; alt=&#34;r_graph_gallery&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/r_graph_gallery_thumb.png&#34; width=&#34;403&#34; height=&#34;287&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I must say SAS ODS Graphics rocks!&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;statistical-procedure-proc-ttest-and-proc-freq&#34;&gt;Statistical Procedure: PROC TTEST and PROC FREQ&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In this category I list two because they are equally extremely relevant and important for me as statistical SAS programmer.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;PROC TTEST makes equivalence test (which is extremely popular in clinical research) much more accessible by adding a TOST(two one-side test) option. Years ago SAS programmers might use PROC MIXED or other methods for this kind of statistical test(&lt;font size=&#34;1&#34;&gt;I also took a note on this topic, see &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/tost-equivalence-test/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/font&gt;).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The new on PROC FREQ I checked out is to support much richer methods on calculating confidence intervals for binomial proportion (my note &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/15/confidence-intervals-binomial-proportion/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;) and confidence intervals for difference between independent binomial proportions (my note &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/23/statistical-notes-5-confidence-intervals-for-difference-between-independent-binomial-proportions-using-sas/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;) which are also extremely important in clinical research and I programmed a lot.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;report-writing-ods-report-writing-interface&#34;&gt;Report Writing: ODS Report Writing Interface&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;My first SAS version was 9.1.3 where PROC REPORT is the primary SAS reporting writing tool (with ODS) while PROC TABULATE not in fashion anymore (and you may merely hear the arguments among these two procedures since then). I used PROC REPORT for all my production work for reporting since recently I tried the &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/datastep/dsobject/index.html&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;ODS Report Writing Interface&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;in a project for non-rectangular tables. It’s great and everyone was happy! &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Basically it is an ODS enhanced DATA &lt;em&gt;NULL&lt;/em&gt; reporting writing method (&lt;em&gt;DATA &lt;em&gt;NULL&lt;/em&gt; with &lt;font color=&#34;#ff0000&#34;&gt;FILE PRINT&lt;/font&gt; statements: it’s an even older way for me&lt;/em&gt;);a new ODS output object declared within DATA &lt;em&gt;NULL&lt;/em&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;dcl odsout obj();&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I like this kind of reporting method: you can control your report line by line and cell by cell (although with more lines of structured codes!).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;metadata-querying-tool-proc-metadata&#34;&gt;Metadata Querying Tool: PROC METADATA&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In this category, the other two strong candidates are JAVA interface and SAS Data Step Functions. I like PROC Metadata against JAVA because it holds the same full functionality (while SAS Data Step Functions, no yet) while I can still work in SAS to produce reports (just add a new line to start to use ODS Report Writing Interface:)). Furthermore, I feel much comfortable working with SAS!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;PROC Metadata uses XML as inputs and outputs: it may be not admirable compared to Data Step Functions. Since I use SAS XML Mapper, it’s not a problem anymore!&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;documentation&#34;&gt;Documentation&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I like the totally new SAS help and documentation system both online and offline since SAS 9.3. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;First in Base SAS, lots of files were separated from “SAS Language Dictionary”,&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs_offline.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_Docs_offline&#34; border=&#34;0&#34; alt=&#34;SAS_Docs_offline&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs_offline_thumb.png&#34; width=&#34;420&#34; height=&#34;420&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and in all procedures guide, the &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/14/tab-is-a-tab-is-a-tab-is-a-tab/&#34;&gt;tab&lt;/a&gt; view looks great:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_Docs&#34; border=&#34;0&#34; alt=&#34;SAS_Docs&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs_thumb.png&#34; width=&#34;452&#34; height=&#34;271&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Where is SAS Output Anyway?</title>
+      <link>/2012/09/22/where-is-sas-output-anyway/</link>
+      <pubDate>Sat, 22 Sep 2012 22:10:12 +0000</pubDate>
+      
+      <guid>/2012/09/22/where-is-sas-output-anyway/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It is said in &lt;em&gt;&lt;a href=&#34;http://cran.cnr.berkeley.edu/doc/manuals/R-intro.html#R-and-statistics&#34; target=&#34;_blank&#34;&gt;An Introduction to R&lt;/a&gt;&lt;/em&gt;, one of R official documents (Current Version: 2.15.1):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;There is an important difference in philosophy between S (and hence R) and the other main statistical systems. In S a statistical analysis is normally done as a series of steps, with intermediate results being stored in objects. &lt;strong&gt;Thus whereas SAS and SPSS will give copious output from a regression or discriminant analysis&lt;/strong&gt;, R will give minimal output and store the results in a fit object for subsequent interrogation by further R functions.&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For SAS, it’s true, but not exactly the whole story. Actually all outputs generated by SAS procedures are stored in datasets besides the “copious output” in Output Window for further processing if needed. It is totally controllable like object in R. Take &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_reg_examples02.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;a regression example&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, You can use &lt;em&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34;&gt;ODS Select&lt;/font&gt;&lt;/strong&gt;&lt;/em&gt; statement to select what you want to be displayed in Output Window, and &lt;em&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34;&gt;ODS Output&lt;/font&gt;&lt;/strong&gt;&lt;/em&gt; statement to fetch the output datasets(&lt;em&gt;test on SAS 9.3M1 in Windows 7&lt;/em&gt;):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods select&lt;/font&gt; Anova ResidualPlot; &lt;br /&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods output&lt;/font&gt; Anova=Anova;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc reg data=fitness; &lt;br /&gt;&amp;#160;&amp;#160; model Oxygen=Age Weight RunTime RunPulse RestPulse MaxPulse / selection=forward;&amp;#160; &lt;br /&gt;run; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;or, you can use &lt;em&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34;&gt;ODS Exclude&lt;/font&gt;&lt;/strong&gt;&lt;/em&gt; statement to just drop some outputs in Output Window:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods exclude&lt;/font&gt; ResidualPlot;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc reg data=fitness; &lt;br /&gt;&amp;#160;&amp;#160; model Oxygen=Age Weight RunTime RunPulse RestPulse MaxPulse / selection=forward;&amp;#160; &lt;br /&gt;run; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;To get a list all the ODS outputs like Anova, ResidualPlot, you can trigger on &lt;strong&gt;&lt;em&gt;&lt;font color=&#34;#ff0000&#34;&gt;&lt;font color=&#34;#ffffff&#34;&gt;ODS Trace ON&lt;/font&gt; &lt;/font&gt;&lt;/em&gt;&lt;/strong&gt;statement:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods trace on&lt;/font&gt;;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc reg data=fitness; &lt;br /&gt;&amp;#160;&amp;#160; model Oxygen=Age Weight RunTime RunPulse RestPulse MaxPulse &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; / selection=forward;&amp;#160; &lt;br /&gt;run; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods trace off&lt;/font&gt;;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;then you get a full list in Log Window like:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;- &lt;br /&gt;Name:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;NObs&lt;/font&gt; &lt;br /&gt;Label:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Number of Observations &lt;br /&gt;Template:&amp;#160;&amp;#160; Stat.Reg.NObs &lt;br /&gt;Path:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Reg.MODEL1.SelectionMethod.Oxygen.NObs &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;Output Added: &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;- &lt;br /&gt;Name:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;ANOVA&lt;/font&gt; &lt;br /&gt;Label:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ANOVA &lt;br /&gt;Template:&amp;#160;&amp;#160; Stat.REG.ANOVA &lt;br /&gt;Path:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Reg.MODEL1.SelectionMethod.Oxygen.Step1.ANOVA &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;Output Added: &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;- &lt;br /&gt;Name:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;SelParmEst&lt;/font&gt; &lt;br /&gt;Label:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Parameter Estimates &lt;br /&gt;Template:&amp;#160;&amp;#160; Stat.REG.SelParmEst &lt;br /&gt;Path:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Reg.MODEL1.SelectionMethod.Oxygen.Step1.SelParmEst &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Newcombe on Lithium Theme</title>
+    <link>/tags/newcombe/index.xml</link>
+    <description>Recent content in Newcombe on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/newcombe/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A SAS Implementation of Confidence Intervals for Single Proportion: Eleven Methods</title>
+      <link>/2011/07/14/a-sas-implementation-of-confidence-intervals-for-single-proportion-eleven-methods/</link>
+      <pubDate>Thu, 14 Jul 2011 22:05:44 +0000</pubDate>
+      
+      <guid>/2011/07/14/a-sas-implementation-of-confidence-intervals-for-single-proportion-eleven-methods/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The following two papers by Professor &lt;/font&gt;&lt;a href=&#34;http://medicine.cf.ac.uk/en/person/prof-robert-gordon-newcombe/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Robert Newcombe&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, in my limit observation, are the most frequently cited papers in the industry for CI calculation:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;cite&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=9595616&amp;query_hl=1&#34;&gt;&lt;strong&gt;&lt;font size=&#34;1&#34;&gt;Two-sided confidence intervals for the single proportion: comparison of seven methods.&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt; &lt;/font&gt;&lt;/cite&gt;&lt;br /&gt;
+&lt;font size=&#34;1&#34;&gt;Newcombe RG, &lt;cite&gt;Stat Med&lt;/cite&gt; , Volume 17 , 8 (April 1998) pp.857-&lt;strong&gt;872&lt;/strong&gt;&lt;strong&gt;&lt;/strong&gt; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;cite&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=9595617&amp;query_hl=1&#34;&gt;&lt;strong&gt;&lt;font size=&#34;1&#34;&gt;Interval estimation for the difference between independent proportions: comparison of eleven methods.&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt; &lt;/font&gt;&lt;/cite&gt;&lt;br /&gt;
+&lt;font size=&#34;1&#34;&gt;Newcombe RG, &lt;cite&gt;Stat Med&lt;/cite&gt; , Volume 17 , 8 (April 1998) pp.&lt;strong&gt;873&lt;/strong&gt;-890 &lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;This post serves as an implementation using SAS accompany with the first paper on confidence intervals for single proportion(method 1-7). Additional 4 methods also provided:&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1.&amp;#160; Simple asymptotic, Without CC&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;2.&amp;#160; Simple asymptotic, With CC&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;3.&amp;#160; Score method, Without CC&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;4.&amp;#160; Score method, With CC&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;5.&amp;#160; Binomial-based, &amp;#8216;Exact&amp;#8217;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;6.&amp;#160; Binomial-based, Mid-p&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;7.&amp;#160; Likelihood-based&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;8.&amp;#160; Jeffreys&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;9.&amp;#160; Agresti-Coull,z^&lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; successes&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;10. Agresti-Coull,2 successes and 2 fail&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;11. Logit &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;The codes are available at&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;a href=&#34;http://jiangtanghu.com/docs/en/CI_Single_Proportion.sas&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://jiangtanghu.com/docs/en/CI_Single_Proportion.sas&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;/font&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;It is a purely SAS/Base(data step and SQL) approach. I prefer data steps because it can be seamlessly incorporate into production work which looks like:&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;r is the observed number of events/responders in n observations;&lt;/em&gt;/ &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%macro _Wald(r,n,alpha=0.05); &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; p=&amp;amp;r/&amp;n; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; z = probit (1-&amp;amp;alpha/2); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; sd=sqrt(&amp;amp;n&lt;em&gt;p&lt;/em&gt;(1-p)); *Standard Deviation ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; se=sd/&amp;n;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; *standard error; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; me=z*se;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; *margin of error; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; p_CI_low = p-me; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; p_CI_up&amp;#160; = p+me; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; p_CI=compress(catx(&amp;ldquo;&amp;rdquo;,&amp;rdquo;[&amp;ldquo;,put(round(p_CI_low,0.0001),6.4),&amp;ldquo;,&amp;rdquo;,put(round(p_CI_up,0.0001),6.4),&amp;ldquo;]&amp;rdquo;)); &lt;br /&gt;%mend _Wald; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data test; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; input r n; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;%_Wald(r,n);&lt;/font&gt; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; keep r n p p_CI; &lt;br /&gt;datalines; &lt;br /&gt;81 263 &lt;br /&gt;15 148 &lt;br /&gt;0 20 &lt;br /&gt;1 29 &lt;br /&gt;29 29 &lt;br /&gt;;&amp;#160;&amp;#160; &lt;br /&gt;run; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc print data=test;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;But when simulation required (in methods 6-7), some SQL clauses pop up. Admit that It makes the codes less elegant. In this situation, matrix operation language such as SAS/IML or R will do a better job.&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;Note that in SAS 9.2, PROC FREQ can produce the following five intervals(method 1, 3, 9 ,8, 5):&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Wald (also with method 2)&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;Wilson&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;Agresti-Coull&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;Jeffreys&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;Clopper-Pearson (Exact)&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;For the five intervals in SAS 9.2, a good reference is &lt;em&gt;Confidence Intervals for the Binomial Proportion with Zero Frequency&lt;/em&gt; by Xiaomin He and Shwu-Jen Wu:&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;a href=&#34;www.pharmasug.org/download/papers/SP10.pdf&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;www.pharmasug.org/download/papers/SP10.pdf&lt;/font&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;Also, an equivalent R version of the eleven methods by Abteilung Kriminologie is also available at&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p style=&#34;margin-right: 0px&#34;&gt;
+  &lt;a href=&#34;http://www2.jura.uni-hamburg.de/instkrim/kriminologie/Mitarbeiter/Enzmann/Software/prop.CI.r&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www2.jura.uni-hamburg.de/instkrim/kriminologie/Mitarbeiter/Enzmann/Software/prop.CI.r&lt;/font&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Such R repository is also a good resource for SAS users. I almost “translate” R implementations directly to SAS for this post.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Recursive Referencing and Binomial Proportion Interval</title>
+      <link>/2010/11/03/recursive-referencing-and-binomial-proportion-interval/</link>
+      <pubDate>Wed, 03 Nov 2010 20:47:44 +0000</pubDate>
+      
+      <guid>/2010/11/03/recursive-referencing-and-binomial-proportion-interval/</guid>
+      <description>&lt;p&gt;To understand &lt;a href=&#34;http://en.wikipedia.org/wiki/Recursion&#34;&gt;recursion&lt;/a&gt;, one of the most important concepts in programming languages, you could watch the movie, Chris Nolan’s &lt;em&gt;&lt;a href=&#34;www.inceptionmovie.com&#34;&gt;Inception&lt;/a&gt;&lt;/em&gt;: it is about a dream within a dream within a dream, …and, read two statistical papers by Professor &lt;a href=&#34;http://medicine.cf.ac.uk/en/person/prof-robert-gordon-newcombe/&#34;&gt;Robert Newcombe&lt;/a&gt;, one of the most &lt;a href=&#34;http://medicine.cf.ac.uk/en/person/prof-robert-gordon-newcombe/publications/&#34;&gt;prolific statisticians&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;cite&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=9595616&amp;query_hl=1&#34;&gt;&lt;strong&gt;Two-sided confidence intervals for the single proportion: comparison of seven methods.&lt;/strong&gt;&lt;/a&gt; &lt;/cite&gt;&lt;br /&gt;
+Newcombe RG, &lt;font color=&#34;#ff0000&#34;&gt;&lt;cite&gt;Stat Med&lt;/cite&gt; , Volume 17 , 8 (April 1998) pp.857-&lt;strong&gt;872&lt;/strong&gt;&lt;/font&gt; ****&lt;/li&gt;
+&lt;li&gt;&lt;cite&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=9595617&amp;query_hl=1&#34;&gt;&lt;strong&gt;Interval estimation for the difference between independent proportions: comparison of eleven methods.&lt;/strong&gt;&lt;/a&gt; &lt;/cite&gt;&lt;br /&gt;
+Newcombe RG, &lt;font color=&#34;#ff0000&#34;&gt;&lt;cite&gt;Stat Med&lt;/cite&gt; , Volume 17 , 8 (April 1998) pp.&lt;strong&gt;873&lt;/strong&gt;-890&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These two widely cited papers evaluate 7 and 11 methods to calculate single proportion (paper &lt;font color=&#34;#ff0000&#34;&gt;A&lt;/font&gt;) and the difference between proportions (paper &lt;font color=&#34;#ff0000&#34;&gt;B&lt;/font&gt;), respectively. Further more, they were in the same issue of &lt;a href=&#34;http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-0258&#34;&gt;&lt;em&gt;Statistics in Medicine&lt;/em&gt;&lt;/a&gt;(Volume 17, 1998), and, they were also cross referenced! So here is a live story about recursive referencing(thanks to Prof. Newcombe):&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2010/11/megamonalisa_recursion.jpg&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;megamonalisa_recursion&#34; border=&#34;0&#34; alt=&#34;megamonalisa_recursion&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2010/11/megamonalisa_recursion_thumb.jpg&#34; width=&#34;245&#34; height=&#34;371&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;An author writes two papers, A and B;&lt;/li&gt;
+&lt;li&gt;Paper B is in the&amp;#160; bibliographic reference session of paper A;&lt;/li&gt;
+&lt;li&gt;Paper A is also in the&amp;#160; bibliographic reference session of paper B;&lt;/li&gt;
+&lt;li&gt;Paper A and paper B are in the same issue of a journal.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;Note&lt;/font&gt; that for Prof. Newcombe’s two linked papers, it is common and acceptable in publication practices. Recently I used these two wonderful papers to learn CI calculation and this post just want to lead to the concept of “recursion”&amp;#160; (reference in reference in reference).&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

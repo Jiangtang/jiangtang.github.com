@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sas Enterprise Miner on Lithium Theme</title>
+    <link>/tags/sas-enterprise-miner/index.xml</link>
+    <description>Recent content in Sas Enterprise Miner on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/sas-enterprise-miner/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Run data mining codes following William Potts</title>
+      <link>/2009/03/20/run-data-mining-codes-following-william-potts/</link>
+      <pubDate>Fri, 20 Mar 2009 11:41:00 +0000</pubDate>
+      
+      <guid>/2009/03/20/run-data-mining-codes-following-william-potts/</guid>
+      <description>&lt;div&gt;
+  &lt;font face=Arial&gt;FYI: &lt;em&gt;SAS Enterprise Miner and SAS Text Miner Procedures: Reference for SAS 9.1.3&lt;/em&gt;, see:&lt;/font&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;font face=Arial&gt;&lt;/font&gt;&amp;nbsp;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;font face=Arial&gt;&lt;a  href=&#34;http://support.sas.com/documentation/onlinedoc/miner/emtmsas913/listing.html&#34;&gt;http://support.sas.com/documentation/onlinedoc/miner/emtmsas913/listing.html&lt;/a&gt;&lt;/font&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;font face=Arial&gt;&lt;/font&gt;&amp;nbsp;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;font face=Arial&gt;This entry DOES exist in the SAS Support website, but it can&amp;#8217;t be found by any search engine or documentation tree view. &lt;/font&gt;&lt;font face=Arial&gt;You&amp;#8217;re recommended to download these files immediately due to SAS&amp;#8217;s easy-dead hyperlinks.^-^ &lt;/font&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;font face=Arial&gt;&lt;/font&gt;&amp;nbsp;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;font face=Arial&gt;ps.SAS Institute provides no support for the use of Enterprise Miner and Text Miner Procedures when they are invoked directly, outside of the Enterprise Miner graphical user interface.&lt;/font&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

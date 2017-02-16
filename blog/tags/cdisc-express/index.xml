@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cdisc Express on Lithium Theme</title>
+    <link>/tags/cdisc-express/index.xml</link>
+    <description>Recent content in Cdisc Express on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/cdisc-express/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Dive into CDISC Express (5): Generate and Validate SDTM domains and define.xml</title>
+      <link>/2011/07/07/dive-into-cdisc-express-5-generate-and-validate-sdtm-domains-and-define.xml/</link>
+      <pubDate>Thu, 07 Jul 2011 22:32:03 +0000</pubDate>
+      
+      <guid>/2011/07/07/dive-into-cdisc-express-5-generate-and-validate-sdtm-domains-and-define.xml/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/06/28/dive-into-cdisc-express-1-introductory/&#34;&gt;&lt;em&gt;Dive into CDISC Express (1): Introductory&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/07/02/dive-into-cdisc-express-2-create-a-new-study/&#34;&gt;Dive into CDISC Express (2): Create a New Study&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/07/03/dive-into-cdisc-express-3-navigate-mapping-file/&#34;&gt;Dive into CDISC Express (3): Navigate mapping file&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;_&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/07/04/dive-into-cdisc-express-4-data-manipulation-techniques-2/&#34; target=&#34;_blank&#34;&gt;Dive into CDISC Express (4): Data manipulation techniques&lt;/a&gt;_&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A more friendly PDF version of these all CDISC Express series is also available in&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://jiangtanghu.com/docs/en/CDISCExpress.pdf&#34; title=&#34;http://jiangtanghu.com/docs/en/CDISCExpress.pdf&#34;&gt;http://jiangtanghu.com/docs/en/CDISCExpress.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The following tasks, such as generating SDTM domains and define.xml, need just some clicking button work in CDISC Express using a well designed mapping file. Few words needed due to the software.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;5-step-3-of-6-validate-mapping-file-validate-mapping-file-sas&#34;&gt;&lt;strong&gt;5. Step 3 of 6: Validate mapping file (&lt;em&gt;Validate_Mapping_File.sas&lt;/em&gt;)&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;It would be back and forth to design, validate then modify and re-validate the mapping file. And sure finally, you will get all the work done, at least no syntax error (how to avoid semantic errors is upon your domain knowledge). A validated mapping file, named mapping.xls will be copied to &lt;strong&gt;&amp;#8230; docMapping file &amp;#8211; validated version&lt;/strong&gt; from the working file, tmpmaping.xls. You will see&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The corresponding log file in folder &lt;strong&gt;&amp;#8230; log&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A report in &lt;strong&gt;…resultsMapping Validation&lt;/strong&gt;, named Mapping_validation.html&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/validate.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;validate&#34; border=&#34;0&#34; alt=&#34;validate&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/validate_thumb.png&#34; width=&#34;499&#34; height=&#34;281&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Also the temporary datasets in &lt;strong&gt;…tempdata&lt;/strong&gt; and &lt;strong&gt;…temp&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0041.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;clip_image004&#34; border=&#34;0&#34; alt=&#34;clip_image004&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image004_thumb1.jpg&#34; width=&#34;497&#34; height=&#34;189&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0061.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;clip_image006&#34; border=&#34;0&#34; alt=&#34;clip_image006&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image006_thumb1.jpg&#34; width=&#34;496&#34; height=&#34;313&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;6-step-4-of-6-generate-sdtm-datasets-generate-sdtm-sas&#34;&gt;&lt;strong&gt;6. Step 4 of 6: Generate SDTM datasets&lt;/strong&gt; (_generate&lt;em&gt;SDTM.sas&lt;/em&gt;)&lt;/h4&gt;
+
+&lt;p&gt;If mapping file is OK, generating SDTM domains is just clicking the button. After submitting the codes, you will see the log file, reports, SDTM datasets and temporary datasets in corresponding folders:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/SDTM.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;SDTM&#34; border=&#34;0&#34; alt=&#34;SDTM&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/SDTM_thumb.png&#34; width=&#34;506&#34; height=&#34;483&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;7-step-5-of-6-validate-sdtm-datasets-validate-sdtm-domains-sas&#34;&gt;&lt;strong&gt;7. Step 5 of 6: Validate SDTM datasets&lt;/strong&gt; (&lt;em&gt;Validate_SDTM_Domains.sas&lt;/em&gt;)&lt;/h5&gt;
+
+&lt;p&gt;The outputs files of validating SDTM datasets are all located in &lt;strong&gt;C:Program FilesCDISC ExpressSDTM Validation&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image010.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;clip_image010&#34; border=&#34;0&#34; alt=&#34;clip_image010&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image010_thumb.jpg&#34; width=&#34;500&#34; height=&#34;377&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;8-step-6-of-6-generate-define-xml-and-xpt-generate-definexml-sas&#34;&gt;&lt;strong&gt;8. Step 6 of 6: Generate Define.xml and xpt&lt;/strong&gt; (_generate&lt;em&gt;Definexml.sas&lt;/em&gt;)&lt;/h5&gt;
+
+&lt;p&gt;Get the final define.xml file and SAS transport files (.xpt):&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image012.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;clip_image012&#34; border=&#34;0&#34; alt=&#34;clip_image012&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image012_thumb.jpg&#34; width=&#34;502&#34; height=&#34;402&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;9-recommended-reading-and-action-taken&#34;&gt;9. Recommended reading and action taken&lt;/h3&gt;
+
+&lt;p&gt;For a quick start and deep understanding, you could read the official documentations in the following sequence:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;C:Program FilesCDISC ExpressdocumentationFAQ.htm&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;C:Program FilesCDISC ExpressdocumentationQuick Start.htm&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;C:Program FilesCDISC ExpressdocumentationUser guide.htm&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A video tutorial would be also helpful:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;C:Program FilesCDISC Expressdocumentationvideotutorial.htm&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A must-read conference paper, &lt;em&gt;An Excel Framework to Convert Clinical Data to CDISC SDTM Leveraging SAS Technology&lt;/em&gt; by Sophie McCallum and Stephen Chan of Clinovo, supplies a wonderful discussion the architectures of CDISC Express:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.lexjansen.com/pharmasug/2011/ad/pharmasug-2011-ad08.pdf&#34;&gt;http://www.lexjansen.com/pharmasug/2011/ad/pharmasug-2011-ad08.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Of course, you do not need to review all the pages then get the confidence to use the software. Learn by doing and just dive into it. There is an opportunity for your practicing and you will also have a change to win an iPad2 from Clinovo’s CDISC Express Contest:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.clinovo.com/cdisc/game&#34;&gt;http://www.clinovo.com/cdisc/game&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The due day is July 15&lt;sup&gt;th&lt;/sup&gt; and I already submitted my work. That’s fun.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dive into CDISC Express (4): Data manipulation techniques</title>
+      <link>/2011/07/04/dive-into-cdisc-express-4-data-manipulation-techniques/</link>
+      <pubDate>Mon, 04 Jul 2011 20:52:42 +0000</pubDate>
+      
+      <guid>/2011/07/04/dive-into-cdisc-express-4-data-manipulation-techniques/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/06/28/dive-into-cdisc-express-1-introductory/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Dive into CDISC Express (1): Introductory&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;_&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/07/02/dive-into-cdisc-express-2-create-a-new-study/&#34; target=&#34;_blank&#34;&gt;Dive into CDISC Express (2): Create a New Study&lt;/a&gt;_&lt;/p&gt;
+
+&lt;p&gt;_&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/07/03/dive-into-cdisc-express-3-navigate-mapping-file/&#34; target=&#34;_blank&#34;&gt;Dive into CDISC Express (3): Navigate mapping file&lt;/a&gt;_&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;4-3-data-manipulation-techniques-in-cdisc-express&#34;&gt;4.3 Data manipulation techniques in CDISC Express&lt;/h3&gt;
+
+&lt;p&gt;CDISC Express supplies relative rich sets of data manipulation techniques assembling with SAS languages used for data mapping. Following is a not limited listing and I will keep it updated.&lt;/p&gt;
+
+&lt;h3 id=&#34;4-3-1-reference-one-dataset&#34;&gt;4.3.1 Reference one dataset&lt;/h3&gt;
+
+&lt;p&gt;A raw dataset name appear in “Dataset” column indicate a “set” operation in SAS.&lt;/p&gt;
+
+&lt;p&gt;All dataset options can be used when referencing a dataset, such as&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;siteinv(drop=invcode)&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;siteinv(rename=(invcode=inv))&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;siteinv(where=(invcode ne “”))&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You can also reference an external dataset. You should incorporate the external file in spreadsheet with name beginning with an underscore, “_”, and “_visits” in this case:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image001.gif&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;clip_image001&#34; border=&#34;0&#34; alt=&#34;clip_image001&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image001_thumb.gif&#34; width=&#34;434&#34; height=&#34;302&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Then you can use it in any domains needed, e.g., TV domain:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image003.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;clip_image003&#34; border=&#34;0&#34; alt=&#34;clip_image003&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image003_thumb.jpg&#34; width=&#34;493&#34; height=&#34;244&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There is a macro &lt;font color=&#34;#ff0000&#34;&gt;%cpd_importlist&lt;/font&gt; used to import the external dataset, “_visits”. Again, this macro roots in &lt;strong&gt;C:Program FilesCDISC Expressmacrosfunction_library&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Using a macro call to re-sharp or modify an input dataset offers great flexibility referencing data. We will also discuss the benefits later on.&lt;/p&gt;
+
+&lt;h3 id=&#34;4-3-2-assignment&#34;&gt;4.3.2 Assignment&lt;/h3&gt;
+
+&lt;p&gt;You can assign a number, string and a dataset variable with any valid SAS functions to a SDTM domain variable in “Expression” column.&lt;/p&gt;
+
+&lt;p&gt;Sometimes a temporary variable needed for later calculation. You can produce such temporary variable in “Dataset” column with an assignment in the “Expression” column just similar with any other domain variables. Two differences: first, such temporary variables named begin with an asterisk, “*”; second, all temporary variables will not be included in the final domain. Once created, such temporary variables can be used for any other expressions.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image005.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;clip_image005&#34; border=&#34;0&#34; alt=&#34;clip_image005&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image005_thumb.jpg&#34; width=&#34;494&#34; height=&#34;312&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There are three special symbols used in “Dataset” column of CDISC Express. Asterisk, “*” indicates a temporary variable, while other two are&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Tilde, “~” : indicate a variable used for supplemental domain (SUPPQUAL).&lt;/p&gt;
+
+&lt;p&gt;Number sign, “#”: indicate a variable used for comments domain (CO).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Another symbol, at sign, “@”, used in “Expression” column, indicated referencing a variables produced before:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image006.gif&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;clip_image006&#34; border=&#34;0&#34; alt=&#34;clip_image006&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image006_thumb.gif&#34; width=&#34;448&#34; height=&#34;104&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In this case, “AGEU” uses “AGE” as input, while “AGE” is calculated before. “@AGE” just indicates the dependency. In concept, it looks like the “calculated” option in SAS PROC SQL:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;b&gt;proc&lt;/b&gt; &lt;b&gt;sql&lt;/b&gt; ;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;select (AvgHigh &amp;#8211; &lt;b&gt;32&lt;/b&gt;) * &lt;b&gt;5&lt;/b&gt;/&lt;b&gt;9&lt;/b&gt; as HighC , &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;(AvgLow &amp;#8211; &lt;b&gt;32&lt;/b&gt;) * &lt;b&gt;5&lt;/b&gt;/&lt;b&gt;9&lt;/b&gt; as LowC ,&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;(calculated HighC &amp;#8211; calculated LowC)&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;as Range &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;from temps;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;b&gt;quit&lt;/b&gt;;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;4-3-3-match-merging&#34;&gt;4.3.3 Match-merging&lt;/h3&gt;
+
+&lt;p&gt;We already got a math-merging example before. If “all” appears as a dataset in the “Dataset” column, all the previous datasets should be merged first for later processing by the common key specified in “Merge Key” column. If no key assigned, patient ID is used by the system.&lt;/p&gt;
+
+&lt;p&gt;CDISC Express also supports two types of join, inner join and outer join (left, right, full) using data steps. The implementation has slightly difference with standard SQL, but the ideas are same.&lt;/p&gt;
+
+&lt;p&gt;We add a new column, “Join”, usually beside the “Merge Key” column.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image008.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;clip_image008&#34; border=&#34;0&#34; alt=&#34;clip_image008&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image008_thumb.jpg&#34; width=&#34;442&#34; height=&#34;377&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There are two values for “Join”, “O” or “I” while “O” stands for “outer join” and “I”, “inner join”. A join indicator “I” equals a dataset option “in=” in action while “O” means no. Use the above as illustration, the corresponding SAS codes behind look like&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;courier new&#34;&gt;&lt;b&gt;data&lt;/b&gt; temp;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;courier new&#34;&gt;merge demog(in=a) siteinv(in=b);&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;courier new&#34;&gt;by sitecode;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;courier new&#34;&gt;if b;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;courier new&#34;&gt;&lt;b&gt;run&lt;/b&gt;;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is so called “right outer join”. The combination of “I” and “O” in these two datasets can perform all the four types of join, one inner join and three outer join:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/in.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;in&#34; border=&#34;0&#34; alt=&#34;in&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/in_thumb.png&#34; width=&#34;499&#34; height=&#34;313&#34; /&gt;&lt;/a&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;As we could see, if no “Join” column specified, CDISC Express will perform inner join by default.&lt;/p&gt;
+
+&lt;p&gt;So far CDISC Express cannot support multiply merge keys. For example, the following file is illegal currently:&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p align=&#34;center&#34;&gt;
+  &lt;table border=&#34;1&#34; cellspacing=&#34;0&#34; cellpadding=&#34;0&#34;&gt;
+    &lt;tr&gt;
+      &lt;td valign=&#34;top&#34; width=&#34;138&#34;&gt;
+        &lt;p&gt;
+          &lt;b&gt;Dataset &lt;/b&gt;
+        &lt;/p&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&#34;top&#34; width=&#34;203&#34;&gt;
+        &lt;p&gt;
+          &lt;b&gt;Merge Key&lt;/b&gt;
+        &lt;/p&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&#34;top&#34; width=&#34;138&#34;&gt;
+        &lt;p&gt;
+          arm&amp;#160;&amp;#160;&amp;#160;
+        &lt;/p&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&#34;top&#34; width=&#34;203&#34;&gt;
+        &lt;p&gt;
+          siteid, grpno
+        &lt;/p&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td valign=&#34;top&#34; width=&#34;138&#34;&gt;
+        &lt;p&gt;
+          armdescri
+        &lt;/p&gt;
+      &lt;/td&gt;
+      
+      &lt;td valign=&#34;top&#34; width=&#34;203&#34;&gt;
+        &lt;p&gt;
+          siteid, grpno
+        &lt;/p&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+  
+  &lt;p&gt;
+    The developer Romain indicated that such enhancements would be raised to the next round of product road map and he also proposed a work around. To use multiple keys for merging, we can create a temporary variable holding such multiple keys as a concatenation then this temporary variable can be used as a single merging key.
+  &lt;/p&gt;
+  
+
+&lt;p&gt;&lt;h3&gt;
+    4.3.4 Concatenating
+  &lt;/h3&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    Above we discussed lots about “merge” operation in CDISC Express. This section dedicated for “set” operation. We already know how to “set” one dataset for referencing, but how to “set” multiple datasets, i.e, “Concatenating”?
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    Symmetrically, an “all” appears in “Dataset” column indicating merging operation, an “all (stack)” indicates concatenating operation:
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image014.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;clip_image014&#34; border=&#34;0&#34; alt=&#34;clip_image014&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image014_thumb.jpg&#34; width=&#34;493&#34; height=&#34;396&#34; /&gt;&lt;/a&gt;
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    The above file can be also translated to SAS codes for better understanding:
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;br /&amp;gt; 
+
+&amp;lt;blockquote&amp;gt;
+  &amp;lt;p&amp;gt;
+    &amp;lt;a name=&amp;quot;OLE_LINK2&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;a name=&amp;quot;OLE_LINK1&amp;quot;&amp;gt;&amp;lt;b&amp;gt;&amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;data&amp;lt;/font&amp;gt;&amp;lt;/b&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt; height;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;set vtsigns(where=(height ne &amp;lt;b&amp;gt;.&amp;lt;/b&amp;gt;));&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSTESTCD=&amp;quot;HEIGHT&amp;quot;;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSTEST =&amp;quot;Height&amp;quot;;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSORRES =put(height,best12.);&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSORRESU=&amp;quot;cm&amp;quot;;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSSTRESC=put(height,best12.);&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSSTRESN=height;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSSTRESU=&amp;quot;cm&amp;quot;;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;&amp;lt;b&amp;gt;run&amp;lt;/b&amp;gt;;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;&amp;lt;b&amp;gt;data&amp;lt;/b&amp;gt; weight;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;set vtsigns(where=(weight ne &amp;lt;b&amp;gt;.&amp;lt;/b&amp;gt;));&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSTESTCD=&amp;quot;WEIGHT&amp;quot;;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSTEST =&amp;quot;Weight&amp;quot;;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSORRES =put(weight,best12.);&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSORRESU=&amp;quot;kg&amp;quot;;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSSTRESC=put(weight,best12.);&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSSTRESN=weight;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSSTRESU=&amp;quot;cm&amp;quot;;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;&amp;lt;b&amp;gt;run&amp;lt;/b&amp;gt;;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;&amp;lt;b&amp;gt;data&amp;lt;/b&amp;gt; vs;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;set height weight;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;STUDYID =study;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;DOMAIN =&amp;amp;domain;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;USUBJID =%&amp;lt;b&amp;gt;&amp;lt;i&amp;gt;CONCATENATE&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;(_variables=study sitecode patid);&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSSEQ =%&amp;lt;b&amp;gt;&amp;lt;i&amp;gt;SEQUENCE&amp;lt;/i&amp;gt;&amp;lt;/b&amp;gt;();&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;&amp;lt;b&amp;gt;.&amp;lt;/b&amp;gt; &amp;lt;b&amp;gt;.&amp;lt;/b&amp;gt; &amp;lt;b&amp;gt;.&amp;lt;/b&amp;gt;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;run;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+
+&amp;lt;p&amp;gt;
+  4.3.5 Transpose
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  Clinical SAS programmers do lots of transpose operation to re-sharp the raw data to fit the CDISC standards. Currently there is no explicit guide in CDISC Express on how to transpose, but this is not the end of story.
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  There are two types of transpose:
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  &amp;lt;a href=&amp;quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image016.jpg&amp;quot;&amp;gt;&amp;lt;img style=&amp;quot;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&amp;quot; title=&amp;quot;clip_image016&amp;quot; border=&amp;quot;0&amp;quot; alt=&amp;quot;clip_image016&amp;quot; src=&amp;quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image016_thumb.jpg&amp;quot; width=&amp;quot;492&amp;quot; height=&amp;quot;207&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;
+&amp;lt;/p&amp;gt;
+
+&amp;lt;blockquote&amp;gt;
+  &amp;lt;p&amp;gt;
+    Type I: from a wide dataset (more variables, less observations) to a long dataset (less variables, more observations), e.g. transposing a one-row-per-subject datasets to a multiple-row-per-subject dataset
+  &amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+
+&amp;lt;p&amp;gt;
+  &amp;lt;a href=&amp;quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image018.jpg&amp;quot;&amp;gt;&amp;lt;img style=&amp;quot;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&amp;quot; title=&amp;quot;clip_image018&amp;quot; border=&amp;quot;0&amp;quot; alt=&amp;quot;clip_image018&amp;quot; src=&amp;quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image018_thumb.jpg&amp;quot; width=&amp;quot;514&amp;quot; height=&amp;quot;224&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;
+&amp;lt;/p&amp;gt;
+
+&amp;lt;blockquote&amp;gt;
+  &amp;lt;p&amp;gt;
+    Type II: from a long dataset (less variables, more observations) to a wide dataset (more variables, less observations), e.g. transposing a multiple-row-per-subject dataset to a one-row-per-subject datasets
+  &amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+
+&amp;lt;p&amp;gt;
+  As good practices, in SAS we always use data steps with “output” statement to perform type I transpose and use PROC TRANSPOSE for type II. Although CDISC Express doesn’t support transpose operation in an explicit way, at least you can perform type I transpose and surprisingly we already saw it before!
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  Just back to section of concatenating. The example is taken from &amp;lt;b&amp;gt;C:Program FilesCDISC Expressstudiesexample2.&amp;lt;/b&amp;gt;
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  We can see the input data vtsigns is typical wide table (more variables, less observations):
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  &amp;lt;a href=&amp;quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image021.jpg&amp;quot;&amp;gt;&amp;lt;img style=&amp;quot;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&amp;quot; title=&amp;quot;clip_image021&amp;quot; border=&amp;quot;0&amp;quot; alt=&amp;quot;clip_image021&amp;quot; src=&amp;quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image021_thumb.jpg&amp;quot; width=&amp;quot;469&amp;quot; height=&amp;quot;405&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  And the final domain VS is a typical long table (less variables, more observations):
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  &amp;lt;a href=&amp;quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image023.jpg&amp;quot;&amp;gt;&amp;lt;img style=&amp;quot;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&amp;quot; title=&amp;quot;clip_image023&amp;quot; border=&amp;quot;0&amp;quot; alt=&amp;quot;clip_image023&amp;quot; src=&amp;quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image023_thumb.jpg&amp;quot; width=&amp;quot;303&amp;quot; height=&amp;quot;662&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  So obviously, such concatenating operation just did a wonderful type I transpose, from a wide table to a long table! More often, the compact SAS codes for type I transpose look like:
+&amp;lt;/p&amp;gt;
+
+&amp;lt;blockquote&amp;gt;
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;&amp;lt;b&amp;gt;data&amp;lt;/b&amp;gt; vs;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;set vtsigns;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;if height ne &amp;lt;b&amp;gt;.&amp;lt;/b&amp;gt; then do;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSTESTCD=&amp;quot;HEIGHT&amp;quot;;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSTEST =&amp;quot;Height&amp;quot;;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSORRES =put(height,best12.);&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSORRESU=&amp;quot;cm&amp;quot;;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSSTRESC=put(height,best12.);&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSSTRESN=height;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSSTRESU=&amp;quot;cm&amp;quot;;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;output;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;end;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;if weight ne &amp;lt;b&amp;gt;.&amp;lt;/b&amp;gt; then do;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSTESTCD=&amp;quot;WEIGHT&amp;quot;;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSTEST =&amp;quot;Weight&amp;quot;;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSORRES =put(weight,best12.);&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSORRESU=&amp;quot;kg&amp;quot;;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSSTRESC=put(weight,best12.);&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSSTRESN=weight;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;VSSTRESU=&amp;quot;cm&amp;quot;;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;output;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;end;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;&amp;lt;b&amp;gt;.&amp;lt;/b&amp;gt; &amp;lt;b&amp;gt;.&amp;lt;/b&amp;gt; &amp;lt;b&amp;gt;.&amp;lt;/b&amp;gt;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;run;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+
+&amp;lt;h3&amp;gt;
+  4.3.6 All others: use macro!
+&amp;lt;/h3&amp;gt;
+
+&amp;lt;p&amp;gt;
+  Now we discussed almost all the common data derivation techniques in programmers’ daily life and the corresponding implementation in CDISC Express. At least we have one question unsolved: how to perform type II transpose, i.e. from a long table to a wide table?
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  It would be an open question for the developers of the application. But we can also solve this problem in current framework: use macro, customized macro. You can use macros in “Expression” and “Dataset” column. Macro used in “Dataset” column returns a dataset, while macro in “Expression” column returns series of string: that’s the basic structure you should consider when customize your own macros. For more, you can reference the macros in &amp;lt;b&amp;gt;C:Program FilesCDISC Expressmacrosfunction_library&amp;lt;/b&amp;gt;. For example, &amp;lt;font color=&amp;quot;#ff0000&amp;quot;&amp;gt;&amp;amp;concatenate&amp;lt;/font&amp;gt; used in “Expression” column; &amp;lt;font color=&amp;quot;#ff0000&amp;quot;&amp;gt;&amp;amp;cpd_importlist&amp;lt;/font&amp;gt; in “Dataset” column.
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  So it would be convenient to create temporary datasets using macros imbedded type II transpose operation in “Dataset” column. Every thing SAS can do, you can also implement it in CDISC Express. Just use macros, in “Expression” and “Dataset” column accordingly.&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  The raw data varies according to trial design and clinical data capture system and procedures. It is impossible and impractical to anticipate the CDISC SDTM converter such as CDISC Express to map all the data just clicking a button. The introducing of CDISC Express doesn’t keep programmers away. It just keeps most of the trivial work away from programmers’ daily life and let them more concentrated on creative work and be productive and efficient.
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  Following would be the close of such pages.
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  &amp;lt;a href=&amp;quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/TobeContinued2.jpg&amp;quot;&amp;gt;&amp;lt;img style=&amp;quot;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&amp;quot; title=&amp;quot;TobeContinued&amp;quot; border=&amp;quot;0&amp;quot; alt=&amp;quot;TobeContinued&amp;quot; src=&amp;quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/TobeContinued_thumb2.jpg&amp;quot; width=&amp;quot;240&amp;quot; height=&amp;quot;181&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;
+&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dive into CDISC Express (3): Navigate mapping file</title>
+      <link>/2011/07/03/dive-into-cdisc-express-3-navigate-mapping-file/</link>
+      <pubDate>Sun, 03 Jul 2011 21:19:18 +0000</pubDate>
+      
+      <guid>/2011/07/03/dive-into-cdisc-express-3-navigate-mapping-file/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/06/28/dive-into-cdisc-express-1-introductory/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Dive into CDISC Express (1): Introductory&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/07/02/dive-into-cdisc-express-2-create-a-new-study/&#34; target=&#34;_blank&#34;&gt;Dive into CDISC Express (2): Create a New Study&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;4-step-2-of-6-generate-mapping-file&#34;&gt;4. Step 2 of 6: Generate mapping file&lt;/h2&gt;
+
+&lt;p&gt;Generating template (blank) mapping file only needs pieces of effort by submitting &lt;em&gt;generate_mapping_template.sas&lt;/em&gt;. The toughest one is to fill it with mapping rules according to specified study.&lt;/p&gt;
+
+&lt;h3 id=&#34;4-1-get-the-blank-template-mapping-file-generate-mapping-template-sas&#34;&gt;4.1 Get the blank template mapping file (generate_mapping_template.sas)&lt;/h3&gt;
+
+&lt;p&gt;To get the blank template mapping file, just fill the one line of macro call in generate_mapping_template.sas:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%createmapping(filespec=SDTM_Specs_3_1_1.xls, Dom=CM AE TV, req=YES, perm=YES, exp=YES);&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Also, you can specify SDTM implementation version, 3.1.1 or 3.1.2. For domains (&amp;amp;Dom), DM, CO and SUPPQUAL will be created automatically; you should list others accordingly:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;SDTM 3.1.1: SV CM EX AE DS MH DV EG IE LB PE QS SC VS TV TI XD SU XR XS XE TR (Total: 22)&lt;/p&gt;
+
+&lt;p&gt;SDTM 3.1.2: AE CE CM DA DS DV EG EX FA IE LB MB MH MS PC PE PP QS SC SE SU SV TA TE TI TS TV VS (Total: 28)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You should also choose the “CORE” variable (REQUIRED, PERMISSIBLE and EXPECTED) by triggering &amp;amp;req, &amp;amp;perm, and &amp;amp;exp to “YES” or “NO”. Note that&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;REQUIRED and EXPECTED variables must always be included (req=YES, exp=YES);&lt;/p&gt;
+
+&lt;p&gt;PERMISSIBLE variables included if needed (perm=YES or perm=NO)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Submit &lt;em&gt;generate_mapping_template.sas&lt;/em&gt; and you can get a blank template mapping file tmpmapping.xls in &lt;strong&gt;C:Program FilesCDISC Expresstemp&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image002.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px&#34; title=&#34;clip_image002&#34; border=&#34;0&#34; alt=&#34;clip_image002&#34; align=&#34;left&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image002_thumb.jpg&#34; width=&#34;478&#34; height=&#34;436&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Copy it to &lt;strong&gt;C:Program FilesCDISC ExpressstudiesCLINCAPdocMapping file &amp;#8211; working version&lt;/strong&gt; for example used for study “CLINCAP” and then fill all the blank columns (it NEEDS efforts!).&lt;/p&gt;
+
+&lt;p&gt;If this mapping file passes the validation process, a final version named mapping.xls will be copied automatically to &lt;strong&gt;C:Program FilesCDISC ExpressstudiesCLINCAPdocMapping file &amp;#8211; validated version&lt;/strong&gt; for later processing.&lt;/p&gt;
+
+&lt;p&gt;Note that if you already have some validated mapping file for other studies, it would serve as a good start rather than using the blank template from the scratch.&lt;/p&gt;
+
+&lt;h2 id=&#34;4-2-navigate-mapping-file&#34;&gt;4.2 Navigate mapping file&lt;/h2&gt;
+
+&lt;p&gt;Let’s take a look at the “real” worked mapping file for a demo study first, in &lt;strong&gt;C:Program FilesCDISC Expressstudiesexample1docMapping file &amp;#8211; working version&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The first sheet is a welcome dashboard:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image004.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;clip_image004&#34; border=&#34;0&#34; alt=&#34;clip_image004&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image004_thumb.jpg&#34; width=&#34;498&#34; height=&#34;292&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Then StudyMetadata sheet, a XML metadata specification used to generate define.xml. you need only add some information in “Values” column:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image006.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;clip_image006&#34; border=&#34;0&#34; alt=&#34;clip_image006&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image006_thumb.jpg&#34; width=&#34;491&#34; height=&#34;377&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The FORMAT sheet:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image007.gif&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;clip_image007&#34; border=&#34;0&#34; alt=&#34;clip_image007&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image007_thumb.gif&#34; width=&#34;501&#34; height=&#34;324&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Such format structure is similar with the one we export the format from a format catalog using&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;b&gt;proc&lt;/b&gt; &lt;b&gt;format&lt;/b&gt; library=library cntlout=format_out;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;b&gt;run&lt;/b&gt;;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In most production environment, programmers get formats from clinical data management group. If the entire formats are assigned into proper libraries (work or library), you don’t need to export such formats into this spreadsheet. Of course in the format sheet, you can type some customized format.&lt;/p&gt;
+
+&lt;p&gt;A typical domain sheet (AT LAST!) that needs efforts and our understanding of the software, DM for example:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image009.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;clip_image009&#34; border=&#34;0&#34; alt=&#34;clip_image009&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image009_thumb.jpg&#34; width=&#34;480&#34; height=&#34;439&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;From the ‘Dataset’ column, three raw datasets from &lt;strong&gt;C:Program FilesCDISC Expressstudiesexample1source&lt;/strong&gt; needed to map into DM domain, demog, siteinv and eligassess. Note that you can use any data step options such as drop=, rename=, where= for the input datasets.&lt;/p&gt;
+
+&lt;p&gt;At the last of ‘Dataset’ column, “all” indicates that all the previous datasets mentioned above should be merged together for final processing.&lt;/p&gt;
+
+&lt;p&gt;In the ‘Merge Key’ column, ‘sitecode’ is designed to datasets demog and siteinv which means demog and siteinv should be merged by the common key, ‘sitecode’.&lt;/p&gt;
+
+&lt;p&gt;As we mentioned, all the previous datasets should be merged at last. But there is no common key settled in the ‘Merge Key’ column. It is a common rule: if no key specified for merge, USUBJID is used by default.&lt;/p&gt;
+
+&lt;p&gt;The third column is ‘CDISC variable’, which list all the needed variables according to implementation version. An important note: you do not need to implement all the variables according to the order as they appear in the blank template mapping file. In the previous blank file, “AGE” in DM domain is ordered in Line 12, but in this working file, “AGE” is calculated in the second last order. The variable order of final DM domain will be as same as the blank one.&lt;/p&gt;
+
+&lt;p&gt;It makes sense in practice. For example, the sequential variable, e.g. AESEQ is ordered after USUBJID, but you can only get the sequential number when all other variables well done. So SEQ variables are always computed in the final stage in a working mapping file.&lt;/p&gt;
+
+&lt;p&gt;“Expression” column specify the mapping rule from raw datasets to SDTM domains. Assignments, expressions and macro calls (rooted in &lt;strong&gt;C:Program FilesCDISC Expressmacrosfunction_library&lt;/strong&gt;) are allowed in this column and most of them are straightforward. We will discuss more in the following section.&lt;/p&gt;
+
+&lt;p&gt;Sum up, we can “translate” this mapping sheet to SAS codes for better understanding of CDISC Express architecture:&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;data tem1;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; set demog;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; STUDYID=study;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; DOMAIN =&amp;domain;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; USUBJID=%CONCATENATE(_variables=study sitecode patid);&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; SUBJID =patid;&lt;/p&gt;
+
+&lt;p&gt;RFSTDTC=%D_RFST(_dataset=trtinf,_date=trtinfdt,_key=patid,_ivrsds=ivrs,_ivrsdt=randdat);&lt;/p&gt;
+
+&lt;p&gt;RFENDTC=%SORTLOOKUP(_dataset=disc,_variable=fupdat,_key=patid,_sort_variable=fupdat,_keep=last);&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; SITEID =sitecode;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; INVID =invcode;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160; BRTHDTC=%FORMAT(_variable=brthdat,_format=yymmdd10);&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160; SEX =%GENDER(_gender=sex);&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160; RACE =%D_RACE();&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160; ETHNIC =upcase(ethnic);&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160; COUNTRY=&amp;ldquo;USA&amp;rdquo;;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; DMDTC =%FORMAT(_variable=formdat,_format=yymmdd10);&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160; ARMCD =&amp;ldquo;&amp;rdquo;;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; ARM =&amp;ldquo;&amp;rdquo;;&lt;/p&gt;
+
+&lt;p&gt;run;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;data tem2;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; merge tem1 siteinv(drop=invcode);&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; by sitecode;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; INVNAM=trim(lname)||&amp;ldquo;,&amp;rdquo;||fname;&lt;/p&gt;
+
+&lt;p&gt;run;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;data dm;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; merge tem2 eligassess;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; by patid;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160; AGE =year(infcondt)-year(brthdat)-(month(brthdat)&amp;gt;month(infcondt))-(month(brthdat)=month(infcondt) and day(brthdat)&amp;gt;day(infcondt));&lt;/p&gt;
+
+&lt;p&gt;AGEU=%CONVERTIF(&lt;a href=&#34;mailto:_if_variable=@AGE,_if_value=.,_then_value&#34;&gt;_if_variable=@AGE,_if_value=.,_then_value&lt;/a&gt;=, _else_value=YEARS);&lt;/p&gt;
+
+&lt;p&gt;run;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Following will be some explore the data manipulation techniques in CDISC Express, such as merge, transpose.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/TobeContinued1.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;TobeContinued&#34; border=&#34;0&#34; alt=&#34;TobeContinued&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/TobeContinued_thumb1.jpg&#34; width=&#34;246&#34; height=&#34;187&#34; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dive into CDISC Express (2): Create a New Study</title>
+      <link>/2011/07/02/dive-into-cdisc-express-2-create-a-new-study/</link>
+      <pubDate>Sat, 02 Jul 2011 21:21:22 +0000</pubDate>
+      
+      <guid>/2011/07/02/dive-into-cdisc-express-2-create-a-new-study/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/06/28/dive-into-cdisc-express-1-introductory/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Dive into CDISC Express (1): Introductory&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&#34;3-step-1-of-6-create-a-new-study-create-new-study-sas&#34;&gt;3. Step 1 of 6: Create a new study (&lt;em&gt;create_new_study.sas&lt;/em&gt;)&lt;/h4&gt;
+
+&lt;p&gt;Open &lt;em&gt;create_new_study.sas&lt;/em&gt; in &lt;strong&gt;C:Program FilesCDISC Expressprograms&lt;/strong&gt;, you can see only one line of a macro call:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%addnewstudy(studyname=my new study);&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Just assign a study name to the macro variable, &lt;font color=&#34;#ff0000&#34;&gt;&amp;amp;studyname,&lt;/font&gt; e.g, “CLINCAP”:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%addnewstudy(studyname= CLINCAP);&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Submit the codes, you can find a folder named “CLINCAP” with the same structure as the two demo studies imbedded in this application(example1 and example2) in &lt;strong&gt;C:Program FilesCDISC Expressstudies&lt;/strong&gt;, &lt;em&gt;see&lt;/em&gt;(the left and right panels are folders and files before and after the execution of &lt;em&gt;create_new_study.sas&lt;/em&gt;. The following the same):&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/new.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;new&#34; border=&#34;0&#34; alt=&#34;new&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/new_thumb.png&#34; width=&#34;516&#34; height=&#34;347&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Folder ‘&lt;strong&gt;doc&lt;/strong&gt;’ is used to hold the mapping files;&lt;/p&gt;
+
+&lt;p&gt;Folder ‘&lt;strong&gt;log&lt;/strong&gt;’ used to hold log files generated by following macro calls, such as generating SDTM domains;&lt;/p&gt;
+
+&lt;p&gt;Folder ‘&lt;strong&gt;results&lt;/strong&gt;’ and its subfolder will hold all the outputs, such as define.xml, SAS transport file, validation reports and SDTM datasets;&lt;/p&gt;
+
+&lt;p&gt;Folder ‘&lt;strong&gt;source&lt;/strong&gt;’ holds all the clinical raw data used as inputs for SDTM domains;&lt;/p&gt;
+
+&lt;p&gt;Folder ‘&lt;strong&gt;tempdata&lt;/strong&gt;’ holds all the temporary datasets generated by following macro calls.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Also, a configuration file named _CLINCAP&lt;em&gt;configuration.sas&lt;/em&gt; put in &lt;strong&gt;C:Program FilesCDISC Expressprogramsstudy configuration&lt;/strong&gt;. This file is used to set some study level parameters, such as lab and toxicity specifications (details in &lt;strong&gt;C:Program FilesCDISC ExpressspecsLab specs&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;Two versions of SDTM implementation guides are supported by CDISC Express, CDISC SDTM Implementation Guide Version 3.1.1 and Version 3.1.2. You can find the corresponding specification files in &lt;strong&gt;C:Program FilesCDISC ExpressspecsSDTM specs&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;SDTM_Specs_3_1_1.xls&lt;/p&gt;
+
+&lt;p&gt;SDTM_Specs_3_1_2.xls&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The choosing of SDTM implementation version is also coded in the configuration file, in Line 41:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%LET SDTMSPECFILE=SDTM_Specs_3_1_1.xls;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Version 3.1.1 is used by default. You can also choose Version 3.1.2 if needed:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%LET SDTMSPECFILE=SDTM_Specs_3_1_2.xls;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Assign a study name and choose a SDTM implementation version. That’s all needed in step 1. Let’s take few minutes to navigate the software. CDISC Express is a set of macros and Excel files. It is important to know the file structure first:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;C:Program FilesCDISC Express&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;├─&lt;strong&gt;documentation&lt;/strong&gt; :FAQ, Quick Start, User Guide&lt;/p&gt;
+
+&lt;p&gt;├─&lt;strong&gt;macros&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;│ ├─ClinMap :system level macros&lt;/p&gt;
+
+&lt;p&gt;│ └─function_library :study level macros&lt;/p&gt;
+
+&lt;p&gt;├─&lt;strong&gt;programs&lt;/strong&gt; :&amp;ldquo;action taken&amp;rdquo; macros&lt;/p&gt;
+
+&lt;p&gt;│ ├─study configuration :study parameters configuration&lt;/p&gt;
+
+&lt;p&gt;├─&lt;strong&gt;SDTM Validation&lt;/strong&gt; :For validation of SDTM domains&lt;/p&gt;
+
+&lt;p&gt;│ └─study1&lt;/p&gt;
+
+&lt;p&gt;├─&lt;strong&gt;specs&lt;/strong&gt; :specification files&lt;/p&gt;
+
+&lt;p&gt;│ ├─Excel engine :ExcelXP tagset file&lt;/p&gt;
+
+&lt;p&gt;│ ├─Lab specs :lab and toxicity&lt;/p&gt;
+
+&lt;p&gt;│ ├─Mapping validation :validation rules&lt;/p&gt;
+
+&lt;p&gt;│ ├─SDTM specs :hold two versions of SDTM implementation&lt;/p&gt;
+
+&lt;p&gt;│ └─SDTM Terminology :SDTM codelist(including NCI terminology)&lt;/p&gt;
+
+&lt;p&gt;├─&lt;strong&gt;studies&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;│ ├─example1&lt;/p&gt;
+
+&lt;p&gt;└─&lt;strong&gt;temp&lt;/strong&gt; :hold temporary data not specified to any studies&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As we already got, all the “action taken” programs such as &lt;em&gt;create_new_study.sas&lt;/em&gt; are located in &lt;strong&gt;C:Program FilesCDISC Expressprograms&lt;/strong&gt;. In &lt;em&gt;create_new_study.sas&lt;/em&gt;, one macro is called, &lt;em&gt;&lt;font color=&#34;#ff0000&#34;&gt;%addnewstudy&lt;/font&gt;&lt;/em&gt;, which is in &lt;strong&gt;C:Program FilesCDISC ExpressmacrosClinMap&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Note that in &lt;strong&gt;C:Program FilesCDISC Expressmacros&lt;/strong&gt;, there are two sets of macros in different folders:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;C:Program FilesCDISC ExpressmacrosClinMap&lt;/strong&gt;: this folder holds all “system” level macros used by the application only. No modification encouraged.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;C:Program FilesCDISC Expressmacrosfunction_library&lt;/strong&gt;: macros used for mapping among studies. You can also create you own macro in this folder. The application imbedded macros also documented in user guide.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Following will be the most important part, mapping file.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/TobeContinued.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;TobeContinued&#34; border=&#34;0&#34; alt=&#34;TobeContinued&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/TobeContinued_thumb.jpg&#34; width=&#34;240&#34; height=&#34;181&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dive into CDISC Express (1): Introductory</title>
+      <link>/2011/06/28/dive-into-cdisc-express-1-introductory/</link>
+      <pubDate>Tue, 28 Jun 2011 21:24:33 +0000</pubDate>
+      
+      <guid>/2011/06/28/dive-into-cdisc-express-1-introductory/</guid>
+      <description>
+
+&lt;p&gt;Recently I did for my personal project some research on &lt;a href=&#34;http://www.clinovo.com&#34; target=&#34;_blank&#34;&gt;Clinovo&lt;/a&gt;’s open source application, &lt;a href=&#34;http://www.clinovo.com/cdisc&#34; target=&#34;_blank&#34;&gt;CDISC Express&lt;/a&gt;, a SAS application based on Excel framework designed to map clinical data to CDISC SDTM domains automatically. Not perfect yet, but it is easily understandable and practically usable after few hours’ of exploration of user guide. And most important, it is on the right way: an automatic CDISC converter is the magic weapon in almost every clinical programmer’s dream.&lt;/p&gt;
+
+&lt;p&gt;CDISC Express is the first and only practically usable open source CDISC converter I even met. I wrote &lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/05/16/cdisc-express-a-glance&#34; target=&#34;_blank&#34;&gt;a post a month ago&lt;/a&gt; when I first tested it with great interests and reported some issues to its &lt;a href=&#34;http://cdiscsupport.clinovo.com/&#34; target=&#34;_blank&#34;&gt;fix system&lt;/a&gt;. Then I also had the great opportunity to discuss the software via email with its core developer, Romain Miralles. This post is just my personal notes on how to use and dig into the software, and will be best serve as a working documentation. You can return to me for any questions and comments.&lt;/p&gt;
+
+&lt;p&gt;By the way, there is an opportunity for your practicing and you will also have a change to win an iPad2 from Clinovo’s CDISC Express Contest:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.clinovo.com/cdisc/game&#34;&gt;http://www.clinovo.com/cdisc/game&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The due day is July 15&lt;sup&gt;th&lt;/sup&gt; and I already submitted my work. That’s fun.&lt;/p&gt;
+
+&lt;h1 id=&#34;1-download-and-installation&#34;&gt;1. Download and Installation&lt;/h1&gt;
+
+&lt;p&gt;You can get CDISC Express for free in&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.clinovo.com/cdisc/download&#34;&gt;http://www.clinovo.com/cdisc/download&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It is a window application and will be installed by default in&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;C:Program FilesCDISC Express&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/06/clip_image0024.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;clip_image002[4]&#34; border=&#34;0&#34; alt=&#34;clip_image002[4]&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/06/clip_image0024_thumb.jpg&#34; width=&#34;420&#34; height=&#34;333&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;After installation, this path will be coded as a macro variable &lt;font color=&#34;#ff0000&#34;&gt;&amp;amp;CDISCPATH&lt;/font&gt; in the following six SAS files which are all located in &lt;strong&gt;C:Program FilesCDISC Expressprograms&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;create_new_study.sas&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;_generate&lt;em&gt;Definexml.sas&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;generate_mapping_template.sas&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;_generate&lt;em&gt;SDTM.sas&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Validate_Mapping_File.sas&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Validate_SDTM_Domains.sas&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The macro variable reads as&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%LET CDISCPATH = C:Program FilesCDISC Express;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If you change the destination folder at the installation stage, e.g., to &lt;strong&gt;D:CDISC Express&lt;/strong&gt;, the value of the macro variable &lt;font color=&#34;#ff0000&#34;&gt;&amp;amp;CDISCPATH&lt;/font&gt; will be changed accordingly in the six files mentioned before:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%LET CDISCPATH = D:CDISC Express;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Note that if you want copy the whole folder of files to another destination, you should at least manually change the value of &lt;font color=&#34;#ff0000&#34;&gt;&amp;amp;CDISCPATH&lt;/font&gt; in such six files or add some codes to capture the path accordingly. From this point of view, the path setting of CDISC Express is not completely portable. Recommend that if you have such needs, just re-install the software in any destination you want. It will not write any records into registry and you can have many copies in one machine.&lt;/p&gt;
+
+&lt;p&gt;The following discussion assumes the software roots in &lt;strong&gt;C:Program FilesCDISC Express.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;2-working-flow&#34;&gt;&lt;strong&gt;2.&lt;/strong&gt; &lt;strong&gt;Working Flow&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;You can follow all the 6 action steps one by one coded in&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;C:Program FilesCDISC Expressprograms&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id=&#34;1-create-a-new-study-create-new-study-sas&#34;&gt;1) Create a new study (&lt;em&gt;create_new_study.sas&lt;/em&gt;)&lt;/h5&gt;
+
+&lt;p&gt;Simple and easy. Just assign a new study name in a macro call and run.&lt;/p&gt;
+
+&lt;h5 id=&#34;2-generate-mapping-file-generate-mapping-template-sas&#34;&gt;2) Generate mapping file (&lt;em&gt;generate_mapping_template.sas&lt;/em&gt;)&lt;/h5&gt;
+
+&lt;p&gt;This is the critical and most time consuming part. You should design mapping rules for every domain needed in Excel spreadsheets (the MAPPING FILE). If done, all other tasks, such as generate SDTM datasets, SAS transport files, define.xml and validation, can be well done by just clicking&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/06/clip_image0034.gif&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px&#34; title=&#34;clip_image003[4]&#34; border=&#34;0&#34; alt=&#34;clip_image003[4]&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/06/clip_image0034_thumb.gif&#34; width=&#34;37&#34; height=&#34;33&#34; /&gt;&lt;/a&gt; buttons&lt;/p&gt;
+
+&lt;p&gt;.&lt;/p&gt;
+
+&lt;h5 id=&#34;3-validate-mapping-file-validate-mapping-file-sas&#34;&gt;3) Validate mapping file (&lt;em&gt;Validate_Mapping_File.sas&lt;/em&gt;)&lt;/h5&gt;
+
+&lt;p&gt;For validating the mapping file, just click the button. As mentioned, the most important work is designing mapping file. It would be back and forth to design mapping file and validate it.&lt;/p&gt;
+
+&lt;h5 id=&#34;4-generate-sdtm-datasets-generate-sdtm-sas&#34;&gt;4) Generate SDTM datasets (_generate&lt;em&gt;SDTM.sas&lt;/em&gt;)&lt;/h5&gt;
+
+&lt;p&gt;If mapping file is OK, click the button.&lt;/p&gt;
+
+&lt;h5 id=&#34;5-validate-sdtm-datasets-validate-sdtm-domains-sas&#34;&gt;5) Validate SDTM datasets (&lt;em&gt;Validate_SDTM_Domains.sas&lt;/em&gt;)&lt;/h5&gt;
+
+&lt;p&gt;Click the button.&lt;/p&gt;
+
+&lt;h5 id=&#34;6-generate-define-xml-generate-definexml-sas&#34;&gt;6) Generate Define.xml (_generate&lt;em&gt;Definexml.sas&lt;/em&gt;)&lt;/h5&gt;
+
+&lt;p&gt;Click the button.&lt;/p&gt;
+
+&lt;p&gt;Following part will dig into the software step by step.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/06/TobeContinued.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;TobeContinued&#34; border=&#34;0&#34; alt=&#34;TobeContinued&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/06/TobeContinued_thumb.jpg&#34; width=&#34;240&#34; height=&#34;181&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

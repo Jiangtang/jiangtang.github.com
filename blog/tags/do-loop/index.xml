@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Do Loop on Lithium Theme</title>
+    <link>/tags/do-loop/index.xml</link>
+    <description>Recent content in Do Loop on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/do-loop/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Yet Another Instance of DoW-Loop</title>
+      <link>/2013/08/07/yet-another-instance-of-dow-loop/</link>
+      <pubDate>Wed, 07 Aug 2013 23:49:55 +0000</pubDate>
+      
+      <guid>/2013/08/07/yet-another-instance-of-dow-loop/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Just got another &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/10/20/dow-loop-dorfman/&#34;&gt;&lt;font size=&#34;1&#34;&gt;DoW-Loop&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;example from SAS Sample #48582:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://support.sas.com/kb/48/582.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://support.sas.com/kb/48/582.html&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DoW-Loop: A Quick Note from SESUG 2012</title>
+      <link>/2012/10/20/dow-loop-a-quick-note-from-sesug-2012/</link>
+      <pubDate>Sat, 20 Oct 2012 23:26:57 +0000</pubDate>
+      
+      <guid>/2012/10/20/dow-loop-a-quick-note-from-sesug-2012/</guid>
+      <description>&lt;nav&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#once-upon-a-midnight-dreary&#34;&gt;    Once upon a midnight dreary,&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#while-i-pondered-weak-and-weary&#34;&gt;While I pondered, weak and weary,&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#over-many-a-quaint-and-curious&#34;&gt;   Over many a quaint and curious&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#volume-of-sas-l-galore&#34;&gt;        Volume of SAS-L galore,&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#while-i-coded-nearly-snapping&#34;&gt;    While I coded, nearly snapping,&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#suddenly-there-came-a-tapping&#34;&gt;    Suddenly there came a tapping&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#as-of-someone-gently-wrapping&#34;&gt;    As of someone gently wrapping&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#code-around-my-mental-core&#34;&gt;      Code around my mental core.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#8217-tis-do-whitlock-loop-i-muttered&#34;&gt;“&amp;#8217;Tis’ Do-Whitlock Loop”, I muttered,&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#wrapped-around-my-brain-core-8211&#34;&gt;  “Wrapped around my brain core” &amp;#8211;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#this-it-was-and-so-much-more&#34;&gt;     This it was, and so much more!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#8212-a-href-http-www-linkedin-com-in-pauldorfman-target-blank-paul-dorfman-a-a-bit-of-dow-history&#34;&gt;  &amp;#8212;&lt;a href=&#34;http://www.linkedin.com/in/pauldorfman&#34; target=&#34;_blank&#34;&gt;Paul Dorfman&lt;/a&gt;, &lt;em&gt;A Bit of DoW-History&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;p align=&#34;justify&#34;&gt;
+  &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/DoW.png&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;DoW&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/DoW_thumb.png&#34; alt=&#34;DoW&#34; width=&#34;455&#34; height=&#34;220&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;h6 id=&#34;once-upon-a-midnight-dreary&#34;&gt;    Once upon a midnight dreary,&lt;/h6&gt;
+
+&lt;h6 id=&#34;while-i-pondered-weak-and-weary&#34;&gt;While I pondered, weak and weary,&lt;/h6&gt;
+
+&lt;h6 id=&#34;over-many-a-quaint-and-curious&#34;&gt;   Over many a quaint and curious&lt;/h6&gt;
+
+&lt;h6 id=&#34;volume-of-sas-l-galore&#34;&gt;        Volume of SAS-L galore,&lt;/h6&gt;
+
+&lt;h6 id=&#34;while-i-coded-nearly-snapping&#34;&gt;    While I coded, nearly snapping,&lt;/h6&gt;
+
+&lt;h6 id=&#34;suddenly-there-came-a-tapping&#34;&gt;    Suddenly there came a tapping&lt;/h6&gt;
+
+&lt;h6 id=&#34;as-of-someone-gently-wrapping&#34;&gt;    As of someone gently wrapping&lt;/h6&gt;
+
+&lt;h6 id=&#34;code-around-my-mental-core&#34;&gt;      Code around my mental core.&lt;/h6&gt;
+
+&lt;h6 id=&#34;8217-tis-do-whitlock-loop-i-muttered&#34;&gt;“&amp;#8217;Tis’ Do-Whitlock Loop”, I muttered,&lt;/h6&gt;
+
+&lt;h6 id=&#34;wrapped-around-my-brain-core-8211&#34;&gt;  “Wrapped around my brain core” &amp;#8211;&lt;/h6&gt;
+
+&lt;h6 id=&#34;this-it-was-and-so-much-more&#34;&gt;     This it was, and so much more!&lt;/h6&gt;
+
+&lt;h6 id=&#34;8212-a-href-http-www-linkedin-com-in-pauldorfman-target-blank-paul-dorfman-a-a-bit-of-dow-history&#34;&gt;  &amp;#8212;&lt;a href=&#34;http://www.linkedin.com/in/pauldorfman&#34; target=&#34;_blank&#34;&gt;Paul Dorfman&lt;/a&gt;, &lt;em&gt;A Bit of DoW-History&lt;/em&gt;&lt;/h6&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;justify&#34;&gt;
+  &lt;span style=&#34;font-size: xx-small;&#34;&gt;It’s great to have Paul Dorfman’s demo of DoW-loop (with a poem!&lt;em&gt; Thanks to Paul to send me a copy.&lt;/em&gt;) in this &lt;/span&gt;&lt;a href=&#34;http://www.sesug.org/SESUG2012/AcademicSections.php&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;SESUG 2012 conference&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;. First posted in SAS-L by Whitlock, promoted by Dorfman,  DoW-loop is widely known as “&lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;a href=&#34;http://www.listserv.uga.edu/cgi-bin/wa?A2=ind0206B&amp;L=sas-l&amp;F=&amp;S=&amp;P=45520&#34; target=&#34;_blank&#34;&gt;Whitlock Do Loop&lt;/a&gt;&lt;/span&gt;” or ” &lt;span style=&#34;color: #ff0000;&#34;&gt;Do&lt;/span&gt;rfman-&lt;span style=&#34;color: #ff0000;&#34;&gt;W&lt;/span&gt;hitlock Do Loop”. In Dorfman’s presentation, the following three forms of DoW-loop were constructed:&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;div align=&#34;justify&#34;&gt;
+  &lt;span style=&#34;font-size: xx-small;&#34;&gt;Henderson-Whitlock Original Form of DoW-loop&lt;/span&gt;
+&lt;/div&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;div align=&#34;justify&#34;&gt;
+  &lt;span style=&#34;font-size: xx-small;&#34;&gt;Dorfman’s Short Form of DoW-loop&lt;/span&gt;
+&lt;/div&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;div align=&#34;justify&#34;&gt;
+  &lt;span style=&#34;font-size: xx-small;&#34;&gt;Double DoW-loop: the DeVenezia-Schreier Form&lt;/span&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p align=&#34;justify&#34;&gt;
+  &lt;span style=&#34;font-size: xx-small;&#34;&gt;Using a test data set&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data a;&lt;br /&gt; input id $ var;&lt;br /&gt; datalines;&lt;br /&gt; A 1&lt;br /&gt; A 2&lt;br /&gt; B 3&lt;br /&gt; B 4&lt;br /&gt; B 5&lt;br /&gt; ;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;justify&#34;&gt;
+  &lt;span style=&#34;font-size: xx-small;&#34;&gt;the &lt;span style=&#34;font-size: xx-small;&#34;&gt;Henderson-Whitlock Original Form of DoW-loop looks like:&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data b;&lt;br /&gt; count= 0;&lt;br /&gt; sum = 0 ;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;    &lt;span style=&#34;color: #ff0000;&#34;&gt;do until ( last.id )&lt;/span&gt; ;&lt;br /&gt; set a ;&lt;br /&gt; by id ;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;        count+1;&lt;br /&gt; sum+var;&lt;br /&gt; end ;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;    mean = sum / count ;&lt;br /&gt; run ;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;justify&#34;&gt;
+  &lt;span style=&#34;font-size: xx-small;&#34;&gt;Ian Whitlock first used such kind of do loop in &lt;a href=&#34;http://www.listserv.uga.edu/cgi-bin/wa?A2=ind0002C&amp;L=sas-l&amp;P=R5155&#34; target=&#34;_blank&#34;&gt;a SAS-L post&lt;/a&gt; and after its rising, Paul Dorfman, the main promoter of DoW-loop, &lt;a href=&#34;http://support.sas.com/resources/papers/proceedings12/156-2012.pdf&#34; target=&#34;_blank&#34;&gt;found&lt;/a&gt; that Don Henderson also made use such &lt;em&gt;DO UNTIL()&lt;/em&gt; structure in a NESUG 1988 paper, &lt;em&gt;&lt;a href=&#34;http://www.lexjansen.com/nesug/nesug88/sas_supervisor.pdf&#34; target=&#34;_blank&#34;&gt;The SAS Supervisor&lt;/a&gt;&lt;/em&gt;. That’s why he named it as &lt;span style=&#34;font-size: xx-small;&#34;&gt;Henderson-Whitlock form of DoW-loop. I then read from a &lt;a href=&#34;http://www.sascommunity.org/wiki/Do_until_last.var&#34; target=&#34;_blank&#34;&gt;DoW-loop page in sascommunity.org&lt;/a&gt; that Don Henderson taught such concept in class where Ian Whitlock was a student. This is a nice story.&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;justify&#34;&gt;
+  &lt;span style=&#34;font-size: xx-small;&#34;&gt;Paul Dorfman himself also contributed a short form:&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data c ;&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;do n = 1 by 1 until ( last.id )&lt;/span&gt; ;&lt;br /&gt; set a ;&lt;br /&gt; by id ;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;        count = &lt;span style=&#34;color: #ff0000;&#34;&gt;sum&lt;/span&gt; (count, 1) ;&lt;br /&gt; sum = sum (sum, var) ;&lt;br /&gt; end ;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;    mean = sum / count ;&lt;br /&gt; run ;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;justify&#34;&gt;
+  &lt;span style=&#34;font-size: xx-small;&#34;&gt;or even shorter:&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data c ;&lt;br /&gt; do &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;em&gt;n&lt;/em&gt;&lt;/span&gt; = 1 by 1 until ( last.id ) ;&lt;br /&gt; set a ;&lt;br /&gt; by id ;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;        sum = sum (sum, var) ;&lt;br /&gt; end ;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;    mean = sum / &lt;em&gt;n&lt;/em&gt; ;&lt;br /&gt; run ;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;justify&#34;&gt;
+  &lt;span style=&#34;font-size: xx-small;&#34;&gt;These kinds of form of DoW-loop utilizes the SUM function, automatic variable _N_ and an increment trick in &lt;em&gt;DO UNTIL()&lt;/em&gt; structure then the initializations before the loop are not needed any more. Besides such a short form, Paul Dorfman’s work on DoW-loop includes the invention of the dynamic file splitting method combining the DoW-loop and the hash object (also showed up in the meeting).&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;justify&#34;&gt;
+  &lt;span style=&#34;font-size: xx-small;&#34;&gt;The double DoW-loop is under the name Howard Schreier and Richard DeVenezia (DeVenezia-Schreier Form; I should do more literature research on it!):&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data d ;&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;do n = 1 by 1 until ( last.id )&lt;/span&gt; ;&lt;br /&gt; set a ;&lt;br /&gt; by id ;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;        count = sum (count, 1) ;&lt;br /&gt; sum = sum (sum, var) ;&lt;br /&gt; end ;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;    mean = sum / count ;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;    &lt;span style=&#34;color: #ff0000;&#34;&gt;do n = 1 by 1 until ( last.id ) &lt;/span&gt;;&lt;br /&gt; set a ;&lt;br /&gt; by id ;&lt;br /&gt; output;&lt;br /&gt; end ;&lt;br /&gt; run ;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;/*&lt;strong&gt;*&lt;/strong&gt;*&lt;strong&gt;*&lt;/strong&gt;*&lt;strong&gt;*&lt;/strong&gt;***/&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;/**&lt;strong&gt;&lt;em&gt;&lt;strong&gt;update 1&lt;/strong&gt;&lt;/em&gt;&lt;/strong&gt;******/&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Thanks to Quentin’s message, Don Henderson’s &lt;/span&gt;&lt;a href=&#34;http://www.lexjansen.com/nesug/nesug88/sas_supervisor.pdf&#34;&gt;&lt;em&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;The SAS Supervisor&lt;/span&gt;&lt;/em&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;em&gt; &lt;/em&gt;can be even traced back to &lt;/span&gt;&lt;a href=&#34;http://www.sascommunity.org/sugi/SUGI83/Sugi-83-171%20Henderson.pdf&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;1983&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;/**&lt;strong&gt;&lt;em&gt;&lt;strong&gt;update 2&lt;/strong&gt;&lt;/em&gt;&lt;/strong&gt;******/&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;I used a Star Wars style of opening crawl to render Paul Dorfman’s DoW-loop verses simply because the finding of Don Henderson looks slightly like a prequel for me (although I have no intention to make up a Star Wars parody). Actually, as Paul stated, the honor belongs to an American author, Edgar Allan Poe and one of his poems, &lt;em&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/The_Raven&#34; target=&#34;_blank&#34;&gt;The Raven&lt;/a&gt;&lt;/em&gt;:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Once upon a midnight dreary, while I pondered, weak and weary,&lt;br /&gt; Over many a quaint and curious volume of forgotten lore —&lt;br /&gt; While I nodded, nearly napping, suddenly there came a tapping,&lt;br /&gt; As of some one gently rapping, rapping at my chamber door.&lt;br /&gt; &amp;#8220;&amp;#8216;Tis some visiter,&amp;#8221; I muttered, &amp;#8220;tapping at my chamber door —&lt;br /&gt; Only this and nothing more.&amp;#8221;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;/**&lt;strong&gt;&lt;em&gt;&lt;strong&gt;update 3&lt;/strong&gt;&lt;/em&gt;&lt;/strong&gt;******/&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;a href=&#34;https://listserv.uga.edu/cgi-bin/wa?A2=ind1210D&amp;L=SAS-L&amp;P=R11823&#34; target=&#34;_blank&#34;&gt;A double DoW demo&lt;/a&gt; in recent SAS-L(&lt;/span&gt;Sat, 27 Oct 2012&lt;span style=&#34;font-size: xx-small;&#34;&gt;).&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

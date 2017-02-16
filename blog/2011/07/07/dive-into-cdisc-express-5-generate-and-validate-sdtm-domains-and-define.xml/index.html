@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>Dive into CDISC Express (5): Generate and Validate SDTM domains and define.xml - Lithium Theme</title>
+<meta property="og:title" content="Dive into CDISC Express (5): Generate and Validate SDTM domains and define.xml - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Dive into CDISC Express (5): Generate and Validate SDTM domains and define.xml</h1>
+
+    
+    <span class="article-date">July 7, 2011</span>
+    
+
+    <div class="article-content">
+      <blockquote>
+<p><a href="http://www.jiangtanghu.com/blog/2011/06/28/dive-into-cdisc-express-1-introductory/"><em>Dive into CDISC Express (1): Introductory</em></a></p>
+
+<p><em><a href="http://www.jiangtanghu.com/blog/2011/07/02/dive-into-cdisc-express-2-create-a-new-study/">Dive into CDISC Express (2): Create a New Study</a></em></p>
+
+<p><em><a href="http://www.jiangtanghu.com/blog/2011/07/03/dive-into-cdisc-express-3-navigate-mapping-file/">Dive into CDISC Express (3): Navigate mapping file</a></em></p></p>
+
+<p>_<a href="http://www.jiangtanghu.com/blog/2011/07/04/dive-into-cdisc-express-4-data-manipulation-techniques-2/" target="_blank">Dive into CDISC Express (4): Data manipulation techniques</a>_</p>
+</blockquote>
+
+<p>A more friendly PDF version of these all CDISC Express series is also available in</p>
+
+<blockquote>
+<p><a href="http://jiangtanghu.com/docs/en/CDISCExpress.pdf" title="http://jiangtanghu.com/docs/en/CDISCExpress.pdf">http://jiangtanghu.com/docs/en/CDISCExpress.pdf</a></p>
+</blockquote>
+
+<p>The following tasks, such as generating SDTM domains and define.xml, need just some clicking button work in CDISC Express using a well designed mapping file. Few words needed due to the software.</p>
+
+<p></p>
+
+<h4 id="5-step-3-of-6-validate-mapping-file-validate-mapping-file-sas"><strong>5. Step 3 of 6: Validate mapping file (<em>Validate_Mapping_File.sas</em>)</strong></h4>
+
+<p>It would be back and forth to design, validate then modify and re-validate the mapping file. And sure finally, you will get all the work done, at least no syntax error (how to avoid semantic errors is upon your domain knowledge). A validated mapping file, named mapping.xls will be copied to <strong>&#8230; docMapping file &#8211; validated version</strong> from the working file, tmpmaping.xls. You will see</p>
+
+<blockquote>
+<p>The corresponding log file in folder <strong>&#8230; log</strong></p>
+
+<p>A report in <strong>…resultsMapping Validation</strong>, named Mapping_validation.html</p>
+</blockquote>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/validate.png"><img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="validate" border="0" alt="validate" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/validate_thumb.png" width="499" height="281" /></a></p>
+
+<p>Also the temporary datasets in <strong>…tempdata</strong> and <strong>…temp</strong>:</p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0041.jpg"><img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="clip_image004" border="0" alt="clip_image004" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image004_thumb1.jpg" width="497" height="189" /></a></p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0061.jpg"><img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="clip_image006" border="0" alt="clip_image006" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image006_thumb1.jpg" width="496" height="313" /></a></p>
+
+<h4 id="6-step-4-of-6-generate-sdtm-datasets-generate-sdtm-sas"><strong>6. Step 4 of 6: Generate SDTM datasets</strong> (_generate<em>SDTM.sas</em>)</h4>
+
+<p>If mapping file is OK, generating SDTM domains is just clicking the button. After submitting the codes, you will see the log file, reports, SDTM datasets and temporary datasets in corresponding folders:</p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/SDTM.png"><img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="SDTM" border="0" alt="SDTM" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/SDTM_thumb.png" width="506" height="483" /></a></p>
+
+<h5 id="7-step-5-of-6-validate-sdtm-datasets-validate-sdtm-domains-sas"><strong>7. Step 5 of 6: Validate SDTM datasets</strong> (<em>Validate_SDTM_Domains.sas</em>)</h5>
+
+<p>The outputs files of validating SDTM datasets are all located in <strong>C:Program FilesCDISC ExpressSDTM Validation</strong>:</p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image010.jpg"><img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="clip_image010" border="0" alt="clip_image010" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image010_thumb.jpg" width="500" height="377" /></a></p>
+
+<h5 id="8-step-6-of-6-generate-define-xml-and-xpt-generate-definexml-sas"><strong>8. Step 6 of 6: Generate Define.xml and xpt</strong> (_generate<em>Definexml.sas</em>)</h5>
+
+<p>Get the final define.xml file and SAS transport files (.xpt):</p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image012.jpg"><img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="clip_image012" border="0" alt="clip_image012" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image012_thumb.jpg" width="502" height="402" /></a></p>
+
+<h3 id="9-recommended-reading-and-action-taken">9. Recommended reading and action taken</h3>
+
+<p>For a quick start and deep understanding, you could read the official documentations in the following sequence:</p>
+
+<p><strong>C:Program FilesCDISC ExpressdocumentationFAQ.htm</strong></p>
+
+<p><strong>C:Program FilesCDISC ExpressdocumentationQuick Start.htm</strong></p>
+
+<p><strong>C:Program FilesCDISC ExpressdocumentationUser guide.htm</strong></p>
+
+<p>A video tutorial would be also helpful:</p>
+
+<p><strong>C:Program FilesCDISC Expressdocumentationvideotutorial.htm</strong></p>
+
+<p>A must-read conference paper, <em>An Excel Framework to Convert Clinical Data to CDISC SDTM Leveraging SAS Technology</em> by Sophie McCallum and Stephen Chan of Clinovo, supplies a wonderful discussion the architectures of CDISC Express:</p>
+
+<p><a href="http://www.lexjansen.com/pharmasug/2011/ad/pharmasug-2011-ad08.pdf">http://www.lexjansen.com/pharmasug/2011/ad/pharmasug-2011-ad08.pdf</a></p>
+
+<p>Of course, you do not need to review all the pages then get the confidence to use the software. Learn by doing and just dive into it. There is an opportunity for your practicing and you will also have a change to win an iPad2 from Clinovo’s CDISC Express Contest:</p>
+
+<blockquote>
+<p><a href="http://www.clinovo.com/cdisc/game">http://www.clinovo.com/cdisc/game</a></p>
+</blockquote>
+
+<p>The due day is July 15<sup>th</sup> and I already submitted my work. That’s fun.</p>
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

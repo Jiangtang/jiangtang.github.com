@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>A SAS 9.3 Macro Trick: %put &amp;amp;=var - Lithium Theme</title>
+<meta property="og:title" content="A SAS 9.3 Macro Trick: %put &amp;amp;=var - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">A SAS 9.3 Macro Trick: %put &amp;amp;=var</h1>
+
+    
+    <span class="article-date">November 8, 2012</span>
+    
+
+    <div class="article-content">
+      <p><font size="1">This is new since SAS 9.3 on how to display macro variable name and its value. Try to run</font></p>
+
+<blockquote>
+<p><font size="1" face="Courier New">%let <font color="#ff0000">var</font>=1,2,3; <br />%put <font color="#00ff00">&amp;</font>=<font color="#ff0000">var</font>;</font></p>
+</blockquote>
+
+<p><font size="1">or</font></p>
+
+<blockquote>
+<p><font size="1" face="Courier New">%macro test(<font color="#ff0000">var</font>); <br />&#160;&#160;&#160; %put <font color="#00ff00">&amp;</font>=<font color="#ff0000">var</font>; <br />%mend; <br />%test(%str(1,2,3))</font></p>
+</blockquote>
+
+<p><font size="1">and you will get in Log window</font></p>
+
+<blockquote>
+<p><font size="1">VAR=1,2,3</font></p>
+</blockquote>
+
+<p><font size="1">You can read from <a href="http://support.sas.com/documentation/cdl/en/mcrolref/62978/HTML/default/viewer.htm#n189qvy83pmkt6n1bq2mmwtyb4oe.htm" target="_blank">SAS 9.3 online doc</a>:</font></p>
+
+<blockquote>
+<p><font size="1">If you place an equal sign between the <font color="#00ff00">ampersand</font> and the <font color="#ff0000">macro variable</font> <font color="#ff0000">name</font> of a direct macro variable reference, the macro variable&#8217;s name displays in the log along with the macro variable&#8217;s value.</font></p>
+</blockquote>
+
+<p><font size="1">In SAS 9.2 and prior, you should type the macro variable twice:</font></p>
+
+<blockquote>
+<p><font size="1" face="Courier New">%let var=1,2,3; <br />%put var=&var;</font></p>
+</blockquote>
+
+<p><font size="1">PS: it is called a “Tip” in <a href="http://support.sas.com/documentation/cdl/en/mcrolref/62978/HTML/default/viewer.htm#n189qvy83pmkt6n1bq2mmwtyb4oe.htm" target="_blank">SAS 9.3 online doc</a>, but I’d rather call it a trick: <font size="1">not critical but nice to have (<em>save your typing!</em>). You may be also interested in <a href="http://blogs.sas.com/content/iml/2010/11/01/tips-and-techniques-whats-the-difference/" target="_blank">Rick Wicklin’s differentiation on Tip and Technique</a>.</font></font></p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>Dive into CDISC Express (4): Data manipulation techniques - Lithium Theme</title>
+<meta property="og:title" content="Dive into CDISC Express (4): Data manipulation techniques - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/github.min.css' rel='stylesheet' type='text/css'>
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">9 min read</span>
+    
+
+    <h1 class="article-title">Dive into CDISC Express (4): Data manipulation techniques</h1>
+
+    
+    <span class="article-date">July 4, 2011</span>
+    
+
+    <div class="article-content">
+      <blockquote>
+<p><a href="http://www.jiangtanghu.com/blog/2011/06/28/dive-into-cdisc-express-1-introductory/" target="_blank"><em>Dive into CDISC Express (1): Introductory</em></a></p>
+
+<p>_<a href="http://www.jiangtanghu.com/blog/2011/07/02/dive-into-cdisc-express-2-create-a-new-study/" target="_blank">Dive into CDISC Express (2): Create a New Study</a>_</p>
+
+<p>_<a href="http://www.jiangtanghu.com/blog/2011/07/03/dive-into-cdisc-express-3-navigate-mapping-file/" target="_blank">Dive into CDISC Express (3): Navigate mapping file</a>_</p>
+</blockquote>
+
+<h3 id="4-3-data-manipulation-techniques-in-cdisc-express">4.3 Data manipulation techniques in CDISC Express</h3>
+
+<p>CDISC Express supplies relative rich sets of data manipulation techniques assembling with SAS languages used for data mapping. Following is a not limited listing and I will keep it updated.</p>
+
+<h3 id="4-3-1-reference-one-dataset">4.3.1 Reference one dataset</h3>
+
+<p>A raw dataset name appear in “Dataset” column indicate a “set” operation in SAS.</p>
+
+<p>All dataset options can be used when referencing a dataset, such as</p>
+
+<blockquote>
+<p><font face="Courier New">siteinv(drop=invcode)</font></p>
+
+<p><font face="Courier New">siteinv(rename=(invcode=inv))</font></p>
+
+<p><font face="Courier New">siteinv(where=(invcode ne “”))</font></p>
+</blockquote>
+
+<p>You can also reference an external dataset. You should incorporate the external file in spreadsheet with name beginning with an underscore, “_”, and “_visits” in this case:</p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image001.gif"><img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="clip_image001" border="0" alt="clip_image001" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image001_thumb.gif" width="434" height="302" /></a></p>
+
+<p>Then you can use it in any domains needed, e.g., TV domain:</p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image003.jpg"><img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="clip_image003" border="0" alt="clip_image003" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image003_thumb.jpg" width="493" height="244" /></a></p>
+
+<p>There is a macro <font color="#ff0000">%cpd_importlist</font> used to import the external dataset, “_visits”. Again, this macro roots in <strong>C:Program FilesCDISC Expressmacrosfunction_library</strong>.</p>
+
+<p>Using a macro call to re-sharp or modify an input dataset offers great flexibility referencing data. We will also discuss the benefits later on.</p>
+
+<h3 id="4-3-2-assignment">4.3.2 Assignment</h3>
+
+<p>You can assign a number, string and a dataset variable with any valid SAS functions to a SDTM domain variable in “Expression” column.</p>
+
+<p>Sometimes a temporary variable needed for later calculation. You can produce such temporary variable in “Dataset” column with an assignment in the “Expression” column just similar with any other domain variables. Two differences: first, such temporary variables named begin with an asterisk, “*”; second, all temporary variables will not be included in the final domain. Once created, such temporary variables can be used for any other expressions.</p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image005.jpg"><img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="clip_image005" border="0" alt="clip_image005" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image005_thumb.jpg" width="494" height="312" /></a></p>
+
+<p>There are three special symbols used in “Dataset” column of CDISC Express. Asterisk, “*” indicates a temporary variable, while other two are</p>
+
+<blockquote>
+<p>Tilde, “~” : indicate a variable used for supplemental domain (SUPPQUAL).</p>
+
+<p>Number sign, “#”: indicate a variable used for comments domain (CO).</p>
+</blockquote>
+
+<p>Another symbol, at sign, “@”, used in “Expression” column, indicated referencing a variables produced before:</p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image006.gif"><img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="clip_image006" border="0" alt="clip_image006" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image006_thumb.gif" width="448" height="104" /></a></p>
+
+<p>In this case, “AGEU” uses “AGE” as input, while “AGE” is calculated before. “@AGE” just indicates the dependency. In concept, it looks like the “calculated” option in SAS PROC SQL:</p>
+
+<blockquote>
+<p><font face="Courier New"><b>proc</b> <b>sql</b> ;</font></p>
+
+<p><font face="Courier New">select (AvgHigh &#8211; <b>32</b>) * <b>5</b>/<b>9</b> as HighC , </font></p>
+
+<p><font face="Courier New">(AvgLow &#8211; <b>32</b>) * <b>5</b>/<b>9</b> as LowC ,</font></p>
+
+<p><font face="Courier New">(calculated HighC &#8211; calculated LowC)</font></p>
+
+<p><font face="Courier New">as Range </font></p>
+
+<p><font face="Courier New">from temps;</font></p>
+
+<p><font face="Courier New"><b>quit</b>;</font></p>
+</blockquote>
+
+<h3 id="4-3-3-match-merging">4.3.3 Match-merging</h3>
+
+<p>We already got a math-merging example before. If “all” appears as a dataset in the “Dataset” column, all the previous datasets should be merged first for later processing by the common key specified in “Merge Key” column. If no key assigned, patient ID is used by the system.</p>
+
+<p>CDISC Express also supports two types of join, inner join and outer join (left, right, full) using data steps. The implementation has slightly difference with standard SQL, but the ideas are same.</p>
+
+<p>We add a new column, “Join”, usually beside the “Merge Key” column.</p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image008.jpg"><img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="clip_image008" border="0" alt="clip_image008" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image008_thumb.jpg" width="442" height="377" /></a></p>
+
+<p>There are two values for “Join”, “O” or “I” while “O” stands for “outer join” and “I”, “inner join”. A join indicator “I” equals a dataset option “in=” in action while “O” means no. Use the above as illustration, the corresponding SAS codes behind look like</p>
+
+<blockquote>
+<p><font face="courier new"><b>data</b> temp;</font></p>
+
+<p><font face="courier new">merge demog(in=a) siteinv(in=b);</font></p>
+
+<p><font face="courier new">by sitecode;</font></p>
+
+<p><font face="courier new">if b;</font></p>
+
+<p><font face="courier new"><b>run</b>;</font></p>
+</blockquote>
+
+<p>This is so called “right outer join”. The combination of “I” and “O” in these two datasets can perform all the four types of join, one inner join and three outer join:</p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/in.png"><img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="in" border="0" alt="in" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/in_thumb.png" width="499" height="313" /></a>&#160;</p>
+
+<p>As we could see, if no “Join” column specified, CDISC Express will perform inner join by default.</p>
+
+<p>So far CDISC Express cannot support multiply merge keys. For example, the following file is illegal currently:</p>
+
+<p>&#160;</p>
+
+<p align="center">
+  <table border="1" cellspacing="0" cellpadding="0">
+    <tr>
+      <td valign="top" width="138">
+        <p>
+          <b>Dataset </b>
+        </p>
+      </td>
+      
+      <td valign="top" width="203">
+        <p>
+          <b>Merge Key</b>
+        </p>
+      </td>
+    </tr>
+    
+    <tr>
+      <td valign="top" width="138">
+        <p>
+          arm&#160;&#160;&#160;
+        </p>
+      </td>
+      
+      <td valign="top" width="203">
+        <p>
+          siteid, grpno
+        </p>
+      </td>
+    </tr>
+    
+    <tr>
+      <td valign="top" width="138">
+        <p>
+          armdescri
+        </p>
+      </td>
+      
+      <td valign="top" width="203">
+        <p>
+          siteid, grpno
+        </p>
+      </td>
+    </tr>
+  </table>
+  
+  <p>
+    The developer Romain indicated that such enhancements would be raised to the next round of product road map and he also proposed a work around. To use multiple keys for merging, we can create a temporary variable holding such multiple keys as a concatenation then this temporary variable can be used as a single merging key.
+  </p>
+  
+
+<p><h3>
+    4.3.4 Concatenating
+  </h3></p>
+
+<p><p>
+    Above we discussed lots about “merge” operation in CDISC Express. This section dedicated for “set” operation. We already know how to “set” one dataset for referencing, but how to “set” multiple datasets, i.e, “Concatenating”?
+  </p></p>
+
+<p><p>
+    Symmetrically, an “all” appears in “Dataset” column indicating merging operation, an “all (stack)” indicates concatenating operation:
+  </p></p>
+
+<p><p>
+    <a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image014.jpg"><img style="border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto" title="clip_image014" border="0" alt="clip_image014" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image014_thumb.jpg" width="493" height="396" /></a>
+  </p></p>
+
+<p><p>
+    The above file can be also translated to SAS codes for better understanding:
+  </p></p>
+
+<p><p>
+    </p>
+
+<pre><code>&lt;br /&gt; 
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+    &lt;a name=&quot;OLE_LINK2&quot;&gt;&lt;/a&gt;&lt;a name=&quot;OLE_LINK1&quot;&gt;&lt;b&gt;&lt;font face=&quot;Courier New&quot;&gt;data&lt;/font&gt;&lt;/b&gt;&lt;/a&gt;&lt;font face=&quot;Courier New&quot;&gt; height;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;set vtsigns(where=(height ne &lt;b&gt;.&lt;/b&gt;));&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSTESTCD=&quot;HEIGHT&quot;;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSTEST =&quot;Height&quot;;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSORRES =put(height,best12.);&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSORRESU=&quot;cm&quot;;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSSTRESC=put(height,best12.);&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSSTRESN=height;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSSTRESU=&quot;cm&quot;;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;run&lt;/b&gt;;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;data&lt;/b&gt; weight;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;set vtsigns(where=(weight ne &lt;b&gt;.&lt;/b&gt;));&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSTESTCD=&quot;WEIGHT&quot;;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSTEST =&quot;Weight&quot;;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSORRES =put(weight,best12.);&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSORRESU=&quot;kg&quot;;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSSTRESC=put(weight,best12.);&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSSTRESN=weight;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSSTRESU=&quot;cm&quot;;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;run&lt;/b&gt;;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;data&lt;/b&gt; vs;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;set height weight;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;STUDYID =study;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;DOMAIN =&amp;domain;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;USUBJID =%&lt;b&gt;&lt;i&gt;CONCATENATE&lt;/i&gt;&lt;/b&gt;(_variables=study sitecode patid);&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSSEQ =%&lt;b&gt;&lt;i&gt;SEQUENCE&lt;/i&gt;&lt;/b&gt;();&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;.&lt;/b&gt; &lt;b&gt;.&lt;/b&gt; &lt;b&gt;.&lt;/b&gt;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;run;&lt;/font&gt;
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+  4.3.5 Transpose
+&lt;/p&gt;
+
+&lt;p&gt;
+  Clinical SAS programmers do lots of transpose operation to re-sharp the raw data to fit the CDISC standards. Currently there is no explicit guide in CDISC Express on how to transpose, but this is not the end of story.
+&lt;/p&gt;
+
+&lt;p&gt;
+  There are two types of transpose:
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;a href=&quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image016.jpg&quot;&gt;&lt;img style=&quot;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&quot; title=&quot;clip_image016&quot; border=&quot;0&quot; alt=&quot;clip_image016&quot; src=&quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image016_thumb.jpg&quot; width=&quot;492&quot; height=&quot;207&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+    Type I: from a wide dataset (more variables, less observations) to a long dataset (less variables, more observations), e.g. transposing a one-row-per-subject datasets to a multiple-row-per-subject dataset
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+  &lt;a href=&quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image018.jpg&quot;&gt;&lt;img style=&quot;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&quot; title=&quot;clip_image018&quot; border=&quot;0&quot; alt=&quot;clip_image018&quot; src=&quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image018_thumb.jpg&quot; width=&quot;514&quot; height=&quot;224&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+    Type II: from a long dataset (less variables, more observations) to a wide dataset (more variables, less observations), e.g. transposing a multiple-row-per-subject dataset to a one-row-per-subject datasets
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+  As good practices, in SAS we always use data steps with “output” statement to perform type I transpose and use PROC TRANSPOSE for type II. Although CDISC Express doesn’t support transpose operation in an explicit way, at least you can perform type I transpose and surprisingly we already saw it before!
+&lt;/p&gt;
+
+&lt;p&gt;
+  Just back to section of concatenating. The example is taken from &lt;b&gt;C:Program FilesCDISC Expressstudiesexample2.&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  We can see the input data vtsigns is typical wide table (more variables, less observations):
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;a href=&quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image021.jpg&quot;&gt;&lt;img style=&quot;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&quot; title=&quot;clip_image021&quot; border=&quot;0&quot; alt=&quot;clip_image021&quot; src=&quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image021_thumb.jpg&quot; width=&quot;469&quot; height=&quot;405&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  And the final domain VS is a typical long table (less variables, more observations):
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;a href=&quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image023.jpg&quot;&gt;&lt;img style=&quot;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&quot; title=&quot;clip_image023&quot; border=&quot;0&quot; alt=&quot;clip_image023&quot; src=&quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image023_thumb.jpg&quot; width=&quot;303&quot; height=&quot;662&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  So obviously, such concatenating operation just did a wonderful type I transpose, from a wide table to a long table! More often, the compact SAS codes for type I transpose look like:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;data&lt;/b&gt; vs;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;set vtsigns;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;if height ne &lt;b&gt;.&lt;/b&gt; then do;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSTESTCD=&quot;HEIGHT&quot;;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSTEST =&quot;Height&quot;;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSORRES =put(height,best12.);&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSORRESU=&quot;cm&quot;;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSSTRESC=put(height,best12.);&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSSTRESN=height;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSSTRESU=&quot;cm&quot;;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;output;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;end;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;if weight ne &lt;b&gt;.&lt;/b&gt; then do;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSTESTCD=&quot;WEIGHT&quot;;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSTEST =&quot;Weight&quot;;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSORRES =put(weight,best12.);&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSORRESU=&quot;kg&quot;;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSSTRESC=put(weight,best12.);&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSSTRESN=weight;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;VSSTRESU=&quot;cm&quot;;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;output;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;end;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;.&lt;/b&gt; &lt;b&gt;.&lt;/b&gt; &lt;b&gt;.&lt;/b&gt;&lt;/font&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;font face=&quot;Courier New&quot;&gt;run;&lt;/font&gt;
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;
+  4.3.6 All others: use macro!
+&lt;/h3&gt;
+
+&lt;p&gt;
+  Now we discussed almost all the common data derivation techniques in programmers’ daily life and the corresponding implementation in CDISC Express. At least we have one question unsolved: how to perform type II transpose, i.e. from a long table to a wide table?
+&lt;/p&gt;
+
+&lt;p&gt;
+  It would be an open question for the developers of the application. But we can also solve this problem in current framework: use macro, customized macro. You can use macros in “Expression” and “Dataset” column. Macro used in “Dataset” column returns a dataset, while macro in “Expression” column returns series of string: that’s the basic structure you should consider when customize your own macros. For more, you can reference the macros in &lt;b&gt;C:Program FilesCDISC Expressmacrosfunction_library&lt;/b&gt;. For example, &lt;font color=&quot;#ff0000&quot;&gt;&amp;concatenate&lt;/font&gt; used in “Expression” column; &lt;font color=&quot;#ff0000&quot;&gt;&amp;cpd_importlist&lt;/font&gt; in “Dataset” column.
+&lt;/p&gt;
+
+&lt;p&gt;
+  So it would be convenient to create temporary datasets using macros imbedded type II transpose operation in “Dataset” column. Every thing SAS can do, you can also implement it in CDISC Express. Just use macros, in “Expression” and “Dataset” column accordingly.&lt;b&gt;&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  The raw data varies according to trial design and clinical data capture system and procedures. It is impossible and impractical to anticipate the CDISC SDTM converter such as CDISC Express to map all the data just clicking a button. The introducing of CDISC Express doesn’t keep programmers away. It just keeps most of the trivial work away from programmers’ daily life and let them more concentrated on creative work and be productive and efficient.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Following would be the close of such pages.
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;a href=&quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/TobeContinued2.jpg&quot;&gt;&lt;img style=&quot;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&quot; title=&quot;TobeContinued&quot; border=&quot;0&quot; alt=&quot;TobeContinued&quot; src=&quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/TobeContinued_thumb2.jpg&quot; width=&quot;240&quot; height=&quot;181&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+</code></pre>
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+

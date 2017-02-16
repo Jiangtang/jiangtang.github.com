@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>List on Lithium Theme</title>
+    <link>/tags/list/index.xml</link>
+    <description>Recent content in List on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/list/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SAS Data Driven Programming: My 4 Favorite Techniques</title>
+      <link>/2013/11/07/sas-data-driven-programming-my-4-favorite-techniques/</link>
+      <pubDate>Thu, 07 Nov 2013 10:10:21 +0000</pubDate>
+      
+      <guid>/2013/11/07/sas-data-driven-programming-my-4-favorite-techniques/</guid>
+      <description>
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I use relatively fixed patterns in my SAS&amp;#160; programming life. For so called data driven programming (or dynamic programming), I used the following 4 techniques, chronologically:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;macro array &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;call execute &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;list processing &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;for each loop &lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For a quick demo, I will start with a simple scenario in which the data set sashelp.zipcode should be spitted to pieces of datasets by states (in real projects, the codes would be more complicated but share the simple atom structure). For example, the dataset for North Carolina:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data zipcode_NC; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set sashelp.zipcode(where=(statecode=&amp;ldquo;NC&amp;rdquo;)); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;There are 50 states plus territories like Puerto Rico in the source data, so you won’t just use a simple string replacement by macro variable. My first SAS dynamic programming technique is using macro array, learned from Chapter 6 of &lt;em&gt;Carpenter&amp;#8217;s Complete Guide to the SAS Macro Language&lt;/em&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;1-macro-array&#34;&gt;1. Macro array&lt;/h5&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc sort data=sashelp.zipcode (keep=statecode) nodupkey out=statecode; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; by statecode; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set statecode end=eof; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; i+1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; II=left(put(i,2.)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; call symputx(&amp;#8216;statecode&amp;#8217;||II,statecode); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; if eof then call symputx(&amp;#8216;n&amp;#8217;,II); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%macro doit; &lt;br /&gt;%do i=1 %to &amp;n; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; data class_&amp;amp;&amp;amp;statecode&amp;i; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; set sashelp.zipcode(where=(statecode=&amp;rdquo;&amp;amp;&amp;amp;statecode&amp;amp;i&amp;rdquo;)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; run; &lt;br /&gt;%end; &lt;br /&gt;%mend; &lt;br /&gt;%doit&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Macro array is still my favorite and I use it everywhere. It creates multiple macros variables by sequence (macro array) from the control file, then apply a do loop over each macro variable to get job done: straightforward while robust(verbose somehow).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;2-call-execute&#34;&gt;2. Call Execute&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Call Execute is a power tool. It will make your codes much concise and efficient. I love it but with little bit of reluctance: regardless the potential timing issue, for me, it is not aesthetically readable in most cases. To make a relatively enjoyable Call Execute, I prefer to enclose the atom part of the program to a macro then use a single Call Execute to resolve it:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%macro break(statecode); &lt;br /&gt;&amp;#160;&amp;#160; data class_&amp;statecode; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; set sashelp.zipcode(where=(statecode=&amp;rdquo;&amp;amp;statecode&amp;rdquo;)); &lt;br /&gt;&amp;#160;&amp;#160; run; &lt;br /&gt;%mend;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt;; &lt;br /&gt;&amp;#160; set statecode; &lt;br /&gt;&amp;#160; call execute(&amp;#8216;%break(&amp;#8216;||trim(statecode)||&amp;#8217;)&amp;#8217;); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Heavily interacting with data step will just make Call Execute like black magic (this snippet comes from Mike Molter’s 2013 paper, &lt;em&gt;&lt;a href=&#34;http://www.lexjansen.com/pharmasug/2013/BB/PharmaSUG-2013-BB08.pdf&#34;&gt;Coding For the Long Haul With Managed Metadata and Process Parameters&lt;/a&gt;&lt;/em&gt;; sorry Mike, I know it works):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt; ; &lt;br /&gt; length lastds $4 ; &lt;br /&gt; set meta2 end=thatsit ; &lt;br /&gt; if &lt;em&gt;n&lt;/em&gt; eq 1 then do; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; call execute (&amp;#8216;proc sql; &amp;#8216;) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; lastds=&amp;#8217;ae&amp;#8217;; &lt;br /&gt; end; &lt;br /&gt; retain lastds ; &lt;br /&gt;&amp;#160; &lt;br /&gt;&lt;/font&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt; call execute (&amp;#8216;create table &amp;#8216;||data set||&amp;#8217; as select a.*,&amp;#8217;||left(keepvars)||&amp;#8217; from &lt;br /&gt;&amp;#8216;||lastds a left join suppae_tran(where=(idvar eq &amp;ldquo;&amp;#8217;||compress(idvar)||&amp;#8217;&amp;rdquo;)) b on &lt;br /&gt;a.usubjid=b.usubjid and a.&amp;#8217;||compress(idvar)||&amp;#8217;=&amp;#8217;||left(joincond)||&amp;#8217;;&amp;#8217;);&lt;/font&gt; &lt;br /&gt;&amp;#160; &lt;br /&gt; if thatsit then call execute(&amp;#8216; quit; &amp;#8216;) ; &lt;br /&gt; lastds=data set ; &lt;br /&gt;run;&lt;/font&gt; &lt;br /&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Well there are always trade-offs. Separating Call Execute with data steps (my preference) will make it much more readable, but it is not cool anymore(compared to Mike’s style)! Coolness deserves the efforts and I know it’s part of programmers proud.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;3-list-processing&#34;&gt;3. List Processing&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I started to use list in SAS since 2011 and now I have a big collection:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing&#34;&gt;&lt;font size=&#34;1&#34;&gt;https://github.com/Jiangtang/SAS_ListProcessing&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Macro array approach will create series of macro variables, while in list method, a single macro variable will be generated which hold series of values:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc sql noprint; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; select statecode into:statecode separated by &amp;ldquo; &amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; from statecode &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%macro doit; &lt;br /&gt;%do i=1 %to %sysfunc(countw(&amp;amp;statecode)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %let a=%sysfunc(scan(&amp;amp;statecode,&amp;amp;i,&amp;#8217; &amp;#8216;)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; data class_&amp;a; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; set sashelp.zipcode(where=(statecode=&amp;rdquo;&amp;amp;a&amp;rdquo;)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; run; &lt;br /&gt;%end; &lt;br /&gt;%mend; &lt;br /&gt;%doit&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id=&#34;4-for-each&#34;&gt;4. For each&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;A foreach operation is dream for SAS programmers. Now I have one, for.sas by Jim Anderson:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;filename list url &amp;ldquo;&lt;/font&gt;&lt;a href=&#34;https://raw.github.com/Jiangtang/SAS_ListProcessing/master/_ListProcessing&amp;quot;;&#34;&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;https://raw.github.com/Jiangtang/SAS_ListProcessing/master/_ListProcessing&amp;rdquo;;&lt;/font&gt;&lt;/a&gt;        &lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&lt;br /&gt;%inc list;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;data %for(statecode, in=[statecode], do=%nrstr(class_&amp;amp;statecode(where=(statecode=&amp;rdquo;&amp;amp;statecode&amp;rdquo;)))); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set sashelp.zipcode; &lt;br /&gt;run;&lt;/font&gt; &lt;br /&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Actually this %for is much more versatile than it appears in this simple demo. It can proceeds sequentially against SAS datasets, value list, number range, along with dataset contents and directory contents. Check it out and you will definitely love it:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.sascommunity.org/wiki/Streamlining_Data-Driven_SAS_With_The_%25FOR_Macro&#34; title=&#34;http://www.sascommunity.org/wiki/Streamlining_Data-Driven_SAS_With_The_%25FOR_Macro&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.sascommunity.org/wiki/Streamlining_Data-Driven_SAS_With&lt;em&gt;The&lt;/em&gt;%25FOR_Macro&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>List Processing With SAS (2): List Creating II</title>
+      <link>/2013/07/26/list-processing-with-sas-2-list-creating-ii/</link>
+      <pubDate>Fri, 26 Jul 2013 00:24:50 +0000</pubDate>
+      
+      <guid>/2013/07/26/list-processing-with-sas-2-list-creating-ii/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/07/11/sas-list-creating/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;%range&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;is a genetic list creator. To apply data driven programming technique, we need to fetch metadata from source data dynamically, for example, to get all variables from a input dataset.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;You can easily make it by&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;1. PROC SQL, from &lt;/span&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;a SAS dictionary table, or macro variable by SELECT INTO; or&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;2. Proc Contents; or&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;3. even &lt;a href=&#34;http://www.sascommunity.org/wiki/Tip_of_the_Day:July_21&#34;&gt;a smart data step with RESOLVE function and with CALL SYMPUT&lt;/a&gt;, like &lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;pre&gt;%let namelist=;
+data _null_;
+    set sashelp.class;
+    call symput(&#39;namelist&#39;, trim(resolve(&#39;&amp;namelist&#39;))||&#39; &#39;||trim(name));
+run;
+%put &amp;namelist;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;In my &lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing&#34;&gt;repository&lt;/a&gt;, there is a elegant function-like macro where SAS file processing functions like open(), close() are used, &lt;/span&gt;&lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/blob/master/getVar.sas&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;%getVar&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;. Below follows examples to fetch variables from a dataset, based on variable type, numeric or character:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;filename list url &amp;#8220;&lt;/span&gt;&lt;a href=&#34;https://raw.github.com/Jiangtang/SAS_ListProcessing/master/_ListProcessing&amp;quot;;&#34;&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;https://raw.github.com/Jiangtang/SAS_ListProcessing/master/_ListProcessing&amp;#8221;;&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;
+  %inc list;&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;%put %getVar(%str(sashelp.class));&lt;/p&gt; 
+  
+
+&lt;p&gt;&lt;p&gt;
+    %put %getVar(%str(sashelp.class),n); &lt;/span&gt;
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    %put %getVar(%str(sashelp.class),C);
+  &lt;/p&gt;&lt;/blockquote&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    &lt;span style=&#34;font-size: xx-small;&#34;&gt;Outputs:&lt;/span&gt;
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote&gt;
+    &lt;p&gt;
+      &lt;span style=&#34;font-size: xx-small;&#34;&gt;Name Sex Age Height Weight&lt;/p&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  &amp;lt;p&amp;gt;
+    Age Height Weight &amp;lt;/span&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    Name Sex
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;amp;nbsp;
+  &amp;lt;/p&amp;gt;&amp;lt;/blockquote&amp;gt; 
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;span style=&amp;quot;font-size: xx-small;&amp;quot;&amp;gt;Another example to list all the elements from a directory using &amp;lt;/span&amp;gt;&amp;lt;a href=&amp;quot;https://github.com/Jiangtang/SAS_ListProcessing/blob/master/dir.sas&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: xx-small;&amp;quot;&amp;gt;%dir&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;span style=&amp;quot;font-size: xx-small;&amp;quot;&amp;gt; by &amp;lt;/span&amp;gt;&amp;lt;a href=&amp;quot;http://www.datasavantconsulting.com/roland/&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: xx-small;&amp;quot;&amp;gt;Roland Rashleigh-Berry&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;span style=&amp;quot;font-size: xx-small;&amp;quot;&amp;gt;:&amp;lt;/span&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;blockquote&amp;gt;
+    &amp;lt;p&amp;gt;
+      &amp;lt;span style=&amp;quot;font-family: &#39;Courier New&#39;; font-size: xx-small;&amp;quot;&amp;gt;%put %dir(d:\test);&amp;lt;/span&amp;gt;
+    &amp;lt;/p&amp;gt;
+  &amp;lt;/blockquote&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;span style=&amp;quot;font-size: xx-small;&amp;quot;&amp;gt;For more, check out the List Creating part of the portal:&amp;lt;/span&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;a href=&amp;quot;https://github.com/Jiangtang/SAS_ListProcessing&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;font-size: xx-small;&amp;quot;&amp;gt;https://github.com/Jiangtang/SAS_ListProcessing&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;
+  &amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>List Processing With SAS (1): List Creating I</title>
+      <link>/2013/07/11/list-processing-with-sas-1-list-creating-i/</link>
+      <pubDate>Thu, 11 Jul 2013 21:10:14 +0000</pubDate>
+      
+      <guid>/2013/07/11/list-processing-with-sas-1-list-creating-i/</guid>
+      <description>
+
+&lt;p&gt;Suppose you have 10 datasets, literally ds1, ds2, …ds10 and you need to concatenate them all. You may first get a quick shortcut &lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;set ds1-ds10&lt;/font&gt;&lt;/strong&gt;. If such list members were generated dynamically (and may hold a form like ds1a, ds2a,… ds10a) , you will probably come out a macro solution:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160; %macro doit; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; data combine; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; set &lt;font color=&#34;#ff0000&#34;&gt;%do i=1 %to &amp;n; ds&amp;amp;i %end;&lt;/font&gt; ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; run; &lt;br /&gt;&amp;#160;&amp;#160; %mend; &lt;br /&gt;&amp;#160;&amp;#160; %doit&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;where we conduct the list series in a %do loop. Also, suppose we need to fill out a list of datasets in a FROM clause of a SQL procedure. You can not copy the %do loop above because all elements should be separated by a comma. I &lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/03/31/list-processing-with-sas-a-github-repository/&#34;&gt;once wrote a recursive macro to produce such list&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%macro _list(n,pre=ds); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %if &amp;amp;n=1 %then &amp;amp;pre.1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; %else %_list(%eval(&amp;amp;n-1)),&amp;amp;pre.&amp;n; &lt;br /&gt;%mend _list;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%put %_list(10);&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The question is, how can we produce such list of values at a universal form? I put all my collected SAS list processing utilities (macro like functions) at Github:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/&#34;&gt;https://github.com/Jiangtang/SAS_ListProcessing/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and we can begin with macro &lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/blob/master/range.sas&#34;&gt;%range&lt;/a&gt; by Ian Whitlock and Chang Chung:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;filename list url&amp;#160; &amp;ldquo;&lt;/font&gt;&lt;a href=&#34;https://raw.github.com/Jiangtang/SAS_ListProcessing/master/_ListProcessing&amp;quot;;&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;https://raw.github.com/Jiangtang/SAS_ListProcessing/master/_ListProcessing&amp;rdquo;;&lt;/font&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;font face=&#34;Courier New&#34;&gt;%inc list;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%put %range(to=10); &lt;br /&gt;%put %range(to=10, opre=%str(ds)); &lt;br /&gt;%put %range(to=10, opre=%str(ds),osuf=%str(a)); &lt;br /&gt;%put %range(from=2,to=10,step=3,osep=%str(,)); &lt;br /&gt;%put %range(from=2,to=10,step=3,osep=%str(,),osuf=%str(ds));&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The outputs:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;1 2 3 4 5 6 7 8 9 10&lt;br /&gt;
+ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10&lt;br /&gt;
+ds1a ds2a ds3a ds4a ds5a ds6a ds7a ds8a ds9a ds10a&lt;br /&gt;
+2,5,8&lt;br /&gt;
+2ds,5ds,8ds&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/blob/master/range.sas&#34;&gt;%range&lt;/a&gt; is a very versatile macro like function which accepts lower and upper bounds, increments, separated symbol, prefix and suffix as parameters to create bunch of lists.&lt;/p&gt;
+
+&lt;h5 id=&#34;note&#34;&gt;Note:&lt;/h5&gt;
+
+&lt;p&gt;To create a non-integer list, use &lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/blob/master/range_non_int.sas&#34;&gt;%range_non_int&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%put %range_non_int(start = 1 , end = 2 , by = .25 ) ;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and you get&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;1 1.25 1.5 1.75 2&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>List Processing With SAS: A Github Repository</title>
+      <link>/2013/03/31/list-processing-with-sas-a-github-repository/</link>
+      <pubDate>Sun, 31 Mar 2013 22:24:02 +0000</pubDate>
+      
+      <guid>/2013/03/31/list-processing-with-sas-a-github-repository/</guid>
+      <description>&lt;p&gt;I have &lt;a href=&#34;http://jiangtanghu.com/docs/en/Latin2Eng.sas&#34;&gt;a function like macro (recursive version) to create a sequence&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%macro _list(n,pre=ff);&lt;br /&gt; %if &amp;amp;n=1 %then &amp;amp;pre.1;&lt;br /&gt; %else %_list(%eval(&amp;amp;n-1)),&amp;amp;pre.&amp;n;&lt;br /&gt; %mend _list;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%put %_list(3); *produces ff1, ff2, ff3;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;But when I read one of Ian Whitlock’s papers, &lt;em&gt;Names, Names, Names &amp;#8211; Make Me a List&lt;/em&gt; (&lt;a href=&#34;http://www2.sas.com/proceedings/forum2007/052-2007.pdf&#34;&gt;SGF 2007&lt;/a&gt;, &lt;a href=&#34;http://analytics.ncsu.edu/sesug/2008/SBC-128.pdf&#34;&gt;SESUG 2008&lt;/a&gt;),  I say: stop! I&amp;#8217;m gonna use Ian’s %range and I create &lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/&#34; target=&#34;_blank&#34;&gt;Github &lt;/a&gt;page to hold it (with minimum modifications due to personal preference).&lt;/p&gt;
+
+&lt;p&gt;I once posted &lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/11/08/my-collection-of-sas-macro-repositories/&#34;&gt;&lt;em&gt;My Collection of SAS Macro Repositories&lt;/em&gt;&lt;/a&gt;_ _credited to some SAS gurus like Richard DeVenezia. When facing a programming challenge, there is always a trade-off: should I take a look at what others wrote, or I just write from the scratch? Searching also needs lots of efforts, so I plan to utilize Github pages to minimum my own searching efforts and hope it would be helpful for you (no &lt;em&gt;intelligence waste anymore!&lt;/em&gt;). I begin with SAS list processing:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/&#34;&gt;https://github.com/Jiangtang/SAS_ListProcessing/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I got most of such utilities macros (with detailed comments, examples and sources) from papers, blogs and other websites and honors belong to their authors! Sometimes I will also add &lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/blob/master/slice.sas&#34; target=&#34;_blank&#34;&gt;my own&lt;/a&gt; if I think there are some holes to fill up. To get start, you may read a _&lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/blob/master/README.md&#34; target=&#34;_blank&#34;&gt;READ ME &lt;/a&gt;(will keep updated)_ first. Besides the individual macros, &lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/blob/master/_ListProcessing&#34; target=&#34;_blank&#34;&gt;a combined file&lt;/a&gt; (trigged by &lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/blob/master/_ListProcessing_Combine.bat&#34; target=&#34;_blank&#34;&gt;a simple Dos command&lt;/a&gt;) is also available.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Map and Reduce in MapReduce: a SAS Illustration</title>
+      <link>/2011/10/04/map-and-reduce-in-mapreduce-a-sas-illustration/</link>
+      <pubDate>Tue, 04 Oct 2011 21:31:18 +0000</pubDate>
+      
+      <guid>/2011/10/04/map-and-reduce-in-mapreduce-a-sas-illustration/</guid>
+      <description>&lt;p&gt;In &lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/09/14/analytical-valley/&#34; target=&#34;_blank&#34;&gt;last post&lt;/a&gt;, I mentioned &lt;a href=&#34;http://hadoop.apache.org/&#34;&gt;Hadoop&lt;/a&gt;, the open source implementation of Google’s &lt;a href=&#34;http://en.wikipedia.org/wiki/Mapreduce&#34; target=&#34;_blank&#34;&gt;MapReduce&lt;/a&gt; for parallelized processing of big data. In this long National Holiday, I read the original Google paper, _&lt;a href=&#34;http://static.googleusercontent.com/external_content/untrusted_dlcp/labs.google.com/en//papers/mapreduce-osdi04.pdf&#34; target=&#34;_blank&#34;&gt;MapReduce: Simplified Data Processing on Large Clusters&lt;/a&gt;_ by Jeffrey Dean and Sanjay Ghemawat and got that the terminologies of “map” and “reduce” were basically borrowed from Lisp, an old functional language that I even didn’t play “hello world” with. For Python users, the idea of Map and Reduce is also very straightforward because the workhorse data structure in Python is just the list, a sequence of values that you can just imagine that they are the nodes(clusters, chunk servers, …) in a distributed system.&lt;/p&gt;
+
+&lt;p&gt;MapReduce is a programming framework and really language independent, so SAS users can also get the basic idea from their daily programming practices and here is just a simple illustration using data step array (not array in Proc FCMP or matrix in IML). Data step array in SAS is fundamentally not a data structure but a convenient way of processing group of variables, but it can also be used to play some list operations like in Python and other rich data structure supporting languages(an editable version can be founded in &lt;a href=&#34;http://jiangtanghu.com/docs/en/MapReduce.sas&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;):&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/10/MapReduce.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px&#34; title=&#34;MapReduce&#34; border=&#34;0&#34; alt=&#34;MapReduce&#34; align=&#34;left&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/10/MapReduce_thumb.png&#34; width=&#34;506&#34; height=&#34;535&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Follow code above, the programming task is to capitalize a string “Hadoop” (Line 2) and the “master” method is just to capitalize the string in buddle(Line 8): just use a master machine to processing the data.&lt;/p&gt;
+
+&lt;p&gt;Then we introduce the idea of “big data” that the string is too huge to one master machine, so “master method” failed. Now we distribute the task to thousands of low cost machines (workers, slaves, chunk servers,&amp;hellip; in this case, the one dimensional array with size of 6, see Line 11), each machine produces parts of the job (each array element only capitalizes a single letter in sequence, see Line 12-14). Such distributing operation is called “&lt;font color=&#34;#ff0000&#34;&gt;map&lt;/font&gt;”. In a MapReduce system, a master machine is also needed to assign the maps and reduce.&lt;/p&gt;
+
+&lt;p&gt;How about “&lt;font color=&#34;#ff0000&#34;&gt;reduce&lt;/font&gt;”?&amp;#160; A “reduce” operation is also called “fold”—for example, in Line 17, the operation to combine all the separately values into a single value: combine results from multiple worker machines.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

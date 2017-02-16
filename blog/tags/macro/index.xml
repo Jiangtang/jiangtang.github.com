@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Macro on Lithium Theme</title>
+    <link>/tags/macro/index.xml</link>
+    <description>Recent content in Macro on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/macro/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SAS Data Driven Programming: My 4 Favorite Techniques</title>
+      <link>/2013/11/07/sas-data-driven-programming-my-4-favorite-techniques/</link>
+      <pubDate>Thu, 07 Nov 2013 10:10:21 +0000</pubDate>
+      
+      <guid>/2013/11/07/sas-data-driven-programming-my-4-favorite-techniques/</guid>
+      <description>
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I use relatively fixed patterns in my SAS&amp;#160; programming life. For so called data driven programming (or dynamic programming), I used the following 4 techniques, chronologically:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;macro array &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;call execute &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;list processing &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;for each loop &lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For a quick demo, I will start with a simple scenario in which the data set sashelp.zipcode should be spitted to pieces of datasets by states (in real projects, the codes would be more complicated but share the simple atom structure). For example, the dataset for North Carolina:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data zipcode_NC; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set sashelp.zipcode(where=(statecode=&amp;ldquo;NC&amp;rdquo;)); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;There are 50 states plus territories like Puerto Rico in the source data, so you won’t just use a simple string replacement by macro variable. My first SAS dynamic programming technique is using macro array, learned from Chapter 6 of &lt;em&gt;Carpenter&amp;#8217;s Complete Guide to the SAS Macro Language&lt;/em&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;1-macro-array&#34;&gt;1. Macro array&lt;/h5&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc sort data=sashelp.zipcode (keep=statecode) nodupkey out=statecode; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; by statecode; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set statecode end=eof; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; i+1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; II=left(put(i,2.)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; call symputx(&amp;#8216;statecode&amp;#8217;||II,statecode); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; if eof then call symputx(&amp;#8216;n&amp;#8217;,II); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%macro doit; &lt;br /&gt;%do i=1 %to &amp;n; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; data class_&amp;amp;&amp;amp;statecode&amp;i; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; set sashelp.zipcode(where=(statecode=&amp;rdquo;&amp;amp;&amp;amp;statecode&amp;amp;i&amp;rdquo;)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; run; &lt;br /&gt;%end; &lt;br /&gt;%mend; &lt;br /&gt;%doit&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Macro array is still my favorite and I use it everywhere. It creates multiple macros variables by sequence (macro array) from the control file, then apply a do loop over each macro variable to get job done: straightforward while robust(verbose somehow).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;2-call-execute&#34;&gt;2. Call Execute&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Call Execute is a power tool. It will make your codes much concise and efficient. I love it but with little bit of reluctance: regardless the potential timing issue, for me, it is not aesthetically readable in most cases. To make a relatively enjoyable Call Execute, I prefer to enclose the atom part of the program to a macro then use a single Call Execute to resolve it:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%macro break(statecode); &lt;br /&gt;&amp;#160;&amp;#160; data class_&amp;statecode; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; set sashelp.zipcode(where=(statecode=&amp;rdquo;&amp;amp;statecode&amp;rdquo;)); &lt;br /&gt;&amp;#160;&amp;#160; run; &lt;br /&gt;%mend;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt;; &lt;br /&gt;&amp;#160; set statecode; &lt;br /&gt;&amp;#160; call execute(&amp;#8216;%break(&amp;#8216;||trim(statecode)||&amp;#8217;)&amp;#8217;); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Heavily interacting with data step will just make Call Execute like black magic (this snippet comes from Mike Molter’s 2013 paper, &lt;em&gt;&lt;a href=&#34;http://www.lexjansen.com/pharmasug/2013/BB/PharmaSUG-2013-BB08.pdf&#34;&gt;Coding For the Long Haul With Managed Metadata and Process Parameters&lt;/a&gt;&lt;/em&gt;; sorry Mike, I know it works):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt; ; &lt;br /&gt; length lastds $4 ; &lt;br /&gt; set meta2 end=thatsit ; &lt;br /&gt; if &lt;em&gt;n&lt;/em&gt; eq 1 then do; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; call execute (&amp;#8216;proc sql; &amp;#8216;) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; lastds=&amp;#8217;ae&amp;#8217;; &lt;br /&gt; end; &lt;br /&gt; retain lastds ; &lt;br /&gt;&amp;#160; &lt;br /&gt;&lt;/font&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt; call execute (&amp;#8216;create table &amp;#8216;||data set||&amp;#8217; as select a.*,&amp;#8217;||left(keepvars)||&amp;#8217; from &lt;br /&gt;&amp;#8216;||lastds a left join suppae_tran(where=(idvar eq &amp;ldquo;&amp;#8217;||compress(idvar)||&amp;#8217;&amp;rdquo;)) b on &lt;br /&gt;a.usubjid=b.usubjid and a.&amp;#8217;||compress(idvar)||&amp;#8217;=&amp;#8217;||left(joincond)||&amp;#8217;;&amp;#8217;);&lt;/font&gt; &lt;br /&gt;&amp;#160; &lt;br /&gt; if thatsit then call execute(&amp;#8216; quit; &amp;#8216;) ; &lt;br /&gt; lastds=data set ; &lt;br /&gt;run;&lt;/font&gt; &lt;br /&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Well there are always trade-offs. Separating Call Execute with data steps (my preference) will make it much more readable, but it is not cool anymore(compared to Mike’s style)! Coolness deserves the efforts and I know it’s part of programmers proud.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;3-list-processing&#34;&gt;3. List Processing&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I started to use list in SAS since 2011 and now I have a big collection:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing&#34;&gt;&lt;font size=&#34;1&#34;&gt;https://github.com/Jiangtang/SAS_ListProcessing&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Macro array approach will create series of macro variables, while in list method, a single macro variable will be generated which hold series of values:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc sql noprint; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; select statecode into:statecode separated by &amp;ldquo; &amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; from statecode &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%macro doit; &lt;br /&gt;%do i=1 %to %sysfunc(countw(&amp;amp;statecode)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %let a=%sysfunc(scan(&amp;amp;statecode,&amp;amp;i,&amp;#8217; &amp;#8216;)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; data class_&amp;a; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; set sashelp.zipcode(where=(statecode=&amp;rdquo;&amp;amp;a&amp;rdquo;)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; run; &lt;br /&gt;%end; &lt;br /&gt;%mend; &lt;br /&gt;%doit&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id=&#34;4-for-each&#34;&gt;4. For each&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;A foreach operation is dream for SAS programmers. Now I have one, for.sas by Jim Anderson:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;filename list url &amp;ldquo;&lt;/font&gt;&lt;a href=&#34;https://raw.github.com/Jiangtang/SAS_ListProcessing/master/_ListProcessing&amp;quot;;&#34;&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;https://raw.github.com/Jiangtang/SAS_ListProcessing/master/_ListProcessing&amp;rdquo;;&lt;/font&gt;&lt;/a&gt;        &lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&lt;br /&gt;%inc list;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;data %for(statecode, in=[statecode], do=%nrstr(class_&amp;amp;statecode(where=(statecode=&amp;rdquo;&amp;amp;statecode&amp;rdquo;)))); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set sashelp.zipcode; &lt;br /&gt;run;&lt;/font&gt; &lt;br /&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Actually this %for is much more versatile than it appears in this simple demo. It can proceeds sequentially against SAS datasets, value list, number range, along with dataset contents and directory contents. Check it out and you will definitely love it:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.sascommunity.org/wiki/Streamlining_Data-Driven_SAS_With_The_%25FOR_Macro&#34; title=&#34;http://www.sascommunity.org/wiki/Streamlining_Data-Driven_SAS_With_The_%25FOR_Macro&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.sascommunity.org/wiki/Streamlining_Data-Driven_SAS_With&lt;em&gt;The&lt;/em&gt;%25FOR_Macro&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Yet Another Instance of DoW-Loop</title>
+      <link>/2013/08/07/yet-another-instance-of-dow-loop/</link>
+      <pubDate>Wed, 07 Aug 2013 23:49:55 +0000</pubDate>
+      
+      <guid>/2013/08/07/yet-another-instance-of-dow-loop/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Just got another &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/10/20/dow-loop-dorfman/&#34;&gt;&lt;font size=&#34;1&#34;&gt;DoW-Loop&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;example from SAS Sample #48582:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://support.sas.com/kb/48/582.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://support.sas.com/kb/48/582.html&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>List Processing With SAS (1): List Creating I</title>
+      <link>/2013/07/11/list-processing-with-sas-1-list-creating-i/</link>
+      <pubDate>Thu, 11 Jul 2013 21:10:14 +0000</pubDate>
+      
+      <guid>/2013/07/11/list-processing-with-sas-1-list-creating-i/</guid>
+      <description>
+
+&lt;p&gt;Suppose you have 10 datasets, literally ds1, ds2, …ds10 and you need to concatenate them all. You may first get a quick shortcut &lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;set ds1-ds10&lt;/font&gt;&lt;/strong&gt;. If such list members were generated dynamically (and may hold a form like ds1a, ds2a,… ds10a) , you will probably come out a macro solution:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160; %macro doit; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; data combine; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; set &lt;font color=&#34;#ff0000&#34;&gt;%do i=1 %to &amp;n; ds&amp;amp;i %end;&lt;/font&gt; ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; run; &lt;br /&gt;&amp;#160;&amp;#160; %mend; &lt;br /&gt;&amp;#160;&amp;#160; %doit&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;where we conduct the list series in a %do loop. Also, suppose we need to fill out a list of datasets in a FROM clause of a SQL procedure. You can not copy the %do loop above because all elements should be separated by a comma. I &lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/03/31/list-processing-with-sas-a-github-repository/&#34;&gt;once wrote a recursive macro to produce such list&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%macro _list(n,pre=ds); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %if &amp;amp;n=1 %then &amp;amp;pre.1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; %else %_list(%eval(&amp;amp;n-1)),&amp;amp;pre.&amp;n; &lt;br /&gt;%mend _list;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%put %_list(10);&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The question is, how can we produce such list of values at a universal form? I put all my collected SAS list processing utilities (macro like functions) at Github:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/&#34;&gt;https://github.com/Jiangtang/SAS_ListProcessing/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and we can begin with macro &lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/blob/master/range.sas&#34;&gt;%range&lt;/a&gt; by Ian Whitlock and Chang Chung:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;filename list url&amp;#160; &amp;ldquo;&lt;/font&gt;&lt;a href=&#34;https://raw.github.com/Jiangtang/SAS_ListProcessing/master/_ListProcessing&amp;quot;;&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;https://raw.github.com/Jiangtang/SAS_ListProcessing/master/_ListProcessing&amp;rdquo;;&lt;/font&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;font face=&#34;Courier New&#34;&gt;%inc list;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%put %range(to=10); &lt;br /&gt;%put %range(to=10, opre=%str(ds)); &lt;br /&gt;%put %range(to=10, opre=%str(ds),osuf=%str(a)); &lt;br /&gt;%put %range(from=2,to=10,step=3,osep=%str(,)); &lt;br /&gt;%put %range(from=2,to=10,step=3,osep=%str(,),osuf=%str(ds));&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The outputs:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;1 2 3 4 5 6 7 8 9 10&lt;br /&gt;
+ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10&lt;br /&gt;
+ds1a ds2a ds3a ds4a ds5a ds6a ds7a ds8a ds9a ds10a&lt;br /&gt;
+2,5,8&lt;br /&gt;
+2ds,5ds,8ds&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/blob/master/range.sas&#34;&gt;%range&lt;/a&gt; is a very versatile macro like function which accepts lower and upper bounds, increments, separated symbol, prefix and suffix as parameters to create bunch of lists.&lt;/p&gt;
+
+&lt;h5 id=&#34;note&#34;&gt;Note:&lt;/h5&gt;
+
+&lt;p&gt;To create a non-integer list, use &lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/blob/master/range_non_int.sas&#34;&gt;%range_non_int&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%put %range_non_int(start = 1 , end = 2 , by = .25 ) ;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and you get&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;1 1.25 1.5 1.75 2&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>List Processing With SAS: A Github Repository</title>
+      <link>/2013/03/31/list-processing-with-sas-a-github-repository/</link>
+      <pubDate>Sun, 31 Mar 2013 22:24:02 +0000</pubDate>
+      
+      <guid>/2013/03/31/list-processing-with-sas-a-github-repository/</guid>
+      <description>&lt;p&gt;I have &lt;a href=&#34;http://jiangtanghu.com/docs/en/Latin2Eng.sas&#34;&gt;a function like macro (recursive version) to create a sequence&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%macro _list(n,pre=ff);&lt;br /&gt; %if &amp;amp;n=1 %then &amp;amp;pre.1;&lt;br /&gt; %else %_list(%eval(&amp;amp;n-1)),&amp;amp;pre.&amp;n;&lt;br /&gt; %mend _list;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%put %_list(3); *produces ff1, ff2, ff3;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;But when I read one of Ian Whitlock’s papers, &lt;em&gt;Names, Names, Names &amp;#8211; Make Me a List&lt;/em&gt; (&lt;a href=&#34;http://www2.sas.com/proceedings/forum2007/052-2007.pdf&#34;&gt;SGF 2007&lt;/a&gt;, &lt;a href=&#34;http://analytics.ncsu.edu/sesug/2008/SBC-128.pdf&#34;&gt;SESUG 2008&lt;/a&gt;),  I say: stop! I&amp;#8217;m gonna use Ian’s %range and I create &lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/&#34; target=&#34;_blank&#34;&gt;Github &lt;/a&gt;page to hold it (with minimum modifications due to personal preference).&lt;/p&gt;
+
+&lt;p&gt;I once posted &lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/11/08/my-collection-of-sas-macro-repositories/&#34;&gt;&lt;em&gt;My Collection of SAS Macro Repositories&lt;/em&gt;&lt;/a&gt;_ _credited to some SAS gurus like Richard DeVenezia. When facing a programming challenge, there is always a trade-off: should I take a look at what others wrote, or I just write from the scratch? Searching also needs lots of efforts, so I plan to utilize Github pages to minimum my own searching efforts and hope it would be helpful for you (no &lt;em&gt;intelligence waste anymore!&lt;/em&gt;). I begin with SAS list processing:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/&#34;&gt;https://github.com/Jiangtang/SAS_ListProcessing/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I got most of such utilities macros (with detailed comments, examples and sources) from papers, blogs and other websites and honors belong to their authors! Sometimes I will also add &lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/blob/master/slice.sas&#34; target=&#34;_blank&#34;&gt;my own&lt;/a&gt; if I think there are some holes to fill up. To get start, you may read a _&lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/blob/master/README.md&#34; target=&#34;_blank&#34;&gt;READ ME &lt;/a&gt;(will keep updated)_ first. Besides the individual macros, &lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/blob/master/_ListProcessing&#34; target=&#34;_blank&#34;&gt;a combined file&lt;/a&gt; (trigged by &lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/blob/master/_ListProcessing_Combine.bat&#34; target=&#34;_blank&#34;&gt;a simple Dos command&lt;/a&gt;) is also available.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Localize Your Macro Variable? Mostly Not Needed or Do It If You Only Want to Initiate It</title>
+      <link>/2013/03/29/localize-your-macro-variable-mostly-not-needed-or-do-it-if-you-only-want-to-initiate-it/</link>
+      <pubDate>Fri, 29 Mar 2013 19:22:46 +0000</pubDate>
+      
+      <guid>/2013/03/29/localize-your-macro-variable-mostly-not-needed-or-do-it-if-you-only-want-to-initiate-it/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/03/Scope.jpg&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;Scope&#34; alt=&#34;Scope&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/03/Scope_thumb.jpg&#34; width=&#34;240&#34; height=&#34;180&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: #ff0000; font-size: small;&#34;&gt;&lt;strong&gt;[NOTE2013-05-30: This post is permanently suspended. In this post, I only focused on the initialization effect of the %local statement and totally ignored its function to avoid variable collisions as Quentin mentioned in comment box.]&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;A piece of SAS codes to create a list of all variables within a dataset (a nice programming trick from &lt;/span&gt;&lt;a href=&#34;http://www2.sas.com/proceedings/sugi30/028-30.pdf&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Art Carpenter, 2004&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: small;&#34;&gt;):&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: small;&#34;&gt;%macro getvars(dset) ;&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;%local varlist ;&lt;/span&gt;&lt;br /&gt; %let fid = %sysfunc(open(&amp;amp;dset)) ;&lt;br /&gt; %if &amp;amp;fid %then %do ;&lt;br /&gt; %do i=1 %to %sysfunc(attrn(&amp;amp;fid,nvars)) ;&lt;br /&gt; %let &lt;span style=&#34;color: #ff0000;&#34;&gt;varlist&lt;/span&gt;= &lt;span style=&#34;color: #ff0000;&#34;&gt;&amp;amp;varlist&lt;/span&gt; %sysfunc(varname(&amp;amp;fid,&amp;amp;i));&lt;br /&gt; %end ;&lt;br /&gt; %let fid = %sysfunc(close(&amp;amp;fid)) ;&lt;br /&gt; %end ;&lt;br /&gt; &amp;amp;varlist&lt;br /&gt; %mend ;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: small;&#34;&gt;%put %getvars(%str(sashelp.iris));&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;One question would be: why declare macro variable &lt;em&gt;varlist&lt;/em&gt; as local explicitly by a &lt;em&gt;%local&lt;/em&gt; statement? Since it was defined within the macro &lt;em&gt;%getvar&lt;/em&gt;, it just went to the local macro table automatically and the &lt;em&gt;%local&lt;/em&gt; statement is not necessary anymore!&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Such argument is definitely right. But the &lt;em&gt;%local&lt;/em&gt; statement above was not intent to localize a macro variable, actually, it’s used to initiate it. If you just delete it, you will get a warning then an error:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;WARNING: Apparent symbolic reference VARLIST not resolved.&lt;br /&gt; ERROR: The text expression &amp;amp;VARLIST SPECIES contains a recursive reference to the macro variable VARLIST.  The&lt;br /&gt; macro variable will be assigned the null value.&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;This is because the macro variable &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;em&gt;&amp;amp;varlist&lt;/em&gt;&lt;/span&gt;&lt;span style=&#34;color: #cccccc;&#34;&gt; in right side of the second&lt;/span&gt; &lt;em&gt;%let&lt;/em&gt; statement was not declared before. To be clear, you can also replace the &lt;em&gt;%local&lt;/em&gt; statement  with an explicit initiating statement:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;color: #ff0000; font-family: &#39;Courier New&#39;; font-size: small;&#34;&gt;%let varlist=;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;In this example, the &lt;em&gt;%local&lt;/em&gt; statement and the &lt;em&gt;%let&lt;/em&gt; statement simply do the same job and the choice is totally subject to programmers’ preference(&lt;em&gt;well I prefer the later&lt;/em&gt;).&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;So, take home question: any comments on the following snippet to count the numbers of word in a string&lt;span style=&#34;font-size: small;&#34;&gt;(also from &lt;/span&gt;&lt;a href=&#34;http://www2.sas.com/proceedings/sugi30/028-30.pdf&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Art Carpenter, 2004&lt;/span&gt;&lt;/a&gt;; &lt;em&gt;sorry Carpenter, your books and papers are the most familiar sources for me to learn SAS macro programming&lt;/em&gt;&lt;span style=&#34;font-size: small;&#34;&gt;)&lt;/span&gt;:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: small;&#34;&gt;%macro wordcount(list);&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;    %local count;&lt;br /&gt; %let count=0;&lt;/span&gt;&lt;br /&gt; %do %while(%qscan(&amp;amp;list,&amp;amp;count+1,%str( )) ne %str());&lt;br /&gt; %let count = %eval(&amp;amp;count+1);&lt;br /&gt; %end;&lt;br /&gt; &amp;amp;count&lt;br /&gt; %mend wordcount;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: small;&#34;&gt;%put %wordcount(a b cd);&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My SAS Books: Shopping List 2012</title>
+      <link>/2012/12/07/my-sas-books-shopping-list-2012/</link>
+      <pubDate>Fri, 07 Dec 2012 23:36:30 +0000</pubDate>
+      
+      <guid>/2012/12/07/my-sas-books-shopping-list-2012/</guid>
+      <description>
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Books.jpg&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS_Books&#34; border=&#34;0&#34; alt=&#34;SAS_Books&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Books_thumb.jpg&#34; width=&#34;384&#34; height=&#34;224&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Last year I threw away all my SAS books (to friends and colleagues in Beijing) before moving to US. You might agree that it’s not economically bound to transport such heavy books intercontinentally! Now I just start to build my SAS library one by one. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I will most probably not buy more SAS books as Christmas gifts for myself, so it’s time to take a 2012 snapshot of shopping:&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;i-programming-books-by-art-carpenter&#34;&gt;I Programming Books by Art Carpenter&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1 &lt;em&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/1590473841/ref=wms_ohs_product&#34; target=&#34;_blank&#34;&gt;Carpenter&amp;#8217;s Complete Guide to the SAS Macro Language, 2nd Edition&lt;/a&gt;, 2004&lt;/em&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Best of best on SAS (dynamic) programming. I also had a hardcopy in Beijing. &lt;font color=&#34;#ff0000&#34;&gt;★★★★★&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2&lt;em&gt;&amp;#160;&lt;/em&gt;&lt;/font&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/1607649918/ref=wms_ohs_product&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Carpenter&amp;#8217;s Guide to Innovative SAS Techniques&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;, &lt;font size=&#34;1&#34;&gt;2012&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It’s new by Carpenter and nice to check out. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;3 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=60966&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Carpenter&amp;#8217;s Complete Guide to the SAS REPORT Procedure&lt;/em&gt;&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, 2007&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;Use &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/proc/65145/HTML/default/viewer.htm#p0bqogcics9o4xn17yvt2qjbgdpi.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Proc Report&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;! It is the workhorse procedure for SAS report writing and &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/proc/65145/HTML/default/viewer.htm#n00yutbvvckjwrn1ldg5xkvjy1pu.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Proc Tabulate&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;is not in fashion anymore!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Btw, The historically called SAS DATA &lt;em&gt;NULL&lt;/em&gt; report writing now has a brand new name, ODS Report Writing Interface, due to the incorporated ODS facility(which is cool). I think it deserves a new title.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font size=&#34;1&#34;&gt;PS: I got it free from the latest &lt;/font&gt;&lt;a href=&#34;http://www.rtsug.org/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;RTSUG&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt; (Research Triangle SAS Users&amp;#8217; Group) meeting. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;ii-programming-miscellaneous&#34;&gt;II Programming Miscellaneous&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;4 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=62255&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Web Development with SAS by Example&lt;/em&gt;, Third Edition&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Frederick Pratter, 2011&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Want to play HTML/htmSQL/AJAX/Javascript… within SAS. no comments by far.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;5&amp;#160; &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=62230&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;SAS Hash Object Programming Made Easy&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Michele Burlew, 2012&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Totally new title on this topic. Nice to approach to the new area.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;iii-ods-graphics&#34;&gt;III ODS Graphics&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;6 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=63855&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Statistical Graphics Procedures by Example: Effective Graphs Using SAS&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Sanjay Matange and Dan Heath, 2011&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS ODS Graphics is the rising Star! I also read other title on ODS statistical graphics in Beijing, &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=63120&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Statistical Graphics in SAS: An Introduction to the Graph Template Language and the Statistical Graphics Procedures&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Warren Kuhfeld&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You may read plenty of ODS Graphics&amp;#160; papers by these authors/developers from SAS Institute.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;iv-statistical-books&#34;&gt;IV Statistical Books&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;7 &lt;/font&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/160764228X/ref=wms_ohs_product&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Common Statistical Methods for Clinical Research with SAS Examples&lt;/em&gt;, Third Edition&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Glenn Walker, Jack Shostak, 2010&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Best for SAS clinical programmers. Relevant, comprehensive and easy to access. I had a second version in Beijing. &lt;font color=&#34;#ff0000&#34;&gt;★★★★★&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;_&lt;font size=&#34;1&#34;&gt;8 &lt;/font&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/1607647834/ref=wms_ohs_product&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Multiple Comparisons and Multiple Tests Using SAS, Second Edition&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by &lt;/font&gt;_&lt;font size=&#34;1&#34;&gt;Peter H. Westfall, Randall D. Tobias, Russell D. Wolfinger, 2011&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Multiple comparison is an advanced topic and is beyond my limited statistical knowledge. My short term goal is just to follow the codes then interprete results.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;v-cdisc&#34;&gt;V CDISC&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;9 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=64409&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Implementing CDISC Using SAS: An End-to-End Guide&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Chris Holland and Jack Shostak, 2012&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Still on the way. The first title on CDISC + SAS and worth of waiting. I read Jack Shostak’s another book when applying a SAS programmer job at Sanofi Pasteur Beijing R&amp;amp;D in 2009:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?pc=59827&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;SAS Programming in the Pharmaceutical Industry&lt;/em&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id=&#34;vi-my-wish-list-2013&#34;&gt;VI My Wish List 2013&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;10 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=60282&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Building Web Applications with SAS/IntrNet: A Guide to the Application Dispatcher&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Don Henderson&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS web programming again. I might read this title before #4. Don Henderson was the former SAS developer and SAS/IntrNet was just his baby!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;11 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=63460&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Categorical Data Analysis Using SAS, Third Edition&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Maura Stokes, Charles Davis, and Gary Koch&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I had a second version hardcopy in Beijing and it’s still cool to play with 2*2 table in this so called BIG DATA world! &lt;font color=&#34;#ff0000&#34;&gt;★★★★★&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;12 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=65193&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Cody&amp;#8217;s Collection of Popular SAS Programming Tasks and How to Tackle Them&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Ron Cody&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I read and like &lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?pc=62857&#34; target=&#34;_blank&#34;&gt;Cody’s book on SAS functions&lt;/a&gt; and it’s always nice to check out his new title.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;13 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=60751&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;The Global English Style Guide: Writing Clear, Translatable Documentation for a Global Market&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by John R. Kohl&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I read the free chapter and it would be good book to polish my English as a technical blog writer.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;14&lt;/font&gt; &lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=65423&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;The Little SAS Book: A Primer, Fifth Edition&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Lora Delwiche and Susan Slaughter&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I forget the version I read back to the time I first approached to SAS and it’s nice to hold a latest version in shelf and I’d rather learn the effective writing! Best for beginners. &lt;font color=&#34;#ff0000&#34;&gt;★★★★★&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Extract the Version of SAS and OS of a SAS Format or Macro Catalog: A Little Bit of Perl Regular Expression</title>
+      <link>/2012/11/25/extract-the-version-of-sas-and-os-of-a-sas-format-or-macro-catalog-a-little-bit-of-perl-regular-expression/</link>
+      <pubDate>Sun, 25 Nov 2012 20:36:52 +0000</pubDate>
+      
+      <guid>/2012/11/25/extract-the-version-of-sas-and-os-of-a-sas-format-or-macro-catalog-a-little-bit-of-perl-regular-expression/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;SAS Sample 34444(&lt;em&gt;&lt;a href=&#34;http://support.sas.com/kb/34/443.html&#34; target=&#34;_blank&#34;&gt;Determine the operating system in which a format catalog was created&lt;/a&gt;&lt;/em&gt;) posts piece of codes to get the version of SAS and OS of a SAS format catalog. It is useful since a SAS catalog can be only read in the operating systems same to its source machine.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;2 cents add to this note:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;First, we do not need to write codes to get to know the machine version for a catalog(&lt;em&gt;&lt;strong&gt;formats.sas7bcat &lt;/strong&gt;&lt;/em&gt;or&lt;strong&gt; &lt;em&gt;sasmacr.sas7bcat&lt;/em&gt;&lt;/strong&gt;). Just open the catalog using a text editor, Notepad++, then you get&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;a SAS format catalog created by SAS 9.1 in a Windows XP Pro machine:&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/SAS_Format.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;SAS_Format&#34; alt=&#34;SAS_Format&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/SAS_Format_thumb.png&#34; width=&#34;475&#34; height=&#34;408&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;and a SAS macro catalog by SAS 9.3 in a 64 bits Windows 7 Pro machine:&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/SAS_Macro.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;SAS_Macro&#34; alt=&#34;SAS_Macro&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/SAS_Macro_thumb.png&#34; width=&#34;464&#34; height=&#34;375&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Second, if do want programming (for curiosity purpose; I like this idea), we can also improve the sample codes since the position and length information were hard coded in Line 21 (the question is: how can we know that?):&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;test=substr(theline,&lt;span style=&#34;color: #ff0000;&#34;&gt;210&lt;/span&gt;,&lt;span style=&#34;color: #ff0000;&#34;&gt;20&lt;/span&gt;);&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;To get rid of hard coding, I use Perl Regular Expression. Just copy the archived codes for &lt;/span&gt;&lt;a href=&#34;http://www.sesug.org/SESUG2012/abstract.html#BB-04&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;my SESUG 2012 talk&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;with tiny modification (I always use the same programming blocks if possible):&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/Jiangtang/SESUG2012/blob/master/read_SAP.sas&#34; title=&#34;https://github.com/Jiangtang/SESUG2012/blob/master/read_SAP.sas&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;https://github.com/Jiangtang/SESUG2012/blob/master/read_SAP.sas&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;The following codes can be also used to run against SAS macro catalog:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;filename fmt &amp;#8220;a:formats.sas7bcat&amp;#8221;;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data fmt;&lt;br /&gt; infile fmt lrecl=1000 truncover;&lt;br /&gt; input line $1000.;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; set fmt;&lt;br /&gt; if &lt;em&gt;n&lt;/em&gt;=1 then do;&lt;br /&gt; retain queVer;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;            &lt;span style=&#34;color: #ff0000;&#34;&gt;ver=&amp;#8221;/(\d+).[\d\w]+_[\d\w]+/&amp;#8221;;&lt;/span&gt;&lt;br /&gt; queVer  = prxparse(ver);&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;            if missing(queVer) then do;&lt;br /&gt; putlog &amp;#8220;ERROR: Invalid regexp&amp;#8221; ver;&lt;br /&gt; stop;&lt;br /&gt; end;&lt;br /&gt; end;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;      queVerN  = prxmatch(queVer ,line);&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;      if queVerN &amp;gt; 0  then do ;&lt;br /&gt; call PRXsubstr(queVer,line,position,length);&lt;br /&gt; version = compress(substr(line, position, length));&lt;br /&gt; output;&lt;br /&gt; end;    &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;      put position= length=;&lt;br /&gt; put version=;&lt;br /&gt; run;&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Test it against five Windows machines: &lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=221 length=16&lt;br /&gt; version=9.0301M1X64_7PRO&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=217 length=15&lt;br /&gt; version=9.0202M2NET_SRV &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=221 length=17&lt;br /&gt; version=9.0202M3X64_SRV08 &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=217 length=14&lt;br /&gt; version=9.0100A0XP_PRO&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=217 length=15&lt;br /&gt; version=9.0101M3NET_SRV &lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;P.S.: The pattern &lt;strong&gt;(d+).[dw]+_[dw]+&lt;/strong&gt;  can be read as&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;number(s)                       +&lt;br /&gt; .                                      +&lt;br /&gt; some digits and words     +&lt;br /&gt; _                                     +&lt;br /&gt; some digits and words&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Since the underscore “_” is also included in meta-character &lt;strong&gt;w&lt;/strong&gt;, it seems OK to simplify the pattern above to &lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;(d+).[dw]+ &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;But in a Window Server 2003 machine with SAS 9.2, it also returns the following unrelated information:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=998 length=3&lt;br /&gt; version=2.S &lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Macro Quoting in SAS Data Integration Studio</title>
+      <link>/2012/11/19/macro-quoting-in-sas-data-integration-studio/</link>
+      <pubDate>Mon, 19 Nov 2012 21:35:04 +0000</pubDate>
+      
+      <guid>/2012/11/19/macro-quoting-in-sas-data-integration-studio/</guid>
+      <description>
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You can run the following piece of codes successfully in these 3 SAS programming environments:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;BASE SAS &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Enterprise Guide: create a new “File-New-Program” &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;SAS Data Integration Studio: create a new “Tool-Code Editor” &lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%let species=&amp;ldquo;Setosa&amp;rdquo; &amp;ldquo;Versicolor&amp;rdquo;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;data a; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set sashelp.iris; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; where species in (&amp;amp;species); &lt;br /&gt;run;&lt;/font&gt; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Then create a &lt;font color=&#34;#00ff00&#34;&gt;Transformation&lt;/font&gt; in SAS Data Integration Studio (DIS for short; I use version 4.3 in a Win 7 machine) using the codes above as source code (remember deleting first line) and create a simple &lt;font color=&#34;#00ff00&#34;&gt;Prompt&lt;/font&gt; to assign the macro variable &amp;amp;species with default values as &lt;em&gt;&amp;ldquo;Setosa&amp;rdquo; &amp;ldquo;Versicolor&amp;rdquo;&lt;/em&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/SAS_DIS_Transformation.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS_DIS_Transformation&#34; border=&#34;0&#34; alt=&#34;SAS_DIS_Transformation&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/SAS_DIS_Transformation_thumb.png&#34; width=&#34;519&#34; height=&#34;475&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Drag this &lt;font color=&#34;#00ff00&#34;&gt;Transformation&lt;/font&gt; in a single node &lt;font color=&#34;#00ff00&#34;&gt;job&lt;/font&gt; and run, then you will get such errors:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;127&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; data a; &lt;br /&gt;128&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; set sashelp.iris; &lt;br /&gt;129&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; where species in (&amp;amp;species); &lt;br /&gt;&lt;font color=&#34;#ff0000&#34;&gt;NOTE: Line generated by the macro variable &amp;ldquo;SPECIES&amp;rdquo;. &lt;br /&gt;129&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &amp;ldquo;Setosa&amp;rdquo;, &amp;ldquo;Versicolor&amp;rdquo;&lt;/font&gt; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; _ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 22 &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; _ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 76 &lt;br /&gt;&lt;font color=&#34;#ff0000&#34;&gt;ERROR&lt;/font&gt;: Syntax error while parsing WHERE clause. &lt;br /&gt;&lt;font color=&#34;#ff0000&#34;&gt;ERROR&lt;/font&gt; 22-322: Syntax error, expecting one of the following: a quoted string, a numeric constant, a datetime constant, &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; a missing value, -.&amp;#160; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;ERROR&lt;/font&gt; 76-322: Syntax error, statement will be ignored.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;130&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;So, what happened inside DIS since such codes go well in BASE SAS, SAS EG and the Code Editor in DIS itself? The default value &lt;em&gt;&amp;ldquo;Setosa&amp;rdquo; &amp;ldquo;Versicolor&amp;rdquo;&lt;/em&gt; was assigned to macro variable &amp;amp;species in the DIS &lt;font color=&#34;#00ff00&#34;&gt;Prompt&lt;/font&gt; (see picture above) and you would expect the following effect like what I wrote in open codes in BASE SAS:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%let species=&amp;ldquo;Setosa&amp;rdquo; &amp;ldquo;Versicolor&amp;rdquo;;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Actually NO. In DIS, this action was translated into such clause:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%let species = &lt;font color=&#34;#ff0000&#34;&gt;%nrquote&lt;/font&gt;(%&amp;ldquo;Setosa%&amp;rdquo;, %&amp;ldquo;Versicolor%&amp;rdquo;);&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Here is the point: since there quotation symbols were masked by &lt;font color=&#34;#ff0000&#34;&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/mcrolref/62978/HTML/default/viewer.htm#p0ejcenxk89b36n1xgxyf922ugoa.htm&#34; target=&#34;_blank&#34;&gt;&lt;font color=&#34;#00ff00&#34;&gt;%nrquote&lt;/font&gt;&lt;/a&gt; &lt;/font&gt;function, they are no longer valid syntax characters (then we got errors!). &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The solution: use a &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/mcrolref/62978/HTML/default/viewer.htm#p1k3cotqhvgwk0n105gyfe1cqg9m.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;%&lt;font color=&#34;#00ff00&#34;&gt;unquote&lt;/font&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;function on the macro variable &amp;amp;species to reverse the masking effort by &lt;font color=&#34;#ff0000&#34;&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/mcrolref/62978/HTML/default/viewer.htm#p0ejcenxk89b36n1xgxyf922ugoa.htm&#34; target=&#34;_blank&#34;&gt;&lt;font color=&#34;#00ff00&#34;&gt;%nrquote&lt;/font&gt;&lt;/a&gt;&lt;/font&gt;&lt;font color=&#34;#cccccc&#34;&gt;(note in our open codes example in BASE SAS, both functions were not used):&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;data a; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set sashelp.iris; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; where species in (&lt;font color=&#34;#ff0000&#34;&gt;%unquote&lt;/font&gt;(&amp;amp;species)); &lt;br /&gt;run;&lt;/font&gt; &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;font-size-1-font-size-1-font-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/font&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;font style=&#34;font-weight: bold&#34;&gt;Notes on Macro Variable Generated by DIS&lt;/font&gt;&lt;/h1&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%let species = &lt;font color=&#34;#ff0000&#34;&gt;%nrquote&lt;/font&gt;(%&amp;ldquo;Setosa%&amp;rdquo;, %&amp;ldquo;Versicolor%&amp;rdquo;);&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1)&lt;font color=&#34;#ff0000&#34;&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/mcrolref/62978/HTML/default/viewer.htm#p0ejcenxk89b36n1xgxyf922ugoa.htm&#34; target=&#34;_blank&#34;&gt;&lt;font color=&#34;#00ff00&#34;&gt;%nrquote&lt;/font&gt;&lt;/a&gt; &lt;/font&gt;function used while it is dated for a long time… &lt;font color=&#34;#ff0000&#34;&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/mcrolref/62978/HTML/default/viewer.htm#p0ejcenxk89b36n1xgxyf922ugoa.htm&#34; target=&#34;_blank&#34;&gt;&lt;font color=&#34;#00ff00&#34;&gt;%nrquote&lt;/font&gt;&lt;/a&gt; &lt;/font&gt;and &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/mcrolref/62978/HTML/default/viewer.htm#p1780jrqrtwtw7n16x83peo2zpxr.htm&#34; target=&#34;_blank&#34;&gt;&lt;font color=&#34;#00ff00&#34; size=&#34;1&#34;&gt;%quote&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;were replaced by &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/mcrolref/62978/HTML/default/viewer.htm#p06cx7fegzmzpen1m9991yljxiav.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;font color=&#34;#00ff00&#34;&gt;%BQUOTE&lt;/font&gt; and &lt;font color=&#34;#00ff00&#34;&gt;%NRBQUOTE&lt;/font&gt; Functions&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2)All quotation symbols(“) were preceded by a percent sign (%). That’s &lt;font size=&#34;1&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/mcrolref/62978/HTML/default/viewer.htm#p0ejcenxk89b36n1xgxyf922ugoa.htm&#34; target=&#34;_blank&#34;&gt;&lt;font color=&#34;#00ff00&#34;&gt;%nrquote&lt;/font&gt;&lt;/a&gt; &lt;/font&gt;and &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/mcrolref/62978/HTML/default/viewer.htm#p1780jrqrtwtw7n16x83peo2zpxr.htm&#34; target=&#34;_blank&#34;&gt;&lt;font color=&#34;#00ff00&#34; size=&#34;1&#34;&gt;%quote&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt; needed and why they are outdated any more.&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A SAS 9.3 Macro Trick: %put &amp;amp;=var</title>
+      <link>/2012/11/08/a-sas-9.3-macro-trick-put-ampvar/</link>
+      <pubDate>Thu, 08 Nov 2012 20:09:50 +0000</pubDate>
+      
+      <guid>/2012/11/08/a-sas-9.3-macro-trick-put-ampvar/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This is new since SAS 9.3 on how to display macro variable name and its value. Try to run&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%let &lt;font color=&#34;#ff0000&#34;&gt;var&lt;/font&gt;=1,2,3; &lt;br /&gt;%put &lt;font color=&#34;#00ff00&#34;&gt;&amp;amp;&lt;/font&gt;=&lt;font color=&#34;#ff0000&#34;&gt;var&lt;/font&gt;;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;or&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%macro test(&lt;font color=&#34;#ff0000&#34;&gt;var&lt;/font&gt;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %put &lt;font color=&#34;#00ff00&#34;&gt;&amp;amp;&lt;/font&gt;=&lt;font color=&#34;#ff0000&#34;&gt;var&lt;/font&gt;; &lt;br /&gt;%mend; &lt;br /&gt;%test(%str(1,2,3))&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and you will get in Log window&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;VAR=1,2,3&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You can read from &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/mcrolref/62978/HTML/default/viewer.htm#n189qvy83pmkt6n1bq2mmwtyb4oe.htm&#34; target=&#34;_blank&#34;&gt;SAS 9.3 online doc&lt;/a&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;If you place an equal sign between the &lt;font color=&#34;#00ff00&#34;&gt;ampersand&lt;/font&gt; and the &lt;font color=&#34;#ff0000&#34;&gt;macro variable&lt;/font&gt; &lt;font color=&#34;#ff0000&#34;&gt;name&lt;/font&gt; of a direct macro variable reference, the macro variable&amp;#8217;s name displays in the log along with the macro variable&amp;#8217;s value.&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In SAS 9.2 and prior, you should type the macro variable twice:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%let var=1,2,3; &lt;br /&gt;%put var=&amp;var;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;PS: it is called a “Tip” in &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/mcrolref/62978/HTML/default/viewer.htm#n189qvy83pmkt6n1bq2mmwtyb4oe.htm&#34; target=&#34;_blank&#34;&gt;SAS 9.3 online doc&lt;/a&gt;, but I’d rather call it a trick: &lt;font size=&#34;1&#34;&gt;not critical but nice to have (&lt;em&gt;save your typing!&lt;/em&gt;). You may be also interested in &lt;a href=&#34;http://blogs.sas.com/content/iml/2010/11/01/tips-and-techniques-whats-the-difference/&#34; target=&#34;_blank&#34;&gt;Rick Wicklin’s differentiation on Tip and Technique&lt;/a&gt;.&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My Collection of SAS Macro Repositories</title>
+      <link>/2011/11/08/my-collection-of-sas-macro-repositories/</link>
+      <pubDate>Tue, 08 Nov 2011 21:41:54 +0000</pubDate>
+      
+      <guid>/2011/11/08/my-collection-of-sas-macro-repositories/</guid>
+      <description>&lt;p&gt;Then I just find that the most effective and safest way to synchronize bookmarks across machines is making them Google searchable, i.e, putting them online.&lt;/p&gt;
+
+&lt;p&gt;Followings are my personal collections of SAS macro Repositories (I will keep it update according to new sites reached and your inputs). Most of them are rich, well documented and friendly for navigation and review:&lt;/p&gt;
+
+&lt;p&gt;/*\&lt;em&gt;*General**&lt;/em&gt;/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;1. SAS Macros by &lt;/font&gt;&lt;a href=&#34;http://www.devenezia.com/&#34; target=&#34;_blank&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;Richard DeVenezia&lt;/font&gt;&lt;/a&gt;&lt;/strong&gt;****&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.devenezia.com/downloads/sas/macros/index.php&#34;&gt;http://www.devenezia.com/downloads/sas/macros/index.php&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Richard is a very active contributor in SAS-L. He also plays with Java, Perl, PHP and JavaScript and you can find all these codes in his homepage. Besides the well organized macros, there are some interesting utilities:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.devenezia.com/downloads/sas/samples/&#34;&gt;http://www.devenezia.com/downloads/sas/samples/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;2. &lt;/font&gt;&lt;/strong&gt;&lt;a href=&#34;http://www.datasavantconsulting.com/roland/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;Roland&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;&amp;#8216;s SAS Macros&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.datasavantconsulting.com/roland/Spectre/maclist2.html&#34;&gt;http://www.datasavantconsulting.com/roland/Spectre/maclist2.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Roland, a proficient SAS programmer from Europe, also supply two SAS applications:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Spectre&lt;/strong&gt; &amp;#8211; a Practical and Educational Clinical Trials Reporting Engine&lt;br /&gt;
+&lt;a href=&#34;http://www.datasavantconsulting.com/roland/Spectre/index.html&#34;&gt;http://www.datasavantconsulting.com/roland/Spectre/index.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;RGPP&lt;/strong&gt; -Graphical Patient Profiler&lt;br /&gt;
+&lt;a href=&#34;http://www.datasavantconsulting.com/roland/RGPP/rgpp.html&#34;&gt;http://www.datasavantconsulting.com/roland/RGPP/rgpp.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;And some tips:&lt;br /&gt;
+&lt;a href=&#34;http://www.datasavantconsulting.com/roland/sastips.html&#34;&gt;http://www.datasavantconsulting.com/roland/sastips.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;3. &lt;/font&gt;&lt;/strong&gt;&lt;a href=&#34;http://www.cswenson.com/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;Chris&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;&amp;#8216;s SAS Macros&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://sas.cswenson.com/downloads/macros&#34;&gt;http://sas.cswenson.com/downloads/macros&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I just found Chris’ site weeks before and Chris is a pretty cool programmer: in one of his &lt;a href=&#34;http://sas.cswenson.com/downloads/fun-macros&#34; target=&#34;_blank&#34;&gt;fun macros&lt;/a&gt;, an error message will be such kind of form:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;ERROR: MWA HA HA! You fool! You are cursed with leprosy!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;4. &lt;/font&gt;&lt;/strong&gt;&lt;a href=&#34;http://www.sconsig.com/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;sconsig&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;** &lt;font color=&#34;#ff0000&#34;&gt;SAS Coding Tips and Techniques&lt;/font&gt;**&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.sconsig.com/sastip.htm&#34;&gt;http://www.sconsig.com/sastip.htm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;rich while badly for navigating and review&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;5. Arnold Schick&amp;#8217;s macros&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://schick.tripod.com/macros.html&#34;&gt;http://schick.tripod.com/macros.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;also some macros collected from SAS-L :&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://schick.tripod.com/p-index.html&#34;&gt;http://schick.tripod.com/p-index.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;6. Rodney A. Sparapani ‘s Macro&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.mcw.edu/PCOR/Education/SASMacros.htm&#34;&gt;http://www.mcw.edu/PCOR/Education/SASMacros.htm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Rodney is best known for his contribution to &lt;a href=&#34;http://ess.r-project.org/Manual/ess.html&#34; target=&#34;_blank&#34;&gt;SAS support in ESS&lt;/a&gt; (Emacs Speaks Statistics) as a cool programmer and &lt;a href=&#34;http://www.mrc-bsu.cam.ac.uk/bugs/welcome.shtml&#34; target=&#34;_blank&#34;&gt;WinBugs&lt;/a&gt; and Bayesian then he works as a statistician.&lt;/p&gt;
+
+&lt;p&gt;Rodney’s site also contains lots of statistical stuff.&lt;/p&gt;
+
+&lt;p&gt;/*\&lt;em&gt;*Statistics**&lt;/em&gt;/&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;1. Mayo Clinic Locally Written SAS Macros&lt;/font&gt;&lt;br /&gt;
+&lt;a href=&#34;http://cancercenter.mayo.edu/mayo/research/biostat/sasmacros.cfm&#34;&gt;http://cancercenter.mayo.edu/mayo/research/biostat/sasmacros.cfm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;or in&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://mayoresearch.mayo.edu/biostat/sasmacros.cfm&#34;&gt;http://mayoresearch.mayo.edu/biostat/sasmacros.cfm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;2. Paul D. Allison&lt;/font&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.ssc.upenn.edu/~allison/#Macros&#34;&gt;http://www.ssc.upenn.edu/~allison/#Macros&lt;/a&gt;&lt;br /&gt;
+new site: &lt;a href=&#34;http://www.pauldallison.com/Download3.html&#34;&gt;http://www.pauldallison.com/Download3.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Paul is a prolific writer with books &lt;a href=&#34;http://www.amazon.com/Paul-D.-Allison/e/B001H6KWN6/ref=sr_ntt_srch_lnk_1?qid=1320758969&amp;sr=8-1&#34; target=&#34;_blank&#34;&gt;on SAS and statistics&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;3. MCHP SAS Macros&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://mchp-appserv.cpe.umanitoba.ca/viewConcept.php?conceptID=1048&#34;&gt;http://mchp-appserv.cpe.umanitoba.ca/viewConcept.php?conceptID=1048&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;4. Ralph O&amp;#8217;Brien ,UnifyPow: A SAS Module for Sample-Size Analysis&lt;/font&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.bio.ri.ccf.org/Power/&#34;&gt;http://www.bio.ri.ccf.org/Power/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;5. Usual Dietary Intakes: SAS Macros for the NCI Method&lt;/font&gt;&lt;br /&gt;
+&lt;a href=&#34;http://riskfactor.cancer.gov/diet/usualintakes/macros.html&#34;&gt;http://riskfactor.cancer.gov/diet/usualintakes/macros.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;6. Clinician&amp;#8217;s corner: SAS macros&lt;/font&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.medicine.mcgill.ca/epidemiology/Joseph/PBelisle/sas-macros.html&#34;&gt;http://www.medicine.mcgill.ca/epidemiology/Joseph/PBelisle/sas-macros.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;/*\&lt;em&gt;*Graph**&lt;/em&gt;/&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;1. Robert Allison&amp;#8217;s SAS/Graph Examples!&lt;/font&gt;&lt;br /&gt;
+&lt;a href=&#34;http://robslink.com/SAS/Home.htm&#34;&gt;http://robslink.com/SAS/Home.htm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;My first stop for SAS graphics.&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;2. SAS Graphic Programs and Macros by Michael Friendly&lt;/font&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.datavis.ca/sasmac/&#34;&gt;http://www.datavis.ca/sasmac/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;more popular in academia.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

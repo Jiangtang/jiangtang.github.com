@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Preproduction on Lithium Theme</title>
+    <link>/tags/preproduction/index.xml</link>
+    <description>Recent content in Preproduction on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/preproduction/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Preproduction in SAS</title>
+      <link>/2013/06/29/preproduction-in-sas/</link>
+      <pubDate>Sat, 29 Jun 2013 09:51:52 +0000</pubDate>
+      
+      <guid>/2013/06/29/preproduction-in-sas/</guid>
+      <description>
+
+&lt;p&gt;It seems the list of SAS preproduction is becoming shorter. Thanks for any inputs (just tested in SAS 9.3):&lt;/p&gt;
+
+&lt;h5 id=&#34;1-output-data-step-view-v-s-input-data-step-view&#34;&gt;1. Output Data Step View (v.s Input Data Step View)&lt;/h5&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;WARNING: The definition of an output DATA step view is an experimental feature in this release and is not intended for use in the development of production applications.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id=&#34;2-ods-report-writing-interface-will-turn-to-production-in-sas-9-4-160-160-160-160&#34;&gt;2. ODS Report Writing Interface (&lt;em&gt;will turn to production in SAS 9.4?&lt;/em&gt;)&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/h5&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;WARNING: DATA step interface is preproduction in this release.&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

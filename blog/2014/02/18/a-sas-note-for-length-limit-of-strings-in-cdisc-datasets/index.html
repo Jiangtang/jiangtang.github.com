@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>A SAS Note for Length Limit of Strings in CDISC Datasets - Lithium Theme</title>
+<meta property="og:title" content="A SAS Note for Length Limit of Strings in CDISC Datasets - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">A SAS Note for Length Limit of Strings in CDISC Datasets</h1>
+
+    
+    <span class="article-date">February 18, 2014</span>
+    
+
+    <div class="article-content">
+      <p><font size="1">Clinical programmers are very familiar with the length limit of strings in CDISC compliant datasets, such as</font></p>
+
+<ul>
+<li><font size="1">#1: variable names: &lt;= 8 characters</font></li>
+<li><font size="1">#2: variable labels: &lt;= 40 characters</font></li>
+<li><font size="1">#3: data set labels: &lt;= 40 characters</font></li>
+<li><font size="1">#4: data value of a single variable: &lt;= 200 characters</font></li>
+</ul>
+
+<p><font size="1">and they are due to the limitations of SAS XPORT transport files (v5). But there are some rules which are not&#160; as explicit as rule #1-4, for example,</font></p>
+
+<ul>
+<li><font size="1">#5: For domain LB, data value of variable LBTESTCD: &lt;= 8 characters</font></li>
+<li><font size="1">#6: For domain LB, data value of variable LBTEST: &lt;= 40 characters</font></li>
+</ul>
+
+<p><font size="1">Rule #5-6 is much more strict than #4&#160; where 200 is the maximum. Actually, in SDTM Implementation Guide, the rational was well stated (“<em>4.1.5.3.1&#160; TEST NAME (&#8211;TEST) GREATER THAN 40 CHARACTERS</em>”):</font></p>
+
+<blockquote>
+<p><font size="1">Since the &#8211;TEST variable is meant to serve as a label for a &#8211;TESTCD when a Findings dataset is transposed to a more horizontal format, the length of &#8211;TEST is normally limited to 40 characters to conform to the limitations of the SAS V5 Transport format currently used for submission datasets.</font></p>
+</blockquote>
+
+<p><font size="1">You can take the following piece of codes to understand it where rule #5-6 actually are set to follow rule #1-2:</font></p>
+
+<blockquote>
+<p><font size="1" face="Courier New">data lb; <br />&#160;&#160;&#160; input usubjid $ lbtestcd $&#160; lbtest $ lborres visitnum; <br />datalines; <br />001 AA aaaaa 12 1 <br />001 BB bbbbb 20 1 <br />001 CC ccccc 3&#160; 1 <br />001 AA aaaaa 4&#160; 2 <br />001 BB bbbbb 40 2 <br />001 CC ccccc 35 2 <br />;</font></p>
+
+<p><font face="Courier New"><font size="1">proc transpose data=lb out=lb2 (drop=<em>name</em>); <br />&#160;&#160;&#160; by usubjid&#160; visitnum; <br />&#160;&#160;&#160; var lborres; <br /></font><font size="1"><font color="#ff0000">&#160;&#160;&#160; id lbtestcd; <br />&#160;&#160;&#160; idlabel lbtest;</font> <br />run;</font></font></p>
+</blockquote>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2014/02/idlabel.png"><font size="1"><img title="idlabel" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; border-left: 0px; display: block; padding-right: 0px" border="0" alt="idlabel" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2014/02/idlabel_thumb.png" width="514" height="253" /></font></a></p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

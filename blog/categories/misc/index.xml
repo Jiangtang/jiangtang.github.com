@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Misc on Lithium Theme</title>
+    <link>/categories/misc/index.xml</link>
+    <description>Recent content in Misc on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/categories/misc/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Github for Clinical/Statistical Programmers</title>
+      <link>/2013/02/20/github-for-clinical/statistical-programmers/</link>
+      <pubDate>Wed, 20 Feb 2013 22:01:03 +0000</pubDate>
+      
+      <guid>/2013/02/20/github-for-clinical/statistical-programmers/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;PhUSE-FDA Working Group 5 (&lt;/font&gt;&lt;a href=&#34;http://www.phusewiki.org/wiki/index.php?title=Development_of_Standard_Scripts_for_Analysis_and_Programming&#34;&gt;&lt;font size=&#34;1&#34;&gt;Development of Standard Scripts for Analysis and Programming&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;) just adopted &lt;/font&gt;&lt;a href=&#34;http://code.google.com/p/phuse-scripts/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Code&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;as collaborative programming platform. &lt;/font&gt;&lt;a href=&#34;http://code.google.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Code&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;is one of the most popular and respected open source software hosting sites in the world and it is definitely a good choice for PhUSE-FDA WG5.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;But after viewing one of WG5’s working reports, &lt;em&gt;&lt;a href=&#34;http://www.phusewiki.org/wiki/index.php?title=Platform_for_Standard_Script_Development:_Progress_as_of_September_18_2012&#34;&gt;Sharing Standard Statistical Scripts&lt;/a&gt;&lt;/em&gt; and getting to know why they finally chose Google Code (rather than &lt;/font&gt;&lt;a href=&#34;https://github.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Github&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;which was also tested by WG5 members), I think it’s necessary to clarify some misunderstanding against Github where I’m also &lt;a href=&#34;https://github.com/Jiangtang&#34;&gt;an occasional user&lt;/a&gt;. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;As stated in &lt;/font&gt;&lt;a href=&#34;http://www.phusewiki.org/wiki/index.php?title=Platform_for_Standard_Script_Development:_Progress_as_of_September_18_2012&#34;&gt;&lt;font size=&#34;1&#34;&gt;Slide 11&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;in the report mentioned before, Github,&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Too complicated an interface &lt;br /&gt;Too much overhead for simple development &lt;br /&gt;Too much training and education needed&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;designed for classic programming languages like C and Java (not for things like R and SAS)&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For the first point regarding &lt;strong&gt;interface&lt;/strong&gt;, it seems only &lt;/font&gt;&lt;a href=&#34;http://git-scm.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Git&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;command line tested, and it may be too complicated to “&lt;strong&gt;classic&lt;/strong&gt; statistical programming users”. Actually, Github offers a great GUI tool, for example, &lt;em&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;GitHub for Windows&lt;/a&gt;&lt;/em&gt; to help users visually clone repositories, commit changes and other management tasks without typing Git commands: &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Github_GUI.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;Github_GUI&#34; border=&#34;0&#34; alt=&#34;Github_GUI&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Github_GUI_thumb.png&#34; width=&#34;487&#34; height=&#34;427&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It’s also worthy to mention that with &lt;/font&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;GitHub for Windows&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;, &lt;/em&gt;users don’t need to install any separated version control software like Git, CVS or SVN. &lt;/font&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;GitHub for Windows&lt;/font&gt;&lt;/em&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;already includes a fully functional version of &lt;/font&gt;&lt;a href=&#34;http://msysgit.github.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;msysGit&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. It just makes users’ life much simpler. To use Google Code, you must install and configure something like TortoiseSVN.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The second, is Github suitable for “&lt;strong&gt;things like R and SAS&lt;/strong&gt;”? It’s true that all hosts including &lt;/font&gt;&lt;a href=&#34;https://github.com/languages&#34;&gt;&lt;font size=&#34;1&#34;&gt;Github&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;are dominated by “classic programming languages like C and Java”. For SAS, SAS programmers as a whole are just not active in&amp;#160; any social coding activities, but for &lt;/font&gt;&lt;a href=&#34;https://github.com/languages/R&#34;&gt;&lt;font size=&#34;1&#34;&gt;R&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, actually it is &lt;/font&gt;&lt;a href=&#34;https://www.google.com/webhp?sourceid=chrome-instant&amp;amp;ion=1&amp;amp;ie=UTF-8#q=github+top+languages+R&amp;amp;hl=en&amp;amp;ei=T4QlUeH-HJP62AXxqYGAAQ&amp;amp;start=10&amp;amp;sa=N&amp;amp;bav=on.2,or.r_gc.r_pw.r_cp.r_qf.&amp;amp;fp=50b26647ad5972f8&amp;amp;ion=1&amp;amp;biw=1536&amp;amp;bih=784&#34;&gt;&lt;font size=&#34;1&#34;&gt;one of the mostly used languages in Github&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Google Code is good and a “Google Code vs Github” question is just mostly subjective. It seems to me the pickup of Google Code by WG5 rather than Github was based on incomplete information. I personally prefer Github and there are also some good reasons:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Use the GUI tool, &lt;/font&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;GitHub for Windows&lt;/font&gt;&lt;/em&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;to maintain a minimum Git/SVN/CVS setup.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Github supplies much richer statistics reports, including charts.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Github is more social oriented which makes it cool in this Web2.0 world.&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blog Statistics: 2012</title>
+      <link>/2013/01/01/blog-statistics-2012/</link>
+      <pubDate>Tue, 01 Jan 2013 23:47:44 +0000</pubDate>
+      
+      <guid>/2013/01/01/blog-statistics-2012/</guid>
+      <description>
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;(This blog’s page view data from Google Analytics; &lt;/span&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/archives/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;43 posts in total in 2012&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;)&lt;/span&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;top-10-countries-territories-and-cities&#34;&gt;Top 10 countries/territories and cities&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_country.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;blog_country&#34; alt=&#34;blog_country&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_country_thumb.png&#34; width=&#34;382&#34; height=&#34;384&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Most of my readers come from US and I’m glad my Chinese fellows still fork me since I moved to US this year (&lt;em&gt;today is my one year anniversary in US&lt;/em&gt;).&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;To my surprising there are much more readers from South Korea than from Japan(#12) and Singapore(#22).&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Readers from a secret city (#7) are watching me! &lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;top-10-referral-social-networks&#34;&gt;Top 10 referral social networks&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_social-network.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;blog_social network&#34; alt=&#34;blog_social network&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_social-network_thumb.png&#34; width=&#34;168&#34; height=&#34;514&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;I’m happy that people navigating through Facebook also click this technical blog!&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;top-10-mobile-devices&#34;&gt;Top 10 mobile devices&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_mobile.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;blog_mobile&#34; alt=&#34;blog_mobile&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_mobile_thumb.png&#34; width=&#34;396&#34; height=&#34;411&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;I think myself contributed a lot via Google Nexus 7 (#7) visiting my own blog (&lt;em&gt;one upon a time in 2012, I had two new released Nexus 7 tablets at hand until one dropped down and another sold out…&lt;/em&gt;).&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;top-10-most-viewed-posts&#34;&gt;Top 10 most viewed posts&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/13/sublimetext2-sas/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Sublime Text 2 for SAS Programmers: A Quick Note&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/10/23/tony-barr-and-the-early-history-of-sas/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Tony Barr and the Early History of SAS&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/11/xml/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Face Off: Review OpenCDISC XML files&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/12/07/sas-books-2012/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;My SAS Books: Shopping List 2012&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/16/hypothesis-testing/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Statistical Notes (4): Dragon’s Teeth and Fleas: Hypothesis Testing in Plain English&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/geomean/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Statistical Notes (1): Geometric Mean and Geometric Mean Ratio&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/12/column-mode-in-sas-9-3-enhanced-editor/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Column Mode in SAS 9.3 Enhanced Editor&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/11/30/weekend-clip-data-scientist/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Weekend Clip: Data Scientist&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/tost-equivalence-test/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Statistical Notes (2): Equivalence Testing and TOST (Two One-Sided Test)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/19/publishing-cdisc-standards/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Is There Any Better Way? Publishing Process For CDISC Standards Documentation&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Thank you my fellow readers and happy new year (if you like to have another break, follow me to celebrate Chinese new year at Feb 10, 2013 )!&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Weekend Clips: Data Scientist Episode II</title>
+      <link>/2012/12/23/weekend-clips-data-scientist-episode-ii/</link>
+      <pubDate>Sun, 23 Dec 2012 15:14:13 +0000</pubDate>
+      
+      <guid>/2012/12/23/weekend-clips-data-scientist-episode-ii/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. What is A Data Scientist Anyway?&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image3.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image_thumb3.png&#34; width=&#34;487&#34; height=&#34;94&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2. You Just Can’t Be Replaced by Yourselves!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image1.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image11.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image11_thumb.png&#34; width=&#34;489&#34; height=&#34;94&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;3. We are &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Kaggle&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;all Data Scientists&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image2.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image12.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image1_thumb.png&#34; width=&#34;482&#34; height=&#34;108&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Is There Any Better Way? Publishing Process For CDISC Standards Documentation</title>
+      <link>/2012/07/19/is-there-any-better-way-publishing-process-for-cdisc-standards-documentation/</link>
+      <pubDate>Thu, 19 Jul 2012 01:54:10 +0000</pubDate>
+      
+      <guid>/2012/07/19/is-there-any-better-way-publishing-process-for-cdisc-standards-documentation/</guid>
+      <description>
+
+&lt;h1 id=&#34;160&#34;&gt;&amp;#160;&lt;/h1&gt;
+
+&lt;h1 id=&#34;font-style-font-weight-bold-1-the-pain-font&#34;&gt;&lt;font style=&#34;font-weight: bold&#34;&gt;1. The Pain&lt;/font&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I read from Lex Jansen (&lt;/font&gt;&lt;a href=&#34;https://twitter.com/lexjansen&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;@LexJansen&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;) that &lt;a href=&#34;http://www.cdisc.org/sdtm&#34; target=&#34;_blank&#34;&gt;CDISC SDTM v1.3 and SDTMIG v3.1.3 were newly released&lt;/a&gt;&lt;/font&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;font size=&#34;1&#34;&gt;. It’s pretty nice since CDISC SDTM was &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/03/28/rtp_cdisc_q1/&#34; target=&#34;_blank&#34;&gt;supposed to be released semiannually&lt;/a&gt; in the new publishing cycle. We can see the team put great efforts on this new version, but frankly speaking, this delivery (the way to display, not the content itself) is far away elegant.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The new SDTM Implementation Guide (IG) v1.3 is just a temporary workaround shipment, as an embedded file “&lt;em&gt;How to Use SDTMIG 3.1.3&lt;/em&gt;” indicates, &lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SDTMIG 3.1.3 is presented as an annotated version of SDTMIG 3.1.2. This approach was taken for SDTMIG in order for the document to be released quickly without an extensive rewrite. The content presented as annotations will be incorporated into a single version of documentation in a future release.&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;What does “annotated” mean? When you replace “should” to “must” in the file,&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;strikethrough the word “should”&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;insert the replacement “must”, and&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;add a sticky note to indicate the change above&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/SDTMv313.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SDTMv313&#34; border=&#34;0&#34; alt=&#34;SDTMv313&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/SDTMv313_thumb.png&#34; width=&#34;471&#34; height=&#34;167&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This is annoying. There are 143 sticky notes throughout the whole documentation, including replacement, deleting, files attachment and such and the reason, is said to ensure “the document to be released quickly without an extensive rewrite”. BUT 143 sticky notes in a PDF file! it’s already huge editing effort ever!&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;font-style-font-weight-bold-2-the-reason-em-or-the-conjecture-em-font&#34;&gt;&lt;font style=&#34;font-weight: bold&#34;&gt;2. The Reason (&lt;em&gt;or The Conjecture&lt;/em&gt;)&lt;/font&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Almost everybody complains of Microsoft Office Excel and Word, but Ура(!), they are still dominant in our working spaces (&lt;em&gt;especially heavy in clinical world? I’m not sure&lt;/em&gt;). I didn’t have any personal connection with CDISC publishing team, but from the documentation released, I’m pretty confident that these files (SDTMIG v3.1.3 and others) were edited in Word and then published into PDF via Adobe products (very common practice, isn’t it?).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Now you may understand why CDISC publishing team delivered this “annotated”&amp;#160; version due to limited time and human resource (although editing 143 sticky notes was also a big work load). The clue is Word! Word! Word! &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Microsoft Word is extremely popular for its WYSIWYG (What You See Is What You Get), but it can&amp;#8217;t separate contents from formats and it will a disaster when maintaining a frequent updated Word file by multiple users. In this CDISC SDTMIG case,&amp;#160; there are about 143 &lt;font color=&#34;#ff0000&#34;&gt;content&lt;/font&gt; updates supplied by CDISC community worldwide, but when applying such content updates to the original Word file, you are always reasonable to worry about that such updates would change something(&lt;em&gt;yes SOMETHING&lt;/em&gt;) unexpectedly!&lt;/font&gt; &lt;font size=&#34;1&#34;&gt;The biggest concern for CDISC standard files, I guess, again with confidence, is if such updates destroy the in-text links&amp;#160; or other cross references which offers the nice navigation throughout the documentation.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;So, this “annotated” version at least is safe (&lt;em&gt;and SAFE is much more important than what it looks&lt;/em&gt;): no links proven worktable in v3.1.2 will broken in this time pushing new release, and things would get better in the future (from the same source, “&lt;em&gt;How to Use SDTMIG 3.1.3&lt;/em&gt;”):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;CDISC is currently discussing how future documentation will be published ensure documentation is easy to navigate and read and at the same time easy to maintain.&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;3-the-prospective&#34;&gt;3. The Prospective&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Yes I will end with a (set of) suggestion(s). The bottom line is no Word anymore and I promise no additional cost and pain compared to digging into Microsoft Word and Adobe Acrobat.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Take SDTM IG v3.1.3 as a demo project:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Convert all the contents of SDTM IG v3.1.2 (from PDF, or original Word) to a text based format. Personally I prefer &lt;/font&gt;&lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Markdown&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and &lt;a href=&#34;http://docutils.sourceforge.net/docs/ref/rst/introduction.html&#34; target=&#34;_blank&#34;&gt;reStructuredText&lt;/a&gt;. Actually it doesn’t matter which one is chosen for test purpose, because such text based formats can be easily transferred (much easier than from Word/PDF). The benefits of these two formats are separation of contents and formats, and very intuitive to learn (much easier than HTML; &lt;a href=&#34;http://docutils.sourceforge.net/docs/user/rst/quickref.html&#34; target=&#34;_blank&#34;&gt;almost WYSIWYG&lt;/a&gt;). This task is machine doable somehow but also needs manually modification. But all in all,&amp;#160; &lt;/font&gt;&lt;font size=&#34;1&#34;&gt;it is not a big deal, it is only about 300 pages. &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Edit these text files according to the new SDTM IG v3.1.3 updates. &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Distribute these text files (and rendered output files in PDF/ HTML formats) to a vendor supported or self hosted collaborating site, like &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Call for CDISC team members and users to &lt;/font&gt;&lt;font size=&#34;1&#34;&gt;report any issues and even encourage them to directly edit them online (don’t worry, it won’t be mess; we are in a version control system like &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;).&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Then the next version will come out naturally (and peacefully).&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;then I’m looking forward to hearing your ideas.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;4-additional-notes&#34;&gt;4. Additional Notes&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The markup standards mentioned above in my proposal, &lt;/font&gt;&amp;#160;&lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Markdown&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and &lt;a href=&#34;http://docutils.sourceforge.net/docs/ref/rst/introduction.html&#34; target=&#34;_blank&#34;&gt;reStructuredText&lt;/a&gt;, are not replacement for CDISC metadata standard, &lt;a href=&#34;http://www.cdisc.org/odm&#34; target=&#34;_blank&#34;&gt;ODM&lt;/a&gt; and its XML derivatives &lt;a href=&#34;http://www.cdisc.org/define-xml&#34; target=&#34;_blank&#34;&gt;Define.xml&lt;/a&gt;. Instead, they are better formats to get rid of Microsoft Word for community collaborating of editing the “narrative” parts of models (the PDF files we read from CDISC), for example, SDTMIG we discussed before. &lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tab is a Tab is a Tab is a Tab</title>
+      <link>/2012/07/14/tab-is-a-tab-is-a-tab-is-a-tab/</link>
+      <pubDate>Sat, 14 Jul 2012 23:10:40 +0000</pubDate>
+      
+      <guid>/2012/07/14/tab-is-a-tab-is-a-tab-is-a-tab/</guid>
+      <description>
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Well I’m a big fan of “tabs” and feel much more comfortable when launching everything into tabs: web pages, text files, PDF files, Windows Office files (Word, Excel, PPT), and even folders.&amp;#160; Followings are my best of choices to share:&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;1-file-explorer-clover&#34;&gt;1. File Explorer: Clover&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://ejie.me/&#34;&gt;http://ejie.me/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/clover.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;clover&#34; border=&#34;0&#34; alt=&#34;clover&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/clover_thumb.png&#34; width=&#34;502&#34; height=&#34;367&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;There are lots of fancy/complicated file/folder management system beyond Windows Explore (&lt;a href=&#34;http://www.ghisler.com/&#34; target=&#34;_blank&#34;&gt;Total Commander&lt;/a&gt; might be the most famous one) while Clover, as its name indicates, is just as simple as I need:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Ctrl+T: open new tab&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Ctrl+W: close tab&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Ctr+tab: switch among tabs&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;And these shortcuts also work at the following applications (so, nothing new need to learn).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;2-web-browser-chrome&#34;&gt;2. Web Browser: Chrome&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.google.com/intl/en/chrome/browser/&#34;&gt;https://www.google.com/intl/en/chrome/browser/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/chrome.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;chrome&#34; border=&#34;0&#34; alt=&#34;chrome&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/chrome_thumb.png&#34; width=&#34;497&#34; height=&#34;403&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;While IE, as a saying goes, is a best browser to download Chrome(or &lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.mozilla.org/en-US/firefox/new/&#34; target=&#34;_blank&#34;&gt;Firefox&lt;/a&gt; if you like&lt;/font&gt;).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;3-pdf-reader-foxit-reader&#34;&gt;3. PDF Reader: Foxit Reader&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.foxitsoftware.com/Secure_PDF_Reader/&#34;&gt;http://www.foxitsoftware.com/Secure_PDF_Reader/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/foxit.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;foxit&#34; border=&#34;0&#34; alt=&#34;foxit&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/foxit_thumb.png&#34; width=&#34;509&#34; height=&#34;330&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Get rid of &lt;a href=&#34;http://get.adobe.com/reader/&#34; target=&#34;_blank&#34;&gt;Adobe Reader&lt;/a&gt;. Foxit Reader is no doubt the best of best PDF reader as it shows (and it’s free). &lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;4-office-suite-office-tab&#34;&gt;4. Office Suite: Office Tab&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.extendoffice.com/product/office-tab.html&#34;&gt;http://www.extendoffice.com/product/office-tab.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/officeTab.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/officeTab1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;officeTab&#34; border=&#34;0&#34; alt=&#34;officeTab&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/officeTab_thumb1.png&#34; width=&#34;511&#34; height=&#34;346&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Office Tab is a Microsoft Office add-in and it works (to launch Word, Excel and PPT files to tabs)!&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;5-text-editor-notepad-sublime-text-2&#34;&gt;5. Text Editor: Notepad++/Sublime Text 2&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://notepad-plus-plus.org/&#34;&gt;http://notepad-plus-plus.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.sublimetext.com/&#34;&gt;http://www.sublimetext.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/NPP.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;NPP&#34; border=&#34;0&#34; alt=&#34;NPP&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/NPP_thumb.png&#34; width=&#34;510&#34; height=&#34;424&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://support.sas.com/resources/papers/proceedings11/211-2011.pdf&#34; target=&#34;_blank&#34;&gt;I use Notepad++&lt;/a&gt; for a long time and love it, but when I &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/13/sublimetext2-sas/&#34; target=&#34;_blank&#34;&gt;take a look at Sublime Text 2&lt;/a&gt;, I should admit that it has much of potentials to serve as my default text editor in the future:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/Sublime.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/Sublime1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;Sublime&#34; border=&#34;0&#34; alt=&#34;Sublime&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/Sublime_thumb1.png&#34; width=&#34;510&#34; height=&#34;384&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>US Post Beats Menu Cost</title>
+      <link>/2012/03/24/us-post-beats-menu-cost/</link>
+      <pubDate>Sat, 24 Mar 2012 01:29:47 +0000</pubDate>
+      
+      <guid>/2012/03/24/us-post-beats-menu-cost/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;table border=&#34;0&#34; cellspacing=&#34;0&#34; cellpadding=&#34;2&#34; width=&#34;400&#34;&gt;
+  &lt;tr&gt;
+    &lt;td valign=&#34;top&#34; width=&#34;200&#34;&gt;
+      &lt;p&gt;
+        &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/stamp_5c.jpg&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px 0px 5px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;stamp_5c&#34; border=&#34;0&#34; alt=&#34;stamp_5c&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/stamp_5c_thumb.jpg&#34; width=&#34;196&#34; height=&#34;235&#34; /&gt;&lt;/a&gt;
+      &lt;/p&gt;
+    &lt;/td&gt;
+    
+    &lt;td valign=&#34;top&#34; width=&#34;200&#34;&gt;
+      &lt;p&gt;
+        &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/stamp2011.jpg&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px 0px 5px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;stamp2011&#34; border=&#34;0&#34; alt=&#34;stamp2011&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/stamp2011_thumb.jpg&#34; width=&#34;201&#34; height=&#34;236&#34; /&gt;&lt;/a&gt;
+      &lt;/p&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;One of the interesting observations in my first few months in US: there is no price printed in the new mail stamps!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It is interesting because as a former student of economics, I think US Post system did a nice attempt to beat the so called “&lt;a href=&#34;http://en.wikipedia.org/wiki/Menu_cost&#34; target=&#34;_blank&#34;&gt;menu cost&lt;/a&gt;” which should honor to Harvard economist &lt;a href=&#34;http://en.wikipedia.org/wiki/N._Gregory_Mankiw&#34; target=&#34;_blank&#34;&gt;Mankiw&lt;/a&gt;. Literally the menu cost is the cost of a restaurant to print new menus due to price adjustment. In this story, it is the cost of US Post to print new stamps with adjusted price.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/US_CPI.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;US_CPI&#34; border=&#34;0&#34; alt=&#34;US_CPI&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/US_CPI_thumb.png&#34; width=&#34;459&#34; height=&#34;360&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Why US Post need to print new stamps with new price? It is because of the inflation! I took a quick search, the first class postage rate was 5 cents in 1963 and never changed until 1968. But during this 5 years, the CPI (&lt;a href=&#34;http://en.wikipedia.org/wiki/Consumer_price_index&#34; target=&#34;_blank&#34;&gt;consumer price index&lt;/a&gt;, one of the robust measures of inflation; data see &lt;a href=&#34;http://www.johnstonsarchive.net/other/postage.html&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;, codes see below) increased from 30.6 to 33.4, which means, the actual price (see &lt;font color=&#34;#ff0000&#34;&gt;red&lt;/font&gt; line below) of a postage in 1967 was even less than in 1963! &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/US_Postage_Rates.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;US_Postage_Rates&#34; border=&#34;0&#34; alt=&#34;US_Postage_Rates&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/US_Postage_Rates_thumb.png&#34; width=&#34;484&#34; height=&#34;384&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Why US Post didn’t adjust the postage rate accordingly in these years? In a free market, prices are supposed to be adjusted immediately upon market demands and supplies. &lt;a href=&#34;http://en.wikipedia.org/wiki/New_Keynesian_economics&#34; target=&#34;_blank&#34;&gt;A school of economics&lt;/a&gt; argues that even in free markets, the prices can be sticky. One of causes of such price stickiness is the menu cost. In this case, US Post knew that the actual cost of posting a mail was up, but it still didn’t will to print new stamps with new price due to printing cost itself (suppose there were lots of stocks) and even the cost to inform people(and such small costs).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Now US Post doesn’t want to lose money by supplying mail services with a price under market value while also want to avoid so called menu cost, then a stamp without price printed seems good enough to solve such dilemma!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;/&lt;em&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8211;codes for graphics go here and it’s nice to post the first SGPLOT in this blog while watching NCAA game of NCSU vs Kansas&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8211;&lt;/em&gt;/&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;data rate; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input Year Nominal Real CPI; &lt;br /&gt;datalines; &lt;br /&gt;1866&amp;#160;&amp;#160;&amp;#160; 3&amp;#160;&amp;#160;&amp;#160; 44.0&amp;#160;&amp;#160;&amp;#160; 15.4 &lt;br /&gt;1867&amp;#160;&amp;#160;&amp;#160; 3&amp;#160;&amp;#160;&amp;#160; 47.4&amp;#160;&amp;#160;&amp;#160; 14.3 &lt;br /&gt;1868&amp;#160;&amp;#160;&amp;#160; 3&amp;#160;&amp;#160;&amp;#160; 49.1&amp;#160;&amp;#160;&amp;#160; 13.8 &lt;br /&gt;&lt;em&gt;(data see &lt;/em&gt;&lt;a href=&#34;http://www.johnstonsarchive.net/other/postage.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;here&lt;/em&gt;&lt;/a&gt;&lt;em&gt;)&lt;/em&gt; &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc means data=rate; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; var Nominal Real CPI; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc sgplot data=rate; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; title &amp;ldquo;History of United States CPI&amp;rdquo;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; series x=year y=cpi; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; xaxis values= (1870 to 2010 by 10); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; refline 100 / transparency = 0.5; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc sgplot data=rate; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; title &amp;#8216;History of United States Postage Rates&amp;#8217;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; series x=Year y=Nominal; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; series x=Year y=Real; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; xaxis values= (1870 to 2010 by 10); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; yaxis label=&amp;#8217;Rates&amp;#8217;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; refline 10 44 / transparency = 0.5&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; label = (&amp;#8216;Nominal (Mean)&amp;#8217; &amp;#8216;Real (Mean)&amp;#8217;); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Happy New Year (Yes Again)</title>
+      <link>/2012/01/24/happy-new-year-yes-again/</link>
+      <pubDate>Tue, 24 Jan 2012 12:06:11 +0000</pubDate>
+      
+      <guid>/2012/01/24/happy-new-year-yes-again/</guid>
+      <description>&lt;p&gt;Then I feel great to reset my year of 2012 as brand new one.&lt;/p&gt;
+
+&lt;p&gt;Today, Jan 23, is the first day of &lt;a href=&#34;http://en.wikipedia.org/wiki/Chinese_New_Year&#34;&gt;Chinese New Year&lt;/a&gt;, and it is Monday, the first day of work week&amp;#8211;it is always joyful to have such coincidence&lt;span style=&#34;font-family: Wingdings;&#34;&gt;J&lt;/span&gt;. HAPPY NEW YEAR!&lt;/p&gt;
+
+&lt;p&gt;I had a big move this year. Actually I passed through multiply new years of 2012: I took my flight from Beijing in Jan 1 (&lt;span style=&#34;font-size: 7pt;&#34;&gt;&lt;em&gt;happy new year!&lt;/em&gt;&lt;/span&gt;) and landed in Raleigh, North Carolina also in the same day due to the time difference among China and US where I take a new job as a Life Sciences Consultant at &lt;a href=&#34;http://www.d-wise.com/&#34;&gt;d-Wise Technologies&lt;/a&gt;. I&amp;#8217;m not supposed to be a pure SAS programmer any more, but I don&amp;#8217;t want to change the theme of my blog (&amp;#8220;&lt;a href=&#34;http://www.jiangtanghu.com/blog/&#34;&gt;&lt;em&gt;Hello World by A SAS Programmer&lt;/em&gt;&lt;/a&gt;&amp;#8220;) since my most handy language is still SAS while my role will expose me more SAS products and solutions.&lt;/p&gt;
+
+&lt;p&gt;Chinese New Year is also called &amp;#8220;Spring Festival&amp;#8221; and &amp;#8220;spring&amp;#8221; is always the key word for the holiday:&lt;/p&gt;
+
+&lt;p style=&#34;text-align: center;&#34;&gt;
+  &lt;img class=&#34;aligncenter&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/01/012412_0406_HappyNewYea11.png&#34; alt=&#34;&#34; width=&#34;404&#34; height=&#34;262&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p style=&#34;text-align: center;&#34;&gt;
+  &lt;span style=&#34;font-size: 8pt;&#34;&gt;(Chinese Characters for &amp;#8220;the Beauty of Spring&amp;#8221;. I wrote these years before in Beijing)&lt;br /&gt; &lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p&gt;And I also want to spread my spring greetings with few sentences from Walt Whitman, &lt;em&gt;These I Singing in Spring&lt;/em&gt;:&lt;/p&gt;
+
+&lt;p style=&#34;margin-left: 36pt;&#34;&gt;
+  THESE, I, singing in spring, collect for lovers,
+&lt;/p&gt;
+
+&lt;p style=&#34;margin-left: 36pt;&#34;&gt;
+  . . .
+&lt;/p&gt;
+
+&lt;p style=&#34;margin-left: 36pt;&#34;&gt;
+  Collecting, I traverse the garden, the world—but soon
+&lt;/p&gt;
+
+&lt;p style=&#34;margin-left: 36pt;&#34;&gt;
+  I pass the gates,
+&lt;/p&gt;
+
+&lt;p style=&#34;margin-left: 36pt;&#34;&gt;
+  Now along the pond-side—now wading in a little, fearing not the wet,
+&lt;/p&gt;
+
+&lt;p style=&#34;margin-left: 36pt;&#34;&gt;
+  Now by the post-and-rail fences, where the old stones
+&lt;/p&gt;
+
+&lt;p style=&#34;margin-left: 36pt;&#34;&gt;
+  thrown there, pick&amp;#8217;d from the fields, have accumulated,
+&lt;/p&gt;
+
+&lt;p style=&#34;margin-left: 36pt;&#34;&gt;
+  (Wild-flowers and vines and weeds come up through
+&lt;/p&gt;
+
+&lt;p style=&#34;margin-left: 36pt;&#34;&gt;
+  the stones, and partly cover them—Beyond these I pass,)
+&lt;/p&gt;
+
+&lt;p style=&#34;margin-left: 36pt;&#34;&gt;
+  Far, far in the forest, before I think where I go,
+&lt;/p&gt;
+
+&lt;p style=&#34;margin-left: 36pt;&#34;&gt;
+  Solitary, smelling the earthy smell, stopping now and then in the silence,
+&lt;/p&gt;
+
+&lt;p style=&#34;margin-left: 36pt;&#34;&gt;
+  Alone I had thought—yet soon a troop gathers around me,
+&lt;/p&gt;
+
+&lt;p style=&#34;margin-left: 36pt;&#34;&gt;
+  Some walk by my side, and some behind, and some embrace my arms or neck,
+&lt;/p&gt;
+
+&lt;p style=&#34;margin-left: 36pt;&#34;&gt;
+  They, the spirits of dear friends, dead or alive—thicker
+&lt;/p&gt;
+
+&lt;p style=&#34;margin-left: 36pt;&#34;&gt;
+  they come, a great crowd, and I in the middle,
+&lt;/p&gt;
+
+&lt;p style=&#34;margin-left: 36pt;&#34;&gt;
+  Collecting, dispensing, singing in spring, there I wander with them,
+&lt;/p&gt;
+
+&lt;p style=&#34;margin-left: 36pt;&#34;&gt;
+  Plucking something for tokens—tossing toward whoever is near me;
+&lt;/p&gt;
+
+&lt;p style=&#34;margin-left: 36pt;&#34;&gt;
+  . . .
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello Python</title>
+      <link>/2011/10/31/hello-python/</link>
+      <pubDate>Mon, 31 Oct 2011 20:29:43 +0000</pubDate>
+      
+      <guid>/2011/10/31/hello-python/</guid>
+      <description>&lt;p&gt;Inspired by &lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/08/15/sas-bloggers-in-action-2-jian-dai-and-his-sas-academy/&#34; target=&#34;_blank&#34;&gt;Jian’s polyglot programming practice&lt;/a&gt;, I also begin to brush up Python and C++ which I learned during graduate school. Following is a Python response to one of &lt;a href=&#34;http://tech.groups.yahoo.com/group/sas_academy/&#34; target=&#34;_blank&#34;&gt;Jian Dai&lt;/a&gt;’s former programming challenges for &lt;a href=&#34;http://blog.clinovo.com/megha-becomes-the-third-time-winner-june-programming-challenge-now-is-finished/&#34; target=&#34;_blank&#34;&gt;lines count of source codes&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;[cce lang=&amp;#8221;python&amp;#8221;]&lt;/p&gt;
+
+&lt;p&gt;import os&lt;/p&gt;
+
+&lt;p&gt;#count number of lines of&lt;/p&gt;
+
+&lt;p&gt;#single file&lt;/p&gt;
+
+&lt;p&gt;def lineCount(fileName):&lt;/p&gt;
+
+&lt;p&gt;countSingle=0&lt;/p&gt;
+
+&lt;p&gt;for line in open(fileName):&lt;/p&gt;
+
+&lt;p&gt;countSingle += 1&lt;/p&gt;
+
+&lt;p&gt;return countSingle&lt;/p&gt;
+
+&lt;p&gt;#count number of lines of&lt;/p&gt;
+
+&lt;p&gt;#directory and subdirectories&lt;/p&gt;
+
+&lt;p&gt;def dirCount(dir,extension):&lt;/p&gt;
+
+&lt;p&gt;countTotal=0&lt;/p&gt;
+
+&lt;p&gt;for r,d,f in os.walk(dir):&lt;/p&gt;
+
+&lt;p&gt;for files in f:&lt;/p&gt;
+
+&lt;p&gt;if files.endswith(extension):&lt;/p&gt;
+
+&lt;p&gt;fileName=os.path.join(r,files)&lt;/p&gt;
+
+&lt;p&gt;countSingle=lineCount(fileName)&lt;/p&gt;
+
+&lt;p&gt;countTotal += countSingle&lt;/p&gt;
+
+&lt;p&gt;return countTotal&lt;/p&gt;
+
+&lt;p&gt;a=dirCount(&amp;#8220;C:/Program Files/CDISC Express/&amp;#8221;,&amp;#8221;.sas&amp;#8221;)&lt;/p&gt;
+
+&lt;p&gt;print a&lt;/p&gt;
+
+&lt;p&gt;[/cc]&lt;/p&gt;
+
+&lt;p&gt;I use &lt;a href=&#34;http://www.jiangtanghu.com/docs/en/readME_IDE.txt&#34; target=&#34;_blank&#34;&gt;python-2.7.2&lt;/a&gt;, the final Python 2.x release most because of the various modules support for learning purpose. The book helps me to get the quick review of Python is _&lt;a href=&#34;http://greenteapress.com/thinkpython/thinkpython.html&#34; target=&#34;_blank&#34;&gt;Think Python: How to Think Like a Computer Scientist&lt;/a&gt;_ by Allen Downey.&lt;/p&gt;
+
+&lt;p&gt;Also, I begin to use &lt;a href=&#34;http://kpumuk.info/projects/wordpress-plugins/codecolorer/&#34; target=&#34;_blank&#34;&gt;CodeColorer&lt;/a&gt; for this blog to insert codes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fours Errors in SAS 9.2 Fisher&amp;#8217;s Iris Data in SASHELP Library</title>
+      <link>/2011/09/03/fours-errors-in-sas-9.2-fisher</link>
+      <pubDate>Sat, 03 Sep 2011 21:13:42 +0000</pubDate>
+      
+      <guid>/2011/09/03/fours-errors-in-sas-9.2-fisher</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/09/iris.gif&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;iris&#34; border=&#34;0&#34; alt=&#34;iris&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/09/iris_thumb.gif&#34; width=&#34;240&#34; height=&#34;237&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In the &lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/08/31/who-is-alfred/&#34; target=&#34;_blank&#34;&gt;previous post&lt;/a&gt;, I just mentioned that &lt;a href=&#34;http://en.wikipedia.org/wiki/Iris_flower_data_set&#34; target=&#34;_blank&#34;&gt;Fisher&amp;#8217;s Iris Data&lt;/a&gt; is embedded officially in SASHELP library in SAS 9.2. Note that even in SAS 9.1.3, you can also find this data with several instances from some demos in user guide (just search &amp;ldquo;Iris&amp;rdquo; in &amp;ldquo;SAS Help and Documentation&amp;rdquo; accompany with you SAS product), for example, in &lt;a href=&#34;http://support.sas.com/onlinedoc/913/getDoc/en/imlug.hlp/graphstart_sect13.htm&#34; target=&#34;_blank&#34;&gt;SAS 9.1.3 IML&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Iris dataset is so important and popular that researchers round the world use it as benchmark to test and compare their algorithms and also as pedagogical purpose. It is also the overwhelming No. 1 dataset considering popularity in &lt;a href=&#34;http://archive.ics.uci.edu/ml/&#34; target=&#34;_blank&#34;&gt;UCI Machine Learning Repository&lt;/a&gt;. Here 4 errors in SASHELP.iris listed for your consideration if interested and if you find some slightly differences in outputs following some demos out of SAS using this data:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Error 1: Line 35, the PetalWidth of Setosa should be 2 mm, not 1 mm;&lt;/p&gt;
+
+&lt;p&gt;Error 2: Line 38, the SepalWidth of Setosa should be 36 mm, not 31 mm;&lt;/p&gt;
+
+&lt;p&gt;Error 3: Line 38, the PetalLength of Setosa should be 14 mm, not 15 mm;&lt;/p&gt;
+
+&lt;p&gt;Error 4: Line 119, the PetalLength of Virginica should be 69 mm, not 70 mm.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For errors 1-3, there is also an interesting story in statistical literature. In 1936, Fisher the Great published his famous paper, _&lt;a href=&#34;http://rcs.chph.ras.ru/Tutorials/classification/Fisher.pdf&#34; target=&#34;_blank&#34;&gt;The use of multiple measurements in taxonomic problems&lt;/a&gt;_ and the Iris data also attached (called &lt;font color=&#34;#ff0000&#34;&gt;Fisher Version&lt;/font&gt; in this post). In the following years (until today), people &lt;a href=&#34;http://archive.ics.uci.edu/ml/datasets/Iris&#34; target=&#34;_blank&#34;&gt;cited&lt;/a&gt; this paper and the Iris data Fisher Version is also replicated and distributed worldwide and then a version with above errors 1-3 might gain a very dominant popularity (I don’t know the source of there errors). In UCI Machine Learning Repository, the dataset &lt;a href=&#34;http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data&#34; target=&#34;_blank&#34;&gt;iris.data&lt;/a&gt; is the one with such 3 errors (called &lt;font color=&#34;#ff0000&#34;&gt;UCI Version&lt;/font&gt; as well).&lt;/p&gt;
+
+&lt;p&gt;We could see that the duplicated UCI Version is even more popular in some extension than its original Fisher Version (SASHELP.iris also seems to be copied from UCI Version). Story goes on. In 1998, James Bezdek and other scholars just found the three discrepancies between Iris Fisher Version and UCI Version (and in some published papers using the same version of data). You can read it in _&lt;a href=&#34;http://pages.bangor.ac.uk/~mas00a/papers/jbjkrklknptfs99.pdf&#34; target=&#34;_blank&#34;&gt;Will the Real Iris Data Please Stand Up?&lt;/a&gt;_&lt;/p&gt;
+
+&lt;p&gt;Bezdek then proposed to use the original Fisher Version of Iris, and UCI Machine Learning Repository also &lt;a href=&#34;http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.names&#34; target=&#34;_blank&#34;&gt;documented these three errors&lt;/a&gt; and added new dataset called &lt;a href=&#34;http://archive.ics.uci.edu/ml/machine-learning-databases/iris/bezdekIris.data&#34; target=&#34;_blank&#34;&gt;bezdekIris.data&lt;/a&gt; (&lt;font color=&#34;#ff0000&#34;&gt;Bezdek Version&lt;/font&gt;) which is exactly Fisher Version (iris.data kept and I think it is because now the so called error version is also valuable).&lt;/p&gt;
+
+&lt;p&gt;Return to error 4 and I can’t figure out why and I might as well call it Iris &lt;font color=&#34;#ff0000&#34;&gt;SAS Version&lt;/font&gt;. Note that the unit in SAS Version is millimeter (mm), while others version all use centimeter (cm).&lt;/p&gt;
+
+&lt;p&gt;The interesting part is that I also check the &lt;a href=&#34;http://support.sas.com/onlinedoc/913/getDoc/en/imlug.hlp/graphstart_sect13.htm&#34; target=&#34;_blank&#34;&gt;Iris data in SAS 9.1.3 IML&lt;/a&gt; mentioned before and not surprising, it is exactly the Fisher Version (you can also find a right one in a demo from &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/imlsug/62558/HTML/default/viewer.htm#ugappdatasets_sect11.htm&#34; target=&#34;_blank&#34;&gt;SAS 9.2 IML Studio 3.2&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;The following codes generate several Iris versions:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;iris_uci: &lt;font color=&#34;#ff0000&#34;&gt;UCI Version&lt;/font&gt; with both CM and MM as unit&lt;/p&gt;
+
+&lt;p&gt;bezdekiris_uci: &lt;font color=&#34;#ff0000&#34;&gt;Bezdek Version&lt;/font&gt; or &lt;font color=&#34;#ff0000&#34;&gt;Fisher Version&lt;/font&gt; with both CM and MM as unit&lt;/p&gt;
+
+&lt;p&gt;iris_mm: &lt;font color=&#34;#ff0000&#34;&gt;UCI Version&lt;/font&gt; with MM as unit and attributes alike SASHELP.iris, &lt;font color=&#34;#ff0000&#34;&gt;SAS Version&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;bezdekiris_mm: &lt;font color=&#34;#ff0000&#34;&gt;Bezdek Version&lt;/font&gt; or &lt;font color=&#34;#ff0000&#34;&gt;Fisher Version&lt;/font&gt; with MM as unit and attributes alike SASHELP.iris, &lt;font color=&#34;#ff0000&#34;&gt;SAS Version&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;filename iris URL &amp;ldquo;&lt;/font&gt;&lt;a href=&#34;http://archive.ics.uci.edu/ml/machine-learning-databases/iris/&amp;quot;;&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;http://archive.ics.uci.edu/ml/machine-learning-databases/iris/&amp;ldquo;;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%macro getIris(input); &lt;br /&gt;data &amp;amp;input._uci; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; length _Species $15.; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; length&amp;#160; Species $10.; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; infile iris(&amp;amp;input..data) dlm=&amp;#8217;,&amp;#8217;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input _SepalLength _SepalWidth _PetalLength _PetalWidth _Species $; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; Species=propcase(scan(_Species,2)); &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; array iris {*}&amp;#160; _SepalLength _SepalWidth _PetalLength _PetalWidth; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; array iris_mm{4} SepalLength&amp;#160; SepalWidth&amp;#160; PetalLength&amp;#160; PetalWidth; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; do i=1 to dim(iris); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; iris_mm{i}=iris{i}*10; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; end; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; drop i; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; label&amp;#160;&amp;#160; _sepallength=&amp;#8217;Sepal Length (cm)&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; _sepalwidth =&amp;#8217;Sepal Width (cm)&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; _petallength=&amp;#8217;Petal Length (cm)&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; _petalwidth =&amp;#8217;Petal Width (cm)&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; _Species =&amp;#8217;Iris Species&amp;#8217;; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; label&amp;#160;&amp;#160; sepallength=&amp;#8217;Sepal Length (mm)&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; sepalwidth =&amp;#8217;Sepal Width (mm)&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; petallength=&amp;#8217;Petal Length (mm)&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; petalwidth =&amp;#8217;Petal Width (mm)&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Species =&amp;#8217;Iris Species&amp;#8217;; &lt;br /&gt;run; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;data &amp;amp;input._mm (label=&amp;ldquo;Fisher&amp;#8217;s Iris Data (1936)&amp;ldquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set &amp;amp;input._uci; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; drop _:; &lt;br /&gt;run; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%mend getIris; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%getIris(iris) &lt;br /&gt;%getIris(bezdekIris)&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Who is Alfred?</title>
+      <link>/2011/08/31/who-is-alfred/</link>
+      <pubDate>Wed, 31 Aug 2011 22:18:09 +0000</pubDate>
+      
+      <guid>/2011/08/31/who-is-alfred/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Tell me something about Alfred, male or female? age? height and weight?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Oracle database (version 9 and below) had a well known default demo account SCOTT with a password, TIGER (and TIGER was the name of the real person Bruce Scott ’s cat, &lt;a href=&#34;http://www.dba-oracle.com/t_scott_tiger.htm&#34; target=&#34;_blank&#34;&gt;see&lt;/a&gt;) and in this account, there are some tables named DEPT, EMP, BONUS and SALGRADE (you can read their meaning). Almost every Oracle DBA learn SQL using these database and an joke just says that in DBA’s meetings, people just&amp;#160; warm up saying “how about Smith?” And you should know that in the database, Smith is a clerk and his boss is Ford (whose boss is Jones)!&lt;/p&gt;
+
+&lt;p&gt;In the beginning I also raise a question for SAS programmers: who is Alfred? Don’t give quick answer such that “Alfred who”. Actually, you should already go through with Alfred very well as a SAS programmer:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc print data=sashelp.class; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; where name=&amp;ldquo;Alfred&amp;rdquo;; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As a clinical SAS programmer, I play with data, get acquaintance with the data and subjects and then subjects are no longer “subject”. They have identities and&amp;#160; Alfred is a 14 years old boy. I have such habit mostly because in clinical world, data are very expensive (not like the massive transaction data in financial industry) and should be took more care.&lt;/p&gt;
+
+&lt;p&gt;I dare say that “class” is the most famous SAS dataset in sashelp library and then in the SAS world. The first dataset used for demo is almost this “class”. I just did a quick Google search, “&lt;a href=&#34;http://www.google.com/search?hl=en&amp;source=hp&amp;biw=1111&amp;bih=561&amp;q=sas+sashelp.class&amp;btnG=Google+Search&amp;aq=f&amp;aqi=g10&amp;aql=&amp;oq=&amp;gs_rfai=#pq=+sas+sashelp.class&amp;hl=en&amp;cp=0&amp;gs_id=t&amp;xhr=t&amp;q=sas+sashelp.class&amp;qe=c2FzIHNhc2hlbHAuY2xhc3M&amp;qesig=-1hRQj8XDofruHqJt-7o1Q&amp;pkc=AFgZ2tkn99yjg_kNxO238PUOVve2MCFJUcgPCK-pXmvfyldpJvG0DchYcRuz_Azx9jhciBgWit8jDgrY6zs4T42InGlJtSBhGQ&amp;pf=p&amp;sclient=psy&amp;source=hp&amp;pbx=1&amp;oq=sas+sashelp.class&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=&amp;gs_upl=&amp;bav=on.2,or.r_gc.r_pw.r_cp.&amp;fp=265f5e3edf2ec82b&amp;biw=1166&amp;bih=665&amp;bs=1&#34; target=&#34;_blank&#34;&gt;sas sashelp.class&lt;/a&gt;” returns about 44,400 results. Hope you can find any other SAS datasets to beat it.&lt;/p&gt;
+
+&lt;p&gt;Alfred in “class” pops into my mind because today, I do find a strong candidate. In SAS 9.2 (and 9.3), the sashelp library has a new member, Iris. YES, it is the “&lt;a href=&#34;http://en.wikipedia.org/wiki/Iris_flower_data_set&#34; target=&#34;_blank&#34;&gt;Fisher Iris Flower Data&lt;/a&gt;”, which can be safely considered the most famous and most&amp;#160; used dataset in machine learning and data mining papers and statistical applications. Currently it has &lt;a href=&#34;http://www.google.com/search?hl=en&amp;source=hp&amp;biw=1111&amp;bih=561&amp;q=sas+sashelp.class&amp;btnG=Google+Search&amp;aq=f&amp;aqi=g10&amp;aql=&amp;oq=&amp;gs_rfai=#sclient=psy&amp;hl=en&amp;source=hp&amp;q=sas+sashelp.iris+&amp;pbx=1&amp;oq=sas+sashelp.iris+&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=e&amp;gs_upl=277383l277383l5l277945l1l1l0l0l0l0l0l0ll0l0&amp;bav=on.2,or.r_gc.r_pw.r_cp.&amp;fp=265f5e3edf2ec82b&amp;biw=1166&amp;bih=665&#34; target=&#34;_blank&#34;&gt;only 859 hits in Google&lt;/a&gt;, I think the number will reach high accompany with the wide use of SAS 9.2 and above, and to enforce my prediction, I will definitely play with the Iris data in the following future!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>I am a 20% SAS Nerd!</title>
+      <link>/2011/08/23/i-am-a-20-sas-nerd/</link>
+      <pubDate>Tue, 23 Aug 2011 21:57:14 +0000</pubDate>
+      
+      <guid>/2011/08/23/i-am-a-20-sas-nerd/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Kirk_Paul_Lafler&#34; target=&#34;_blank&#34;&gt;Kirk Paul Lafler&lt;/a&gt; drafted a checking list for identifying a SAS nerd (or geek, in its positive ways) in one of his intriguing papers:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;_&lt;a href=&#34;http://www.wuss.org/proceedings10/coders/2910_3_COD-Lafler2.pdf&#34; target=&#34;_blank&#34;&gt;You Could be a SAS® Nerd If &amp;hellip;&lt;/a&gt;_&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Here I’m glad to find that I am roughly a 20% SAS nerd (12 matched in all 57 lists):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;You blog SAS-related comments and technical solutions frequently.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You have more than five SAS blogs in your RSS feed.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Your home page is support.sas.com, sasCommunity.org, SAS-L, or LexJansen.com.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You know more than ten SAS keyboard shortcuts.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You get excited when you find a new match-merge technique that performs better than the one you developed the week before.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You have more than one version of SAS on your machine or network so you can compare and contrast program, processing and output differences.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You spend your Friday evenings and weekends responding to SAS-L posts, entering sasCommunity blog entries, and reading the latest “hot” SAS topic on LexJansen.com.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The first thing you read in the morning is the “Tip of the Day”.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You subscribe to five or more SAS groups on LinkedIn, sasCommunity, and Facebook and you use a tabbed browser so you can be online with all of them at the same time.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You spend your evenings and weekends SAS-L’ing, Googling and Binging looking for elegant SAS technical solutions.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You proudly proclaim that you’re a SAS programmer when asked by a fellow passenger, “What do you do for a living?”&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;You’re amazed when your fellow airline passenger replies, “What is a “SAS programmer?”.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I also asked Kirk if he is a 100% SAS nerd and Kirk replied, NO. He said he is a 99% SAS nerd:)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SAS Bloggers In Action(1): Rick Wicklin, SAS/IML and &amp;ldquo;Color Revolution&amp;rdquo;</title>
+      <link>/2011/07/17/sas-bloggers-in-action1-rick-wicklin-sas/iml-and-ldquocolor-revolutionrdquo/</link>
+      <pubDate>Sun, 17 Jul 2011 16:16:49 +0000</pubDate>
+      
+      <guid>/2011/07/17/sas-bloggers-in-action1-rick-wicklin-sas/iml-and-ldquocolor-revolutionrdquo/</guid>
+      <description>&lt;p&gt;It is well known that the French writer, author of &lt;em&gt;The Three Musketeer&lt;/em&gt;, Alexandre Dumas, wrote his master piece of work in different colored papers according to literary genre:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;&lt;strong&gt;non-fiction on&amp;#160; rose,&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#0000ff&#34;&gt;&lt;strong&gt;fiction on blue,&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ffff80&#34;&gt;&lt;strong&gt;poetry on yellow&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The SAS blog writer, author of &lt;em&gt;&lt;a href=&#34;http://support.sas.com/publishing/authors/wicklin.html&#34;&gt;Statistical Programming with SAS/IML Software&lt;/a&gt;&lt;/em&gt;, &lt;a href=&#34;http://blogs.sas.com/iml/&#34; target=&#34;_blank&#34;&gt;Rick Wicklin&lt;/a&gt; of SAS Institute,&amp;#160; also leads a strong “color revolution” in SAS blog community:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/JohariWindow1.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;JohariWindow&#34; border=&#34;0&#34; alt=&#34;JohariWindow&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/JohariWindow_thumb.jpg&#34; width=&#34;333&#34; height=&#34;330&#34; /&gt;&lt;/a&gt;In an interesting personal statement, &lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archives/124-Blogging,-Programming,-and-Johari-Windows.html&#34;&gt;&lt;em&gt;Blogging, Programming, and Johari Windows&lt;/em&gt;&lt;/a&gt;, Rick summarizes his rich and colorful blogging rhythms according to the above &lt;a href=&#34;http://en.wikipedia.org/wiki/Johari_window&#34;&gt;&lt;em&gt;Johari window&lt;/em&gt;&lt;/a&gt;:&amp;#160;&amp;#160;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#ffff80&#34;&gt;Mondays&lt;/font&gt;, writes introductory notes (corresponding to the upper right quadrant of Johari window).&amp;#160;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#bcdee2&#34;&gt;Wednesdays&lt;/font&gt;, experimental articles on sampling, simulation and other statistical programming topics(lower left quadrant).&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#008000&#34;&gt;Fridays&lt;/font&gt;, on explorative analysis of data (upper left quadrant).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So what about the &lt;font color=&#34;#ff8080&#34;&gt;lower right quadrant&lt;/font&gt;? Rick rediscovers and exposes what he once knew. Just suppose that, Rick picks up some codes he wrote before (ten years ago maybe) with big surprise: oh, who on earth wrote such damned clever beautiful codes? He or she must be in his/her aggressive youth. –then Rick wrote them all in blog.&lt;/p&gt;
+
+&lt;p&gt;Here I produced a summary table for Rick’s blogging activities (numbers per month per weekday; before July 16, 2011 Beijing time; &lt;em&gt;next following post would introduce how to use SAS to analyze data from website such as Rick’s blog&lt;/em&gt;):&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/Rick.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;Rick&#34; border=&#34;0&#34; alt=&#34;Rick&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/Rick_thumb.png&#34; width=&#34;485&#34; height=&#34;433&#34; /&gt;&lt;/a&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;Key findings:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Rick is really a frequent and productive blogger with averagely 0.5 posts per day!&lt;/li&gt;
+&lt;li&gt;Rick DOES keep his words. Most of the posts are published in &lt;font color=&#34;#008000&#34;&gt;Friday&lt;/font&gt;, &lt;font color=&#34;#bcdee2&#34;&gt;Wednesday &lt;/font&gt;and &lt;font color=&#34;#ffff80&#34;&gt;Monday&lt;/font&gt;(44, 44, 42 posts respectively).&lt;/li&gt;
+&lt;li&gt;None posted in Saturdays and Sunday.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Rick began his writing since September&amp;#160; 3. 2010, &lt;font color=&#34;#008000&#34;&gt;Friday&lt;/font&gt;.&amp;#160; Up to July 15. 2011, &lt;font color=&#34;#008000&#34;&gt;Friday&lt;/font&gt;, there are 48 &lt;font color=&#34;#008000&#34;&gt;Fridays&lt;/font&gt;, 46 &lt;font color=&#34;#bcdee2&#34;&gt;Wednesdays &lt;/font&gt;and 46 &lt;font color=&#34;#ffff80&#34;&gt;Mondays&lt;/font&gt;.&amp;#160; Only 10 colored weekdays (4 &lt;font color=&#34;#008000&#34;&gt;Fridays&lt;/font&gt;, 2 &lt;font color=&#34;#bcdee2&#34;&gt;Wednesdays &lt;/font&gt;and 4 &lt;font color=&#34;#ffff80&#34;&gt;Mondays&lt;/font&gt;) passed with no posts and most all them are due to national holidays:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;06/09/2010 , &lt;font color=&#34;#ffff80&#34;&gt;Monday&lt;/font&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; : Labor Day&lt;br /&gt;
+24/11/2010 , &lt;font color=&#34;#bcdee2&#34;&gt;Wednesday&lt;/font&gt;: round Thanksgiving Day&lt;br /&gt;
+26/11/2010 , &lt;font color=&#34;#008000&#34;&gt;Friday&lt;/font&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; : round Thanksgiving Day&lt;br /&gt;
+22/12/2010 , &lt;font color=&#34;#bcdee2&#34;&gt;Wednesday&lt;/font&gt;&lt;br /&gt;
+24/12/2010 , &lt;font color=&#34;#008000&#34;&gt;Friday&lt;/font&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; : Christmas Day&lt;br /&gt;
+27/12/2010 , &lt;font color=&#34;#ffff80&#34;&gt;Monday&lt;/font&gt;&lt;br /&gt;
+31/12/2010 , &lt;font color=&#34;#008000&#34;&gt;Friday&lt;/font&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; : New Year’s Day&lt;br /&gt;
+30/05/2011 , &lt;font color=&#34;#ffff80&#34;&gt;Monday&lt;/font&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; : Memorial Day&lt;br /&gt;
+10/06/2011 , &lt;font color=&#34;#008000&#34;&gt;Friday&lt;/font&gt;&lt;br /&gt;
+04/07/2011 , &lt;font color=&#34;#ffff80&#34;&gt;Monday&lt;/font&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; : Independence Day&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;At least in 4 holidays (most in &lt;font color=&#34;#ffff80&#34;&gt;Monday&lt;/font&gt;), Rick was also active in writing:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;11/10/2011, &lt;font color=&#34;#ffff80&#34;&gt;Monday&lt;/font&gt;, Columbus Day: &lt;em&gt;How Do You Reshape a Matrix?&lt;/em&gt;&lt;br /&gt;
+11/11/2010, Thursday, Veterans Day: &lt;em&gt;It&amp;#8217;s Here!&lt;/em&gt;&lt;br /&gt;
+17/01/2011, &lt;font color=&#34;#ffff80&#34;&gt;Monday&lt;/font&gt;, Birthday of Martin Luther King, Jr.: &lt;em&gt;On the Flip Side: Exchanging Rows and Columns&lt;/em&gt;&lt;br /&gt;
+21/02/2011, &lt;font color=&#34;#ffff80&#34;&gt;Monday&lt;/font&gt;, Washington’s Birthday: &lt;em&gt;How to Build a Vector from Expressions&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Amazing Rick keeps a fixed writing pattern and in next following post, detailed analysis and SAS codes will be presented so you can also keep eyes on the metadata of your favorite bloggers’ writing and may rise a question like:&lt;/p&gt;
+
+&lt;p&gt;Hey Rick, what’s up in Jun 10, 2011, Friday?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tango Haiku</title>
+      <link>/2011/07/15/tango-haiku/</link>
+      <pubDate>Fri, 15 Jul 2011 22:50:18 +0000</pubDate>
+      
+      <guid>/2011/07/15/tango-haiku/</guid>
+      <description>&lt;p&gt;Happy weekend and &lt;a href=&#34;http://www.jiangtanghu.com/blog/2010/12/30/a-sas-programmers-end-year-haiku/&#34; target=&#34;_blank&#34;&gt;Haiku again&lt;/a&gt;!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;My finger hurts,&lt;/p&gt;
+
+&lt;p&gt;I can not dance&lt;/p&gt;
+
+&lt;p&gt;Tango in Bastille.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So… any ideas?&lt;/p&gt;
+
+&lt;p&gt;…&lt;/p&gt;
+
+&lt;p&gt;… …&lt;/p&gt;
+
+&lt;p&gt;… … …&lt;/p&gt;
+
+&lt;p&gt;OK. I am a terrible Haiku writer. The sentences are not self explained without&amp;#160; /*commentaries*/ . So the story behind the scene…&lt;/p&gt;
+
+&lt;p&gt;One day my remote workstation was very very slow due to some network issues. But I still needed to write and run SAS codes in the server which is located in France. It really hurt my fingers from the ergonomic point of view.&lt;/p&gt;
+
+&lt;p&gt;“Tango” was my project code. But why Bastille? oh, that day happened to be round the Bastille Day in France. The performance of the remote server that time was just as terrible as the Bastille I want to break so I could do my project work more smoothly!&lt;/p&gt;
+
+&lt;p&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8211;&lt;/p&gt;
+
+&lt;p&gt;Note that after my completing this Tango Haiku, I did a Google search and found that there is really a French book called _&lt;a href=&#34;http://www.amazon.com/Bastille-tango-Jean-Fran%C3%A7ois-Vilar/dp/2742716785&#34; target=&#34;_blank&#34;&gt;Bastille tango&lt;/a&gt;_!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/Tango.jpg&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;Tango&#34; border=&#34;0&#34; alt=&#34;Tango&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/Tango_thumb.jpg&#34; width=&#34;152&#34; height=&#34;240&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ADJECTIVE Encounters</title>
+      <link>/2011/07/02/adjective-encounters/</link>
+      <pubDate>Sat, 02 Jul 2011 10:51:57 +0000</pubDate>
+      
+      <guid>/2011/07/02/adjective-encounters/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Really she is the strangest creature in the world, far from heroic, variable as a weathercock, “&lt;strong&gt;bashful, insolent; chaste, lustful; prating, silent; laborious, delicate; ingenious, heavy; melancholic, pleasant; lying, true; knowing, ignorant; liberal, covetous, and prodigal&lt;/strong&gt;”— in short, so complex, so indefinite, …&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &amp;#8211;Virginia Woolf, &lt;em&gt;The Common Reader&lt;/em&gt;, First Series (1925)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I don’t know if Ernest Hemingway is still one of the recognized dominant writers in colleges English education. At least once&amp;#160; a time he WAS. In an extreme form, he used only nouns and verbs to construct sentences.&lt;/p&gt;
+
+&lt;p&gt;In my personal English education(as Second Language), admittedly that there is also an absence of adjectives. It is just wonderful, nice, great, cool, weird, awesome,&amp;#160; and all in all, everything is OK or not OK, good or not good. In writing, my sentences lack of tone and shades. I write only technical articles in English and people can often well manage the so-called technical borings when acquiring information, knowledge, and opinions.&lt;/p&gt;
+
+&lt;p&gt;In reading when I try to just read for the sake of reading itself, I also find it is difficult to dig into pure literature pages where rich adjectives assembled heavily. I only read smoothly technical papers. So when I happened to have a paper book of Woolf and also loaded a corresponding public domain e-book in Kindle, I read the most intensive instances of adjectives ever. It is really totally different experiences.&lt;/p&gt;
+
+&lt;p&gt;There would be three types in any languages. For English:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;in the top, pure literature, Shakespeare-like;&lt;/p&gt;
+
+&lt;p&gt;middle, which could be called the universal or international English; it is be the dominate English among nations in business, technology and even academia; most of the popular writers also utilize such sort of English to extent their global reputation;&lt;/p&gt;
+
+&lt;p&gt;bottom, the street language, slangs, talk-show.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I penetrate the English through the middle like almost all of the ESL learners. It is the most convenient and effective way in a very short run. But for a leap in long run, some friends just suggest that I should go down the street or climb up to the top. Ok I am on the way. Virginia Woolf is the first stop and I keep the first notes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Too Big to Be Accurate(1): Which is the Most Powerful Calculator in the World?</title>
+      <link>/2011/01/22/too-big-to-be-accurate1-which-is-the-most-powerful-calculator-in-the-world/</link>
+      <pubDate>Sat, 22 Jan 2011 17:05:17 +0000</pubDate>
+      
+      <guid>/2011/01/22/too-big-to-be-accurate1-which-is-the-most-powerful-calculator-in-the-world/</guid>
+      <description>&lt;p&gt;Calculate the factorial of 171 (171!)? Just TRY! It is equal to 171*170*169*….2*1.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-google-calculator&#34;&gt;1. Google calculator&lt;/h3&gt;
+
+&lt;p&gt;As Google fanatics, I first try to search the answer via Google:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Google171.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;Google171&#34; border=&#34;0&#34; alt=&#34;Google171&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Google171_thumb.png&#34; width=&#34;336&#34; height=&#34;116&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Whoops, nothing interested returned! Type “170!” and get the output:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Google170.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;Google170&#34; border=&#34;0&#34; alt=&#34;Google170&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Google170_thumb.png&#34; width=&#34;244&#34; height=&#34;110&#34; /&gt;&lt;/a&gt; Why kinda things happened in this calculator? 171! is just equal to 171*170!.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-excel&#34;&gt;2. Excel&lt;/h3&gt;
+
+&lt;p&gt;Switch to Excel spreadsheet. Function fact(*) used:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Excel170.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;Excel170&#34; border=&#34;0&#34; alt=&#34;Excel170&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Excel170_thumb.png&#34; width=&#34;228&#34; height=&#34;66&#34; /&gt;&lt;/a&gt; &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Excel171.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;Excel171&#34; border=&#34;0&#34; alt=&#34;Excel171&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Excel171_thumb.png&#34; width=&#34;244&#34; height=&#34;64&#34; /&gt;&lt;/a&gt; Oo, interesting. The same.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-sas&#34;&gt;3. SAS&lt;/h3&gt;
+
+&lt;p&gt;Google and Excel may be the niche players in calculators’ family. Why not try to use some programming languages?&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;As a SAS programmer, my handy tool is SAS of course.&lt;/p&gt;
+
+&lt;p&gt;First, I use &lt;strong&gt;SAS data step&lt;/strong&gt; with its build-in function fact(*):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; x=fact(170); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; y=fact(171); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; put x= y=; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and I get&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: Invalid argument to function FACT at line 49 column 7.&lt;br /&gt;
+&lt;font color=&#34;#ff0000&#34;&gt;x=7.257416E306 y=.&lt;/font&gt;&lt;br /&gt;
+&lt;font color=&#34;#ff0000&#34;&gt;x=7.257416E306 y=. &lt;em&gt;ERROR&lt;/em&gt;=1 &lt;em&gt;N&lt;/em&gt;=1&lt;/font&gt;&lt;br /&gt;
+NOTE: Mathematical operations could not be performed at the following places. The results of the operations have been set to missing values.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Expected or unexpected? I don’t know how this fact(*) function is defined, and&amp;#160; try to define a function to calculate the factorials by myself. In SAS 9.2, you can use &lt;strong&gt;PROC FCMP&lt;/strong&gt;(also available at 9.1.3 as a experimental procedure):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc fcmp outlib = work.funcs.math ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; function factorial(k) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; if k = 0 then return(1) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; z = k ; *preserve k ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; x = factorial(k-1) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; k = z ; *recover k ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; k = k * x ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; return(k) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; endsub ; &lt;br /&gt;quit ; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;options cmplib=work.funcs ; &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Use this self-defined function to get 170!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc fcmp ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; x = factorial (170) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; put x = ; &lt;br /&gt;run ; &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The FCMP procedure returns&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;x=7.257416E306&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Try to calculate 171! ?&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc fcmp ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; y = factorial (171) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; put y = ; &lt;br /&gt;run ;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Just get the overflow error. The interaction stops at 170!:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;ERROR: An overflow occurred during execution in function &amp;#8216;factorial&amp;#8217; in statement number 7 at&amp;#160;&amp;#160; line 10 column 1.&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; The statement was:&lt;br /&gt;
+&amp;#160;&amp;#160;&amp;#160; 1&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; (10:1)&amp;#160;&amp;#160;&amp;#160; k = (k=171) * (&lt;font color=&#34;#ff0000&#34;&gt;x=7.257416E306&lt;/font&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The above function definitions use recursion. Recursion may have some limitation on efficiency. We could try the loop without recursion. &lt;strong&gt;SAS/IML&lt;/strong&gt; doesn’t support recursion. Let SAS/IML to the court:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc iml; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; start factorial (n); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; fact=1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; do i=1 to n; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; fact=fact*i; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; end; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; return (fact); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; finish factorial;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; x= factorial (170); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; print x;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; y= factorial (171); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; print y; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Again, I get 170!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; x&lt;br /&gt;
+7.257E306&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and a overflow error for 171!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; y= factorial (171);&lt;br /&gt;
+ERROR: Overflow error in *.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Turing, Von Neumann and Tony, what happened?&lt;/p&gt;
+
+&lt;h3 id=&#34;4-r&#34;&gt;4. R&lt;/h3&gt;
+
+&lt;p&gt;When SAS failed, lots of voices pop up: use R! OK, Rction!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;&amp;gt; x=factorial(170);x&lt;/font&gt;&lt;br /&gt;
+[1] 7.257416e+306&lt;br /&gt;
+&lt;font color=&#34;#ff0000&#34;&gt;&amp;gt; y=factorial(171);y&lt;/font&gt;&lt;br /&gt;
+Warning message:&lt;br /&gt;
+In factorial(171) : value out of range in &amp;#8216;gammafn&amp;#8217;&lt;br /&gt;
+[1] Inf&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;5-c&#34;&gt;5. C++&lt;/h3&gt;
+
+&lt;p&gt;I don’t want to lose my patience. Think C++(use both recursive and non-recursive methods):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;#include &lt;iostream&gt; &lt;br /&gt;using namespace std; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;double factRecursive(double num); &lt;br /&gt;double factNonRecursive(double num); &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;int main() &lt;br /&gt;{ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&lt;endl;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&amp;lt;&amp;ldquo;Recursive: the factorial of 170 is &amp;ldquo;&amp;lt;&lt;factRecursive(170)&lt;&lt;endl; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&amp;lt;&amp;ldquo;Recursive: the factorial of 171 is &amp;ldquo;&amp;lt;&lt;factRecursive(171)&lt;&lt;endl; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&lt;endl;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&amp;lt;&amp;ldquo;NonRecursive: the factorial of 170 is &amp;ldquo;&amp;lt;&lt;factNonRecursive(170)&lt;&lt;endl; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&amp;lt;&amp;ldquo;NonRecursive: the factorial of 171 is &amp;ldquo;&amp;lt;&lt;factNonRecursive(171)&lt;&lt;endl; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; cout&amp;lt;&lt;endl;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;return 0; &lt;br /&gt;} &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;double factRecursive (double num) &lt;br /&gt;{ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; if (num==0) &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; return 1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; else &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; return num*factRecursive(num-1); &lt;br /&gt;} &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;double factNonRecursive (double num) &lt;br /&gt;{ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; double fact=1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; for (double i=2;i&amp;lt;=num;i++) fact *=i; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; return fact; &lt;br /&gt;}&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Unfortunately, same story once more:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Cpp.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;Cpp&#34; border=&#34;0&#34; alt=&#34;Cpp&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/Cpp_thumb.png&#34; width=&#34;449&#34; height=&#34;121&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Well. The story&amp;#8217;s played out like this. It may be not the limitable of the language but the machine. I check which is the largest numbers my computer supports:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;#include &lt;iostream&gt; &lt;br /&gt;#include &lt;cfloat&gt; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;using namespace std; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;int main() &lt;br /&gt;{ &lt;br /&gt;&amp;#160; cout&amp;lt;&amp;lt;&amp;ldquo;maxinum double value of machine: &amp;ldquo;&amp;lt;&lt;DBL_MAX&lt;&lt;endl; &lt;br /&gt;&amp;#160; return 0; &lt;/font&gt;&lt;font face=&#34;Courier New&#34;&gt;}&lt;/font&gt;&lt;/p&gt;
+
+&lt;pre&gt;maxinum double value of machine: &lt;font color=&#34;#ff0000&#34;&gt;1.79769e+308&lt;/font&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now everything’s in the open. The factorial of 170 is about 7.257416e+306. 171! is too big to be supported by my PC.&lt;/p&gt;
+
+&lt;p&gt;(Note: I put these codes in &lt;a href=&#34;http://codepad.org&#34;&gt;http://codepad.org&lt;/a&gt;, a online complier. if you don’t have any C++ complier in your machine, you can see the codes and outputs in:&lt;a href=&#34;http://codepad.org/xnneavsw&#34;&gt;http://codepad.org/xnneavsw&lt;/a&gt;&amp;#160; and &lt;a href=&#34;http://codepad.org/3FeEC9t2&#34;&gt;http://codepad.org/3FeEC9t2&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h3 id=&#34;6-a-href-http-www-wolframalpha-com-target-blank-wolframalpha-a&#34;&gt;6. &lt;a href=&#34;http://www.wolframalpha.com/&#34; target=&#34;_blank&#34;&gt;WolframAlpha&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Struggled for hours, I turn to &lt;a href=&#34;http://www.wolframalpha.com&#34; target=&#34;_blank&#34;&gt;WolframAlpha&lt;/a&gt; computing platform. It returns &lt;a href=&#34;http://www.wolframalpha.com/input/?i=171!&#34; target=&#34;_blank&#34;&gt;the factorial of 171&lt;/a&gt; AT LAST:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/WA171.gif&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;WA171&#34; border=&#34;0&#34; alt=&#34;WA171&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/WA171_thumb.gif&#34; width=&#34;454&#34; height=&#34;128&#34; /&gt;&lt;/a&gt;&amp;#160;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/WA171_s.gif&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;WA171_s&#34; border=&#34;0&#34; alt=&#34;WA171_s&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/WA171_s_thumb.gif&#34; width=&#34;477&#34; height=&#34;52&#34; /&gt;&lt;/a&gt;&amp;#160; AT LAST we know the factorial of 171 has 310 digits.&lt;/p&gt;
+
+&lt;h3 id=&#34;7-windows-calculator&#34;&gt;7. Windows Calculator&lt;/h3&gt;
+
+&lt;p&gt;I try to use Windows build-in calculator. Amazing, it is powerful:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/winCalc.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;winCalc&#34; border=&#34;0&#34; alt=&#34;winCalc&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/winCalc_thumb.png&#34; width=&#34;323&#34; height=&#34;250&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;8-python&#34;&gt;8. Python&lt;/h3&gt;
+
+&lt;p&gt;Return to programming language.&amp;#160; First, I defined a function(recursive version) in Python and then use its MATH library:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;gt;&amp;gt;&amp;gt; def factorial(n):&lt;br /&gt; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; if n==0: &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;
+  &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; return 1
+&lt;/p&gt;
+
+&lt;p&gt;
+  &amp;#160;&amp;#160;&amp;#160; else:
+&lt;/p&gt;
+
+&lt;p&gt;
+  &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; return n*factorial(n-1) &lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;font face=&#34;Courier New&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;&gt;&gt;&gt; factorial(170)&lt;/font&gt; &lt;/p&gt; 
+  
+
+&lt;p&gt;&lt;p&gt;
+    7257415615307998967396728211129263114716991681296451376
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    5435777989005618434017061578523507492426174595114909912
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    3783852077666602256544275302532890077320751090240043028
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    0058295603966612599658257104398558294257568966313439612
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    2625710949468067112055688804571933402126614528000000000
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    00000000000000000000000000000000L
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    &lt;font color=&#34;#ff0000&#34;&gt;&amp;gt;&amp;gt;&amp;gt; factorial(171)&lt;/font&gt;
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    1241018070217667823424840524103103992616605577501693185
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    3889518036119960752216917529927519781204875855764649595
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    0167038705280988985869071076733124203221848436431047357
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    7889968548278290754541561964852153468318044293239598173
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    6968996572359039476161522785581800611763651084288000000
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    00000000000000000000000000000000000L&lt;/font&gt;
+  &lt;/p&gt;&lt;/blockquote&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote&gt;
+    &lt;p&gt;
+      &amp;gt;&amp;gt;&amp;gt; import math&lt;br /&gt; &lt;br /&gt;&lt;font color=&#34;#ff0000&#34;&gt;&amp;gt;&amp;gt;&amp;gt; math.factorial(171)&lt;/font&gt;
+    &lt;/p&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;
+  1241018070217667823424840524103103992616605577501693185
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  3889518036119960752216917529927519781204875855764649595
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  0167038705280988985869071076733124203221848436431047357
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  7889968548278290754541561964852153468318044293239598173
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  6968996572359039476161522785581800611763651084288000000
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  00000000000000000000000000000000000L
+&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/blockquote&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    Amazing, Python beats up C++!
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    &lt;em&gt;(to be continued :&lt;/em&gt;
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    &lt;em&gt;Too Big to Be Accurate(2): &lt;font color=&#34;#ff0000&#34;&gt;Approximation&lt;/font&gt; &lt;/em&gt;
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    &lt;em&gt;)&lt;/em&gt;
+  &lt;/p&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Lithium Theme</title>
+    <link>/tags/java/index.xml</link>
+    <description>Recent content in Java on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hello Groovy in SAS 9.3</title>
+      <link>/2012/10/28/hello-groovy-in-sas-9.3/</link>
+      <pubDate>Sun, 28 Oct 2012 23:07:12 +0000</pubDate>
+      
+      <guid>/2012/10/28/hello-groovy-in-sas-9.3/</guid>
+      <description>
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/groovy-logo-medium.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;groovy-logo-medium&#34; border=&#34;0&#34; alt=&#34;groovy-logo-medium&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/groovy-logo-medium_thumb.png&#34; width=&#34;240&#34; height=&#34;120&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;see, it&amp;#8217;s hip to be square &lt;br /&gt;&amp;#8216;cuz SAS has a new &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/proc/65145/HTML/default/viewer.htm#p1x8agymll9gten1ocziihptcjzj.htm&#34; target=&#34;_blank&#34;&gt;PROC that&amp;#8217;s GROOVY&lt;/a&gt; &lt;br /&gt;-Chris Hemedinger, &lt;em&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/2011/10/21/poetry-on-our-own-terms/&#34; target=&#34;_blank&#34;&gt;Poetry on our own terms&lt;/a&gt;&lt;/em&gt;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;These days I played &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/proc/65145/HTML/default/viewer.htm#p1x8agymll9gten1ocziihptcjzj.htm&#34; target=&#34;_blank&#34;&gt;Proc Groovy&lt;/a&gt; (new in SAS 9.3) for a while because &lt;a href=&#34;http://groovy.codehaus.org/&#34; target=&#34;_blank&#34;&gt;Groovy&lt;/a&gt; natively supports &lt;a href=&#34;http://www.json.org/&#34; target=&#34;_blank&#34;&gt;JSON&lt;/a&gt; (JavaScript Object Notation) data format. &lt;font size=&#34;1&#34;&gt;I downloaded much JSON data in the past few weeks(&lt;/font&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.githubarchive.org/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; archive for example). &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;&amp;#8212;&amp;#8212;&amp;#8211;I&amp;#8217;m a line separator &amp;#8212;&amp;#8212;&amp;#8212;&lt;/em&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;DO wish SAS can also support JSON in the following release, in a way similar to the existing XML Libname engine, ODS XML markup and SAS XML Mapper!&lt;/font&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;_&lt;font size=&#34;1&#34;&gt;UPDATE 20121030: I submitted a ticket on &lt;a href=&#34;https://communities.sas.com/community/support-communities/ballot&#34; target=&#34;_blank&#34;&gt;SASware Ballot&lt;/a&gt; on this idea and get a feedback that SAS will support JSON since 9.4, both reading and writing. That’s cool.&lt;/font&gt;_&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;&amp;#8212;&amp;#8212;&amp;#8211;I&amp;#8217;m a line separator end&amp;#8212;&amp;#8212;&amp;#8212;&lt;/em&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Groovy_(programming_language)&#34; target=&#34;_blank&#34;&gt;Groovy&lt;/a&gt; is a dynamic language running in a JVM (Java Virtual Machine) and looks like a lightweight version of JAVA. Don’t know why Groovy was chosen but it is nice to have (at least &lt;em&gt;to parse JSON data&lt;/em&gt;) and it’s in Base SAS!&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;font-style-font-weight-bold-set-up-font&#34;&gt;&lt;font style=&#34;font-weight: bold&#34;&gt;Set UP&lt;/font&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Back to Proc Groovy. To make it work, you should first set a JDK(Java Development Kit; or at least a JVM, also called JRE, Java Runtime Environment) and install Groovy. I test in a Windows 7 machine with SAS 9.3:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Install a JDK (&lt;em&gt;or JVM&lt;/em&gt;). Get a proper version for your machine. I have a &lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/downloads/index.html&#34; target=&#34;_blank&#34;&gt;JDK7&lt;/a&gt; installed in &lt;em&gt;C:Program FilesJavajdk1.7.0_09&lt;/em&gt;. By the way, if your SAS 9.3 works well in a64 bit of Windows 7, there must be one JRE in &lt;em&gt;C:Program Files (x86)Javajre1.6.0_24&lt;/em&gt;. &lt;/font&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;div align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;Set up the windows environment variable for JRE. First, create a system variable &lt;em&gt;&lt;strong&gt;JAVA_HOME&lt;/strong&gt;&lt;/em&gt; with value of &lt;em&gt;&lt;strong&gt;C:Program FilesJavajdk1.7.0_09&lt;/strong&gt;&lt;/em&gt;, then put &lt;em&gt;&lt;strong&gt;%JAVA_HOME%bin&lt;/strong&gt;&lt;/em&gt; to the existing system variable &lt;strong&gt;&lt;em&gt;Path&lt;/em&gt;&lt;/strong&gt;. If you use a JVM, replace the value of JAVA_HOME as &lt;strong&gt;C:Program FilesJavajre7 &lt;/strong&gt;or other proper directory.&lt;/font&gt;
+&lt;/div&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;div align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;Install &lt;a href=&#34;http://groovy.codehaus.org/Download&#34; target=&#34;_blank&#34;&gt;Groovy&lt;/a&gt; using the latest version (current v2.05). Accept all the default settings and it will set the environment variable for Groovy. You will have the Groovy installed in &lt;em&gt;C:Program Files (x86)GroovyGroovy-2.0.5&lt;/em&gt;.&lt;/font&gt;
+&lt;/div&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;div align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;Locate the &lt;em&gt;&lt;strong&gt;sasv9.cfg&lt;/strong&gt;&lt;/em&gt; file in &lt;em&gt;C:Program FilesSASHomeSASFoundation9.3nlsen&lt;/em&gt;, find option &lt;em&gt;&lt;strong&gt;–JREOPTIONS&lt;/strong&gt;&lt;/em&gt; and add a line inside&lt;/font&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;-Dtkj.app.class.path=C:Program Files (x86)GroovyGroovy-2.0.5embeddablegroovy-all-2.0.5.jar&lt;/font&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;That’s it.&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;h1 align=&#34;left&#34;&gt;
+  &lt;font style=&#34;font-weight: bold&#34;&gt;Hello World in Proc Groovy&lt;/font&gt;
+&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc groovy; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; submit; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; def name=&amp;#8217;World&amp;#8217;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; println &amp;ldquo;Hello $name!&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; endsubmit; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;font-style-font-weight-bold-read-json-data-font&#34;&gt;&lt;font style=&#34;font-weight: bold&#34;&gt;Read JSON data&lt;/font&gt;&lt;/h1&gt;
+
+&lt;p&gt;Use a simple example from _&lt;a href=&#34;http://en.wikipedia.org/wiki/JSON&#34; target=&#34;_blank&#34;&gt;JSON in wikipedia&lt;/a&gt; (save it to a file, test.json)_:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;pre&gt;&lt;font size=&#34;1&#34;&gt;{
+    &#34;firstName&#34;: &#34;John&#34;,
+    &#34;lastName&#34;: &#34;Smith&#34;,
+    &#34;age&#34;: 25,
+    &#34;address&#34;: {
+        &#34;streetAddress&#34;: &#34;21 2nd Street&#34;,
+        &#34;city&#34;: &#34;New York&#34;,
+        &#34;state&#34;: &#34;NY&#34;,
+        &#34;postalCode&#34;: &#34;10021&#34;
+    },
+    &#34;phoneNumber&#34;: [
+        {
+            &#34;type&#34;: &#34;home&#34;,
+            &#34;number&#34;: &#34;212 555-1234&#34;
+        },
+        {
+            &#34;type&#34;: &#34;fax&#34;,
+            &#34;number&#34;: &#34;646 555-4567&#34;
+        }
+    ]
+}&lt;/font&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;font size=&#34;1&#34; face=&#34;Verdana&#34;&gt;The following codes simple demonstrate how to:&lt;/font&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;read JSON file&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;print JSON file&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;extract JSON values&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;output values into SAS macro variables&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;options nosource;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc groovy;&lt;br /&gt; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; submit; &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;
+  &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; import groovy.json.*&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; def input=new File(&amp;#8216;a:testtest.json&amp;#8217;).text&lt;br /&gt; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; def output = new JsonSlurper().parseText(input)&lt;/font&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  &lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; println output&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; println &#34;&#34; &lt;/p&gt; 
+  
+
+&lt;p&gt;&lt;p&gt;
+    &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; output.each {println it}&amp;#160;&amp;#160; &lt;/font&gt;
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    &lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; println &amp;ldquo;&amp;rdquo;&lt;/font&gt;
+  &lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;
+    &lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; println output.address.streetAddress&lt;br /&gt; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; println &amp;ldquo;Street Address: $output.address.streetAddress&amp;rdquo; &lt;/p&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;
+  &amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160; println output.address[&amp;quot;streetAddress&amp;quot;]&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160; &amp;lt;/font&amp;gt;
+&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;
+  &amp;lt;br /&amp;gt;&amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160; exports = [fName1:output[&amp;amp;#8216;firstName&amp;amp;#8217;]]&amp;amp;#160;&amp;amp;#160;&amp;amp;#160; &amp;lt;br /&amp;gt;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160; exports.put(&amp;amp;#8216;fName2&amp;amp;#8217;, output[&amp;amp;#8216;firstName&amp;amp;#8217;])&amp;amp;#160; &amp;lt;br /&amp;gt;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160; &amp;lt;br /&amp;gt;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;amp;#160; endsubmit; &amp;lt;/p&amp;gt; 
+
+  &amp;lt;p&amp;gt;
+    quit;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;font face=&amp;quot;Courier New&amp;quot;&amp;gt;%put fName1: &amp;amp;fName1;&amp;lt;br /&amp;gt; &amp;lt;br /&amp;gt;%put fName2: &amp;amp;fName2;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;pre&amp;gt;&amp;lt;font size=&amp;quot;1&amp;quot; face=&amp;quot;Verdana&amp;quot;&amp;gt;The output in LOG window:&amp;lt;/font&amp;gt;&amp;lt;/pre&amp;gt;
+
+  &amp;lt;pre&amp;gt;&amp;lt;a href=&amp;quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/JsoninSAS_Groovy.png&amp;quot;&amp;gt;&amp;lt;img style=&amp;quot;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&amp;quot; title=&amp;quot;JsoninSAS_Groovy&amp;quot; border=&amp;quot;0&amp;quot; alt=&amp;quot;JsoninSAS_Groovy&amp;quot; src=&amp;quot;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/JsoninSAS_Groovy_thumb.png&amp;quot; width=&amp;quot;515&amp;quot; height=&amp;quot;308&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/pre&amp;gt;
+
+  &amp;lt;p align=&amp;quot;left&amp;quot;&amp;gt;
+    &amp;lt;font size=&amp;quot;1&amp;quot;&amp;gt;&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    Happy Groovying!
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;h1&amp;gt;
+    &amp;lt;font style=&amp;quot;font-weight: bold&amp;quot;&amp;gt;References&amp;lt;/font&amp;gt;
+  &amp;lt;/h1&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;a href=&amp;quot;http://blog.willmakeaplan.com/?p=18&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;font size=&amp;quot;1&amp;quot;&amp;gt;&amp;lt;em&amp;gt;Parse JSON in SAS with Groovy – part 2&amp;lt;/em&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;em&amp;gt;&amp;amp;#160;&amp;lt;/em&amp;gt;&amp;lt;font size=&amp;quot;1&amp;quot;&amp;gt;by Simon Dawson&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;a href=&amp;quot;http://groovy.codehaus.org/Documentation&amp;quot;&amp;gt;&amp;lt;font size=&amp;quot;1&amp;quot;&amp;gt;http://groovy.codehaus.org/Documentation&amp;lt;/font&amp;gt;&amp;lt;/a&amp;gt;
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;a href=&amp;quot;http://support.sas.com/documentation/cdl/en/proc/65145/HTML/default/viewer.htm#p1x8agymll9gten1ocziihptcjzj.htm&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;&amp;lt;font size=&amp;quot;1&amp;quot;&amp;gt;&amp;lt;em&amp;gt;Overview: GROOVY Procedure&amp;lt;/em&amp;gt;&amp;lt;/font&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;em&amp;gt;&amp;amp;#160;&amp;lt;/em&amp;gt;&amp;lt;font size=&amp;quot;1&amp;quot;&amp;gt;in support.sas.com&amp;lt;/font&amp;gt;
+  &amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

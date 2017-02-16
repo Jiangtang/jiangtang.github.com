@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cmd on Lithium Theme</title>
+    <link>/tags/cmd/index.xml</link>
+    <description>Recent content in Cmd on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/cmd/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Current Working Folder in SAS</title>
+      <link>/2012/10/08/current-working-folder-in-sas/</link>
+      <pubDate>Mon, 08 Oct 2012 22:19:47 +0000</pubDate>
+      
+      <guid>/2012/10/08/current-working-folder-in-sas/</guid>
+      <description>
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/whereamI.jpg&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border: 0px;&#34; title=&#34;whereamI&#34; alt=&#34;whereamI&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/whereamI_thumb.jpg&#34; width=&#34;377&#34; height=&#34;370&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;The concept of &lt;/span&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/hostwin/63047/HTML/default/viewer.htm#p16esisc4nrd5sn1ps5l6u8f79k6.htm&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;current working directory in SAS&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;is not as important as it sounds. Most SAS users point to file reference (fileref) and library reference (libname, a “namespace”-like mechanism to access files ), which are much convenient in large project with multiple folders.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Sometimes I push files to the current folder in relatively small task because I don’t want to&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;jump to &lt;em&gt;C:\Users\jhu\appdata\Local\Temp\SAS\Temporary Files_TD2820_&lt;/em&gt;like folder to get the temporary datasets (in WORK library) &lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;hard code a folder to receive ODS outputs.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;The demo codes(a SAS system autocall macro %xlog used):&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;/&lt;em&gt;display current directory in LOG window&lt;/em&gt;/&lt;br /&gt; %&lt;span style=&#34;color: #ff0000;&#34;&gt;xlog&lt;/span&gt;(cd);&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;/*change current working directory */&lt;br /&gt; x &amp;#8220;cd a:\test&amp;#8221;;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;/&lt;em&gt;display current directory in LOG window&lt;/em&gt;/&lt;br /&gt; %xlog(cd);&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;/*output a dataset in current directory */&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;data &amp;#8220;iris&amp;#8221;;&lt;/span&gt;&lt;br /&gt; set sashelp.iris;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;/*output a pdf file in current directory */&lt;br /&gt; ods pdf &lt;span style=&#34;color: #ff0000;&#34;&gt;file=&amp;#8221;iris.pdf&amp;#8221;;&lt;/span&gt;&lt;br /&gt; proc print data=&amp;#8221;iris&amp;#8221;;&lt;br /&gt; run;&lt;br /&gt; ods pdf close;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;/*show files in current directory */&lt;br /&gt; %xlog(dir);&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;And the LOG window may like:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: Consolas; font-size: xx-small;&#34;&gt;Path&lt;br /&gt; &amp;#8212;-&lt;br /&gt; C:\Users\jhu&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: Consolas; font-size: xx-small;&#34;&gt;Path&lt;br /&gt; &amp;#8212;-&lt;br /&gt; A:\test&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;span style=&#34;font-family: Consolas;&#34;&gt;    Directory: A:test&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Consolas; font-size: xx-small;&#34;&gt;Mode        LastWriteTime   Length Name&lt;br /&gt; &amp;#8212;-        &amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-   &amp;#8212;&amp;#8212; &amp;#8212;-&lt;br /&gt; -a&amp;#8212; 10/8/2012  12:49 PM   113665 iris.pdf&lt;br /&gt; -a&amp;#8212; 10/8/2012  12:49 PM    13312 iris.sas7bdat&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;notes&#34;&gt;NOTES:&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;You can get autocall macro %xlog in (if SAS 9.3 in Windows 7)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;C:\Program Files\SASHome\SASFoundation\9.3&amp;lt;span style=&amp;ldquo;color: #ff0000;&amp;ldquo;&amp;gt;core\sasmacro&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;An equivalent macro &lt;span style=&#34;color: #ff0000;&#34;&gt;%xlst&lt;/span&gt; generates the shell command outputs to LIST window.&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;If prefer Windows Powershell, a similar macro can be used (put it to autocall if needed):&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;%macro &lt;span style=&#34;color: #ff0000;&#34;&gt;pslog&lt;/span&gt;(cmd);&lt;br /&gt; option nonotes;&lt;br /&gt; filename pslogcmd pipe &amp;#8220;&lt;span style=&#34;color: #ff0000;&#34;&gt;powershell&lt;/span&gt; &amp;amp;cmd&amp;#8221;;&lt;br /&gt; data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; file log;&lt;br /&gt; infile pslogcmd;&lt;br /&gt; input;&lt;br /&gt; put &lt;em&gt;INFILE&lt;/em&gt;;&lt;br /&gt; run;&lt;br /&gt; option notes;&lt;br /&gt; %mend pslog;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Test the following commands:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%pslog(gl);&lt;br /&gt; %pslog(get-location);&lt;br /&gt; %pslog(get-host)&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

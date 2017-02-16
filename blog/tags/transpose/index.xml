@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Transpose on Lithium Theme</title>
+    <link>/tags/transpose/index.xml</link>
+    <description>Recent content in Transpose on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/transpose/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SAS Snippet: Reshape Data Using SAS DoW Loop (From Long to Wide)</title>
+      <link>/2013/03/11/sas-snippet-reshape-data-using-sas-dow-loop-from-long-to-wide/</link>
+      <pubDate>Mon, 11 Mar 2013 21:10:28 +0000</pubDate>
+      
+      <guid>/2013/03/11/sas-snippet-reshape-data-using-sas-dow-loop-from-long-to-wide/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/03/Art_SAS.gif&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;F_Carpenter_cover.indd&#34; border=&#34;0&#34; alt=&#34;F_Carpenter_cover.indd&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/03/Art_SAS_thumb.gif&#34; width=&#34;295&#34; height=&#34;416&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In Art Carpenter’s latest book, &lt;em&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?pc=62454&#34;&gt;Carpenter&amp;#8217;s Guide to Innovative SAS Techniques&lt;/a&gt;&lt;/em&gt;, a data step approach to transpose data (from long to wide) works like (Ch2.4.2):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/03/Art_SAS_transpose.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;Art_SAS_transpose&#34; border=&#34;0&#34; alt=&#34;Art_SAS_transpose&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/03/Art_SAS_transpose_thumb.png&#34; width=&#34;341&#34; height=&#34;325&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data tst; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input type $ grp value $3.; &lt;br /&gt;datalines; &lt;br /&gt;A 1 a &lt;br /&gt;A 2 aa &lt;br /&gt;A 3 aaa &lt;br /&gt;B 1 b &lt;br /&gt;B 2 bb &lt;br /&gt;B 3 bbb &lt;br /&gt;C 1 c &lt;br /&gt;C 2 cc &lt;br /&gt;C 3 ccc &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data art(keep=type grp1-grp3); &lt;br /&gt;&amp;#160;&amp;#160; set tst; &lt;br /&gt;&amp;#160;&amp;#160; by type; &lt;br /&gt;&amp;#160;&amp;#160; retain grp1-grp3 ; &lt;br /&gt;&amp;#160;&amp;#160; array grps {3} $ grp1-grp3; &lt;br /&gt;&amp;#160;&amp;#160; if first.type then do i = 1 to 3; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; grps{i} = &amp;ldquo; &amp;ldquo;; &lt;br /&gt;&amp;#160;&amp;#160; end;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160; grps{grp} = value; &lt;br /&gt;&amp;#160;&amp;#160; if last.type then output art ; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;And such logic can be best demonstrated by a &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/10/20/dow-loop-dorfman/&#34;&gt;&lt;font size=&#34;1&#34;&gt;DoW Loop&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;data dow(keep=type grp1-grp3); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; array grps[3] $ grp1-grp3; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; do &lt;em&gt;n&lt;/em&gt; = 1 by 1 until(last.type); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; set tst; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; by type; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; grps[grp]=value; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; end; &lt;br /&gt;run;&lt;/font&gt; &lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;font-style-font-weight-bold-note-font&#34;&gt;&lt;font style=&#34;font-weight: bold&#34;&gt;/&lt;em&gt;Note&lt;/em&gt;/&lt;/font&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. The traditional PROC TRANSPOSE approach:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc transpose data=tst &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; out=trans(drop=_:) &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; prefix=grp; &lt;br /&gt;&amp;#160;&amp;#160; by type; &lt;br /&gt;&amp;#160;&amp;#160; id grp; &lt;br /&gt;&amp;#160;&amp;#160; var value; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2. Why use data step approach (both Art and DoW) to transpose data against the TRANSPOSE procedure:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;it’s much faster since data step array used&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;save codes when complex transformation needed&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;last but not least, it’s cool!&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;3. Arthur Tabachneck maintains a general data step transposing macro, &lt;/font&gt;&lt;a href=&#34;http://www.sascommunity.org/wiki/A_Better_Way_to_Flip_(Transpose)_a_SAS_Dataset&#34;&gt;&lt;font size=&#34;1&#34;&gt;%transpose&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and you can call it like:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%transpose(data=tst, out=mac, &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; by=type, var=value, &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; id=grp)&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

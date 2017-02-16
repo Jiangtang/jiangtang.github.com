@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Logic Operator on Lithium Theme</title>
+    <link>/tags/logic-operator/index.xml</link>
+    <description>Recent content in Logic Operator on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/logic-operator/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Happy Leap Year From Logical (Point of View) Operators</title>
+      <link>/2012/02/29/happy-leap-year-from-logical-point-of-view-operators/</link>
+      <pubDate>Wed, 29 Feb 2012 00:14:07 +0000</pubDate>
+      
+      <guid>/2012/02/29/happy-leap-year-from-logical-point-of-view-operators/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Today is Feb 29, –another &lt;a href=&#34;http://en.wikipedia.org/wiki/Leap_year&#34; target=&#34;_blank&#34;&gt;leap year&lt;/a&gt;! I just found it is a good chance to raise the topic of &lt;a href=&#34;http://www.jiangtanghu.com/blog/2010/11/04/power-of-logic-operators-a-trick/&#34; target=&#34;_blank&#34;&gt;logic operators again&lt;/a&gt;.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;To determine if 2012 is a leap year, use the straightforward logic expression (demo is SAS, follow the pseudo code in the wiki page of &lt;a href=&#34;http://en.wikipedia.org/wiki/Leap_year&#34; target=&#34;_blank&#34;&gt;leap year&lt;/a&gt;):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;if mod(year,4) = 0 then do;&amp;#160;&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; if mod(year,100) = 0 then do;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; if mod(year,400) = 0 then is_leap = 1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; else is_leap = 0; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; end; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; else is_leap = 1; &lt;br /&gt;end; &lt;br /&gt;else leap=0;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;while using logic operators (Boolean expression), only one line of codes needed:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;is_leap = (mod(year,4) = 0) &lt;font color=&#34;#ff0000&#34;&gt;and&lt;/font&gt; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ( &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; (mod(year,100) ^= 0) &lt;font color=&#34;#ff0000&#34;&gt;or&lt;/font&gt; (mod(year,400) = 0) &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; );&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;or using SAS bitwise logical operations:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;is_leap=&lt;font color=&#34;#ff0000&#34;&gt;bor&lt;/font&gt;(&lt;font color=&#34;#ff0000&#34;&gt;band&lt;/font&gt;(mod(year,4) = 0,mod(year,100) ^= 0), mod(year,400) = 0)&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Power of Logic Operators: a trick</title>
+      <link>/2010/11/04/power-of-logic-operators-a-trick/</link>
+      <pubDate>Thu, 04 Nov 2010 07:09:12 +0000</pubDate>
+      
+      <guid>/2010/11/04/power-of-logic-operators-a-trick/</guid>
+      <description>&lt;p&gt;Suppose you should group people based on their ages as follows:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;div&gt;
+  &lt;table border=&#34;0&#34; cellspacing=&#34;0&#34; cellpadding=&#34;2&#34; width=&#34;155&#34; align=&#34;center&#34;&gt;
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        ID
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        Age
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        agegrp
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        001
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        1
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        1
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        002
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        4
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        2
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        003
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        5
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        2
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        004
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        5
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        2
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        005
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        2
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        1
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        006
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        4
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        2
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        007
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        5
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        2
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        008
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        2
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        1
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        009
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        9
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        3
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        010
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;60&#34; valign=&#34;top&#34;&gt;
+        8
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;56&#34; valign=&#34;top&#34;&gt;
+        3
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and the rules:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;age&amp;lt;4,           group 1&lt;/p&gt;
+
+&lt;p&gt;4&amp;lt;=age&amp;lt;6,     group 2&lt;/p&gt;
+
+&lt;p&gt;6&amp;lt;=age&amp;lt;10,  group 3&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It is a very simple question and you could use the &lt;strong&gt;if/else&lt;/strong&gt; statement without thinking:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data age;&lt;br /&gt; input ID $ age;&lt;br /&gt; datalines;&lt;br /&gt; 001 1&lt;br /&gt; 002 4&lt;br /&gt; 003 5&lt;br /&gt; 004 5&lt;br /&gt; 005 2&lt;br /&gt; 006 4&lt;br /&gt; 007 5&lt;br /&gt; 008 2&lt;br /&gt; 009 9&lt;br /&gt; 010 8&lt;br /&gt; ; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data age1;&lt;br /&gt; set age;&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;if &lt;/span&gt;age&lt;4   then agegrp=1;&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;else if&lt;/span&gt; age&lt;6   then agegrp=2;&lt;br /&gt; else agegrp=3;&lt;br /&gt; run;&lt;br /&gt; proc print;run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;or, you could use &lt;strong&gt;proc format&lt;/strong&gt; to map data:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;proc &lt;span style=&#34;color: #ff0000;&#34;&gt;format&lt;/span&gt;;&lt;br /&gt; value agegrp&lt;br /&gt; low-&lt;4=&amp;#8221;1&amp;#8243;&lt;br /&gt; 4-&lt;7  =&amp;#8221;2&amp;#8243;&lt;br /&gt; 7-&lt;10 =&amp;#8221;3&amp;#8243;&lt;br /&gt; other =&amp;#8221;&amp;#8221;&lt;br /&gt; ;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data age2;&lt;br /&gt; set age;&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt; agegrp2=put(age,agegrp1.);&lt;/span&gt;&lt;br /&gt; run;&lt;br /&gt; proc print;run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And try to use logic operators. It is a &lt;strong&gt;ONE-LINE-OF-CODE&lt;/strong&gt; approach:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data age3;&lt;br /&gt; set age;&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt; agegrp3=1+(age&amp;gt;3)+(age&amp;gt;5);&lt;/span&gt;&lt;br /&gt; run;&lt;br /&gt; proc print;run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In SAS, a logic express returns to 1 or 0 according the true of false of the express. The logic behind the above statement is:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;age group is set to 1 at the beginning;&lt;/li&gt;
+&lt;li&gt;if age&amp;gt;3, age group adds 1;&lt;/li&gt;
+&lt;li&gt;if age&amp;gt;5, add 1.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This easy-to-follow logic can apply to other scenarios(flags, for example):&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: 13.1944px;&#34;&gt;flag=value&amp;gt;50;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: 13.1944px;&#34;&gt;select value&amp;gt;50 as flag    &lt;em&gt;(in proc sql)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

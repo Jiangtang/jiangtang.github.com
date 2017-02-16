@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>XML and SAS - Lithium Theme</title>
+<meta property="og:title" content="XML and SAS - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">XML and SAS</h1>
+
+    
+    <span class="article-date">October 7, 2010</span>
+    
+
+    <div class="article-content">
+      <p>Last month, I gave a talk, <em>XML: the SAS Approach</em>, in <a href="http://www.cdisc.org/interchange-china#2329">CDISC Interchange China 2010</a>(at the Medical School of Fudan University, Shanghai, 2010-09-15). <a href="http://www.fda.gov/">FDA</a> favors <a href="http://www.cdisc.org/">CDISC</a> and <a href="http://www.hl7.org/">HL7</a>, the two XML based standards, and SAS programmers in biopharmaceutical industry&#160; need incorporate the XML technology into their toolboxes. Fortunately, you don’t need to be an XML expert then to play XML in your daily work, and, SAS system DOES offer multiple tools and applications to handle XML files, i.e. import and export XML data:</p>
+
+<ul>
+<li>SAS data steps approach:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; import and export</li>
+<li><a href="http://support.sas.com/rnd/base/xmlengine/sxle913/index.html">SAS XML Libname engine</a>:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; import and export</li>
+<li><a href="http://support.sas.com/rnd/base/ods/odsmarkup/odsxml/">SAS ODS XML statement</a>(ODS MARKUP):&#160;&#160; export</li>
+<li><a href="http://support.sas.com/rnd/base/cdisc/proccdisc/index.html">PROC CDISC</a>:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; import and export</li>
+<li><a href="http://www.sas.com/apps/demosdownloads/92_SDL_sysdep.jsp;jsessionid=75E543A04B4ED91EFE8B8D16B73954A1.tc4j3apps1?packageID=000513&amp;jmpflag=N">SAS XML Mapper</a>:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; import</li>
+<li><a href="http://www.sas.com/apps/demosdownloads/cdiscviewer_PROD__sysdep.jsp;jsessionid=75E543A04B4ED91EFE8B8D16B73954A1.tc4j3apps1?packageID=000343&amp;jmpflag=N">SAS CDISC Viewer</a>:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <em>as if</em>&#160; import</li>
+</ul>
+
+<p>The <a href="http://www.sas.com/apps/demosdownloads/cdiscviewer_PROD__sysdep.jsp;jsessionid=75E543A04B4ED91EFE8B8D16B73954A1.tc4j3apps1?packageID=000343&amp;jmpflag=N">SAS CDISC Viewer</a> and <a href="http://support.sas.com/rnd/base/cdisc/proccdisc/index.html">PROC CDISC</a> procedure are some bit toys, and the rest really work. The Perl Regular Expression(PRX) approach is also presented to export and import XML data.</p>
+
+<p>A simple demo. First, use FILE and PUT statements to generate an XML file:</p>
+
+<blockquote>
+<p>data _null_;<br />
+&#160;&#160;&#160; file &ldquo;export.xml&rdquo;;<br />
+&#160;&#160;&#160; put &#8216;&lt;?xml version=&ldquo;1.0&rdquo; encoding=&ldquo;windows-1252&rdquo; ?&gt;&#8217;;<br />
+&#160;&#160;&#160; put &#8216;<ROWSET>&#8217;;<br />
+&#160;&#160;&#160; put &#8216;<ROW>&#8217;;<br />
+&#160;&#160;&#160; put &#8216;<text> <font color="#ff0000">Welcome to CDISC Interchange 2010 China</font> </text>&#8217;;<br />
+&#160;&#160;&#160; put &#8216;</ROW>&#8217;;<br />
+&#160;&#160;&#160; put &#8216;<ROW>&#8217;;<br />
+&#160;&#160;&#160; put &#8216;<text> <font color="#ff0000">We are in Shanghai!</font> </text>&#8217;;<br />
+&#160;&#160;&#160; put &#8216;</ROW>&#8217;;<br />
+&#160;&#160;&#160; put &#8216;</ROWSET>&#8217;;&#160;<br />
+run;</p>
+</blockquote>
+
+<p>Then read the whole XML file to SAS dataset:</p>
+
+<blockquote>
+<p>data import0 ;<br />
+&#160;&#160;&#160; infile &ldquo;export.xml&rdquo; dsd missover truncover lrecl = 1024;<br />
+&#160;&#160;&#160; input line $1024.;<br />
+&#160;&#160;&#160; if line = &#8221; then delete;<br />
+run;</p>
+</blockquote>
+
+<p>Third step, extract the information you want(the text between <text> and </text> tags) using&#160; Perl Regular Expression:</p>
+
+<blockquote>
+<p>data import (keep = line );<br />
+&#160;&#160;&#160;&#160; retain queName ;<br />
+&#160;&#160;&#160;&#160; retain line ;<br />
+&#160;&#160;&#160;&#160; set import0;&#160;&#160;&#160;&#160;&#160;</p>
+
+<p>&#160;&#160;&#160;&#160; /*use PRX to capture the structure of XML data;*/<br />
+&#160;&#160;&#160;&#160; If _n_=1 then do;<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; queName=prxparse(&#8216;/^<text> /&#8217;);<br />
+&#160;&#160;&#160;&#160; end;<br />
+&#160;&#160;&#160;&#160; queNameN=prxmatch(queName,line);</p>
+
+<p>&#160;&#160;&#160; /*use PRX to remove the XXML tags;*/<br />
+&#160;&#160;&#160;&#160; if queNameN&gt;0 then do;<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; rx1=prxparse(&ldquo;s/&lt;.*?&gt;//&ldquo;);<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; call prxchange(rx1,99,line);<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160; output;<br />
+&#160;&#160;&#160;&#160; end;&#160;&#160;&#160;&#160;&#160;<br />
+run;</p>
+</blockquote>
+
+<p>The logic of PRX approach to process XML data is very simple and can be easily modified according to your needs:</p>
+
+<ul>
+<li>complicate and utilize the PRX codes to capture the hierarchical structure of XML data.</li>
+<li>remove XML tags and output the information to SAS dataset.</li>
+</ul>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

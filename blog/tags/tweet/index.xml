@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tweet on Lithium Theme</title>
+    <link>/tags/tweet/index.xml</link>
+    <description>Recent content in Tweet on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/tweet/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Weekend Clip: Data Scientist</title>
+      <link>/2012/11/30/weekend-clip-data-scientist/</link>
+      <pubDate>Fri, 30 Nov 2012 22:31:52 +0000</pubDate>
+      
+      <guid>/2012/11/30/weekend-clip-data-scientist/</guid>
+      <description>
+
+&lt;h5 id=&#34;two-tweets&#34;&gt;Two tweets:&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/image.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/image_thumb.png&#34; width=&#34;525&#34; height=&#34;101&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/image1.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/image_thumb1.png&#34; width=&#34;522&#34; height=&#34;87&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;one-blog-post&#34;&gt;One blog post:&lt;/h5&gt;
+
+&lt;p&gt;_&lt;a href=&#34;http://mathbabe.org/2012/07/31/statisticians-arent-the-problem-for-data-science-the-real-problem-is-too-many-posers/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Statisticians aren’t the problem for data science. The real problem is too many posers&lt;/font&gt;&lt;/a&gt;_&lt;/p&gt;
+
+&lt;h5 id=&#34;one-job-advertisement&#34;&gt;One job advertisement:&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.ziprecruiter.com/job/SAS-Data-Scientist/1f127e2e/?source=social-linkedin-group-jobs&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS Data Scientist&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;?(!)&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;a-joke&#34;&gt;A joke:&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The biggest joke about data scientist is that the Google query “&lt;/font&gt;&lt;a href=&#34;https://www.google.com/search?q=data+scientist+joke&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;data scientist joke&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;” returns nothing interesting.&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

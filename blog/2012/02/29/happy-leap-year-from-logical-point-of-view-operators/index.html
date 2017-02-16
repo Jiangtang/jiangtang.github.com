@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>Happy Leap Year From Logical (Point of View) Operators - Lithium Theme</title>
+<meta property="og:title" content="Happy Leap Year From Logical (Point of View) Operators - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">Happy Leap Year From Logical (Point of View) Operators</h1>
+
+    
+    <span class="article-date">February 29, 2012</span>
+    
+
+    <div class="article-content">
+      <p><font size="1">Today is Feb 29, –another <a href="http://en.wikipedia.org/wiki/Leap_year" target="_blank">leap year</a>! I just found it is a good chance to raise the topic of <a href="http://www.jiangtanghu.com/blog/2010/11/04/power-of-logic-operators-a-trick/" target="_blank">logic operators again</a>.</font></p>
+
+<p><font size="1">To determine if 2012 is a leap year, use the straightforward logic expression (demo is SAS, follow the pseudo code in the wiki page of <a href="http://en.wikipedia.org/wiki/Leap_year" target="_blank">leap year</a>):</font></p>
+
+<blockquote>
+<p><font size="1" face="Courier New">if mod(year,4) = 0 then do;&#160;&#160; <br />&#160;&#160;&#160; if mod(year,100) = 0 then do;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; if mod(year,400) = 0 then is_leap = 1; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; else is_leap = 0; <br />&#160;&#160;&#160; end; <br />&#160;&#160;&#160; else is_leap = 1; <br />end; <br />else leap=0;</font></p>
+</blockquote>
+
+<p><font size="1">while using logic operators (Boolean expression), only one line of codes needed:</font></p>
+
+<blockquote>
+<p><font size="1" face="Courier New">is_leap = (mod(year,4) = 0) <font color="#ff0000">and</font> <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ( <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; (mod(year,100) ^= 0) <font color="#ff0000">or</font> (mod(year,400) = 0) <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; );</font></p>
+</blockquote>
+
+<p><font size="1">or using SAS bitwise logical operations:</font></p>
+
+<blockquote>
+<p><font size="1" face="Courier New">is_leap=<font color="#ff0000">bor</font>(<font color="#ff0000">band</font>(mod(year,4) = 0,mod(year,100) ^= 0), mod(year,400) = 0)</font></p>
+</blockquote>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

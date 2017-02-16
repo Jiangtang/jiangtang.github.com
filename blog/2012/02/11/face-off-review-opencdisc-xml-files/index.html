@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>Face Off: Review OpenCDISC XML files - Lithium Theme</title>
+<meta property="og:title" content="Face Off: Review OpenCDISC XML files - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">4 min read</span>
+    
+
+    <h1 class="article-title">Face Off: Review OpenCDISC XML files</h1>
+
+    
+    <span class="article-date">February 11, 2012</span>
+    
+
+    <div class="article-content">
+      
+
+<p><a href="http://www.opencdisc.org/" target="_blank"><font size="1">OpenCDISC</font></a><font size="1">, the first open source CDISC validator, is already in the toolbox of FDA reviewers (CDER/CBER, see <em><a href="http://www.cdisc.org/stuff/contentmgr/files/0/8d99d69f1195d2a2954e62d2fbb3470f/misc/cdisc_standards_in_fda_submissions_2012_01_26pdf.pdf" target="_blank">CDISC Standards in the Regulatory Submission Process</a></em>, 26 January 2012, P.33). The key features in OpenCDISC is a <a href="http://www.opencdisc.org/projects/validator/opencdisc-validation-framework" target="_blank">dichotomy of validation rules (XML based) and application logic</a>. </font><font size="1">Currently OpenCDISC Validator (<a href="http://www.opencdisc.org/download" target="_blank">Version 1.2.1</a>) officially supports the four following CDISC modules:</font></p>
+
+<ul>
+<li><a href="http://www.opencdisc.org/projects/validator/cdisc-sdtm-3.1.2-validation-rules">SDTM 3.1.2</a></li>
+<li><a href="http://www.opencdisc.org/projects/validator/cdisc-sdtm-3.1.1-validation-rules">SDTM 3.1.1</a></li>
+<li><a href="http://www.opencdisc.org/projects/validator/cdisc-define.xml-1.0-validation-rules">Define.xml 1.0</a></li>
+<li><a href="http://www.opencdisc.org/projects/validator/cdisc-adam-1.0-validation-rules">ADaM 1.0</a></li>
+</ul>
+
+<p><font size="2"></font></p>
+
+<p><font size="1">You can get the corresponding configuration files (validation rules) </font><a href="http://www.opencdisc.org/download" target="_blank"><font size="1">online</font></a> <font size="1">or in the software folder (in ..<em>opencdisc-validatorconfig </em>with extension of .xml). Since SDTM 3.1.2 has the most rich set of validation rules from Janus, WebSDM and of course additional&#160; OpenCDISC rules by itself, its configuration file (<em><a href="http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip" target="_blank">config-sdtm-3.1.2.xml</a></em>) deserves more attention. Better understanding of <a href="http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip" target="_blank"><em>config-sdtm-3.1.2.xml</em></a><em>&#160;</em>is the first step to customize the software according to business needs. Followings are some personal tips and tricks to play and even “torture” the file, using Notepad++, web browsers (IE and Firefox), Excel with MSXML and SAS XML Mapper. </font></p>
+
+<h1 id="1-don-t-use-the-windows-default-notepad-to-open-and-edit-the-xml-file">1. DON’T use the Windows default Notepad to open and edit the xml file</h1>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad2.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="XML_Notepad" border="0" alt="XML_Notepad" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad_thumb2.png" width="453" height="275" /></a><font size="1"></font></p>
+
+<p><font size="1">while the reason:</font></p>
+
+<blockquote>
+<p><font size="1">if you use Notepad to open a XML file, almost you get nothing but strings and strings.</font></p>
+</blockquote>
+
+<p><font size="1">and another supporting reason, see bellowing picture.</font></p>
+
+<h1 id="2-use-a-href-http-notepad-plus-plus-org-target-blank-notepad-a-or-other-real-text-editors-to-open-and-edit-it">2. USE <a href="http://notepad-plus-plus.org/" target="_blank">Notepad++</a> or other REAL text editors to open and edit it</h1>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad3.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="XML_Notepad  " border="0" alt="XML_Notepad  " src="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad_thumb3.png" width="441" height="321" /></a></p>
+
+<p><font size="1">Notepad++ makes the difference. It supports multiple tabs view, XML syntax highlighting and XML tags match and other fancy stuff never in the plain Notepad. And like OpenCDISC, it’s free, both in sense of free beer and free speech.</font></p>
+
+<p><font size="1">Other real text editor, include Vim, UltraEdit and such, but for most users, I still think Notepad++ is the most handy one.</font></p>
+
+<h1 id="3-at-first-use-a-web-browsers-to-review-it">3. At first, use a web browsers to review it</h1>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_IE1.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="XML_IE" border="0" alt="XML_IE" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_IE_thumb1.png" width="423" height="398" /></a></p>
+
+<p><font size="1">It is the web view of <a href="http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip" target="_blank"><em>config-sdtm-3.1.2.xml</em></a><em>. </em>The secret is a style file, <strong>define-1.0.xsl</strong> in ..opencdisc-validatorconfigschematron. This is another story of dichotomy. The <a href="http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip" target="_blank"><em>config-sdtm-3.1.2.xml</em></a> file itself is only used to store metadata (machine-readable), while the style file (also a XML file) used to instruct how to display it (human-readable). Within some proper internal interface, web browsers (I tested in IE and Firefox; Google Chrome doesn’t work). Excel can also render this XML file well (only test on Excel 2010 and 2007) while </font><font size="1">Web view is much better</font><font size="1">:</font></p>
+
+<p><font size="1"><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Excel.png"><img style="background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="XML_Excel" border="0" alt="XML_Excel" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Excel_thumb.png" width="401" height="577" /></a></font></p>
+
+<p><font size="1"></font></p>
+
+<p><font size="1"></font></p>
+
+<p><font size="1"></font></p>
+
+<p><font size="1"></font></p>
+
+<p><font size="1"></font></p>
+
+<p><font size="1"></font></p>
+
+<p><font size="1"></font></p>
+
+<p><font size="1"></font></p>
+
+<p><font size="1"></font></p>
+
+<p><font size="1"></font></p>
+
+<p><font size="1"></font></p>
+
+<p><font size="1"></font></p>
+
+<p><font size="1"></font></p>
+
+<h1 id="4-the-real-awesome-job-use-microsoft-xml-parser-or-other-xml-parsers-to-dig-into-xml-structure">4. The real awesome job: use Microsoft XML parser or other XML parsers to dig into XML structure</h1>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel1.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="XML_Tags_Excel" border="0" alt="XML_Tags_Excel" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel_thumb1.png" width="406" height="622" /></a></p>
+
+<p><font size="1">I use Excel 2010 with Microsoft XML parser (<a href="http://en.wikipedia.org/wiki/MSXML" target="_blank"><em>MSXML 6.0</em></a><em>. </em>You can get the version of your MSXML by visiting <a href="http://home.arcor.de/martin.honnen/xslt/processorTest.xml" target="_blank">this website</a> in IE and you will get the different results when switching to other web browsers because Firefox and Chrome use other parsers). </font></p>
+
+<p><font size="1">You can also get a instance of each XML tag:</font></p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel_preview1.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="XML_Tags_Excel_preview" border="0" alt="XML_Tags_Excel_preview" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel_preview_thumb1.png" width="416" height="640" /></a></p>
+
+<h1 id="5-the-real-awesome-job-use-sas-xml-mapper-to-get-the-tabulation-view">5. The real awesome job: use SAS XML Mapper to get the tabulation view</h1>
+
+<p><font size="1">And you may want to exact all the tables in the XML file with tabulation view, ideally, in SAS dataset:</font></p>
+
+<p><font size="1">For example, the first few rows in <em>config-sdtm-3.1.2.xml</em>:</font></p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_xml_tab1.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="ODM_xml_tab" border="0" alt="ODM_xml_tab" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_xml_tab_thumb1.png" width="399" height="148" /></a></p>
+
+<p>and the corresponding SAS dataset:</p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_tab1.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="ODM_tab" border="0" alt="ODM_tab" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_tab_thumb1.png" width="414" height="48" /></a></p>
+
+<p><font size="1"></font></p>
+
+<p><font size="1">Actually you can put all the data in XML into a big dataset but with lots of redundancies. To use SAS XML Mapper (the latest version is 9.3), you should design a mapping file to tell the structure of the XML file. For the simple ODM dataset, you indicate the table name, column name and path, type and length:</font></p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/map.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="map" border="0" alt="map" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/map_thumb.png" width="357" height="150" /></a></p>
+
+<p><font size="1">It never be fun to play with XML files. SAS XML Mapper is supposed to read CDISC ODM based XML files automatically (OpenCDISC XML files are called ODM compliant), but at least for this config-sdtm-3.1.2.xml, it failed and that’s why we should create a mapping file (<em>see above</em>) by ourselves. Fortunately you don’t need to write it from scratch (it would be thousands of lines of codes):</font></p>
+
+<ul>
+<li><font size="1">find a CDISC ODM based XML file that SAS XML Mapper can read automatically, e.g., in <a href="http://www.cdisc.org/define-xml">http://www.cdisc.org/define-xml</a>, a file named <em>define-example1.xml</em> works well.</font></li>
+<li><font size="1">use AutoMap function in SAS XML Mapper to get the mapping file.</font></li>
+<li><font size="1">modify the mapping file to fit your needs.</font></li>
+<li><font size="1">for details, refer SAS XML mapping syntax.</font></li>
+</ul>
+
+<h1 id="6-final-notes-for-excel">6. Final Notes for Excel</h1>
+
+<p><font size="1">Right click <a href="http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip" target="_blank"><em>config-sdtm-3.1.2.xml</em></a> then open with “Microsoft Excel”:</font></p>
+
+<p><font size="1"><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel11.png"><img style="background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="Excel1" border="0" alt="Excel1" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel1_thumb1.png" width="412" height="163" /></a></font></p>
+
+<p><font size="1">Option 2 will go to section 3. If go with option 1:</font></p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel21.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="Excel2" border="0" alt="Excel2" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel2_thumb1.png" width="320" height="181" /></a></p>
+
+<p><font size="1">Option 1-1 and 1-2:&#160;&#160; tabulation view in section 5</font></p>
+
+<p><font size="1">Option&#160; </font><font size="1">1-3:&#160; tag view in section 4.</font></p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

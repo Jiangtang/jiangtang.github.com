@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ibm on Lithium Theme</title>
+    <link>/tags/ibm/index.xml</link>
+    <description>Recent content in Ibm on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/ibm/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Decision Trees in SAS Enterprise Miner and SPSS Clementine</title>
+      <link>/2011/01/04/decision-trees-in-sas-enterprise-miner-and-spss-clementine/</link>
+      <pubDate>Tue, 04 Jan 2011 20:44:50 +0000</pubDate>
+      
+      <guid>/2011/01/04/decision-trees-in-sas-enterprise-miner-and-spss-clementine/</guid>
+      <description>&lt;p&gt;Decision trees are included in SAS Enterprise Miner(EM). The counterpart is SPSS Clementine, which should be called IBM SPSS Modeler for precision after IBM’s acquisition of SPSS.&lt;/p&gt;
+
+&lt;p&gt;Recently I read a paper on the comparisons of SAS EM, SPSS Clementine and IBM Intelligent Miner on their decision tree and cluster technology:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;_&lt;a href=&#34;http://www.gimi.us/CLUTE_INSTITUTE/ORLANDO_2010/Article%2520452.pdf&#34; target=&#34;_blank&#34;&gt;Decision Tree Induction &amp;amp; Clustering Techniques in SAS Enterprise Miner, SPSS Clementine, and IBM Intelligent Miner – A Comparative Analysis&lt;/a&gt;_ by Abdullah M. Al Ghoson, Virginia Commonwealth University&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The output is not that surprising. SAS EM plays better in performance, functionality and auxiliary task support but worse in usability.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SAS_VS_SPSS.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;SAS_VS_SPSS&#34; border=&#34;0&#34; alt=&#34;SAS_VS_SPSS&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SAS_VS_SPSS_thumb.png&#34; width=&#34;503&#34; height=&#34;476&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are few comments on decision trees implementations in SAS EM and SPSS Clementine based on my own experiences. Some advises for beginners are also supplied.&lt;/p&gt;
+
+&lt;p&gt;There are four nodes in SPSS Clementine to supports four trees algorithms respectively: &lt;font color=&#34;#ff0000&#34;&gt;C5.0&lt;/font&gt;, Classification And Regression Trees (&lt;font color=&#34;#ff0000&#34;&gt;CART&lt;/font&gt;),&amp;#160; Quick, Unbiased, Efficient Statistical Tree(&lt;font color=&#34;#ff0000&#34;&gt;QUEST&lt;/font&gt;) and Chi-squared Automatic Interaction Detector(&lt;font color=&#34;#ff0000&#34;&gt;CHAID&lt;/font&gt;),&amp;#160; which are most famous and popular in decision trees family.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SPSS_4_trees.png&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;SPSS_4_trees&#34; border=&#34;0&#34; alt=&#34;SPSS_4_trees&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SPSS_4_trees_thumb.png&#34; width=&#34;412&#34; height=&#34;105&#34; /&gt;&lt;/a&gt; Note that CART&amp;reg; is a registered trademark of California Statistical Software, Inc., and is licensed exclusively to Salford Systems, San Diego, California. So SPSS Clementine uses C&amp;amp;R Tree as name.&lt;/p&gt;
+
+&lt;p&gt;In SAS EM, there is only one decision tree node:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SAS_tree.png&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;SAS_tree&#34; border=&#34;0&#34; alt=&#34;SAS_tree&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SAS_tree_thumb.png&#34; width=&#34;155&#34; height=&#34;74&#34; /&gt;&lt;/a&gt; The algorithms behind this node is called SAS tree algorithms, which incorporate and extend the four mentioned before. Just change the settings in decision tree node, you can get the trees you want.&lt;/p&gt;
+
+&lt;p&gt;Obviously, SAS tree algorithms is superior than the separated ones in SPSS Clementine for expansibility and flexibility. But at the other hand, the complexities increase. For a newbie user of SAS EM, he/she may wonder which trees he/she is training. A SPSS Clementine users just picks up a node and says: OK, I am now training a CART or CHAID.—he/she would communicate with others more smoothly.&lt;/p&gt;
+
+&lt;p&gt;Regardless of the industry application, I think this is the educational benefit of SPSS Clementine. Since almost every data mining book introduces decision trees by separated algorithms(such as ID3/C4.5/C5.0, CART, QUEST, CHAID, &amp;hellip;), the beginners using SPSS Clementine as instructional tool may get the clear ideas about the algorithms one by one. Once he/she get the full understanding of the differences among tree algorithms, he/she would train trees in SAS EM more comfortable.&lt;/p&gt;
+
+&lt;p&gt;What’s more, SPSS Clementine supplies rich supporting documentations for beginners and self learners , such as Tutorial, User Guide, Algorithms Guide, Node Reference. The official documentations of SAS EM 5.x and 6.x are relatively poor. Yes there is a good SAS Help and Documentation for SAS EM 4.3 including &lt;em&gt;Getting Started with Enterprise Miner&lt;/em&gt;. EM4.3 is a traditional AF application but EM5.x and above are Java client incorporated in SAS analysis platform(they are totally different!). For EM5.x and above, only installation guides and a plain reference are available.&lt;/p&gt;
+
+&lt;p&gt;SAS Institute may have its own marketing strategies. No rich references available, the Institute DOES offer &lt;a href=&#34;https://support.sas.com/edu/prodcourses.html?code=MINER&amp;ctry=US&#34; target=&#34;_blank&#34;&gt;rich training programs&lt;/a&gt; in data mining and Enterprise Miner application. Wooo, the big-budget purchasers of SAS EM can also afford the trainings.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Industry Review: SAS and Teradata Partnership</title>
+      <link>/2008/12/19/industry-review-sas-and-teradata-partnership/</link>
+      <pubDate>Fri, 19 Dec 2008 10:44:00 +0000</pubDate>
+      
+      <guid>/2008/12/19/industry-review-sas-and-teradata-partnership/</guid>
+      <description>&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
+  &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;SAS and Teradata Partnership: Press&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
+  &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.sas.com/news/preleases/SASandTeradataAdvantageProgram.html&#34;&gt;Leading Companies See Value in SAS and Teradata Partnership&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.sas.com/news/preleases/TeradataAdvantageProgram.html&#34;&gt;SAS and Teradata Unveil Advantage Program to Bring Powerful In-Database Solutions and Services to Customers&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.teradata.com/t/page/173874/index.html&#34;&gt;SAS and Teradata Enter into Strategic Partnership&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;font-size: 100%;&#34;&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
+  &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
+  &lt;span style=&#34;font-size: 100%;&#34;&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
+  &lt;span style=&#34;font-size: 100%;&#34;&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;In BI industry, the pure players such as SAS, Teradata and Microstrategy, need to demonstrate their indispensable values against the megavendors, IBM (acquired Cognos), SAP (acquired Business Object), Oracle (acquired Hyperion) and Microsoft. Teradata is solely focused on enterprise data warehouse. SAS, dominating in business analytics (e.g. advanced statistics and data mining), will check and balance the BI industry due to the private-hold structure. SAS and Teradata Advantage Program partnership, includes wide business lines, such as Analytics, AML (Anti-Money Laundering), Credit Risk, Enterprise Intelligence and Optimization Services. I think It&amp;#8217;s a effective way to learn from each other in mutual emulation and&lt;/span&gt;&lt;span style=&#34;font-family: Times New Roman;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;counterbalance the &lt;/span&gt;&lt;span class=&#34;wbtrmn&#34;&gt;&lt;span style=&#34;font-family: Times New Roman;&#34;&gt;concentration&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt; market.&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

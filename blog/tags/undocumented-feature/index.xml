@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Undocumented Feature on Lithium Theme</title>
+    <link>/tags/undocumented-feature/index.xml</link>
+    <description>Recent content in Undocumented Feature on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/undocumented-feature/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Yet Another Undocumented Feature (new in SAS 9.3)</title>
+      <link>/2013/02/26/yet-another-undocumented-feature-new-in-sas-9.3/</link>
+      <pubDate>Tue, 26 Feb 2013 21:00:14 +0000</pubDate>
+      
+      <guid>/2013/02/26/yet-another-undocumented-feature-new-in-sas-9.3/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Today just caught an undocumented SAS feature. I ran the following SAS codes to delete a dataset(in Windows 7 with SAS 9.3):&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data a;&lt;br /&gt; b=1;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;proc datasets &lt;span style=&#34;color: #ff0000;&#34;&gt;noprint&lt;/span&gt;;&lt;br /&gt; delete a;&lt;br /&gt; run;&lt;br /&gt; quit;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;and the dataset was deleted as I expected:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;32   proc datasets noprint;&lt;br /&gt; 33       delete a;&lt;br /&gt; 34   run;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;NOTE: Deleting WORK.A (memtype=DATA).&lt;br /&gt; 35   quit;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;But when tested in a SAS 9.2 machine, I got errors&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;25   proc datasets noprint;&lt;br /&gt; &amp;#8212;&amp;#8212;-&lt;br /&gt; 22&lt;br /&gt; 202&lt;br /&gt; NOTE: Enter RUN; to continue or QUIT; to end the procedure.&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;ERROR&lt;/span&gt; 22-322: Syntax error, expecting one of the following: ;, ALTER, DD, DDNAME, DETAILS,&lt;br /&gt; FORCE, GENNUM, KILL, LIB, LIBRARY, MEMTYPE, MT, MTYPE, NODETAILS, NOFS, NOLIST,&lt;br /&gt; NOWARN, PROTECT, PW, READ.&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;ERROR&lt;/span&gt; 202-322: The option or parameter is not recognized and will be ignored.&lt;br /&gt; 26       delete a;&lt;br /&gt; 27   run;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;NOTE: Statements not processed because of errors noted above.&lt;br /&gt; 27 !     quit;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;NOTE: The SAS System stopped processing this step because of errors.&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Then I checked the SAS HelpDoc, there is no such “noprint” option in &lt;/span&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/proc/65145/HTML/default/viewer.htm#p0xdkenol7pi1cn14p0iq38shax4.htm&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;PROC DATASETS statement&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;, but in &lt;/span&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/proc/65145/HTML/default/viewer.htm#p1v2467vdjbp7xn1222c7t3sejz3.htm&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;CONTENTS statement&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;in the PROC DATASETS PROCEDURE. Actually I added the “noprint” option just because I expected it act like the same option in &lt;/span&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/procstat/65543/HTML/default/viewer.htm#procstat_freq_syntax01.htm&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;PROC FREQ statement&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;to suppresses output. And (un)fortunately, it worked in my machine…&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;UPDATE(2013-02-27): Just got feedback from a SAS developer this &amp;#8220;noprint&amp;#8221; will be documented in the upcoming SAS 9.4; actually it works like the existing &amp;#8220;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/proc/65145/HTML/default/viewer.htm#p0xdkenol7pi1cn14p0iq38shax4.htm&#34; target=&#34;_blank&#34;&gt;nolist&lt;/a&gt;&amp;#8221; option.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

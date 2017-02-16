@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Format on Lithium Theme</title>
+    <link>/tags/format/index.xml</link>
+    <description>Recent content in Format on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/format/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Import .Rdata to SAS, along with Labels</title>
+      <link>/2015/05/12/import-.rdata-to-sas-along-with-labels/</link>
+      <pubDate>Tue, 12 May 2015 13:06:28 +0000</pubDate>
+      
+      <guid>/2015/05/12/import-.rdata-to-sas-along-with-labels/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;I didn’t &lt;/span&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2010/10/29/sas-iml-basic/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;play with SAS/IML&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;for a while. I call it back when I need to read some R format data.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Technically, .Rdata is not a data format. It’s rather a big container to hold bunch of R objects:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/Rdata1.png&#34;&gt;&lt;img style=&#34;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border: 0px;&#34; title=&#34;Rdata&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/Rdata_thumb1.png&#34; alt=&#34;Rdata&#34; width=&#34;408&#34; height=&#34;213&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;In this example, when a .Rdata is loaded, 3 objects are included where ‘data’(the ‘real’ data) and ‘desc’ (data description portion) are of our interests.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;SAS/IML offers a nice interface to call R command which can be used to read the R format data:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;proc iml;&lt;br /&gt; &lt;strong&gt;submit / R;&lt;/strong&gt;&lt;br /&gt; load(&amp;#8220;C:/data/w5/R data sets for 5e/GPA1.RData&amp;#8221;)&lt;br /&gt; &lt;strong&gt;endsubmit;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;    &lt;strong&gt;call&lt;/strong&gt; &lt;strong&gt;ImportDataSetFromR&lt;/strong&gt;(&amp;#8220;work.GPA1&amp;#8221;, &amp;#8220;&lt;span style=&#34;color: #ff0000;&#34;&gt;data&lt;/span&gt;&amp;#8220;);&lt;br /&gt; &lt;strong&gt;call&lt;/strong&gt; &lt;strong&gt;ImportDataSetFromR&lt;/strong&gt;(&amp;#8220;work.GPA1desc&amp;#8221;, &amp;#8220;&lt;span style=&#34;color: #ff0000;&#34;&gt;desc&lt;/span&gt;&amp;#8220;);&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;quit;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; set GPA1desc end = eof ;&lt;br /&gt; i+1;&lt;br /&gt; II=left(put(i,3.));&lt;br /&gt; call symputx(&amp;#8216;var&amp;#8217;||II,variable);&lt;br /&gt; call symputx(&amp;#8216;label&amp;#8217;||II,label);&lt;br /&gt; if eof then call symputx(&amp;#8216;n&amp;#8217;,II);&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;%macro labelit;&lt;br /&gt; data gpa1;&lt;br /&gt; set gpa1;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;    label&lt;br /&gt; %do i=1 %to &amp;n;&lt;br /&gt; &amp;amp;&amp;amp;var&amp;amp;i = &amp;amp;&amp;amp;label&amp;amp;i&lt;br /&gt; %end;&lt;br /&gt; ;&lt;br /&gt; run;&lt;br /&gt; %mend;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;%labelit&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SAS Format Viewer and Others (EG)</title>
+      <link>/2014/02/06/sas-format-viewer-and-others-eg/</link>
+      <pubDate>Thu, 06 Feb 2014 23:28:26 +0000</pubDate>
+      
+      <guid>/2014/02/06/sas-format-viewer-and-others-eg/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Today I tried to install a SAS format viewer, one of &lt;/span&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/10/02/two-sas-af-utilities-logfilter-and-format-viewer/&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;my favorite SAS AF utilities&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: small;&#34;&gt;in a virtual machine, and it came out a bad news and a good news.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;The bad news is that the &lt;/span&gt;&lt;a href=&#34;http://frank-poppe.xs4all.nl/SAS/edit_format.html&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;website I used to download the SAS Format Viewer (by Frank Poppe)&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: small;&#34;&gt;is no longer accessible(&lt;em&gt;LESSON LEARNED: make an offline copy when you check piece of codes online!&lt;/em&gt;).&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;While the good news is, that  a company named &lt;/span&gt;&lt;a href=&#34;http://bixforsas.com/&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;BiX&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: small;&#34;&gt;just released a free version of (yet another) &lt;/span&gt;&lt;a href=&#34;http://bixforsas.com/?page_id=5343&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;SAS format viewer&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: small;&#34;&gt;. I got it tested and it works pretty well, just like Poppe’s version I used.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;2&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;I like to work with SAS Display Manager (DMS) in Windows where I can get code editor, log window, output window, data explorer, etc at a NOT-TOO-BAD GUI, and I can also implement some productive SAS AF utilities like format viewer and log checker. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;SAS Enterprise Guide(EG) actually is a much modern IDE for SAS programmers and my favorite AF utilities can be also replaced by some handy EG add-ons. Currently I’m not fully engaged in it for my personal development work because &lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: small;&#34;&gt;it consumes more resource than DMS and usually I can’t stand with it.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: small;&#34;&gt;EG also doesn’t support all programming features supported by SAS Base, for example, it doesn’t recognize the clipboard behavior showed up in the following demos:&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/02/EG_clipbrd.png&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;&lt;img style=&#34;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border: 0px;&#34; title=&#34;EG_clipbrd&#34; alt=&#34;EG_clipbrd&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/02/EG_clipbrd_thumb.png&#34; width=&#34;475&#34; height=&#34;356&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;I believe EG will rule the world in the future, and even now, in many sites, it was chosen as the solo interface for SAS programmers.  I understand IT admins will benefit it a lot due to easy implantation, maintenance and control, but for SAS programmers, it’s better to have many options.&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to Write a Check? Use SAS Format!</title>
+      <link>/2013/02/24/how-to-write-a-check-use-sas-format/</link>
+      <pubDate>Sun, 24 Feb 2013 21:59:02 +0000</pubDate>
+      
+      <guid>/2013/02/24/how-to-write-a-check-use-sas-format/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/5write_a_check_step5_sign_memo.jpg&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;5write_a_check_step5_sign_memo&#34; border=&#34;0&#34; alt=&#34;5write_a_check_step5_sign_memo&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/5write_a_check_step5_sign_memo_thumb.jpg&#34; width=&#34;441&#34; height=&#34;208&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;During my initial stay in US last year, one of the interesting exercises was &lt;/font&gt;&lt;a href=&#34;http://banking.about.com/od/checkingaccounts/ig/How-to-Write-a-Check/How-to-Write-a-Check---Step-7.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;to write a check&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. The Arabic numerals (&lt;em&gt;the universal language!&lt;/em&gt;) were pretty intuitive while I didn’t feel much comfortable on spelling the face value in words: I never played the game! &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;But the good side of this story was, as a SAS programmer and I used a &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/leforinforref/63324/HTML/default/viewer.htm#n1ncdkav4uqfwin1k5mow7z69avw.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;WORDFw. Format&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; money=8.15; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; put money &lt;font color=&#34;#ff0000&#34;&gt;wordf&lt;/font&gt;100.; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and got:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/SAS_Format_Check.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_Format_Check&#34; border=&#34;0&#34; alt=&#34;SAS_Format_Check&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/SAS_Format_Check_thumb.png&#34; width=&#34;395&#34; height=&#34;158&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Another check with a bigger value:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/SAS_Format_Check2.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_Format_Check2&#34; border=&#34;0&#34; alt=&#34;SAS_Format_Check2&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/SAS_Format_Check2_thumb.png&#34; width=&#34;410&#34; height=&#34;157&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;font-size-1-strong-2-strong-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;2&lt;/strong&gt;&lt;/font&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I paid specially interested on SAS Format recently because of the introducing Perl Regular Expression into PROC FORMAT invalue statement since SAS 9.3(&lt;em&gt;an old procedure plays a new game!&lt;/em&gt;). For example, a labeled TIME8. informat created by&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc format; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; invalue xxx (default=20) &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &amp;#8216;&lt;font color=&#34;#ff0000&#34;&gt;/(\d+):(\d\d)(?:.(\d+))?/&lt;/font&gt;&amp;#8216; (REGEXP) = [time8.]; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For more, see Rick Langston’s paper, &lt;em&gt;&lt;a href=&#34;http://support.sas.com/resources/papers/proceedings12/245-2012.pdf&#34;&gt;Using the New Features in PROC FORMAT&lt;/a&gt;&lt;/em&gt; (2012).&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Great, Open, Vendor-neutral, Platform-independent Data Standards, . . . Yet in PDF Formats</title>
+      <link>/2012/12/29/the-great-open-vendor-neutral-platform-independent-data-standards-.-.-.-yet-in-pdf-formats/</link>
+      <pubDate>Sat, 29 Dec 2012 17:47:36 +0000</pubDate>
+      
+      <guid>/2012/12/29/the-great-open-vendor-neutral-platform-independent-data-standards-.-.-.-yet-in-pdf-formats/</guid>
+      <description>&lt;p&gt;You know I mean the &lt;a href=&#34;http://www.cdisc.org/mission-and-principles&#34; target=&#34;_blank&#34;&gt;CDISC&lt;/a&gt; standards including CDASH, SDTM, SEND, ADaM, … and you are right there are few not only in PDF format (ODM, define.xml for example).&lt;/p&gt;
+
+&lt;p&gt;Today Jozef (Jos) Aerts from &lt;a href=&#34;http://www.xml4pharma.com&#34; target=&#34;_blank&#34;&gt;XML4Pharma&lt;/a&gt; posted his &lt;a href=&#34;http://cdiscguru.blogspot.com/2012/12/another-copy-and-paste-frustration.html&#34; target=&#34;_blank&#34;&gt;frustration of copying and pasting metadata from only PDF-formed SDTM-IG 3.1.4&lt;/a&gt;.&amp;#160; I hate to complain the volunteer work by the CDISC team but it is worth a discussion, &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/19/publishing-cdisc-standards/&#34;&gt;is there any better way to publish CDISC Standards&lt;/a&gt;?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Extract the Version of SAS and OS of a SAS Format or Macro Catalog: A Little Bit of Perl Regular Expression</title>
+      <link>/2012/11/25/extract-the-version-of-sas-and-os-of-a-sas-format-or-macro-catalog-a-little-bit-of-perl-regular-expression/</link>
+      <pubDate>Sun, 25 Nov 2012 20:36:52 +0000</pubDate>
+      
+      <guid>/2012/11/25/extract-the-version-of-sas-and-os-of-a-sas-format-or-macro-catalog-a-little-bit-of-perl-regular-expression/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;SAS Sample 34444(&lt;em&gt;&lt;a href=&#34;http://support.sas.com/kb/34/443.html&#34; target=&#34;_blank&#34;&gt;Determine the operating system in which a format catalog was created&lt;/a&gt;&lt;/em&gt;) posts piece of codes to get the version of SAS and OS of a SAS format catalog. It is useful since a SAS catalog can be only read in the operating systems same to its source machine.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;2 cents add to this note:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;First, we do not need to write codes to get to know the machine version for a catalog(&lt;em&gt;&lt;strong&gt;formats.sas7bcat &lt;/strong&gt;&lt;/em&gt;or&lt;strong&gt; &lt;em&gt;sasmacr.sas7bcat&lt;/em&gt;&lt;/strong&gt;). Just open the catalog using a text editor, Notepad++, then you get&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;a SAS format catalog created by SAS 9.1 in a Windows XP Pro machine:&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/SAS_Format.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;SAS_Format&#34; alt=&#34;SAS_Format&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/SAS_Format_thumb.png&#34; width=&#34;475&#34; height=&#34;408&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;and a SAS macro catalog by SAS 9.3 in a 64 bits Windows 7 Pro machine:&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/SAS_Macro.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;SAS_Macro&#34; alt=&#34;SAS_Macro&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/SAS_Macro_thumb.png&#34; width=&#34;464&#34; height=&#34;375&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Second, if do want programming (for curiosity purpose; I like this idea), we can also improve the sample codes since the position and length information were hard coded in Line 21 (the question is: how can we know that?):&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;test=substr(theline,&lt;span style=&#34;color: #ff0000;&#34;&gt;210&lt;/span&gt;,&lt;span style=&#34;color: #ff0000;&#34;&gt;20&lt;/span&gt;);&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;To get rid of hard coding, I use Perl Regular Expression. Just copy the archived codes for &lt;/span&gt;&lt;a href=&#34;http://www.sesug.org/SESUG2012/abstract.html#BB-04&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;my SESUG 2012 talk&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;with tiny modification (I always use the same programming blocks if possible):&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/Jiangtang/SESUG2012/blob/master/read_SAP.sas&#34; title=&#34;https://github.com/Jiangtang/SESUG2012/blob/master/read_SAP.sas&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;https://github.com/Jiangtang/SESUG2012/blob/master/read_SAP.sas&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;The following codes can be also used to run against SAS macro catalog:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;filename fmt &amp;#8220;a:formats.sas7bcat&amp;#8221;;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data fmt;&lt;br /&gt; infile fmt lrecl=1000 truncover;&lt;br /&gt; input line $1000.;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; set fmt;&lt;br /&gt; if &lt;em&gt;n&lt;/em&gt;=1 then do;&lt;br /&gt; retain queVer;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;            &lt;span style=&#34;color: #ff0000;&#34;&gt;ver=&amp;#8221;/(\d+).[\d\w]+_[\d\w]+/&amp;#8221;;&lt;/span&gt;&lt;br /&gt; queVer  = prxparse(ver);&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;            if missing(queVer) then do;&lt;br /&gt; putlog &amp;#8220;ERROR: Invalid regexp&amp;#8221; ver;&lt;br /&gt; stop;&lt;br /&gt; end;&lt;br /&gt; end;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;      queVerN  = prxmatch(queVer ,line);&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;      if queVerN &amp;gt; 0  then do ;&lt;br /&gt; call PRXsubstr(queVer,line,position,length);&lt;br /&gt; version = compress(substr(line, position, length));&lt;br /&gt; output;&lt;br /&gt; end;    &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;      put position= length=;&lt;br /&gt; put version=;&lt;br /&gt; run;&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Test it against five Windows machines: &lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=221 length=16&lt;br /&gt; version=9.0301M1X64_7PRO&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=217 length=15&lt;br /&gt; version=9.0202M2NET_SRV &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=221 length=17&lt;br /&gt; version=9.0202M3X64_SRV08 &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=217 length=14&lt;br /&gt; version=9.0100A0XP_PRO&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=217 length=15&lt;br /&gt; version=9.0101M3NET_SRV &lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;P.S.: The pattern &lt;strong&gt;(d+).[dw]+_[dw]+&lt;/strong&gt;  can be read as&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;number(s)                       +&lt;br /&gt; .                                      +&lt;br /&gt; some digits and words     +&lt;br /&gt; _                                     +&lt;br /&gt; some digits and words&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Since the underscore “_” is also included in meta-character &lt;strong&gt;w&lt;/strong&gt;, it seems OK to simplify the pattern above to &lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;(d+).[dw]+ &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;But in a Window Server 2003 machine with SAS 9.2, it also returns the following unrelated information:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=998 length=3&lt;br /&gt; version=2.S &lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Two SAS AF Utilities: LogFilter and Format Viewer</title>
+      <link>/2012/10/02/two-sas-af-utilities-logfilter-and-format-viewer/</link>
+      <pubDate>Tue, 02 Oct 2012 14:40:05 +0000</pubDate>
+      
+      <guid>/2012/10/02/two-sas-af-utilities-logfilter-and-format-viewer/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Nice to have (and easy to follow, both tested in Windows 7 with SAS 9.3M1 while they were both written in lower version of SAS):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;1. LogFilter: a SAS log checker by &lt;/strong&gt;&lt;/font&gt;&lt;a href=&#34;http://www.notecolon.info/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;rtsl&lt;/strong&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.ratcliffe.co.uk/rest_logfilt.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.ratcliffe.co.uk/rest_logfilt.htm&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;2. A SAS format viewer by &lt;/strong&gt;&lt;/font&gt;&lt;a href=&#34;http://frank-poppe.xs4all.nl/SAS/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;Frank Poppe&lt;/strong&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://frank-poppe.xs4all.nl/SAS/edit_format.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://frank-poppe.xs4all.nl/SAS/edit_format.html&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

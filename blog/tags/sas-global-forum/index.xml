@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sas Global Forum on Lithium Theme</title>
+    <link>/tags/sas-global-forum/index.xml</link>
+    <description>Recent content in Sas Global Forum on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/sas-global-forum/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SAS Global Forum 2011: Personal Notes</title>
+      <link>/2011/06/04/sas-global-forum-2011-personal-notes/</link>
+      <pubDate>Sat, 04 Jun 2011 16:05:46 +0000</pubDate>
+      
+      <guid>/2011/06/04/sas-global-forum-2011-personal-notes/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;It’s wonderful. It’s awful. It’s wonderfully awful and awfully wonderful. –&lt;em&gt;Frommer’s Las Vegas 2010&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;June at last! June, July and August (great thanks to &lt;strong&gt;French&lt;/strong&gt; colleagues!) would be the best time to prepare a paper for next year’s SAS Global Forum (SGF, &lt;a href=&#34;http://support.sas.com/events/sasglobalforum/2012/index.html&#34; target=&#34;_blank&#34;&gt;2012 in Orlando, Florida&lt;/a&gt;). SGF2012 will hold at the “real” Walt Disney at Orlando against Las Vegas, the adults’ Walt Disney for SGF2011. Lots of children will be anticipated to register as guests for this meeting and I may contribute one:).&lt;/p&gt;
+
+&lt;p&gt;Before moving to 2012, I need to add some notes on 2011. It was my first time to present at SAS Global Forum, my first time to attend the Forum and even my first time out of China. First of all, I’d like to extend my special thanks to&lt;/p&gt;
+
+&lt;p&gt;Nancy Brucken of i3, section chair of Planning and Support who served as my key contact of the conference committee for all the coordination stuff&lt;/p&gt;
+
+&lt;p&gt;Duke Owen of Westat, my mentor of this year’s &lt;a href=&#34;http://support.sas.com/events/sasglobalforum/2011/mentor.html&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;SAS Global Forum Presenter Mentoring Program&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt; We had intensive communication via email, telephone and WebEx, &lt;em&gt;see&lt;/em&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;01/25/2011 initial call.&amp;#160; review abstract and title&lt;br /&gt;
+02/01/2011 final abstract submission, no call&lt;br /&gt;
+02/08/2011 no call &amp;#8211; Chinese New Year celebration continues&lt;br /&gt;
+02/15/2011 call &amp;#8211; review paper&lt;br /&gt;
+02/22/2011 call &amp;#8211; finalize paper for submission&lt;br /&gt;
+02/25/2011 submission of pdf (on or before this date)&lt;br /&gt;
+03/01/2011 call &amp;#8211; first draft of slides, or at least the outline of your plan&lt;br /&gt;
+03/08/2011 call &amp;#8211; refine the slides and preview of what your script for presentation&lt;br /&gt;
+03/15/2011 call &amp;#8211; &amp;ldquo;live&amp;rdquo; presentation for Duke.&amp;#160;&amp;#160; This can be done just on our pc&amp;#8217;s or as a WebEx&lt;br /&gt;
+03/22/2011 call &amp;#8211; WebEx for a wider audience.&amp;#160; We can discuss who to invite and adjust time as needed.&lt;br /&gt;
+03/29/2011 call &amp;#8211; Finalize slides/script for you to send to Nancy Brucken&lt;br /&gt;
+04/02/2011 Duke arrives in Las Vegas&lt;br /&gt;
+04/03/2011 John arrives in Las Vegas (I think)&lt;br /&gt;
+04/04/2011 Rehearsal room practice and final slides to Nancy&lt;br /&gt;
+04/05/2011 Show Time:&amp;#160; Tuesday 3:00-3:20 pm&amp;#160;&amp;#160;&amp;#160; ,&amp;#160; drinks on me at the kickback&lt;br /&gt;
+04/06/2011 It is all in the past&lt;br /&gt;
+04/08/2011 Duke leaves Las Vegas&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Last but not least, I also want to thank my boss and my company to support and sponsor me the trip. It is not a world-peace speech. Economy is tough worldwide and few SAS programmers in China could get the opportunity to attend the Forum. In my observation, even in US, relative fewer programmers in pharmaceutical company and other industries attended SGF2011 compared former years.&lt;/p&gt;
+
+&lt;p&gt;That might be also one of the reasons why in this year, SAS Institute had a stronger presence at Las Vegas. For me, it’ not bad. I had the opportunity to meet and talk with some of my former colleagues at SAS R&amp;amp;D Beijing and Cary (even when we’re all in Beijing, we have few chance to meet together). What’s more, SGF2011 had wonderful &lt;strong&gt;SAS Support and Demo Area&lt;/strong&gt; and &lt;strong&gt;Hands-on Workshop&lt;/strong&gt; fully ****supported by the Institute. It was definitely great opportunity to learn almost all parts of SAS system by talking with R&amp;amp;D staff directly. Admitted that I spent more time in the demo room instead of the user presentation room (I can read all the user papers after the Forum, but there is only one chance I can talk with R&amp;amp;D staff about the software itself!)&lt;/p&gt;
+
+&lt;p&gt;My personal presence at Las Vegas:&lt;/p&gt;
+
+&lt;p&gt;1.&amp;#160; Monday, April 4, attended the pre-conference training, &lt;strong&gt;&lt;em&gt;Data Simulation for Evaluation Statistical Methods in SAS&lt;/em&gt;&lt;/strong&gt; by &lt;a href=&#34;http://blogs.sas.com/iml/&#34; target=&#34;_blank&#34;&gt;Rick Wicklin&lt;/a&gt;. Rick is a famous blog writer on IML(_&lt;a href=&#34;http://blogs.sas.com/iml/&#34; target=&#34;_blank&#34;&gt;The DO Loop&lt;/a&gt;_), SAS’s matrix language. His blog is just as popular as Chris Hemedinger’s _&lt;a href=&#34;http://blogs.sas.com/sasdummy/&#34; target=&#34;_blank&#34;&gt;The SAS Dummy&lt;/a&gt;_, a blog on SAS Enterprise Guide. It’s wonderful to talk with these two bloggers face to face!&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Tuesday, April 5, I was invited to a panel discussion on &lt;strong&gt;SAS Business Visualization and Mobile Computing&lt;/strong&gt; in a SAS BI Product Development Focus Group, hosted by 3 SAS directors, developer Justin Choy, product manager Pyan Schmidt and marketing Jo Fisher. Visualization and mobile computing (in iPad, iPhone, …) are two of most hottest topics in Las Vegas. This Focus Group also wanted to gather feedbacks from end users.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Tuesday, April 5, my presentation, _&lt;a href=&#34;http://support.sas.com/resources/papers/proceedings11/211-2011.pdf&#34; target=&#34;_blank&#34;&gt;Work Smarter Rather than Harder- Tools for Growing up A SAS® Programmer&lt;/a&gt;_.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Wednesday, April 6, &lt;strong&gt;one or two seconds&lt;/strong&gt; personal show up in Gregory Nelson and Neil Howard’s featured presentation in lunch, &lt;strong&gt;&lt;em&gt;Revenge of the Semicolon People: Business Analytics at Work&lt;/em&gt;&lt;/strong&gt;.&amp;#160; !!!!!&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;That time Duke and me were in the same table and Greg and Neil were just showing they slides. Suddenly I found a picture of Duke, Shane and me was in the presentation for SGF2011 after some historical pictures for 2010. It just flashed past but it was enough to excite around the table!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Enterprise Guide on Lithium Theme</title>
+    <link>/tags/enterprise-guide/index.xml</link>
+    <description>Recent content in Enterprise Guide on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/enterprise-guide/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SAS Format Viewer and Others (EG)</title>
+      <link>/2014/02/06/sas-format-viewer-and-others-eg/</link>
+      <pubDate>Thu, 06 Feb 2014 23:28:26 +0000</pubDate>
+      
+      <guid>/2014/02/06/sas-format-viewer-and-others-eg/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Today I tried to install a SAS format viewer, one of &lt;/span&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/10/02/two-sas-af-utilities-logfilter-and-format-viewer/&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;my favorite SAS AF utilities&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: small;&#34;&gt;in a virtual machine, and it came out a bad news and a good news.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;The bad news is that the &lt;/span&gt;&lt;a href=&#34;http://frank-poppe.xs4all.nl/SAS/edit_format.html&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;website I used to download the SAS Format Viewer (by Frank Poppe)&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: small;&#34;&gt;is no longer accessible(&lt;em&gt;LESSON LEARNED: make an offline copy when you check piece of codes online!&lt;/em&gt;).&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;While the good news is, that  a company named &lt;/span&gt;&lt;a href=&#34;http://bixforsas.com/&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;BiX&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: small;&#34;&gt;just released a free version of (yet another) &lt;/span&gt;&lt;a href=&#34;http://bixforsas.com/?page_id=5343&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;SAS format viewer&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: small;&#34;&gt;. I got it tested and it works pretty well, just like Poppe’s version I used.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;2&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;I like to work with SAS Display Manager (DMS) in Windows where I can get code editor, log window, output window, data explorer, etc at a NOT-TOO-BAD GUI, and I can also implement some productive SAS AF utilities like format viewer and log checker. &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;SAS Enterprise Guide(EG) actually is a much modern IDE for SAS programmers and my favorite AF utilities can be also replaced by some handy EG add-ons. Currently I’m not fully engaged in it for my personal development work because &lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: small;&#34;&gt;it consumes more resource than DMS and usually I can’t stand with it.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: small;&#34;&gt;EG also doesn’t support all programming features supported by SAS Base, for example, it doesn’t recognize the clipboard behavior showed up in the following demos:&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/02/EG_clipbrd.png&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;&lt;img style=&#34;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border: 0px;&#34; title=&#34;EG_clipbrd&#34; alt=&#34;EG_clipbrd&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/02/EG_clipbrd_thumb.png&#34; width=&#34;475&#34; height=&#34;356&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;I believe EG will rule the world in the future, and even now, in many sites, it was chosen as the solo interface for SAS programmers.  I understand IT admins will benefit it a lot due to easy implantation, maintenance and control, but for SAS programmers, it’s better to have many options.&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

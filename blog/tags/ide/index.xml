@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ide on Lithium Theme</title>
+    <link>/tags/ide/index.xml</link>
+    <description>Recent content in Ide on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/ide/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Vim as A SAS IDE</title>
+      <link>/2011/11/13/vim-as-a-sas-ide/</link>
+      <pubDate>Sun, 13 Nov 2011 11:11:14 +0000</pubDate>
+      
+      <guid>/2011/11/13/vim-as-a-sas-ide/</guid>
+      <description>&lt;p&gt;Few configurations (just copy this &lt;a href=&#34;http://jiangtanghu.com/docs/en/sas.vim&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;sas.vim&lt;/em&gt;&lt;/a&gt; file to &lt;em&gt;C:\Program Files\vim\vim73\syntax&lt;/em&gt; if you also use &lt;a href=&#34;ftp://ftp.vim.org/pub/vim/pc/gvim73_46.ex&#34; target=&#34;_blank&#34;&gt;gVIM 7.3&lt;/a&gt; at Windows) to make Vim as a simple &lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/11/05/get-start-with-wps-and-call-for-an-elegant-sas-ide/&#34; target=&#34;_blank&#34;&gt;SAS IDE&lt;/a&gt; where&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;F3: run SAS codes (in batch mode)&lt;/p&gt;
+
+&lt;p&gt;F4: close other two windows (the current active window is Log window after F3 running; F4 jump to SAS file with full window)&lt;/p&gt;
+
+&lt;p&gt;F5: jump to SAS file&lt;/p&gt;
+
+&lt;p&gt;F6: jump to Log file&lt;/p&gt;
+
+&lt;p&gt;F7: jump to lst file (list output)&lt;/p&gt;
+
+&lt;p&gt;F8: keep only the current window (full window)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto;&#34; alt=&#34;&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/11/VIM_SAS.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;*&lt;strong&gt;*&lt;/strong&gt;*&lt;strong&gt;*&lt;/strong&gt;****&lt;/p&gt;
+
+&lt;p&gt;Details and Credits&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The first post on Vim and SAS I read is by &lt;a href=&#34;http://www.blog496.org/2011-7-17-win-use-vim-as-sas-r-editor.html&#34; target=&#34;_blank&#34;&gt;Xiaowei Wang&lt;/a&gt; in Chinese.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The original SAS syntax file took from &lt;a href=&#34;http://www.vim.org/scripts/script.php?script_id=3522&#34; target=&#34;_blank&#34;&gt;Zhenhuan Hu&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www-personal.umich.edu/~knassen/vim/sasfns.html&#34; target=&#34;_blank&#34;&gt;Kent Nassen&lt;/a&gt; also maintains some Vim functions to run SAS codes and check log.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;To run SAS codes using F3:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;map &lt;F3&gt; :w&lt;CR&gt;:!SAS % -CONFIG &amp;#8220;&lt;span style=&#34;color: #ff0000;&#34;&gt;C:\Program Files\SAS\SASFoundation\9.2\nls\en\SASV9.CFG&lt;/span&gt;&amp;#8220;&lt;CR&gt;:sp  %&amp;lt;.lst&lt;CR&gt;:sp  %&amp;lt;.log&lt;CR&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Close other windows using F4:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;map &lt;F4&gt; :close&lt;CR&gt;:close&lt;CR&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Keep only current window using F8:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;map &lt;F8&gt; : only&lt;CR&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Jump to SAS file using F5:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;map &lt;F5&gt; :e %&amp;lt;.sas&lt;CR&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Jump to Log file using F6:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;map &lt;F6&gt; :e %&amp;lt;.log&lt;CR&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Jump to Lst file using F7:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;map &lt;F7&gt; :e %&amp;lt;.lst&lt;CR&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Get Start with WPS, and Call for an Elegant SAS IDE!</title>
+      <link>/2011/11/05/get-start-with-wps-and-call-for-an-elegant-sas-ide/</link>
+      <pubDate>Sat, 05 Nov 2011 21:50:42 +0000</pubDate>
+      
+      <guid>/2011/11/05/get-start-with-wps-and-call-for-an-elegant-sas-ide/</guid>
+      <description>&lt;p&gt;I got a trial version of &lt;a href=&#34;http://www.teamwpc.co.uk/products/wps&#34; target=&#34;_blank&#34;&gt;WPS&lt;/a&gt; (the latest version 2.5.2.0 at Windows), which engine can interpret “some of the language of SAS”. I took piece of codes for testing and some passed while some popped up with errors (so currently it is only a limited version of SAS). I don’t drive into the deep part yet of what WPS can do and can’t do, but I do love the WPS way to organize projects, folders and files (including souse files):&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/11/WPS_SAS.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;WPS_SAS&#34; border=&#34;0&#34; alt=&#34;WPS_SAS&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/11/WPS_SAS_thumb.png&#34; width=&#34;507&#34; height=&#34;380&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;WPS uses a lite version of &lt;a href=&#34;http://www.eclipse.org/&#34; target=&#34;_blank&#34;&gt;Eclipse&lt;/a&gt; as GUI(WPS Workbench; the “lite” means WPS Workbench can’t be extensible as the original Eclipse but really with shorter response time). Besides its Project Explore for folders and files management(left panel), I also love its Outline in right panel to show the SAS programming elements and errors information in log window:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/11/WPS_LOG.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;WPS_LOG&#34; border=&#34;0&#34; alt=&#34;WPS_LOG&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/11/WPS_LOG_thumb.png&#34; width=&#34;502&#34; height=&#34;381&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Then I’d like to switch to SAS itself. Frankly speaking, at least in IDE part, WPS looks pretty better than the current corresponding SAS:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/11/SAS_GUI.png&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;SAS_GUI&#34; border=&#34;0&#34; alt=&#34;SAS_GUI&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/11/SAS_GUI_thumb.png&#34; width=&#34;495&#34; height=&#34;406&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Of course I hold the principle of “substance over form”, but if available, the form itself also make people comfortable and enjoyable (for example, the Apple products…). As far as I know, the new version of SAS DI Studio and Enterprise Miner both have pretty much improvement in GUI from ergonomic point of view. Even for code editor, Enterprise Guide Editor&amp;#160; is now more superior than so called SAS Enhanced Editor. But as a SAS programmer (not only the SAS user), I may spend all my day in the Base SAS window!&lt;/p&gt;
+
+&lt;p&gt;I also spent some time to configure VIM as a relative simple SAS IDE as a temporally replacement (F3 to run, F5 to jump to program window, F6 to log window, F7 to output window just as the same as in SAS IDE):&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/11/VIM_SAS.png&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;VIM_SAS&#34; border=&#34;0&#34; alt=&#34;VIM_SAS&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/11/VIM_SAS_thumb.png&#34; width=&#34;488&#34; height=&#34;575&#34; /&gt;&lt;/a&gt; It’s simple but always can do the job as SAS itself while looks really cool to comfort myself as a programmer. So, what’s going on in the next release? Still wait.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

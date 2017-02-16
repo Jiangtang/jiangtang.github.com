@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Log on Lithium Theme</title>
+    <link>/tags/log/index.xml</link>
+    <description>Recent content in Log on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/log/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Two SAS AF Utilities: LogFilter and Format Viewer</title>
+      <link>/2012/10/02/two-sas-af-utilities-logfilter-and-format-viewer/</link>
+      <pubDate>Tue, 02 Oct 2012 14:40:05 +0000</pubDate>
+      
+      <guid>/2012/10/02/two-sas-af-utilities-logfilter-and-format-viewer/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Nice to have (and easy to follow, both tested in Windows 7 with SAS 9.3M1 while they were both written in lower version of SAS):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;1. LogFilter: a SAS log checker by &lt;/strong&gt;&lt;/font&gt;&lt;a href=&#34;http://www.notecolon.info/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;rtsl&lt;/strong&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.ratcliffe.co.uk/rest_logfilt.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.ratcliffe.co.uk/rest_logfilt.htm&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;2. A SAS format viewer by &lt;/strong&gt;&lt;/font&gt;&lt;a href=&#34;http://frank-poppe.xs4all.nl/SAS/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;Frank Poppe&lt;/strong&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://frank-poppe.xs4all.nl/SAS/edit_format.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://frank-poppe.xs4all.nl/SAS/edit_format.html&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

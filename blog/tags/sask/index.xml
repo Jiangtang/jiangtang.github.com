@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sask on Lithium Theme</title>
+    <link>/tags/sask/index.xml</link>
+    <description>Recent content in Sask on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/sask/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>FYI: Dashboard using SAS/Graph</title>
+      <link>/2009/01/13/fyi-dashboard-using-sas/graph/</link>
+      <pubDate>Tue, 13 Jan 2009 15:01:00 +0000</pubDate>
+      
+      <guid>/2009/01/13/fyi-dashboard-using-sas/graph/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://1.bp.blogspot.com/_qlX7zyUQhog/SWw8f0hrkmI/AAAAAAAABFs/kciTZXVbaTU/s1600-h/dashboard.gif&#34; onblur=&#34;try {parent.deselectBloggerImageGracefully();} catch(e) {}&#34;&gt;&lt;img id=&#34;BLOGGER_PHOTO_ID_5290670179627012706&#34; style=&#34;cursor: pointer; width: 320px; height: 240px;&#34; src=&#34;http://1.bp.blogspot.com/_qlX7zyUQhog/SWw8f0hrkmI/AAAAAAAABFs/kciTZXVbaTU/s320/dashboard.gif&#34; border=&#34;0&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-style: italic;&#34;&gt;see&lt;/span&gt;, &lt;a href=&#34;http://support.sas.com/kb/26/134.html&#34;&gt;http://support.sas.com/kb/26/134.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Slider chart indicator:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26104.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26114.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26124.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Slider chart dashboard:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26105.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26115.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26125.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Bullet graph indicator:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26106.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26116.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26126.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Bullet graph dashboard:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26107.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26117.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26127.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Dial meter indicator:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26108.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26118.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26128.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Dial meter dashboard:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26109.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26119.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26129.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Bar chart indicator:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26110.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26120.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26130.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Bar chart dashboard:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26111.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26121.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26131.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Telesales dashboard:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26112.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26122.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26132.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Web marketing analysis dashboard:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26113.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26123.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26133.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You would also like, &lt;span style=&#34;font-style: italic;&#34;&gt;Santa&amp;#8217;s Dashboard&lt;/span&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://jiangtanghu.blogspot.com/2008/12/santa-and-sas-again-santa-dashboard.html&#34;&gt;http://jiangtanghu.blogspot.com/2008/12/santa-and-sas-again-santa-dashboard.html&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

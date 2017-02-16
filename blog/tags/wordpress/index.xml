@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wordpress on Lithium Theme</title>
+    <link>/tags/wordpress/index.xml</link>
+    <description>Recent content in Wordpress on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>WordPress and Black Friday</title>
+      <link>/2012/11/23/wordpress-and-black-friday/</link>
+      <pubDate>Fri, 23 Nov 2012 23:04:03 +0000</pubDate>
+      
+      <guid>/2012/11/23/wordpress-and-black-friday/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Yes it’s BLACK that today this WordPress based blog was down for a while with a 500 error:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The website encountered an error while retrieving &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.jiangtanghu.com/blog/&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. It may be down for maintenance or configured incorrectly.&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I checked web log and it says:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;[24-Nov-2012 02:58:49] PHP Parse error:&amp;#160; syntax error, unexpected T_STRING, expecting &amp;#8216;,&amp;#8217; or &amp;#8216;;&amp;#8217; in ../public_html/jiangtanghu/blog/wp-content/plugins/wp-conditional-captcha/wp-conditional-captcha.php on line 401&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;So the problem comes from a WordPress plugin “&lt;/font&gt;&lt;a href=&#34;http://wordpress.org/extend/plugins/wp-conditional-captcha/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Conditional CAPTCHA for WordPress&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;” . The line 401 in &lt;em&gt;wp-conditional-captcha.php&lt;/em&gt; is&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;li&gt;&lt;input type=&#34;radio&#34; name=&#34;pass_action&#34; id=&#34;pass_action_hold&#34; value=&#34;hold&#34; &lt;?php checked( $opts[&amp;#8216;pass_action&amp;#8217;], &amp;#8216;hold&amp;#8217;);?&gt; /&amp;gt; &lt;label for=&#34;pass_action_hold&#34;&gt;&amp;lt;?php _e(&amp;#8216;Queue the comment for moderation&amp;#8217;, &amp;#8216;wp-conditional-captcha&amp;#8217;);?&amp;gt;&lt;/label&gt;&lt;/li&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I use WordPress v3.4.2 and “&lt;/font&gt;&lt;a href=&#34;http://wordpress.org/extend/plugins/wp-conditional-captcha/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Conditional CAPTCHA for WordPress&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;” v3.2.6. I didn’t notice this error before and it may be a compatibility issue (I know 0 about PHP). So my solution: delete the plugin.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Furthermore, I plan to switch to Github+&lt;/font&gt;&lt;a href=&#34;https://github.com/mojombo/jekyll&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;jekyll&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and get rid of WordPress (sorry, you are wonderful; I&amp;#8217;m just an emotional customer in this crazy Black Friday) .&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

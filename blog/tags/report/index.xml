@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Report on Lithium Theme</title>
+    <link>/tags/report/index.xml</link>
+    <description>Recent content in Report on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/report/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SAS ODS Report Writing Interface: A Quick Demo</title>
+      <link>/2013/02/17/sas-ods-report-writing-interface-a-quick-demo/</link>
+      <pubDate>Sun, 17 Feb 2013 20:21:00 +0000</pubDate>
+      
+      <guid>/2013/02/17/sas-ods-report-writing-interface-a-quick-demo/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/IRIS.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;IRIS&#34; border=&#34;0&#34; alt=&#34;IRIS&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/IRIS_thumb.png&#34; width=&#34;335&#34; height=&#34;451&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I personally nominated &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/datastep/dsobject/index.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS ODS Report Writing Interface&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;was the one of the &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/12/31/best-of-sas-a-personal-nomination-2012/&#34;&gt;&lt;font size=&#34;1&#34;&gt;best technology I found in SAS in 2012&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. It can generates reports cell by cell and row by row and has much flexibility to produce highly customized reports. Basically, to use it,&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;first assign an ODS destination. Nothing new, and I prefer HTML like&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods html&amp;#160;&amp;#160; file=&amp;ldquo;output.html&amp;rdquo; style=sasweb;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;then create a object(instance) based on the ODS Report Writing class, odsout,&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;declare odsout myout();&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;ODS Report Writing Interface holds some so called object oriented features. Odsout is a predefined class (or, a SET, a CONTAINER), then you take from it a instance or an object, myout(or any other legal SAS variable names). Suppose Odsout is a class for apples, then myout is a specific apple.&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;apply methods associated with the Odsout class, like CELL, ROW, TABLE to generate reports.&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Roughly methods are just the functions (subroutines, procedures) in the object oriented world. For example, in SAS Data Steps, you use function &lt;font face=&#34;Courier New&#34;&gt;weight(apple)&lt;/font&gt; to get the weight of the apple; in object oriented world, you use &lt;font face=&#34;Courier New&#34;&gt;apple.weight()&lt;/font&gt; to return the same thing. In ODS Report Writing Interface, if you want to get a table, use TABLE methods:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;myout.TABLE_START() to start a table&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;myout.TABLE_END to end a table&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Then all we need to do next is to use the flexible SAS data steps to leverage the ODS Report Writing Interface methods (see docs). The codes, you can see below, are pretty verbose compared to its counterparts, PROC REPORT, but that’s why it gains power to build highly customized reports. It’s also very structural (and easy to build, like playing blocks):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;making a sortable HTML table&lt;/em&gt;/ &lt;br /&gt;%macro ods_html_sort_table; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; &lt;script src=&amp;#8217;&lt;/font&gt;&lt;a href=&#34;http://goo.gl/Pg0GB&#34;&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;http://goo.gl/Pg0GB&amp;#8217;&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;gt;&lt;/script&gt; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; &lt;script src=&amp;#8217;&lt;/font&gt;&lt;a href=&#34;http://goo.gl/ruKEb&#34;&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;http://goo.gl/ruKEb&amp;#8217;&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;gt;&lt;/script&gt; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; &lt;script&gt;$(document).ready(function(){$(&amp;#8216;.table&amp;#8217;).tablesorter({widgets: [&amp;#8216;zebra&amp;#8217;]});});&lt;/script&gt; &lt;br /&gt;%mend;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;title ; &lt;br /&gt;ods listing close; &lt;br /&gt;ods html&amp;#160;&amp;#160; file=&amp;ldquo;a:\test\iris.html&amp;rdquo; style=sasweb headtext=&amp;ldquo;%ods_html_sort_table&amp;rdquo;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data _null; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set sashelp.iris; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; by Species; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;/&lt;em&gt;&amp;#160;&amp;#160;&amp;#160; create an object, obj, based on the ODS Report Writing class, odsout&lt;/em&gt;/ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; if &lt;em&gt;n&lt;/em&gt; = 1 then do; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; dcl odsout obj(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; end;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; if (first.Species) then do; *by group processing; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.title(text: &amp;ldquo;Fisher&amp;#8217;s Iris Data Set by Species&amp;rdquo;); *title;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; start a table&lt;/em&gt;/ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.table_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; if (Species = &amp;ldquo;Setosa&amp;rdquo;) then &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.image(file: &amp;ldquo;Iris_setosa.jpg&amp;rdquo; );*insert image; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; else if (Species = &amp;ldquo;Versicolor&amp;rdquo;) then &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.image(file: &amp;ldquo;Iris_versicolor.jpg&amp;rdquo; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; else if (Species = &amp;ldquo;Virginica&amp;rdquo;) then &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.image(file: &amp;ldquo;Iris_virginica.jpg&amp;rdquo; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_end();&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Iris Species&amp;rdquo;,&amp;#160; overrides: &amp;ldquo;fontweight=bold just=right&amp;rdquo; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: Species, column_span: 3, overrides: &amp;ldquo;just=left&amp;rdquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_end();&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Unit&amp;rdquo;,&amp;#160; overrides: &amp;ldquo;fontweight=bold just=right&amp;rdquo; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;(mm)&amp;rdquo;, column_span: 3, overrides: &amp;ldquo;just=left&amp;rdquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_end(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.table_end();&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; /* start another table */ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.table_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.head_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Sepal Length&amp;rdquo; , overrides: &amp;ldquo;fontweight=bold&amp;rdquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Sepal Width&amp;rdquo; , overrides: &amp;ldquo;fontweight=bold&amp;rdquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Petal Length&amp;rdquo; , overrides: &amp;ldquo;fontweight=bold&amp;rdquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Petal Width&amp;rdquo; , overrides: &amp;ldquo;fontweight=bold&amp;rdquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_end(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.head_end(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; end;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(data: SepalLength); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(data: SepalWidth); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(data: PetalWidth); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(data: SepalLength); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_end();&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; if (last.Species) then do; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.table_end();&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.note(data: &amp;ldquo;Note: These Tables are Sortable.&amp;ldquo;); *note;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.foot_start(); *footer; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.cell_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_text(data: &amp;ldquo;Footer: Data from SAS V&amp;amp;sysver at &amp;amp;sysscp &amp;amp;sysscpl Sashelp.iris&amp;rdquo;,just:&amp;ldquo;C&amp;rdquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.cell_end(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.row_end(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.foot_end();&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.page(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; end; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods html close; &lt;br /&gt;ods listing;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Note:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;A flavor added to get a sortable HTML report. Thanks to &lt;/font&gt;&lt;a href=&#34;http://www.sasanalysis.com/2013/01/make-all-sas-tables-sortable-in-output.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;Charlie Huang&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and then &lt;/font&gt;&lt;a href=&#34;https://heuristically.wordpress.com/2013/01/17/sortable-html-tables-sas-ods/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Andrew Z&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;to introduce a Javascript library JQury to SAS HTML report.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;The full report, see &lt;/font&gt;&lt;a href=&#34;https://heuristically.wordpress.com/2013/01/17/sortable-html-tables-sas-ods/&#34;&gt;&lt;font size=&#34;1&#34;&gt;here&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;font size=&#34;1&#34;&gt;If column spannings needed, use the following codes as header (and the report &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/docs/en/demo/iris_spanning.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;here&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;):&lt;/font&gt;
+&amp;gt; &lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;obj.head_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; obj.row_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Sepal&amp;rdquo; , overrides: &amp;ldquo;fontweight=bold&amp;rdquo;,column_span: 2); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Petal&amp;rdquo; , overrides: &amp;ldquo;fontweight=bold&amp;rdquo;,column_span: 2); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; obj.row_end();&lt;/font&gt;
+&amp;gt;
+&amp;gt; &lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; obj.row_start(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Length&amp;rdquo; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Width&amp;rdquo; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Length&amp;rdquo; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; obj.format_cell(text: &amp;ldquo;Width&amp;rdquo; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; obj.row_end(); &lt;br /&gt;obj.head_end();&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;font size=&#34;1&#34;&gt;ODS Report Writing Interface will get rid of its preproduction hat since SAS 9.4, but you can use it somehow since SAS 9.1.3. For more, see the &lt;a href=&#34;http://support.sas.com/documentation/solutions/early/&#34;&gt;draft SAS 9.4 ODS documentation&lt;/a&gt; with &lt;font size=&#34;1&#34;&gt;ODS Report Writing Interface.&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;font size=&#34;1&#34;&gt;To get started, see &lt;a href=&#34;http://support.sas.com/rnd/base/datastep/dsobject/Power_to_show_paper.pdf&#34;&gt;the developer’s paper&lt;/a&gt;.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

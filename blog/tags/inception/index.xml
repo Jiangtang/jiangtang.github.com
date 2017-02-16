@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Inception on Lithium Theme</title>
+    <link>/tags/inception/index.xml</link>
+    <description>Recent content in Inception on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/inception/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Recursive Referencing and Binomial Proportion Interval</title>
+      <link>/2010/11/03/recursive-referencing-and-binomial-proportion-interval/</link>
+      <pubDate>Wed, 03 Nov 2010 20:47:44 +0000</pubDate>
+      
+      <guid>/2010/11/03/recursive-referencing-and-binomial-proportion-interval/</guid>
+      <description>&lt;p&gt;To understand &lt;a href=&#34;http://en.wikipedia.org/wiki/Recursion&#34;&gt;recursion&lt;/a&gt;, one of the most important concepts in programming languages, you could watch the movie, Chris Nolan’s &lt;em&gt;&lt;a href=&#34;www.inceptionmovie.com&#34;&gt;Inception&lt;/a&gt;&lt;/em&gt;: it is about a dream within a dream within a dream, …and, read two statistical papers by Professor &lt;a href=&#34;http://medicine.cf.ac.uk/en/person/prof-robert-gordon-newcombe/&#34;&gt;Robert Newcombe&lt;/a&gt;, one of the most &lt;a href=&#34;http://medicine.cf.ac.uk/en/person/prof-robert-gordon-newcombe/publications/&#34;&gt;prolific statisticians&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;cite&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=9595616&amp;query_hl=1&#34;&gt;&lt;strong&gt;Two-sided confidence intervals for the single proportion: comparison of seven methods.&lt;/strong&gt;&lt;/a&gt; &lt;/cite&gt;&lt;br /&gt;
+Newcombe RG, &lt;font color=&#34;#ff0000&#34;&gt;&lt;cite&gt;Stat Med&lt;/cite&gt; , Volume 17 , 8 (April 1998) pp.857-&lt;strong&gt;872&lt;/strong&gt;&lt;/font&gt; ****&lt;/li&gt;
+&lt;li&gt;&lt;cite&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=9595617&amp;query_hl=1&#34;&gt;&lt;strong&gt;Interval estimation for the difference between independent proportions: comparison of eleven methods.&lt;/strong&gt;&lt;/a&gt; &lt;/cite&gt;&lt;br /&gt;
+Newcombe RG, &lt;font color=&#34;#ff0000&#34;&gt;&lt;cite&gt;Stat Med&lt;/cite&gt; , Volume 17 , 8 (April 1998) pp.&lt;strong&gt;873&lt;/strong&gt;-890&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These two widely cited papers evaluate 7 and 11 methods to calculate single proportion (paper &lt;font color=&#34;#ff0000&#34;&gt;A&lt;/font&gt;) and the difference between proportions (paper &lt;font color=&#34;#ff0000&#34;&gt;B&lt;/font&gt;), respectively. Further more, they were in the same issue of &lt;a href=&#34;http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-0258&#34;&gt;&lt;em&gt;Statistics in Medicine&lt;/em&gt;&lt;/a&gt;(Volume 17, 1998), and, they were also cross referenced! So here is a live story about recursive referencing(thanks to Prof. Newcombe):&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2010/11/megamonalisa_recursion.jpg&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;megamonalisa_recursion&#34; border=&#34;0&#34; alt=&#34;megamonalisa_recursion&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2010/11/megamonalisa_recursion_thumb.jpg&#34; width=&#34;245&#34; height=&#34;371&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;An author writes two papers, A and B;&lt;/li&gt;
+&lt;li&gt;Paper B is in the&amp;#160; bibliographic reference session of paper A;&lt;/li&gt;
+&lt;li&gt;Paper A is also in the&amp;#160; bibliographic reference session of paper B;&lt;/li&gt;
+&lt;li&gt;Paper A and paper B are in the same issue of a journal.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;Note&lt;/font&gt; that for Prof. Newcombe’s two linked papers, it is common and acceptable in publication practices. Recently I used these two wonderful papers to learn CI calculation and this post just want to lead to the concept of “recursion”&amp;#160; (reference in reference in reference).&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

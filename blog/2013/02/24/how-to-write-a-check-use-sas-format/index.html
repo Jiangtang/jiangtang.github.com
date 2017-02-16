@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>How to Write a Check? Use SAS Format! - Lithium Theme</title>
+<meta property="og:title" content="How to Write a Check? Use SAS Format! - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">How to Write a Check? Use SAS Format!</h1>
+
+    
+    <span class="article-date">February 24, 2013</span>
+    
+
+    <div class="article-content">
+      
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/5write_a_check_step5_sign_memo.jpg"><font size="1"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="5write_a_check_step5_sign_memo" border="0" alt="5write_a_check_step5_sign_memo" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/5write_a_check_step5_sign_memo_thumb.jpg" width="441" height="208" /></font></a></p>
+
+<p><font size="1">During my initial stay in US last year, one of the interesting exercises was </font><a href="http://banking.about.com/od/checkingaccounts/ig/How-to-Write-a-Check/How-to-Write-a-Check---Step-7.htm"><font size="1">to write a check</font></a><font size="1">. The Arabic numerals (<em>the universal language!</em>) were pretty intuitive while I didn’t feel much comfortable on spelling the face value in words: I never played the game! </font></p>
+
+<p><font size="1">But the good side of this story was, as a SAS programmer and I used a </font><a href="http://support.sas.com/documentation/cdl/en/leforinforref/63324/HTML/default/viewer.htm#n1ncdkav4uqfwin1k5mow7z69avw.htm"><font size="1">WORDFw. Format</font></a><font size="1">:</font></p>
+
+<blockquote>
+<p><font size="1" face="Courier New">data <em>null</em>; <br />&#160;&#160;&#160; money=8.15; <br />&#160;&#160;&#160; put money <font color="#ff0000">wordf</font>100.; <br />run;</font></p>
+</blockquote>
+
+<p><font size="1">and got:</font></p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/SAS_Format_Check.png"><font size="1"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="SAS_Format_Check" border="0" alt="SAS_Format_Check" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/SAS_Format_Check_thumb.png" width="395" height="158" /></font></a></p>
+
+<p><font size="1">Another check with a bigger value:</font></p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/SAS_Format_Check2.png"><font size="1"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px" title="SAS_Format_Check2" border="0" alt="SAS_Format_Check2" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/SAS_Format_Check2_thumb.png" width="410" height="157" /></font></a></p>
+
+<h2 id="font-size-1-strong-2-strong-font"><font size="1"><strong>2</strong></font></h2>
+
+<p><font size="1">I paid specially interested on SAS Format recently because of the introducing Perl Regular Expression into PROC FORMAT invalue statement since SAS 9.3(<em>an old procedure plays a new game!</em>). For example, a labeled TIME8. informat created by</font></p>
+
+<blockquote>
+<p><font size="1" face="Courier New">proc format; <br />&#160;&#160;&#160; invalue xxx (default=20) <br />&#160;&#160;&#160;&#160;&#160; &#8216;<font color="#ff0000">/(\d+):(\d\d)(?:.(\d+))?/</font>&#8216; (REGEXP) = [time8.]; <br />run;</font></p>
+</blockquote>
+
+<p><font size="1">For more, see Rick Langston’s paper, <em><a href="http://support.sas.com/resources/papers/proceedings12/245-2012.pdf">Using the New Features in PROC FORMAT</a></em> (2012).</font></p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<script async type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+    
+  </body>
+</html>
+

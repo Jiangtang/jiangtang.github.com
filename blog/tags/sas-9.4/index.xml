@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sas 9.4 on Lithium Theme</title>
+    <link>/tags/sas-9.4/index.xml</link>
+    <description>Recent content in Sas 9.4 on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/sas-9.4/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How I Use SAS?</title>
+      <link>/2013/09/16/how-i-use-sas/</link>
+      <pubDate>Mon, 16 Sep 2013 12:48:31 +0000</pubDate>
+      
+      <guid>/2013/09/16/how-i-use-sas/</guid>
+      <description>
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It’s pretty fun to read SAS/Graph expert &lt;/font&gt;&lt;a href=&#34;http://robslink.com/SAS/Home.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;Robert Allison&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;’s note,&lt;em&gt; &lt;a href=&#34;http://robslink.com/SAS/papers/using_sas/using_sas.htm&#34;&gt;Using SAS- A Case Study&lt;/a&gt;&lt;/em&gt; on his SAS programming environment, such as SAS version, OS, fileserver and editors. Here is my follow up:&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;sas-version&#34;&gt;SAS Version&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I always want to &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/07/11/catch-up-with-sas/&#34;&gt;&lt;font size=&#34;1&#34;&gt;keep pace with the latest SAS&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;software; something I got it, sometime not. As of September 2013, &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/07/28/open-box-sas-9-4-in-windows-7/&#34;&gt;&lt;font size=&#34;1&#34;&gt;I use SAS 9.4&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;in my workstation.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For different tasks, clients or their combinations, I should use specific versions of SAS in customers’ computing environment remotely or in virtual machines; they are mostly SAS 9.2 and 9.3. Occasionally I touch SAS 9.1.3 (which was my first SAS version in 2006) and even 8.2 for migration purpose.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I like the latest SAS because, I like all my desktop software and mobile apps to be updated, automatically at best. Although it is not necessary for some cases, I hate to have bits of yesterday’s food in my desktop. For SAS particularly, it doesn’t hurt to be move forward to the new version like 9.4 while I get bonus like &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/02/17/sas-ods-report-writing-interface-a-quick-demo/&#34;&gt;&lt;font size=&#34;1&#34;&gt;ODS Reporting Writing Interface&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. Work with multiple versions of SAS and I find SAS codes themselves are amazingly portable across versions and OS (&lt;em&gt;Dear R users—no offending, please rerun the &lt;/em&gt;&lt;/font&gt;&lt;a href=&#34;http://www.r-project.org/misc/acpclust.R&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;R codes&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;_ &lt;font size=&#34;1&#34;&gt;to generate the cover graph for &lt;/font&gt;&lt;em&gt;[&lt;/em&gt;&lt;font size=&#34;1&#34;&gt;www.r-project.org&lt;/font&gt;_](&lt;a href=&#34;http://www.r-project.org&#34;&gt;http://www.r-project.org&lt;/a&gt;)&lt;font size=&#34;1&#34;&gt;).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;os&#34;&gt;OS&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I primarily work on Windows and run PC SAS. But even in Windows, I need to play with Unix/Linux SAS in such instances:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. SAS Drug Development: For version 4.x, I use Google Chrome in Windows to open a web interface, then launch a SAs session (with a web editor). The SAS itself is Linux based.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2. SAS Integration Studio (DIS) and Enterprise Guide (EG): In some Windows machines, the DIS or EG is the only client available to talk with SAS which is installed in a Linux server. EG is great to connect multiple servers. DIS is primarily for ETL jobs, but it’s nice to have if you only want to run some SAS Base codes.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;3. If I need to jump into the black Unix box, I use Putty or Cygwin to get a terminal, write and edit code in vi and run it on batch.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I rarely use SAS GUI (I use Xming to invoke it) in Unix; The X-window is ugly and to tell the truth, I don’t know how to play the program editor with line number like 0002! Sometime I use it to view the metadata tree.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;dms-or-batch&#34;&gt;DMS or Batch&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In PC SAS, I use DMS (Display Manager System, the one with the Enhanced Editor) for interactive debugging. If all goes well, I will run them in batch just to double check everything is OK.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I run SAS in batch mode in Windows when use text editors (only) like &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/11/13/vim-as-a-sas-ide/&#34;&gt;&lt;font size=&#34;1&#34;&gt;VIM&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/13/sublimetext2-sas/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Sublime Text&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;with SAS configurations.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In Unix, I use a default editor vi to edit SAS code then run it in command line (the batch mode).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;editors&#34;&gt;Editors&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;My favorite editors in Windows are &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/resources/papers/proceedings11/211-2011.pdf&#34;&gt;&lt;font size=&#34;1&#34;&gt;Notepad++,&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/11/13/vim-as-a-sas-ide/&#34;&gt;&lt;font size=&#34;1&#34;&gt;VIM&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/13/sublimetext2-sas/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Sublime Text&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. VIM and Sublime Text are great for writing while Notepad++ is perfect for viewing, finding and replacing. Since I got Sublime Text, I use it as partial replacement of VIM because it supports some basic VI operations.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In Unix, I use vi. That’s because I didn’t touch Emacs.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;viewing-outputs&#34;&gt;Viewing Outputs&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I like the DMS in PC SAS because it supports all SAS elements, datasets, formats, macro catalogs and such. &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/08/27/sas-system-viewer-doesnt-support-sas-9-4-dataset/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Before SAS 9.4&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, I also like to use &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/07/16/sas-system-viewer/&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS System Viewer&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;to open SAS datasets. SAS Universal Viewer just sucks.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For PDF outputs, I use Foxit Reader. For HTML, I like Google Chrome.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In Unix, well, after batch run, I check the result in the mapped Windows driver.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;sas-products&#34;&gt;SAS Products&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;SAS Base&lt;/strong&gt;: Data Step, ODS, SQL, Macro, XML, Regular Expression, Reporting, ODS Graphics and whatever makes a SAS programmer. Love it.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;SAS/Graph: I didn’t touch it since the ODS graphics available in SAS 9.2. &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;SAS/STAT&lt;/strong&gt;: I’m not a statistician but a user. My favorite procedures are &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/tost-equivalence-test/&#34;&gt;&lt;font size=&#34;1&#34;&gt;PROC TTEST&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/08/25/confidence-intervals-for-difference-between-independent-binomial-proportions-a-sas-9-4stat-12-3-update/&#34;&gt;&lt;font size=&#34;1&#34;&gt;PROC FREQ,&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;PROC GLM, PROC LOGISTIC, PROC LIFETEST, PROC PHREG which I use heavily as a statistical SAS programmer in clinical section.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;SAS/IML: I didn’t touch it after &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2010/10/29/sas-iml-basic/&#34;&gt;&lt;font size=&#34;1&#34;&gt;2010&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. That’s because I seldom find a machine licensed with IML! I think it would be good idea to &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/10/16/incorporate-sasiml-to-base-sas/&#34;&gt;&lt;font size=&#34;1&#34;&gt;put it to SAS Base&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;SAS Data Integration Studio&lt;/strong&gt;: For ETL. Sometimes it is my only client to talk with SAS. &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;SAS Enterprise Guide&lt;/strong&gt;: It’s a great client to communicate with multiple SAS servers, but it is not 100% compatible with SAS Base (it’s sad). I like its editor and navigation panels. It will rock in the future.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;SAS Clinical Toolkits&lt;/strong&gt; and &lt;strong&gt;SAS Clinical Data Integration&lt;/strong&gt;: For CDISC stuff. It’s my primary technical job working as a clinical consultant.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;SAS Drug Development&lt;/strong&gt;: A SAS hosting environment for pharmas.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;SAS System Viewer&lt;/strong&gt;: The &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/07/16/sas-system-viewer/&#34;&gt;&lt;font size=&#34;1&#34;&gt;good&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;SAS Universal Viewer: The &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/07/16/sas-system-viewer/&#34;&gt;&lt;font size=&#34;1&#34;&gt;bad&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;but it is the only option in most machines.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;SAS XML Mapper&lt;/strong&gt;: The primary tool I use to play with XML files.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;SAS Power&amp;#160; and Sample Size&lt;/strong&gt;: I checked it for a while to accompany with nQuery Advisor.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;SAS PC File Server&lt;/strong&gt;: a trouble maker when across Excel and SAS bitness (&lt;sup&gt;32&lt;/sup&gt;&amp;frasl;&lt;sub&gt;64&lt;/sub&gt; bits); but if installed right, it’s nice tool to read Excel files across OS.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;SAS Documentation Viewer&lt;/strong&gt;: I like the SAS 9.4 Documentation Viewer. It’s much quicker.&lt;/font&gt; The only flaw is the lack of Favorite tab.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Confidence Intervals for Difference Between Independent Binomial Proportions: A SAS 9.4/STAT 12.3 Update</title>
+      <link>/2013/08/25/confidence-intervals-for-difference-between-independent-binomial-proportions-a-sas-9.4/stat-12.3-update/</link>
+      <pubDate>Sun, 25 Aug 2013 23:32:29 +0000</pubDate>
+      
+      <guid>/2013/08/25/confidence-intervals-for-difference-between-independent-binomial-proportions-a-sas-9.4/stat-12.3-update/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For the computing of confidence intervals for difference between two independent binomial proportions in SAS 9.4/STAT 12.3, it’s hard to figure out exactly how many methods are available because there is no “CL=ALL” trigger in RISKDIFF option (but you can get one in &lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/08/22/confidence-intervals-for-binomial-proportion-a-sas-9-4stat-12-3-update/&#34;&gt;BIONOMIAL option&lt;/a&gt; to compute the confidence intervals for binomial proportion). As far as I hacked, I got 11 intervals (&lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/23/statistical-notes-5-confidence-intervals-for-difference-between-independent-binomial-proportions-using-sas/&#34;&gt;&lt;font size=&#34;1&#34;&gt;last year I tried SAS 9.3 and got 8&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;; codes available below):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/CI_diff_94.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;CI_diff_94&#34; border=&#34;0&#34; alt=&#34;CI_diff_94&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/CI_diff_94_thumb.png&#34; width=&#34;392&#34; height=&#34;346&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. There 3 new methods I just got from SAS 9.4/STAT 12.3 are&amp;#160; Miettinen-Nurminen-Mee, Miettinen-Nurminen and Agresti-Caffo.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2.&amp;#160; The methods with number marks are align with Prof. Newcombe ’s paper, &lt;em&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/9595617?dopt=Abstract&#34;&gt;&lt;strong&gt;Interval estimation for the difference between independent proportions: comparison of eleven methods&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;&amp;#160;&lt;/strong&gt;(a fraction of outputs attached in &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/23/statistical-notes-5-confidence-intervals-for-difference-between-independent-binomial-proportions-using-sas/&#34;&gt;my post&lt;/a&gt;)&lt;/em&gt;.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;3. I’m still trying to figure out why the &lt;font color=&#34;#ff0000&#34;&gt;exact&lt;/font&gt; method produces different numbers compared to what’s in Prof. Newcombe’s report.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;4. The codes produced the outputs:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data ci; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input grp res count; &lt;br /&gt;datalines; &lt;br /&gt;1 0 56 &lt;br /&gt;1 1 14 &lt;br /&gt;2 0 48 &lt;br /&gt;2 1 32 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;non-exactmethods: &lt;br /&gt;Agresti-Caffo &lt;br /&gt;Farrington-Manning &lt;br /&gt;Hauck-Anderson &lt;br /&gt;Miettinen-Nurminen &lt;br /&gt;Newcombe Score &lt;br /&gt;Wald &lt;br /&gt;*/ &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci1; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CL=(AC FM HA MN WILSON WALD)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;exact methods: &lt;br /&gt;Exact &lt;br /&gt;Exact (FM Score) &lt;br /&gt;*/ &lt;br /&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci2; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CL=(EXACT)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; exact riskdiff; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci3; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CL=(EXACT)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; exact riskdiff(fmscore); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;methods (CC): &lt;br /&gt;Mee &lt;br /&gt;Newcombe Score (Corrected) &lt;br /&gt;Wald (Corrected) &lt;br /&gt;*/ &lt;br /&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci4; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CORRECT CL=(MN(CORRECT=NO) WILSON WALD)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data CI_all; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set ci4 ci3 ci2 ci1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; CI=&amp;lsquo;(&amp;#8216;||compress(put(LowerCL,8.4))||&amp;#8217;, &amp;#8216;||compress(put(UpperCL,8.4))||&amp;#8217;)&amp;#8217;; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc sql; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; select &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; case Type &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Wald&amp;rdquo; then &amp;ldquo;a&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Wald (Corrected)&amp;rdquo; then &amp;ldquo;b&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Miettinen-Nurminen-Mee&amp;rdquo; then &amp;ldquo;b1&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Miettinen-Nurminen&amp;rdquo; then &amp;ldquo;b2&amp;rdquo;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Agresti-Caffo&amp;rdquo; then &amp;ldquo;b3&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Exact&amp;rdquo; then &amp;ldquo;c&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Exact (FM Score)&amp;rdquo; then &amp;ldquo;d&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Newcombe Score&amp;rdquo; then &amp;ldquo;e&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Newcombe Score (Corrected)&amp;rdquo; then &amp;ldquo;f&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Farrington-Manning&amp;rdquo; then &amp;ldquo;g&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Hauck-Anderson&amp;rdquo; then &amp;ldquo;h&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; else &amp;ldquo;i&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; end as order length=2, &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Type &amp;ldquo;method&amp;rdquo;, &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; CI &amp;ldquo;95% Confidence Limits&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; from CI_all &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; order by order &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Confidence Intervals for Binomial Proportion: A SAS 9.4/STAT 12.3 Update</title>
+      <link>/2013/08/22/confidence-intervals-for-binomial-proportion-a-sas-9.4/stat-12.3-update/</link>
+      <pubDate>Thu, 22 Aug 2013 10:57:01 +0000</pubDate>
+      
+      <guid>/2013/08/22/confidence-intervals-for-binomial-proportion-a-sas-9.4/stat-12.3-update/</guid>
+      <description>&lt;nav&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#1-a-new-confidence-limits-method-added-wilson-corrected&#34;&gt;1. A new confidence limits method added, Wilson (Corrected)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#2-the-font-color-ff0000-binomialc-font-option-is-no-longer-documented-but-still-works&#34;&gt;2. The &lt;font color=&#34;#ff0000&#34;&gt;binomialc&lt;/font&gt; option is no longer documented, but still works&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;After getting the access to &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/07/28/open-box-sas-9-4-in-windows-7/&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS 9.4&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;alone with SAS/STAT 12.3, I first took a look at my favorite SAS statistical procedure, &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/66103/HTML/default/viewer.htm#statug_freq_toc.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;PROF FREQ&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&amp;#160; Last year I had a note on &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/15/confidence-intervals-binomial-proportion/&#34;&gt;&lt;font size=&#34;1&#34;&gt;confidence intervals for binomial proportion based on SAS 9.2/SAS9.3&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. Now it’s time to throw out some updates.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;1-a-new-confidence-limits-method-added-wilson-corrected&#34;&gt;1. A new confidence limits method added, Wilson (Corrected)&lt;/h6&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In my previous post, SAS PROC FREQ computed 6 of the 11 intervals (#1, 2, 3, 5, 8, 9; see my macros, &lt;em&gt;&lt;a href=&#34;https://raw.github.com/Jiangtang/Programming-SAS/master/CI_Single_Proportion.sas&#34;&gt;CI_Single_Proportion.sas&lt;/a&gt;&lt;/em&gt;). Since SAS 9.4/STAT 12.3, #4 added:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data test; &lt;br /&gt;input grp outcome $ count; &lt;br /&gt;datalines; &lt;br /&gt;1 f 81 &lt;br /&gt;1 u 182 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods select BinomialCLs; &lt;br /&gt;proc freq data=test; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables outcome / binomial (CL=ALL); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight Count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;ods select BinomialCLs; &lt;br /&gt;proc freq data=test; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables outcome / &lt;font color=&#34;#ff0000&#34;&gt;binomialc&lt;/font&gt; (CL=ALL); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight Count; &lt;br /&gt;run;&lt;/font&gt; &lt;br /&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/CI_9.4.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;CI_9.4&#34; border=&#34;0&#34; alt=&#34;CI_9.4&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/CI_9.4_thumb.png&#34; width=&#34;343&#34; height=&#34;164&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/CI_c_9.4.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;CI_c_9.4&#34; border=&#34;0&#34; alt=&#34;CI_c_9.4&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/CI_c_9.4_thumb.png&#34; width=&#34;351&#34; height=&#34;168&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;2-the-font-color-ff0000-binomialc-font-option-is-no-longer-documented-but-still-works&#34;&gt;2. The &lt;font color=&#34;#ff0000&#34;&gt;binomialc&lt;/font&gt; option is no longer documented, but still works&lt;/h6&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In the above session, a &lt;font color=&#34;#ff0000&#34;&gt;binomialc&lt;/font&gt; option was used to compute the intervals with a continuity correction(CC). Actually it still works &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/66103/HTML/default/viewer.htm#statug_freq_syntax08.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;in SAS 9.4/STAT 12.3 but without documentation&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;(it’s in &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/procstat/63104/HTML/default/viewer.htm#procstat_freq_sect010.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS 9.2&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/63962/HTML/default/viewer.htm#statug_freq_sect010.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS 9.3&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;). Instead, a &lt;font color=&#34;#ff0000&#34;&gt;CORRECT&lt;/font&gt; options is used for continuity correction:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods select BinomialCLs; &lt;br /&gt;proc freq data=test; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables outcome / binomial (&lt;font color=&#34;#ff0000&#34;&gt;CORRECT&lt;/font&gt; CL=ALL); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight Count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Also, you can use it this way to only compute intervals with CC:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods select BinomialCLs; &lt;br /&gt;proc freq data=test; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables outcome / binomial (CL=W(&lt;font color=&#34;#ff0000&#34;&gt;CORRECT&lt;/font&gt;) WALD(&lt;font color=&#34;#ff0000&#34;&gt;CORRECT&lt;/font&gt;)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight Count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Good Morning, Hotfix Tool for SAS 9.4</title>
+      <link>/2013/07/29/good-morning-hotfix-tool-for-sas-9.4/</link>
+      <pubDate>Mon, 29 Jul 2013 09:56:11 +0000</pubDate>
+      
+      <guid>/2013/07/29/good-morning-hotfix-tool-for-sas-9.4/</guid>
+      <description>&lt;p&gt;The first news I got from today’s inbox is that SAS Hot Fix Analysis Download and Deployment Tool (SASHFADD) for SAS 9.4 is released today.&amp;#160; Just yesterday I found &lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/07/28/open-box-sas-9-4-in-windows-7/&#34;&gt;it was not available&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I did a quick launching and it works fine. Check it out:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://ftp.sas.com/techsup/download/hotfix/HF2/SASHFADD.html&#34;&gt;http://ftp.sas.com/techsup/download/hotfix/HF2/SASHFADD.html&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Open Box: SAS 9.4 in Windows 7</title>
+      <link>/2013/07/28/open-box-sas-9.4-in-windows-7/</link>
+      <pubDate>Sun, 28 Jul 2013 16:06:37 +0000</pubDate>
+      
+      <guid>/2013/07/28/open-box-sas-9.4-in-windows-7/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/07/SAS94.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS94&#34; border=&#34;0&#34; alt=&#34;SAS94&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/07/SAS94_thumb.png&#34; width=&#34;480&#34; height=&#34;253&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;That’s a record in my personal SAS software adoption: SAS 9.4 was released at 10 July 2013 and &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/07/11/catch-up-with-sas/&#34;&gt;&lt;font size=&#34;1&#34;&gt;I just got it installed two weeks later&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;! &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Here my first-day notes with SAS 9.4:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. SAS Foundation 9.4 can be co-existed with SAS 9.3. If SAS 9.3 was already installed, the default of path of 9.4 is &lt;strong&gt;C:\Program Files\SASHome2&lt;/strong&gt;; otherwise, it will take over &lt;strong&gt;C:\Program Files\SASHome&lt;/strong&gt;.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2. But for &lt;strong&gt;SAS PC Files Server 9.4&lt;/strong&gt;, you should uninstall the old version first since they will share the same port number 9621.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;3. Only &lt;strong&gt;64 bit&lt;/strong&gt; machine can hold SAS 9.4.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;4. No Java Runtime Environment(&lt;strong&gt;JRE&lt;/strong&gt;) is pre-required. Instead, a &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/kb/48/548.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS Private JRE&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;(version 1.7.0_15) will be installed automatically (time to get rid of your 32 bit of JRE6, &lt;em&gt;jre-6u24-windows-i586&lt;/em&gt;!).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;5. It is said Windows &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/kb/50/123.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;Powershell&lt;/strong&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;will be needed for some SAS 9.4 deployment. I didn’t figure it out since I only did the SAS Foundation installation.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;6.The SAS Hot Fix Analysis, Download and Deployment Tool (&lt;/font&gt;&lt;a href=&#34;ftp://ftp.sas.com/techsup/download/hotfix/HF2/SASHFADD.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;SASHFADD&lt;/strong&gt;&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;) is currently not available for SAS 9.4. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;7. New icon(but the little “runman” is the same):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/07/SAS93_icone.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS93_icone&#34; border=&#34;0&#34; alt=&#34;SAS93_icone&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/07/SAS93_icone_thumb.png&#34; width=&#34;101&#34; height=&#34;34&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/07/SAS_94_icone.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS_94_icone&#34; border=&#34;0&#34; alt=&#34;SAS_94_icone&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/07/SAS_94_icone_thumb.png&#34; width=&#34;106&#34; height=&#34;49&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;8. The default &lt;strong&gt;YEARCUTOFF&lt;/strong&gt; is no longer 1920. It’s now 1926. OK, we have 12 years to reach to the year of 2025.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/07/SAS94_yearcutoff.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS94_yearcutoff&#34; border=&#34;0&#34; alt=&#34;SAS94_yearcutoff&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/07/SAS94_yearcutoff_thumb.png&#34; width=&#34;517&#34; height=&#34;131&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;9. The SAS &lt;strong&gt;Documentation Viewer 9.4&lt;/strong&gt; is pretty quicker.&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Catch Up with SAS</title>
+      <link>/2013/07/11/catch-up-with-sas/</link>
+      <pubDate>Thu, 11 Jul 2013 00:10:28 +0000</pubDate>
+      
+      <guid>/2013/07/11/catch-up-with-sas/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/07/SAS_Versions1.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/07/SAS_Versions2.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_Versions&#34; border=&#34;0&#34; alt=&#34;SAS_Versions&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/07/SAS_Versions_thumb2.png&#34; width=&#34;446&#34; height=&#34;344&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS 9.3 was released at July 2011 when I former company just successfully launched an upgrading to&amp;#160; SAS 9.2.&amp;#160; SAS 9.2 came to life at March 2008 (&lt;em&gt;it’s a big leap&lt;/em&gt;) and at that time I played with SAS 9.1.3 heavily. Yesterday(10Jul2013) was the official release day for SAS 9.4 while I just &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/03/20/whats-new/&#34;&gt;&lt;font size=&#34;1&#34;&gt;got my SAS 9.3 installed at this March&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Based on historical data, I will probably play with SAS 9.4 in 2014. For me, its most exciting parts:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;My favorite &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/02/17/sas-ods-report-writing-interface-a-quick-demo/&#34;&gt;&lt;font size=&#34;1&#34;&gt;ODS Report Writing Interface&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;as production&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;New ODS destinations, ODS HTML5 and ODS Epub&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;A new language, &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/ds2ref/66009/HTML/default/viewer.htm#titlepage.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;DS2&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Another flavor of SQL, &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/fedsqlref/66010/HTML/default/viewer.htm#titlepage.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;FedSQL&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/seclibag/65483/HTML/default/viewer.htm#titlepage.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;Metadata-Bound Libraries&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Metadata server clusters&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;SAS Environment Manager (&lt;em&gt;vs SAS Management Console?&lt;/em&gt;)&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;No troublesome JBoss, WebSphere, or WebLogic &lt;strong&gt;required&lt;/strong&gt; anymore as web application server! It is said that “SAS 9.4 includes an embedded middle-tier server called SAS Web Application Server”(&lt;em&gt;which is based on Tomcat&lt;/em&gt;) and it will definitely simplify the SAS deployment process(&lt;em&gt;good or bad news for me as a SAS consultant?&lt;/em&gt;). It’s nice to have another option as a SAS user.&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

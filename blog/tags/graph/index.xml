@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graph on Lithium Theme</title>
+    <link>/tags/graph/index.xml</link>
+    <description>Recent content in Graph on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/graph/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Best of SAS: A Personal Nomination 2012</title>
+      <link>/2012/12/31/best-of-sas-a-personal-nomination-2012/</link>
+      <pubDate>Mon, 31 Dec 2012 01:13:03 +0000</pubDate>
+      
+      <guid>/2012/12/31/best-of-sas-a-personal-nomination-2012/</guid>
+      <description>
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;There SAS applications/procedures/features were not necessarily available since 2012. This year I paid special attention to them when began to use SAS 9.3. The following notes are&amp;#160; totally my personal endorsement purely based my own experience as a user:&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;xml-file-reading-sas-xml-mapper&#34;&gt;XML File Reading: SAS XML Mapper&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_XML_Mapper.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_XML_Mapper&#34; border=&#34;0&#34; alt=&#34;SAS_XML_Mapper&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_XML_Mapper_thumb.png&#34; width=&#34;363&#34; height=&#34;399&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS XML Mapper itself is not an elegant tool from software design perspective (an example: I keep multiple versions because the latest version seems not carry out all the functionalities from old ones), but it is best XML file processing tool for SAS programmers like me. The sweet part of SAS XML Mapper is that you can use it to get SAS datasets directly with a automatically generated XML mapping file. I use it to import XML files from &lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;CDISC ODM based files like define.xml &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;metadata querying results (XML) returned by SAS Metadata Server&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and it works pretty well and I just can’t live without it!&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;graphics-facility-ods-graphics&#34;&gt;Graphics Facility: ODS Graphics&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;ODS Graphics is the raising star among SAS products family since its advent and I also fall into love with her. This system contains&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;five procedures with “SG” in names,&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;a template language(GTL), and&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;two GUI tools, ODS Graphics Editor, and ODS Graphics Designer&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;in Base SAS and ODS Statistical Graphics in SAS/STAT (and in SAS/QC which I didn’t check out). ODS Graphics just makes SAS graph&amp;#160; much beautiful and graphics task much fun (and elegant!). &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Btw, it may not be a fair game but still nice to check out a SAS ODS graph and some random pick up R graphs:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This is &lt;a href=&#34;http://blogs.sas.com/content/iml/2011/08/26/visualizing-correlations-between-variables-in-sas/&#34;&gt;from Rick Wicklin&lt;/a&gt; with 3 lines of codes including one “RUN” statement:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;pre&gt;proc sgscatter data=sashelp.iris; 
+matrix SepalLength--PetalLength /group=Species diagonal=(histogram kernel);
+run;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_corr2.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS_corr2&#34; border=&#34;0&#34; alt=&#34;SAS_corr2&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_corr2_thumb.png&#34; width=&#34;400&#34; height=&#34;408&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and this is the R homepage graph(and the &lt;a href=&#34;http://www.r-project.org/misc/acpclust.R&#34;&gt;R codes&lt;/a&gt;):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/R_Graphics.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;R_Graphics&#34; border=&#34;0&#34; alt=&#34;R_Graphics&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/R_Graphics_thumb.png&#34; width=&#34;396&#34; height=&#34;294&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and this is &lt;a href=&#34;http://gallery.r-enthusiasts.com/&#34;&gt;R Graph Gallery&lt;/a&gt; homepage:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/r_graph_gallery.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;r_graph_gallery&#34; border=&#34;0&#34; alt=&#34;r_graph_gallery&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/r_graph_gallery_thumb.png&#34; width=&#34;403&#34; height=&#34;287&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I must say SAS ODS Graphics rocks!&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;statistical-procedure-proc-ttest-and-proc-freq&#34;&gt;Statistical Procedure: PROC TTEST and PROC FREQ&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In this category I list two because they are equally extremely relevant and important for me as statistical SAS programmer.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;PROC TTEST makes equivalence test (which is extremely popular in clinical research) much more accessible by adding a TOST(two one-side test) option. Years ago SAS programmers might use PROC MIXED or other methods for this kind of statistical test(&lt;font size=&#34;1&#34;&gt;I also took a note on this topic, see &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/tost-equivalence-test/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/font&gt;).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The new on PROC FREQ I checked out is to support much richer methods on calculating confidence intervals for binomial proportion (my note &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/15/confidence-intervals-binomial-proportion/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;) and confidence intervals for difference between independent binomial proportions (my note &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/23/statistical-notes-5-confidence-intervals-for-difference-between-independent-binomial-proportions-using-sas/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;) which are also extremely important in clinical research and I programmed a lot.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;report-writing-ods-report-writing-interface&#34;&gt;Report Writing: ODS Report Writing Interface&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;My first SAS version was 9.1.3 where PROC REPORT is the primary SAS reporting writing tool (with ODS) while PROC TABULATE not in fashion anymore (and you may merely hear the arguments among these two procedures since then). I used PROC REPORT for all my production work for reporting since recently I tried the &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/datastep/dsobject/index.html&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;ODS Report Writing Interface&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;in a project for non-rectangular tables. It’s great and everyone was happy! &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Basically it is an ODS enhanced DATA &lt;em&gt;NULL&lt;/em&gt; reporting writing method (&lt;em&gt;DATA &lt;em&gt;NULL&lt;/em&gt; with &lt;font color=&#34;#ff0000&#34;&gt;FILE PRINT&lt;/font&gt; statements: it’s an even older way for me&lt;/em&gt;);a new ODS output object declared within DATA &lt;em&gt;NULL&lt;/em&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;dcl odsout obj();&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I like this kind of reporting method: you can control your report line by line and cell by cell (although with more lines of structured codes!).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;metadata-querying-tool-proc-metadata&#34;&gt;Metadata Querying Tool: PROC METADATA&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In this category, the other two strong candidates are JAVA interface and SAS Data Step Functions. I like PROC Metadata against JAVA because it holds the same full functionality (while SAS Data Step Functions, no yet) while I can still work in SAS to produce reports (just add a new line to start to use ODS Report Writing Interface:)). Furthermore, I feel much comfortable working with SAS!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;PROC Metadata uses XML as inputs and outputs: it may be not admirable compared to Data Step Functions. Since I use SAS XML Mapper, it’s not a problem anymore!&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;documentation&#34;&gt;Documentation&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I like the totally new SAS help and documentation system both online and offline since SAS 9.3. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;First in Base SAS, lots of files were separated from “SAS Language Dictionary”,&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs_offline.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_Docs_offline&#34; border=&#34;0&#34; alt=&#34;SAS_Docs_offline&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs_offline_thumb.png&#34; width=&#34;420&#34; height=&#34;420&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and in all procedures guide, the &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/14/tab-is-a-tab-is-a-tab-is-a-tab/&#34;&gt;tab&lt;/a&gt; view looks great:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;SAS_Docs&#34; border=&#34;0&#34; alt=&#34;SAS_Docs&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Docs_thumb.png&#34; width=&#34;452&#34; height=&#34;271&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Digital Life and Personal Data Analysis</title>
+      <link>/2012/04/04/digital-life-and-personal-data-analysis/</link>
+      <pubDate>Wed, 04 Apr 2012 20:32:06 +0000</pubDate>
+      
+      <guid>/2012/04/04/digital-life-and-personal-data-analysis/</guid>
+      <description>
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;margin: 3px auto 5px; display: block; float: none&#34; src=&#34;http://media2.newsobserver.com/smedia/2012/03/28/19/22/dP7WU.Em.156.jpg&#34; width=&#34;485&#34; height=&#34;316&#34; /&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.newsobserver.com/2012/03/29/1966004/book-bargains-abound-at-wake-county.html&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;This picture&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;(by newsobserver.com) took from &lt;a href=&#34;http://www.wakegov.com/libraries/about/booksale.htm&#34; target=&#34;_blank&#34;&gt;Wake County Library Book Fair in North Carolina&lt;/a&gt; Fairground where I also went to pick up some books. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I was and still is a big book (almost paper books) fan. But when I was standing among the 450,000 used books in the book fair, I felt depressed and reluctantly had an impression: the paper&amp;#160; books will and should go away in the future.&amp;#160; eBooks will not fade away and they also have the economical, ecological and even &lt;font color=&#34;#ff0000&#34;&gt;aesthetical&lt;/font&gt; advantages.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Books are good(hundred and t&lt;font size=&#34;1&#34;&gt;housand years ago, our ancestors read books in silk, bamboo, shell, stone, &amp;hellip;&lt;/font&gt;), new paper books are good too. But the massive used books are burdens. I like the smell of ink of paper books but only for the new. The 450, 000 used books only have some recycling values: you can get a bag of books only for only 1 buck in the last exhibition day!&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;digital-life-and-personal-data-analysis&#34;&gt;Digital Life and Personal Data Analysis&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;eBook is one part of our digital library. We also have eMails, eBills, Tweets &amp;hellip; and these data are born for analysis: complete, accurate, well formatted while in time(&lt;em&gt;again, analytical advantage!&lt;/em&gt;). &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/04/DailyOutgoingEmails.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;DailyOutgoingEmails&#34; border=&#34;0&#34; alt=&#34;DailyOutgoingEmails&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/04/DailyOutgoingEmails_thumb.png&#34; width=&#34;473&#34; height=&#34;204&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.stephenwolfram.com/&#34; target=&#34;_blank&#34;&gt;Stephen Wolfram&lt;/a&gt;, the founder and CEO of &lt;a href=&#34;http://www.wolfram.com/&#34; target=&#34;_blank&#34;&gt;Wolfram Research&lt;/a&gt;, posted &lt;a href=&#34;http://blog.stephenwolfram.com/2012/03/the-personal-analytics-of-my-life/&#34; target=&#34;_blank&#34;&gt;an analysis of his personal emails&lt;/a&gt; as above. That’s cool and you might know that years ago a writer would transcribe at least two copies of his/her mail, one for sending out and another for archiving (and publishing).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://blogs.sas.com/content/jmp/author/lizalucas/&#34; target=&#34;_blank&#34;&gt;Liza Lucas&lt;/a&gt; of SAS JMP R&amp;amp;D also contributed a page on her &lt;a href=&#34;http://blogs.sas.com/content/jmp/author/lizalucas/&#34; target=&#34;_blank&#34;&gt;graphical financial life&lt;/a&gt; while the data come from a online personal financial management system:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&#34;margin: 3px auto 5px; display: block; float: none&#34; src=&#34;http://blogs.sas.com/content/jmp/files/2012/03/spending1.png&#34; width=&#34;363&#34; height=&#34;336&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Back to reading. Below is my daily readings via Google Reader (in laptop and phone) in the past 30 days:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/04/chart.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;chart&#34; border=&#34;0&#34; alt=&#34;chart&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/04/chart_thumb.png&#34; width=&#34;505&#34; height=&#34;292&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Haa, I should clean up my subscribes now.&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Happy SAS Graphing!</title>
+      <link>/2010/10/17/happy-sas-graphing/</link>
+      <pubDate>Sun, 17 Oct 2010 20:02:33 +0000</pubDate>
+      
+      <guid>/2010/10/17/happy-sas-graphing/</guid>
+      <description>&lt;p&gt;I’m not a &lt;a href=&#34;http://www.r-project.org/&#34;&gt;R&lt;/a&gt; user. Instead, I’m an observer. For example, I love the R Graph Gallery:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://addictedtor.free.fr/graphiques/thumbs.php&#34;&gt;http://addictedtor.free.fr/graphiques/thumbs.php&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As a SAS programmer, I also love &lt;a href=&#34;http://robslink.com/&#34;&gt;Robert Allison&lt;/a&gt;&amp;#8216;s SAS/Graph Examples and &lt;a href=&#34;http://www.datavis.ca&#34;&gt;Michael Friendly&lt;/a&gt;&amp;#8216;s SAS Graphic Programs and Macros (the only two SAS graph galleries available on website maintained by users):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://robslink.com/SAS/Home.htm&#34;&gt;http://robslink.com/SAS/Home.htm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.datavis.ca/sasmac/&#34;&gt;http://www.datavis.ca/sasmac/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I used to be a casual user of SAS Graph. I’d like to add Graph into my toolbox in the following month: half of it due to the encouragement of the two SAS graph gurus, the other half SAS 9.2’s exciting enhancement on graphics.&lt;/p&gt;
+
+&lt;p&gt;p.s: the official SAS graph  gallery:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://support.sas.com/sassamples/graphgallery/index.html&#34;&gt;http://support.sas.com/sassamples/graphgallery/index.html&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FYI: Dashboard using SAS/Graph</title>
+      <link>/2009/01/13/fyi-dashboard-using-sas/graph/</link>
+      <pubDate>Tue, 13 Jan 2009 15:01:00 +0000</pubDate>
+      
+      <guid>/2009/01/13/fyi-dashboard-using-sas/graph/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://1.bp.blogspot.com/_qlX7zyUQhog/SWw8f0hrkmI/AAAAAAAABFs/kciTZXVbaTU/s1600-h/dashboard.gif&#34; onblur=&#34;try {parent.deselectBloggerImageGracefully();} catch(e) {}&#34;&gt;&lt;img id=&#34;BLOGGER_PHOTO_ID_5290670179627012706&#34; style=&#34;cursor: pointer; width: 320px; height: 240px;&#34; src=&#34;http://1.bp.blogspot.com/_qlX7zyUQhog/SWw8f0hrkmI/AAAAAAAABFs/kciTZXVbaTU/s320/dashboard.gif&#34; border=&#34;0&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-style: italic;&#34;&gt;see&lt;/span&gt;, &lt;a href=&#34;http://support.sas.com/kb/26/134.html&#34;&gt;http://support.sas.com/kb/26/134.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Slider chart indicator:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26104.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26114.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26124.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Slider chart dashboard:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26105.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26115.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26125.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Bullet graph indicator:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26106.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26116.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26126.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Bullet graph dashboard:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26107.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26117.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26127.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Dial meter indicator:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26108.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26118.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26128.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Dial meter dashboard:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26109.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26119.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26129.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Bar chart indicator:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26110.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26120.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26130.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Bar chart dashboard:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26111.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26121.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26131.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Telesales dashboard:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26112.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26122.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26132.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Web marketing analysis dashboard:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26113.html&#34;&gt;SAS program version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26123.html&#34;&gt;stored process version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://support.sas.com/kb/26133.html&#34;&gt;portlet version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You would also like, &lt;span style=&#34;font-style: italic;&#34;&gt;Santa&amp;#8217;s Dashboard&lt;/span&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://jiangtanghu.blogspot.com/2008/12/santa-and-sas-again-santa-dashboard.html&#34;&gt;http://jiangtanghu.blogspot.com/2008/12/santa-and-sas-again-santa-dashboard.html&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Santa and SAS Again: Santa&amp;#8217;s Dashboard</title>
+      <link>/2008/12/18/santa-and-sas-again-santa</link>
+      <pubDate>Thu, 18 Dec 2008 09:34:00 +0000</pubDate>
+      
+      <guid>/2008/12/18/santa-and-sas-again-santa</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://lh4.ggpht.com/_qlX7zyUQhog/SUmosq74IVI/AAAAAAAABAA/x8sNnZxdwlM/s1600-h/santaDashBoard%5B6%5D.png&#34;&gt;&lt;img style=&#34;border-width: 0px;&#34; src=&#34;http://lh3.ggpht.com/_qlX7zyUQhog/SUmotX9AsmI/AAAAAAAABAE/60L97qotFbI/santaDashBoard_thumb%5B4%5D.png?imgmax=800&#34; border=&#34;0&#34; alt=&#34;santaDashBoard&#34; width=&#34;358&#34; height=&#34;358&#34; align=&#34;left&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;(santaDashBoard.png, With permission by Mr. Robert Allison)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Merry Christmas again. SAS marketing staff started up an interesting Christmas campaign on &lt;a href=&#34;http://jiangtanghu.blogspot.com/2008/12/delivers-right-toys-and-goodies-to.html&#34; target=&#34;_blank&#34;&gt;how Santa operates his workshop&lt;/a&gt;. Here is another wonderful work about &lt;a href=&#34;http://www.youtube.com/watch?v=g2oGdKzX8pg&#34;&gt;Santa&amp;#8217;s Dashboard&lt;/a&gt;, created by SAS senior R&amp;amp;D staff, &lt;a href=&#34;http://robslink.com/&#34; target=&#34;_blank&#34;&gt;Robert Allison&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Robert is a master of graphics and visualization. You can view his SAS/Graph examples in the following link:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://robslink.com/SAS/Home.htm&#34; title=&#34;http://robslink.com/SAS/Home.htm&#34;&gt;http://robslink.com/SAS/Home.htm&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

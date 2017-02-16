@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Transformations on Lithium Theme</title>
+    <link>/tags/transformations/index.xml</link>
+    <description>Recent content in Transformations on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/transformations/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How to Jump into SAS Data Integration Studio</title>
+      <link>/2013/01/12/how-to-jump-into-sas-data-integration-studio/</link>
+      <pubDate>Sat, 12 Jan 2013 18:08:14 +0000</pubDate>
+      
+      <guid>/2013/01/12/how-to-jump-into-sas-data-integration-studio/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/SAS2DISJob.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS2DISJob&#34; border=&#34;0&#34; alt=&#34;SAS2DISJob&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/SAS2DISJob_thumb.png&#34; width=&#34;415&#34; height=&#34;452&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This is for for SAS programmers who might be reluctant to check out a GUI tool like SAS Data Integration Studio (DIS for short, which is graphic tool to implement ETL processes: extract, transform, load). DIS translates all users dragged nodes, transformations and process into SAS codes which are traditionally written by SAS programmers. I find one of the benefits of using DIS is that I can package all the ETL work to other players(technical or nontechnical) then they can replay the job by dragging and clicking. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Actually besides translating all the visual nodes to SAS codes, DIS can also reversely incorporate your SAS codes to the graphic job shown as above. So SAS programmers can easily jump into DIS by importing their codes to get the graphic workflow (to get the first impression). Here is an one-minute demo:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Save the following codes in a file(from &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/sqlproc/63043/HTML/default/viewer.htm#p0o4a5ac71mcchn1kc1zhxdnm139.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS SQL onlinedoc&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;),&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%let dir=C:\;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;libname source BASE &amp;ldquo;&amp;amp;dir&amp;rdquo;; &lt;br /&gt;libname target BASE &amp;ldquo;&amp;amp;dir&amp;rdquo;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data source.one; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input x y; &lt;br /&gt;datalines; &lt;br /&gt;1 2 &lt;br /&gt;2 3 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data source.two; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input x y; &lt;br /&gt;datalines; &lt;br /&gt;2 5 &lt;br /&gt;3 6 &lt;br /&gt;4 9 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc sql; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; create table target.three as &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; select o.x,o.y &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; from source.one as o, source.two as t &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; where o.x=t.x &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc print data=target.three; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Just create a test folder in DIS (this demo was created in a working repository, in a Windows DIS 4.21 machine ) then right click mouse to “Import”-“Import SAS Code” to import the file created above then run the job generated and all set (you will get all stuff showed above).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Note that the SAS libraries must be registered first in the &lt;em&gt;SAS Metadata&lt;/em&gt; Server then you can use it. This demo omit this process only for demo purpose.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You can check out the SQL Join by double clicking the SQL node:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/SAS2DISJob_SQLJoin.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS2DISJob_SQLJoin&#34; border=&#34;0&#34; alt=&#34;SAS2DISJob_SQLJoin&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/SAS2DISJob_SQLJoin_thumb.png&#34; width=&#34;412&#34; height=&#34;537&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and your codes in Code panel (still yours!):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/image.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/image_thumb.png&#34; width=&#34;335&#34; height=&#34;562&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Furthermore, without getting know bunch of the tool first, you can jump into DIS quickly by creating customized Transformations which are basically SAS codes with macro variables as the perimeters in the visual options box. Pretty neat? Just check it out!&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

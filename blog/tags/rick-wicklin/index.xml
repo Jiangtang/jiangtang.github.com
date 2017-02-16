@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rick Wicklin on Lithium Theme</title>
+    <link>/tags/rick-wicklin/index.xml</link>
+    <description>Recent content in Rick Wicklin on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/rick-wicklin/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Retrieve blogs using SAS</title>
+      <link>/2011/07/20/retrieve-blogs-using-sas/</link>
+      <pubDate>Wed, 20 Jul 2011 21:47:46 +0000</pubDate>
+      
+      <guid>/2011/07/20/retrieve-blogs-using-sas/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Recently I posted a &lt;/span&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/07/17/sas-bloggers-in-action1-rick-wicklin-sasiml-and-color-revolution/&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;frequency analysis&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: small;&#34;&gt;on Rick Wicklin’s popular &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/iml/&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;SAS/IML blog&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: small;&#34;&gt;. Sanjay Matange also produced a nice &lt;/span&gt;&lt;a href=&#34;https://sites.google.com/site/odsgraphics/general/rick-s-blog-history-heatmap&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;heatmap on Rick’s blogging history&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: small;&#34;&gt;using the summary data I published. Here just release the ideas and SAS codes to get data from Rick’s blog dynamically. You may modify the codes slightly to obtain data from all other SAS in-house blogs (&lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/index.php&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;http://blogs.sas.com/index.php&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: small;&#34;&gt;) since they share the same template. For other blogs, you should research the web pages accordingly to get the best suitable methods and this post can also serve as an example.&lt;/span&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;first-step-define-the-scope&#34;&gt;&lt;strong&gt;First step: define the scope&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;For my purpose, I only need the titles and publish dates of Rick’s posts. It is so called the “metadata” of the blog. I do not need all the post contents. By the way, if all information needed, you can use a blog backup tool, or write codes to retrieve all the pages of &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/iml&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;http://blogs.sas.com/iml&lt;/span&gt;&lt;/a&gt; at the maximum depth&lt;span style=&#34;font-size: small;&#34;&gt;, or simply, you can write to Rick and say: hey Rick, could you please send me all the contents of your blog? And Rick may go to the management console of his own blog, export all the contents to an XML file and get back to you.&lt;/span&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;second-step-analyze-the-web-pages&#34;&gt;&lt;strong&gt;Second step: analyze the web pages&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Browse to the right panel of Rick’s blog, in the ARCHIVES frame, click “&lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archive&#34; target=&#34;_blank&#34;&gt;Older&lt;/a&gt;”&lt;/span&gt;&lt;span style=&#34;font-size: small;&#34;&gt;:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0026.jpg&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image002&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image002_thumb1.jpg&#34; alt=&#34;clip_image002&#34; width=&#34;235&#34; height=&#34;298&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;And you get &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0035.gif&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image003&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image003_thumb.gif&#34; alt=&#34;clip_image003&#34; width=&#34;362&#34; height=&#34;274&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;This page just gives a big picture of Rick’s blog (ARCHIVE section is always a good place to get such metadata, for example, &lt;a href=&#34;http://www.jiangtanghu.com/blog/archives/&#34; target=&#34;_blank&#34;&gt;archives for my blog&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;font-size: small;&#34;&gt;). But we need more. Click “&lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archives/2010/09/summary.html&#34; target=&#34;_blank&#34;&gt;view topics&lt;/a&gt;” for example of September, 2010:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0045.gif&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image004&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image004_thumb.gif&#34; alt=&#34;clip_image004&#34; width=&#34;372&#34; height=&#34;443&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;This page is exactly what we want with titles and dates. Open an editor to write codes immediately to read all the information in this page?—wait. Currently this blog has posts across 11 months and you can expect the increase. You should design a dynamic method to read all the topics pages: Sep 2010, Oct 2010, … and, &lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;today()&lt;/span&gt;.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Return to the &lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archive&#34; target=&#34;_blank&#34;&gt;archives page&lt;/a&gt;. RCM (right click your mouse) and select “View page source” if you use Google Chrome web browser (“View Source” in IE; “View Page Source” in Firefox) and you get all the HTML scripts (&lt;strong&gt;Note: you DO not need any knowledge of HTML to understand this post&lt;/strong&gt;). Copy and paste them into a text editor supporting HTML syntax highlighting (such as Notepad++). Search all instances of “view topics” we mentioned before:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0067.jpg&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image006&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image006_thumb2.jpg&#34; alt=&#34;clip_image006&#34; width=&#34;519&#34; height=&#34;312&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;We are lucky. They are 11 instances of “view topics” accompanying with 11 hyperlinks for the currently 11 months’ archives of Rick’s blog. We can read such 11 hyperlinks to a macro array for dynamic retrieval.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Then we return to the single &lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archives/2010/09/summary.html&#34; target=&#34;_blank&#34;&gt;topics page&lt;/a&gt;, for example of September, 2010&lt;/span&gt;&lt;span style=&#34;font-size: small;&#34;&gt;. Review the HTML source file. Search for “posted_by_date” and we get 14 instances which is same as the number of posts in September 2010:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0086.jpg&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image008&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image008_thumb1.jpg&#34; alt=&#34;clip_image008&#34; width=&#34;518&#34; height=&#34;307&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;We should also need to locate all the instances of titles. Search “/iml/index.php?/archives/” and we get 17 responses:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0106.jpg&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image010&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image010_thumb1.jpg&#34; alt=&#34;clip_image010&#34; width=&#34;517&#34; height=&#34;298&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;We see 3 instances at end of the finding results don’t contain any titles. You can check other pages to confirm such pattern. Yes we can use regular expressions to parse the HTML pages to locate more exactly for the titles. But for a quick job and due to the relative simple HTML pages, some basic SAS character functions are enough for our purpose. In the following codes, limited regular expressions are used only to remove HTML tags such as “&lt;a href=”.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;After such explorative search of HTML scripts, we can get the basic idea where can we find the interested information. Then we begin to coding work.&lt;/span&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;third-step-coding-at-last&#34;&gt;&lt;strong&gt;Third step: Coding at last!&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;For our purpose, we should first read the archive page to get all the topics links to a macro array, then read the all the topics pages dynamically. Finally, we should also add the all the calendar dates with holidays. Some friends may find that they met piece of the following codes before. Yes, such codes just assembled some skills what I learned from Art Carpenter, Richard DeVenezia, Jian Dai and lots of programmers before!&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;3-1-read-archive-page&#34;&gt;3-1: read archive page&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%let URL=&lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archive;&#34;&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;http://blogs.sas.com/iml/index.php?/archive;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;filename archive URL &amp;#8220;&amp;amp;URL&amp;#8221;; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data archive;&lt;br /&gt; length text $1024;&lt;br /&gt; infile archive lrecl=1024;&lt;br /&gt; input text $;&lt;br /&gt; text= &lt;em&gt;infile&lt;/em&gt;;&lt;br /&gt; if index(text, &amp;#8220;&amp;gt;view topics&amp;lt;&amp;#8220;) then output;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data  archive1;&lt;br /&gt; set archive;&lt;br /&gt; summary=scan(text,4,&amp;rsquo;&amp;#8221;&amp;#8216;);&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;3-2-read-all-topics-pages&#34;&gt;3-2: read all topics pages&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; set  archive1 end=eof;&lt;br /&gt; I+1;&lt;br /&gt; II=left(put(I,2.));&lt;br /&gt; call symputx(&amp;#8216;summary&amp;#8217;||II,summary);&lt;br /&gt; if eof then call symputx(&amp;#8216;total&amp;#8217;,II);&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%macro readit;&lt;br /&gt; %do i=1 %to &amp;total;&lt;br /&gt; filename f&amp;amp;i URL &amp;#8220;&amp;amp;&amp;amp;summary&amp;amp;i&amp;#8221;;    &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;        data f&amp;i;&lt;br /&gt; length text $1024;&lt;br /&gt; infile f&amp;amp;i lrecl=1024;&lt;br /&gt; input text $;&lt;br /&gt; text= &lt;em&gt;infile&lt;/em&gt;;&lt;br /&gt; if index(text, &amp;#8220;/iml/index.php?/archives/&amp;#8221;) or index(text, &amp;#8220;posted_by_date&amp;#8221;) then output;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;    &lt;span style=&#34;color: #ff0000;&#34;&gt;/&lt;em&gt;remove HTML tags;&lt;/em&gt;/&lt;/span&gt;&lt;br /&gt; data ff&amp;i;&lt;br /&gt; set f&amp;i;&lt;br /&gt; prx=prxparse(&amp;#8220;s/&amp;lt;.*?&amp;gt;//&amp;#8221;);&lt;br /&gt; call prxchange(prx,99,text);&lt;br /&gt; drop prx; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;        flag=ifn(mod(&lt;em&gt;n&lt;/em&gt;,2),1,2);&lt;br /&gt; grpn=&amp;i;&lt;br /&gt; if index(text,&amp;#8221;201&amp;#8243;) and length(text)&lt;10 then delete;&lt;span style=&#34;color: #ff0000;&#34;&gt;/&lt;em&gt;be carefull! hard coding;&lt;/em&gt;/&lt;br /&gt; &lt;/span&gt;        seq=&lt;em&gt;n&lt;/em&gt;;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;     /&lt;em&gt;transpose data;&lt;/em&gt;/&lt;br /&gt; data fff&amp;i;&lt;br /&gt; set ff&amp;i;&lt;br /&gt; by grpn seq flag; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;        &lt;span style=&#34;color: #ff0000;&#34;&gt;retain&lt;/span&gt; title;&lt;br /&gt; if first.flag then title=lag(text);&lt;br /&gt; if flag=1 then delete;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;    %end; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%mend readit;&lt;br /&gt; %readit &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%macro getall;&lt;br /&gt; data Rick;&lt;br /&gt; set %do i=1 %to &amp;total; fff&amp;amp;i %end; ;&lt;br /&gt; seq=seq/2;&lt;br /&gt; drop flag;&lt;br /&gt; run;&lt;br /&gt; %mend getall;&lt;br /&gt; %getall &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data rick2;&lt;br /&gt; set rick; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;    datetime=scan(text,2,&amp;#8221;,&amp;#8221;);&lt;br /&gt; year=scan(text,2,&amp;#8221;.&amp;#8221;);&lt;br /&gt; month=scan(scan(text,2,&amp;#8221;,&amp;#8221;),1);&lt;br /&gt; day=scan(scan(text,2,&amp;#8221;,&amp;#8221;),2);&lt;br /&gt; week=scan(text,6);&lt;br /&gt; dt=compress(catx(&amp;#8220;&amp;#8221;,day,substr(month,1,3),year));&lt;br /&gt; worddat=input(dt,date9.);&lt;br /&gt; format worddat  ddmmyy10.;                         &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;    m=scan(put(worddat,ddmmyy10.),2);&lt;br /&gt; my=compress(catx(&amp;#8220;&amp;#8221;,year,m));&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;proc sort ;&lt;br /&gt; by  worddat descending seq ;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;It is also interesting to add additional information for further analysis, such as all calendar dates during Rick’s blogging history and holidays.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-3-get-all-calendar-dates&#34;&gt;3-3: get all calendar dates&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;proc sort data=rick2 out=rick3 nodupkey;&lt;br /&gt; by my;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; set rick3 end=eof;&lt;br /&gt; I+1;&lt;br /&gt; II=left(put(I,2.));&lt;br /&gt; call symputx(&amp;#8216;year&amp;#8217;||II,year);&lt;br /&gt; call symputx(&amp;#8216;month&amp;#8217;||II,m);&lt;br /&gt; if eof then call symputx(&amp;#8216;total&amp;#8217;,II);&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%macro getCalendar;&lt;br /&gt; %do i=1 %to &amp;total;&lt;br /&gt; data calendar&amp;i;&lt;br /&gt; date1 = mdy (&amp;amp;&amp;amp;month&amp;amp;i,1,&amp;amp;&amp;amp;year&amp;amp;i);&lt;br /&gt; date2 = intnx (&amp;#8216;month&amp;#8217;, date1, 1) &amp;#8211; 1; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;            do worddat = date1 to date2;&lt;br /&gt; wim = intck (&amp;#8216;week&amp;#8217;, date1, worddat);&lt;br /&gt; dim = worddat-date1+1;&lt;br /&gt; output;&lt;br /&gt; end; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;            format worddat  ddmmyy10.;&lt;br /&gt; keep   worddat  dim ;&lt;br /&gt; run;&lt;br /&gt; %end;&lt;br /&gt; %mend getCalendar;&lt;br /&gt; %getCalendar; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%macro allCalendar;&lt;br /&gt; data Calendar;&lt;br /&gt; set %do i=1 %to &amp;total; calendar&amp;amp;i %end; ;&lt;br /&gt; run;&lt;br /&gt; %mend allCalendar;&lt;br /&gt; %allCalendar&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;3-4-get-holidays&#34;&gt;3-4: get holidays&lt;/h3&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;I have no specific idea about US holidays and just referenced the two pages:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;[&lt;span style=&#34;font-size: small;&#34;&gt;Recently I posted a &lt;/span&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/07/17/sas-bloggers-in-action1-rick-wicklin-sasiml-and-color-revolution/&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;frequency analysis&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: small;&#34;&gt;on Rick Wicklin’s popular &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/iml/&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;SAS/IML blog&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: small;&#34;&gt;. Sanjay Matange also produced a nice &lt;/span&gt;&lt;a href=&#34;https://sites.google.com/site/odsgraphics/general/rick-s-blog-history-heatmap&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;heatmap on Rick’s blogging history&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: small;&#34;&gt;using the summary data I published. Here just release the ideas and SAS codes to get data from Rick’s blog dynamically. You may modify the codes slightly to obtain data from all other SAS in-house blogs (&lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/index.php&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;http://blogs.sas.com/index.php&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: small;&#34;&gt;) since they share the same template. For other blogs, you should research the web pages accordingly to get the best suitable methods and this post can also serve as an example.&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;first-step-define-the-scope-1&#34;&gt;&lt;strong&gt;First step: define the scope&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;For my purpose, I only need the titles and publish dates of Rick’s posts. It is so called the “metadata” of the blog. I do not need all the post contents. By the way, if all information needed, you can use a blog backup tool, or write codes to retrieve all the pages of &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/iml&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;http://blogs.sas.com/iml&lt;/span&gt;&lt;/a&gt; at the maximum depth&lt;span style=&#34;font-size: small;&#34;&gt;, or simply, you can write to Rick and say: hey Rick, could you please send me all the contents of your blog? And Rick may go to the management console of his own blog, export all the contents to an XML file and get back to you.&lt;/span&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;second-step-analyze-the-web-pages-1&#34;&gt;&lt;strong&gt;Second step: analyze the web pages&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Browse to the right panel of Rick’s blog, in the ARCHIVES frame, click “&lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archive&#34; target=&#34;_blank&#34;&gt;Older&lt;/a&gt;”&lt;/span&gt;&lt;span style=&#34;font-size: small;&#34;&gt;:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0026.jpg&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image002&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image002_thumb1.jpg&#34; alt=&#34;clip_image002&#34; width=&#34;235&#34; height=&#34;298&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;And you get &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0035.gif&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image003&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image003_thumb.gif&#34; alt=&#34;clip_image003&#34; width=&#34;362&#34; height=&#34;274&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;This page just gives a big picture of Rick’s blog (ARCHIVE section is always a good place to get such metadata, for example, &lt;a href=&#34;http://www.jiangtanghu.com/blog/archives/&#34; target=&#34;_blank&#34;&gt;archives for my blog&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;font-size: small;&#34;&gt;). But we need more. Click “&lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archives/2010/09/summary.html&#34; target=&#34;_blank&#34;&gt;view topics&lt;/a&gt;” for example of September, 2010:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0045.gif&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image004&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image004_thumb.gif&#34; alt=&#34;clip_image004&#34; width=&#34;372&#34; height=&#34;443&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;This page is exactly what we want with titles and dates. Open an editor to write codes immediately to read all the information in this page?—wait. Currently this blog has posts across 11 months and you can expect the increase. You should design a dynamic method to read all the topics pages: Sep 2010, Oct 2010, … and, &lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;today()&lt;/span&gt;.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Return to the &lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archive&#34; target=&#34;_blank&#34;&gt;archives page&lt;/a&gt;. RCM (right click your mouse) and select “View page source” if you use Google Chrome web browser (“View Source” in IE; “View Page Source” in Firefox) and you get all the HTML scripts (&lt;strong&gt;Note: you DO not need any knowledge of HTML to understand this post&lt;/strong&gt;). Copy and paste them into a text editor supporting HTML syntax highlighting (such as Notepad++). Search all instances of “view topics” we mentioned before:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0067.jpg&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image006&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image006_thumb2.jpg&#34; alt=&#34;clip_image006&#34; width=&#34;519&#34; height=&#34;312&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;We are lucky. They are 11 instances of “view topics” accompanying with 11 hyperlinks for the currently 11 months’ archives of Rick’s blog. We can read such 11 hyperlinks to a macro array for dynamic retrieval.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Then we return to the single &lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archives/2010/09/summary.html&#34; target=&#34;_blank&#34;&gt;topics page&lt;/a&gt;, for example of September, 2010&lt;/span&gt;&lt;span style=&#34;font-size: small;&#34;&gt;. Review the HTML source file. Search for “posted_by_date” and we get 14 instances which is same as the number of posts in September 2010:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0086.jpg&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image008&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image008_thumb1.jpg&#34; alt=&#34;clip_image008&#34; width=&#34;518&#34; height=&#34;307&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;We should also need to locate all the instances of titles. Search “/iml/index.php?/archives/” and we get 17 responses:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image0106.jpg&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;clip_image010&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/clip_image010_thumb1.jpg&#34; alt=&#34;clip_image010&#34; width=&#34;517&#34; height=&#34;298&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;We see 3 instances at end of the finding results don’t contain any titles. You can check other pages to confirm such pattern. Yes we can use regular expressions to parse the HTML pages to locate more exactly for the titles. But for a quick job and due to the relative simple HTML pages, some basic SAS character functions are enough for our purpose. In the following codes, limited regular expressions are used only to remove HTML tags such as “&lt;a href=”.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;After such explorative search of HTML scripts, we can get the basic idea where can we find the interested information. Then we begin to coding work.&lt;/span&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;third-step-coding-at-last-1&#34;&gt;&lt;strong&gt;Third step: Coding at last!&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;For our purpose, we should first read the archive page to get all the topics links to a macro array, then read the all the topics pages dynamically. Finally, we should also add the all the calendar dates with holidays. Some friends may find that they met piece of the following codes before. Yes, such codes just assembled some skills what I learned from Art Carpenter, Richard DeVenezia, Jian Dai and lots of programmers before!&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;3-1-read-archive-page-1&#34;&gt;3-1: read archive page&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%let URL=&lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archive;&#34;&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;http://blogs.sas.com/iml/index.php?/archive;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;filename archive URL &amp;#8220;&amp;amp;URL&amp;#8221;; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data archive;&lt;br /&gt; length text $1024;&lt;br /&gt; infile archive lrecl=1024;&lt;br /&gt; input text $;&lt;br /&gt; text= &lt;em&gt;infile&lt;/em&gt;;&lt;br /&gt; if index(text, &amp;#8220;&amp;gt;view topics&amp;lt;&amp;#8220;) then output;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data  archive1;&lt;br /&gt; set archive;&lt;br /&gt; summary=scan(text,4,&amp;rsquo;&amp;#8221;&amp;#8216;);&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;3-2-read-all-topics-pages-1&#34;&gt;3-2: read all topics pages&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; set  archive1 end=eof;&lt;br /&gt; I+1;&lt;br /&gt; II=left(put(I,2.));&lt;br /&gt; call symputx(&amp;#8216;summary&amp;#8217;||II,summary);&lt;br /&gt; if eof then call symputx(&amp;#8216;total&amp;#8217;,II);&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%macro readit;&lt;br /&gt; %do i=1 %to &amp;total;&lt;br /&gt; filename f&amp;amp;i URL &amp;#8220;&amp;amp;&amp;amp;summary&amp;amp;i&amp;#8221;;    &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;        data f&amp;i;&lt;br /&gt; length text $1024;&lt;br /&gt; infile f&amp;amp;i lrecl=1024;&lt;br /&gt; input text $;&lt;br /&gt; text= &lt;em&gt;infile&lt;/em&gt;;&lt;br /&gt; if index(text, &amp;#8220;/iml/index.php?/archives/&amp;#8221;) or index(text, &amp;#8220;posted_by_date&amp;#8221;) then output;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;    &lt;span style=&#34;color: #ff0000;&#34;&gt;/&lt;em&gt;remove HTML tags;&lt;/em&gt;/&lt;/span&gt;&lt;br /&gt; data ff&amp;i;&lt;br /&gt; set f&amp;i;&lt;br /&gt; prx=prxparse(&amp;#8220;s/&amp;lt;.*?&amp;gt;//&amp;#8221;);&lt;br /&gt; call prxchange(prx,99,text);&lt;br /&gt; drop prx; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;        flag=ifn(mod(&lt;em&gt;n&lt;/em&gt;,2),1,2);&lt;br /&gt; grpn=&amp;i;&lt;br /&gt; if index(text,&amp;#8221;201&amp;#8243;) and length(text)&lt;10 then delete;&lt;span style=&#34;color: #ff0000;&#34;&gt;/&lt;em&gt;be carefull! hard coding;&lt;/em&gt;/&lt;br /&gt; &lt;/span&gt;        seq=&lt;em&gt;n&lt;/em&gt;;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;     /&lt;em&gt;transpose data;&lt;/em&gt;/&lt;br /&gt; data fff&amp;i;&lt;br /&gt; set ff&amp;i;&lt;br /&gt; by grpn seq flag; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;        &lt;span style=&#34;color: #ff0000;&#34;&gt;retain&lt;/span&gt; title;&lt;br /&gt; if first.flag then title=lag(text);&lt;br /&gt; if flag=1 then delete;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;    %end; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%mend readit;&lt;br /&gt; %readit &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%macro getall;&lt;br /&gt; data Rick;&lt;br /&gt; set %do i=1 %to &amp;total; fff&amp;amp;i %end; ;&lt;br /&gt; seq=seq/2;&lt;br /&gt; drop flag;&lt;br /&gt; run;&lt;br /&gt; %mend getall;&lt;br /&gt; %getall &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data rick2;&lt;br /&gt; set rick; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;    datetime=scan(text,2,&amp;#8221;,&amp;#8221;);&lt;br /&gt; year=scan(text,2,&amp;#8221;.&amp;#8221;);&lt;br /&gt; month=scan(scan(text,2,&amp;#8221;,&amp;#8221;),1);&lt;br /&gt; day=scan(scan(text,2,&amp;#8221;,&amp;#8221;),2);&lt;br /&gt; week=scan(text,6);&lt;br /&gt; dt=compress(catx(&amp;#8220;&amp;#8221;,day,substr(month,1,3),year));&lt;br /&gt; worddat=input(dt,date9.);&lt;br /&gt; format worddat  ddmmyy10.;                         &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;    m=scan(put(worddat,ddmmyy10.),2);&lt;br /&gt; my=compress(catx(&amp;#8220;&amp;#8221;,year,m));&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;proc sort ;&lt;br /&gt; by  worddat descending seq ;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;It is also interesting to add additional information for further analysis, such as all calendar dates during Rick’s blogging history and holidays.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-3-get-all-calendar-dates-1&#34;&gt;3-3: get all calendar dates&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;proc sort data=rick2 out=rick3 nodupkey;&lt;br /&gt; by my;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; set rick3 end=eof;&lt;br /&gt; I+1;&lt;br /&gt; II=left(put(I,2.));&lt;br /&gt; call symputx(&amp;#8216;year&amp;#8217;||II,year);&lt;br /&gt; call symputx(&amp;#8216;month&amp;#8217;||II,m);&lt;br /&gt; if eof then call symputx(&amp;#8216;total&amp;#8217;,II);&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%macro getCalendar;&lt;br /&gt; %do i=1 %to &amp;total;&lt;br /&gt; data calendar&amp;i;&lt;br /&gt; date1 = mdy (&amp;amp;&amp;amp;month&amp;amp;i,1,&amp;amp;&amp;amp;year&amp;amp;i);&lt;br /&gt; date2 = intnx (&amp;#8216;month&amp;#8217;, date1, 1) &amp;#8211; 1; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;            do worddat = date1 to date2;&lt;br /&gt; wim = intck (&amp;#8216;week&amp;#8217;, date1, worddat);&lt;br /&gt; dim = worddat-date1+1;&lt;br /&gt; output;&lt;br /&gt; end; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;            format worddat  ddmmyy10.;&lt;br /&gt; keep   worddat  dim ;&lt;br /&gt; run;&lt;br /&gt; %end;&lt;br /&gt; %mend getCalendar;&lt;br /&gt; %getCalendar; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%macro allCalendar;&lt;br /&gt; data Calendar;&lt;br /&gt; set %do i=1 %to &amp;total; calendar&amp;amp;i %end; ;&lt;br /&gt; run;&lt;br /&gt; %mend allCalendar;&lt;br /&gt; %allCalendar&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;3-4-get-holidays-1&#34;&gt;3-4: get holidays&lt;/h3&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;I have no specific idea about US holidays and just referenced the two pages:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;](&lt;a href=&#34;http://support.sas.com/kb/24/655.html &#34;&gt;http://support.sas.com/kb/24/655.html &lt;/a&gt; &amp;ldquo;&lt;a href=&#34;http://support.sas.com/kb/24/655.html&#34;&gt;http://support.sas.com/kb/24/655.html&lt;/a&gt;  &amp;ldquo;)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.opm.gov/Operating_Status_Schedules/fedhol/2011.asp&#34; title=&#34;http://www.opm.gov/Operating_Status_Schedules/fedhol/2011.asp&#34;&gt;http://www.opm.gov/Operating_Status_Schedules/fedhol/2011.asp&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Also, the holidays and observances should manully modified according to personal working schedule. So this section serves only for demonstration.&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;filename hld url &amp;#8220;&lt;/span&gt;&lt;a href=&#34;http://jiangtanghu.com/docs/en/US_holiday.sas&amp;quot;;&#34;&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;http://jiangtanghu.com/docs/en/US_holiday.sas&amp;#8221;;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%include hld; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%US_holiday(2010)&lt;br /&gt; %US_holiday(2011) &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data holiday;&lt;br /&gt; set holiday2010 holiday2011;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;proc sort ;&lt;br /&gt; by  worddat;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;3-5-put-all-together&#34;&gt;3-5: put all together&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data rick_all;&lt;br /&gt; merge rick2 calendar holiday;&lt;br /&gt; by worddat;&lt;br /&gt; &lt;/span&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;if worddat &amp;lt;&amp;#8217;03Sep2010&amp;#8217;d then delete;&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;if worddat &amp;gt;&amp;#8217;15Jul2011&amp;#8217;d then delete;&lt;/span&gt;&lt;br /&gt; drop today;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;A pooled version (beta) also available at&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://jiangtanghu.com/docs/en/SAS_Blogs.sas&#34;&gt;http://jiangtanghu.com/docs/en/SAS_Blogs.sas&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>SAS Bloggers In Action(1): Rick Wicklin, SAS/IML and &amp;ldquo;Color Revolution&amp;rdquo;</title>
+      <link>/2011/07/17/sas-bloggers-in-action1-rick-wicklin-sas/iml-and-ldquocolor-revolutionrdquo/</link>
+      <pubDate>Sun, 17 Jul 2011 16:16:49 +0000</pubDate>
+      
+      <guid>/2011/07/17/sas-bloggers-in-action1-rick-wicklin-sas/iml-and-ldquocolor-revolutionrdquo/</guid>
+      <description>&lt;p&gt;It is well known that the French writer, author of &lt;em&gt;The Three Musketeer&lt;/em&gt;, Alexandre Dumas, wrote his master piece of work in different colored papers according to literary genre:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;&lt;strong&gt;non-fiction on&amp;#160; rose,&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#0000ff&#34;&gt;&lt;strong&gt;fiction on blue,&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ffff80&#34;&gt;&lt;strong&gt;poetry on yellow&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The SAS blog writer, author of &lt;em&gt;&lt;a href=&#34;http://support.sas.com/publishing/authors/wicklin.html&#34;&gt;Statistical Programming with SAS/IML Software&lt;/a&gt;&lt;/em&gt;, &lt;a href=&#34;http://blogs.sas.com/iml/&#34; target=&#34;_blank&#34;&gt;Rick Wicklin&lt;/a&gt; of SAS Institute,&amp;#160; also leads a strong “color revolution” in SAS blog community:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/JohariWindow1.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;JohariWindow&#34; border=&#34;0&#34; alt=&#34;JohariWindow&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/JohariWindow_thumb.jpg&#34; width=&#34;333&#34; height=&#34;330&#34; /&gt;&lt;/a&gt;In an interesting personal statement, &lt;a href=&#34;http://blogs.sas.com/iml/index.php?/archives/124-Blogging,-Programming,-and-Johari-Windows.html&#34;&gt;&lt;em&gt;Blogging, Programming, and Johari Windows&lt;/em&gt;&lt;/a&gt;, Rick summarizes his rich and colorful blogging rhythms according to the above &lt;a href=&#34;http://en.wikipedia.org/wiki/Johari_window&#34;&gt;&lt;em&gt;Johari window&lt;/em&gt;&lt;/a&gt;:&amp;#160;&amp;#160;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font color=&#34;#ffff80&#34;&gt;Mondays&lt;/font&gt;, writes introductory notes (corresponding to the upper right quadrant of Johari window).&amp;#160;&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#bcdee2&#34;&gt;Wednesdays&lt;/font&gt;, experimental articles on sampling, simulation and other statistical programming topics(lower left quadrant).&lt;/li&gt;
+&lt;li&gt;&lt;font color=&#34;#008000&#34;&gt;Fridays&lt;/font&gt;, on explorative analysis of data (upper left quadrant).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So what about the &lt;font color=&#34;#ff8080&#34;&gt;lower right quadrant&lt;/font&gt;? Rick rediscovers and exposes what he once knew. Just suppose that, Rick picks up some codes he wrote before (ten years ago maybe) with big surprise: oh, who on earth wrote such damned clever beautiful codes? He or she must be in his/her aggressive youth. –then Rick wrote them all in blog.&lt;/p&gt;
+
+&lt;p&gt;Here I produced a summary table for Rick’s blogging activities (numbers per month per weekday; before July 16, 2011 Beijing time; &lt;em&gt;next following post would introduce how to use SAS to analyze data from website such as Rick’s blog&lt;/em&gt;):&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/Rick.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;Rick&#34; border=&#34;0&#34; alt=&#34;Rick&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/07/Rick_thumb.png&#34; width=&#34;485&#34; height=&#34;433&#34; /&gt;&lt;/a&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;Key findings:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Rick is really a frequent and productive blogger with averagely 0.5 posts per day!&lt;/li&gt;
+&lt;li&gt;Rick DOES keep his words. Most of the posts are published in &lt;font color=&#34;#008000&#34;&gt;Friday&lt;/font&gt;, &lt;font color=&#34;#bcdee2&#34;&gt;Wednesday &lt;/font&gt;and &lt;font color=&#34;#ffff80&#34;&gt;Monday&lt;/font&gt;(44, 44, 42 posts respectively).&lt;/li&gt;
+&lt;li&gt;None posted in Saturdays and Sunday.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Rick began his writing since September&amp;#160; 3. 2010, &lt;font color=&#34;#008000&#34;&gt;Friday&lt;/font&gt;.&amp;#160; Up to July 15. 2011, &lt;font color=&#34;#008000&#34;&gt;Friday&lt;/font&gt;, there are 48 &lt;font color=&#34;#008000&#34;&gt;Fridays&lt;/font&gt;, 46 &lt;font color=&#34;#bcdee2&#34;&gt;Wednesdays &lt;/font&gt;and 46 &lt;font color=&#34;#ffff80&#34;&gt;Mondays&lt;/font&gt;.&amp;#160; Only 10 colored weekdays (4 &lt;font color=&#34;#008000&#34;&gt;Fridays&lt;/font&gt;, 2 &lt;font color=&#34;#bcdee2&#34;&gt;Wednesdays &lt;/font&gt;and 4 &lt;font color=&#34;#ffff80&#34;&gt;Mondays&lt;/font&gt;) passed with no posts and most all them are due to national holidays:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;06/09/2010 , &lt;font color=&#34;#ffff80&#34;&gt;Monday&lt;/font&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; : Labor Day&lt;br /&gt;
+24/11/2010 , &lt;font color=&#34;#bcdee2&#34;&gt;Wednesday&lt;/font&gt;: round Thanksgiving Day&lt;br /&gt;
+26/11/2010 , &lt;font color=&#34;#008000&#34;&gt;Friday&lt;/font&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; : round Thanksgiving Day&lt;br /&gt;
+22/12/2010 , &lt;font color=&#34;#bcdee2&#34;&gt;Wednesday&lt;/font&gt;&lt;br /&gt;
+24/12/2010 , &lt;font color=&#34;#008000&#34;&gt;Friday&lt;/font&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; : Christmas Day&lt;br /&gt;
+27/12/2010 , &lt;font color=&#34;#ffff80&#34;&gt;Monday&lt;/font&gt;&lt;br /&gt;
+31/12/2010 , &lt;font color=&#34;#008000&#34;&gt;Friday&lt;/font&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; : New Year’s Day&lt;br /&gt;
+30/05/2011 , &lt;font color=&#34;#ffff80&#34;&gt;Monday&lt;/font&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; : Memorial Day&lt;br /&gt;
+10/06/2011 , &lt;font color=&#34;#008000&#34;&gt;Friday&lt;/font&gt;&lt;br /&gt;
+04/07/2011 , &lt;font color=&#34;#ffff80&#34;&gt;Monday&lt;/font&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; : Independence Day&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;At least in 4 holidays (most in &lt;font color=&#34;#ffff80&#34;&gt;Monday&lt;/font&gt;), Rick was also active in writing:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;11/10/2011, &lt;font color=&#34;#ffff80&#34;&gt;Monday&lt;/font&gt;, Columbus Day: &lt;em&gt;How Do You Reshape a Matrix?&lt;/em&gt;&lt;br /&gt;
+11/11/2010, Thursday, Veterans Day: &lt;em&gt;It&amp;#8217;s Here!&lt;/em&gt;&lt;br /&gt;
+17/01/2011, &lt;font color=&#34;#ffff80&#34;&gt;Monday&lt;/font&gt;, Birthday of Martin Luther King, Jr.: &lt;em&gt;On the Flip Side: Exchanging Rows and Columns&lt;/em&gt;&lt;br /&gt;
+21/02/2011, &lt;font color=&#34;#ffff80&#34;&gt;Monday&lt;/font&gt;, Washington’s Birthday: &lt;em&gt;How to Build a Vector from Expressions&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Amazing Rick keeps a fixed writing pattern and in next following post, detailed analysis and SAS codes will be presented so you can also keep eyes on the metadata of your favorite bloggers’ writing and may rise a question like:&lt;/p&gt;
+
+&lt;p&gt;Hey Rick, what’s up in Jun 10, 2011, Friday?&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

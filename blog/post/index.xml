@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Lithium Theme</title>
+    <link>/post/index.xml</link>
+    <description>Recent content in Posts on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Sep 2015 14:01:30 +0000</lastBuildDate>
+    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SAS MapReduce: A Quick Followup by DS2</title>
+      <link>/2015/09/04/sas-mapreduce-a-quick-followup-by-ds2/</link>
+      <pubDate>Fri, 04 Sep 2015 14:01:30 +0000</pubDate>
+      
+      <guid>/2015/09/04/sas-mapreduce-a-quick-followup-by-ds2/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;2&#34;&gt;(&lt;/font&gt;&lt;a href=&#34;https://support.sas.com/documentation/cdl/en/proc/67916/HTML/default/viewer.htm#n0ox2hnyx7twb2n13200g5hqqsmy.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;2&#34;&gt;DS2&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;2&#34;&gt;would be the king!) Years ago I made up &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/10/04/map-and-reduce-in-mapreduce-a-sas-illustration/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;2&#34;&gt;a piece of SAS code to demonstrate the basic idea of Map-Reduce&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;2&#34;&gt;. Now this idea can be best implemented by this piece of workable program with &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/documentation/cdl/en/proc/67916/HTML/default/viewer.htm#n0ox2hnyx7twb2n13200g5hqqsmy.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;2&#34;&gt;PROC DS2&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;2&#34;&gt;(tested in SAS 9.4 TS1M2, Win7):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;PROC DS2;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;/* create some data &amp;#8211;&lt;em&gt;/ &lt;br /&gt;data input_data / overwrite = yes; &lt;br /&gt;dcl double d; &lt;br /&gt;method init(); &lt;br /&gt;&amp;#160;&amp;#160; dcl int i; &lt;br /&gt;&amp;#160;&amp;#160; do i = 1 to 10000000; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; /&lt;/em&gt;&amp;#8211; create some money values &amp;#8211;*/ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; d = round( (ranuni(123) * 10 ), .01 ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; output; &lt;br /&gt;&amp;#160;&amp;#160; end; &lt;br /&gt;end; &lt;br /&gt;enddata; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;&amp;#8211; count the rows in multiple threads &amp;#8211;&lt;/em&gt;/ &lt;br /&gt;&lt;strong&gt;thread&lt;/strong&gt; &lt;font color=&#34;#ff0000&#34;&gt;map&lt;/font&gt; / overwrite = yes; &lt;br /&gt;dcl double c s; &lt;br /&gt;keep c s; &lt;br /&gt;method run(); &lt;br /&gt;&amp;#160;&amp;#160; set input_data; &lt;br /&gt;&amp;#160;&amp;#160; /&lt;em&gt;&amp;#8211; the more compuation here, the more benefit &amp;#8211;&lt;/em&gt;/ &lt;br /&gt;&amp;#160;&amp;#160; c + 1; &lt;br /&gt;&amp;#160;&amp;#160; s + d; &lt;br /&gt;end; &lt;br /&gt;method term(); &lt;br /&gt;&amp;#160;&amp;#160; output; &lt;br /&gt;&amp;#160;&amp;#160; put s= c=; &lt;br /&gt;end; &lt;br /&gt;endthread; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;&amp;#8211; blend the results into one total &amp;#8211;&lt;/em&gt;/ &lt;br /&gt;data &lt;font color=&#34;#ff0000&#34;&gt;reduce&lt;/font&gt; / overwrite = yes; &lt;br /&gt;dcl thread map m; &lt;br /&gt;dcl double totc tots; &lt;br /&gt;keep totc tots; &lt;br /&gt;method run(); &lt;br /&gt;&amp;#160;&amp;#160; set from m &lt;font color=&#34;#ff0000&#34;&gt;threads=4&lt;/font&gt;; &lt;br /&gt;&amp;#160;&amp;#160; totc + c; &lt;br /&gt;&amp;#160;&amp;#160; tots + s; &lt;br /&gt;end; &lt;br /&gt;method term(); &lt;br /&gt;&amp;#160;&amp;#160; output; &lt;br /&gt;end; &lt;br /&gt;enddata; &lt;br /&gt;run; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;proc print data=reduce; run; &lt;br /&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;Notice the option of “&lt;font color=&#34;#ff0000&#34;&gt;threads=4&lt;/font&gt;”. You can specify the thread as any number you want (the number of slaves..).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;Thanks &lt;/font&gt;&lt;a href=&#34;https://www.linkedin.com/pub/robert-ray/29/814/b73&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;2&#34;&gt;Robert Ray&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;2&#34;&gt;of SAS Institute to kindly allow me to post his code.&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Quick Look at SAS DS2 Merge</title>
+      <link>/2015/09/04/a-quick-look-at-sas-ds2-merge/</link>
+      <pubDate>Fri, 04 Sep 2015 12:02:39 +0000</pubDate>
+      
+      <guid>/2015/09/04/a-quick-look-at-sas-ds2-merge/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;2&#34;&gt;The code:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;data a; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input i a $ b $; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; datalines; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; 1 a1A b1 &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; 1 a1A b1 &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; 2 a2 b2 &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;data b; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input i a $ c $; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; datalines; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; 1 a1C c1 &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; 2 .&amp;#160;&amp;#160; c2 &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; 3 .&amp;#160; c3 &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;data mrge; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;merge&lt;/font&gt; a b; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; by i; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;proc ds2; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; data ds2; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; method run(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;merge&lt;/font&gt; a b; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; by i; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; end; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; enddata; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; run; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;The outputs:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/09/SAS_DS2_merge.png&#34;&gt;&lt;font size=&#34;2&#34;&gt;&lt;img title=&#34;SAS_DS2_merge&#34; style=&#34;border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-top-width: 0px&#34; border=&#34;0&#34; alt=&#34;SAS_DS2_merge&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/09/SAS_DS2_merge_thumb.png&#34; width=&#34;307&#34; height=&#34;480&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;The comments:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;1. One of the weird behaviors of data step MERGE is that the value “c1” was carried over to row 2 of merged out dataset, Work.Mrge. In output dataset Work.Ds2 (generated by DS2), the row 2 of variable c is missing, which is kind of safe operation as we expected.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;2. In both output datasets, value ‘a1C’ overwrote ‘a1A’ in row 1.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;3. This DS2 MERGE is available in SAS 9.4 (TS1M3).&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SAS Combinatorial Functions: Snippets</title>
+      <link>/2015/06/25/sas-combinatorial-functions-snippets/</link>
+      <pubDate>Thu, 25 Jun 2015 12:55:38 +0000</pubDate>
+      
+      <guid>/2015/06/25/sas-combinatorial-functions-snippets/</guid>
+      <description>
+
+&lt;h3 id=&#34;1-permutation-and-combination&#34;&gt;1. Permutation and Combination&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; n = 5;&lt;br /&gt; r = 2;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;   *the factorial of a number;&lt;br /&gt; fact=fact(n);&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;   *for positive integers, fact(n) = gamma(n+1);&lt;br /&gt; gamm=gamma(n + 1);&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;   *C(n,r): number of combinations of n objects selected r ;&lt;br /&gt; *n! / [r!(n-r)!];&lt;br /&gt; comb1 = comb(n,r);&lt;br /&gt; comb2 = fact(n) / (fact&amp;reg; * fact(n-r));&lt;br /&gt; comb3 = gamma(n+1) / (gamma(r+1) * gamma(n-r+1));&lt;br /&gt; comb4 = exp(lcomb(n,r));&lt;br /&gt; comb5 = exp(lgamma(n+1)-lgamma(r+1)-lgamma(n-r+1));&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;   *A(n,r): number of permutation (ordered arrangements);&lt;br /&gt; *n! / (n-r)!;&lt;br /&gt; perm1 = perm(n,r);&lt;br /&gt; perm2 = fact(n) /  fact(n-r);&lt;br /&gt; perm3 = gamma(n+1) /  gamma(n-r+1);&lt;br /&gt; perm4 = exp(lperm(n,r));&lt;br /&gt; perm5 = exp(lgamma(n+1)-lgamma(n-r+1));&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;   put (&lt;em&gt;all&lt;/em&gt;) (= / );&lt;br /&gt; run;&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Note functions &lt;em&gt;fact()&lt;/em&gt; and &lt;em&gt;gamm()&lt;/em&gt; can quickly reach out their limitations(&lt;em&gt;try n=&lt;span style=&#34;color: #ff0000;&#34;&gt;171 &lt;/span&gt;&lt;/em&gt;and check the overflow notes in Log window).&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3 align=&#34;left&#34;&gt;
+  2. Generate Unique Pairs
+&lt;/h3&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Question see &lt;/span&gt;&lt;a href=&#34;http://stackoverflow.com/questions/19875633/how-to-pick-unique-pairs-from-a-single-list&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;here&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;.&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; array x[5] $1 (&amp;#8220;A&amp;#8221; &amp;#8220;C&amp;#8221; &amp;#8220;D&amp;#8221; &amp;#8220;B&amp;#8221; &amp;#8220;E&amp;#8221;);&lt;br /&gt; n = dim(x);&lt;br /&gt; r = 2;&lt;br /&gt; ncomb = comb(n, r);&lt;br /&gt; do j = 1 to ncomb+1;&lt;br /&gt; rc = &lt;span style=&#34;color: #ff0000;&#34;&gt;allcomb&lt;/span&gt;(j, r, of x[*]);&lt;br /&gt; if rc &amp;lt; 0 then leave;&lt;br /&gt; put j 5. +3 x1 “- ” x2 +3;&lt;br /&gt; end;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;The output in Log:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;1   A &amp;#8211; C&lt;br /&gt; 2   A &amp;#8211; E&lt;br /&gt; 3   A &amp;#8211; B&lt;br /&gt; 4   A &amp;#8211; D&lt;br /&gt; 5   C &amp;#8211; D&lt;br /&gt; 6   C &amp;#8211; E&lt;br /&gt; 7   C &amp;#8211; B&lt;br /&gt; 8   D &amp;#8211; B&lt;br /&gt; 9   D &amp;#8211; E&lt;br /&gt; 10   B &amp;#8211; E&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Or if you like alphabetical sorted pairs:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; array x[5] $1 (&amp;#8220;A&amp;#8221; &amp;#8220;C&amp;#8221; &amp;#8220;D&amp;#8221; &amp;#8220;B&amp;#8221; &amp;#8220;E&amp;#8221;);&lt;br /&gt; n = dim(x);&lt;br /&gt; r = 2;&lt;br /&gt; ncomb = comb(n, r);&lt;br /&gt; do j = 1 to ncomb+1;&lt;br /&gt; rc = &lt;span style=&#34;color: #ff0000;&#34;&gt;lexcomb&lt;/span&gt;(j, r, of x[*]);&lt;br /&gt; if rc &amp;lt; 0 then leave;&lt;br /&gt; put j 5. +3 x1 “- ” x2 +3;&lt;br /&gt; end;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;The output:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;1   A &amp;#8211; B&lt;br /&gt; 2   A &amp;#8211; C&lt;br /&gt; 3   A &amp;#8211; D&lt;br /&gt; 4   A &amp;#8211; E&lt;br /&gt; 5   B &amp;#8211; C&lt;br /&gt; 6   B &amp;#8211; D&lt;br /&gt; 7   B &amp;#8211; E&lt;br /&gt; 8   C &amp;#8211; D&lt;br /&gt; 9   C &amp;#8211; E&lt;br /&gt; 10   D &amp;#8211; E&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;I checked &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/content/iml/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Rick Wicklin’s blog&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;and found  &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/content/iml/2013/09/30/generate-combinations-in-sas.html&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;PROC IML&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;offers a much more intuitive approach to this problem:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;proc iml;&lt;br /&gt; n = 5;&lt;br /&gt; r = 2;&lt;br /&gt; idx = &lt;span style=&#34;color: #ff0000;&#34;&gt;allcomb&lt;/span&gt;(n, r);&lt;br /&gt; print idx;&lt;br /&gt; quit;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;The output:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;1 2&lt;br /&gt; 2 3&lt;br /&gt; 1 3&lt;br /&gt; 3 4&lt;br /&gt; 2 4&lt;br /&gt; 1 4&lt;br /&gt; 4 5&lt;br /&gt; 3 5&lt;br /&gt; 2 5&lt;br /&gt; 1 5 &lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;or make the output more readable:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;proc iml;&lt;br /&gt; n = 5;&lt;br /&gt; r = 2;&lt;br /&gt; idx = allcomb(n, r);&lt;br /&gt; print idx;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;    Items = {&amp;#8220;A&amp;#8221; &amp;#8220;C&amp;#8221; &amp;#8220;D&amp;#8221; &amp;#8220;B&amp;#8221; &amp;#8220;E&amp;#8221;};&lt;br /&gt; S = Items[ ,idx];&lt;br /&gt; S = shape(S, 0, r);&lt;br /&gt; print S[r=(char(1:nrow(S)))];&lt;br /&gt; quit;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;the output:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;1  A C&lt;br /&gt; 2  C D&lt;br /&gt; 3  A D&lt;br /&gt; 4  D B&lt;br /&gt; 5  C B&lt;br /&gt; 6  A B&lt;br /&gt; 7  B E&lt;br /&gt; 8  D E&lt;br /&gt; 9  C E&lt;br /&gt; 10 A E &lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;3-generate-unique-pairs-a-macro&#34;&gt;3. Generate Unique Pairs: A Macro&lt;/h3&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Years ago when the build-in functions above might not be available in SAS, a &lt;/span&gt;&lt;a href=&#34;http://www.urz.uni-heidelberg.de/statistik/sas/doc/ts498-combperm.txt&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;macro %combo&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;did the same job:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;%combo(2,a,c,d,b,e)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;The output:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;1  a c&lt;br /&gt; 2  a d&lt;br /&gt; 3  a b&lt;br /&gt; 4  a e&lt;br /&gt; 5  c d&lt;br /&gt; 6  c b&lt;br /&gt; 7  c e&lt;br /&gt; 8  d b&lt;br /&gt; 9  d e&lt;br /&gt; 10 b e&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;It’s fun to check out the macro how to implement it by arrays.&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Statistical Notes (3B): Confidence Intervals for Binomial Proportion Using SAS, Updated</title>
+      <link>/2015/05/22/statistical-notes-3b-confidence-intervals-for-binomial-proportion-using-sas-updated/</link>
+      <pubDate>Fri, 22 May 2015 22:05:39 +0000</pubDate>
+      
+      <guid>/2015/05/22/statistical-notes-3b-confidence-intervals-for-binomial-proportion-using-sas-updated/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This quick note serves as a supplementnote of my previous &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/15/confidence-intervals-binomial-proportion/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Statistical Notes (3): Confidence Intervals for Binomial Proportion Using SAS&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;which I will extend as a &lt;/font&gt;&lt;a href=&#34;http://www.sesug.org/SESUG2015/index.php&#34;&gt;&lt;font size=&#34;1&#34;&gt;SESUG 2015&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;paper. Basically I added a new Blaker method to my &lt;em&gt;&lt;a href=&#34;https://raw.githubusercontent.com/Jiangtang/Programming-SAS/master/CI_Single_Proportion.sas&#34;&gt;CI_Single_Proportion.sas&lt;/a&gt;&lt;/em&gt; file and found more CIs from SAS PROC FREQ.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;First of all, call the script:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;filename CI url “&lt;/font&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;a href=&#34;https://raw.github.com/Jiangtang/Programming-SAS/master/CI_Single_Proportion.sas&#34;&gt;https://raw.github.com/Jiangtang/Programming-SAS/master/CI_Single_Proportion.sas&lt;/a&gt;” ;&lt;/font&gt; &lt;br /&gt;&lt;font face=&#34;Courier New&#34;&gt;%include CI;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%CI_Single_Proportion(r=81,n=263);&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and the output:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/CI_SAS.png&#34;&gt;&lt;img title=&#34;CI_SAS&#34; style=&#34;border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-top-width: 0px&#34; border=&#34;0&#34; alt=&#34;CI_SAS&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/CI_SAS_thumb.png&#34; width=&#34;493&#34; height=&#34;306&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The #12 is the one newly added. We can get the same results by SAS PROC FREQ (I use SAS/Base 9.4, TS1M2, WIN64):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data test; &lt;br /&gt;input grp outcome $ count; &lt;br /&gt;datalines; &lt;br /&gt;1 f 81 &lt;br /&gt;1 u 182 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods select BinomialCLs; &lt;br /&gt;proc freq data=test; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables outcome / binomial (CL= &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; WALD &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; WILSON &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; CLOPPERPEARSON &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; MIDP &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; LIKELIHOODRATIO &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; JEFFREYS &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; AGRESTICOULL &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; LOGIT &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; BLAKER&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight Count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods select BinomialCLs; &lt;br /&gt;proc freq data=test; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables outcome / binomial (CL = &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; WILSON(CORRECT) &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; WALD(CORRECT) &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight Count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;the output:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/CI_SAS_FREQ.png&#34;&gt;&lt;img title=&#34;CI_SAS_FREQ&#34; style=&#34;border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-top-width: 0px&#34; border=&#34;0&#34; alt=&#34;CI_SAS_FREQ&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/CI_SAS_FREQ_thumb.png&#34; width=&#34;314&#34; height=&#34;480&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Only #10 method is not implemented yet in SAS PROC FREQ. There are some Bayesian intervals available in SAS&amp;#160; procedures but since I’m not familiar with Bayes, I will leave it blank by far.&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Calculating Covariance by SAS, A Brutal Way</title>
+      <link>/2015/05/12/calculating-covariance-by-sas-a-brutal-way/</link>
+      <pubDate>Tue, 12 May 2015 15:56:16 +0000</pubDate>
+      
+      <guid>/2015/05/12/calculating-covariance-by-sas-a-brutal-way/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;It was very disappointed that there is only one built-in method to calculate covariance in Base SAS: that’s in &lt;/span&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/proc/67327/HTML/default/viewer.htm#p0v0y1on1hbxukn0zqgsp5ky8hc0.htm&#34;&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;PROC CORR&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small&#34;&gt;(while you can also do it in &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/content/iml/2010/12/08/computing-covariance-and-correlation-matrices.html&#34;&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;SAS/IML&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;, of course):&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/sascorr.png&#34;&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;&lt;img title=&#34;sascorr&#34; style=&#34;border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-top-width: 0px&#34; border=&#34;0&#34; alt=&#34;sascorr&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/sascorr_thumb.png&#34; width=&#34;443&#34; height=&#34;249&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;The following is a quick-and-dirty way to get a function like %COV:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%macro COV(data, var1,var2); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %local _cov; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %let rc = %sysfunc(dosubl(%str(&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; ods select none ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; ods output cov=_cov;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; proc corr data=&amp;amp;data&amp;#160; cov ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; var &amp;amp;var1 &amp;amp;var2 ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; ods select all;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; proc sql noprint; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; select &amp;amp;var2 into :_cov &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; from _cov&amp;#160; (obs=1) &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; drop table&amp;#160; _cov; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; quit &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; ))); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; &amp;amp;_cov &lt;br /&gt;%mend COV;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small; font-family: &amp;#39;Courier New&amp;#39;&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;You can use it in macro variable assignment:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small; font-family: &amp;#39;Courier New&amp;#39;&#34;&gt;%let cov = %COV(sashelp.iris,SepalLength,SepalWidth);&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;or in a data step:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small; font-family: &amp;#39;Courier New&amp;#39;&#34;&gt;data iris; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set sashelp.iris; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; cov = %COV(sashelp.iris,SepalLength,SepalWidth); &lt;br /&gt;run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;or in PROC SQL:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small; font-family: &amp;#39;Courier New&amp;#39;&#34;&gt;proc sql; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; create table iris2 as &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; select *, &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %COV(sashelp.iris,SepalLength,SepalWidth) as cov &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; from sashelp.iris; &lt;br /&gt;quit;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;One line conclusion: I LOVE &lt;/span&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2015/03/09/list-manipulations-made-easy-and-little-bit-of-ugly-the-new-dosubl-function/&#34;&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;Dosubl&lt;/span&gt;&lt;/a&gt; and hope this Dosubl also inspires your programming&lt;span style=&#34;font-size: xx-small&#34;&gt;!&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Import .Rdata to SAS, along with Labels</title>
+      <link>/2015/05/12/import-.rdata-to-sas-along-with-labels/</link>
+      <pubDate>Tue, 12 May 2015 13:06:28 +0000</pubDate>
+      
+      <guid>/2015/05/12/import-.rdata-to-sas-along-with-labels/</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;I didn’t &lt;/span&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2010/10/29/sas-iml-basic/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;play with SAS/IML&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;for a while. I call it back when I need to read some R format data.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Technically, .Rdata is not a data format. It’s rather a big container to hold bunch of R objects:&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/Rdata1.png&#34;&gt;&lt;img style=&#34;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border: 0px;&#34; title=&#34;Rdata&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/Rdata_thumb1.png&#34; alt=&#34;Rdata&#34; width=&#34;408&#34; height=&#34;213&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;In this example, when a .Rdata is loaded, 3 objects are included where ‘data’(the ‘real’ data) and ‘desc’ (data description portion) are of our interests.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;SAS/IML offers a nice interface to call R command which can be used to read the R format data:&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;proc iml;&lt;br /&gt; &lt;strong&gt;submit / R;&lt;/strong&gt;&lt;br /&gt; load(&amp;#8220;C:/data/w5/R data sets for 5e/GPA1.RData&amp;#8221;)&lt;br /&gt; &lt;strong&gt;endsubmit;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;    &lt;strong&gt;call&lt;/strong&gt; &lt;strong&gt;ImportDataSetFromR&lt;/strong&gt;(&amp;#8220;work.GPA1&amp;#8221;, &amp;#8220;&lt;span style=&#34;color: #ff0000;&#34;&gt;data&lt;/span&gt;&amp;#8220;);&lt;br /&gt; &lt;strong&gt;call&lt;/strong&gt; &lt;strong&gt;ImportDataSetFromR&lt;/strong&gt;(&amp;#8220;work.GPA1desc&amp;#8221;, &amp;#8220;&lt;span style=&#34;color: #ff0000;&#34;&gt;desc&lt;/span&gt;&amp;#8220;);&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;quit;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; set GPA1desc end = eof ;&lt;br /&gt; i+1;&lt;br /&gt; II=left(put(i,3.));&lt;br /&gt; call symputx(&amp;#8216;var&amp;#8217;||II,variable);&lt;br /&gt; call symputx(&amp;#8216;label&amp;#8217;||II,label);&lt;br /&gt; if eof then call symputx(&amp;#8216;n&amp;#8217;,II);&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;%macro labelit;&lt;br /&gt; data gpa1;&lt;br /&gt; set gpa1;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;    label&lt;br /&gt; %do i=1 %to &amp;n;&lt;br /&gt; &amp;amp;&amp;amp;var&amp;amp;i = &amp;amp;&amp;amp;label&amp;amp;i&lt;br /&gt; %end;&lt;br /&gt; ;&lt;br /&gt; run;&lt;br /&gt; %mend;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;%labelit&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Confidence Intervals for Binomial Proportion (Again): A Quick Note</title>
+      <link>/2015/05/05/confidence-intervals-for-binomial-proportion-again-a-quick-note/</link>
+      <pubDate>Tue, 05 May 2015 14:22:33 +0000</pubDate>
+      
+      <guid>/2015/05/05/confidence-intervals-for-binomial-proportion-again-a-quick-note/</guid>
+      <description>&lt;p&gt;In &lt;a href=&#34;http://lexjansen.com/&#34;&gt;Lex&lt;/a&gt;’s library of the latest SAS Global Forum 2015 papers, I found an interesting paper by Wu Gong, &lt;em&gt;&lt;a href=&#34;http://support.sas.com/resources/papers/proceedings15/3020-2015.pdf&#34;&gt;Jeffreys Interval for One-Sample Proportion with SAS/STAT Software&lt;/a&gt;&lt;/em&gt;, where SAS MCMC procedure and a so called Random Walk Metropolis Algorithm were implemented to calculate the Jeffreys interval for binomial proportion.&lt;/p&gt;
+
+&lt;p&gt;Years ago I wrote several posts on this topic:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/15/confidence-intervals-binomial-proportion/&#34;&gt;Statistical Notes (3): Confidence Intervals for Binomial Proportion Using SAS&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/23/statistical-notes-5-confidence-intervals-for-difference-between-independent-binomial-proportions-using-sas/&#34;&gt;Statistical Notes (5): Confidence Intervals for Difference Between Independent Binomial Proportions Using SAS&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/08/22/confidence-intervals-for-binomial-proportion-a-sas-9-4stat-12-3-update/&#34;&gt;Confidence Intervals for Binomial Proportion: A SAS 9.4/STAT 12.3 Update&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/08/25/confidence-intervals-for-difference-between-independent-binomial-proportions-a-sas-9-4stat-12-3-update/&#34;&gt;Confidence Intervals for Difference Between Independent Binomial Proportions: A SAS 9.4/STAT 12.3 Update&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I’m not a statistician and I might get some time later to dig these new methods in Wu’s paper (I modified his codes little bit to fit my post):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;/&lt;em&gt;0 input data&lt;/em&gt;/ &lt;br /&gt;data jeff; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; n=263; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; r=81; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;/&lt;em&gt;1 Random Walk Metropolis&lt;/em&gt;/ &lt;br /&gt;%let nmc=1010000; &lt;br /&gt;%let c=0.08;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;data PosteriorSample; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; call streaminit(123); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set jeff; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; p0=0.5; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; retain p0;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; do i = 1 to &amp;amp;nmc.; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; p1=p0+rand(&amp;#8216;normal&amp;#8217;,0,&amp;amp;c.); &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; do while(p1 lt 0 or p1 gt 1); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; p1=p0+rand(&amp;#8216;normal&amp;#8217;,0,&amp;amp;c.); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; end;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; logratio=(&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;-1)*log(p1)+(&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;-1)*log(1-p1)+r*log(p1)+(n-r)*log(1-p1) &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &amp;#8211; (&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;-1)*log(p0)-(&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;-1)*log(1-p0)-r*log(p0)-(n-r)*log(1-p0); &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; if log(rand(&amp;#8216;uniform&amp;#8217;)) &amp;lt;= logratio then do; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; p0=p1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; end;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; if i gt 10000 and floor(i/20)*20 eq i then do; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; output; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; end; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; end; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; keep i p0; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;title &amp;ldquo;Jeffreys Interval by Random Walk Metropolis Algorithm&amp;rdquo;; &lt;br /&gt;proc univariate data=PosteriorSample noprint; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; var p0; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; output out=PP pctlpts = 2.5 97.5 pctlpre = pct; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc print data=pp noobs; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; format pct2_5 pct97_5 6.4; &lt;br /&gt;run; &lt;br /&gt;title;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;/&lt;em&gt;2 MCMC&lt;/em&gt;/ &lt;br /&gt;title &amp;ldquo;Jeffreys Credible Interval by PROC MCMC&amp;rdquo;; &lt;br /&gt;ods select PostIntervals; &lt;br /&gt;proc mcmc data=jeff &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; seed=123 &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; outpost=PosteriorSample2 &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; nbi=10000 &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; nthin=20 &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; nmc=1000000 &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; statistics=(summary interval) diagnostics=none plots=none; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; parms prb 0.5; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; prior prb ~ beta(&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;,&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; model r ~ binomial(n,prb); &lt;br /&gt;run; &lt;br /&gt;title;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>List Manipulations Made Easy (and little bit of UGLY): the New DOSUBL Function</title>
+      <link>/2015/03/09/list-manipulations-made-easy-and-little-bit-of-ugly-the-new-dosubl-function/</link>
+      <pubDate>Mon, 09 Mar 2015 15:07:54 +0000</pubDate>
+      
+      <guid>/2015/03/09/list-manipulations-made-easy-and-little-bit-of-ugly-the-new-dosubl-function/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Typically, &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/03/31/list-processing-with-sas-a-github-repository/&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS list manipulations&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;needs bunch of SAS I/O functions which are not necessarily well known to all SAS programmers. The new &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lefunctionsref/67398/HTML/default/viewer.htm#p09dcftd1xxg1kn1brnjyc0q93yk.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;DOSUBL&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;function makes this technique much more easier and little bit of ugly I must admit:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%MACRO ExpandVarList(data=&lt;em&gt;LAST&lt;/em&gt;, var=&lt;em&gt;ALL&lt;/em&gt;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %if %upcase(%superq(data)) = &lt;em&gt;LAST&lt;/em&gt; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %then %let data = &amp;SYSLAST; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %let rc = %sysfunc(dosubl(%str( &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; proc transpose data=&amp;amp;DATA(obs=0) out=ExpandVarList_temp; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; var &amp;VAR; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; run; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; proc sql noprint; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; select &lt;em&gt;name&lt;/em&gt; into :temp_varnames separated by &amp;#8216; &amp;#8216; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; from ExpandVarList_temp &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; drop table ExpandVarList_temp; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; quit &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; ))); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; &amp;amp;temp_varnames &lt;br /&gt;%MEND ExpandVarList;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%put %ExpandVarList(data=sashelp.class);&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This piece of code comes from &lt;em&gt;&lt;a href=&#34;https://support.sas.com/resources/papers/proceedings13/032-2013.pdf&#34;&gt;Submitting SAS Code On The Side&lt;/a&gt;&lt;/em&gt; by Rick Langston. It’s not elegant by any means compared to &lt;/font&gt;&lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/blob/master/getVar.sas&#34;&gt;&lt;font size=&#34;1&#34;&gt;this version&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, but does have huge advantage of utilizing traditional SAS programming elements like data steps, procedures and such.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;UPDATE 2015-03-16&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Ronan Martorell, a SAS programmer from Paris, came out other two methods for the task above, also leveraged by DOSUBL (&lt;em&gt;the sky is not limited!&lt;/em&gt;). The followings are his piece of codes (with permissions; Thank you Ronan!):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;font face=&#34;Courier New&#34;&gt;/* &lt;font color=&#34;#ff0000&#34;&gt;&amp;#8212; Method no. 2 :using a Data Step + Array launched by DOSUBL&amp;#8211;&lt;/font&gt; */ &lt;br /&gt;%macro VarList(data=); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %local varlist;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; /* DOSUBL required for executing the Data Step in a distinct session &lt;em&gt;/ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %let rc = %sysfunc(dosubl(%str( &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; Data &lt;em&gt;null&lt;/em&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; length varlist $32167.; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; set &amp;amp;data(obs=1); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; array avarn[&lt;/em&gt;] &lt;em&gt;NUMERIC&lt;/em&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; array avarc[*] &lt;em&gt;CHARACTER&lt;/em&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; do i=1 to dim(avarn); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; varlist=CATX(&amp;#8216; &amp;#8216;,varlist, vname(avarn[i])); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; end; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; do i=1 to dim(avarc); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; *no self-reference allowed!; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; if vname(avarc[i]) NE &amp;#8216;varlist&amp;#8217; then &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; varlist=CATX(&amp;#8216; &amp;#8216;,varlist, vname(avarc[i])); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; end; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; call symputx(&amp;#8216;varlist&amp;#8217;,varlist); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; run; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; ))); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; &amp;amp;varlist &lt;br /&gt;%mend VarList; &lt;br /&gt;%put %VarList(data=sashelp.class);&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;font color=&#34;#ff0000&#34;&gt;&amp;#8212; Method no. 3:&amp;#160; using Dictionary View COLUMNS launched by DOSUBL&lt;/font&gt; &amp;#8211;*/ &lt;br /&gt;%macro VarlistDIC(data=); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %local libname memname varlist;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; /* Test : if . separator exists in DataSet name then extracts Libname &amp;amp; Memname strings accordingly */ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %let libname=%UPCASE( %sysfunc( IFC( %index(&amp;amp;data, .) EQ 0, WORK, %scan(&amp;amp;data, &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 1) ))); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; %let memname=%UPCASE( %sysfunc( IFC( %index(&amp;amp;data, .) EQ 0, &amp;amp;data, &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; %scan(&amp;amp;data, 2) ))); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; %let rc = %sysfunc(dosubl(%str( &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; proc sql noprint; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; select name into :varlist separated by &amp;#8216; &amp;#8216; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; from DICTIONARY.COLUMNS &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; where libname EQ &amp;ldquo;&amp;amp;libname&amp;rdquo; and memname EQ &amp;ldquo;&amp;amp;memname&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; quit; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; )));&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; &amp;amp;varlist &lt;br /&gt;%mend VarlistDIC; &lt;br /&gt;%put %VarListDIC(data=sashelp.class);&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Ronan also kindly contributed his I/O version (check out &lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing/blob/master/getVar.sas&#34;&gt;another I/O version in my github page&lt;/a&gt;):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;font color=&#34;#ff0000&#34;&gt;&amp;#8212; Method no. 4 : using SCL function with iterative FETCHOB + DICTIONARY VIEW &amp;#8212;&lt;/font&gt; &lt;em&gt;/ &lt;br /&gt;%macro ListVar(libname=, memname=); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; /&lt;/em&gt; local var initialisation &lt;em&gt;/ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %let listvar=; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %let i=0;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; /&lt;/em&gt; open dictionary view with WHERE clause&lt;em&gt;/ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %let id=%sysfunc(open(sashelp.vcolumn (where=( libname = &amp;ldquo;%upcase(&amp;amp;libname)&amp;rdquo; AND memname= &amp;ldquo;%upcase(&amp;amp;memname)&amp;ldquo;)))); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; /&lt;/em&gt; load variable names into macro-variables (beware macro var collision !) &lt;em&gt;/ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; /&lt;/em&gt; Cf. &lt;/font&gt;&lt;a href=&#34;http://www.notecolon.info/2013/01/note-open-function-reading-data-sets-in.html&#34;&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;http://www.notecolon.info/2013/01/note-open-function-reading-data-sets-in.html&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&lt;em&gt;/ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %syscall set(id); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %let rc=0; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; /&lt;/em&gt; loop into each line and accumulate the variable names into a list*/ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %do %until(&amp;amp;rc LT 0); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; %let i=&amp;amp;i+1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; %let rc=%sysfunc(fetchobs(&amp;amp;id, &amp;amp;i));&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; /* force loop exit once last variable has been stored into the list */ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; %let listvar= %sysfunc( IFC ( &amp;amp;rc GE 0, &amp;amp;listvar &amp;amp;Name, &amp;amp;listvar )); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %end; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %let id=%sysfunc(close(&amp;amp;id));&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160; /* expands the list */ &lt;br /&gt;&amp;#160; &amp;amp;listvar &lt;br /&gt;%mend; &lt;br /&gt;%put %ListVar(libname=sashelp, memname=class);&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Takeaway Materials From PharmaSUG SDE, Cary, NC</title>
+      <link>/2014/09/29/takeaway-materials-from-pharmasug-sde-cary-nc/</link>
+      <pubDate>Mon, 29 Sep 2014 21:59:02 +0000</pubDate>
+      
+      <guid>/2014/09/29/takeaway-materials-from-pharmasug-sde-cary-nc/</guid>
+      <description>&lt;p&gt;It’s the first &lt;a href=&#34;http://www.pharmasug.org/sde/cary2014.html&#34; target=&#34;_blank&#34;&gt;PharmaSUG event&lt;/a&gt; I ever attended and it’s great and I plan to submit a paper for PharmaSUG 2015.&lt;/p&gt;
+
+&lt;p&gt;Honors belonged to Mike Molter and Lex Jansen for their hardcore talks on XML and CDISC Dataset-XML respectively. &lt;a href=&#34;http://www.cdisc.org/dataset-xml&#34; target=&#34;_blank&#34;&gt;Dataset-XML&lt;/a&gt; is basically ODM based replacement of currently wildly used &lt;a href=&#34;http://support.sas.com/kb/46/944.html&#34; target=&#34;_blank&#34;&gt;SAS Version 5 Transport File&lt;/a&gt;. It’s an emerging technology and it’s nice to check it out:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://wiki.cdisc.org/display/PUB/CDISC+Dataset-XML+Resources&#34; target=&#34;_blank&#34;&gt;CDISC Dataset-XML Resources @CDISC&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://support.sas.com/rnd/base/cdisc/cst/#preprod&#34; target=&#34;_blank&#34;&gt;Support for Dataset-XML v1.0 @SAS&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>To Exit or Not Exit, the SAS Ways</title>
+      <link>/2014/09/11/to-exit-or-not-exit-the-sas-ways/</link>
+      <pubDate>Thu, 11 Sep 2014 22:55:59 +0000</pubDate>
+      
+      <guid>/2014/09/11/to-exit-or-not-exit-the-sas-ways/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The tragedy of life is not that it ends so soon, but that we wait so long to begin it. –by W. M. Lewis&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;So, which is the exit style you prefer, in the following 3 macros (which are all valid SAS codes): &lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;#1 if branch&lt;/em&gt;/ &lt;br /&gt;%macro tragedy_of_life1(ds); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %if %sysfunc(exist(&amp;amp;ds)) %then %do; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; proc print data=&amp;amp;ds noobs; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; run; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %end; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;%else %do&lt;/font&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; %put ERROR: Dataset &amp;amp;ds not exist.; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %end; &lt;br /&gt;%mend;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;#2 abort&lt;/em&gt;/ &lt;br /&gt;%macro tragedy_of_life2(ds); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %if %sysfunc(exist(&amp;amp;ds)) ^= 1 %then %do; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; %put ERROR: Dataset &amp;amp;ds not exist.; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; %&lt;font color=&#34;#ff0000&#34;&gt;abort&lt;/font&gt; cancel;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %end;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; proc print data=&amp;amp;ds noobs; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; run; &lt;br /&gt;%mend;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;#3 goto&lt;/em&gt;/ &lt;br /&gt;%macro tragedy_of_life3(ds); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %if %sysfunc(exist(&amp;amp;ds)) ^= 1 %then %do; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; %put ERROR: Dataset &amp;amp;ds not exist.; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; %&lt;font color=&#34;#ff0000&#34;&gt;goto&lt;/font&gt; iExit;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %end;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; proc print data=&amp;amp;ds noobs; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; %iExit: &lt;br /&gt;%mend;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I personally use #2, &lt;em&gt;&lt;strong&gt;%abort cancel&lt;/strong&gt;&lt;/em&gt;. For &lt;strong&gt;&lt;em&gt;goto&lt;/em&gt;&lt;/strong&gt; in #3, it might not a good idea to use &lt;strong&gt;&lt;em&gt;goto&lt;/em&gt;&lt;/strong&gt; statement in any cases, so I avoid it as long as I can. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;#1 is good, but you can imagine that the branches will grow dramatically if lots of exceptions are under checking. &lt;em&gt;&lt;strong&gt;%abort cancel&lt;/strong&gt;&lt;/em&gt; in #2 will best serve the purpose to isolate the blocks.&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Order Matters: A Weird Behavior of SAS ODS Style Options</title>
+      <link>/2014/09/04/order-matters-a-weird-behavior-of-sas-ods-style-options/</link>
+      <pubDate>Thu, 04 Sep 2014 14:24:16 +0000</pubDate>
+      
+      <guid>/2014/09/04/order-matters-a-weird-behavior-of-sas-ods-style-options/</guid>
+      <description>&lt;p&gt;The codes to push a dataset to Excel (&lt;em&gt;technically XML&lt;/em&gt;):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;ods tagsets.excelxp file=&amp;ldquo;test.xls&amp;rdquo;; &lt;br /&gt;&amp;#160; &lt;br /&gt;*#1; &lt;br /&gt;ods tagsets.excelxp options( sheet_name=&amp;#8217;test 1&amp;#8242;); &lt;br /&gt;proc print data=sashelp.class noobs; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; var height / &lt;font color=&#34;#ff0000&#34;&gt;style={tagattr=&amp;#8217;format:text&amp;#8217;}&lt;/font&gt; style(column)={cellwidth=.5 in}; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;*#2;&amp;#160; &lt;br /&gt;ods tagsets.excelxp options( sheet_name=&amp;#8217;test 2&amp;#8242;); &lt;br /&gt;proc print data=sashelp.class noobs; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; var height / style(column)={cellwidth=.5 in} &lt;font color=&#34;#ff0000&#34;&gt;style={tagattr=&amp;#8217;format:text&amp;#8217;}&lt;/font&gt; ; &lt;br /&gt;run; &lt;br /&gt;&amp;#160; &lt;br /&gt;ods tagsets.excelxp close;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The output of #1:&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/09/SAS_ODS_options1.png&#34;&gt;&lt;img title=&#34;SAS_ODS_options1&#34; style=&#34;border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; border-left: 0px; display: block; padding-right: 0px&#34; border=&#34;0&#34; alt=&#34;SAS_ODS_options1&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/09/SAS_ODS_options1_thumb.png&#34; width=&#34;295&#34; height=&#34;575&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;#2:&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/09/SAS_ODS_options2.png&#34;&gt;&lt;img title=&#34;SAS_ODS_options2&#34; style=&#34;border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; border-left: 0px; display: block; padding-right: 0px&#34; border=&#34;0&#34; alt=&#34;SAS_ODS_options2&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/09/SAS_ODS_options2_thumb.png&#34; width=&#34;318&#34; height=&#34;567&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The difference among the two pieces of code, #1 and #2 is trivial, as far as observed: only the position of the ODS style options was swapped. The weird thing is that they produced different outputs with different column width and cell format.&lt;/p&gt;
+
+&lt;p&gt;The answer: I don’t know. I threw this question to SAS-L and SAS tech and we might come back to this question days later.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Support the Blog Author to Bike MS</title>
+      <link>/2014/08/11/support-the-blog-author-to-bike-ms/</link>
+      <pubDate>Mon, 11 Aug 2014 12:56:33 +0000</pubDate>
+      
+      <guid>/2014/08/11/support-the-blog-author-to-bike-ms/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/08/bike_MS.png&#34;&gt;&lt;font size=&#34;2&#34;&gt;&lt;img title=&#34;bike_MS&#34; style=&#34;border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; border-left: 0px; display: block; padding-right: 0px&#34; border=&#34;0&#34; alt=&#34;bike_MS&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/08/bike_MS_thumb.png&#34; width=&#34;463&#34; height=&#34;258&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;My dear readers,&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;I’m asking you to support me in &lt;/font&gt;&lt;a href=&#34;http://bikenct.nationalmssociety.org/site/PageServer?pagename=BIKE_NCT_Landing_Page&amp;amp;fr_id=23481&#34;&gt;&lt;font size=&#34;2&#34;&gt;Bike MS&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;2&#34;&gt;(Multiple Sclerosis) and I will ride 60 miles to support the campaign in New Bern, NC, September 6 &amp;#8211; 7, 2014.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;As my understanding, one of the purposes of this fundraising, is to&lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt; let the message spread&lt;/font&gt;&lt;/strong&gt;. MS is a very rare disease. Although every pain is equal, we can imagine (and even understand) that few pharmaceutical companies and research institutes have strong financial incentives to support MS R&amp;amp;D. Bike MS campaign is to help to fill the gap.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;My first Bike MS ride was in 2012, the first year I landed in US. I didn’t show up in 2013 event because at that time, my wife and me were busying to greet a new generation of biker who is playing with my bike in the picture above. I registered this 2014 event and a 300$ minimal fundraising is required. To support, jump to my Bike MS page and click ‘DONATE To JIANGTANG’:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;div&gt;
+  &lt;font size=&#34;2&#34;&gt;&lt;a title=&#34;http://main.nationalmssociety.org/site/TR/Bike/NCTBikeEvents?px=10613738&amp;pg=personal&amp;fr_id=23481&#34; href=&#34;http://main.nationalmssociety.org/site/TR/Bike/NCTBikeEvents?px=10613738&amp;pg=personal&amp;fr_id=23481&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://main.nationalmssociety.org/site/TR/Bike/NCTBikeEvents?px=10613738&amp;amp;pg=personal&amp;amp;fr_id=23481&#34;&gt;http://main.nationalmssociety.org/site/TR/Bike/NCTBikeEvents?px=10613738&amp;amp;pg=personal&amp;amp;fr_id=23481&lt;/a&gt;&lt;/a&gt;&lt;/font&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;This Bike MS homepage is the most convenient and secure way to transfer money which will go directly to MS Society, the organizer. You can also choose to be showed up in my ‘Donor Honor Roll’ or stay anonymous. If it does not meet your financial habit and you’re considering Paypal or a paper check, please let me know and I can collect and hand it on to the organizer when I check in.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;Any bucks are appreciated. Thank you to be part of efforts of a MS free world.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;Jiangtang&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Minimal Set of Resource for SAS Programmers</title>
+      <link>/2014/06/20/a-minimal-set-of-resource-for-sas-programmers/</link>
+      <pubDate>Fri, 20 Jun 2014 11:04:49 +0000</pubDate>
+      
+      <guid>/2014/06/20/a-minimal-set-of-resource-for-sas-programmers/</guid>
+      <description>
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;&lt;font size=&#34;1&#34;&gt;A friend asked me for some recommendations of SAS books and I hope it would not be too late! If I got the similar inquiries, I will just refer to this post:)&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;&lt;font size=&#34;1&#34;&gt;It’s not a good idea just to dump every SAS titles to beginners. If only one needed in your bookshelf, I will pick up this u&lt;/font&gt;&lt;/span&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;&lt;font size=&#34;1&#34;&gt;ltimate set:&lt;/font&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;h5 id=&#34;span-style-font-size-xx-small-span-style-color-ff0000-em-font-size-1-sas-programming-course-notes-font-em-span-span-font-size-1-i-font-https-support-sas-com-pubscat-bookdetails-jsp-catid-1-pc-e2132-span-style-font-size-xx-small-color-ff0000-em-font-size-1-font-a-href-https-support-sas-com-pubscat-bookdetails-jsp-catid-1-pc-e2139-font-size-1-ii-font-a-em-span-span-style-font-size-xx-small-color-ff0000-em-font-size-1-font-em-span-font-size-1-iii-font-https-support-sas-com-pubscat-bookdetails-jsp-catid-1-pc-e2432-span-style-font-size-xx-small-color-ff0000-em-font-size-1-font-em-span&#34;&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;&lt;span style=&#34;color: #ff0000&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;SAS Programming Course Notes (&lt;/font&gt;&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=E2132&#34;&gt;&lt;font size=&#34;1&#34;&gt;I&lt;/font&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small; color: #ff0000&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;, &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;pc=E2139&#34;&gt;&lt;font size=&#34;1&#34;&gt;II&lt;/font&gt;&lt;/a&gt;&lt;/em&gt;&lt;/span&gt;&lt;span style=&#34;font-size: xx-small; color: #ff0000&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;, &lt;/font&gt;&lt;/em&gt;&lt;/span&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=E2432&#34;&gt;&lt;font size=&#34;1&#34;&gt;III&lt;/font&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small; color: #ff0000&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;)&lt;/font&gt;&lt;/em&gt;&lt;/span&gt;&lt;/h5&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;&lt;font size=&#34;1&#34;&gt;Typically people got such course notes by attending SAS trainings, but you can also get the electronic copies only from SAS bookstore (online of course, $100 for each). Well organized, easy to follow as self learner, with&amp;#160; c&lt;span style=&#34;font-size: xx-small&#34;&gt;overage from basic to advanced topics, t&lt;/span&gt;hese course notes will be definitely your best investment to boost your SAS career. &lt;/font&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;&lt;font size=&#34;1&#34;&gt;Note that SAS Programming I online course is set to &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2014/06/19/best-opportunity-ever-for-sas-learning-free-software-free-online-courses/&#34;&gt;&lt;font size=&#34;1&#34;&gt;free&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt; for one year period. You won’t get the free course note, the online training is fantastic.&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;&lt;font size=&#34;1&#34;&gt;Actually there was also one wonderful alternative for the course notes, if you can get it by chance:&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;h6 id=&#34;span-style-color-ff0000-sas-onlinetutor-span&#34;&gt;&lt;em&gt;&lt;span style=&#34;color: #ff0000&#34;&gt;SAS OnlineTutor&lt;/span&gt;&lt;/em&gt;&lt;/h6&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS Online Tutor (both for Base and Advanced) is best of best for beginners: step-by-step, interactive and with full coverage of SAS Base/Advanced certificate tests. It was once shipped with SAS 9.1.3 but gone since 9.2. &lt;/font&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small&#34;&gt;&lt;font size=&#34;1&#34;&gt;You might find the links online (&lt;em&gt;once showed up in &lt;a href=&#34;http://listserv.uga.edu/cgi-bin/wa?A2=ind1306d&amp;L=sas-l&amp;O=A&amp;F=P&amp;P=4449&#34;&gt;SAS-L&lt;/a&gt;&lt;/em&gt;) but use at your own risks due to the potential copyright issue:&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;SAS OnlineTutor®: Basic and Intermediate SAS&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://web.utk.edu/sas/OnlineTutor/1.2/en/60476/paths.htm&#34;&gt;http://web.utk.edu/sas/OnlineTutor/1.2/en/60476/paths.htm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;_SASOnlineTutor&lt;em&gt;®&lt;/em&gt;:Advanced SAS_&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://web.utk.edu/sas/OnlineTutor/1.2/en/60477/index.htm&#34;&gt;http://web.utk.edu/sas/OnlineTutor/1.2/en/60477/index.htm&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Best Opportunity Ever For SAS Learning: Free Software, Free Online Courses</title>
+      <link>/2014/06/19/best-opportunity-ever-for-sas-learning-free-software-free-online-courses/</link>
+      <pubDate>Thu, 19 Jun 2014 13:21:45 +0000</pubDate>
+      
+      <guid>/2014/06/19/best-opportunity-ever-for-sas-learning-free-software-free-online-courses/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS Institute now offers free SAS software for non-commercial uses which contains everything you need to play with SAS programming:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Base (including ODS Graphics) &lt;br /&gt;STAT &lt;br /&gt;IML &lt;br /&gt;SAS/ACCESS® Interface to PC Files (to deal with Excel and such) &lt;br /&gt;SAS Studio (which is your new online&amp;#160; SAS editor)&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Note the SAS/Graph is not available but I think the newer and much fancier ODS Graphics will fill the gap. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;font size=&#34;1&#34;&gt;The software, SAS University Edition:&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.sas.com/en_us/software/university-edition/download.html&#34; title=&#34;http://www.sas.com/en_us/software/university-edition/download.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.sas.com/en_us/software/university-edition/download.html&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;font size=&#34;1&#34;&gt;A nice walk-in of the software by Robert Allison:&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blogs.sas.com/content/sastraining/2014/06/18/free-sas-software-for-students/?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+sasblogs+%28SAS+Blogs%29&#34; title=&#34;http://blogs.sas.com/content/sastraining/2014/06/18/free-sas-software-for-students/?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+sasblogs+%28SAS+Blogs%29&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://blogs.sas.com/content/sastraining/2014/06/18/free-sas-software-for-students/?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+sasblogs+%28SAS+Blogs%29&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Besides the free software, SAS also opens two free online courses which are valid for one year period:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;_&lt;a href=&#34;https://support.sas.com/edu/schedules.html?ctry=us&amp;id=277&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS Programming 1: Essentials&lt;/font&gt;&lt;/a&gt;_&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://support.sas.com/edu/schedules.html?id=1320&amp;ctry=US&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Statistics 1: Introduction to ANOVA, Regression, and Logistic Regression&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;font size=&#34;1&#34;&gt;I followed these two courses many years ago and I still keep their course notes. The &lt;em&gt;SAS Programming I&lt;/em&gt; course will give new learners good foundation of SAS skills and help to pass the &lt;strong&gt;&lt;a href=&#34;http://support.sas.com/certify/creds/bp.html&#34; target=&#34;_blank&#34;&gt;SAS Certified Base Programmer for SAS 9 Credential&lt;/a&gt; examination&lt;/strong&gt;. &lt;/font&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Free Clinical Trial Data (with Protocols and CRFs!)</title>
+      <link>/2014/05/13/free-clinical-trial-data-with-protocols-and-crfs/</link>
+      <pubDate>Tue, 13 May 2014 13:55:58 +0000</pubDate>
+      
+      <guid>/2014/05/13/free-clinical-trial-data-with-protocols-and-crfs/</guid>
+      <description>&lt;p&gt;Bookmark it, a collection of clinical data, with full protocols and annotated CRFs by National Institute on Drug Abuse (NIDA):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://datashare.nida.nih.gov/protocol/data&#34; title=&#34;http://datashare.nida.nih.gov/protocol/data&#34;&gt;http://datashare.nida.nih.gov/protocol/data&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

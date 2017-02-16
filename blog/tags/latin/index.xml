@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Latin on Lithium Theme</title>
+    <link>/tags/latin/index.xml</link>
+    <description>Recent content in Latin on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/latin/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>An Online Latin to English Translator via SAS</title>
+      <link>/2011/10/08/an-online-latin-to-english-translator-via-sas/</link>
+      <pubDate>Sat, 08 Oct 2011 21:47:59 +0000</pubDate>
+      
+      <guid>/2011/10/08/an-online-latin-to-english-translator-via-sas/</guid>
+      <description>&lt;p&gt;Last month I submitted piece of SAS codes for a monthly programming challenge hosted by &lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/08/15/sas-bloggers-in-action-2-jian-dai-and-his-sas-academy/&#34; target=&#34;_blank&#34;&gt;Jian Dai&lt;/a&gt; to &lt;a href=&#34;http://blog.clinovo.com/programming-challenge-6-motto-of-hogwarts-school/&#34; target=&#34;_blank&#34;&gt;translate the Latin motto of Hogwarts School in Harry Potter&lt;/a&gt; into English__:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;draco dormiens nunquam titillandus&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You can get the meaning using Google search of course—but not in Google Translator (Google Translator can’t recognize all of such Latin words!). Jian posted a concise &lt;a href=&#34;http://blog.clinovo.com/october-programming-challenge-ranking-american-heroes/&#34; target=&#34;_blank&#34;&gt;Perl way to parse webs&lt;/a&gt; which contain this Latin phrase and key words “mean”,  “means” and such and you can always find &lt;a href=&#34;http://www.ehow.com/about_6530758_meaning-__draco-dormiens___.html&#34; target=&#34;_blank&#34;&gt;page&lt;/a&gt; like&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#8220;draco dormiens nunquam titillandus,&amp;#8221; which means &amp;#8220;never tickle a sleeping dragon.&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;My &lt;a href=&#34;http://jiangtanghu.com/docs/en/Latin2Eng.sas&#34; target=&#34;_blank&#34;&gt;SAS approach&lt;/a&gt; can’t return a human readable sentence like this one but a 100% word to word machine translation and you can use it to translate any Latin sentence which happens not appear in any singe web page. The usage is also very simple:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;filename L2E url &amp;#8216;&lt;a href=&#34;http://jiangtanghu.com/docs/en/Latin2Eng.sas&#34;&gt;http://jiangtanghu.com/docs/en/Latin2Eng.sas&amp;#8217;;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;%include L2E;&lt;/p&gt;
+
+&lt;p&gt;%Latin2Eng(&lt;span style=&#34;color: #ff0000;&#34;&gt;draco dormiens nunquam titillandus&lt;/span&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and you get:&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;strong&gt;Obs   draco         dormiens                               nunquam                         titillandus&lt;/strong&gt; &lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  &lt;span style=&#34;font-size: xx-small;&#34;&gt;1    dragon    sleep, rest                 at no time, never            tickle, titillate, provoke&lt;br /&gt; 2     snake     be/fall asleep          not in any circumstances     stimulate sensually&lt;br /&gt; 3                   behave as if asleep&lt;br /&gt; 4                   be idle, do nothing&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  and also (2*4*2*2=) 32 Cartesian combinations to feel the meaning if needed.
+&lt;/p&gt;
+
+&lt;p align=&#34;left&#34;&gt;
+  Then you can also test the words by Julius Caesar:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p align=&#34;left&#34;&gt;
+  %Latin2Eng(&lt;span style=&#34;color: #ff0000;&#34;&gt;Veni Vidi Vici&lt;/span&gt;)
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and get:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Obs   Veni       Vidi                                                                     Vici&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;1     come    see, look at                                                     conquer, defeat, excel&lt;/p&gt;
+
+&lt;p&gt;2                 consider                                                           outlast&lt;/p&gt;
+
+&lt;p&gt;3                (PASS) seem, seem good, appear, be seen      succeed&lt;/p&gt;
+
+&lt;p&gt;This SAS translator is based on &lt;a href=&#34;http://users.erols.com/whitaker/words.htm &#34; target=&#34;_blank&#34;&gt;WORDS (version 1.97FC) by William Whitaker&lt;/a&gt; and the codes still needs some modifications when any unexpected special symbols popped up in the translating page.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

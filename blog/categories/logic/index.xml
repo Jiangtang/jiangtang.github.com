@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Logic on Lithium Theme</title>
+    <link>/categories/logic/index.xml</link>
+    <description>Recent content in Logic on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/categories/logic/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Frequentist or Baysian in A Binomial Test</title>
+      <link>/2012/09/21/frequentist-or-baysian-in-a-binomial-test/</link>
+      <pubDate>Fri, 21 Sep 2012 01:20:10 +0000</pubDate>
+      
+      <guid>/2012/09/21/frequentist-or-baysian-in-a-binomial-test/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;A latest updated post on &lt;/font&gt;&lt;a href=&#34;http://www.freakonomics.com&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Freakonomics&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, &lt;em&gt;&lt;a href=&#34;http://www.freakonomics.com/2012/09/20/beware-the-weasel-word-statistical-in-statistical-significance/&#34; target=&#34;_blank&#34;&gt;Beware the Weasel Word “Statistical” in Statistical Significance!&lt;/a&gt;&lt;/em&gt;,&amp;#160; seemed to attempt to challenge frequentist statistics by Bayesian. I have no research on Bayesian and won’t jump to the debates. I’d rather to use this case to apply the &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/16/hypothesis-testing/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Dragon’s Teeth and Fleas logic of hypothesis testing&lt;/font&gt;&lt;/a&gt; (at least I think frequentist is pretty intuitive)&lt;font size=&#34;1&#34;&gt;. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;A story goes with this post, that Bob won 20 times out of total 30 rounds with Alice in a children card game, “War”. War itself is a totally random game, so everyone is supposed to have 50% chance to win in a fair game. Since Bob won 20 out of 30, the question raised: is he cheating?&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;To answer this question, just follow the &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/16/hypothesis-testing/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Dragon’s Teeth and Fleas logic of hypothesis testing&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;First, assume they are dragon’s teeth; in this case, we assume it is a fair game that everyone has probability of 0.5 to win. &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Under this assumption, we know the the number of winning follows &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Binomial_distribution&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;binomial distribution&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;with probability of 0.5. Now we should check Bob’s 20 winning in 30 in this distribution: is this output extreme, or is it a flea? &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;We then get the p-Value calculated by P(X&amp;gt;=20) which means the chance of winning 20 times and more in 30 games (as extreme or even more extreme ), is 0.0494. Here we only think about winning, so it is a one-sided test. Since this p-Value is less than the default &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Statistical_significance&#34;&gt;&lt;font size=&#34;1&#34;&gt;significance level&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;of 0.05 (IT IS A FLEA!), we reject the null and think this is more likely not a fair game (Bob is cheating in this statistical point of view). &lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Bob.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Bob&#34; border=&#34;0&#34; alt=&#34;Bob&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Bob_thumb.png&#34; width=&#34;503&#34; height=&#34;257&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;That’s all the story. Then &lt;/font&gt;&lt;a href=&#34;http://www.freakonomics.com/2012/09/20/beware-the-weasel-word-statistical-in-statistical-significance/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;this post&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;goes, “Although the procedure is mathematically well defined, it is nonsense”. The following is the first reason listed in the post:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;To calculate the probability of Bob’s winning at least 20 games, you use not only the data that you saw (that Bob won 20 games out of 30) but also the imaginary data of Bob winning 21 out of 30 games, or 22 out of 30 games, all the way up to Bob winning all 30 games. The idea of imaginary data is oxymoronic.&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In my opinion, the so called “imaginary data” are just the data filling out the binomial distribution (under the assumption of true null hypothesis) we got before and they are not oxymoronic at all (&lt;em&gt;sorry I use “data” as plural&lt;/em&gt;).&amp;#160; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;What do you think? I can’t go far away from here due to my limit knowledge of Bayesian.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-appendix: SAS Codes and Outputs&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data a; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input output count; &lt;br /&gt;datalines; &lt;br /&gt;0 20 &lt;br /&gt;1 10 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc freq data=a; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables output /binomialc (p=0.5) alpha=0.05; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; exact binomial; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Bob_SAS.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;Bob_SAS&#34; border=&#34;0&#34; alt=&#34;Bob_SAS&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Bob_SAS_thumb.png&#34; width=&#34;325&#34; height=&#34;314&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Statistical Notes (4): Dragon&amp;rsquo;s Teeth and Fleas: Hypothesis Testing in Plain English</title>
+      <link>/2012/09/16/statistical-notes-4-dragonrsquos-teeth-and-fleas-hypothesis-testing-in-plain-english/</link>
+      <pubDate>Sun, 16 Sep 2012 14:12:07 +0000</pubDate>
+      
+      <guid>/2012/09/16/statistical-notes-4-dragonrsquos-teeth-and-fleas-hypothesis-testing-in-plain-english/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://mathbabe.org/2012/07/31/statisticians-arent-the-problem-for-data-science-the-real-problem-is-too-many-posers/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Statisticians aren’t the problem for data science. The real problem is too many posers&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;&amp;#8212; Cathy O’Neil&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://mathbabe.org/2012/07/31/statisticians-arent-the-problem-for-data-science-the-real-problem-is-too-many-posers/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;you actually do need to understand how to invert a matrix at some point in your life if you want to be a data scientist.&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;&amp;#8212; Cathy O’Neil&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://deepbluenine.deviantart.com/art/Red-Dragon-170245865&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Red_Dragon_by_DeepBlueNine&#34; border=&#34;0&#34; alt=&#34;Red_Dragon_by_DeepBlueNine&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Red_Dragon_by_DeepBlueNine.jpg&#34; width=&#34;404&#34; height=&#34;312&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I was asked in several different occasions to explain &lt;a href=&#34;http://en.wikipedia.org/wiki/Statistical_hypothesis_testing&#34; target=&#34;_blank&#34;&gt;hypothesis testing&lt;/a&gt; to non-technical people in plain English. Now I think I got a pretty neat one while honors belong to three great Germans, &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Friedrich_Engels&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Friedrich Engels&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Karl_Marx&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Karl Marx&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, and &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Heinrich_Heine&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Heinrich Heine&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. Engels wrote that Marx once quoted a saying from Heine that “I have sown &lt;strong&gt;dragon’s teeth&lt;/strong&gt; and harvested &lt;strong&gt;fleas&lt;/strong&gt;” (&lt;em&gt;but I didn’t find the original source&lt;/em&gt;):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34; size=&#34;1&#34;&gt;In terms of hypothesis testing, say, if you plant &lt;a href=&#34;http://en.wikipedia.org/wiki/Dragon&#39;s_teeth_(mythology)&#34; target=&#34;_blank&#34;&gt;dragon’s teeth&lt;/a&gt;, you are not supposed to harvest the fleas; but if you do get the fleas, then most likely they are not dragon’s teeth at all!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;To make up the story as simple as possible while keep most of the key messages, here take a one-sample &lt;a href=&#34;http://en.wikipedia.org/wiki/Student&#39;s_t-test&#34; target=&#34;_blank&#34;&gt;T-test&lt;/a&gt; example from &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_ttest_examples02.htm&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;SAS TTEST Procedure User Guide&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;,&lt;/em&gt; where the investigated data is the Degree of Reading Power (DRP, a measurement of children’s reading skill) from 44 third-grade children. The goal is to test if the mean score of DRP is equal to 30:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Null_hypothesis&#34; target=&#34;_blank&#34;&gt;Null&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Hypothesis&lt;/a&gt; (H0): μ = 30&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Alternative_hypothesis&#34; target=&#34;_blank&#34;&gt;Alternative Hypothesis&lt;/a&gt; (H1): μ ≠ 30&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For the following discussion, three statistical measures needed (number of cases, mean and standard error):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc means data=read maxdec=4 n mean stderr; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; var score; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; freq count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and the output:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/read.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;read&#34; border=&#34;0&#34; alt=&#34;read&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/read_thumb.png&#34; width=&#34;244&#34; height=&#34;110&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Here we go:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. Suppose H0 is true that the mean score is equal to 30 (population mean μ = 30, we assume they are dragon’s teeth!).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2.&amp;#160; We know the sample mean is the best estimate of the population mean, here it is 34.8636.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;3. This sample mean is derived from a sample (namely, the 44 children). We’d like to know if this sample (with mean of 34.8636) really come from the population (with mean of 30).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;4. To get to know this, we can repeat this survey (or trial, experiment), for example, take another 99 samples (also with 44 children in each sample) and calculate their sample means (we then have 100 different means from the whole 100 samples).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;5.&amp;#160; We may know these means (got from such mechanism), with some necessary mathematical transformation,&amp;#160; follow a &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Student&#39;s_t-distribution&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;t-distribution&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;with degree of freedom of 43 (df = 44 &amp;#8211; 1):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/test.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;test&#34; border=&#34;0&#34; alt=&#34;test&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/test_thumb.png&#34; width=&#34;309&#34; height=&#34;60&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The denominator as a whole is the standard error.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;6. Now we can check our interested sample (with mean of 34.8636) in this t-distribution. There is a corresponding t-value of this sample in the distribution, (34.8636 &amp;#8211; 30) / 1.6930 =&amp;#160; 2.8728:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/T_2side.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;T_2side&#34; border=&#34;0&#34; alt=&#34;T_2side&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/T_2side_thumb.png&#34; width=&#34;392&#34; height=&#34;427&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;7. In this distribution, there are only 0.63% (0.0063) of t-values either above 2.8728 or below -2.8728 (symmetry of t-distribution). What does this mean?&amp;#160; Obviously, our interested sample (with mean of 34.8636 and t-value of 2.8728) is not in the mainstream of the whole distribution. We can even think it is&amp;#160; very “extreme”&amp;#160; because, there are only 0.63% of elements in the whole that are more (or at least as equal) extreme than it.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;8. We call this number, 0.63% (0.0063) the &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/P-value&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;P-value&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. According to &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/P-value&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;wikipedia&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;the p-value is the &lt;strong&gt;probability&lt;/strong&gt; of obtaining a test statistic at least as &lt;strong&gt;extreme&lt;/strong&gt; as the one that was actually observed, &lt;strong&gt;assuming that the null hypothesis is true&lt;/strong&gt;.&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Here the test statistic that was actually observed is 2.8728, the t-value from our interested sample. And we got from this t-distribution that P{|t|&amp;gt;2.8728} = 0.0063. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;9. A question is, how extreme is extreme? We can’t define “extreme” exactly, but &lt;em&gt;probably,&lt;/em&gt; we can. The threshold is the &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Statistical_significance&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;significance level&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;α (usually 0.05). As a rule of thumb, if p-value is less than the predefine &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Statistical_significance&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;significance level&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;α, then&amp;#160; we think the event associated&amp;#160; with this p-value is pretty extreme. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;10. Retell our story: first we assume the population mean is 30 just as the null hypothesis claims (&lt;em&gt;&lt;font color=&#34;#ff0000&#34;&gt;&lt;strong&gt;assume they are dragon’s teeth&lt;/strong&gt;&lt;/font&gt;&lt;/em&gt;), and under this assumption,&amp;#160; we built a t-distribution; we then got that our interested sample is an extreme case (&lt;em&gt;&lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;it is a flea!&lt;/font&gt;&lt;/strong&gt;&lt;/em&gt;). It is so extreme (much less than 0.05) that we can even think about that our assumption (the null hypothesis) is far away from true (&lt;em&gt;&lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;most likely they are not dragon’s teeth at all!&lt;/font&gt;&lt;/strong&gt;&lt;/em&gt;). We reject the null hypothesis and take the alternative that the mean score is different from 30.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;11. Formally, it just follows a simple logic (taken from &lt;/font&gt;&lt;a href=&#34;http://www.amazon.com/Statistical-Methods-Clinical-Research-Examples/dp/160764228X/ref=la_B001K8B726_1_1?ie=UTF8&amp;qid=1347463509&amp;sr=1-1&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Glenn Walker and Jack Shostak&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, P.18): &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/logic.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;logic&#34; border=&#34;0&#34; alt=&#34;logic&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/logic_thumb.png&#34; width=&#34;391&#34; height=&#34;247&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In our story, P is the null hypothesis, while Q is the extreme case: if H0 is true, most likely such extreme case should not happen; now we observe the extreme case (a t-value of 2.8728 in a &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Student&#39;s_t-distribution&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;t-distribution&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;with degree of freedom of 43), then it is reasonable to question the null hypothesis itself.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;12. To end this analysis, we can take a look at the output of &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_ttest_examples02.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS PROC TTEST&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc ttest data=read h0=30; &lt;br /&gt;&amp;#160;&amp;#160; var score; &lt;br /&gt;&amp;#160;&amp;#160; freq count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The same result (P-value 0.0063 &amp;lt; 0.05, reject H0):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/TTEST_read.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;TTEST_read&#34; border=&#34;0&#34; alt=&#34;TTEST_read&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/TTEST_read_thumb.png&#34; width=&#34;487&#34; height=&#34;268&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;font-style-font-weight-bold-sas-notes-font&#34;&gt;&lt;font style=&#34;font-weight: bold&#34;&gt;SAS Notes&lt;/font&gt;&lt;/h1&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;12. In this &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_ttest_examples02.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;example&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, input data take a form of cell count data, not as raw as the case-record data, so in both PROC MEANS and PROC TTEST, a “FREQ” statement added.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;13. You can compute this P-value in step-6 with SAS using &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lefunctionsref/63354/HTML/default/viewer.htm#n0xy5mce5jgfh3n1wvy919jgm1iv.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;ProbT&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;function:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; t&amp;#160;&amp;#160;&amp;#160; = 2.8727938571; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; df&amp;#160;&amp;#160; = 43; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tail = 2; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; P&amp;#160;&amp;#160;&amp;#160; = tail*(1-probt(t,df)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; put P = ; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;According to the symmetry of t-distribution, you should multiple 2 to get the two-sided probability:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;table border=&#34;0&#34; cellspacing=&#34;0&#34; cellpadding=&#34;2&#34; width=&#34;400&#34;&gt;
+  &lt;tr&gt;
+    &lt;td valign=&#34;top&#34; width=&#34;400&#34;&gt;
+      &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Left.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Left&#34; border=&#34;0&#34; alt=&#34;Left&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Left_thumb.png&#34; width=&#34;450&#34; height=&#34;216&#34; /&gt;&lt;/font&gt;&lt;/a&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td valign=&#34;top&#34; width=&#34;400&#34;&gt;
+      &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Right.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Right&#34; border=&#34;0&#34; alt=&#34;Right&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Right_thumb.png&#34; width=&#34;448&#34; height=&#34;219&#34; /&gt;&lt;/font&gt;&lt;/a&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;14. Long long ago, a so called “&lt;/font&gt;&lt;a href=&#34;https://onlinecourses.science.psu.edu/stat501/node/7&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;critical value&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;” is calculated to support the decision. That’s the calculation method using &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lefunctionsref/63354/HTML/default/viewer.htm#n0yhwu36w3pj41n16j69b3hmzqvc.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;TINV&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;function:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; alpha = 0.05; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tail&amp;#160; = 2; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; df&amp;#160;&amp;#160;&amp;#160; = 43;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; tCritic = tinv(1-alpha&lt;font color=&#34;#ff0000&#34;&gt;/&lt;/font&gt;tail,df); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; put tCritic=; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;We get this critical value of 2.0166921992:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/critical.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;critical&#34; border=&#34;0&#34; alt=&#34;critical&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/critical_thumb.png&#34; width=&#34;395&#34; height=&#34;417&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;These two shaded zones are called “rejection zones”. The rule is, if the t-value we observed lies within the rejection zones, we should then reject the null hypothesis and take the alternative. In step-6, the t-value we calculated is 2.8728, which is bigger than this critical value, so we should reject H0.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Critical value approach is equivalent with the p-value approach we discussed before, but slightly old fashioned. P-value is pretty intuitive and can be also easily calculated by computer. In days when computing power was not wildly available, people just took the t-distribution table to look up the critical values. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Most statistical packages including SAS software don’t report the critical value (but still alive in statistics text books).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;font-style-font-weight-bold-reference-font&#34;&gt;&lt;font style=&#34;font-weight: bold&#34;&gt;Reference&lt;/font&gt;&lt;/h1&gt;
+
+&lt;p&gt;_&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_ttest_examples02.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS PROC TTEST USER GUIDE&lt;/font&gt;&lt;/a&gt;_&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.amazon.com/Statistical-Methods-Clinical-Research-Examples/dp/160764228X/ref=la_B001K8B726_1_1?ie=UTF8&amp;amp;qid=1347463509&amp;amp;sr=1-1&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Common Statistical Methods for Clinical Research with SAS Examples&lt;/font&gt;&lt;/em&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Glenn Walker and Jack Shostak&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;_&lt;a href=&#34;http://cos.name/2010/11/hypotheses-testing/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Hypothesis Testing: A Primer&lt;/font&gt;&lt;/a&gt;_ &lt;font size=&#34;1&#34;&gt;(in Chinese)&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://onlinestatbook.com/analysis_lab/t_dist.html&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Two sides T-distribution calculator&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.stat.tamu.edu/~west/applets/tdemo.html&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Single side t-distribution calculator&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.codecogs.com/latex/eqneditor.php&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Online Latex Equation Editor&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Recursion: Biblical Evidences</title>
+      <link>/2010/11/06/recursion-biblical-evidences/</link>
+      <pubDate>Sat, 06 Nov 2010 09:58:56 +0000</pubDate>
+      
+      <guid>/2010/11/06/recursion-biblical-evidences/</guid>
+      <description>&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;  &lt;strong&gt;To Iterate is Human, to Recurse, Divine.&lt;/strong&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &amp;#8211;by &lt;a href=&#34;http://en.wikipedia.org/wiki/L._Peter_Deutsch&#34;&gt;L. Peter Deutsch&lt;/a&gt;, creator of Ghostscript. (I also love his saying “_The best thing about a Boolean is even if you are wrong, you are only off by a bit_”)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I learned this quote from &lt;a href=&#34;http://en.wikipedia.org/wiki/Anthony_James_Barr&#34;&gt;Tony Barr&lt;/a&gt;, designer and developer of &lt;a href=&#34;http://en.wikipedia.org/wiki/SAS_(software)&#34;&gt;SAS&lt;/a&gt; (the Statistical Analysis System).&amp;#160; He also used the &lt;a href=&#34;http://en.wikipedia.org/wiki/Recursive_descent_parser&#34;&gt;Recursive Descent&lt;/a&gt; method to develop SAS complier. Now Tony is working for AMOR (A Model of Reality). AMOR is the &lt;strong&gt;self-defining&lt;/strong&gt; system for modeling ideas and concepts (or human knowledge).—Recurse again: in AMOR, the type is defined by the type of type, and, the type of type is also defined by the type of type of type &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;To help to understand the DIVINE part of recursion, Tony gave two examples from the &lt;em&gt;Bible:&lt;/em&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The Golden Rule is recursive.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Do unto others as you would have them do unto you. (&lt;em&gt;see&lt;/em&gt; &lt;a href=&#34;http://en.wikisource.org/wiki/Bible_(King_James)/Matthew#7:12&#34;&gt;Matthew 7:12&lt;/a&gt;, or &lt;a href=&#34;http://en.wikisource.org/wiki/Bible_(King_James)/Luke#6:31&#34;&gt;Luke 6:31&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;God indentify himself in a recursive way.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Moses asked God for his name. Then God said to Moses, “I AM THAT I AM.” (&lt;em&gt;see&lt;/em&gt; &lt;a href=&#34;http://www.sacred-texts.com/bib/kjv/exo003.htm&#34;&gt;Exodus 3.14&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I’d like add two items (from a programmer’s perspective &lt;strong&gt;rather than&lt;/strong&gt; Biblical Theology):&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Recursion at the very start&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;In the beginning was the Word, and the Word was with God, and the Word was God. (&lt;em&gt;see&lt;/em&gt; &lt;a href=&#34;http://bible.cc/john/1-1.htm&#34;&gt;John 1.1&lt;/a&gt;; also &lt;em&gt;see&lt;/em&gt; &lt;a href=&#34;http://www.wired.com/wired/archive/10.12/holytech_pr.html&#34;&gt;here&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The Trinity recursive way&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;First, there is only one God in Christian doctrine. God the Son duplicates the nature of God the Father in every way exactly, and so God the Spirit. And what’s about God the Father? &lt;em&gt;see&lt;/em&gt; above.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Power of Logic Operators: a trick</title>
+      <link>/2010/11/04/power-of-logic-operators-a-trick/</link>
+      <pubDate>Thu, 04 Nov 2010 07:09:12 +0000</pubDate>
+      
+      <guid>/2010/11/04/power-of-logic-operators-a-trick/</guid>
+      <description>&lt;p&gt;Suppose you should group people based on their ages as follows:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;div&gt;
+  &lt;table border=&#34;0&#34; cellspacing=&#34;0&#34; cellpadding=&#34;2&#34; width=&#34;155&#34; align=&#34;center&#34;&gt;
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        ID
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        Age
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        agegrp
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        001
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        1
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        1
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        002
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        4
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        2
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        003
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        5
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        2
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        004
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        5
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        2
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        005
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        2
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        1
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        006
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        4
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        2
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        007
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        5
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        2
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        008
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        2
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        1
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        009
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;57&#34; valign=&#34;top&#34;&gt;
+        9
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;45&#34; valign=&#34;top&#34;&gt;
+        3
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    
+    &lt;tr&gt;
+      &lt;td width=&#34;51&#34; valign=&#34;top&#34;&gt;
+        010
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;60&#34; valign=&#34;top&#34;&gt;
+        8
+      &lt;/td&gt;
+      
+      &lt;td width=&#34;56&#34; valign=&#34;top&#34;&gt;
+        3
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and the rules:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;age&amp;lt;4,           group 1&lt;/p&gt;
+
+&lt;p&gt;4&amp;lt;=age&amp;lt;6,     group 2&lt;/p&gt;
+
+&lt;p&gt;6&amp;lt;=age&amp;lt;10,  group 3&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It is a very simple question and you could use the &lt;strong&gt;if/else&lt;/strong&gt; statement without thinking:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data age;&lt;br /&gt; input ID $ age;&lt;br /&gt; datalines;&lt;br /&gt; 001 1&lt;br /&gt; 002 4&lt;br /&gt; 003 5&lt;br /&gt; 004 5&lt;br /&gt; 005 2&lt;br /&gt; 006 4&lt;br /&gt; 007 5&lt;br /&gt; 008 2&lt;br /&gt; 009 9&lt;br /&gt; 010 8&lt;br /&gt; ; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data age1;&lt;br /&gt; set age;&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;if &lt;/span&gt;age&lt;4   then agegrp=1;&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;else if&lt;/span&gt; age&lt;6   then agegrp=2;&lt;br /&gt; else agegrp=3;&lt;br /&gt; run;&lt;br /&gt; proc print;run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;or, you could use &lt;strong&gt;proc format&lt;/strong&gt; to map data:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;proc &lt;span style=&#34;color: #ff0000;&#34;&gt;format&lt;/span&gt;;&lt;br /&gt; value agegrp&lt;br /&gt; low-&lt;4=&amp;#8221;1&amp;#8243;&lt;br /&gt; 4-&lt;7  =&amp;#8221;2&amp;#8243;&lt;br /&gt; 7-&lt;10 =&amp;#8221;3&amp;#8243;&lt;br /&gt; other =&amp;#8221;&amp;#8221;&lt;br /&gt; ;&lt;br /&gt; run; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data age2;&lt;br /&gt; set age;&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt; agegrp2=put(age,agegrp1.);&lt;/span&gt;&lt;br /&gt; run;&lt;br /&gt; proc print;run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And try to use logic operators. It is a &lt;strong&gt;ONE-LINE-OF-CODE&lt;/strong&gt; approach:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data age3;&lt;br /&gt; set age;&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt; agegrp3=1+(age&amp;gt;3)+(age&amp;gt;5);&lt;/span&gt;&lt;br /&gt; run;&lt;br /&gt; proc print;run;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In SAS, a logic express returns to 1 or 0 according the true of false of the express. The logic behind the above statement is:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;age group is set to 1 at the beginning;&lt;/li&gt;
+&lt;li&gt;if age&amp;gt;3, age group adds 1;&lt;/li&gt;
+&lt;li&gt;if age&amp;gt;5, add 1.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This easy-to-follow logic can apply to other scenarios(flags, for example):&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: 13.1944px;&#34;&gt;flag=value&amp;gt;50;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: 13.1944px;&#34;&gt;select value&amp;gt;50 as flag    &lt;em&gt;(in proc sql)&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Recursive Referencing and Binomial Proportion Interval</title>
+      <link>/2010/11/03/recursive-referencing-and-binomial-proportion-interval/</link>
+      <pubDate>Wed, 03 Nov 2010 20:47:44 +0000</pubDate>
+      
+      <guid>/2010/11/03/recursive-referencing-and-binomial-proportion-interval/</guid>
+      <description>&lt;p&gt;To understand &lt;a href=&#34;http://en.wikipedia.org/wiki/Recursion&#34;&gt;recursion&lt;/a&gt;, one of the most important concepts in programming languages, you could watch the movie, Chris Nolan’s &lt;em&gt;&lt;a href=&#34;www.inceptionmovie.com&#34;&gt;Inception&lt;/a&gt;&lt;/em&gt;: it is about a dream within a dream within a dream, …and, read two statistical papers by Professor &lt;a href=&#34;http://medicine.cf.ac.uk/en/person/prof-robert-gordon-newcombe/&#34;&gt;Robert Newcombe&lt;/a&gt;, one of the most &lt;a href=&#34;http://medicine.cf.ac.uk/en/person/prof-robert-gordon-newcombe/publications/&#34;&gt;prolific statisticians&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;cite&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=9595616&amp;query_hl=1&#34;&gt;&lt;strong&gt;Two-sided confidence intervals for the single proportion: comparison of seven methods.&lt;/strong&gt;&lt;/a&gt; &lt;/cite&gt;&lt;br /&gt;
+Newcombe RG, &lt;font color=&#34;#ff0000&#34;&gt;&lt;cite&gt;Stat Med&lt;/cite&gt; , Volume 17 , 8 (April 1998) pp.857-&lt;strong&gt;872&lt;/strong&gt;&lt;/font&gt; ****&lt;/li&gt;
+&lt;li&gt;&lt;cite&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=9595617&amp;query_hl=1&#34;&gt;&lt;strong&gt;Interval estimation for the difference between independent proportions: comparison of eleven methods.&lt;/strong&gt;&lt;/a&gt; &lt;/cite&gt;&lt;br /&gt;
+Newcombe RG, &lt;font color=&#34;#ff0000&#34;&gt;&lt;cite&gt;Stat Med&lt;/cite&gt; , Volume 17 , 8 (April 1998) pp.&lt;strong&gt;873&lt;/strong&gt;-890&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These two widely cited papers evaluate 7 and 11 methods to calculate single proportion (paper &lt;font color=&#34;#ff0000&#34;&gt;A&lt;/font&gt;) and the difference between proportions (paper &lt;font color=&#34;#ff0000&#34;&gt;B&lt;/font&gt;), respectively. Further more, they were in the same issue of &lt;a href=&#34;http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-0258&#34;&gt;&lt;em&gt;Statistics in Medicine&lt;/em&gt;&lt;/a&gt;(Volume 17, 1998), and, they were also cross referenced! So here is a live story about recursive referencing(thanks to Prof. Newcombe):&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2010/11/megamonalisa_recursion.jpg&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;megamonalisa_recursion&#34; border=&#34;0&#34; alt=&#34;megamonalisa_recursion&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2010/11/megamonalisa_recursion_thumb.jpg&#34; width=&#34;245&#34; height=&#34;371&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;An author writes two papers, A and B;&lt;/li&gt;
+&lt;li&gt;Paper B is in the&amp;#160; bibliographic reference session of paper A;&lt;/li&gt;
+&lt;li&gt;Paper A is also in the&amp;#160; bibliographic reference session of paper B;&lt;/li&gt;
+&lt;li&gt;Paper A and paper B are in the same issue of a journal.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;Note&lt;/font&gt; that for Prof. Newcombe’s two linked papers, it is common and acceptable in publication practices. Recently I used these two wonderful papers to learn CI calculation and this post just want to lead to the concept of “recursion”&amp;#160; (reference in reference in reference).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Logics in mathematics and in daily life: a statistical programming example</title>
+      <link>/2010/10/08/logics-in-mathematics-and-in-daily-life-a-statistical-programming-example/</link>
+      <pubDate>Fri, 08 Oct 2010 22:47:00 +0000</pubDate>
+      
+      <guid>/2010/10/08/logics-in-mathematics-and-in-daily-life-a-statistical-programming-example/</guid>
+      <description>&lt;p&gt;Refresh some &lt;a href=&#34;http://en.wikipedia.org/wiki/Contraposition&#34;&gt;basic logical propositions&lt;/a&gt; (or statements):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;implication&lt;/font&gt;:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; if&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; P then&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Q (P&lt;strong&gt;—&lt;/strong&gt;&amp;gt;Q)&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;inverse&lt;/font&gt;:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; if not P then not Q (-P&lt;strong&gt;—&lt;/strong&gt;&amp;gt;-Q)&lt;/p&gt;
+
+&lt;p&gt;converse:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; if&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Q then&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; P (Q&lt;strong&gt;—&lt;/strong&gt;&amp;gt;P)&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;contrapositive&lt;/font&gt;: if not Q then not P (-Q&lt;strong&gt;—&lt;/strong&gt;&amp;gt;-P)&lt;/p&gt;
+
+&lt;p&gt;contradition:&amp;#160;&amp;#160;&amp;#160; if&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; P then not Q (P&lt;strong&gt;—&lt;/strong&gt;&amp;gt;-Q)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Mathematically or logically speaking, if the &lt;font color=&#34;#ff0000&#34;&gt;implication&lt;/font&gt; statement holds, then the &lt;font color=&#34;#ff0000&#34;&gt;contrapositive&lt;/font&gt; holds, but the &lt;font color=&#34;#ff0000&#34;&gt;inverse&lt;/font&gt; does not hold, i.e., &lt;em&gt;if P then Q&lt;/em&gt;, then we can get &lt;em&gt;if not Q then not P&lt;/em&gt;, but we can not get &lt;em&gt;if not P then not Q&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;That’s all logics needed here and Let’s turn to the ambiguous English in daily life. &lt;a href=&#34;http://en.wikipedia.org/wiki/James_Munkres&#34;&gt;James R. Munkres&lt;/a&gt; of MIT gave an example in _&lt;a href=&#34;http://www.amazon.com/Topology-2nd-James-Munkres/dp/0131816292/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1286432430&amp;amp;sr=1-1&#34;&gt;Topology&lt;/a&gt;_ (2nd edition, 2000, P.7):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Mr. Jones, if&amp;#160; you get a grade below&amp;#160; 70 on&amp;#160; the final, you are going to flunk&amp;#160; this course.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We adapt it in a logical &lt;font color=&#34;#ff0000&#34;&gt;implication&lt;/font&gt; form:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Mr. Jones, if &lt;font color=&#34;#ff0000&#34;&gt;P &lt;/font&gt;then &lt;font color=&#34;#ff0000&#34;&gt;Q&lt;/font&gt;, where&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;P&lt;/font&gt;: you get a grade below&amp;#160; 70 on&amp;#160; the final&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;Q&lt;/font&gt;: you are going to flunk&amp;#160; this course&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Considering the context, we can also get that the &lt;font color=&#34;#ff0000&#34;&gt;inverse&lt;/font&gt; holds: if you get a grade above er or equal to 70, then you are going to pass this course(if not P then not Q ).&lt;/p&gt;
+
+&lt;p&gt;Question: when do statistical programming, what types of logics you use?&lt;/p&gt;
+
+&lt;p&gt;Answer: Not all mathematically. &lt;em&gt;see&lt;/em&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;if score&lt;70 then grade=&#34;flunk&#34;;&amp;#160; ***_if &lt;font color=&#34;#ff0000&#34;&gt;P&lt;/font&gt; then &lt;font color=&#34;#ff0000&#34;&gt;Q&lt;/font&gt;_**;&lt;br /&gt;
+else&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; grade=&amp;ldquo;pass&amp;rdquo;;&amp;#160; *&lt;strong&gt;&lt;em&gt;if not P then not Q&lt;/em&gt;&lt;/strong&gt;;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

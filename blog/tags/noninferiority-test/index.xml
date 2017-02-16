@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Noninferiority Test on Lithium Theme</title>
+    <link>/tags/noninferiority-test/index.xml</link>
+    <description>Recent content in Noninferiority Test on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/noninferiority-test/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Noninferiority Testing with SAS</title>
+      <link>/2013/08/26/noninferiority-testing-with-sas/</link>
+      <pubDate>Mon, 26 Aug 2013 22:59:27 +0000</pubDate>
+      
+      <guid>/2013/08/26/noninferiority-testing-with-sas/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I planed to extend nonWinferiority testing to one of my statistical notes,&amp;#160; &lt;em&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/tost-equivalence-test/&#34;&gt;Equivalence Testing and TOST (Two One-Sided Test)&lt;/a&gt;&lt;/em&gt; since noninferiority test is simply half part of the equivalence test. Today I’m glad to find an even better explanation from&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;a href=&#34;http://support.sas.com/kb/48/616.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS Usage Note 48616: Design and analysis of noninferiority studies&lt;/font&gt;&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You will love it if you are interested in this subject (bookmark this link since it looks like unfinished somehow). Few comments:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;It’s better not to use a two-side test for noninferiority testing. In PROC TTEST, you can add option like “&lt;font face=&#34;Courier New&#34;&gt;side=U&lt;/font&gt;” or “&lt;font face=&#34;Courier New&#34;&gt;side=L&lt;/font&gt;”. &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;If you do like a two-side test for noninferiority testing, it’s OK but DO remember assign an alpha value of 0.1 since the default value is 0.05 (if you’re lost by this statement, read this &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/tost-equivalence-test/&#34;&gt;&lt;font size=&#34;1&#34;&gt;post&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;again). It’s pretty tricky and I saw lots of mistakes due to ignoring of this point.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;In note &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/kb/48/616.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;48616&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, it is said only test of mean(s) is supported by PROC TTEST. Actually, PROC TTEST can also test ratios (a &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/geomean/&#34;&gt;&lt;font size=&#34;1&#34;&gt;log-transformation&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;will be applied) by a&amp;#160; “&lt;font face=&#34;Courier New&#34;&gt;dist=lognormal&lt;/font&gt;” option.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;To make decision in noninferiority, superiority, and equivalence testings, lower or/and upper limits are used to compare with the margin(s) rather than the P-value. They are of course equivalent but the former approach is much more accessible and meaningful for non-statistician researchers.&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

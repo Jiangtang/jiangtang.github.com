@@ -1,0 +1,2445 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statistics on Lithium Theme</title>
+    <link>/categories/statistics/index.xml</link>
+    <description>Recent content in Statistics on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/categories/statistics/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Statistical Notes (3B): Confidence Intervals for Binomial Proportion Using SAS, Updated</title>
+      <link>/2015/05/22/statistical-notes-3b-confidence-intervals-for-binomial-proportion-using-sas-updated/</link>
+      <pubDate>Fri, 22 May 2015 22:05:39 +0000</pubDate>
+      
+      <guid>/2015/05/22/statistical-notes-3b-confidence-intervals-for-binomial-proportion-using-sas-updated/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This quick note serves as a supplementnote of my previous &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/15/confidence-intervals-binomial-proportion/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Statistical Notes (3): Confidence Intervals for Binomial Proportion Using SAS&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;which I will extend as a &lt;/font&gt;&lt;a href=&#34;http://www.sesug.org/SESUG2015/index.php&#34;&gt;&lt;font size=&#34;1&#34;&gt;SESUG 2015&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;paper. Basically I added a new Blaker method to my &lt;em&gt;&lt;a href=&#34;https://raw.githubusercontent.com/Jiangtang/Programming-SAS/master/CI_Single_Proportion.sas&#34;&gt;CI_Single_Proportion.sas&lt;/a&gt;&lt;/em&gt; file and found more CIs from SAS PROC FREQ.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;First of all, call the script:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;filename CI url “&lt;/font&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;a href=&#34;https://raw.github.com/Jiangtang/Programming-SAS/master/CI_Single_Proportion.sas&#34;&gt;https://raw.github.com/Jiangtang/Programming-SAS/master/CI_Single_Proportion.sas&lt;/a&gt;” ;&lt;/font&gt; &lt;br /&gt;&lt;font face=&#34;Courier New&#34;&gt;%include CI;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%CI_Single_Proportion(r=81,n=263);&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and the output:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/CI_SAS.png&#34;&gt;&lt;img title=&#34;CI_SAS&#34; style=&#34;border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-top-width: 0px&#34; border=&#34;0&#34; alt=&#34;CI_SAS&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/CI_SAS_thumb.png&#34; width=&#34;493&#34; height=&#34;306&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The #12 is the one newly added. We can get the same results by SAS PROC FREQ (I use SAS/Base 9.4, TS1M2, WIN64):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data test; &lt;br /&gt;input grp outcome $ count; &lt;br /&gt;datalines; &lt;br /&gt;1 f 81 &lt;br /&gt;1 u 182 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods select BinomialCLs; &lt;br /&gt;proc freq data=test; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables outcome / binomial (CL= &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; WALD &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; WILSON &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; CLOPPERPEARSON &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; MIDP &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; LIKELIHOODRATIO &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; JEFFREYS &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; AGRESTICOULL &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; LOGIT &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; BLAKER&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight Count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods select BinomialCLs; &lt;br /&gt;proc freq data=test; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables outcome / binomial (CL = &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; WILSON(CORRECT) &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; WALD(CORRECT) &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight Count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;the output:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/CI_SAS_FREQ.png&#34;&gt;&lt;img title=&#34;CI_SAS_FREQ&#34; style=&#34;border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-top-width: 0px&#34; border=&#34;0&#34; alt=&#34;CI_SAS_FREQ&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/CI_SAS_FREQ_thumb.png&#34; width=&#34;314&#34; height=&#34;480&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Only #10 method is not implemented yet in SAS PROC FREQ. There are some Bayesian intervals available in SAS&amp;#160; procedures but since I’m not familiar with Bayes, I will leave it blank by far.&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Community Contributors to SAS/STAT</title>
+      <link>/2013/09/18/community-contributors-to-sas/stat/</link>
+      <pubDate>Wed, 18 Sep 2013 19:24:42 +0000</pubDate>
+      
+      <guid>/2013/09/18/community-contributors-to-sas/stat/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;I suppose it is tempting, if the only tool you have is a hammer, to treat everything as if it were a nail. &amp;#8211; Abraham Maslow, The Psychology of Science, 1966&lt;/font&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Yes it’s true: since I have a pretty rich &lt;/font&gt;&lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing&#34;&gt;&lt;font size=&#34;1&#34;&gt;collection of SAS list processing macros&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, I’d like my list container to hold everything itemized. Here is a nail I found in SAS/STAT online help.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;There are strong community contributing to the development of SAS/STAT software. Their names were list in the acknowledgements session of the &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/66103/HTML/default/viewer.htm#chap0000018_chap0000018_sect006.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS/STAT documentation&lt;/font&gt;&lt;/a&gt; (some were former SAS employees)&lt;font size=&#34;1&#34;&gt;:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/09/clip_image002.jpg&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;clip_image002&#34; border=&#34;0&#34; alt=&#34;clip_image002&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/09/clip_image002_thumb.jpg&#34; width=&#34;513&#34; height=&#34;137&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Since the name list was not in tabulate format, it is hardly to read. The following is a hammer’s way to get a table version of all the contributors and their institutions (only very basic list processing tricks used):&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;copy all the free text and assign it into a macro variable &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;count the number of elements in the value list &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;do loop through the list &lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;filename list url &amp;ldquo;&lt;/font&gt;&lt;a href=&#34;https://raw.github.com/Jiangtang/SAS_ListProcessing/master/_ListProcessing&amp;quot;;&#34;&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;https://raw.github.com/Jiangtang/SAS_ListProcessing/master/_ListProcessing&amp;rdquo;;&lt;/font&gt;&lt;/a&gt;        &lt;font size=&#34;1&#34;&gt;&lt;br /&gt;&lt;font face=&#34;Courier New&#34;&gt;%inc list;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%let name=%nrstr(Alan Agresti, University of Florida; Paul Allison, University of Pennsylvania; &lt;font color=&#34;#ff0000&#34;&gt;&amp;#8230;&lt;/font&gt; ); &lt;br /&gt;%let n= %words(&amp;amp;name, delim=%str(;));&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%macro doit(delim=%str(;)); &lt;br /&gt;data name; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; length a $100.; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %do i=1 %to &amp;n; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; a=&amp;ldquo;%qscan(%SUPERQ(name),&amp;amp;i,&amp;amp;delim)&amp;ldquo;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; name=scan(a,1,&amp;ldquo;,&amp;rdquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; institute=substr(a,length(name)+2); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; output; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %end; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; drop a; &lt;br /&gt;run;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;%mend; &lt;br /&gt;%doit;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc print data=name; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Then we just get the decent tabulate output (partial):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/09/clip_image003.gif&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;clip_image003&#34; border=&#34;0&#34; alt=&#34;clip_image003&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/09/clip_image003_thumb.gif&#34; width=&#34;406&#34; height=&#34;235&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Shameless Ad: I will have a talk on SAS list processing in the forthcoming &lt;/font&gt;&lt;a href=&#34;http://www.sesug.org/SESUG2013/index.php&#34;&gt;&lt;font size=&#34;1&#34;&gt;SESUG (Oct 20-23, 2013) at St.Pete Beach, FL&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. Welcome to drop by if you are on the spot!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I do have fun to read this list while I can see some familiar names like Alan Agresti, Paul Allison, Michael Friendly, Wayne Fuller, Frank E. Harrell Jr., Wolfgang M. Hartmann, Ronald W. Helms, Gary Koch, J. Philip Miller and Chris Olinger (#84), who is my current colleague! This finding is a bonus because I know Chris is is purely technical guy. He might be the only non-statistician in the list. I chatted with Chris and he said it’s due to his early contribution on ODS.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The full report if you are interested in:&lt;/font&gt;&lt;/p&gt;
+
+&lt;table border=&#34;1&#34; cellspacing=&#34;0&#34; cellpadding=&#34;2&#34; width=&#34;526&#34;&gt;
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;1&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Alan Agresti&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Florida&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;2&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Paul Allison&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Pennsylvania&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;3&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Douglas Bates&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Wisconsin&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;4&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;John Barnard Jr.&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Cleveland Clinic Foundation&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;5&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;David Binder (deceased)&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;formerly of David Binder Research&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;6&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Suzette Blanchard&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Frontier Science Technology Research Foundation&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;7&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Mary Butler Moore&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;formerly of University of Florida at Gainesville&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;8&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Wilbert P. Byrd&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Clemson University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;9&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Vincent Carey&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Harvard University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;10&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Sally Carson&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;RAND&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;11&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Love Casanova&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;CSC-FSG&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;12&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Helene Cavior&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Abacus Concepts&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;13&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Rao Chaganty&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Old Dominion University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;14&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;George Chao&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;DuPont Merek Pharmaceutical Company&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;15&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Colin Chen&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Fannie Mae&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;16&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Daniel M. Chilko&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;West Virginia University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;17&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Marc Cohen&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Fair Isaac Corporation&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;18&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Jan de Leeuw&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of California, Los Angeles&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;19&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Dave DeLong&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Duke University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;20&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Alex Dmitrienko&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Eli Lilly&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;21&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Sandra Donaghy&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;North Carolina State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;22&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;David B. Duncan&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Johns Hopkins University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;23&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Paul Eilers&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Leiden University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;24&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Scott Emerson&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Washington&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;25&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Michael Farrell&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Oak Ridge National Laboratory&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;26&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Stewart Fossceco&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;SLF Consulting&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;27&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Michael Friendly&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;York University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;28&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Rudolf J. Freund&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Texas A&amp;M University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;29&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Wayne Fuller&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Iowa State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;30&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Andrzej Galecki&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Michigan&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;31&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;A. Ronald Gallant&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Duke University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;32&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Joseph Gardiner&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Michigan State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;33&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Charles Gates&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Texas A&amp;M University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;34&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Thomas M. Gerig&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;North Carolina State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;35&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Francis Giesbrecht&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;North Carolina State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;36&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Harvey J. Gold&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;North Carolina State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;37&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Kenneth Goldberg&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Centocor Inc&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;38&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Robert J. Gray&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Harvard University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;39&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Donald Guthrie&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of California, Los Angeles&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;40&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Gerald Hajian&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Schering Plough Research Institute&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;41&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Bob Hamer&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of North Carolina at Chapel Hill&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;42&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Frank E. Harrell Jr.&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Vanderbilt University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;43&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Wolfgang M. Hartmann&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;44&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Walter Harvey&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Ohio State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;45&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Douglas Hawkins&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Minnesota&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;46&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Xuming He&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Illinois at Urbana-Champaign&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;47&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Ronald W. Helms&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Rho, Inc.&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;48&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Joseph Hilbe&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Arizona State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;49&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Gerry Hobbs&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;West Virginia University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;50&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Ronald R. Hocking&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Texas A &amp; M University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;51&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Nick Horton&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Smith College&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;52&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Julian Horwich&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Camp Conference Company&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;53&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Jason C. Hsu&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Ohio State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;54&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;David Hurst&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Alabama at Birmingham&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;55&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Joseph G. Ibrahim&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of North Carolina at Chapel Hill&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;56&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Emilio A. Icaza&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Louisiana State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;57&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Jun Jie&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Purdue University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;58&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Joerg Kaufman&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Bayer Schering Pharma AG&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;59&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;William Kennedy&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Iowa State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;60&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Gary Koch&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of North Carolina at Chapel Hill&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;61&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Roger Koenker&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Illinois at Urbana-Champaign&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;62&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Alexander Kolovos&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;SpaceTimeWorks LLC&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;63&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Kenneth L. Koonce&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Louisiana State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;64&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Rich La Valley&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Strategic Technology Solutions&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;65&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Russell V. Lenth&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Iowa&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;66&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Charles Lin&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;U.S. Census Bureau&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;67&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Danyu Lin&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of North Carolina&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;68&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Ardell C. Linnerud&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;North Carolina State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;69&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Ramon C. Littel&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Florida&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;70&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;George MacKenzie&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Oregon&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;71&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Brian Marx&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Louisiana State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;72&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;J. Jack McArdle&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Southern California&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;73&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Roderick P. McDonald&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Macquarie University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;74&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Alfio Marazzi&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Lausanne&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;75&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;J. Philip Miller&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Washington University Medical School&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;76&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;George Milliken&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Kansas State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;77&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Robert J. Monroe&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;North Carolina State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;78&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Robert D. Morrison&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Oklahoma State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;79&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Keith Muller&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Florida&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;80&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Anupama Narayanan&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Procter &amp; Gamble Co&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;81&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Meltem Narter&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;82&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Ralph G. O’Brien&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Cleveland Clinic Foundation&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;83&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Kenneth Offord&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Mayo Clinic&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;84&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font color=&#34;#ff0000&#34; size=&#34;1&#34;&gt;Christopher R. Olinger&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font color=&#34;#ff0000&#34; size=&#34;1&#34;&gt;d-Wise Technologies&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;85&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Christopher J. Paciorek&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Harvard University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;86&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Robert Parks&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Washington University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;87&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Richard M. Patterson&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Auburn University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;88&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Virginia Patterson&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Tennessee&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;89&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Cliff Pereira&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Oregon State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;90&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Hans-Peter Piepho&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Universität Hohenheim&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;91&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Edward Pollak&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Iowa State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;92&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Stephen Portnoy&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Illinois&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;93&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;John Preisser&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of North Carolina at Chapel Hill&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;94&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;C. H. Proctor&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;North Carolina State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;95&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Bahjat Qaqish&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of North Carolina at Chapel Hill&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;96&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Dana Quade&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of North Carolina at Chapel Hill&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;97&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Bill Raynor&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Kimberly Clark&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;98&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Georgia Roberts&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Statistics Canada&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;99&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;James Roger&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;GlaxoSmithKline (retired)&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;100&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Peter Rousseeuw&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Antwerp&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;101&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Donald Rubin&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Harvard University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;102&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Joseph L. Schafer&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Pennsylvania State University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;103&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Robert Schechter&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;AstraZeneca&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;104&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Shayle Searle&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Cornell University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;105&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Pat Hermes Smith&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;formerly of Ciba-Geigy&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;106&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Roger Smith&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;formerly of USDA&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;107&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Phil Spector&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of California, Berkeley&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;108&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Michael Speed&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Texas A&amp;M University at College Station&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;109&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;William Stanish&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Statistical Insight&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;110&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Rodney Strand&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Orion Enterprises, LLC&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;111&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Walter Stroup&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Nebraska&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;112&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Robert Teichman&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;ICI Americas Inc.&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;113&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Terry M. Therneau&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Mayo Clinic&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;114&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Edward Vonesh&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Northwestern University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;115&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Grace Wahba&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Wisconsin at Madison&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;116&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Glenn Ware&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Georgia&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;117&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Peter H. Westfall&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Texas Tech University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;118&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Edward W. Whitehorne&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;CI Partners, LLC&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;119&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;William Wigton&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;USDA&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;120&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;William Wilson&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of North Florida&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;121&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Philip Whittall&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Unilever (retired)&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;122&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Dong Xiang&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;123&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Victor Yohai&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Buenos Aires&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;124&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Forrest W. Young (deceased)&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;formerly of University of North Carolina at Chapel Hill&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;125&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Ke-Hai Yuan&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of Notre Dame&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;126&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Ruben Zamar&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;University of British Columbia&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;th class=&#34;r rowheader&#34; scope=&#34;row&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;127&lt;/font&gt;
+    &lt;/th&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;174&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Scott Zeger&lt;/font&gt;
+    &lt;/td&gt;
+    
+    &lt;td class=&#34;l data&#34; width=&#34;317&#34;&gt;
+      &lt;font size=&#34;1&#34;&gt;Johns Hopkins University&lt;/font&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Noninferiority Testing with SAS</title>
+      <link>/2013/08/26/noninferiority-testing-with-sas/</link>
+      <pubDate>Mon, 26 Aug 2013 22:59:27 +0000</pubDate>
+      
+      <guid>/2013/08/26/noninferiority-testing-with-sas/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I planed to extend nonWinferiority testing to one of my statistical notes,&amp;#160; &lt;em&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/tost-equivalence-test/&#34;&gt;Equivalence Testing and TOST (Two One-Sided Test)&lt;/a&gt;&lt;/em&gt; since noninferiority test is simply half part of the equivalence test. Today I’m glad to find an even better explanation from&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;a href=&#34;http://support.sas.com/kb/48/616.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS Usage Note 48616: Design and analysis of noninferiority studies&lt;/font&gt;&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You will love it if you are interested in this subject (bookmark this link since it looks like unfinished somehow). Few comments:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;It’s better not to use a two-side test for noninferiority testing. In PROC TTEST, you can add option like “&lt;font face=&#34;Courier New&#34;&gt;side=U&lt;/font&gt;” or “&lt;font face=&#34;Courier New&#34;&gt;side=L&lt;/font&gt;”. &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;If you do like a two-side test for noninferiority testing, it’s OK but DO remember assign an alpha value of 0.1 since the default value is 0.05 (if you’re lost by this statement, read this &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/tost-equivalence-test/&#34;&gt;&lt;font size=&#34;1&#34;&gt;post&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;again). It’s pretty tricky and I saw lots of mistakes due to ignoring of this point.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;In note &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/kb/48/616.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;48616&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, it is said only test of mean(s) is supported by PROC TTEST. Actually, PROC TTEST can also test ratios (a &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/geomean/&#34;&gt;&lt;font size=&#34;1&#34;&gt;log-transformation&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;will be applied) by a&amp;#160; “&lt;font face=&#34;Courier New&#34;&gt;dist=lognormal&lt;/font&gt;” option.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;To make decision in noninferiority, superiority, and equivalence testings, lower or/and upper limits are used to compare with the margin(s) rather than the P-value. They are of course equivalent but the former approach is much more accessible and meaningful for non-statistician researchers.&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Confidence Intervals for Difference Between Independent Binomial Proportions: A SAS 9.4/STAT 12.3 Update</title>
+      <link>/2013/08/25/confidence-intervals-for-difference-between-independent-binomial-proportions-a-sas-9.4/stat-12.3-update/</link>
+      <pubDate>Sun, 25 Aug 2013 23:32:29 +0000</pubDate>
+      
+      <guid>/2013/08/25/confidence-intervals-for-difference-between-independent-binomial-proportions-a-sas-9.4/stat-12.3-update/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For the computing of confidence intervals for difference between two independent binomial proportions in SAS 9.4/STAT 12.3, it’s hard to figure out exactly how many methods are available because there is no “CL=ALL” trigger in RISKDIFF option (but you can get one in &lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/08/22/confidence-intervals-for-binomial-proportion-a-sas-9-4stat-12-3-update/&#34;&gt;BIONOMIAL option&lt;/a&gt; to compute the confidence intervals for binomial proportion). As far as I hacked, I got 11 intervals (&lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/23/statistical-notes-5-confidence-intervals-for-difference-between-independent-binomial-proportions-using-sas/&#34;&gt;&lt;font size=&#34;1&#34;&gt;last year I tried SAS 9.3 and got 8&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;; codes available below):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/CI_diff_94.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;CI_diff_94&#34; border=&#34;0&#34; alt=&#34;CI_diff_94&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/CI_diff_94_thumb.png&#34; width=&#34;392&#34; height=&#34;346&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. There 3 new methods I just got from SAS 9.4/STAT 12.3 are&amp;#160; Miettinen-Nurminen-Mee, Miettinen-Nurminen and Agresti-Caffo.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2.&amp;#160; The methods with number marks are align with Prof. Newcombe ’s paper, &lt;em&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/9595617?dopt=Abstract&#34;&gt;&lt;strong&gt;Interval estimation for the difference between independent proportions: comparison of eleven methods&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;&amp;#160;&lt;/strong&gt;(a fraction of outputs attached in &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/23/statistical-notes-5-confidence-intervals-for-difference-between-independent-binomial-proportions-using-sas/&#34;&gt;my post&lt;/a&gt;)&lt;/em&gt;.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;3. I’m still trying to figure out why the &lt;font color=&#34;#ff0000&#34;&gt;exact&lt;/font&gt; method produces different numbers compared to what’s in Prof. Newcombe’s report.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;4. The codes produced the outputs:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data ci; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input grp res count; &lt;br /&gt;datalines; &lt;br /&gt;1 0 56 &lt;br /&gt;1 1 14 &lt;br /&gt;2 0 48 &lt;br /&gt;2 1 32 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;non-exactmethods: &lt;br /&gt;Agresti-Caffo &lt;br /&gt;Farrington-Manning &lt;br /&gt;Hauck-Anderson &lt;br /&gt;Miettinen-Nurminen &lt;br /&gt;Newcombe Score &lt;br /&gt;Wald &lt;br /&gt;*/ &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci1; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CL=(AC FM HA MN WILSON WALD)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;exact methods: &lt;br /&gt;Exact &lt;br /&gt;Exact (FM Score) &lt;br /&gt;*/ &lt;br /&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci2; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CL=(EXACT)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; exact riskdiff; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci3; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CL=(EXACT)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; exact riskdiff(fmscore); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;methods (CC): &lt;br /&gt;Mee &lt;br /&gt;Newcombe Score (Corrected) &lt;br /&gt;Wald (Corrected) &lt;br /&gt;*/ &lt;br /&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci4; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CORRECT CL=(MN(CORRECT=NO) WILSON WALD)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data CI_all; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set ci4 ci3 ci2 ci1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; CI=&amp;lsquo;(&amp;#8216;||compress(put(LowerCL,8.4))||&amp;#8217;, &amp;#8216;||compress(put(UpperCL,8.4))||&amp;#8217;)&amp;#8217;; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc sql; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; select &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; case Type &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Wald&amp;rdquo; then &amp;ldquo;a&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Wald (Corrected)&amp;rdquo; then &amp;ldquo;b&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Miettinen-Nurminen-Mee&amp;rdquo; then &amp;ldquo;b1&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Miettinen-Nurminen&amp;rdquo; then &amp;ldquo;b2&amp;rdquo;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Agresti-Caffo&amp;rdquo; then &amp;ldquo;b3&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Exact&amp;rdquo; then &amp;ldquo;c&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Exact (FM Score)&amp;rdquo; then &amp;ldquo;d&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Newcombe Score&amp;rdquo; then &amp;ldquo;e&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Newcombe Score (Corrected)&amp;rdquo; then &amp;ldquo;f&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Farrington-Manning&amp;rdquo; then &amp;ldquo;g&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Hauck-Anderson&amp;rdquo; then &amp;ldquo;h&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; else &amp;ldquo;i&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; end as order length=2, &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Type &amp;ldquo;method&amp;rdquo;, &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; CI &amp;ldquo;95% Confidence Limits&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; from CI_all &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; order by order &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Confidence Intervals for Binomial Proportion: A SAS 9.4/STAT 12.3 Update</title>
+      <link>/2013/08/22/confidence-intervals-for-binomial-proportion-a-sas-9.4/stat-12.3-update/</link>
+      <pubDate>Thu, 22 Aug 2013 10:57:01 +0000</pubDate>
+      
+      <guid>/2013/08/22/confidence-intervals-for-binomial-proportion-a-sas-9.4/stat-12.3-update/</guid>
+      <description>&lt;nav&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#1-a-new-confidence-limits-method-added-wilson-corrected&#34;&gt;1. A new confidence limits method added, Wilson (Corrected)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#2-the-font-color-ff0000-binomialc-font-option-is-no-longer-documented-but-still-works&#34;&gt;2. The &lt;font color=&#34;#ff0000&#34;&gt;binomialc&lt;/font&gt; option is no longer documented, but still works&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;After getting the access to &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/07/28/open-box-sas-9-4-in-windows-7/&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS 9.4&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;alone with SAS/STAT 12.3, I first took a look at my favorite SAS statistical procedure, &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/66103/HTML/default/viewer.htm#statug_freq_toc.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;PROF FREQ&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&amp;#160; Last year I had a note on &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/15/confidence-intervals-binomial-proportion/&#34;&gt;&lt;font size=&#34;1&#34;&gt;confidence intervals for binomial proportion based on SAS 9.2/SAS9.3&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. Now it’s time to throw out some updates.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;1-a-new-confidence-limits-method-added-wilson-corrected&#34;&gt;1. A new confidence limits method added, Wilson (Corrected)&lt;/h6&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In my previous post, SAS PROC FREQ computed 6 of the 11 intervals (#1, 2, 3, 5, 8, 9; see my macros, &lt;em&gt;&lt;a href=&#34;https://raw.github.com/Jiangtang/Programming-SAS/master/CI_Single_Proportion.sas&#34;&gt;CI_Single_Proportion.sas&lt;/a&gt;&lt;/em&gt;). Since SAS 9.4/STAT 12.3, #4 added:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data test; &lt;br /&gt;input grp outcome $ count; &lt;br /&gt;datalines; &lt;br /&gt;1 f 81 &lt;br /&gt;1 u 182 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods select BinomialCLs; &lt;br /&gt;proc freq data=test; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables outcome / binomial (CL=ALL); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight Count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;ods select BinomialCLs; &lt;br /&gt;proc freq data=test; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables outcome / &lt;font color=&#34;#ff0000&#34;&gt;binomialc&lt;/font&gt; (CL=ALL); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight Count; &lt;br /&gt;run;&lt;/font&gt; &lt;br /&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/CI_9.4.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;CI_9.4&#34; border=&#34;0&#34; alt=&#34;CI_9.4&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/CI_9.4_thumb.png&#34; width=&#34;343&#34; height=&#34;164&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/CI_c_9.4.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;CI_c_9.4&#34; border=&#34;0&#34; alt=&#34;CI_c_9.4&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/CI_c_9.4_thumb.png&#34; width=&#34;351&#34; height=&#34;168&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h6 id=&#34;2-the-font-color-ff0000-binomialc-font-option-is-no-longer-documented-but-still-works&#34;&gt;2. The &lt;font color=&#34;#ff0000&#34;&gt;binomialc&lt;/font&gt; option is no longer documented, but still works&lt;/h6&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In the above session, a &lt;font color=&#34;#ff0000&#34;&gt;binomialc&lt;/font&gt; option was used to compute the intervals with a continuity correction(CC). Actually it still works &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/66103/HTML/default/viewer.htm#statug_freq_syntax08.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;in SAS 9.4/STAT 12.3 but without documentation&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;(it’s in &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/procstat/63104/HTML/default/viewer.htm#procstat_freq_sect010.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS 9.2&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/63962/HTML/default/viewer.htm#statug_freq_sect010.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS 9.3&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;). Instead, a &lt;font color=&#34;#ff0000&#34;&gt;CORRECT&lt;/font&gt; options is used for continuity correction:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods select BinomialCLs; &lt;br /&gt;proc freq data=test; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables outcome / binomial (&lt;font color=&#34;#ff0000&#34;&gt;CORRECT&lt;/font&gt; CL=ALL); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight Count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Also, you can use it this way to only compute intervals with CC:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods select BinomialCLs; &lt;br /&gt;proc freq data=test; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables outcome / binomial (CL=W(&lt;font color=&#34;#ff0000&#34;&gt;CORRECT&lt;/font&gt;) WALD(&lt;font color=&#34;#ff0000&#34;&gt;CORRECT&lt;/font&gt;)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight Count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Github for Clinical/Statistical Programmers</title>
+      <link>/2013/02/20/github-for-clinical/statistical-programmers/</link>
+      <pubDate>Wed, 20 Feb 2013 22:01:03 +0000</pubDate>
+      
+      <guid>/2013/02/20/github-for-clinical/statistical-programmers/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;PhUSE-FDA Working Group 5 (&lt;/font&gt;&lt;a href=&#34;http://www.phusewiki.org/wiki/index.php?title=Development_of_Standard_Scripts_for_Analysis_and_Programming&#34;&gt;&lt;font size=&#34;1&#34;&gt;Development of Standard Scripts for Analysis and Programming&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;) just adopted &lt;/font&gt;&lt;a href=&#34;http://code.google.com/p/phuse-scripts/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Code&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;as collaborative programming platform. &lt;/font&gt;&lt;a href=&#34;http://code.google.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Code&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;is one of the most popular and respected open source software hosting sites in the world and it is definitely a good choice for PhUSE-FDA WG5.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;But after viewing one of WG5’s working reports, &lt;em&gt;&lt;a href=&#34;http://www.phusewiki.org/wiki/index.php?title=Platform_for_Standard_Script_Development:_Progress_as_of_September_18_2012&#34;&gt;Sharing Standard Statistical Scripts&lt;/a&gt;&lt;/em&gt; and getting to know why they finally chose Google Code (rather than &lt;/font&gt;&lt;a href=&#34;https://github.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Github&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;which was also tested by WG5 members), I think it’s necessary to clarify some misunderstanding against Github where I’m also &lt;a href=&#34;https://github.com/Jiangtang&#34;&gt;an occasional user&lt;/a&gt;. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;As stated in &lt;/font&gt;&lt;a href=&#34;http://www.phusewiki.org/wiki/index.php?title=Platform_for_Standard_Script_Development:_Progress_as_of_September_18_2012&#34;&gt;&lt;font size=&#34;1&#34;&gt;Slide 11&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;in the report mentioned before, Github,&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Too complicated an interface &lt;br /&gt;Too much overhead for simple development &lt;br /&gt;Too much training and education needed&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;designed for classic programming languages like C and Java (not for things like R and SAS)&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For the first point regarding &lt;strong&gt;interface&lt;/strong&gt;, it seems only &lt;/font&gt;&lt;a href=&#34;http://git-scm.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Git&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;command line tested, and it may be too complicated to “&lt;strong&gt;classic&lt;/strong&gt; statistical programming users”. Actually, Github offers a great GUI tool, for example, &lt;em&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;GitHub for Windows&lt;/a&gt;&lt;/em&gt; to help users visually clone repositories, commit changes and other management tasks without typing Git commands: &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Github_GUI.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;Github_GUI&#34; border=&#34;0&#34; alt=&#34;Github_GUI&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Github_GUI_thumb.png&#34; width=&#34;487&#34; height=&#34;427&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It’s also worthy to mention that with &lt;/font&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;GitHub for Windows&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;, &lt;/em&gt;users don’t need to install any separated version control software like Git, CVS or SVN. &lt;/font&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;GitHub for Windows&lt;/font&gt;&lt;/em&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;already includes a fully functional version of &lt;/font&gt;&lt;a href=&#34;http://msysgit.github.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;msysGit&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. It just makes users’ life much simpler. To use Google Code, you must install and configure something like TortoiseSVN.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The second, is Github suitable for “&lt;strong&gt;things like R and SAS&lt;/strong&gt;”? It’s true that all hosts including &lt;/font&gt;&lt;a href=&#34;https://github.com/languages&#34;&gt;&lt;font size=&#34;1&#34;&gt;Github&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;are dominated by “classic programming languages like C and Java”. For SAS, SAS programmers as a whole are just not active in&amp;#160; any social coding activities, but for &lt;/font&gt;&lt;a href=&#34;https://github.com/languages/R&#34;&gt;&lt;font size=&#34;1&#34;&gt;R&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, actually it is &lt;/font&gt;&lt;a href=&#34;https://www.google.com/webhp?sourceid=chrome-instant&amp;amp;ion=1&amp;amp;ie=UTF-8#q=github+top+languages+R&amp;amp;hl=en&amp;amp;ei=T4QlUeH-HJP62AXxqYGAAQ&amp;amp;start=10&amp;amp;sa=N&amp;amp;bav=on.2,or.r_gc.r_pw.r_cp.r_qf.&amp;amp;fp=50b26647ad5972f8&amp;amp;ion=1&amp;amp;biw=1536&amp;amp;bih=784&#34;&gt;&lt;font size=&#34;1&#34;&gt;one of the mostly used languages in Github&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Google Code is good and a “Google Code vs Github” question is just mostly subjective. It seems to me the pickup of Google Code by WG5 rather than Github was based on incomplete information. I personally prefer Github and there are also some good reasons:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Use the GUI tool, &lt;/font&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;GitHub for Windows&lt;/font&gt;&lt;/em&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;to maintain a minimum Git/SVN/CVS setup.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Github supplies much richer statistics reports, including charts.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Github is more social oriented which makes it cool in this Web2.0 world.&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LearningR!</title>
+      <link>/2013/02/08/learningr/</link>
+      <pubDate>Fri, 08 Feb 2013 23:37:49 +0000</pubDate>
+      
+      <guid>/2013/02/08/learningr/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Computing_for_data_analysis_Coursera.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Computing_for_data_analysis_Coursera&#34; border=&#34;0&#34; alt=&#34;Computing_for_data_analysis_Coursera&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Computing_for_data_analysis_Coursera_thumb.png&#34; width=&#34;475&#34; height=&#34;422&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I spent almost all of my blogging time last month to follow an online course in &lt;/font&gt;&lt;a href=&#34;https://www.coursera.org&#34;&gt;&lt;font size=&#34;1&#34;&gt;Coursera&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, &lt;em&gt;&lt;a href=&#34;https://www.coursera.org/course/compdata&#34;&gt;Computing for Data Analysis&lt;/a&gt;&lt;/em&gt; (with R) by Dr. &lt;/font&gt;&lt;a href=&#34;http://simplystatistics.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Roger&amp;#160; Peng&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;of Johns Hopkins, Biostatistics Department. I already checked out bunch of Coursera courses just to take a look at what else &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Massive_open_online_course&#34;&gt;&lt;font size=&#34;1&#34;&gt;MOOC&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;look like, this R course was the first and only one I took seriously: I reviewed all slides (although didn’t watch the videos since I didn’t have enough time) and most important, finished all programming assignments(and got full score!).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Not a frequent R user, I used some R packages for learning purpose (mostly in &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/01/15/feature-selection-collections-for-self-study/&#34;&gt;&lt;font size=&#34;1&#34;&gt;data mining&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;). This &lt;em&gt;&lt;a href=&#34;https://www.coursera.org/course/compdata&#34;&gt;Computing for Data Analysis&lt;/a&gt;&lt;/em&gt; course focused mostly on data manipulation and that’s why I chose it to dig into R. R by design is not a tool for data management (where SAS excels), but it’s nice to have (no hurt since it’s free). Those days I put most of my efforts on R data structures(vector, matrix, array, list, data frame) and by grouping processing(*ply functions). Few resource I found extremely useful as a starter:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/tagged/r&#34; title=&#34;http://stackoverflow.com/questions/tagged/r&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://stackoverflow.com/questions/tagged/r&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160; when I google a specific R programming technique, mostly I will reach to stackoverflow website, a new generation Q&amp;amp;A hub to replace user forum, mailing list.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;_&lt;a href=&#34;https://www.google.com/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;ved=0CDIQFjAA&amp;amp;url=http%3A%2F%2Fcran.r-project.org%2Fdoc%2Fcontrib%2FLam-IntroductionToR_LHL.pdf&amp;amp;ei=O84VUfK7HIue8gSr5YGYBQ&amp;amp;usg=AFQjCNGmMLsnqaHAxGH368m32E8s4STNTA&amp;amp;sig2=Gz7gjUqiPqD-nq_Sg5X57w&amp;amp;bvm=bv.42080656,d.eWU&#34;&gt;&lt;font size=&#34;1&#34;&gt;An introduction to R&lt;/font&gt;&lt;/a&gt;_ &lt;font size=&#34;1&#34;&gt;by Longhow Lam, a free book. I like its Chapter 2,&lt;em&gt; Data Objects&lt;/em&gt;, including R data types and data structures.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Data Manipulation with R&lt;/em&gt; by Phil Spector, one of the Use R! books. I used its Chapter 8, &lt;em&gt;Data Aggregation &lt;/em&gt;on R by group processing.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.rstudio.com/ide/&#34;&gt;&lt;font size=&#34;1&#34;&gt;RStudio&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, a must have R IDE, the best of best. &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Package &lt;/font&gt;&lt;a href=&#34;http://cran.r-project.org/web/packages/plyr/index.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;plyr&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, tools for splitting, applying and combining data. Actually, it is awful to use R to manipulate data from a SAS programmer point of view. Use plyr to alleviate the pain.&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Package &lt;/font&gt;&lt;a href=&#34;http://code.google.com/p/sqldf/&#34;&gt;&lt;font size=&#34;1&#34;&gt;sqldf&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, like SAS Proc SQL against data frame. Reason, ibid. Use sqldf won’t enhance your R programming skill, but sometime when you feel down at R, you may want to launch piece of SQL scripts you really like.&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blog Statistics: 2012</title>
+      <link>/2013/01/01/blog-statistics-2012/</link>
+      <pubDate>Tue, 01 Jan 2013 23:47:44 +0000</pubDate>
+      
+      <guid>/2013/01/01/blog-statistics-2012/</guid>
+      <description>
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;(This blog’s page view data from Google Analytics; &lt;/span&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/archives/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;43 posts in total in 2012&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;)&lt;/span&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;top-10-countries-territories-and-cities&#34;&gt;Top 10 countries/territories and cities&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_country.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;blog_country&#34; alt=&#34;blog_country&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_country_thumb.png&#34; width=&#34;382&#34; height=&#34;384&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Most of my readers come from US and I’m glad my Chinese fellows still fork me since I moved to US this year (&lt;em&gt;today is my one year anniversary in US&lt;/em&gt;).&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;To my surprising there are much more readers from South Korea than from Japan(#12) and Singapore(#22).&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Readers from a secret city (#7) are watching me! &lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;top-10-referral-social-networks&#34;&gt;Top 10 referral social networks&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_social-network.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;blog_social network&#34; alt=&#34;blog_social network&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_social-network_thumb.png&#34; width=&#34;168&#34; height=&#34;514&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;I’m happy that people navigating through Facebook also click this technical blog!&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;top-10-mobile-devices&#34;&gt;Top 10 mobile devices&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_mobile.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;blog_mobile&#34; alt=&#34;blog_mobile&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_mobile_thumb.png&#34; width=&#34;396&#34; height=&#34;411&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;I think myself contributed a lot via Google Nexus 7 (#7) visiting my own blog (&lt;em&gt;one upon a time in 2012, I had two new released Nexus 7 tablets at hand until one dropped down and another sold out…&lt;/em&gt;).&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;top-10-most-viewed-posts&#34;&gt;Top 10 most viewed posts&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/13/sublimetext2-sas/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Sublime Text 2 for SAS Programmers: A Quick Note&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/10/23/tony-barr-and-the-early-history-of-sas/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Tony Barr and the Early History of SAS&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/11/xml/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Face Off: Review OpenCDISC XML files&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/12/07/sas-books-2012/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;My SAS Books: Shopping List 2012&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/16/hypothesis-testing/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Statistical Notes (4): Dragon’s Teeth and Fleas: Hypothesis Testing in Plain English&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/geomean/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Statistical Notes (1): Geometric Mean and Geometric Mean Ratio&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/12/column-mode-in-sas-9-3-enhanced-editor/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Column Mode in SAS 9.3 Enhanced Editor&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/11/30/weekend-clip-data-scientist/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Weekend Clip: Data Scientist&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/tost-equivalence-test/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Statistical Notes (2): Equivalence Testing and TOST (Two One-Sided Test)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/19/publishing-cdisc-standards/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Is There Any Better Way? Publishing Process For CDISC Standards Documentation&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Thank you my fellow readers and happy new year (if you like to have another break, follow me to celebrate Chinese new year at Feb 10, 2013 )!&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Weekend Clips: Data Scientist Episode II</title>
+      <link>/2012/12/23/weekend-clips-data-scientist-episode-ii/</link>
+      <pubDate>Sun, 23 Dec 2012 15:14:13 +0000</pubDate>
+      
+      <guid>/2012/12/23/weekend-clips-data-scientist-episode-ii/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. What is A Data Scientist Anyway?&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image3.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image_thumb3.png&#34; width=&#34;487&#34; height=&#34;94&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2. You Just Can’t Be Replaced by Yourselves!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image1.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image11.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image11_thumb.png&#34; width=&#34;489&#34; height=&#34;94&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;3. We are &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Kaggle&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;all Data Scientists&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image2.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image12.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image1_thumb.png&#34; width=&#34;482&#34; height=&#34;108&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My SAS Books: Shopping List 2012</title>
+      <link>/2012/12/07/my-sas-books-shopping-list-2012/</link>
+      <pubDate>Fri, 07 Dec 2012 23:36:30 +0000</pubDate>
+      
+      <guid>/2012/12/07/my-sas-books-shopping-list-2012/</guid>
+      <description>
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Books.jpg&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS_Books&#34; border=&#34;0&#34; alt=&#34;SAS_Books&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Books_thumb.jpg&#34; width=&#34;384&#34; height=&#34;224&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Last year I threw away all my SAS books (to friends and colleagues in Beijing) before moving to US. You might agree that it’s not economically bound to transport such heavy books intercontinentally! Now I just start to build my SAS library one by one. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I will most probably not buy more SAS books as Christmas gifts for myself, so it’s time to take a 2012 snapshot of shopping:&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;i-programming-books-by-art-carpenter&#34;&gt;I Programming Books by Art Carpenter&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1 &lt;em&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/1590473841/ref=wms_ohs_product&#34; target=&#34;_blank&#34;&gt;Carpenter&amp;#8217;s Complete Guide to the SAS Macro Language, 2nd Edition&lt;/a&gt;, 2004&lt;/em&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Best of best on SAS (dynamic) programming. I also had a hardcopy in Beijing. &lt;font color=&#34;#ff0000&#34;&gt;★★★★★&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2&lt;em&gt;&amp;#160;&lt;/em&gt;&lt;/font&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/1607649918/ref=wms_ohs_product&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Carpenter&amp;#8217;s Guide to Innovative SAS Techniques&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;, &lt;font size=&#34;1&#34;&gt;2012&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It’s new by Carpenter and nice to check out. &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;3 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=60966&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Carpenter&amp;#8217;s Complete Guide to the SAS REPORT Procedure&lt;/em&gt;&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, 2007&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;Use &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/proc/65145/HTML/default/viewer.htm#p0bqogcics9o4xn17yvt2qjbgdpi.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Proc Report&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;! It is the workhorse procedure for SAS report writing and &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/proc/65145/HTML/default/viewer.htm#n00yutbvvckjwrn1ldg5xkvjy1pu.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Proc Tabulate&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;is not in fashion anymore!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Btw, The historically called SAS DATA &lt;em&gt;NULL&lt;/em&gt; report writing now has a brand new name, ODS Report Writing Interface, due to the incorporated ODS facility(which is cool). I think it deserves a new title.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font size=&#34;1&#34;&gt;PS: I got it free from the latest &lt;/font&gt;&lt;a href=&#34;http://www.rtsug.org/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;RTSUG&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt; (Research Triangle SAS Users&amp;#8217; Group) meeting. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;ii-programming-miscellaneous&#34;&gt;II Programming Miscellaneous&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;4 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=62255&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Web Development with SAS by Example&lt;/em&gt;, Third Edition&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Frederick Pratter, 2011&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Want to play HTML/htmSQL/AJAX/Javascript… within SAS. no comments by far.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;5&amp;#160; &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=62230&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;SAS Hash Object Programming Made Easy&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Michele Burlew, 2012&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Totally new title on this topic. Nice to approach to the new area.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;iii-ods-graphics&#34;&gt;III ODS Graphics&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;6 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=63855&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Statistical Graphics Procedures by Example: Effective Graphs Using SAS&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Sanjay Matange and Dan Heath, 2011&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS ODS Graphics is the rising Star! I also read other title on ODS statistical graphics in Beijing, &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=63120&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Statistical Graphics in SAS: An Introduction to the Graph Template Language and the Statistical Graphics Procedures&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Warren Kuhfeld&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You may read plenty of ODS Graphics&amp;#160; papers by these authors/developers from SAS Institute.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;iv-statistical-books&#34;&gt;IV Statistical Books&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;7 &lt;/font&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/160764228X/ref=wms_ohs_product&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Common Statistical Methods for Clinical Research with SAS Examples&lt;/em&gt;, Third Edition&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Glenn Walker, Jack Shostak, 2010&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Best for SAS clinical programmers. Relevant, comprehensive and easy to access. I had a second version in Beijing. &lt;font color=&#34;#ff0000&#34;&gt;★★★★★&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;_&lt;font size=&#34;1&#34;&gt;8 &lt;/font&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/1607647834/ref=wms_ohs_product&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Multiple Comparisons and Multiple Tests Using SAS, Second Edition&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by &lt;/font&gt;_&lt;font size=&#34;1&#34;&gt;Peter H. Westfall, Randall D. Tobias, Russell D. Wolfinger, 2011&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Multiple comparison is an advanced topic and is beyond my limited statistical knowledge. My short term goal is just to follow the codes then interprete results.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;v-cdisc&#34;&gt;V CDISC&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;9 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=64409&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Implementing CDISC Using SAS: An End-to-End Guide&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Chris Holland and Jack Shostak, 2012&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Still on the way. The first title on CDISC + SAS and worth of waiting. I read Jack Shostak’s another book when applying a SAS programmer job at Sanofi Pasteur Beijing R&amp;amp;D in 2009:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?pc=59827&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;SAS Programming in the Pharmaceutical Industry&lt;/em&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id=&#34;vi-my-wish-list-2013&#34;&gt;VI My Wish List 2013&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;10 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=60282&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Building Web Applications with SAS/IntrNet: A Guide to the Application Dispatcher&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Don Henderson&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS web programming again. I might read this title before #4. Don Henderson was the former SAS developer and SAS/IntrNet was just his baby!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;11 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=63460&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Categorical Data Analysis Using SAS, Third Edition&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Maura Stokes, Charles Davis, and Gary Koch&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I had a second version hardcopy in Beijing and it’s still cool to play with 2*2 table in this so called BIG DATA world! &lt;font color=&#34;#ff0000&#34;&gt;★★★★★&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;12 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=65193&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Cody&amp;#8217;s Collection of Popular SAS Programming Tasks and How to Tackle Them&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Ron Cody&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I read and like &lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?pc=62857&#34; target=&#34;_blank&#34;&gt;Cody’s book on SAS functions&lt;/a&gt; and it’s always nice to check out his new title.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;13 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=60751&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;The Global English Style Guide: Writing Clear, Translatable Documentation for a Global Market&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by John R. Kohl&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I read the free chapter and it would be good book to polish my English as a technical blog writer.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;14&lt;/font&gt; &lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=65423&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;The Little SAS Book: A Primer, Fifth Edition&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Lora Delwiche and Susan Slaughter&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I forget the version I read back to the time I first approached to SAS and it’s nice to hold a latest version in shelf and I’d rather learn the effective writing! Best for beginners. &lt;font color=&#34;#ff0000&#34;&gt;★★★★★&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Weekend Clip: Data Scientist</title>
+      <link>/2012/11/30/weekend-clip-data-scientist/</link>
+      <pubDate>Fri, 30 Nov 2012 22:31:52 +0000</pubDate>
+      
+      <guid>/2012/11/30/weekend-clip-data-scientist/</guid>
+      <description>
+
+&lt;h5 id=&#34;two-tweets&#34;&gt;Two tweets:&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/image.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/image_thumb.png&#34; width=&#34;525&#34; height=&#34;101&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/image1.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/image_thumb1.png&#34; width=&#34;522&#34; height=&#34;87&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;one-blog-post&#34;&gt;One blog post:&lt;/h5&gt;
+
+&lt;p&gt;_&lt;a href=&#34;http://mathbabe.org/2012/07/31/statisticians-arent-the-problem-for-data-science-the-real-problem-is-too-many-posers/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Statisticians aren’t the problem for data science. The real problem is too many posers&lt;/font&gt;&lt;/a&gt;_&lt;/p&gt;
+
+&lt;h5 id=&#34;one-job-advertisement&#34;&gt;One job advertisement:&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.ziprecruiter.com/job/SAS-Data-Scientist/1f127e2e/?source=social-linkedin-group-jobs&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS Data Scientist&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;?(!)&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;a-joke&#34;&gt;A joke:&lt;/h5&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The biggest joke about data scientist is that the Google query “&lt;/font&gt;&lt;a href=&#34;https://www.google.com/search?q=data+scientist+joke&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;data scientist joke&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;” returns nothing interesting.&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Incorporate SAS/IML to Base SAS?</title>
+      <link>/2012/10/16/incorporate-sas/iml-to-base-sas/</link>
+      <pubDate>Tue, 16 Oct 2012 22:28:41 +0000</pubDate>
+      
+      <guid>/2012/10/16/incorporate-sas/iml-to-base-sas/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Since SAS 9.3, ODS Graphics was moved into Base SAS and other statistical procedures, which means the SAS/Graph license is not needed anymore to access ODS Graphics facilities. It’s definitely nice, but from customers’ point of view, it is not critical necessary: since the “minimum set of SAS system” in most SAS sessions includes the Base SAS, SAS/Stat and SAS/Graph, there is almost no impact for SAS users to switch the license of ODS Graphics. Actually, I do think SAS/IML is better to be included in BASE SAS (play Proc IML in BASE SAS; a MATRIX statement in data step is definitely another bonus) :&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;IML itself, seems have no intention to replace SAS/Stat, SAS/ETS, SAS/QC and other SAS statistical facilities in matrix way like R or Matlab. Instead, by enhancing the abilities to call SAS data steps(including macros), SAS Procedures and R inside,&amp;#160; IML seems to be glad as glue to leverage multiple programming elements. &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;BASE SAS is a collection of lots of programming elements: data step, macro, SQL, array, hash, Java objects, ODS, XML and bunches of procedures. IML is clearly a programming tool rather than a specific application(SAS/Stat and such) and if it is added to BASE SAS, then the SAS programmers&amp;#160; will have one more data structure (matrix) to play with besides SAS table (R copies this idea as data frame), array and hash table (dictionary).&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Actually it is an emergent need (for a matrix). Processing different rows in variable(s) is not an easy task in SAS data steps. Mostly SAS programmers utilize arrays (plus some tricky functions like LAG and DIF) and Dow-loop after its advent. There are really advanced programming techniques, but in matrix with index, such manipulation is pretty easy and straightforward (and saving your loops).&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Although IML can communicate with BASE SAS, but for portable purpose (IML is not expected in every SAS session), most SAS programmers prefer to submit pure BASE codes for data processing. Furthermore, we can even understand why SAS programmers in general invest less in IML. It’s not good: just think about a BASE SAS programmer without a handy matrix manipulation tool (&lt;em&gt;and think about R&lt;/em&gt;)!&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Personally I played IML for a while and still keep eyes on its updates. But since I had some SAS machines without IML, I realize that IML can’t be used as a production language in my clinical SAS programming life: just can’t afford the latency&amp;#160; to ask IT administrators (including in clients side) to manage it!&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Statistical Notes (5): Confidence Intervals for Difference Between Independent Binomial Proportions Using SAS</title>
+      <link>/2012/09/23/statistical-notes-5-confidence-intervals-for-difference-between-independent-binomial-proportions-using-sas/</link>
+      <pubDate>Sun, 23 Sep 2012 21:23:59 +0000</pubDate>
+      
+      <guid>/2012/09/23/statistical-notes-5-confidence-intervals-for-difference-between-independent-binomial-proportions-using-sas/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;A guy notices a bunch of targets scattered over a barn wall, and in the center of each, in the &amp;ldquo;bulls-eye,&amp;rdquo; is a bullet hole. &amp;ldquo;Wow,&amp;rdquo; he says to the farmer, &amp;ldquo;that&amp;#8217;s pretty good shooting. How&amp;#8217;d you do it?&amp;rdquo; &amp;ldquo;Oh,&amp;rdquo; says the farmer, &amp;ldquo;it was easy. I painted the targets after I shot the holes.&amp;rdquo; – An Old Joke&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Note on how to get the difference between independent binomial proportions using SAS &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_freq_toc.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;PROC FREQ&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;(tested in SAS 9.3M1).&amp;#160; Also, benchmarks took from Prof. Newcombe ’s paper:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;cite&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=9595617&amp;query_hl=1&#34;&gt;&lt;strong&gt;&lt;font size=&#34;1&#34;&gt;Interval estimation for the difference between independent proportions: comparison of eleven methods.&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt; &lt;/font&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/Newcombe_diff4.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;Newcombe_diff&#34; border=&#34;0&#34; alt=&#34;Newcombe_diff&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/Newcombe_diff_thumb4.png&#34; width=&#34;291&#34; height=&#34;297&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Key findings (SAS output):&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/CI8.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;CI8&#34; border=&#34;0&#34; alt=&#34;CI8&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/CI8_thumb.png&#34; width=&#34;436&#34; height=&#34;255&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. SAS Proc Freq offers 8 ( including 4 of total 11 in Prof. Newcombe ’s paper) methods to compute confidence intervals for difference between independent binomial proportions:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Wald &lt;font color=&#34;#ff0000&#34;&gt;#1&lt;/font&gt;&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Wald (Corrected) &lt;font color=&#34;#ff0000&#34;&gt;#2&lt;/font&gt;&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Exact&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Exact (FM Score)&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Newcombe Score &lt;font color=&#34;#ff0000&#34;&gt;#10&lt;/font&gt;&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Newcombe Score (Corrected) &lt;font color=&#34;#ff0000&#34;&gt;#11&lt;/font&gt;&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Farrington-Manning&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Hauck-Anderson&lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Note that #1 method is the most popular one in textbook, #10 might&amp;#160; be the most wildly used method in industry.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2. There is a big discrepancy in the outputs in the&amp;#160; so called “&lt;strong&gt;exact&lt;/strong&gt;” method among&amp;#160; SAS Proc Freq and Prof. Newcombe ’s paper. Seems they used different methods (in the same “exact” families) under same name. Needs further investigation.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The SAS codes:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;2*2 table &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; response0 response1 &lt;br /&gt;group1&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 56&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 14 &lt;br /&gt;group2&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 48&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 32 &lt;br /&gt;*/&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data ci; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input grp res count; &lt;br /&gt;datalines; &lt;br /&gt;1 0 56 &lt;br /&gt;1 1 14 &lt;br /&gt;2 0 48 &lt;br /&gt;2 1 32 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;methods: &lt;br /&gt;Exact &lt;br /&gt;Farrington-Manning &lt;br /&gt;Hauck-Anderson &lt;br /&gt;Newcombe Score &lt;br /&gt;Wald &lt;br /&gt;*/ &lt;br /&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci1; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CL=(EXACT FM HA WILSON WALD)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; exact riskdiff; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;methods: &lt;br /&gt;Exact (FM Score) &lt;br /&gt;*/ &lt;br /&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci2; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CL=(EXACT)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; exact riskdiff(fmscore); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;methods: &lt;br /&gt;Newcombe Score (Corrected) &lt;br /&gt;Wald (Corrected) &lt;br /&gt;*/ &lt;br /&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci3; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CORRECT CL=(WILSON WALD)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; exact riskdiff; &lt;br /&gt;run; &lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;put them all&lt;/em&gt;/ &lt;br /&gt;data CI_all; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set ci3 ci2 ci1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; CI=&amp;lsquo;(&amp;#8216;||compress(put(LowerCL,8.4))||&amp;#8217;, &amp;#8216;||compress(put(UpperCL,8.4))||&amp;#8217;)&amp;#8217;; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc sql; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; select &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; case Type &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Wald&amp;rdquo; then &amp;ldquo;a&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Wald (Corrected)&amp;rdquo; then &amp;ldquo;b&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Exact&amp;rdquo; then &amp;ldquo;c&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Exact (FM Score)&amp;rdquo; then &amp;ldquo;d&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Newcombe Score&amp;rdquo; then &amp;ldquo;e&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Newcombe Score (Corrected)&amp;rdquo; then &amp;ldquo;f&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Farrington-Manning&amp;rdquo; then &amp;ldquo;g&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Hauck-Anderson&amp;rdquo; then &amp;ldquo;h&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; else &amp;ldquo;i&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; end as order, &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Type &amp;ldquo;method&amp;rdquo;, &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; CI &amp;ldquo;95% Confidence Limits&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; from CI_all &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; order by order &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You may be also interested in this post on calculating confidence intervals for single proportion: &lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/15/confidence-intervals-binomial-proportion/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Statistical Notes (3): Confidence Intervals for Binomial Proportion Using SAS&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;using the following 11 methods:&lt;/font&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;1.&amp;#160; Simple asymptotic, Without CC | Wald&lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;2.&amp;#160; Simple asymptotic, With CC&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;3.&amp;#160; Score method, Without CC | Wilson&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;4.&amp;#160; Score method, With CC&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;5. Binomial-based, &amp;#8216;Exact&amp;#8217; | Clopper-Pearson&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;6.&amp;#160; Binomial-based, Mid-p&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;7.&amp;#160; Likelihood-based&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;8.&amp;#160; Jeffreys&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;9.&amp;#160; Agresti-Coull,z^&lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; successes&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;10. Agresti-Coull,2 successes and 2 fail&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;li&gt;&lt;font size=&#34;1&#34;&gt;11. Logit&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Where is SAS Output Anyway?</title>
+      <link>/2012/09/22/where-is-sas-output-anyway/</link>
+      <pubDate>Sat, 22 Sep 2012 22:10:12 +0000</pubDate>
+      
+      <guid>/2012/09/22/where-is-sas-output-anyway/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It is said in &lt;em&gt;&lt;a href=&#34;http://cran.cnr.berkeley.edu/doc/manuals/R-intro.html#R-and-statistics&#34; target=&#34;_blank&#34;&gt;An Introduction to R&lt;/a&gt;&lt;/em&gt;, one of R official documents (Current Version: 2.15.1):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;There is an important difference in philosophy between S (and hence R) and the other main statistical systems. In S a statistical analysis is normally done as a series of steps, with intermediate results being stored in objects. &lt;strong&gt;Thus whereas SAS and SPSS will give copious output from a regression or discriminant analysis&lt;/strong&gt;, R will give minimal output and store the results in a fit object for subsequent interrogation by further R functions.&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For SAS, it’s true, but not exactly the whole story. Actually all outputs generated by SAS procedures are stored in datasets besides the “copious output” in Output Window for further processing if needed. It is totally controllable like object in R. Take &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_reg_examples02.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;a regression example&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, You can use &lt;em&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34;&gt;ODS Select&lt;/font&gt;&lt;/strong&gt;&lt;/em&gt; statement to select what you want to be displayed in Output Window, and &lt;em&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34;&gt;ODS Output&lt;/font&gt;&lt;/strong&gt;&lt;/em&gt; statement to fetch the output datasets(&lt;em&gt;test on SAS 9.3M1 in Windows 7&lt;/em&gt;):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods select&lt;/font&gt; Anova ResidualPlot; &lt;br /&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods output&lt;/font&gt; Anova=Anova;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc reg data=fitness; &lt;br /&gt;&amp;#160;&amp;#160; model Oxygen=Age Weight RunTime RunPulse RestPulse MaxPulse / selection=forward;&amp;#160; &lt;br /&gt;run; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;or, you can use &lt;em&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34;&gt;ODS Exclude&lt;/font&gt;&lt;/strong&gt;&lt;/em&gt; statement to just drop some outputs in Output Window:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods exclude&lt;/font&gt; ResidualPlot;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc reg data=fitness; &lt;br /&gt;&amp;#160;&amp;#160; model Oxygen=Age Weight RunTime RunPulse RestPulse MaxPulse / selection=forward;&amp;#160; &lt;br /&gt;run; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;To get a list all the ODS outputs like Anova, ResidualPlot, you can trigger on &lt;strong&gt;&lt;em&gt;&lt;font color=&#34;#ff0000&#34;&gt;&lt;font color=&#34;#ffffff&#34;&gt;ODS Trace ON&lt;/font&gt; &lt;/font&gt;&lt;/em&gt;&lt;/strong&gt;statement:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods trace on&lt;/font&gt;;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc reg data=fitness; &lt;br /&gt;&amp;#160;&amp;#160; model Oxygen=Age Weight RunTime RunPulse RestPulse MaxPulse &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; / selection=forward;&amp;#160; &lt;br /&gt;run; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods trace off&lt;/font&gt;;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;then you get a full list in Log Window like:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;- &lt;br /&gt;Name:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;NObs&lt;/font&gt; &lt;br /&gt;Label:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Number of Observations &lt;br /&gt;Template:&amp;#160;&amp;#160; Stat.Reg.NObs &lt;br /&gt;Path:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Reg.MODEL1.SelectionMethod.Oxygen.NObs &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;Output Added: &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;- &lt;br /&gt;Name:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;ANOVA&lt;/font&gt; &lt;br /&gt;Label:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ANOVA &lt;br /&gt;Template:&amp;#160;&amp;#160; Stat.REG.ANOVA &lt;br /&gt;Path:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Reg.MODEL1.SelectionMethod.Oxygen.Step1.ANOVA &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;Output Added: &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;- &lt;br /&gt;Name:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;SelParmEst&lt;/font&gt; &lt;br /&gt;Label:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Parameter Estimates &lt;br /&gt;Template:&amp;#160;&amp;#160; Stat.REG.SelParmEst &lt;br /&gt;Path:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Reg.MODEL1.SelectionMethod.Oxygen.Step1.SelParmEst &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New Book on Confidence Intervals for Proportions by Prof. Newcombe</title>
+      <link>/2012/09/21/new-book-on-confidence-intervals-for-proportions-by-prof.-newcombe/</link>
+      <pubDate>Fri, 21 Sep 2012 21:18:45 +0000</pubDate>
+      
+      <guid>/2012/09/21/new-book-on-confidence-intervals-for-proportions-by-prof.-newcombe/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Check it out: a new book on confidence intervals for proportions by Prof. Robert G. Newcombe&amp;#160; just recently available from CRC Press:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/CI.jpg&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;CI&#34; border=&#34;0&#34; alt=&#34;CI&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/CI_thumb.jpg&#34; width=&#34;321&#34; height=&#34;517&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.crcpress.com/product/isbn/9781439812785&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Confidence Intervals for Proportions and Related Measures of Effect Size&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This book also supplies a set of Excel spreadsheets to calculating CIs, &lt;em&gt;see&lt;/em&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.crcpress.com/product/isbn/9781439812785&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.crcpress.com/product/isbn/9781439812785&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Other users may be interested on a &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/15/confidence-intervals-binomial-proportion/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;or &lt;/font&gt;&lt;a href=&#34;http://www2.jura.uni-hamburg.de/instkrim/kriminologie/Mitarbeiter/Enzmann/Software/prop.CI.r&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;R&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;implementation.&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

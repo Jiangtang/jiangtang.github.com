@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>An Online Latin to English Translator via SAS - Lithium Theme</title>
+<meta property="og:title" content="An Online Latin to English Translator via SAS - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">An Online Latin to English Translator via SAS</h1>
+
+    
+    <span class="article-date">October 8, 2011</span>
+    
+
+    <div class="article-content">
+      <p>Last month I submitted piece of SAS codes for a monthly programming challenge hosted by <a href="http://www.jiangtanghu.com/blog/2011/08/15/sas-bloggers-in-action-2-jian-dai-and-his-sas-academy/" target="_blank">Jian Dai</a> to <a href="http://blog.clinovo.com/programming-challenge-6-motto-of-hogwarts-school/" target="_blank">translate the Latin motto of Hogwarts School in Harry Potter</a> into English__:</p>
+
+<blockquote>
+<p><em>draco dormiens nunquam titillandus</em></p>
+</blockquote>
+
+<p>You can get the meaning using Google search of course—but not in Google Translator (Google Translator can’t recognize all of such Latin words!). Jian posted a concise <a href="http://blog.clinovo.com/october-programming-challenge-ranking-american-heroes/" target="_blank">Perl way to parse webs</a> which contain this Latin phrase and key words “mean”,  “means” and such and you can always find <a href="http://www.ehow.com/about_6530758_meaning-__draco-dormiens___.html" target="_blank">page</a> like</p>
+
+<blockquote>
+<p>&#8220;draco dormiens nunquam titillandus,&#8221; which means &#8220;never tickle a sleeping dragon.&#8221;</p>
+</blockquote>
+
+<p>My <a href="http://jiangtanghu.com/docs/en/Latin2Eng.sas" target="_blank">SAS approach</a> can’t return a human readable sentence like this one but a 100% word to word machine translation and you can use it to translate any Latin sentence which happens not appear in any singe web page. The usage is also very simple:</p>
+
+<blockquote>
+<p>filename L2E url &#8216;<a href="http://jiangtanghu.com/docs/en/Latin2Eng.sas">http://jiangtanghu.com/docs/en/Latin2Eng.sas&#8217;;</a></p>
+
+<p>%include L2E;</p>
+
+<p>%Latin2Eng(<span style="color: #ff0000;">draco dormiens nunquam titillandus</span>)</p>
+</blockquote>
+
+<p>and you get:</p>
+
+<p align="left">
+  <span style="font-size: xx-small;"><strong>Obs   draco         dormiens                               nunquam                         titillandus</strong> </span>
+</p>
+
+<p align="left">
+  <span style="font-size: xx-small;">1    dragon    sleep, rest                 at no time, never            tickle, titillate, provoke<br /> 2     snake     be/fall asleep          not in any circumstances     stimulate sensually<br /> 3                   behave as if asleep<br /> 4                   be idle, do nothing</span>
+</p>
+
+<p align="left">
+  and also (2*4*2*2=) 32 Cartesian combinations to feel the meaning if needed.
+</p>
+
+<p align="left">
+  Then you can also test the words by Julius Caesar:
+</p>
+
+<blockquote>
+<p align="left">
+  %Latin2Eng(<span style="color: #ff0000;">Veni Vidi Vici</span>)
+</p>
+</blockquote>
+
+<p>and get:</p>
+
+<p><strong>Obs   Veni       Vidi                                                                     Vici</strong></p>
+
+<p>1     come    see, look at                                                     conquer, defeat, excel</p>
+
+<p>2                 consider                                                           outlast</p>
+
+<p>3                (PASS) seem, seem good, appear, be seen      succeed</p>
+
+<p>This SAS translator is based on <a href="http://users.erols.com/whitaker/words.htm " target="_blank">WORDS (version 1.97FC) by William Whitaker</a> and the codes still needs some modifications when any unexpected special symbols popped up in the translating page.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

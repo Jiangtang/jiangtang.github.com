@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer on Lithium Theme</title>
+    <link>/tags/computer/index.xml</link>
+    <description>Recent content in Computer on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/computer/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Hardware and Software 2013 I&amp;rsquo;m Most Thankful For</title>
+      <link>/2013/11/29/the-hardware-and-software-2013-irsquom-most-thankful-for/</link>
+      <pubDate>Fri, 29 Nov 2013 00:16:33 +0000</pubDate>
+      
+      <guid>/2013/11/29/the-hardware-and-software-2013-irsquom-most-thankful-for/</guid>
+      <description>
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It’s time of year to give thanks. As a programmer, e-book reader, blog writer and web surfer, I should express my sincere appreciation to such hardware and software (I use majority of them at daily basis and most of them are free):&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;font-size-1-0-hardware-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;0. Hardware &lt;/font&gt;&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://shop.lenovo.com/us/en/laptops/thinkpad/w-series/w520/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Lenovo Thinkpad W520&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;em&gt;(This is not free):&lt;/em&gt; my workhorse machine, now replaced by &lt;/font&gt;&lt;a href=&#34;http://shop.lenovo.com/SEUILibrary/controller/e/web/LenovoPortal/en_US/catalog.workflow:category.details?current-catalog-id=12F0696583E04D86B9B79B0FEC01C087&amp;amp;current-category-id=F2A3EC7C45634AE8AB0F26CCAC867854&#34;&gt;&lt;font size=&#34;1&#34;&gt;W530&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;font-size-1-1-google-stuff-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;1. Google Stuff&lt;/font&gt;&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.google.com/intl/en/chrome/browser/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Chrome&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;(Windows and Android apps): The first thing to do when getting a new machine is using IE to download the Chrome, then I can just keep moving.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Gmail, Google Maps, Google Voice, Google Talk, Google Search, Google Drive, Google Keep: just can’t live without them!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.google.com/nexus/7/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Nexus 7&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;em&gt;(This is not free):&lt;/em&gt; first generation. This year I got four tablets, the same nexus 7(that’s a long story..), now I only hold one and I love it: compared to iPad, it’s much portable to hold in my back pocket; to iPad mini, it’s much cheaper! This tablet is heavily used for reading and offline navigation.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;font-size-1-2-windows-applications-supporting-tabs-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;2. Windows Applications Supporting Tabs&lt;/font&gt;&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/14/tab-is-a-tab-is-a-tab-is-a-tab/&#34;&gt;&lt;font size=&#34;1&#34;&gt;I’m a big fan of “tabs”&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and feel much more comfortable when launching everything into tabs: web pages, text files, PDF files, Windows Office files (Word, Excel, PPT), and even folders:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://ejie.me/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Clover&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;as replacement for Windows Explore;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.google.com/intl/en/chrome/browser/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Chrome&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;as replacement for Internet Explore (IE);&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.foxitsoftware.com/Secure_PDF_Reader/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Foxit Reader&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;as replacement for Adobe Reader;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.extendoffice.com/product/office-tab.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;Office Tab&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;&lt;em&gt;(This is not free)&lt;/em&gt; to open Microsoft Office Word, Excel, Powerpoint files in tabs;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://ttyplus.com/multi-tabbed-putty/&#34;&gt;&lt;font size=&#34;1&#34;&gt;MTPuTTy&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;to open Putty sessions in tabs.&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;font-size-1-3-programming-and-accessories-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;3. Programming and Accessories&lt;/font&gt;&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://notepad-plus-plus.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Notepad++&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: best of best to open and edit all the text files within a folder.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.vim.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Vim&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: my only choice in Unix boxes; it can only serve as &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/11/13/vim-as-a-sas-ide/&#34;&gt;&lt;font size=&#34;1&#34;&gt;a humble SAS IDE&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.sas.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;em&gt;(This is not free):&lt;/em&gt; I’m primarily a SAS programmer and I live on it, my first choice for data manipulation and reporting.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.r-project.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;R&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and &lt;/font&gt;&lt;a href=&#34;http://rstudio.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Rstudio&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: R is hot and this February &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/02/08/learningr/&#34;&gt;&lt;font size=&#34;1&#34;&gt;I followed a R programming course&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;in &lt;/font&gt;&lt;a href=&#34;https://www.coursera.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Coursera&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, &lt;em&gt;&lt;a href=&#34;https://www.coursera.org/course/compdata&#34;&gt;Computing for Data Analysis&lt;/a&gt;&lt;/em&gt; by Dr. &lt;/font&gt;&lt;a href=&#34;http://simplystatistics.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Roger&amp;#160; Peng&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;of Johns Hopkins, Biostatistics Department. It’s nice to learn a new language and I’m now well prepared to jump into R vs SAS debate. Also, Rstudio is a elegant IDE.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.microsoft.com/en-us/download/details.aspx?id=34595&#34;&gt;&lt;font size=&#34;1&#34;&gt;Powershell&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: since I finished a project by Powershell (almost at learn-by-doing basis), I must say it deserves efforts to learn.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.perl.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Perl&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: I learned and used little bit of Perl this year. It’s ugly but good enough to get work done, and most important, it’s pre-installed in every Unix machine I worked with. Vim+Perl seem the perfect pair to survive in any Unix world. By many good reasons, I should keep learning Python, but Python currently doesn’t help me to make any bucks.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.cygwin.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Cygwin&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: My W520 has Windows 7 installed and Cygwin offers nice collection of Unix tools I’m interested in.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Github&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: I put my collection of &lt;/font&gt;&lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS utilities on Github&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.scootersoftware.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Beyond Compare&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;&lt;em&gt;(This is not free): &lt;/em&gt;best on file/folder comparison. &lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;font-size-1-4-reading-and-writing-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;4. Reading and Writing&lt;/font&gt;&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://calibre-ebook.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Calibre&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: my first choice of e-books management, alone with the Android app, &lt;/font&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.multipie.calibreandroid&amp;amp;hl=en&#34;&gt;&lt;font size=&#34;1&#34;&gt;Calibre Companion&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;em&gt;(this is not free).&lt;/em&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;feedly.com&#34;&gt;&lt;font size=&#34;1&#34;&gt;Feedly&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: Google Reader was dead and now Feedly is even much better than Google Reader! My first online resource collector.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.flyersoft.moonreaderp&amp;amp;hl=en&#34;&gt;&lt;font size=&#34;1&#34;&gt;Moon+ Reader Pro&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: my favorite reading app in my phone and tablet, better than Kindle app and any others, nice Dropbox support.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.microsoft.com/en-us/download/details.aspx?id=8621&#34;&gt;&lt;font size=&#34;1&#34;&gt;Windows Live Writer&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: The only Windows Live product left in my machine, I use it to write every of my blog post, best offline writer(its developers also produce Rstudio).&lt;/font&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;font-size-1-5-miscellaneous-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;5. Miscellaneous&lt;/font&gt;&lt;/h5&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Dropbox&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: it’s even better than Google Drive!&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.pandora.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Pandora&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: I leave it open when at home.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://passwordsafe.sourceforge.net/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Password Safe&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: I dumped hundreds of passwords there… &lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

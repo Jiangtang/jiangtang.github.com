@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>List Processing With SAS (2): List Creating II - Lithium Theme</title>
+<meta property="og:title" content="List Processing With SAS (2): List Creating II - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/github.min.css' rel='stylesheet' type='text/css'>
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">List Processing With SAS (2): List Creating II</h1>
+
+    
+    <span class="article-date">July 26, 2013</span>
+    
+
+    <div class="article-content">
+      <p><a href="http://www.jiangtanghu.com/blog/2013/07/11/sas-list-creating/"><span style="font-size: xx-small;">%range</span></a> <span style="font-size: xx-small;">is a genetic list creator. To apply data driven programming technique, we need to fetch metadata from source data dynamically, for example, to get all variables from a input dataset.</span></p>
+
+<p><span style="font-size: xx-small;">You can easily make it by</span></p>
+
+<p><span style="font-size: xx-small;">1. PROC SQL, from </span> <span style="font-size: xx-small;">a SAS dictionary table, or macro variable by SELECT INTO; or</span></p>
+
+<p><span style="font-size: xx-small;">2. Proc Contents; or</span></p>
+
+<p><span style="font-size: xx-small;">3. even <a href="http://www.sascommunity.org/wiki/Tip_of_the_Day:July_21">a smart data step with RESOLVE function and with CALL SYMPUT</a>, like </span></p>
+
+<blockquote>
+<pre>%let namelist=;
+data _null_;
+    set sashelp.class;
+    call symput('namelist', trim(resolve('&namelist'))||' '||trim(name));
+run;
+%put &namelist;</pre>
+</blockquote>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size: xx-small;">In my <a href="https://github.com/Jiangtang/SAS_ListProcessing">repository</a>, there is a elegant function-like macro where SAS file processing functions like open(), close() are used, </span><a href="https://github.com/Jiangtang/SAS_ListProcessing/blob/master/getVar.sas"><span style="font-size: xx-small;">%getVar</span></a><span style="font-size: xx-small;">. Below follows examples to fetch variables from a dataset, based on variable type, numeric or character:</span></p>
+
+<blockquote>
+<p><span style="font-family: 'Courier New'; font-size: xx-small;">filename list url &#8220;</span><a href="https://raw.github.com/Jiangtang/SAS_ListProcessing/master/_ListProcessing&quot;;"><span style="font-family: 'Courier New'; font-size: xx-small;">https://raw.github.com/Jiangtang/SAS_ListProcessing/master/_ListProcessing&#8221;;</span></a><span style="font-family: 'Courier New'; font-size: xx-small;"></p></p>
+
+<p>
+  %inc list;</span>
+</p>
+
+<p>
+  <span style="font-family: 'Courier New'; font-size: xx-small;">%put %getVar(%str(sashelp.class));</p> 
+  
+
+<p><p>
+    %put %getVar(%str(sashelp.class),n); </span>
+  </p></p>
+
+<p><p>
+    %put %getVar(%str(sashelp.class),C);
+  </p></blockquote></p>
+
+<p><p>
+    <span style="font-size: xx-small;">Outputs:</span>
+  </p></p>
+
+<p><blockquote>
+    <p>
+      <span style="font-size: xx-small;">Name Sex Age Height Weight</p></p>
+
+<pre><code>  &lt;p&gt;
+    Age Height Weight &lt;/span&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    Name Sex
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &amp;nbsp;
+  &lt;/p&gt;&lt;/blockquote&gt; 
+
+  &lt;p&gt;
+    &lt;span style=&quot;font-size: xx-small;&quot;&gt;Another example to list all the elements from a directory using &lt;/span&gt;&lt;a href=&quot;https://github.com/Jiangtang/SAS_ListProcessing/blob/master/dir.sas&quot;&gt;&lt;span style=&quot;font-size: xx-small;&quot;&gt;%dir&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-size: xx-small;&quot;&gt; by &lt;/span&gt;&lt;a href=&quot;http://www.datasavantconsulting.com/roland/&quot;&gt;&lt;span style=&quot;font-size: xx-small;&quot;&gt;Roland Rashleigh-Berry&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-size: xx-small;&quot;&gt;:&lt;/span&gt;
+  &lt;/p&gt;
+
+  &lt;blockquote&gt;
+    &lt;p&gt;
+      &lt;span style=&quot;font-family: 'Courier New'; font-size: xx-small;&quot;&gt;%put %dir(d:\test);&lt;/span&gt;
+    &lt;/p&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;
+    &lt;span style=&quot;font-size: xx-small;&quot;&gt;For more, check out the List Creating part of the portal:&lt;/span&gt;
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    &lt;a href=&quot;https://github.com/Jiangtang/SAS_ListProcessing&quot;&gt;&lt;span style=&quot;font-size: xx-small;&quot;&gt;https://github.com/Jiangtang/SAS_ListProcessing&lt;/span&gt;&lt;/a&gt;
+  &lt;/p&gt;
+</code></pre>
+</blockquote>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<script async type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+    
+  </body>
+</html>
+

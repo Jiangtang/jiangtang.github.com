@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>Calculating Covariance by SAS, A Brutal Way - Lithium Theme</title>
+<meta property="og:title" content="Calculating Covariance by SAS, A Brutal Way - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">Calculating Covariance by SAS, A Brutal Way</h1>
+
+    
+    <span class="article-date">May 12, 2015</span>
+    
+
+    <div class="article-content">
+      <p><span style="font-size: xx-small">It was very disappointed that there is only one built-in method to calculate covariance in Base SAS: that’s in </span><a href="http://support.sas.com/documentation/cdl/en/proc/67327/HTML/default/viewer.htm#p0v0y1on1hbxukn0zqgsp5ky8hc0.htm"><span style="font-size: xx-small">PROC CORR</span></a> <span style="font-size: xx-small">(while you can also do it in </span><a href="http://blogs.sas.com/content/iml/2010/12/08/computing-covariance-and-correlation-matrices.html"><span style="font-size: xx-small">SAS/IML</span></a><span style="font-size: xx-small">, of course):</span></p>
+
+<p><a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/sascorr.png"><span style="font-size: xx-small"><img title="sascorr" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-top-width: 0px" border="0" alt="sascorr" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/sascorr_thumb.png" width="443" height="249" /></span></a></p>
+
+<p><span style="font-size: xx-small">The following is a quick-and-dirty way to get a function like %COV:</span></p>
+
+<blockquote>
+<p><font face="Courier New">%macro COV(data, var1,var2); <br />&#160;&#160;&#160; %local _cov; <br />&#160;&#160;&#160; %let rc = %sysfunc(dosubl(%str(</font></p>
+
+<p><font face="Courier New">&#160;&#160;&#160; ods select none ; <br />&#160;&#160;&#160; ods output cov=_cov;</font></p>
+
+<p><font face="Courier New">&#160;&#160;&#160; proc corr data=&amp;data&#160; cov ; <br />&#160;&#160;&#160; var &amp;var1 &amp;var2 ; <br />&#160;&#160;&#160; run;</font></p>
+
+<p><font face="Courier New">&#160;&#160;&#160; ods select all;</font></p>
+
+<p><font face="Courier New">&#160;&#160;&#160;&#160;&#160;&#160;&#160; proc sql noprint; <br />&#160;&#160;&#160; select &amp;var2 into :_cov <br />&#160;&#160;&#160; from _cov&#160; (obs=1) <br />&#160;&#160;&#160; ; <br />&#160;&#160;&#160; drop table&#160; _cov; <br />&#160;&#160;&#160; quit <br />&#160;&#160;&#160; ))); <br />&#160;&#160;&#160; &amp;_cov <br />%mend COV;</font></p>
+
+<p><span style="font-size: xx-small; font-family: &#39;Courier New&#39;"></span></p>
+</blockquote>
+
+<p><span style="font-size: xx-small">You can use it in macro variable assignment:</span></p>
+
+<blockquote>
+<p><span style="font-size: xx-small; font-family: &#39;Courier New&#39;">%let cov = %COV(sashelp.iris,SepalLength,SepalWidth);</span></p>
+</blockquote>
+
+<p><span style="font-size: xx-small">or in a data step:</span></p>
+
+<blockquote>
+<p><span style="font-size: xx-small; font-family: &#39;Courier New&#39;">data iris; <br />&#160;&#160;&#160; set sashelp.iris; <br />&#160;&#160;&#160; cov = %COV(sashelp.iris,SepalLength,SepalWidth); <br />run;</span></p>
+</blockquote>
+
+<p><span style="font-size: xx-small">or in PROC SQL:</span></p>
+
+<blockquote>
+<p><span style="font-size: xx-small; font-family: &#39;Courier New&#39;">proc sql; <br />&#160;&#160;&#160; create table iris2 as <br />&#160;&#160;&#160; select *, <br />&#160;&#160;&#160; %COV(sashelp.iris,SepalLength,SepalWidth) as cov <br />&#160;&#160;&#160; from sashelp.iris; <br />quit;</span></p>
+</blockquote>
+
+<p><span style="font-size: xx-small">One line conclusion: I LOVE </span><a href="http://www.jiangtanghu.com/blog/2015/03/09/list-manipulations-made-easy-and-little-bit-of-ugly-the-new-dosubl-function/"><span style="font-size: xx-small">Dosubl</span></a> and hope this Dosubl also inspires your programming<span style="font-size: xx-small">!</span></p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

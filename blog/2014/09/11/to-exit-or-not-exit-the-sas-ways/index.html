@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>To Exit or Not Exit, the SAS Ways - Lithium Theme</title>
+<meta property="og:title" content="To Exit or Not Exit, the SAS Ways - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">To Exit or Not Exit, the SAS Ways</h1>
+
+    
+    <span class="article-date">September 11, 2014</span>
+    
+
+    <div class="article-content">
+      <blockquote>
+<p><font size="1">The tragedy of life is not that it ends so soon, but that we wait so long to begin it. –by W. M. Lewis</font></p>
+</blockquote>
+
+<p><font size="1">So, which is the exit style you prefer, in the following 3 macros (which are all valid SAS codes): </font></p>
+
+<blockquote>
+<p><font size="1" face="Courier New">/<em>#1 if branch</em>/ <br />%macro tragedy_of_life1(ds); <br />&#160;&#160;&#160; %if %sysfunc(exist(&amp;ds)) %then %do; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; proc print data=&amp;ds noobs; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; run; <br />&#160;&#160;&#160; %end; <br />&#160;&#160;&#160; <font color="#ff0000">%else %do</font>; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; %put ERROR: Dataset &amp;ds not exist.; <br />&#160;&#160;&#160; %end; <br />%mend;</font></p>
+
+<p><font size="1" face="Courier New">/<em>#2 abort</em>/ <br />%macro tragedy_of_life2(ds); <br />&#160;&#160;&#160; %if %sysfunc(exist(&amp;ds)) ^= 1 %then %do; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; %put ERROR: Dataset &amp;ds not exist.; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; %<font color="#ff0000">abort</font> cancel;&#160;&#160;&#160; <br />&#160;&#160;&#160; %end;</font></p>
+
+<p><font size="1" face="Courier New">&#160;&#160;&#160; proc print data=&amp;ds noobs; <br />&#160;&#160;&#160; run; <br />%mend;</font></p>
+
+<p><font size="1" face="Courier New">/<em>#3 goto</em>/ <br />%macro tragedy_of_life3(ds); <br />&#160;&#160;&#160; %if %sysfunc(exist(&amp;ds)) ^= 1 %then %do; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; %put ERROR: Dataset &amp;ds not exist.; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; %<font color="#ff0000">goto</font> iExit;&#160;&#160;&#160; <br />&#160;&#160;&#160; %end;</font></p>
+
+<p><font size="1" face="Courier New">&#160;&#160;&#160; proc print data=&amp;ds noobs; <br />&#160;&#160;&#160; run;</font></p>
+
+<p><font size="1" face="Courier New">&#160;&#160;&#160; %iExit: <br />%mend;</font></p>
+</blockquote>
+
+<p><font size="1">I personally use #2, <em><strong>%abort cancel</strong></em>. For <strong><em>goto</em></strong> in #3, it might not a good idea to use <strong><em>goto</em></strong> statement in any cases, so I avoid it as long as I can. </font></p>
+
+<p><font size="1">#1 is good, but you can imagine that the branches will grow dramatically if lots of exceptions are under checking. <em><strong>%abort cancel</strong></em> in #2 will best serve the purpose to isolate the blocks.</font></p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

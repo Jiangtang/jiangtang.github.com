@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ds2 on Lithium Theme</title>
+    <link>/tags/ds2/index.xml</link>
+    <description>Recent content in Ds2 on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/ds2/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SAS MapReduce: A Quick Followup by DS2</title>
+      <link>/2015/09/04/sas-mapreduce-a-quick-followup-by-ds2/</link>
+      <pubDate>Fri, 04 Sep 2015 14:01:30 +0000</pubDate>
+      
+      <guid>/2015/09/04/sas-mapreduce-a-quick-followup-by-ds2/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;2&#34;&gt;(&lt;/font&gt;&lt;a href=&#34;https://support.sas.com/documentation/cdl/en/proc/67916/HTML/default/viewer.htm#n0ox2hnyx7twb2n13200g5hqqsmy.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;2&#34;&gt;DS2&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;2&#34;&gt;would be the king!) Years ago I made up &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/10/04/map-and-reduce-in-mapreduce-a-sas-illustration/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;2&#34;&gt;a piece of SAS code to demonstrate the basic idea of Map-Reduce&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;2&#34;&gt;. Now this idea can be best implemented by this piece of workable program with &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/documentation/cdl/en/proc/67916/HTML/default/viewer.htm#n0ox2hnyx7twb2n13200g5hqqsmy.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;2&#34;&gt;PROC DS2&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;2&#34;&gt;(tested in SAS 9.4 TS1M2, Win7):&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;PROC DS2;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;/* create some data &amp;#8211;&lt;em&gt;/ &lt;br /&gt;data input_data / overwrite = yes; &lt;br /&gt;dcl double d; &lt;br /&gt;method init(); &lt;br /&gt;&amp;#160;&amp;#160; dcl int i; &lt;br /&gt;&amp;#160;&amp;#160; do i = 1 to 10000000; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; /&lt;/em&gt;&amp;#8211; create some money values &amp;#8211;*/ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; d = round( (ranuni(123) * 10 ), .01 ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; output; &lt;br /&gt;&amp;#160;&amp;#160; end; &lt;br /&gt;end; &lt;br /&gt;enddata; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;&amp;#8211; count the rows in multiple threads &amp;#8211;&lt;/em&gt;/ &lt;br /&gt;&lt;strong&gt;thread&lt;/strong&gt; &lt;font color=&#34;#ff0000&#34;&gt;map&lt;/font&gt; / overwrite = yes; &lt;br /&gt;dcl double c s; &lt;br /&gt;keep c s; &lt;br /&gt;method run(); &lt;br /&gt;&amp;#160;&amp;#160; set input_data; &lt;br /&gt;&amp;#160;&amp;#160; /&lt;em&gt;&amp;#8211; the more compuation here, the more benefit &amp;#8211;&lt;/em&gt;/ &lt;br /&gt;&amp;#160;&amp;#160; c + 1; &lt;br /&gt;&amp;#160;&amp;#160; s + d; &lt;br /&gt;end; &lt;br /&gt;method term(); &lt;br /&gt;&amp;#160;&amp;#160; output; &lt;br /&gt;&amp;#160;&amp;#160; put s= c=; &lt;br /&gt;end; &lt;br /&gt;endthread; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;&amp;#8211; blend the results into one total &amp;#8211;&lt;/em&gt;/ &lt;br /&gt;data &lt;font color=&#34;#ff0000&#34;&gt;reduce&lt;/font&gt; / overwrite = yes; &lt;br /&gt;dcl thread map m; &lt;br /&gt;dcl double totc tots; &lt;br /&gt;keep totc tots; &lt;br /&gt;method run(); &lt;br /&gt;&amp;#160;&amp;#160; set from m &lt;font color=&#34;#ff0000&#34;&gt;threads=4&lt;/font&gt;; &lt;br /&gt;&amp;#160;&amp;#160; totc + c; &lt;br /&gt;&amp;#160;&amp;#160; tots + s; &lt;br /&gt;end; &lt;br /&gt;method term(); &lt;br /&gt;&amp;#160;&amp;#160; output; &lt;br /&gt;end; &lt;br /&gt;enddata; &lt;br /&gt;run; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;proc print data=reduce; run; &lt;br /&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;Notice the option of “&lt;font color=&#34;#ff0000&#34;&gt;threads=4&lt;/font&gt;”. You can specify the thread as any number you want (the number of slaves..).&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;Thanks &lt;/font&gt;&lt;a href=&#34;https://www.linkedin.com/pub/robert-ray/29/814/b73&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;2&#34;&gt;Robert Ray&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;2&#34;&gt;of SAS Institute to kindly allow me to post his code.&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Quick Look at SAS DS2 Merge</title>
+      <link>/2015/09/04/a-quick-look-at-sas-ds2-merge/</link>
+      <pubDate>Fri, 04 Sep 2015 12:02:39 +0000</pubDate>
+      
+      <guid>/2015/09/04/a-quick-look-at-sas-ds2-merge/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;2&#34;&gt;The code:&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;data a; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input i a $ b $; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; datalines; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; 1 a1A b1 &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; 1 a1A b1 &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; 2 a2 b2 &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;data b; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input i a $ c $; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; datalines; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; 1 a1C c1 &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; 2 .&amp;#160;&amp;#160; c2 &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; 3 .&amp;#160; c3 &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;data mrge; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;merge&lt;/font&gt; a b; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; by i; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;proc ds2; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; data ds2; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; method run(); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;merge&lt;/font&gt; a b; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; by i; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; end; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; enddata; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; run; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;The outputs:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/09/SAS_DS2_merge.png&#34;&gt;&lt;font size=&#34;2&#34;&gt;&lt;img title=&#34;SAS_DS2_merge&#34; style=&#34;border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-top-width: 0px&#34; border=&#34;0&#34; alt=&#34;SAS_DS2_merge&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/09/SAS_DS2_merge_thumb.png&#34; width=&#34;307&#34; height=&#34;480&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;The comments:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;1. One of the weird behaviors of data step MERGE is that the value “c1” was carried over to row 2 of merged out dataset, Work.Mrge. In output dataset Work.Ds2 (generated by DS2), the row 2 of variable c is missing, which is kind of safe operation as we expected.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;2. In both output datasets, value ‘a1C’ overwrote ‘a1A’ in row 1.&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;3. This DS2 MERGE is available in SAS 9.4 (TS1M3).&lt;/font&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

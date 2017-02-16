@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>Logics in mathematics and in daily life: a statistical programming example - Lithium Theme</title>
+<meta property="og:title" content="Logics in mathematics and in daily life: a statistical programming example - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Logics in mathematics and in daily life: a statistical programming example</h1>
+
+    
+    <span class="article-date">October 8, 2010</span>
+    
+
+    <div class="article-content">
+      <p>Refresh some <a href="http://en.wikipedia.org/wiki/Contraposition">basic logical propositions</a> (or statements):</p>
+
+<blockquote>
+<p><font color="#ff0000">implication</font>:&#160;&#160;&#160;&#160;&#160;&#160; if&#160;&#160;&#160;&#160;&#160;&#160; P then&#160;&#160;&#160;&#160;&#160;&#160; Q (P<strong>—</strong>&gt;Q)</p>
+
+<p><font color="#ff0000">inverse</font>:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; if not P then not Q (-P<strong>—</strong>&gt;-Q)</p>
+
+<p>converse:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; if&#160;&#160;&#160;&#160;&#160;&#160; Q then&#160;&#160;&#160;&#160;&#160;&#160; P (Q<strong>—</strong>&gt;P)</p>
+
+<p><font color="#ff0000">contrapositive</font>: if not Q then not P (-Q<strong>—</strong>&gt;-P)</p>
+
+<p>contradition:&#160;&#160;&#160; if&#160;&#160;&#160;&#160;&#160;&#160; P then not Q (P<strong>—</strong>&gt;-Q)</p>
+</blockquote>
+
+<p>Mathematically or logically speaking, if the <font color="#ff0000">implication</font> statement holds, then the <font color="#ff0000">contrapositive</font> holds, but the <font color="#ff0000">inverse</font> does not hold, i.e., <em>if P then Q</em>, then we can get <em>if not Q then not P</em>, but we can not get <em>if not P then not Q</em>.</p>
+
+<p>That’s all logics needed here and Let’s turn to the ambiguous English in daily life. <a href="http://en.wikipedia.org/wiki/James_Munkres">James R. Munkres</a> of MIT gave an example in _<a href="http://www.amazon.com/Topology-2nd-James-Munkres/dp/0131816292/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1286432430&amp;sr=1-1">Topology</a>_ (2nd edition, 2000, P.7):</p>
+
+<blockquote>
+<p>Mr. Jones, if&#160; you get a grade below&#160; 70 on&#160; the final, you are going to flunk&#160; this course.</p>
+</blockquote>
+
+<p>We adapt it in a logical <font color="#ff0000">implication</font> form:</p>
+
+<blockquote>
+<p>Mr. Jones, if <font color="#ff0000">P </font>then <font color="#ff0000">Q</font>, where</p>
+
+<p><font color="#ff0000">P</font>: you get a grade below&#160; 70 on&#160; the final</p>
+
+<p><font color="#ff0000">Q</font>: you are going to flunk&#160; this course</p>
+</blockquote>
+
+<p>Considering the context, we can also get that the <font color="#ff0000">inverse</font> holds: if you get a grade above er or equal to 70, then you are going to pass this course(if not P then not Q ).</p>
+
+<p>Question: when do statistical programming, what types of logics you use?</p>
+
+<p>Answer: Not all mathematically. <em>see</em></p>
+
+<blockquote>
+<p>if score<70 then grade="flunk";&#160; ***_if <font color="#ff0000">P</font> then <font color="#ff0000">Q</font>_**;<br />
+else&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; grade=&ldquo;pass&rdquo;;&#160; *<strong><em>if not P then not Q</em></strong>;</p>
+</blockquote>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

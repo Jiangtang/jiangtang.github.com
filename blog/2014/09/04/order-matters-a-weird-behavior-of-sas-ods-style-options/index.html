@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>Order Matters: A Weird Behavior of SAS ODS Style Options - Lithium Theme</title>
+<meta property="og:title" content="Order Matters: A Weird Behavior of SAS ODS Style Options - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">Order Matters: A Weird Behavior of SAS ODS Style Options</h1>
+
+    
+    <span class="article-date">September 4, 2014</span>
+    
+
+    <div class="article-content">
+      <p>The codes to push a dataset to Excel (<em>technically XML</em>):</p>
+
+<blockquote>
+<p><font face="Courier New">ods tagsets.excelxp file=&ldquo;test.xls&rdquo;; <br />&#160; <br />*#1; <br />ods tagsets.excelxp options( sheet_name=&#8217;test 1&#8242;); <br />proc print data=sashelp.class noobs; <br />&#160;&#160;&#160; var height / <font color="#ff0000">style={tagattr=&#8217;format:text&#8217;}</font> style(column)={cellwidth=.5 in}; <br />run;</font></p>
+
+<p><font face="Courier New">*#2;&#160; <br />ods tagsets.excelxp options( sheet_name=&#8217;test 2&#8242;); <br />proc print data=sashelp.class noobs; <br />&#160;&#160;&#160; var height / style(column)={cellwidth=.5 in} <font color="#ff0000">style={tagattr=&#8217;format:text&#8217;}</font> ; <br />run; <br />&#160; <br />ods tagsets.excelxp close;</font></p>
+</blockquote>
+
+<p>The output of #1:<a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2014/09/SAS_ODS_options1.png"><img title="SAS_ODS_options1" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; border-left: 0px; display: block; padding-right: 0px" border="0" alt="SAS_ODS_options1" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2014/09/SAS_ODS_options1_thumb.png" width="295" height="575" /></a></p>
+
+<p>#2:<a href="http://www.jiangtanghu.com/blog/wp-content/uploads/2014/09/SAS_ODS_options2.png"><img title="SAS_ODS_options2" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; border-left: 0px; display: block; padding-right: 0px" border="0" alt="SAS_ODS_options2" src="http://www.jiangtanghu.com/blog/wp-content/uploads/2014/09/SAS_ODS_options2_thumb.png" width="318" height="567" /></a></p>
+
+<p>The difference among the two pieces of code, #1 and #2 is trivial, as far as observed: only the position of the ODS style options was swapped. The weird thing is that they produced different outputs with different column width and cell format.</p>
+
+<p>The answer: I don’t know. I threw this question to SAS-L and SAS tech and we might come back to this question days later.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+
