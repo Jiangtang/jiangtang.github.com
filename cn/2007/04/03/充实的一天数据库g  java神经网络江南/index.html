@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.18.1" />
+
+
+<title>充实的一天：数据库、G&#43;&#43;、Java、神经网络、江南 - Jiangtang Hu | 胡江堂</title>
+<meta property="og:title" content="充实的一天：数据库、G&#43;&#43;、Java、神经网络、江南 - Jiangtang Hu | 胡江堂">
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jiangtang">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/JiangtangHu">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">充实的一天：数据库、G&#43;&#43;、Java、神经网络、江南</h1>
+
+    
+    <span class="article-date">2007/04/03</span>
+    
+
+    <div class="article-content">
+      <p>晚上十点半回宿舍。好久没这么充实了，兹录于下：</p>
+
+<p>上午旁听二学位的数据库技术。课间见教室的无线网络挺好使，就为<a href="http://johnthu.spaces.live.com" target="_blank">我的技术博客</a>更新了两个小东西：</p>
+
+<blockquote>
+<p><a href="http://johnthu.spaces.live.com/blog/cns!2053CD511E6D5B1E!142.entry" target="_blank">《Excel-备忘录》</a>，记下我以前看宇传华《Excel与数据分析》随手做的一些笔记；</p>
+
+<p><a href="http://johnthu.spaces.live.com/blog/cns!2053CD511E6D5B1E!143.entry" target="_blank">《一组常用的SAS快捷键和命令（一）：入门阶段》</a>，我经常用到的SAS快捷键。跟在Linux下编程的人看齐：远离鼠标，两手尽量不离开键盘。</p>
+</blockquote>
+
+<p>中午在宿舍了。想到要一个C++编译器，只是要运行一些C++程序，犯不着装吓人的集成开发环境如VC之类，就在<a href="http://math.cmc.edu/ALee/g++/g++.html" target="_blank">Arthur H. Lee的主页</a>上找了一个G++的Windows版，Cyguns，安装以后占的硬盘才37M多一些。安装以后记得设置环境变量，不过比Java简单多了：重要的是找到二进制文件bin的文件地址，按折默认的安装路径，我的bin文件在&rdquo;C:\cygnus\cygwin-b20\H-i586-cygwin32\bin&rdquo;，找到</p>
+
+<blockquote>
+<p>“我的电脑”——“属性”——“高级”——“环境变量”——“系统变量”——“Path”</p>
+</blockquote>
+
+<p>如果没有“Path”，就创建一个。如果以前设置过别的Path，就在它的末尾先加一个分号，接着把bin的文件路径填上如：</p>
+
+<blockquote>
+<p>;C:\cygnus\cygwin-b20\H-i586-cygwin32\bin</p>
+</blockquote>
+
+<p>以后就可以用记事本写程序，在控制台编译并运行了。比如写一个&rdquo;Hello World&rdquo;:</p>
+
+<blockquote>
+<p><font face="Bitstream Vera Sans Mono">// hello.cpp </font></p>
+
+<p><font face="Bitstream Vera Sans Mono">#include <iostream><br />using namespace std; </font></p>
+
+<p><font face="Bitstream Vera Sans Mono">int main() {<br />cout &lt;&lt; &ldquo;Hello World!&rdquo;<br />return 0;<br />}</font></p>
+</blockquote>
+
+<p>把这个文件取名为hello.cpp, 并存于如&rdquo;E:\cpp&rdquo;。一个组合快捷键“开始+R”，打开“运行”，在命令栏敲入cmd，就来到控制台，类似于doc的那种界面。你可以通过两步来到制定的E:\cpp文件夹：</p>
+
+<ol>
+<li>敲入 e:   回车，这样就会看到E:&gt;,光标在这里跳跃；</li>
+<li>敲入 cd cpp，回车，这样就会看到E:\cpp&gt;,敲入dir来查看文件夹，你就会看到我们将要处理的hello.cpp；</li>
+<li>接下来就是编译hello.cpp，敲入   g++ -g hello.cpp -o hello -lm</li>
+<li>如果程序没有问题，E:\cpp下面应该出现一个hello.exe的可执行文件；</li>
+<li>接着在控制台敲入hello，回车，屏幕就会打印一条Hello World!</li>
+</ol>
+
+<p>就这么简单。一个美好的中午，还午休了。</p>
+
+<p>下午两点去图书馆自习，Java主题了。晚上又过去，看些神经网络的教材。中途起身看到新的一期《中国国家地理》，是江南的专辑，便把课本放下了。</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<script async type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+    
+  </body>
+</html>
+

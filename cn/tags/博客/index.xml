@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>博客 on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/%E5%8D%9A%E5%AE%A2/index.xml</link>
+    <description>Recent content in 博客 on Jiangtang Hu | 胡江堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2010年度总结</title>
+      <link>/2010/12/30/2010%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Thu, 30 Dec 2010 23:09:48 +0000</pubDate>
+      
+      <guid>/2010/12/30/2010%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</guid>
+      <description>
+
+&lt;blockquote&gt;
+&lt;h3 id=&#34;font-size-2-历史文档-font&#34;&gt;&lt;font size=&#34;2&#34;&gt;历史文档：&lt;/font&gt;&lt;/h3&gt;
+
+&lt;h3 id=&#34;font-size-2-em-生产任务完成情况-2009-em-font-http-li-and-jiang-com-blog-2009-12-06-review-2009&#34;&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/2009/12/06/review-2009/&#34;&gt;&lt;font size=&#34;2&#34;&gt;&lt;em&gt;生产任务完成情况：2009&lt;/em&gt;&lt;/font&gt;&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&#34;font-size-2-em-2008-随手盘点-em-font-http-li-and-jiang-com-blog-2008-12-13-2008-ef-bc-9a-e9-9a-8f-e6-89-8b-e7-9b-98-e7-82-b9&#34;&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/2008/12/13/2008%ef%bc%9a%e9%9a%8f%e6%89%8b%e7%9b%98%e7%82%b9/&#34;&gt;&lt;font size=&#34;2&#34;&gt;&lt;em&gt;2008：随手盘点&lt;/em&gt;&lt;/font&gt;&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&#34;font-size-2-em-2008-2009-向前看-向后看-一-em-font-http-li-and-jiang-com-blog-2009-01-01-2008-2009-ef-bc-9a-e5-90-91-e5-89-8d-e7-9c-8b-ef-bc-8c-e5-90-91-e5-90-8e-e7-9c-8b-ef-bc-88-e4-b8-80-ef-bc-89&#34;&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/2009/01/01/2008-2009%ef%bc%9a%e5%90%91%e5%89%8d%e7%9c%8b%ef%bc%8c%e5%90%91%e5%90%8e%e7%9c%8b%ef%bc%88%e4%b8%80%ef%bc%89/&#34;&gt;&lt;font size=&#34;2&#34;&gt;&lt;em&gt;2008-2009：向前看，向后看（一）&lt;/em&gt;&lt;/font&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;12月8号&lt;a href=&#34;http://li-and-jiang.com/blog/2010/12/08/hutou/&#34; target=&#34;_blank&#34;&gt;虎头&lt;/a&gt;出世，这一年我就没什么惊喜的事了。昨天在单位，把项目给结了，然后关电脑，回家休假。当时&lt;a href=&#34;http://www.jiangtanghu.com/blog/2010/12/30/a-sas-programmers-end-year-haiku/&#34; target=&#34;_blank&#34;&gt;做顺口溜一首&lt;/a&gt;，给大伙道新年愉快：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;In December my baby born&lt;br /&gt;
+my project deliveries followed on&lt;br /&gt;
+Now my computers shutdown&lt;br /&gt;
+do until(6 Jan 2011) I will be OOO&lt;br /&gt;
+Please take blessings from John&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;作为一个程序员，即使作顺口溜也不能不加注释。OOO是out of office，do until是SAS语言表示循环的一个语句，说直到1月6号我都不在办公室（我把这句发给同事，然后收到无数OOO的回复）。最后，John是我混外企的花名，读作“Jiang”。&lt;/p&gt;
+
+&lt;p&gt;为了取悦英文读者，这种顺口溜被叫做Haiku，翻译成中文叫“俳句”。但我写的可以是Haiku，但绝不敢称是俳句，中文就叫“顺口溜”。这是我一年来唯一的“文学作品”，记上一笔。&lt;/p&gt;
+
+&lt;p&gt;按照惯例，我会在年末做个总结，算是给朋友做一个简报，给自己留存一份记录。今年过得很简单，我升级了：&lt;a href=&#34;http://li-and-jiang.com/blog/2010/03/27/li-jiang/&#34; target=&#34;_blank&#34;&gt;年初我结婚&lt;/a&gt;，成为一位女子的丈夫；年末我们的&lt;a href=&#34;http://li-and-jiang.com/blog/2010/12/08/hutou/&#34; target=&#34;_blank&#34;&gt;孩子出生&lt;/a&gt;，我从此成为一个小男孩的父亲。这时我仍想摘录一句&lt;a href=&#34;http://li-and-jiang.com/blog/2010/10/23/father/&#34; target=&#34;_blank&#34;&gt;北岛的诗&lt;/a&gt;，表达这种传承的意味，这句诗写给父亲：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;你召唤我成为儿子，&lt;/p&gt;
+
+&lt;p&gt;我追随你成为父亲&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;u-生活-u&#34;&gt;&lt;strong&gt;&lt;u&gt;生活&lt;/u&gt;&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;这一年的生活，有一部分写进了这个&lt;a href=&#34;http://li-and-jiang.com/blog/&#34; target=&#34;_blank&#34;&gt;生活博客&lt;/a&gt;。近100篇，你可以在这里看到所有的历史存档：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/archives/&#34;&gt;http://li-and-jiang.com/blog/archives/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;u-读书-非技术类-u&#34;&gt;&lt;strong&gt;&lt;u&gt;读书(非技术类)&lt;/u&gt;&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;毕业后，几乎所有的阅读，都在地铁里完成。我有一个术语，就叫做“&lt;a href=&#34;http://li-and-jiang.com/blog/?s=%E5%85%AC%E8%BD%A6%E4%B8%8A%E4%B9%A6&#34; target=&#34;_blank&#34;&gt;公车上书&lt;/a&gt;”，说的就是在公车（公交车和地铁）上读书。现在的感触是，在地铁里读书，比在哪效率都高。人挤没关系，刚好帮助集中自己的精神。&lt;/p&gt;
+
+&lt;p&gt;这一年的阅读,数量相比往年不多。最大一块，集中在家里所有的古籍方面，包括《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/07/24/naming/&#34; target=&#34;_blank&#34;&gt;四书集注&lt;/a&gt;》、《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/12/18/yumu/&#34; target=&#34;_blank&#34;&gt;诗经&lt;/a&gt;》、《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/12/14/%E5%84%BF%E5%A5%B3%E6%88%90%E8%A1%8C/&#34; target=&#34;_blank&#34;&gt;世说新语&lt;/a&gt;》、《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/12/18/yumu/&#34; target=&#34;_blank&#34;&gt;史记&lt;/a&gt;》、《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/12/18/yumu/&#34; target=&#34;_blank&#34;&gt;老子·庄子·列子&lt;/a&gt;》、《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/05/09/buddha2/&#34; target=&#34;_blank&#34;&gt;金刚经&lt;/a&gt;》、《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/09/02/tang-poem/&#34; target=&#34;_blank&#34;&gt;唐诗百家全集&lt;/a&gt;》、《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/08/19/books/&#34; target=&#34;_blank&#34;&gt;李太白集·杜工部集&lt;/a&gt;》等。不是思古之幽情顿起，而是要为&lt;a href=&#34;http://li-and-jiang.com/blog/2010/12/18/yumu/&#34; target=&#34;_blank&#34;&gt;虎头取名字&lt;/a&gt;。这算是我这十多年来读书成果最大的一次。&lt;/p&gt;
+
+&lt;p&gt;然后是育儿经，包括&lt;a href=&#34;http://li-and-jiang.com/blog/2010/10/22/misc-3/&#34; target=&#34;_blank&#34;&gt;郑玉巧&lt;/a&gt;的两本，在&lt;a href=&#34;http://li-and-jiang.com/blog/2010/10/04/reading-at-sep-oct/&#34; target=&#34;_blank&#34;&gt;上海出差时读完&lt;/a&gt;了保罗·豪伶格《&lt;a href=&#34;http://book.douban.com/subject/4925604/&#34;&gt;不会说话的孩子想“说”什么&lt;/a&gt;》，还有就是龙应台的两本，《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/08/19/books/&#34; target=&#34;_blank&#34;&gt;孩子你慢慢来&lt;/a&gt;》和《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/10/04/reading-at-sep-oct/&#34; target=&#34;_blank&#34;&gt;亲爱的安德烈&lt;/a&gt;》。然后为了未雨绸缪，跟Li一起为出版社校读了两部译稿，《&lt;a href=&#34;http://book.douban.com/subject/4264859/&#34;&gt;孩童厌学：治疗师指南/父母自助手册&lt;/a&gt;》。&lt;/p&gt;
+
+&lt;p&gt;其他的就很零散，包括&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/2010/10/04/reading-at-sep-oct/&#34; target=&#34;_blank&#34;&gt;一部小说&lt;/a&gt;，&lt;em&gt;&lt;a href=&#34;http://book.douban.com/subject/3585180/&#34;&gt;Child 44&lt;/a&gt;&lt;/em&gt; by &lt;a href=&#34;http://en.wikipedia.org/wiki/Tom_Rob_Smith&#34;&gt;Tom Rob Smith&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;一部政治学，贡斯当的《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/11/12/farmer/&#34; target=&#34;_blank&#34;&gt;古代人的自由和现代人的自由&lt;/a&gt;》&lt;/p&gt;
+
+&lt;p&gt;一部伦理学，重读了彼得·辛格的《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/11/17/ethics/&#34; target=&#34;_blank&#34;&gt;实践伦理学&lt;/a&gt;》&lt;/p&gt;
+
+&lt;p&gt;一部经济学，重读亚当·斯密的《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/05/26/ceremony-disintegration/&#34; target=&#34;_blank&#34;&gt;国富论&lt;/a&gt;》&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/2010/10/04/reading-at-sep-oct/&#34; target=&#34;_blank&#34;&gt;两部传记&lt;/a&gt;，冯至的《杜甫传》和李长之的《李白传》&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;font style=&#34;background-color: #ffffff&#34;&gt;提一下《国富论》，我读的是台湾谢宗林和李华夏的繁体译本，顺便帮出版社的朋友做些校对的工作（也找了朋友帮忙），这书的简体字版刚&lt;a href=&#34;http://book.douban.com/subject/5348018/&#34; target=&#34;_blank&#34;&gt;由中央编译出版社出版&lt;/a&gt;。今年算是做了点编辑的工作。&lt;/font&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;u-工作-u&#34;&gt;&lt;strong&gt;&lt;u&gt;工作&lt;/u&gt;&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;p&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;正式工作二十来个月了。有时心不免浮躁，就打趣自己：“出道还不到两年呢”。问过很多朋友，很多都有这方面的忧虑，一方面我们工作年限太短（刚毕业不久），但一方面我们好像都很大了，研究生毕业出来都二十六二十七的，好像刚一出道就奔三十，然后打算要买房了、打算要结婚了、打算要小孩子了，——每一项都是让刚工作的人觉得压力很大。这些焦虑在参加工作后产生，期待能在工作中消融掉了。我认为工作状态更有利于人格的养成，在于它不再是一个单一的环境。&lt;/p&gt;
+
+&lt;p&gt;现在单兵工作还挺顺手，有时候想对自己要求更多。十一月份去上海参加了一个关于&lt;a href=&#34;http://li-and-jiang.com/blog/2010/11/09/leadership/&#34; target=&#34;_blank&#34;&gt;leadership&lt;/a&gt;的培训，让自己眼界开了不少（有一句话让我印象深刻，leadership is not a position; it is a choice）。但作为一个职场新手，我需要更多的是项目管理的积累，——又是时间，时间，时间。&lt;/p&gt;
+
+&lt;p&gt;更多的时候自己在观察学习，观察如何做一个好的领导，以及如何做一个糟糕的领导，这跟以前观察大量的父母一样，总有一天我们自己也要成为父母。而这些都跟阅读一样，大量阅读并不保证你能下笔成章，但至少能给你一个好的品味。这一年的工作有的地方做得不够从容，来年再战了。现在的要求是，身体力行，加上好的品味。眼高手低是大忌。&lt;/p&gt;
+
+&lt;h2 id=&#34;u-技术-u&#34;&gt;&lt;u&gt;技术&lt;/u&gt;&lt;/h2&gt;
+
+&lt;p&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;作为一名技术人员，技术这饭碗时时不能丢下。有些技术人员，不满三十，一当上经理就鼓吹“技术无用论”，转去炒项目管理的概念去了，这是非常可惜的事情，想想他们在技术，一定还没有登堂入室，否则也不敢这么狂妄。技术出身，技术便是底子，跑掉自己的底子奢谈管理，跟那些MBA相比就没有任何优势了。我想大多数技术的深度和广度，都值得人持续投入。&lt;/p&gt;
+
+&lt;p&gt;我从文科生一路过来，深感自己技术底子薄弱，恶补不已。我那个工种叫SAS程序员，又叫统计分析师，每日代码为主，统计为辅。在SAS技术方面，上半年完成两件事，先后把SAS初级和高级的&lt;a href=&#34;http://www.jiangtanghu.com/cn/2010/04/08/sas-certification/&#34; target=&#34;_blank&#34;&gt;认证&lt;/a&gt;考下来了，其间把SAS SQL和SAS Macro的几本号称经典的书给读了。工作以后考认证，相当于找个机会让自己学习（有朋友说是“找个理由刺激下自己”），因为不需要那些认证给自己找工作。&lt;/p&gt;
+
+&lt;p&gt;今年技术失败的案例，也有，我还尝试去考过SAS BI Developer 的认证，大败而归。这刺激够大了，明年打算再考一个SAS Data Mining的认证，刺激给个大的。还有计划考一个Oracle SQL的认证，这档期，往后面排了。&lt;/p&gt;
+
+&lt;p&gt;下半年的技术阅读的重心在&lt;a href=&#34;http://www.jiangtanghu.com/cn/2010/10/17/math-prob-stat/&#34; target=&#34;_blank&#34;&gt;数学&lt;/a&gt;和&lt;a href=&#34;http://www.jiangtanghu.com/cn/2010/08/08/sas-stat/&#34; target=&#34;_blank&#34;&gt;基础统计学&lt;/a&gt;。有几个月的周末，我都去帮一个老师写代码，把他书里面的统计方法用SAS去给实现。那书应该明年能出来。从一个程序员的角度来看，统计学也是一个迷人的学科。&lt;/p&gt;
+
+&lt;p&gt;下半年&lt;a href=&#34;http://www.jiangtanghu.com/cn/2010/09/18/sas-cdisc-gathering/&#34; target=&#34;_blank&#34;&gt;去上海参加了一个行业技术大会&lt;/a&gt;，&lt;a href=&#34;http://www.cdisc.org/interchange-china#2329&#34; target=&#34;_blank&#34;&gt;CDISC Interchange China 2010&lt;/a&gt;，并有一个发言，_&lt;a href=&#34;http://www.jiangtanghu.com/blog/2010/10/07/xml-sas/&#34; target=&#34;_blank&#34;&gt;XML: The SAS Approach&lt;/a&gt;_。CDISC是临床研究的数据标准，XML是它的核心引擎，作为一个SAS程序员，我想的就是如何用SAS来处理它了。&lt;/p&gt;
+
+&lt;h2 id=&#34;u-技术写作-u&#34;&gt;&lt;u&gt;技术写作&lt;/u&gt;&lt;/h2&gt;
+
+&lt;p&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;今年用电脑的机会比往年少，跟生活博客一样，技术博客写得不勤快，扳手指头也能数得过来：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;给“&lt;a href=&#34;http://cos.name&#34; target=&#34;_blank&#34;&gt;统计之都&lt;/a&gt;”写了4篇，&lt;a href=&#34;http://cos.name/author/hujiangtang/&#34;&gt;http://cos.name/author/hujiangtang/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;自家的中文博客写了10篇，&lt;a href=&#34;http://www.jiangtanghu.com/cn/archives/&#34;&gt;http://www.jiangtanghu.com/cn/archives/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;英文博客写了12篇，&lt;a href=&#34;http://www.jiangtanghu.com/blog/archives/&#34;&gt;http://www.jiangtanghu.com/blog/archives/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我的技术博客集中在SAS与统计方面，都是自己时刻要用要思考的东西。十一时把自己关在家里，写了一篇&lt;a href=&#34;http://sgf2011.confnav.com/sgf2011/web/sessions/detail.html?id=20101023091009653775000000&#34; target=&#34;_blank&#34;&gt;会议论文&lt;/a&gt;，被明年的SAS全球论坛（&lt;a href=&#34;http://support.sas.com/events/sasglobalforum/2011/&#34; target=&#34;_blank&#34;&gt;SGF2011&lt;/a&gt;, April4-7, Las Vegas）接受。这将是我第一次参加这个SAS盛会，而我已经关注它好几年了。拜访真正的高手，才会让自己真正戒骄戒躁。&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;&amp;#8212;&amp;#8212;年度总结&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/p&gt;
+
+&lt;p&gt;每一年我都给自己定一个目标，比如，我2010年的目标是奥运口号：“&lt;a href=&#34;http://li-and-jiang.com/blog/2009/12/06/review-2009/&#34; target=&#34;_blank&#34;&gt;更高、更胖、更有钱&lt;/a&gt;”。现在年关将至，翻检一年，没高一公分，五六月的时候可能胖了两三斤，但到年末又给反弹回去了，增重计划，又一次以失败告终。有钱一说，更是无稽。这宏伟的奥运计划，明年再整了。拿一句话结束：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Year’s end is neither an end nor a beginning but a going&lt;br /&gt;
+on, with all the wisdom that experience can instill in us.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>技术博客开张</title>
+      <link>/2009/12/20/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%BC%A0/</link>
+      <pubDate>Sun, 20 Dec 2009 23:27:24 +0000</pubDate>
+      
+      <guid>/2009/12/20/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%BC%A0/</guid>
+      <description>&lt;p&gt;这一打折，铁打的汉子也扛不住。域名厂商Godaddy现在推出一个.com域名0.99美刀一年（原价10美刀）的促销活动（国内的.cn域名不好弄了），手痒，赶紧注册了一个（促销码&amp;#160; &lt;strong&gt;BUYCOM99&lt;/strong&gt; ），以后就当门面使了：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/&#34;&gt;http://www.jiangtanghu.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;又开出一个英文技术博客，&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/&#34;&gt;http://www.jiangtanghu.com/blog/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;把以前&lt;a href=&#34;http://jiangtanghu.blogspot.com/&#34;&gt;在blogger的文章&lt;/a&gt;都盘过来了。过些日子再开通中文技术博客，以前&lt;a href=&#34;http://johnthu.spaces.live.com/&#34;&gt;在windows live space的博客&lt;/a&gt;就关了。激励自己勤读书，多写字了。摊开一张空白纸，接下来就会想涂些东西。&lt;/p&gt;
+
+&lt;p&gt;个人主页，就是改革开放的窗口，今天着急懒得整，这界面，完全抄袭了FreeWheel的朋友&lt;a href=&#34;http://b2.broom9.com/&#34;&gt;Bloom&lt;/a&gt;的网页。他是做导弹的，我是卖茶叶蛋的，这商标一样，侵权也大概不会很严重。有朋友看不过去了，赶紧过来伸一援手。&lt;/p&gt;
+
+&lt;p&gt;这个&lt;a href=&#34;http://li-and-jiang.com/blog/&#34;&gt;http://li-and-jiang.com/blog/&lt;/a&gt;，仍然作为我跟&lt;a href=&#34;http://li-and-jiang.com/blog/author/li/&#34;&gt;Li&lt;/a&gt;的生活博客。生活与技术的分离，一直是我两分法哲学的一部分。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>这个世道</title>
+      <link>/2009/09/26/%E8%BF%99%E4%B8%AA%E4%B8%96%E9%81%93/</link>
+      <pubDate>Sat, 26 Sep 2009 20:40:52 +0000</pubDate>
+      
+      <guid>/2009/09/26/%E8%BF%99%E4%B8%AA%E4%B8%96%E9%81%93/</guid>
+      <description>&lt;p&gt;刚去live space里处理好友请求，顺手去后台看看访问统计，乖乖，我荒废已久的两个space，看着比现在我经营的这个“&lt;a href=&#34;http://li-and-jiang.com/blog/&#34; target=&#34;_blank&#34;&gt;丽·江行&lt;/a&gt;”受欢迎多了：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;荒芜已久的技术博客，“&lt;a href=&#34;johnthu.spaces.live.com/&#34; target=&#34;_blank&#34;&gt;技止于此&lt;/a&gt;”：一周六百来个view，平均每天九十来个&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/09/tech.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;tech&#34; border=&#34;0&#34; alt=&#34;tech&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/09/tech-thumb.png&#34; width=&#34;482&#34; height=&#34;119&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;还有早不更新的&lt;a href=&#34;http://panshanghu.spaces.live.com/&#34; target=&#34;_blank&#34;&gt;生活博客&lt;/a&gt;：一周近七百个view，每天大概一百个&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/09/life.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;Life&#34; border=&#34;0&#34; alt=&#34;Life&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/09/life-thumb.png&#34; width=&#34;474&#34; height=&#34;142&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;现在这个&lt;a href=&#34;http://li-and-jiang.com/blog/&#34; target=&#34;_blank&#34;&gt;丽·江行&lt;/a&gt;：平均每天五十个visit&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/09/lijiang.png&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;lijiang&#34; border=&#34;0&#34; alt=&#34;lijiang&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/09/lijiang-thumb.png&#34; width=&#34;470&#34; height=&#34;204&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;他们统计view或者visit的机制或许不一样，但看着这网络世道，不鼓励勤劳致富呀。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>我们都用google reader</title>
+      <link>/2009/08/23/%E6%88%91%E4%BB%AC%E9%83%BD%E7%94%A8google-reader/</link>
+      <pubDate>Sun, 23 Aug 2009 00:08:00 +0000</pubDate>
+      
+      <guid>/2009/08/23/%E6%88%91%E4%BB%AC%E9%83%BD%E7%94%A8google-reader/</guid>
+      <description>&lt;p&gt;今天开机，发现这个博又能正常访问，心下较些子。&lt;/p&gt;
+
+&lt;p&gt;前天晚上回来，发现博客上不了，改用一个F&lt;em&gt;&lt;font size=&#34;1&#34;&gt;an&lt;/font&gt;&lt;/em&gt;-墙工具才能看到。想这么个只谈风月的地，居然也能被炖，噫。&lt;/p&gt;
+
+&lt;p&gt;同时发现&lt;a href=&#34;http://www.yihui.name/&#34; target=&#34;_blank&#34;&gt;益辉&lt;/a&gt;同学的&lt;a href=&#34;http://cos.name/&#34; target=&#34;_blank&#34;&gt;cos&lt;/a&gt;也一样不能正常访问，赶紧向他通报，问他能不能打开。益辉说，“不知道，因为我这里没有墙……”益辉同学正在米国农村光着膀子冲浪呢。&lt;/p&gt;
+
+&lt;p&gt;今天博客又能访问，Haiyu同学说可能是遭遇某个敏感词了。好吧，现在开始多准备些吧。首先，推荐大伙用google reader订阅博客，这样便风雨无阻啦。一些IT朋友以为满街都是google reader，其实很多人的习惯还是&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;打开IE-&amp;gt;收藏夹-&amp;gt;某个博客地址，或者&lt;/li&gt;
+&lt;li&gt;打开IE-&amp;gt;收藏夹-&amp;gt;某个博客地址-&amp;gt;在这个博客的链接栏里，打开某个博客地址&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;或曰收藏夹还属于高级运用，一些兄弟干脆把网址存在word文档里。下面介绍的google reader，是让你更有效更方便地阅读博客的网络工具，而且，不怕撞墙。关于google reader，中文系才女、巴黎商科新秀Helene&lt;a href=&#34;http://lin222.spaces.live.com/Blog/cns!D08019E6D73AF2CD!1920.entry&#34; target=&#34;_blank&#34;&gt;写道&lt;/a&gt;：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;RSS其实不算是新科技了，也经常看到小胡推荐。只是我对新技术没有尝试精神，直到最近小胡的博客搬了家，他更新又很频繁，天天打开来查看实在很费时。在他的再次推荐下，我才打开了自己的reader。&lt;/p&gt;
+
+&lt;p&gt;这个东西呢，就是把你想获得的网站上的更新第一时间集中起来。可以用来订阅新闻，博客，和各种网站。我主要拿他来看博客，好处是我不用一个个点开他们的主页查看是否有更新，而且页面载入速度也快。缺点是显示背景是google reader的背景，无法看到博客本身的设计，也听不到音乐了。日志中插入的图片可能会看不到，而且无法留言。也许可以，是我没有找到。anyway，可以在最快的时间内看到最新的文章，已经很不错了。现在我每天的阅读功课是MSN space,自己的reader，然后小胡的共享文件。&lt;/p&gt;
+
+&lt;p&gt;GoogleReader可以把你订阅的资料共享，小胡就有一个，在此推荐下：&lt;a href=&#34;http://www.google.com/reader/shared/17976455403871945183&#34;&gt;http://www.google.com/reader/shared/17976455403871945183&lt;/a&gt; 他订的多是编辑出版和软件技术方面的博客。也是通过这些阅读，发现了一些挺有意思的博客。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;现在重复Helene的功课：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Gmail&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;首先，你需要一个Gmail帐号。什么是Gmail？Gmail是一款你不受到歧视和不显得土的一个电子邮件服务，大伙都用它。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.gmail.com/&#34; title=&#34;http://www.gmail.com/&#34;&gt;http://www.gmail.com/&lt;/a&gt; -&amp;gt;右下角，Create an account （创建一个新帐户），接下来跟你申请任何一个电子邮箱一样。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2.Google Reader&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;用刚才申请的gmail帐号登录&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.google.com/reader&#34; title=&#34;https://www.google.com/reader&#34;&gt;https://www.google.com/reader&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;单击左上角的Add a subscription，在下面填入一个博客地址，再单击Add，比如我这个&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog&#34;&gt;http://li-and-jiang.com/blog&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;或者这个博客的RSS地址，比如我这个&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/feed/&#34;&gt;http://li-and-jiang.com/blog/feed/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/08/reader1.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px&#34; title=&#34;reader&#34; border=&#34;0&#34; alt=&#34;reader&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/08/reader-thumb.png&#34; width=&#34;580&#34; height=&#34;383&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;接下来你就可以尝试添加其他博客地址了。或者，在一个博客页面，找到类似下图红彤彤的图标，单击就能导入到你的google reader里面：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/08/rss.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px&#34; title=&#34;RSS&#34; border=&#34;0&#34; alt=&#34;RSS&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/08/rss-thumb.png&#34; width=&#34;529&#34; height=&#34;142&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;或者，windows space博客，找到右上角的tools（工具）-&amp;gt;Subscribe to RSS feed（订阅到RSS*）：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/08/space.png&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px&#34; title=&#34;space&#34; border=&#34;0&#34; alt=&#34;space&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/08/space-thumb.png&#34; width=&#34;580&#34; height=&#34;170&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;对新浪博客(sina)，&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/08/sina.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px&#34; title=&#34;sina&#34; border=&#34;0&#34; alt=&#34;sina&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/08/sina-thumb.png&#34; width=&#34;511&#34; height=&#34;241&#34; /&gt;&lt;/a&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;其他博客，类似。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>&amp;ldquo;丽&amp;middot;江行&amp;rdquo;游记</title>
+      <link>/2009/07/29/ldquo%E4%B8%BDmiddot%E6%B1%9F%E8%A1%8Crdquo%E6%B8%B8%E8%AE%B0/</link>
+      <pubDate>Wed, 29 Jul 2009 23:14:00 +0000</pubDate>
+      
+      <guid>/2009/07/29/ldquo%E4%B8%BDmiddot%E6%B1%9F%E8%A1%8Crdquo%E6%B8%B8%E8%AE%B0/</guid>
+      <description>
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;在青岛做地产的朋友&lt;a href=&#34;http://hi.baidu.com/seaone&#34; target=&#34;_blank&#34;&gt;海一&lt;/a&gt;，给我们这个博客写了一大篇随感，就叫《“丽·江行”游记》。说本来要贴到评论里去，还是赶紧打捞上来：&lt;font color=&#34;#ff0000&#34; size=&#34;2&#34;&gt;&lt;font color=&#34;#ff0000&#34; size=&#34;2&#34;&gt;/&lt;em&gt;我的一些评语，以红sai标出。&lt;/em&gt;/&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;font-size-2-font&#34;&gt;&lt;font size=&#34;2&#34;&gt;&lt;/font&gt;&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;以前看过老胡的博客，一些在我看来深奥如原子弹制造公式的专业文符隐现其间，虽知其乃学之精华，无奈马齿徒增犬牙交错牙口不好，终难啃其骨难得其髓难品其味。其后出于对自信心的重建等因素的考虑，逐渐对其敬而远之。&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34; size=&#34;2&#34;&gt;/&lt;em&gt;胡批：说我以前那个&lt;a href=&#34;http://johnthu.spaces.live.com/&#34; target=&#34;_blank&#34;&gt;所谓技术博客&lt;/a&gt;吧？太失败了，我还想打着深入浅出的旗号呢。&lt;/em&gt;/&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;后来欣闻胡子将博客中的专业和生活内容拆分为二，分别上市，甚是欣慰，但阴影在前，所阅甚少。&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;看到丽江行的博客后，前几次看无甚感觉，但每次打开收藏夹的时候，这个地址总是最短的三字，不免频繁浏览。只要功夫深，总是能发现博客名的内涵——这是一个情侣博客，各取男女名字之一字，按照女士优先的排列顺序，发现正好和世界文化遗产丽江古城同音同字，不能不说是天作之合（老胡专业学统计学，将3+2或3+3或3+×组合为两字的几种可能手到擒来）。&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34; size=&#34;2&#34;&gt;/*胡批：老胡专业：经济学+软件工程&amp;lt;碰见念经济学的朋友就说我念软件工程，碰见学计算机的朋友就说念金融信息工程（我的专业方向）&amp;gt;，是绕了些，而且以前那个技术博客给广大朋友这个印象。&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34; size=&#34;2&#34;&gt;这个博客叫“丽·江行”，&lt;a href=&#34;http://li-and-jiang.com/blog/about-li-jiang/&#34; target=&#34;_blank&#34;&gt;以前讲过&lt;/a&gt;，分别取自我跟li的名字，就充当我跟&lt;a href=&#34;http://li-and-jiang.com/blog/author/li/&#34; target=&#34;_blank&#34;&gt;Li&lt;/a&gt;的博客合集。为什么想到把博客凑在一起？一个想法是，如果有一个话题，我们能同时给出不同的说法，这么一对照可能就非常有趣味。然后又想，我们的博客，大抵上写给朋友看，叙述日常生活，平时见闻。我们的生活，我们的朋友，其间就有许多交集，分开来也说不过去。这么凑 一起，维护更新之类，方便，朋友看了也省心.&lt;/font&gt;&lt;font color=&#34;#ff0000&#34; size=&#34;2&#34;&gt;*/&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;由此再观此博客，不觉兴趣盎然。&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;由此，神雕侠侣、梁祝同窗时、李清照和赵明诚、郭靖和黄蓉、浮生六记等感人至深的饱含革命浪漫主义情怀的爱情形象翩然而至。&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34; size=&#34;2&#34;&gt;&lt;font color=&#34;#ff0000&#34; size=&#34;2&#34;&gt;/&lt;em&gt;胡批：革命浪漫主义……，噫&lt;/em&gt;/&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;或者，经过深刻自我剖析后，这是一种窥探隐私的劣根性——总是想知道，这两口子到底在这鼓捣啥？&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;无论如何，跟着这两位勤奋的浪漫博侣，我也很勤奋地看了起来。&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;将以前看几十个博客的时间集中到一个博客上，不免看得津津有味，陶醉其中。&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;再次恕我愚钝，看了好久，我才知道，两人是分别撰写，每篇文下的拼音注明是li还是jiang。那些关于电影和音乐的多是女侠客所写，一开始还以为是胡子的。&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34; size=&#34;2&#34;&gt;&lt;font color=&#34;#ff0000&#34; size=&#34;2&#34;&gt;/&lt;em&gt;胡批：呵呵，你的观察还算是非常及时的。&lt;/em&gt;/&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;当年鲁迅和许广平分居两地，书信汇成《两地书》，这两位同处一个屋檐下，还能各述其志，此博当汇《一博书》。&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;博中会我心者多矣，略举其三。比如毛豆那篇，措辞如豆。比如中关村散人。比如书法，毛笔书赠女友的男士想必不多了，能给老家写对联的大学生也不多了。比如越野，於我心有戚戚焉。比如回到土亦香的家，到后山披荆斩棘。比如两人回家一路火车轮阅小团圆。比如地铁上的口袋书，我在公交车亦如此。比如三千里烤肉，我家门口就一个啊。比如会计学的诗歌和文学，从河这边走到河对岸然后回过头来写河这岸的风景比一直呆在河这岸的描述者更多韵味。还有医院通宵排队。还有那个噫，现在比较流行的月亮之上的欧耶和非常六加七的伸出V字指的吔，冷不丁被这个字噫字还拿住了。还有继论语心得之后的论语周记。还有经常地胡吃海喝。&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;如果还需要升华一下中心思想，套用那句经常用在房地产广告中的法语：C&amp;#8217;est La vie——这就是生活。&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34; size=&#34;2&#34;&gt;&lt;font color=&#34;#ff0000&#34; size=&#34;2&#34;&gt;/*胡批：几乎没有时评，说的都是能跟朋友交流的东西，日常见闻之类。大伙天南海北，交集不多，留些线索，下次见面就不会生分。&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;C&amp;#8217;est La vie，好亲切的字眼，好像以前在&lt;a href=&#34;http://lin222.spaces.live.com/&#34; target=&#34;_blank&#34;&gt;Helene&lt;/a&gt;的博客上见过。&lt;/font&gt;&lt;font color=&#34;#ff0000&#34; size=&#34;2&#34;&gt;&lt;font color=&#34;#ff0000&#34; size=&#34;2&#34;&gt;*/&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;不知所云，回顾再看，似乎有给领导或领导的亲戚而写、收了钱或钱的变相形式而写、或者将欲取之必先予之放长线来日首都三月游包吃住而写。&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font color=&#34;#ff0000&#34; size=&#34;2&#34;&gt;&lt;font color=&#34;#ff0000&#34; size=&#34;2&#34;&gt;/&lt;em&gt;胡批：哈哈，海一兄做地产策划，这润笔费我可掏不起。到时来村里，好好招待就是。&lt;/em&gt;/&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>推荐一个数学学习博客</title>
+      <link>/2009/05/12/%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%AA%E6%95%B0%E5%AD%A6%E5%AD%A6%E4%B9%A0%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Tue, 12 May 2009 23:07:28 +0000</pubDate>
+      
+      <guid>/2009/05/12/%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%AA%E6%95%B0%E5%AD%A6%E5%AD%A6%E4%B9%A0%E5%8D%9A%E5%AE%A2/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://dahuasky.spaces.live.com/&#34;&gt;http://dahuasky.spaces.live.com/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;博主Dahua Lin，在MIT念CS的PH.D，是Matlab的好手，辅修数学。读他关于数学学习方面的博客，很快就激起以前的热情。他之前的博客也挺有意思：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://dahua.spaces.live.com&#34; title=&#34;http://dahua.spaces.live.com&#34;&gt;http://dahua.spaces.live.com&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;又，他的个人主页在：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.lindahua.net/&#34;&gt;http://www.lindahua.net/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;一个镜像在：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://people.csail.mit.edu/dhlin/&#34;&gt;http://people.csail.mit.edu/dhlin/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

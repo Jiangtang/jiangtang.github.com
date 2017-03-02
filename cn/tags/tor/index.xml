@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tor on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/tor/index.xml</link>
+    <description>Recent content in Tor on Jiangtang Hu | 胡江堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/tor/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>即时贴</title>
+      <link>/2009/06/24/%E5%8D%B3%E6%97%B6%E8%B4%B4/</link>
+      <pubDate>Wed, 24 Jun 2009 23:34:46 +0000</pubDate>
+      
+      <guid>/2009/06/24/%E5%8D%B3%E6%97%B6%E8%B4%B4/</guid>
+      <description>&lt;p&gt;晚上九点半回家开机器，发现gmail打不开——这玩笑可开大了，我还需要打开gmail联系人问这是怎么回事呢。只好代开msn，见&lt;a href=&#34;http://blog.devep.net/virushuo/&#34; target=&#34;_blank&#34;&gt;霍炬&lt;/a&gt;在线，问之，曰：google服务都给封了。&lt;/p&gt;
+
+&lt;p&gt;没有google，情急之下，也就不知道去哪里去搜索突破的方法（以前不储备这些啊）。霍炬给出一个曲折的方案：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;找一家代理网站，&lt;a href=&#34;http://www.sneakme.net/&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://www.sneakme.net/&#34;&gt;http://www.sneakme.net/&lt;/a&gt;&lt;/a&gt;，打开google；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;找到&lt;a href=&#34;http://www.sneakme.net/browse.php?u=Oi8vd3d3LnRvcnByb2plY3Qub3JnL2Vhc3ktZG93bmxvYWQuaHRtbC5lbg%3D%3D&amp;b=13&#34; target=&#34;_blank&#34;&gt;Tor&lt;/a&gt;（Tor的几个网站也被封了），下载之。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;这些日子都用google chrome浏览器。这次安装Tor，只好重新用上firefox，够折腾。&lt;/p&gt;
+
+&lt;p&gt;说些提神的事。&lt;/p&gt;
+
+&lt;p&gt;晚上去学校，找计算机系的lobatt聊天。他刚从杭州上海回来，——又一次毕业旅行，现在Crazy Hou和小唐也已经在丽江。forcode跟Juan也从新疆回来了。&lt;/p&gt;
+
+&lt;p&gt;唉，我愿意是一个小贩，在街上过日子，叫着：“镯子呀，亮晶晶的镯子!”&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

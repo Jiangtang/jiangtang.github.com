@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>博文视点 on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/%E5%8D%9A%E6%96%87%E8%A7%86%E7%82%B9/index.xml</link>
+    <description>Recent content in 博文视点 on Jiangtang Hu | 胡江堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/%E5%8D%9A%E6%96%87%E8%A7%86%E7%82%B9/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>《Excel图表之道》&amp;mdash;&amp;mdash;书和人</title>
+      <link>/2010/05/21/excel%E5%9B%BE%E8%A1%A8%E4%B9%8B%E9%81%93mdashmdash%E4%B9%A6%E5%92%8C%E4%BA%BA/</link>
+      <pubDate>Fri, 21 May 2010 23:19:40 +0000</pubDate>
+      
+      <guid>/2010/05/21/excel%E5%9B%BE%E8%A1%A8%E4%B9%8B%E9%81%93mdashmdash%E4%B9%A6%E5%92%8C%E4%BA%BA/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2010/05/excel.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;Excel&#34; border=&#34;0&#34; alt=&#34;Excel&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2010/05/excel-thumb.jpg&#34; width=&#34;427&#34; height=&#34;527&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://excelpro.blog.sohu.com/&#34;&gt;Excelpro&lt;/a&gt;的《&lt;a href=&#34;http://book.douban.com/subject/4326057/&#34;&gt;Excel图表之道——如何制作专业有效的商务图表&lt;/a&gt;》（刘万祥，北京：电子工业出版社，2010）4月份由武汉博文视点推出。我拿到书时，都已经是5月份第二次印刷的版本。“左手Excel，右手PPT”，现在这本书与一本叫《PPT演示之道》的书在&lt;a href=&#34;http://product.dangdang.com/product.aspx?product_id=20815051&#34;&gt;当当&lt;/a&gt;和&lt;a href=&#34;http://www.amazon.cn/mn/detailApp/ref=sr_1_1?_encoding=UTF8&amp;amp;s=books&amp;amp;qid=1271211421&amp;amp;asin=B003FFEK8A&amp;amp;sr=8-1&amp;amp;source=tjfx-23&#34;&gt;卓越&lt;/a&gt;大卖，被认为是“2010年最值得阅读的职场充电图书”。好家伙，早知道这本书会火，没想到的是会这么快。扯扯我与这本书及其作者的花絮。&lt;/p&gt;
+
+&lt;p&gt;Excelpro一直在经营一个“&lt;a href=&#34;http://excelpro.blog.sohu.com/&#34;&gt;ExcelPro的图表博客&lt;/a&gt;”，专攻Excel与商务作图，把Excel玩出花来的那种。读研时开始订阅他的博客，那时就想结识一番，这样的高手，要趁早认识。查看gmail记录，2008年12月19日，我给Excelpro写mail(当时只知道他的网名)，说“ExcelPro,&amp;#160; 你好。一有更新就看你的博客，还不知道你的真名真是有些说不过去。我叫***,blablabla”。很快收到回复。&lt;/p&gt;
+
+&lt;p&gt;知道了Excelpro的大名，按着习惯，在接下来的沟通中，我就直呼“万祥”了。在公司，包括以前的实习单位，无论同事还是老板，或者老板的老板，都是直接叫名字，慢慢也养成这习惯了——关于称谓，有一个趣事在下面，先打住。&lt;/p&gt;
+
+&lt;p&gt;武汉博文的&lt;a href=&#34;http://yeka.blogbus.com/&#34;&gt;周筠老师&lt;/a&gt;，不知什么时候也在看“&lt;a href=&#34;http://excelpro.blog.sohu.com/&#34;&gt;ExcelPro的图表博客&lt;/a&gt;”。看这个博客，我的反应是高手要趁早认识，周老师的反应大概是，这样好的内容，要趁早出书。于是去年年底，武汉博文的编辑梁晶，问我能不能帮着看看一本Excel方面的新书。一看，ExcelPro，这么巧啊。赶紧答应下来，刚好可以趁着看文稿的机会好好学习一下Excel作图。&lt;/p&gt;
+
+&lt;p&gt;这本书讲Excel作图，可不是“excel-&amp;gt;插入-&amp;gt;图表-&amp;gt;图表向导”这么简单。这种默认的作图方式，大伙一眼就能看出来，就是传统的、灰头土脸的Excel图表（熟悉吧？）：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2010/05/excel0.jpg&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;excel0&#34; border=&#34;0&#34; alt=&#34;excel0&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2010/05/excel0-thumb.jpg&#34; width=&#34;267&#34; height=&#34;151&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;而这本书，是教你用Excel做出这样的图来：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2010/05/excel1.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;excel1&#34; border=&#34;0&#34; alt=&#34;excel1&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2010/05/excel1-thumb.png&#34; width=&#34;265&#34; height=&#34;295&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;是不是也很熟悉？就是国外顶尖商业杂志如《商业周刊》、《经济学人》等杂志风格的商务图表。如何做到，如何用Excel做到？审稿的时候，我就是这样怀着激动的心情，看Excelpro如何突破Excel的默认颜色、默认布局和默认的作图元素，从而一步步做出类似上图的专业商务图表，真是大呼过瘾。书还附有数据和样例，自己可以随手在机器上跟着实现。我平时鼓捣SAS，Excel用得不多，看了这书（你可以在&lt;a href=&#34;http://excelpro.blog.sohu.com/149707215.html&#34;&gt;这里&lt;/a&gt;下载高清样章），想什么时候该自己用Excel了，照着这书玩下去，铁定又是一条好汉。&lt;/p&gt;
+
+&lt;p&gt;出版社的老师喜欢称呼作者为老师。跟周老师和梁晶编辑邮件来往，她们都会提到“刘万祥老师”，一看，心想：惨了，我跟Excelpro邮件来往，叫名字都叫顺口了。我称呼周筠老师，周筠老师称呼刘万祥老师，而我就直呼“万祥”！这可窜辈了，邮件fwd来fwd去的。问Excelpro，最后我们约定，私下里我们称名字，有周老师在场就叫老师。——后来，刘万祥老师终于跟我开了个玩笑，在书的前言里，他写道：“感谢本书的评审专家孔文达老师、杜茂康老师和胡江堂老师”——“胡江堂老师？”我旁边朋友一看，立马收不住笑，Friday Humor?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hey, IT Birddies</title>
+      <link>/2009/09/13/hey-it-birddies/</link>
+      <pubDate>Sun, 13 Sep 2009 21:17:00 +0000</pubDate>
+      
+      <guid>/2009/09/13/hey-it-birddies/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;世界是如此的熙熙攘攘&lt;/p&gt;
+
+&lt;p&gt;让年轻的心找不到方向&lt;/p&gt;
+
+&lt;p&gt;但这些人是不能小看的啊&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 如果&lt;/p&gt;
+
+&lt;p&gt;他们开始敲打自己的命令行&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;下午参加china-pub互动网的九周年庆生会。由&lt;a href=&#34;http://stonefish9.blogbus.com/&#34; target=&#34;_blank&#34;&gt;张弦&lt;/a&gt;同学主持，加上到场的部分在京作者，&lt;a href=&#34;http://songjinshan.is-programmer.com/&#34; target=&#34;_blank&#34;&gt;宋劲杉&lt;/a&gt;老师、&lt;a href=&#34;http://mindhacks.cn/&#34; target=&#34;_blank&#34;&gt;刘未鹏&lt;/a&gt;同学以及&lt;a href=&#34;http://blog.linjian.org/&#34; target=&#34;_blank&#34;&gt;林健&lt;/a&gt;同学，大伙一起向来宾聊我们的新书，&lt;a href=&#34;http://www.china-pub.com/196000&#34; target=&#34;_blank&#34;&gt;《我是一只IT小小鸟》&lt;/a&gt;，中途还有&lt;a href=&#34;http://cubbyvivi.blogbus.com/&#34; target=&#34;_blank&#34;&gt;小唐&lt;/a&gt;同学从上海整过来的一段TV。&lt;/p&gt;
+
+&lt;p&gt;虽然我不时读读戴尔·卡内基《语言的突破》(T&lt;em&gt;he Quick &amp;amp; Easy Way to Effective Speaking&lt;/em&gt; by Dale Carnegie)之类的书，对着大众演讲还是有些怵。上场时老想整一个舒服的姿势，斜着，侧着，躺着，飘着，靠着，倒立着，还有就是两只手跟香蕉一样，不知道搁哪里好。还好，说着说着，居然还能够讲个笑话来。这一股脑说出口了，心下就轻松许多：剩下的棒子，就交给听众啦。&lt;/p&gt;
+
+&lt;p&gt;给我们压场的，阵容强大，除了我跟宋老师带来的亲友团，还有博文视点的&lt;a href=&#34;http://yeka.blogbus.com/&#34; target=&#34;_blank&#34;&gt;周筠&lt;/a&gt;老师和几位编辑朋友，&lt;a href=&#34;http://floramay13.blogbus.com/&#34; target=&#34;_blank&#34;&gt;许莹&lt;/a&gt;、&lt;a href=&#34;http://blog.sina.com.cn/&#34; target=&#34;_blank&#34;&gt;夏青&lt;/a&gt;和&lt;a href=&#34;http://dinla.blogbus.com/&#34; target=&#34;_blank&#34;&gt;梁晶&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;又，《我是一只IT小小鸟》，或可称为_IT Birddies_，或者_Young IT Professionals_。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>相关链接：《我是一只IT小小鸟》</title>
+      <link>/2009/09/01/%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAit%E5%B0%8F%E5%B0%8F%E9%B8%9F/</link>
+      <pubDate>Tue, 01 Sep 2009 22:14:20 +0000</pubDate>
+      
+      <guid>/2009/09/01/%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAit%E5%B0%8F%E5%B0%8F%E9%B8%9F/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/09/bird2.jpg&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;bird2&#34; alt=&#34;bird2&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/09/bird2-thumb.jpg&#34; width=&#34;390&#34; height=&#34;531&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;就要印了，做回文抄公。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I. 我们的作者团队：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;蒋宇东 现就职于上海某公司（C++程序员）博客：&lt;a href=&#34;http://blog.csdn.net/NewNebuladream&#34;&gt;http://blog.csdn.net/NewNebuladream&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;居振梁 博客：&lt;a href=&#34;http://wargrey.yo2.cn&#34;&gt;http://wargrey.yo2.cn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;刘帅 现就职于Amazon（SDE-Test）博客：&lt;a href=&#34;http://lsthu.spaces.live.com/&#34;&gt;http://lsthu.spaces.live.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;李成 现就职于北京飞维美地信息技术有限公司（软件工程师）博客：&lt;a href=&#34;http://www.perlfect.org&#34;&gt;http://www.perlfect.org&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;温卫斌 现就职于中国农业银行软件开发中心 博客：&lt;a href=&#34;http://terry-pekingssm.spaces.live.com&#34;&gt;http://terry-pekingssm.spaces.live.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;胡江堂 现就职于赛诺菲巴斯德（SAS程序员）博客：&lt;a href=&#34;http://li-and-jiang.com/blog/&#34;&gt;http://li-and-jiang.com/blog/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;辜新星 现就职于Google（助理产品经理）博客：&lt;a href=&#34;http://guxinxing.blogbus.com/&#34;&gt;http://guxinxing.blogbus.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;刘未鹏 现就职于微软亚洲研究院（程序员）博客：&lt;a href=&#34;http://mindhacks.cn&#34;&gt;http://mindhacks.cn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;唐雅薇 现就职于IBM中国研发中心（上海）博客：&lt;a href=&#34;http://cubbyvivi.blogbus.com/&#34;&gt;http://cubbyvivi.blogbus.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;张弦 现就职于百度（软件工程师）博客：&lt;a href=&#34;http://stonefish9.blogbus.com/&#34;&gt;http://stonefish9.blogbus.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;秦琴 现就职于中国银行 博客：&lt;a href=&#34;http://clalietsin.spaces.live.com/&#34;&gt;http://clalietsin.spaces.live.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;张凯峰 现就职于IBM中国软件开发中心（软件工程师）博客：&lt;a href=&#34;http://www.zhangkf.com&#34;&gt;http://www.zhangkf.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;庄表伟 博客：&lt;a href=&#34;http://www.zhuangbiaowei.cn&#34;&gt;http://www.zhuangbiaowei.cn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;宋劲杉 现就职于北京亚嵌教育研究中心（讲师）博客：&lt;a href=&#34;http://songjinshan.is-programmer.com&#34;&gt;http://songjinshan.is-programmer.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;程露 博客：&lt;a href=&#34;http://roburite.spaces.live.com/&#34;&gt;http://roburite.spaces.live.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;黄小明 现就职于某外资企业（软件开发及项目管理）博客：&lt;a href=&#34;http://blog.csdn.net/view1024&#34;&gt;http://blog.csdn.net/view1024&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;易晓东 现就职于某电子商务网站（运营负责人）博客：&lt;a href=&#34;http://www.tomcat521.com&#34;&gt;http://www.tomcat521.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;简朝阳 现就职于阿里巴巴（MySQL &amp;amp; Oracle DBA）博客：&lt;a href=&#34;http://www.jianzhaoyang.com&#34;&gt;http://www.jianzhaoyang.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;林健 现于中国科学院计算技术研究所就读（硕博连读）博客：&lt;a href=&#34;http://blog.linjian.org&#34;&gt;http://blog.linjian.org&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;高昂 现于中科院地理所攻读博士学位 博客：&lt;a href=&#34;http://www.gaoang.com/&#34;&gt;http://www.gaoang.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;徐宥 现于Washington University 就读（博士）博客：&lt;a href=&#34;http://blog.youxu.info&#34;&gt;http://blog.youxu.info&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;II. 编辑许莹在她的&lt;/strong&gt;&lt;a href=&#34;http://floramay13.blogbus.com/logs/45529500.html&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;编辑心得&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;里说：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;8月29日晚上，当我在推荐序的稿子上盖下“清样”章的时候，突然觉得很感动。想起小唐给我说：“我有一种养孩子的感觉”，其实，我也是的。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;III. 微软亚洲研究院技术创新中心研发经理&lt;/strong&gt;&lt;a href=&#34;http://www.yishan.cc&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;邹欣&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;老师&lt;/strong&gt;&lt;a href=&#34;http://www.china-pub.com/computers/common/Catalog.asp?IDD=196000&amp;shuming=%u6211%u662F%u4E00%u53EAIT%u5C0F%u5C0F%u9E1F(%u9884%u8BA2%u4E2D,%u4F30%u4EF7)&amp;type=7&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;推荐此书&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;说：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;书中的许多故事常常让我幻想——如果我们的教育系统能多帮助他们一下,也许会有更多的学生能少走弯路,成为IT业快乐的小小鸟,甚至大鹏鸟！&lt;/p&gt;
+
+&lt;p&gt;希望更多学生.老师在看到这本书之后,能一起动手,让梦想早日成为现实。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;IV. 北京理工大学计算机学院的金旭亮老师的推荐语：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;本书介绍了许多人的成长经历，对读者而言，的确是“他山之石，可以攻玉”。但另一方面，没有一个人的经历是可以复制的，因为环境不同，时代不同。更重要的是每个人都是独一无二的，而且世上万物时时刻刻都在变化当中。对于青年学生而言，不要看到书中某人做某件事有较大收获，然后你也想来个原样照搬。要仔细分析作者的个性、拥有的独特经历，再结合他当时所处的环境，弄明白他当时为何会做出某个决定。&lt;/p&gt;
+
+&lt;p&gt;写到这里，我不禁联想到中学语文课本中收录的名篇——《庖丁解牛》中庖丁所说的话：臣之所好者，道也；进乎技矣。&lt;/p&gt;
+
+&lt;p&gt;大道无术，其实成功的基本原则是相对稳定的，而走向成功的具体方法则因人因时因地而异。重读《庖丁解牛》，再看看书中各位作者的人生经历，是挺有意思的一件事。&lt;/p&gt;
+
+&lt;p&gt;希望书中这些“IT小小鸟”，最终都能成长为“遨游于九天之上”的“鲲鹏”。&lt;/p&gt;
+
+&lt;p&gt;也希望所有的读者，都能从书中受益，迈出人生向上的步伐！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;V. 《我是一只IT小小鸟》豆瓣主页&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.douban.com/subject/4006425/&#34;&gt;http://www.douban.com/subject/4006425/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;VI. 《我是一只IT小小鸟》china-pub预订主页&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.china-pub.com/196000&#34;&gt;http://www.china-pub.com/196000&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>新书预告-《我是一只IT小小鸟》</title>
+      <link>/2009/08/19/%E6%96%B0%E4%B9%A6%E9%A2%84%E5%91%8A-%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAit%E5%B0%8F%E5%B0%8F%E9%B8%9F/</link>
+      <pubDate>Wed, 19 Aug 2009 23:29:00 +0000</pubDate>
+      
+      <guid>/2009/08/19/%E6%96%B0%E4%B9%A6%E9%A2%84%E5%91%8A-%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAit%E5%B0%8F%E5%B0%8F%E9%B8%9F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 一群IT小小鸟，来自十几所院校&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; 或科班，或非科班；或男生，或女生&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; 在失望中追求希望，在迷茫中辨别方向&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 祝愿亲爱的师弟师妹们&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 本科不虚度，考研少盲目&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 实习别耽误，求职心中有数&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 毕业≠失业，自己给自己做主&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我们跟&lt;a href=&#34;http://blog.csdn.net/bvbook&#34; target=&#34;_blank&#34;&gt;武汉博文视点&lt;/a&gt;合作的书，《我是一只IT小小鸟》（胡江堂主编，李成、唐雅薇、秦琴副主编，北京：电子工业出版社，2009年9月），广告页也出来了（将出现在《程序员》杂志第九期），欢迎大伙围观。所谓小小鸟，羽翼未丰，但正如微软亚洲研究院的&lt;a href=&#34;http://yishan.cc/blogs/xin/&#34; target=&#34;_blank&#34;&gt;邹欣&lt;/a&gt;老师给本书的留言，他们也“开始敲打自己的命令行”。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/08/bird.jpg&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px&#34; title=&#34;Bird&#34; border=&#34;0&#34; alt=&#34;Bird&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/08/bird-thumb.jpg&#34; width=&#34;523&#34; height=&#34;689&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;俗话说“少壮不努力，长大干IT”，这本集子，收录了我身边二十多位朋友的成长轨迹，包括和我一样2009年毕业的应届生和一些有工作经验或出国读博的朋友，计算机背景，风格各异，归宿不一。我从经济学转软件工程，也以混迹IT圈为荣，书里也有一篇写自己这一路的经历。&lt;/p&gt;
+
+&lt;p&gt;说起这本书的故事，要追溯到上半年3月的某一个晚上，我跟Crazy Hou同学在万柳宿舍卧谈，那时我们刚定好工作意向，他要去上海摩根士丹利。我们聊起我们初来北大软件学院的志向与苦闷，也不时提起自己的本科经历，我们梳理影响自己的人和事，说各自的实习感受，说找工作的风风雨雨，说学校的教育制度，说各个公司的文化。这么一夜痛快淋漓地说出来，我们不由得总结道，要是研一或者更早，有师兄师姐能够这么提醒我们，这一路我们可能就会走得更从容更自觉。&lt;/p&gt;
+
+&lt;p&gt;现在我们都成师兄师姐了，或者我们能够在毕业之前，把这些经验教训留下。我联系上博文视点的&lt;a href=&#34;http://yeka.blogbus.com/&#34; target=&#34;_blank&#34;&gt;周筠&lt;/a&gt;老师（查看Gtalk记录，是3月16号），说我想召集些身边的朋友，应届生，计算机背景，在毕业之前，讲讲自己求学、实习、找工作等的经历与感悟，对本身是一个“立此存照”，是反思自己的一个好机会（再过些日子，我们的记忆就不会这么鲜活了），或许师弟师妹们还会对这些故事感兴趣。&lt;/p&gt;
+
+&lt;p&gt;接下来就是跟周老师还有&lt;a href=&#34;http://floramay13.blogbus.com/&#34; target=&#34;_blank&#34;&gt;许莹&lt;/a&gt;等编辑朋友的面对面交流，然后我们就去向身边的朋友约稿，向朋友的朋友约稿。为了体现IT从业人员的层次，我们还特意邀请几位有工作经验的朋友加入作者群，他们对IT产业与职场的认识，能够丰富我们的视野。&lt;/p&gt;
+
+&lt;p&gt;事情就这么结束，而我们都已经毕业。人所处的人生阶段不同，立场或视角就不一样。现在的我们要回顾自己的求学历程，可能就会用三言两语把它打发掉，但这些毕业之前的文字，写的都是自己作为学生自己感兴趣的东西，是自己作为学生认为重要的东西。这种体验不可能再现，所幸我们有记录留下，那不是事后的点评，而是亲历现场的报道。这个集子里，记录下的就是我们大学生活不能绕过的东西：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;专业/技术方向选择&lt;/p&gt;
+
+&lt;p&gt;社团活动&lt;/p&gt;
+
+&lt;p&gt;竞赛&lt;/p&gt;
+
+&lt;p&gt;实验室&lt;/p&gt;
+
+&lt;p&gt;实习&lt;/p&gt;
+
+&lt;p&gt;找工作&lt;/p&gt;
+
+&lt;p&gt;出国&lt;/p&gt;
+
+&lt;p&gt;技术社区&lt;/p&gt;
+
+&lt;p&gt;人际交往&lt;/p&gt;
+
+&lt;p&gt;时间管理&lt;/p&gt;
+
+&lt;p&gt;压力管理&lt;/p&gt;
+
+&lt;p&gt;……&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;有时候我们强调自身的独特性，我们兴趣各异，有不同的家庭背景，不一样的知识储备，不一样的思维方式，但过分强调这些差异也不现实，我们会碰到类似的人生选择的关口，我们会犯类似的错误，有类似的迷惘，也会为同样的精彩鼓掌，或者很明显地，在我们的作者群中，多少都跟计算机沾边，而IT本身就不是很大的圈子。在邀请作者时，我都会附上两句话，一句来自某本跟萨特相关的书，另一句来自博尔赫斯：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;这个青年的经历，只代表他个人，没有任何群体的意义。&lt;/p&gt;
+
+&lt;p&gt;我想写下一段自白,这自白既是我个人的,也具有普遍意义,因为一个人经历过的事情所有的人都可以经历。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;对每个作者而言，这本书写给自己，写给珍惜我们人生历程的朋友，也写给所有会有类似经历的师弟师妹。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>周末记事：足球是宝、博文视点、火锅、麻辣</title>
+      <link>/2009/07/19/%E5%91%A8%E6%9C%AB%E8%AE%B0%E4%BA%8B%E8%B6%B3%E7%90%83%E6%98%AF%E5%AE%9D%E5%8D%9A%E6%96%87%E8%A7%86%E7%82%B9%E7%81%AB%E9%94%85%E9%BA%BB%E8%BE%A3/</link>
+      <pubDate>Sun, 19 Jul 2009 23:26:12 +0000</pubDate>
+      
+      <guid>/2009/07/19/%E5%91%A8%E6%9C%AB%E8%AE%B0%E4%BA%8B%E8%B6%B3%E7%90%83%E6%98%AF%E5%AE%9D%E5%8D%9A%E6%96%87%E8%A7%86%E7%82%B9%E7%81%AB%E9%94%85%E9%BA%BB%E8%BE%A3/</guid>
+      <description>&lt;p&gt;&lt;font size=&#34;2&#34;&gt;&lt;strong&gt;晚上跟&lt;/strong&gt;&lt;/font&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/author/li/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;2&#34;&gt;&lt;strong&gt;Li&lt;/strong&gt;&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;2&#34;&gt;&lt;strong&gt;逛超市&lt;/strong&gt;，求得黑球鞋一双，红球衣一套。鞋是足球鞋，衣服是篮球衣，回到家赶紧google两把：&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;a href=&#34;http://www.google.com/search?q=如何踢足球&amp;sourceid=navclient-ff&amp;ie=UTF-8&amp;rlz=1B3GGGL_enCN256&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;2&#34;&gt;如何踢足球&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&amp;#160;&amp;#160; &lt;a href=&#34;http://www.google.com/search?rlz=1C1GGLS_enCN336CN336&amp;sourceid=chrome&amp;ie=UTF-8&amp;q=how+to+play+football&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;2&#34;&gt;how to play football&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;话说公司招人时，逢人便问：会踢足球不？这下打定主意，撒开脚丫子跟他们跑了。最近一次踢球，却是五六年前，恰逢非典，整天就在球场跟着皮球跑来跑去。小小一块场地，同时供好几拨人马撒欢，各自丢下衣服书包，就是球门。有一次，皮球居然滚到我脚下，自然是踢着它开跑了。冲着球门紧跑紧跑，觉着大伙都似乎停下来看我。好家伙，这难道就是传说中的时间凝固全场瞩目，一个少年，长衣长裤，来拯救快落败的队伍？突然一个陌生的面孔说：哥们，你跑错场了。&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;&lt;strong&gt;下午跟博文视点的&lt;/strong&gt;&lt;a href=&#34;http://yeka.blogbus.com/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;周筠老师&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;以及&lt;/strong&gt;&lt;a href=&#34;http://floramay13.blogbus.com/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;许莹&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;编辑聊天&lt;/strong&gt;。话说&lt;/font&gt;几个月前，回学校万柳宿舍，与Crazy Hou君卧谈（Hou那时就签了摩根巧克力上海），一起聊，从研一在同一个宿舍，研二出去实习，到去年下半年开始找工作，当真是唏嘘不已。当时就想找一批身边的朋友，应届生，计算机背景，在毕业之前，讲讲自己求学工作的故事，看看能不能整出一本书来，算是一个毕业献礼样的东西。宿舍当时还摆着我们找工作用的几本书，其中就有&lt;a href=&#34;http://blog.csdn.net/bvbook&#34; target=&#34;_blank&#34;&gt;博文视点&lt;/a&gt;做的《编程之美》。我说刚好认识这本书的责任编辑周老师，或许她会对这个选题感兴趣，&amp;#8212;&amp;#8212;接下来就是跟周老师接触，跟博文的几位编辑接触，联系我们身边感兴趣的朋友（下图是４月份我们作者群与博文视点的老师的第一次亲密接触，地点是北大百年讲堂旁边，晚上十二点左右。第一排右起，是周老师（博文）、Clalie、stonefish、许莹（博文）、小唐、我、Crazy Hou；第二排右起，是铁锋、翔子（博文）、小黄、卫斌、长松、lobatt）:&lt;/p&gt;
+
+&lt;p&gt;&amp;#160; &lt;img height=&#34;389&#34; src=&#34;http://images.cnblogs.com/cnblogs_com/bvbook/WindowsLiveWriter/92fcd4db8120_B595/北京_200904 058_2.jpg&#34; width=&#34;481&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;2&#34;&gt;到现在我们有更多的朋友加入，今天就是再跟周老师和许莹沟通些消息。这事横跨我们毕业前后，真庆幸当时就把初稿赶出来，否则现在我们都入职了，视角念头，就不能保持当时的鲜活劲。我们的书预计下半年出来，还整了一个博客，叫&amp;#8220;IT成长访谈录&amp;#8221;，大伙可以先去瞅瞅：&lt;/font&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.graduateinterview.net/&#34;&gt;http://www.graduateinterview.net/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;今天还认识两位博文的朋友，&lt;a href=&#34;http://dinla.blogbus.com/&#34; target=&#34;_blank&#34;&gt;梁晶&lt;/a&gt;和&lt;a href=&#34;http://icebefore.spaces.live.com/&#34; target=&#34;_blank&#34;&gt;夏青&lt;/a&gt;。其间大伙又提到号称&amp;#8220;中关村第一才女&amp;#8221;的&lt;a href=&#34;http://blog.donews.com/sunnyliang&#34; target=&#34;_blank&#34;&gt;梁宁&lt;/a&gt;女士。话说我在中关村盘旋也久，时称&amp;#8220;&lt;a href=&#34;http://li-and-jiang.com/blog/2008/05/18/%e5%9a%a3%e5%bc%a0%e7%9a%84%e7%85%ae%e9%9d%a2%e5%b8%88%e5%82%85/&#34; target=&#34;_blank&#34;&gt;中关村第一煮面师傅&lt;/a&gt;&amp;#8221;，有机会当找梁女士沟通下心得。又，梁宁现在随公司处国贸，刚好又是我干活的工地，中关村或国贸，哪里都能相逢。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;７月１８号，昨天，周六。晚上跑回宣武门&lt;/strong&gt;，与几个老朋友聊天，老朱老金老王是也。在一家叫陈阿婆的火锅店，居然排了半个小时的号。老朱留守，老金转国企，老王做投资，我呆药厂，这就是&amp;#8220;宣武门四侠&amp;#8221;现在的格局。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;７月１７号，前天，周五。晚上跟Ｌｉ跑到知春路&lt;/strong&gt;，老张哥招待，麻辣诱惑，列席的还有拓拔波波、Ｋｅ。张哥于生活颇有心得，常有妙语。&lt;/p&gt;
+
+&lt;p&gt;话说在麻辣诱惑，中途上洗手间，在&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/07/m.jpg&#34;&gt;&lt;img style=&#34;border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px&#34; height=&#34;139&#34; alt=&#34;M&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/07/m-thumb.jpg&#34; width=&#34;144&#34; border=&#34;0&#34; /&gt;&lt;/a&gt; ，见一奇佳的对联，曰：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;多少&lt;strong&gt;贞节烈女在此&lt;/strong&gt;宽衣解带&lt;/p&gt;
+
+&lt;p&gt;历代王侯将相于此忍气吞声&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;好家伙。时代不同，厕所分男女，这对联再摆出来，就相当不合时宜了，&amp;#8212;&amp;#8212;挂&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/07/f.gif&#34;&gt;&lt;img style=&#34;border-right: 0px; border-top: 0px; border-left: 0px; border-bottom: 0px&#34; height=&#34;126&#34; alt=&#34;F&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/07/f-thumb.gif&#34; width=&#34;92&#34; border=&#34;0&#34; /&gt;&lt;/a&gt; 门口也不方便啦。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>流水4月8-会友</title>
+      <link>/2009/04/10/%E6%B5%81%E6%B0%B44%E6%9C%888-%E4%BC%9A%E5%8F%8B/</link>
+      <pubDate>Fri, 10 Apr 2009 11:33:42 +0000</pubDate>
+      
+      <guid>/2009/04/10/%E6%B5%81%E6%B0%B44%E6%9C%888-%E4%BC%9A%E5%8F%8B/</guid>
+      <description>&lt;p&gt;（4月8号，晴，这一天的主题是书和友。）&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://floramay13.blogbus.com/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;flora&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;和&lt;/strong&gt;&lt;a href=&#34;http://hi.baidu.com/caviarx/blog&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;翔子&lt;/strong&gt;&lt;/a&gt;&amp;#160;&amp;#160;&amp;#160; 上午回学校，接着转去清华科技园，&lt;a href=&#34;http://qconbeijing.com/&#34; target=&#34;_blank&#34;&gt;Qcon&lt;/a&gt;（QCon全球企业开发大会）的会场。&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; |&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 与博文视点的两位策划编辑&lt;a href=&#34;http://floramay13.blogbus.com/&#34; target=&#34;_blank&#34;&gt;flora&lt;/a&gt;和&lt;a href=&#34;http://hi.baidu.com/caviarx/blog&#34; target=&#34;_blank&#34;&gt;翔子&lt;/a&gt;聊些。之前与&lt;a href=&#34;http://floramay13.blogbus.com/&#34; target=&#34;_blank&#34;&gt;flora&lt;/a&gt;在线沟联系过。&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; |&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 近中午，我们去旁边的万圣书园，说周老师随后过来。先去对面的豆瓣书店逛逛。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://yeka.blogbus.com/&#34; target=&#34;_blank&#34;&gt;周筠老师&lt;/a&gt;&lt;/strong&gt;&lt;strong&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/strong&gt; 十二点多些，周老师也到书店。一起吃饭，聊天。之前我有一个写书的计划（&lt;em&gt;过些时&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; |&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; _候再徐徐道来_），在网上与周老师沟通过，这次见面就有得聊的。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blog.devep.net/virushuo/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;霍炬&lt;/strong&gt;&lt;/a&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 下午会Qcon会场，见着庄胜的老战友&lt;a href=&#34;http://blog.devep.net/virushuo/&#34; target=&#34;_blank&#34;&gt;霍炬&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; |&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.dbanotes.net/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;大辉&lt;/strong&gt;&lt;/a&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 在霍炬旁边，又新认识一位朋友，支付宝的&lt;a href=&#34;http://www.dbanotes.net/&#34; target=&#34;_blank&#34;&gt;大辉&lt;/a&gt;。他在Oracle的社区里很活跃。&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; |&amp;#160;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.xiaolai.net/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;李笑来&lt;/strong&gt;&lt;/a&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 傍晚先与大辉，坐上霍炬的火车，转去东四，经过友谊宾馆时捎上&lt;a href=&#34;http://www.xiaolai.net/&#34; target=&#34;_blank&#34;&gt;笑长李笑来&lt;/a&gt;。&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; |&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.luanxiang.org/blog/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;余晟&lt;/strong&gt;&lt;/a&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 折腾到东四4.4条，大红灯笼下，来到一家叫潇湘味道-山本-酷虾的湘菜馆。&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; |&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;a href=&#34;http://www.luanxiang.org/blog/&#34; target=&#34;_blank&#34;&gt;余晟&lt;/a&gt;早就在那候着。话说这家湘菜馆就是他的本家菜。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://songshuhui.net/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;姬十三&lt;/strong&gt;&lt;/a&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 旁边有一位脸熟，却是&lt;a href=&#34;http://songshuhui.net/&#34; target=&#34;_blank&#34;&gt;松鼠会的姬十三&lt;/a&gt;。&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; |&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.douban.com/people/joylite/&#34; target=&#34;_blank&#34;&gt;铁锋&lt;/a&gt;&lt;/strong&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 一会周老师和flora赶到，接着是铁锋。不寒暄，随意坐下。&lt;/p&gt;
+
+&lt;p&gt;席上听讲些出版届和互联网行业的典故。噫，没想到一天结识这么多神交已久的朋友。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

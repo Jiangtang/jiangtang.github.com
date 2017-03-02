@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows Live Space on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/windows-live-space/index.xml</link>
+    <description>Recent content in Windows Live Space on Jiangtang Hu | 胡江堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/windows-live-space/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>博客搬家：从Windows Live Space到WordPress（图解）</title>
+      <link>/2009/03/30/%E5%8D%9A%E5%AE%A2%E6%90%AC%E5%AE%B6%E4%BB%8Ewindows-live-space%E5%88%B0wordpress%E5%9B%BE%E8%A7%A3/</link>
+      <pubDate>Mon, 30 Mar 2009 15:47:15 +0000</pubDate>
+      
+      <guid>/2009/03/30/%E5%8D%9A%E5%AE%A2%E6%90%AC%E5%AE%B6%E4%BB%8Ewindows-live-space%E5%88%B0wordpress%E5%9B%BE%E8%A7%A3/</guid>
+      <description>&lt;p&gt;独立开博，在Hostmonster上用Wordpress上搭建完自个的空间，第一件事就是把以前发布在Windows Live Space上的博客导进来。其中，下载WindowsLiveSpace的全部文章和评论所用的Python脚本，来自&lt;a href=&#34;http://b2.broom9.com/?page_id=519#note1&#34;&gt;Broom&lt;/a&gt;，剩下的一些优化工作，比如删除垃圾评论，用了一些简单的SQL脚本。从WindowsLiveSpace搬家，向来最为麻烦，以下把刚做的功课记下来，鼓励大伙及时退出WindowsLiveSpace。我06年开博，至今在WindowsLiveSpace上积攒下近六百篇博文，所谓积重难返路径依赖，这次全部顺畅导出，兀的不高兴死我也么哥。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;对不熟悉Python的朋友来说，以下的内容也一样没有没有障碍：只需要按着相应的步骤，复制粘贴再回车即可。这是我的生活博客，里面所有涉及所谓技术的内容，也是中文系高材生Li也能看懂的。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;1.准备工作&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;1.1. 设置Windows Live Space和Wordpress的日期格式&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;重要的是让WindowsLiveSpace和Wordpress的日期格式一致，这里我两个设置的是2009/03/30。在WindowsLiveSpace中，我的时间格式是10:24:05，设置的路径是“选项”-&amp;gt;“常规”-&amp;gt;“日期和时间格式”：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/03/space-date.png&#34;&gt;&lt;img style=&#34;border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px&#34; title=&#34;space_date&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/03/space-date-thumb.png&#34; border=&#34;0&#34; alt=&#34;space_date&#34; width=&#34;233&#34; height=&#34;121&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;另外，在“选项”-&amp;gt;“日志”-&amp;gt;“显示日志日期”选项中，勾选“在页首出显示日志发布日期”。在Wordpress中，相应的路径是“设置”-&amp;gt;“常规”-&amp;gt;”日期格式”。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.2.下载安装Python 2.5.2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://b2.broom9.com/?page_id=519#note1&#34;&gt;Broom&lt;/a&gt;测试了两种组合，Python 2.5.2+Beautiful Soup 3.0.6和Python 2.5.1+Beautiful Soup 3.0.4。但后面的低版本组合需要打些补丁，我们就不必麻烦了，我是直接用的高版本。Python 2.5.2的官方下载地址在：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.python.org/download/releases/2.5.2/&#34;&gt;http://www.python.org/download/releases/2.5.2/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;我用的是Windows平台，选择的是X86 processors python-2.5.2.msi。下载完毕，一路安装过去就是，不妨依着它默认的安装路径c:Python25。接下来看看Python好不好使：&lt;/p&gt;
+
+&lt;p&gt;开始-&amp;gt;运行-&amp;gt;在冒出来的框里输入 &lt;span style=&#34;color: #ff0000;&#34;&gt;cmd&lt;/span&gt; 回车-&amp;gt;在冒出来的命令行输入 &lt;span style=&#34;color: #ff0000;&#34;&gt;python &lt;/span&gt;再回车&lt;/p&gt;
+
+&lt;p&gt;顺利的话，你将看到类似的回应：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/03/cmd.png&#34;&gt;&lt;img style=&#34;border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px&#34; title=&#34;cmd&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/03/cmd-thumb.png&#34; border=&#34;0&#34; alt=&#34;cmd&#34; width=&#34;558&#34; height=&#34;125&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;如果提示说python不可识别，就需要为Python设置环境变量，如果不明白什么是“环境变量”，依着下面的操作就是。&lt;/p&gt;
+
+&lt;p&gt;“我的电脑”-&amp;gt;右键“属性”-&amp;gt;“高级”-&amp;gt;“环境变量”-&amp;gt;“系统变量”-&amp;gt;点中一个叫Path的系统变量-&amp;gt;“编辑”-&amp;gt;在Path的变量值框的末尾，加上一个分号&lt;span style=&#34;color: #ff0000;&#34;&gt;;&lt;/span&gt;（英文状态下），然后跟着是填上Python的安装目录，比如&lt;span style=&#34;color: #ff0000;&#34;&gt;c:Python25&lt;/span&gt;。一路确定后，再回刚才的命令行试试python这个命令。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/03/path.png&#34;&gt;&lt;img style=&#34;border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px&#34; title=&#34;path&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/03/path-thumb.png&#34; border=&#34;0&#34; alt=&#34;path&#34; width=&#34;452&#34; height=&#34;325&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.3.下载Beautiful Soup 3.0.6&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Beautiful Soup 3.0.6是一个解析HTML页面的类库，接下来那个下载博客文章的脚本需要用它。下载地址：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.crummy.com/software/BeautifulSoup/download/3.x/BeautifulSoup-3.0.6.tar.gz&#34;&gt;http://www.crummy.com/software/BeautifulSoup/download/3.x/BeautifulSoup-3.0.6.tar.gz&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;解压到一个文件夹，比如D:downloadBeautifulSoup-3.0.6。你将看到BeautifulSoup.py等几个脚本。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1.4.下载脚本Live-space-mover&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Live-space-mover这个脚本，能够把WindowsLiveSpace中的所有文章和评论等，生成一个Wordpress能够识别的XML文件，以实现博客搬家的目的。下载地址：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://code.google.com/p/live-space-mover/downloads/list&#34;&gt;http://code.google.com/p/live-space-mover/downloads/list&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;现在的最新版本是live-space-mover.1.7.5.zip。解压到D:downloadBeautifulSoup-3.0.6。在D:downloadBeautifulSoup-3.0.6目录下，你应该看到脚本live-space-mover.py。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;2.运行脚本，下载博客，生成XML文件&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;在刚才提到过的cmd命令行，转到D:downloadBeautifulSoup-3.0.6文件夹(先敲入&lt;span style=&#34;color: #ff0000;&#34;&gt;d:&lt;/span&gt; 回车，然后敲入 &lt;span style=&#34;color: #ff0000;&#34;&gt;cd D:downloadBeautifulSoup-3.0.6&lt;/span&gt; 回车)，敲入下面的&lt;strong&gt;一行&lt;/strong&gt;语句并回车：&lt;/p&gt;
+
+&lt;p&gt;python live-space-mover.py -s &lt;a href=&#34;http://yourSpaceName.spaces.live.com/&#34;&gt;http://&lt;span style=&#34;color: #ff0000;&#34;&gt;yourSpaceName&lt;/span&gt;.spaces.live.com/&lt;/a&gt; -t &amp;#8220;%m/%d/%Y %I:%M:%S %p&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;其中，&lt;span style=&#34;color: #ff0000;&#34;&gt;yourSpaceName&lt;/span&gt;是你Windows Live Space的名字。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/03/spacemover.png&#34;&gt;&lt;img style=&#34;border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px&#34; title=&#34;Space-mover&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/03/spacemover-thumb.png&#34; border=&#34;0&#34; alt=&#34;Space-mover&#34; width=&#34;425&#34; height=&#34;149&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这个运行时间视你博客文章的多少而定，如果在屏幕上看到博客标题显示为乱码，不必在意。成功之后，在D:downloadBeautifulSoup-3.0.6文件夹，将生成一个类似export_03292009-2238.xml的文件，这就是你整个Space的文章、评论以及类别之类的了。&lt;/p&gt;
+
+&lt;p&gt;又，如果在准备工作1.1中，你Windows Live Space的时间格式是10:24而不是10:24:05，那么，以上命令就将更简洁些：&lt;/p&gt;
+
+&lt;p&gt;python live-space-mover.py -s &lt;a href=&#34;http://yourSpaceName.spaces.live.com/&#34;&gt;http://&lt;span style=&#34;color: #ff0000;&#34;&gt;yourSpaceName&lt;/span&gt;.spaces.live.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;3.把XML文件导入到Wordpress&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;这个就相对简单了。Wordpress后台-&amp;gt;“工具”-&amp;gt;“导入”-&amp;gt;选择WordPress，上传那个export_03292009-2238.xml文件，再指定一个作者就行。这个速度就快多了。&lt;/p&gt;
+
+&lt;p&gt;一个问题是，系统只允许导入最大为2MB的文件，对超过2MB的文件（像我这次导入的近六百篇博文），只好手动分割文件或想其他办法了。如果一次导入不漂亮，可以把所有的文章及评论先删除了再试试，两个简单的SQL语句可以参考：&lt;/p&gt;
+
+&lt;p&gt;DELETE from wp_posts WHERE post_author=1;&lt;/p&gt;
+
+&lt;p&gt;DELETE from wp_comments WHERE comment_ID&amp;gt;1;&lt;/p&gt;
+
+&lt;p&gt;作者ID(post_author)和评论ID(comment_ID)你可以在phpMyAdmin中找到。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/03/python-space-over.png&#34;&gt;&lt;img style=&#34;border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px&#34; title=&#34;python_space_over&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/03/python-space-over-thumb.png&#34; border=&#34;0&#34; alt=&#34;python_space_over&#34; width=&#34;363&#34; height=&#34;103&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;待看到“导入完毕。好好享受吧！”，心情当真是无比舒畅，按着赖哥哥宁的说法，是比大热天吃了冰水还舒服。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;4.一些优化工作&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;对全盘导入的博文，难免泥沙俱下，以前大量垃圾评论也跟着过来了。垃圾评论的一个特点是姓名为空（“没有名称”或者No name），下面的SQL语句就可以把它们清除：&lt;/p&gt;
+
+&lt;p&gt;DELETE FROM wp_comments WHERE CONVERT(`wp_comments`.`comment_author` USING utf8) = &amp;#8216;（没有名称）nwrote:&amp;#8217; ;&lt;/p&gt;
+
+&lt;p&gt;DELETE FROM `wp_comments` WHERE CONVERT(`wp_comments`.`comment_author` USING utf8) = &amp;#8216;No name&amp;#8217; ;&lt;/p&gt;
+
+&lt;p&gt;&amp;#8212;-by &lt;a href=&#34;mailto:Jiang@li-and-jiang.com&#34;&gt;Jiang&lt;at&gt;li-and-jiang.com&lt;/a&gt;&amp;#8212;&amp;#8212;-&lt;/p&gt;
+
+&lt;div id=&#34;scid:0767317B-992E-4b12-91E0-4F059A8CECA8:bb94781d-fd3f-4efb-a2fc-66a7650a0578&#34; class=&#34;wlWriterEditableSmartContent&#34; style=&#34;padding-right: 0px; display: inline; padding-left: 0px; float: none; padding-bottom: 0px; margin: 0px; padding-top: 0px&#34;&gt;
+  Technorati 标签: &lt;a rel=&#34;tag&#34; href=&#34;http://technorati.com/tags/Windows+Live+Space&#34;&gt;Windows Live Space&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://technorati.com/tags/Wordpress&#34;&gt;WordPress&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://technorati.com/tags/%e5%8d%9a%e5%ae%a2%e6%90%ac%e5%ae%b6&#34;&gt;博客搬家&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://technorati.com/tags/SQL&#34;&gt;SQL&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://technorati.com/tags/Python&#34;&gt;Python&lt;/a&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
