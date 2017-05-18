@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Git on Lithium Theme</title>
+    <title>Git on Jiangtang Hu | 胡江堂</title>
     <link>/tags/git/index.xml</link>
-    <description>Recent content in Git on Lithium Theme</description>
+    <description>Recent content in Git on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />

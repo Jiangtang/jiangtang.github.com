@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Lithium Theme</title>
+    <title>Posts on Jiangtang Hu | 胡江堂</title>
     <link>/post/index.xml</link>
-    <description>Recent content in Posts on Lithium Theme</description>
+    <description>Recent content in Posts on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Sep 2015 14:01:30 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Feb 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>In Search of Lost Time: 2016</title>
+      <link>/2017/02/17/in-search-of-lost-time-2016/</link>
+      <pubDate>Fri, 17 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/02/17/in-search-of-lost-time-2016/</guid>
+      <description>&lt;!-- BLOGDOWN-HEAD --&gt;
+&lt;!-- /BLOGDOWN-HEAD --&gt;
+
+&lt;!-- BLOGDOWN-BODY-BEFORE --&gt;
+&lt;!-- /BLOGDOWN-BODY-BEFORE --&gt;
+&lt;div id=&#34;title&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;title&lt;/h2&gt;
+&lt;p&gt;2016 was gone, and I didn’t even leave one sigle blog post.&lt;/p&gt;
+&lt;p&gt;efete fef ee f efef&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>SAS MapReduce: A Quick Followup by DS2</title>
@@ -562,20 +581,6 @@
 &lt;p align=&#34;left&#34;&gt;
   &lt;font size=&#34;1&#34;&gt;I followed these two courses many years ago and I still keep their course notes. The &lt;em&gt;SAS Programming I&lt;/em&gt; course will give new learners good foundation of SAS skills and help to pass the &lt;strong&gt;&lt;a href=&#34;http://support.sas.com/certify/creds/bp.html&#34; target=&#34;_blank&#34;&gt;SAS Certified Base Programmer for SAS 9 Credential&lt;/a&gt; examination&lt;/strong&gt;. &lt;/font&gt;
 &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Free Clinical Trial Data (with Protocols and CRFs!)</title>
-      <link>/2014/05/13/free-clinical-trial-data-with-protocols-and-crfs/</link>
-      <pubDate>Tue, 13 May 2014 13:55:58 +0000</pubDate>
-      
-      <guid>/2014/05/13/free-clinical-trial-data-with-protocols-and-crfs/</guid>
-      <description>&lt;p&gt;Bookmark it, a collection of clinical data, with full protocols and annotated CRFs by National Institute on Drug Abuse (NIDA):&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://datashare.nida.nih.gov/protocol/data&#34; title=&#34;http://datashare.nida.nih.gov/protocol/data&#34;&gt;http://datashare.nida.nih.gov/protocol/data&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
 </description>
     </item>
     

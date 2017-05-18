@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lithium Theme</title>
+    <title>Jiangtang Hu | 胡江堂</title>
     <link>/index.xml</link>
-    <description>Recent content on Lithium Theme</description>
+    <description>Recent content on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 May 2016 21:48:51 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 17 Feb 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>In Search of Lost Time: 2016</title>
+      <link>/2017/02/17/in-search-of-lost-time-2016/</link>
+      <pubDate>Fri, 17 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/02/17/in-search-of-lost-time-2016/</guid>
+      <description>&lt;!-- BLOGDOWN-HEAD --&gt;
+&lt;!-- /BLOGDOWN-HEAD --&gt;
+
+&lt;!-- BLOGDOWN-BODY-BEFORE --&gt;
+&lt;!-- /BLOGDOWN-BODY-BEFORE --&gt;
+&lt;div id=&#34;title&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;title&lt;/h2&gt;
+&lt;p&gt;2016 was gone, and I didn’t even leave one sigle blog post.&lt;/p&gt;
+&lt;p&gt;efete fef ee f efef&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>About</title>
@@ -536,42 +555,6 @@
 
 &lt;p&gt;&lt;a href=&#34;http://web.utk.edu/sas/OnlineTutor/1.2/en/60477/index.htm&#34;&gt;http://web.utk.edu/sas/OnlineTutor/1.2/en/60477/index.htm&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Best Opportunity Ever For SAS Learning: Free Software, Free Online Courses</title>
-      <link>/2014/06/19/best-opportunity-ever-for-sas-learning-free-software-free-online-courses/</link>
-      <pubDate>Thu, 19 Jun 2014 13:21:45 +0000</pubDate>
-      
-      <guid>/2014/06/19/best-opportunity-ever-for-sas-learning-free-software-free-online-courses/</guid>
-      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS Institute now offers free SAS software for non-commercial uses which contains everything you need to play with SAS programming:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Base (including ODS Graphics) &lt;br /&gt;STAT &lt;br /&gt;IML &lt;br /&gt;SAS/ACCESS® Interface to PC Files (to deal with Excel and such) &lt;br /&gt;SAS Studio (which is your new online&amp;#160; SAS editor)&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Note the SAS/Graph is not available but I think the newer and much fancier ODS Graphics will fill the gap. &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;font size=&#34;1&#34;&gt;The software, SAS University Edition:&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.sas.com/en_us/software/university-edition/download.html&#34; title=&#34;http://www.sas.com/en_us/software/university-edition/download.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.sas.com/en_us/software/university-edition/download.html&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;font size=&#34;1&#34;&gt;A nice walk-in of the software by Robert Allison:&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://blogs.sas.com/content/sastraining/2014/06/18/free-sas-software-for-students/?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+sasblogs+%28SAS+Blogs%29&#34; title=&#34;http://blogs.sas.com/content/sastraining/2014/06/18/free-sas-software-for-students/?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+sasblogs+%28SAS+Blogs%29&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://blogs.sas.com/content/sastraining/2014/06/18/free-sas-software-for-students/?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+sasblogs+%28SAS+Blogs%29&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Besides the free software, SAS also opens two free online courses which are valid for one year period:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_&lt;a href=&#34;https://support.sas.com/edu/schedules.html?ctry=us&amp;id=277&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS Programming 1: Essentials&lt;/font&gt;&lt;/a&gt;_&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://support.sas.com/edu/schedules.html?id=1320&amp;ctry=US&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Statistics 1: Introduction to ANOVA, Regression, and Logistic Regression&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p align=&#34;left&#34;&gt;
-  &lt;font size=&#34;1&#34;&gt;I followed these two courses many years ago and I still keep their course notes. The &lt;em&gt;SAS Programming I&lt;/em&gt; course will give new learners good foundation of SAS skills and help to pass the &lt;strong&gt;&lt;a href=&#34;http://support.sas.com/certify/creds/bp.html&#34; target=&#34;_blank&#34;&gt;SAS Certified Base Programmer for SAS 9 Credential&lt;/a&gt; examination&lt;/strong&gt;. &lt;/font&gt;
-&lt;/p&gt;
 </description>
     </item>
     

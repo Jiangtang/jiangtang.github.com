@@ -25,6 +25,14 @@ a {
   outline: none;
 }
 
+code {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+code .MathJax {
+  background-color: white;
+}
+
 .wrapper {
   overflow: hidden;
   position: relative;
@@ -287,6 +295,13 @@ a {
     float: right;
   }
 
+  .archive-item-link {
+    text-overflow: ellipsis;
+    max-width: calc(100% - 120px);
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
   .article-title {
     font-size: 42px;
   }
@@ -297,5 +312,14 @@ a {
 
   .footer-links {
     font-size: inherit;
+  }
+}
+
+@media print {
+  .header, .footer {
+    display: none;
+  }
+  .article-content a {
+    box-shadow: none;
   }
 }
