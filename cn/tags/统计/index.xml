@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>统计 on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/%E7%BB%9F%E8%AE%A1/index.xml</link>
+    <link>/tags/%E7%BB%9F%E8%AE%A1/</link>
     <description>Recent content in 统计 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/%E7%BB%9F%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Dec 2009 23:22:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E7%BB%9F%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>R乌乎在？</title>
@@ -14,22 +17,13 @@
       <pubDate>Sat, 05 Dec 2009 23:22:00 +0000</pubDate>
       
       <guid>/2009/12/05/r%E4%B9%8C%E4%B9%8E%E5%9C%A8/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;R乌乎在？无处不在。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;上午去人大参加“&lt;a href=&#34;http://cos.name/user/useR-2009/&#34; target=&#34;_blank&#34;&gt;第二届中国R语言会议&lt;/a&gt;”。R是一门开源的统计软件，源自S语言，一直在学院流行。或问，作为一个SAS程序员和前SAS员工，我为什么对R感兴趣。曰：我是观察家。&lt;/p&gt;
-
-&lt;p&gt;年初在“统计之都”灌了个水，跟踪《&lt;a href=&#34;http://cos.name/2009/01/r-and-sas-new-york-times/&#34; target=&#34;_blank&#34;&gt;纽约时报》关于R的一个报道&lt;/a&gt;，以及此事在R社区与SAS社区的反应，要知道，那是自1996年诞生以来，R第一次出现在公众视野。R也好，SAS也好，都工具而已，不过某个东西用熟了，它本身也就有趣味来，故后世有刀剑之争。呵呵，我们都未能免俗。&lt;/p&gt;
-
-&lt;p&gt;这次R会议的主题是R eveRywheRe(按R社区故制，但凡出现字母r，一律大写)，意为“无处不在的R”，我翻译成“R乌乎在？无处不在”，是衷心希望R能在国内发扬光大。这不是R占领SAS用户市场的问题，而是整个量化分析领域繁荣昌盛的问题。很多朋友，都是R的布道者，这次参加会议，又能跟一群朋友聚聚，听听他们的兴趣所在，也是非常高兴的事。&lt;/p&gt;
-
-&lt;p&gt;题外话。会场上我见到一册《我是一只IT小小鸟》，真是比较兴奋，这书居然还有统计背景的读者。经中南大学的&lt;a href=&#34;http://taiyun.cos.name/&#34; target=&#34;_blank&#34;&gt;魏太云&lt;/a&gt;介绍，这位捧场的朋友，就是他的同学&lt;a href=&#34;http://road2stat.com/cn/&#34; target=&#34;_blank&#34;&gt;肖楠&lt;/a&gt;。这也巧了，肖楠要在这次会议分享的话题，《R环境安全特性初探与前瞻》，刚好是我拿到会议安排时第一个勾上的。就凑一起多聊会了。&lt;/p&gt;
-
-&lt;p&gt;还是太云的介绍，认识了一位谢益辉老早就推荐的&lt;a href=&#34;http://www.cloudlychen.net/&#34; target=&#34;_blank&#34;&gt;陈丽云&lt;/a&gt;。她在山大念经济学，计算机和数学俱佳，博客做得很漂亮。&lt;/p&gt;
-
-&lt;p&gt;说说会场的趣事。开场时被会议主席陈偃平同学点名了，原来我是这次会议第一个报名者，——貌似最近我频频中奖，奖品有米老鼠口杯、整理箱、电子挂历……&lt;/p&gt;
-</description>
+      <description>R乌乎在？无处不在。
+ 上午去人大参加“第二届中国R语言会议”。R是一门开源的统计软件，源自S语言，一直在学院流行。或问，作为一个SAS程序员和前SAS员工，我为什么对R感兴趣。曰：我是观察家。
+年初在“统计之都”灌了个水，跟踪《纽约时报》关于R的一个报道，以及此事在R社区与SAS社区的反应，要知道，那是自1996年诞生以来，R第一次出现在公众视野。R也好，SAS也好，都工具而已，不过某个东西用熟了，它本身也就有趣味来，故后世有刀剑之争。呵呵，我们都未能免俗。
+这次R会议的主题是R eveRywheRe(按R社区故制，但凡出现字母r，一律大写)，意为“无处不在的R”，我翻译成“R乌乎在？无处不在”，是衷心希望R能在国内发扬光大。这不是R占领SAS用户市场的问题，而是整个量化分析领域繁荣昌盛的问题。很多朋友，都是R的布道者，这次参加会议，又能跟一群朋友聚聚，听听他们的兴趣所在，也是非常高兴的事。
+题外话。会场上我见到一册《我是一只IT小小鸟》，真是比较兴奋，这书居然还有统计背景的读者。经中南大学的魏太云介绍，这位捧场的朋友，就是他的同学肖楠。这也巧了，肖楠要在这次会议分享的话题，《R环境安全特性初探与前瞻》，刚好是我拿到会议安排时第一个勾上的。就凑一起多聊会了。
+还是太云的介绍，认识了一位谢益辉老早就推荐的陈丽云。她在山大念经济学，计算机和数学俱佳，博客做得很漂亮。
+说说会场的趣事。开场时被会议主席陈偃平同学点名了，原来我是这次会议第一个报名者，——貌似最近我频频中奖，奖品有米老鼠口杯、整理箱、电子挂历……</description>
     </item>
     
   </channel>

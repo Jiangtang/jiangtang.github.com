@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>凉拌云丝 on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/%E5%87%89%E6%8B%8C%E4%BA%91%E4%B8%9D/index.xml</link>
+    <link>/tags/%E5%87%89%E6%8B%8C%E4%BA%91%E4%B8%9D/</link>
     <description>Recent content in 凉拌云丝 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/%E5%87%89%E6%8B%8C%E4%BA%91%E4%B8%9D/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Dec 2009 21:18:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E5%87%89%E6%8B%8C%E4%BA%91%E4%B8%9D/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>凉拌云丝</title>
@@ -14,18 +17,10 @@
       <pubDate>Fri, 11 Dec 2009 21:18:00 +0000</pubDate>
       
       <guid>/2009/12/11/%E5%87%89%E6%8B%8C%E4%BA%91%E4%B8%9D/</guid>
-      <description>&lt;p&gt;好久没有做新菜了，前两天做了个凉拌云丝，反馈很好，也非常简单，分享一下：&lt;/p&gt;
+      <description>好久没有做新菜了，前两天做了个凉拌云丝，反馈很好，也非常简单，分享一下：
 
-&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/12/004.jpg&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px&#34; title=&#34;云丝 004&#34; border=&#34;0&#34; alt=&#34;云丝 004&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/12/004-thumb.jpg&#34; width=&#34;244&#34; height=&#34;184&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;烧开水，把云丝烫熟。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;2.小红米椒切成圈，放入大碗里，用筷子捞起云丝，放上适量的盐、生抽、糖、小麻油，再浇上一点红油，切点葱花（当时俺家没有），拌拌拌，O了！&lt;/p&gt;
-
-&lt;p&gt;北京冬季干，煮点白粥，云丝佐餐，简单却很舒服哦^^&lt;/p&gt;
-</description>
+ 烧开水，把云丝烫熟。  2.小红米椒切成圈，放入大碗里，用筷子捞起云丝，放上适量的盐、生抽、糖、小麻油，再浇上一点红油，切点葱花（当时俺家没有），拌拌拌，O了！
+北京冬季干，煮点白粥，云丝佐餐，简单却很舒服哦^^</description>
     </item>
     
   </channel>

@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>百花山 on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/%E7%99%BE%E8%8A%B1%E5%B1%B1/index.xml</link>
+    <link>/tags/%E7%99%BE%E8%8A%B1%E5%B1%B1/</link>
     <description>Recent content in 百花山 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/%E7%99%BE%E8%8A%B1%E5%B1%B1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jul 2009 22:37:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E7%99%BE%E8%8A%B1%E5%B1%B1/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>毕业倒计时</title>
@@ -14,24 +17,14 @@
       <pubDate>Sun, 05 Jul 2009 22:37:00 +0000</pubDate>
       
       <guid>/2009/07/05/%E6%AF%95%E4%B8%9A%E5%80%92%E8%AE%A1%E6%97%B6/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/07/biyefu.jpg&#34;&gt;&lt;img title=&#34;biyefu&#34; style=&#34;border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px&#34; height=&#34;329&#34; alt=&#34;biyefu&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/07/biyefu-thumb.jpg&#34; width=&#34;280&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.pku.edu.cn/homepage/notice/bdtz.html?id=45907&#34; target=&#34;_blank&#34;&gt;7月8号毕业典礼&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;7月5号，今天，星期天，早上六点起来，带着&lt;a href=&#34;http://li-and-jiang.com/blog/author/li/&#34; target=&#34;_blank&#34;&gt;Li&lt;/a&gt;和jUn爬&lt;a href=&#34;http://li-and-jiang.com/blog/2008/10/03/hiking-baihuashan/&#34; target=&#34;_blank&#34;&gt;百花山&lt;/a&gt;，来回车上八小时加上下山五小时。同行者，我的大学同学Yan、nQQ和辉辉，以及这次活动的组织者&lt;a href=&#34;http://www.kongcuo.com/&#34; target=&#34;_blank&#34;&gt;空错&lt;/a&gt;及其媳妇，还有刚认识的木鱼、天宝及其媳妇等。&lt;/p&gt;
-
-&lt;p&gt;7月4号，周六，跑早市跑超市整理内务。晚上，研究生同学的散伙饭，我楼下的眉州东坡。&lt;/p&gt;
-
-&lt;p&gt;7月3号，周五，白天公司略。晚上培训，八点多出来，与同事转到簋街找食。&lt;/p&gt;
-
-&lt;p&gt;7月2号，周四，白天公司略。晚上，&lt;a href=&#34;http://yihui.name/cn/&#34; target=&#34;_blank&#34;&gt;一辉&lt;/a&gt;博士的告别晚宴，楼下的眉州东坡。&lt;/p&gt;
-
-&lt;p&gt;7月1号，周三，上午，公司培训，京伦饭店。晚上与几个朋友，Ji-Na-Jing，赶&lt;a href=&#34;https://blog.aiweiwei.com/2009/06/30/284.htm&#34; target=&#34;_blank&#34;&gt;aiweiwei的流水席&lt;/a&gt;，朝阳，草场地。&lt;/p&gt;
-
-&lt;p&gt;6月30号，周二，一天培训，京伦饭店。&lt;/p&gt;
-
-&lt;p&gt;6月29号，周一，一天培训，京伦饭店。&lt;/p&gt;
-</description>
+      <description>7月8号毕业典礼。
+7月5号，今天，星期天，早上六点起来，带着Li和jUn爬百花山，来回车上八小时加上下山五小时。同行者，我的大学同学Yan、nQQ和辉辉，以及这次活动的组织者空错及其媳妇，还有刚认识的木鱼、天宝及其媳妇等。
+7月4号，周六，跑早市跑超市整理内务。晚上，研究生同学的散伙饭，我楼下的眉州东坡。
+7月3号，周五，白天公司略。晚上培训，八点多出来，与同事转到簋街找食。
+7月2号，周四，白天公司略。晚上，一辉博士的告别晚宴，楼下的眉州东坡。
+7月1号，周三，上午，公司培训，京伦饭店。晚上与几个朋友，Ji-Na-Jing，赶aiweiwei的流水席，朝阳，草场地。
+6月30号，周二，一天培训，京伦饭店。
+6月29号，周一，一天培训，京伦饭店。</description>
     </item>
     
   </channel>

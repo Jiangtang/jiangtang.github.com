@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>中秋 on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/%E4%B8%AD%E7%A7%8B/index.xml</link>
+    <link>/tags/%E4%B8%AD%E7%A7%8B/</link>
     <description>Recent content in 中秋 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/%E4%B8%AD%E7%A7%8B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Oct 2009 23:32:09 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E4%B8%AD%E7%A7%8B/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>中秋记</title>
@@ -14,12 +17,9 @@
       <pubDate>Sat, 03 Oct 2009 23:32:09 +0000</pubDate>
       
       <guid>/2009/10/03/%E4%B8%AD%E7%A7%8B%E8%AE%B0/</guid>
-      <description>&lt;p&gt;早早挖好一座窑。晚上就从周边的林子里捡来枯枝，或者干脆就折些鲜绿的枝条，一起投进去，生火。再找一根趁手的木棒，上端裹满柏油，一个火把就能做成了。于是一起攻入临近的村子，追着猪狗满村跑，终于被对方组织的反抗力量驱逐出来。&lt;/p&gt;
-
-&lt;p&gt;败北也不气馁，顺便光顾下他们村的甘蔗地。甘蔗跟桔子，到了中秋就熟了，就跟桃子，到端午才能吃一样。不想主人老远赶过来，一大勺的粪汁呼啸而至。赶紧嘻嘻哈哈地撤退。&lt;/p&gt;
-
-&lt;p&gt;带上随手掰过来的毛豆，一起放入火里烤。这时才有心情，说，看，头上的月亮是圆的。&lt;/p&gt;
-</description>
+      <description>早早挖好一座窑。晚上就从周边的林子里捡来枯枝，或者干脆就折些鲜绿的枝条，一起投进去，生火。再找一根趁手的木棒，上端裹满柏油，一个火把就能做成了。于是一起攻入临近的村子，追着猪狗满村跑，终于被对方组织的反抗力量驱逐出来。
+败北也不气馁，顺便光顾下他们村的甘蔗地。甘蔗跟桔子，到了中秋就熟了，就跟桃子，到端午才能吃一样。不想主人老远赶过来，一大勺的粪汁呼啸而至。赶紧嘻嘻哈哈地撤退。
+带上随手掰过来的毛豆，一起放入火里烤。这时才有心情，说，看，头上的月亮是圆的。</description>
     </item>
     
   </channel>

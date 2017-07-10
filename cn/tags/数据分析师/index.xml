@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>数据分析师 on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%88/index.xml</link>
+    <link>/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%88/</link>
     <description>Recent content in 数据分析师 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%88/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Dec 2009 22:09:54 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%88/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>WANTED: SAS程序员、数据分析师</title>
@@ -14,17 +17,8 @@
       <pubDate>Tue, 29 Dec 2009 22:09:54 +0000</pubDate>
       
       <guid>/2009/12/29/wanted-sas%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%88/</guid>
-      <description>&lt;p&gt;是几个公司的职位，地点北京，全职或实习生，我可以帮着中间撮合一下：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;数据分析师，强调数理背景，初级或者高级。&lt;/li&gt;
-&lt;li&gt;SAS程序员，这个要比较靠谱的，不仅仅是会套用几个proc。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;工作描述就不摆出来了，是医药/IT金融行业。感兴趣的朋友给我打电话或者发邮件，我们还可以顺便聊聊。&lt;/p&gt;
-</description>
+      <description>是几个公司的职位，地点北京，全职或实习生，我可以帮着中间撮合一下：
+  数据分析师，强调数理背景，初级或者高级。 SAS程序员，这个要比较靠谱的，不仅仅是会套用几个proc。   工作描述就不摆出来了，是医药/IT金融行业。感兴趣的朋友给我打电话或者发邮件，我们还可以顺便聊聊。</description>
     </item>
     
   </channel>

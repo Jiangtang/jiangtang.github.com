@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>工作 on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/%E5%B7%A5%E4%BD%9C/index.xml</link>
+    <link>/tags/%E5%B7%A5%E4%BD%9C/</link>
     <description>Recent content in 工作 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/%E5%B7%A5%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Dec 2010 23:09:48 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E5%B7%A5%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>2010年度总结</title>
@@ -14,127 +17,30 @@
       <pubDate>Thu, 30 Dec 2010 23:09:48 +0000</pubDate>
       
       <guid>/2010/12/30/2010%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</guid>
-      <description>
-
-&lt;blockquote&gt;
-&lt;h3 id=&#34;font-size-2-历史文档-font&#34;&gt;&lt;font size=&#34;2&#34;&gt;历史文档：&lt;/font&gt;&lt;/h3&gt;
-
-&lt;h3 id=&#34;font-size-2-em-生产任务完成情况-2009-em-font-http-li-and-jiang-com-blog-2009-12-06-review-2009&#34;&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/2009/12/06/review-2009/&#34;&gt;&lt;font size=&#34;2&#34;&gt;&lt;em&gt;生产任务完成情况：2009&lt;/em&gt;&lt;/font&gt;&lt;/a&gt;&lt;/h3&gt;
-
-&lt;h3 id=&#34;font-size-2-em-2008-随手盘点-em-font-http-li-and-jiang-com-blog-2008-12-13-2008-ef-bc-9a-e9-9a-8f-e6-89-8b-e7-9b-98-e7-82-b9&#34;&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/2008/12/13/2008%ef%bc%9a%e9%9a%8f%e6%89%8b%e7%9b%98%e7%82%b9/&#34;&gt;&lt;font size=&#34;2&#34;&gt;&lt;em&gt;2008：随手盘点&lt;/em&gt;&lt;/font&gt;&lt;/a&gt;&lt;/h3&gt;
-
-&lt;h3 id=&#34;font-size-2-em-2008-2009-向前看-向后看-一-em-font-http-li-and-jiang-com-blog-2009-01-01-2008-2009-ef-bc-9a-e5-90-91-e5-89-8d-e7-9c-8b-ef-bc-8c-e5-90-91-e5-90-8e-e7-9c-8b-ef-bc-88-e4-b8-80-ef-bc-89&#34;&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/2009/01/01/2008-2009%ef%bc%9a%e5%90%91%e5%89%8d%e7%9c%8b%ef%bc%8c%e5%90%91%e5%90%8e%e7%9c%8b%ef%bc%88%e4%b8%80%ef%bc%89/&#34;&gt;&lt;font size=&#34;2&#34;&gt;&lt;em&gt;2008-2009：向前看，向后看（一）&lt;/em&gt;&lt;/font&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;12月8号&lt;a href=&#34;http://li-and-jiang.com/blog/2010/12/08/hutou/&#34; target=&#34;_blank&#34;&gt;虎头&lt;/a&gt;出世，这一年我就没什么惊喜的事了。昨天在单位，把项目给结了，然后关电脑，回家休假。当时&lt;a href=&#34;http://www.jiangtanghu.com/blog/2010/12/30/a-sas-programmers-end-year-haiku/&#34; target=&#34;_blank&#34;&gt;做顺口溜一首&lt;/a&gt;，给大伙道新年愉快：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;In December my baby born&lt;br /&gt;
-my project deliveries followed on&lt;br /&gt;
-Now my computers shutdown&lt;br /&gt;
-do until(6 Jan 2011) I will be OOO&lt;br /&gt;
-Please take blessings from John&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;作为一个程序员，即使作顺口溜也不能不加注释。OOO是out of office，do until是SAS语言表示循环的一个语句，说直到1月6号我都不在办公室（我把这句发给同事，然后收到无数OOO的回复）。最后，John是我混外企的花名，读作“Jiang”。&lt;/p&gt;
-
-&lt;p&gt;为了取悦英文读者，这种顺口溜被叫做Haiku，翻译成中文叫“俳句”。但我写的可以是Haiku，但绝不敢称是俳句，中文就叫“顺口溜”。这是我一年来唯一的“文学作品”，记上一笔。&lt;/p&gt;
-
-&lt;p&gt;按照惯例，我会在年末做个总结，算是给朋友做一个简报，给自己留存一份记录。今年过得很简单，我升级了：&lt;a href=&#34;http://li-and-jiang.com/blog/2010/03/27/li-jiang/&#34; target=&#34;_blank&#34;&gt;年初我结婚&lt;/a&gt;，成为一位女子的丈夫；年末我们的&lt;a href=&#34;http://li-and-jiang.com/blog/2010/12/08/hutou/&#34; target=&#34;_blank&#34;&gt;孩子出生&lt;/a&gt;，我从此成为一个小男孩的父亲。这时我仍想摘录一句&lt;a href=&#34;http://li-and-jiang.com/blog/2010/10/23/father/&#34; target=&#34;_blank&#34;&gt;北岛的诗&lt;/a&gt;，表达这种传承的意味，这句诗写给父亲：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;你召唤我成为儿子，&lt;/p&gt;
-
-&lt;p&gt;我追随你成为父亲&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;u-生活-u&#34;&gt;&lt;strong&gt;&lt;u&gt;生活&lt;/u&gt;&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;&amp;#160;&lt;/p&gt;
-
-&lt;p&gt;这一年的生活，有一部分写进了这个&lt;a href=&#34;http://li-and-jiang.com/blog/&#34; target=&#34;_blank&#34;&gt;生活博客&lt;/a&gt;。近100篇，你可以在这里看到所有的历史存档：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/archives/&#34;&gt;http://li-and-jiang.com/blog/archives/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;u-读书-非技术类-u&#34;&gt;&lt;strong&gt;&lt;u&gt;读书(非技术类)&lt;/u&gt;&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;&amp;#160;&lt;/p&gt;
-
-&lt;p&gt;毕业后，几乎所有的阅读，都在地铁里完成。我有一个术语，就叫做“&lt;a href=&#34;http://li-and-jiang.com/blog/?s=%E5%85%AC%E8%BD%A6%E4%B8%8A%E4%B9%A6&#34; target=&#34;_blank&#34;&gt;公车上书&lt;/a&gt;”，说的就是在公车（公交车和地铁）上读书。现在的感触是，在地铁里读书，比在哪效率都高。人挤没关系，刚好帮助集中自己的精神。&lt;/p&gt;
-
-&lt;p&gt;这一年的阅读,数量相比往年不多。最大一块，集中在家里所有的古籍方面，包括《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/07/24/naming/&#34; target=&#34;_blank&#34;&gt;四书集注&lt;/a&gt;》、《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/12/18/yumu/&#34; target=&#34;_blank&#34;&gt;诗经&lt;/a&gt;》、《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/12/14/%E5%84%BF%E5%A5%B3%E6%88%90%E8%A1%8C/&#34; target=&#34;_blank&#34;&gt;世说新语&lt;/a&gt;》、《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/12/18/yumu/&#34; target=&#34;_blank&#34;&gt;史记&lt;/a&gt;》、《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/12/18/yumu/&#34; target=&#34;_blank&#34;&gt;老子·庄子·列子&lt;/a&gt;》、《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/05/09/buddha2/&#34; target=&#34;_blank&#34;&gt;金刚经&lt;/a&gt;》、《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/09/02/tang-poem/&#34; target=&#34;_blank&#34;&gt;唐诗百家全集&lt;/a&gt;》、《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/08/19/books/&#34; target=&#34;_blank&#34;&gt;李太白集·杜工部集&lt;/a&gt;》等。不是思古之幽情顿起，而是要为&lt;a href=&#34;http://li-and-jiang.com/blog/2010/12/18/yumu/&#34; target=&#34;_blank&#34;&gt;虎头取名字&lt;/a&gt;。这算是我这十多年来读书成果最大的一次。&lt;/p&gt;
-
-&lt;p&gt;然后是育儿经，包括&lt;a href=&#34;http://li-and-jiang.com/blog/2010/10/22/misc-3/&#34; target=&#34;_blank&#34;&gt;郑玉巧&lt;/a&gt;的两本，在&lt;a href=&#34;http://li-and-jiang.com/blog/2010/10/04/reading-at-sep-oct/&#34; target=&#34;_blank&#34;&gt;上海出差时读完&lt;/a&gt;了保罗·豪伶格《&lt;a href=&#34;http://book.douban.com/subject/4925604/&#34;&gt;不会说话的孩子想“说”什么&lt;/a&gt;》，还有就是龙应台的两本，《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/08/19/books/&#34; target=&#34;_blank&#34;&gt;孩子你慢慢来&lt;/a&gt;》和《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/10/04/reading-at-sep-oct/&#34; target=&#34;_blank&#34;&gt;亲爱的安德烈&lt;/a&gt;》。然后为了未雨绸缪，跟Li一起为出版社校读了两部译稿，《&lt;a href=&#34;http://book.douban.com/subject/4264859/&#34;&gt;孩童厌学：治疗师指南/父母自助手册&lt;/a&gt;》。&lt;/p&gt;
-
-&lt;p&gt;其他的就很零散，包括&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/2010/10/04/reading-at-sep-oct/&#34; target=&#34;_blank&#34;&gt;一部小说&lt;/a&gt;，&lt;em&gt;&lt;a href=&#34;http://book.douban.com/subject/3585180/&#34;&gt;Child 44&lt;/a&gt;&lt;/em&gt; by &lt;a href=&#34;http://en.wikipedia.org/wiki/Tom_Rob_Smith&#34;&gt;Tom Rob Smith&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;一部政治学，贡斯当的《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/11/12/farmer/&#34; target=&#34;_blank&#34;&gt;古代人的自由和现代人的自由&lt;/a&gt;》&lt;/p&gt;
-
-&lt;p&gt;一部伦理学，重读了彼得·辛格的《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/11/17/ethics/&#34; target=&#34;_blank&#34;&gt;实践伦理学&lt;/a&gt;》&lt;/p&gt;
-
-&lt;p&gt;一部经济学，重读亚当·斯密的《&lt;a href=&#34;http://li-and-jiang.com/blog/2010/05/26/ceremony-disintegration/&#34; target=&#34;_blank&#34;&gt;国富论&lt;/a&gt;》&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/2010/10/04/reading-at-sep-oct/&#34; target=&#34;_blank&#34;&gt;两部传记&lt;/a&gt;，冯至的《杜甫传》和李长之的《李白传》&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font style=&#34;background-color: #ffffff&#34;&gt;提一下《国富论》，我读的是台湾谢宗林和李华夏的繁体译本，顺便帮出版社的朋友做些校对的工作（也找了朋友帮忙），这书的简体字版刚&lt;a href=&#34;http://book.douban.com/subject/5348018/&#34; target=&#34;_blank&#34;&gt;由中央编译出版社出版&lt;/a&gt;。今年算是做了点编辑的工作。&lt;/font&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;u-工作-u&#34;&gt;&lt;strong&gt;&lt;u&gt;工作&lt;/u&gt;&lt;/strong&gt;&lt;/h2&gt;
-
-&lt;p&gt;&amp;#160;&lt;/p&gt;
-
-&lt;p&gt;正式工作二十来个月了。有时心不免浮躁，就打趣自己：“出道还不到两年呢”。问过很多朋友，很多都有这方面的忧虑，一方面我们工作年限太短（刚毕业不久），但一方面我们好像都很大了，研究生毕业出来都二十六二十七的，好像刚一出道就奔三十，然后打算要买房了、打算要结婚了、打算要小孩子了，——每一项都是让刚工作的人觉得压力很大。这些焦虑在参加工作后产生，期待能在工作中消融掉了。我认为工作状态更有利于人格的养成，在于它不再是一个单一的环境。&lt;/p&gt;
-
-&lt;p&gt;现在单兵工作还挺顺手，有时候想对自己要求更多。十一月份去上海参加了一个关于&lt;a href=&#34;http://li-and-jiang.com/blog/2010/11/09/leadership/&#34; target=&#34;_blank&#34;&gt;leadership&lt;/a&gt;的培训，让自己眼界开了不少（有一句话让我印象深刻，leadership is not a position; it is a choice）。但作为一个职场新手，我需要更多的是项目管理的积累，——又是时间，时间，时间。&lt;/p&gt;
-
-&lt;p&gt;更多的时候自己在观察学习，观察如何做一个好的领导，以及如何做一个糟糕的领导，这跟以前观察大量的父母一样，总有一天我们自己也要成为父母。而这些都跟阅读一样，大量阅读并不保证你能下笔成章，但至少能给你一个好的品味。这一年的工作有的地方做得不够从容，来年再战了。现在的要求是，身体力行，加上好的品味。眼高手低是大忌。&lt;/p&gt;
-
-&lt;h2 id=&#34;u-技术-u&#34;&gt;&lt;u&gt;技术&lt;/u&gt;&lt;/h2&gt;
-
-&lt;p&gt;&amp;#160;&lt;/p&gt;
-
-&lt;p&gt;作为一名技术人员，技术这饭碗时时不能丢下。有些技术人员，不满三十，一当上经理就鼓吹“技术无用论”，转去炒项目管理的概念去了，这是非常可惜的事情，想想他们在技术，一定还没有登堂入室，否则也不敢这么狂妄。技术出身，技术便是底子，跑掉自己的底子奢谈管理，跟那些MBA相比就没有任何优势了。我想大多数技术的深度和广度，都值得人持续投入。&lt;/p&gt;
-
-&lt;p&gt;我从文科生一路过来，深感自己技术底子薄弱，恶补不已。我那个工种叫SAS程序员，又叫统计分析师，每日代码为主，统计为辅。在SAS技术方面，上半年完成两件事，先后把SAS初级和高级的&lt;a href=&#34;http://www.jiangtanghu.com/cn/2010/04/08/sas-certification/&#34; target=&#34;_blank&#34;&gt;认证&lt;/a&gt;考下来了，其间把SAS SQL和SAS Macro的几本号称经典的书给读了。工作以后考认证，相当于找个机会让自己学习（有朋友说是“找个理由刺激下自己”），因为不需要那些认证给自己找工作。&lt;/p&gt;
-
-&lt;p&gt;今年技术失败的案例，也有，我还尝试去考过SAS BI Developer 的认证，大败而归。这刺激够大了，明年打算再考一个SAS Data Mining的认证，刺激给个大的。还有计划考一个Oracle SQL的认证，这档期，往后面排了。&lt;/p&gt;
-
-&lt;p&gt;下半年的技术阅读的重心在&lt;a href=&#34;http://www.jiangtanghu.com/cn/2010/10/17/math-prob-stat/&#34; target=&#34;_blank&#34;&gt;数学&lt;/a&gt;和&lt;a href=&#34;http://www.jiangtanghu.com/cn/2010/08/08/sas-stat/&#34; target=&#34;_blank&#34;&gt;基础统计学&lt;/a&gt;。有几个月的周末，我都去帮一个老师写代码，把他书里面的统计方法用SAS去给实现。那书应该明年能出来。从一个程序员的角度来看，统计学也是一个迷人的学科。&lt;/p&gt;
-
-&lt;p&gt;下半年&lt;a href=&#34;http://www.jiangtanghu.com/cn/2010/09/18/sas-cdisc-gathering/&#34; target=&#34;_blank&#34;&gt;去上海参加了一个行业技术大会&lt;/a&gt;，&lt;a href=&#34;http://www.cdisc.org/interchange-china#2329&#34; target=&#34;_blank&#34;&gt;CDISC Interchange China 2010&lt;/a&gt;，并有一个发言，_&lt;a href=&#34;http://www.jiangtanghu.com/blog/2010/10/07/xml-sas/&#34; target=&#34;_blank&#34;&gt;XML: The SAS Approach&lt;/a&gt;_。CDISC是临床研究的数据标准，XML是它的核心引擎，作为一个SAS程序员，我想的就是如何用SAS来处理它了。&lt;/p&gt;
-
-&lt;h2 id=&#34;u-技术写作-u&#34;&gt;&lt;u&gt;技术写作&lt;/u&gt;&lt;/h2&gt;
-
-&lt;p&gt;&amp;#160;&lt;/p&gt;
-
-&lt;p&gt;今年用电脑的机会比往年少，跟生活博客一样，技术博客写得不勤快，扳手指头也能数得过来：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;给“&lt;a href=&#34;http://cos.name&#34; target=&#34;_blank&#34;&gt;统计之都&lt;/a&gt;”写了4篇，&lt;a href=&#34;http://cos.name/author/hujiangtang/&#34;&gt;http://cos.name/author/hujiangtang/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;自家的中文博客写了10篇，&lt;a href=&#34;http://www.jiangtanghu.com/cn/archives/&#34;&gt;http://www.jiangtanghu.com/cn/archives/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;英文博客写了12篇，&lt;a href=&#34;http://www.jiangtanghu.com/blog/archives/&#34;&gt;http://www.jiangtanghu.com/blog/archives/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;我的技术博客集中在SAS与统计方面，都是自己时刻要用要思考的东西。十一时把自己关在家里，写了一篇&lt;a href=&#34;http://sgf2011.confnav.com/sgf2011/web/sessions/detail.html?id=20101023091009653775000000&#34; target=&#34;_blank&#34;&gt;会议论文&lt;/a&gt;，被明年的SAS全球论坛（&lt;a href=&#34;http://support.sas.com/events/sasglobalforum/2011/&#34; target=&#34;_blank&#34;&gt;SGF2011&lt;/a&gt;, April4-7, Las Vegas）接受。这将是我第一次参加这个SAS盛会，而我已经关注它好几年了。拜访真正的高手，才会让自己真正戒骄戒躁。&lt;/p&gt;
-
-&lt;p&gt;&amp;#160;&lt;/p&gt;
-
-&lt;p&gt;&amp;#8212;&amp;#8212;年度总结&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/p&gt;
-
-&lt;p&gt;每一年我都给自己定一个目标，比如，我2010年的目标是奥运口号：“&lt;a href=&#34;http://li-and-jiang.com/blog/2009/12/06/review-2009/&#34; target=&#34;_blank&#34;&gt;更高、更胖、更有钱&lt;/a&gt;”。现在年关将至，翻检一年，没高一公分，五六月的时候可能胖了两三斤，但到年末又给反弹回去了，增重计划，又一次以失败告终。有钱一说，更是无稽。这宏伟的奥运计划，明年再整了。拿一句话结束：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Year’s end is neither an end nor a beginning but a going&lt;br /&gt;
-on, with all the wisdom that experience can instill in us.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>历史文档： 生产任务完成情况：2009 2008：随手盘点 2008-2009：向前看，向后看（一）  12月8号虎头出世，这一年我就没什么惊喜的事了。昨天在单位，把项目给结了，然后关电脑，回家休假。当时做顺口溜一首，给大伙道新年愉快：
+ In December my baby born
+my project deliveries followed on
+Now my computers shutdown
+do until(6 Jan 2011) I will be OOO
+Please take blessings from John
+ 作为一个程序员，即使作顺口溜也不能不加注释。OOO是out of office，do until是SAS语言表示循环的一个语句，说直到1月6号我都不在办公室（我把这句发给同事，然后收到无数OOO的回复）。最后，John是我混外企的花名，读作“Jiang”。
+为了取悦英文读者，这种顺口溜被叫做Haiku，翻译成中文叫“俳句”。但我写的可以是Haiku，但绝不敢称是俳句，中文就叫“顺口溜”。这是我一年来唯一的“文学作品”，记上一笔。
+按照惯例，我会在年末做个总结，算是给朋友做一个简报，给自己留存一份记录。今年过得很简单，我升级了：年初我结婚，成为一位女子的丈夫；年末我们的孩子出生，我从此成为一个小男孩的父亲。这时我仍想摘录一句北岛的诗，表达这种传承的意味，这句诗写给父亲：
+ 你召唤我成为儿子，
+我追随你成为父亲
+ 生活 &amp;#160;
+这一年的生活，有一部分写进了这个生活博客。近100篇，你可以在这里看到所有的历史存档：
+ http://li-and-jiang.com/blog/archives/
+ 读书(非技术类) &amp;#160;
+毕业后，几乎所有的阅读，都在地铁里完成。我有一个术语，就叫做“公车上书”，说的就是在公车（公交车和地铁）上读书。现在的感触是，在地铁里读书，比在哪效率都高。人挤没关系，刚好帮助集中自己的精神。
+这一年的阅读,数量相比往年不多。最大一块，集中在家里所有的古籍方面，包括《四书集注》、《诗经》、《世说新语》、《史记》、《老子·庄子·列子》、《金刚经》、《唐诗百家全集》、《李太白集·杜工部集》等。不是思古之幽情顿起，而是要为虎头取名字。这算是我这十多年来读书成果最大的一次。
+然后是育儿经，包括郑玉巧的两本，在上海出差时读完了保罗·豪伶格《不会说话的孩子想“说”什么》，还有就是龙应台的两本，《孩子你慢慢来》和《亲爱的安德烈》。然后为了未雨绸缪，跟Li一起为出版社校读了两部译稿，《孩童厌学：治疗师指南/父母自助手册》。
+其他的就很零散，包括
+ 一部小说，Child 44 by Tom Rob Smith
+一部政治学，贡斯当的《古代人的自由和现代人的自由》
+一部伦理学，重读了彼得·辛格的《实践伦理学》
+一部经济学，重读亚当·斯密的《国富论》
+两部传记，冯至的《杜甫传》和李长之的《李白传》</description>
     </item>
     
     <item>
@@ -143,52 +49,27 @@ on, with all the wisdom that experience can instill in us.&lt;/p&gt;
       <pubDate>Sun, 21 Nov 2010 21:14:52 +0000</pubDate>
       
       <guid>/2010/11/21/%E5%B9%B4%E6%9C%AB%E5%AD%A6%E9%99%A2%E9%A3%8E/</guid>
-      <description>&lt;p&gt;1.&lt;/p&gt;
-
-&lt;p&gt;前些天晚上，与&lt;a href=&#34;http://li-and-jiang.com/blog/author/li/&#34;&gt;Li&lt;/a&gt;去人大校园散步。&lt;/p&gt;
-
-&lt;p&gt;自己两三年前也抱着书在校园走来走去，现在进自习室也不会显得太突兀。但是，真不知道自己还能不能恰当地理解学生的状态。小时候观察大人，说自己长大以后一定要有一颗&lt;strong&gt;理解儿童&lt;/strong&gt;的心思（那时候的意思是说，&lt;strong&gt;理解自己&lt;/strong&gt;）。等到自己长大，只记得自己也有这么一个儿童的状态，当时自己到底想些什么——这却也再也体会不到回味不到。——还好自己一会就有这么一个机会，我可以带着这些模糊的印象，好好与&lt;a href=&#34;http://li-and-jiang.com/blog/category/tiger/&#34;&gt;虎娃&lt;/a&gt;沟通下。&lt;/p&gt;
-
-&lt;p&gt;其实这种疏隔，做学生的时候就体会到了。那时候还比较自觉，既然已经找不回小时候的线索了，那自己现在就留些记录吧，省得以后又一样的陌生。初中高中大概留下来10来个本子，大学时有几个，后来快读研时，开始记些博客（所有历史存档，在&lt;a href=&#34;http://li-and-jiang.com/blog/archives/&#34;&gt;这里&lt;/a&gt;）。想这总该有些蛛丝马迹了，可以备查，——但那么些日记本，不知道封装在哪个箱子了，这些过去的网志，也很难得重新点开。总有新的生活，新的体验，新的折腾，以及新的纪录，过去总是沉没在页底。&lt;/p&gt;
-
-&lt;p&gt;2.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/2008/08/26/2009%EF%BC%9A%E6%B1%82%E8%81%8C%E6%97%A5%E8%AE%B0%E2%80%94%E2%80%94%E5%BC%80%E7%AF%87/&#34;&gt;2008年8月26号&lt;/a&gt;。研二结束的那个暑假，当时还在SAS中国研发中心实习。我建立了一个私有的google group，开始记录找工作的每一个细节。当时说：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;或科学种田，或IT民工，或金融小白脸，明年毕业前我总会有一个谋生的行当，但关注这个过程，可能会饶有兴致。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;里面有133篇文章，包括面试经历、简历、杂感和朋友的一些记录。2009年3月23号，这个邮件组停止更新，4月我去了现在服务的&lt;a href=&#34;http://jiangtanghu.com/&#34;&gt;药厂&lt;/a&gt;：没能去种田，也没有投身IT或金融。我只知道&lt;strong&gt;到时&lt;/strong&gt;自己会有一份谋生的饭碗。体会不到以前的细节，我只知道以前有那么一种状态；没法预测未来的模样，哪怕只是一年，我只知道未来也会有那么一种状态。&lt;/p&gt;
-
-&lt;p&gt;3.&lt;/p&gt;
-
-&lt;p&gt;昨天晚上，跟还在北大的两位博士朋友吃饭，社会学的leading，统计/计算机的chenY，以前我们一起做社团。chenY给我带来Stefan Wellek的_&lt;a href=&#34;http://www.amazon.com/Testing-Statistical-Hypotheses-Equivalence-Stefan/dp/1584881607&#34;&gt;Testing Statistical Hypotheses of Equivalence&lt;/a&gt;_，leading给带来Zar的&lt;a href=&#34;http://www.amazon.com/Biostatistical-Analysis-5th-Jerrold-Zar/dp/0131008463/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1290343142&amp;amp;sr=1-1&#34;&gt;&lt;em&gt;Biostatistical Analysis&lt;/em&gt;&lt;/a&gt;_：_在博士面前，我还是很有动力学习。现在我是把自己一头扎进生物统计里。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://qixianglu.cn/20101119130337.html&#34;&gt;forcode&lt;/a&gt;同学转了一篇南京大学数学系张高飞老师的文章，讲数学专业的研究生如何选专业。在提及完代数几何、几何、动力系统、组合数学后，说道：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;想大多数同学看到这儿之前已经找到了适合自己的专业了。可若仍有人羞怯的说他在中学时&lt;font color=&#34;#ff0000&#34;&gt;早恋&lt;/font&gt;，因此连中学的数学也没学好，我想告诉这部分同学不要怕。在我们系有专门为你们开设的一个专业：&lt;font color=&#34;#ff0000&#34;&gt;统计学&lt;/font&gt;。这一学科只要求懂得小学数学中的加减乘除四则运算就够了。更重要的是，选择这一专业的大多都是女同学。在你准确无误的把成千上万个数据加起来并娴熟的计算出他们的均值时，你也赢得了众多师姐师妹的芳心：短短三年的研究生生活或许能让你再次体会一次那如花美眷，似水流年的往事。。。&lt;/p&gt;
-
-&lt;p&gt;最后这一条是专门针对那些悲情人物的。他们连小学的数学也没学好。不要说把上千个数加起来，就是把两个数加起来，对他们来说都是件很吃力的事。然而这一切丝毫没有削弱他们对数学的一片痴情。&lt;font color=&#34;#ff0000&#34;&gt;他们日日夜夜泡在图书馆里。他们翻阅了所有的数学文献，却从未找到一本能读懂的。但他们仍坚持不懈，为的就是找到一个适合自己的专业。&lt;/font&gt;他们的行为感动了上帝。上世纪的某一天，上帝为他们创造了一台机器帮他们计算。这就是&lt;font color=&#34;#ff0000&#34;&gt;计算机&lt;/font&gt;。借助计算机，他们可以很快的进行加减乘除的运算。这就是计算数学。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;怎么越看越觉着是在影射自个呢？&lt;/p&gt;
-
-&lt;p&gt;4.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/author/li/&#34;&gt;Li&lt;/a&gt;给我带回两本她社里的书：《&lt;a href=&#34;http://book.douban.com/subject/5068097/&#34;&gt;计量经济学导论&lt;/a&gt;》和《&lt;a href=&#34;http://book.douban.com/subject/4826021/&#34;&gt;统计与金融&lt;/a&gt;》。&lt;/p&gt;
-
-&lt;p&gt;现在屋里摆了很多小家伙要用的东西。很多书只能搁床底下了。读不完的书，可以留给小家伙接着读。&lt;/p&gt;
-
-&lt;p&gt;读不读是一回事，买不买却是另一回事。&lt;/p&gt;
-
-&lt;p&gt;5.&lt;/p&gt;
-
-&lt;p&gt;现在地铁读书，效果似乎好于书桌，包括学校图书馆——如果你的注意力不在纸上，关注地铁车厢会让你窒息。&lt;/p&gt;
-
-&lt;p&gt;这并不表明自己的抗干扰能力强了。的确，在地铁，自己几乎可以是绝缘体；但在书桌、在沙发，我对安静的干扰的抵御能力又降到低点。&lt;/p&gt;
-</description>
+      <description>1.
+前些天晚上，与Li去人大校园散步。
+自己两三年前也抱着书在校园走来走去，现在进自习室也不会显得太突兀。但是，真不知道自己还能不能恰当地理解学生的状态。小时候观察大人，说自己长大以后一定要有一颗理解儿童的心思（那时候的意思是说，理解自己）。等到自己长大，只记得自己也有这么一个儿童的状态，当时自己到底想些什么——这却也再也体会不到回味不到。——还好自己一会就有这么一个机会，我可以带着这些模糊的印象，好好与虎娃沟通下。
+其实这种疏隔，做学生的时候就体会到了。那时候还比较自觉，既然已经找不回小时候的线索了，那自己现在就留些记录吧，省得以后又一样的陌生。初中高中大概留下来10来个本子，大学时有几个，后来快读研时，开始记些博客（所有历史存档，在这里）。想这总该有些蛛丝马迹了，可以备查，——但那么些日记本，不知道封装在哪个箱子了，这些过去的网志，也很难得重新点开。总有新的生活，新的体验，新的折腾，以及新的纪录，过去总是沉没在页底。
+2.
+2008年8月26号。研二结束的那个暑假，当时还在SAS中国研发中心实习。我建立了一个私有的google group，开始记录找工作的每一个细节。当时说：
+ 或科学种田，或IT民工，或金融小白脸，明年毕业前我总会有一个谋生的行当，但关注这个过程，可能会饶有兴致。
+ 里面有133篇文章，包括面试经历、简历、杂感和朋友的一些记录。2009年3月23号，这个邮件组停止更新，4月我去了现在服务的药厂：没能去种田，也没有投身IT或金融。我只知道到时自己会有一份谋生的饭碗。体会不到以前的细节，我只知道以前有那么一种状态；没法预测未来的模样，哪怕只是一年，我只知道未来也会有那么一种状态。
+3.
+昨天晚上，跟还在北大的两位博士朋友吃饭，社会学的leading，统计/计算机的chenY，以前我们一起做社团。chenY给我带来Stefan Wellek的_Testing Statistical Hypotheses of Equivalence_，leading给带来Zar的Biostatistical Analysis_：_在博士面前，我还是很有动力学习。现在我是把自己一头扎进生物统计里。
+forcode同学转了一篇南京大学数学系张高飞老师的文章，讲数学专业的研究生如何选专业。在提及完代数几何、几何、动力系统、组合数学后，说道：
+ 想大多数同学看到这儿之前已经找到了适合自己的专业了。可若仍有人羞怯的说他在中学时早恋，因此连中学的数学也没学好，我想告诉这部分同学不要怕。在我们系有专门为你们开设的一个专业：统计学。这一学科只要求懂得小学数学中的加减乘除四则运算就够了。更重要的是，选择这一专业的大多都是女同学。在你准确无误的把成千上万个数据加起来并娴熟的计算出他们的均值时，你也赢得了众多师姐师妹的芳心：短短三年的研究生生活或许能让你再次体会一次那如花美眷，似水流年的往事。。。
+最后这一条是专门针对那些悲情人物的。他们连小学的数学也没学好。不要说把上千个数加起来，就是把两个数加起来，对他们来说都是件很吃力的事。然而这一切丝毫没有削弱他们对数学的一片痴情。他们日日夜夜泡在图书馆里。他们翻阅了所有的数学文献，却从未找到一本能读懂的。但他们仍坚持不懈，为的就是找到一个适合自己的专业。他们的行为感动了上帝。上世纪的某一天，上帝为他们创造了一台机器帮他们计算。这就是计算机。借助计算机，他们可以很快的进行加减乘除的运算。这就是计算数学。
+ 怎么越看越觉着是在影射自个呢？
+4.
+Li给我带回两本她社里的书：《计量经济学导论》和《统计与金融》。
+现在屋里摆了很多小家伙要用的东西。很多书只能搁床底下了。读不完的书，可以留给小家伙接着读。
+读不读是一回事，买不买却是另一回事。
+5.
+现在地铁读书，效果似乎好于书桌，包括学校图书馆——如果你的注意力不在纸上，关注地铁车厢会让你窒息。
+这并不表明自己的抗干扰能力强了。的确，在地铁，自己几乎可以是绝缘体；但在书桌、在沙发，我对安静的干扰的抵御能力又降到低点。</description>
     </item>
     
     <item>
@@ -197,34 +78,19 @@ on, with all the wisdom that experience can instill in us.&lt;/p&gt;
       <pubDate>Sun, 22 Aug 2010 22:36:19 +0000</pubDate>
       
       <guid>/2010/08/22/%E4%BA%BA%E7%94%9F%E6%BB%A1%E8%B6%B3%E4%BA%A4%E6%8D%A2%E5%BE%8B1%E5%A4%A7%E5%85%AC%E5%8F%B8%E8%BF%98%E6%98%AF%E5%B0%8F%E5%85%AC%E5%8F%B8/</guid>
-      <description>&lt;p&gt;大概除了《人生》那部小说，在其他任何地方出现“人生”这个字样都有轻率之嫌，——那我们就不妨开开玩笑，说，人生满足交换律，比如，剔除贴现率的影响，你今天赚4毛钱，明天赚5毛钱，等于你今天赚5毛钱明天赚4毛钱（a + b = b + a）。&lt;/p&gt;
-
-&lt;p&gt;这里借用的是生命周期的概念(life cycle)，或许能给我们一些信心。人生有很多阶段，每个阶段都有很多选择，但最后，我们的每一个阶段都往往只对应了一个行动：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;有些人先近外企再私企，有些人先私企后外企；&lt;/p&gt;
-
-&lt;p&gt;有些人先读完博士再工作，某些人工作了再读博；&lt;/p&gt;
-
-&lt;p&gt;有些人先结婚再生小孩，有些人先小孩再结婚；&lt;/p&gt;
-
-&lt;p&gt;有些人先苦后甜，有些人先甜后苦；&lt;/p&gt;
-
-&lt;p&gt;有些人年轻时激进，老来保守，有些人少而老成，老而轻狂；&lt;/p&gt;
-
-&lt;p&gt;……&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font style=&#34;background-color: #fcfcfc&#34;&gt;最近大辉在讨论一个话题，“&lt;a href=&#34;http://www.dbanotes.net/jobs/howto_choose_company_style.html&#34;&gt;去大公司还是去小公司工作&lt;/a&gt;”，引起评论无数。其中“一个流行的观点”是：30岁之前最好进一趟国际级大公司，对眼光的高度、视野的宽度、思维的深度、职业化的专业程度都有助益，然后毫不犹豫地投身或创建小公司，永远也不要回去。——听着是蛮在理的，流行嘛。但根据我们的交换律，都一样，没啥好相互羡慕或相互鄙夷的。这称作“&lt;strong&gt;公司选择的次序无关定律&lt;/strong&gt;”。&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font style=&#34;background-color: #fcfcfc&#34;&gt;像“公司选择的次序&lt;font color=&#34;#ff0000&#34;&gt;无关&lt;/font&gt;定律”这样的定律被称作基准定律。考虑到贴现率（时间成本、人性不耐等等），这个模型可以相应调整，可以&lt;/font&gt;&lt;font style=&#34;background-color: #fcfcfc&#34;&gt;有两个“&lt;font color=&#34;#ff0000&#34;&gt;有关&lt;/font&gt;”推论。一个庸俗的假设，比如，一般地，去大公司赚5毛，去小公司赚4毛，那么&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font style=&#34;background-color: #fcfcfc&#34;&gt;1）推论1：先大公司（5毛）后小公司（4毛），比先小公司（4毛）后大公司（5毛）好；&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font style=&#34;background-color: #fcfcfc&#34;&gt;2）推论2：如果某人先小公司后大公司（5毛），比先大公司（5毛）后小公司（4毛）好，是因为他先小公司时赚了不止4毛；或者&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font style=&#34;background-color: #fcfcfc&#34;&gt;2‘）推论2’： 如果某人先小公司（4毛）后大公司，比先大公司（5毛）后小公司（4毛）好，是因为他后大公司时赚了不止5毛；&lt;/font&gt;&lt;/p&gt;
-</description>
+      <description>大概除了《人生》那部小说，在其他任何地方出现“人生”这个字样都有轻率之嫌，——那我们就不妨开开玩笑，说，人生满足交换律，比如，剔除贴现率的影响，你今天赚4毛钱，明天赚5毛钱，等于你今天赚5毛钱明天赚4毛钱（a + b = b + a）。
+这里借用的是生命周期的概念(life cycle)，或许能给我们一些信心。人生有很多阶段，每个阶段都有很多选择，但最后，我们的每一个阶段都往往只对应了一个行动：
+ 有些人先近外企再私企，有些人先私企后外企；
+有些人先读完博士再工作，某些人工作了再读博；
+有些人先结婚再生小孩，有些人先小孩再结婚；
+有些人先苦后甜，有些人先甜后苦；
+有些人年轻时激进，老来保守，有些人少而老成，老而轻狂；
+……
+ 最近大辉在讨论一个话题，“去大公司还是去小公司工作”，引起评论无数。其中“一个流行的观点”是：30岁之前最好进一趟国际级大公司，对眼光的高度、视野的宽度、思维的深度、职业化的专业程度都有助益，然后毫不犹豫地投身或创建小公司，永远也不要回去。——听着是蛮在理的，流行嘛。但根据我们的交换律，都一样，没啥好相互羡慕或相互鄙夷的。这称作“公司选择的次序无关定律”。
+像“公司选择的次序无关定律”这样的定律被称作基准定律。考虑到贴现率（时间成本、人性不耐等等），这个模型可以相应调整，可以有两个“有关”推论。一个庸俗的假设，比如，一般地，去大公司赚5毛，去小公司赚4毛，那么
+1）推论1：先大公司（5毛）后小公司（4毛），比先小公司（4毛）后大公司（5毛）好；
+2）推论2：如果某人先小公司后大公司（5毛），比先大公司（5毛）后小公司（4毛）好，是因为他先小公司时赚了不止4毛；或者
+2‘）推论2’： 如果某人先小公司（4毛）后大公司，比先大公司（5毛）后小公司（4毛）好，是因为他后大公司时赚了不止5毛；</description>
     </item>
     
     <item>
@@ -233,53 +99,21 @@ on, with all the wisdom that experience can instill in us.&lt;/p&gt;
       <pubDate>Sat, 14 Aug 2010 22:01:57 +0000</pubDate>
       
       <guid>/2010/08/14/%E6%AF%95%E4%B8%9A%E5%90%8E/</guid>
-      <description>&lt;p&gt;前些日子在地铁里翻本杂志，《科学新闻》（2010年13期），里面有胡适的一篇文章，《赠与今年毕业的大学生》（《独立评论》1932年7月3日），跟华科校长李培根（“根叔”）2010年毕业典礼致辞放在一块。近八十年过去了，这篇文章仍然给人启发，即使是对我这种毕业不久的###——现在，都不知道用什么词汇描述自己了，噫。&lt;/p&gt;
-
-&lt;p&gt;胡适说，大伙毕业之后，可走的路无非有：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;绝少数的人在国内，或者出国，继续做研究；&lt;/li&gt;
-&lt;li&gt;少数人能找到相当的工作；&lt;/li&gt;
-&lt;li&gt;此外还有做官、办党、革命三条路；&lt;/li&gt;
-&lt;li&gt;还有就是在家享福或者失业闲居。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;虽然每年毕业生继续读研读博的人不在少数，但大多数人的归宿仍然是非学术性工作，故第一条，做研究的，现在还是少数。胡适说只有少数人能找到相当的工作，大概说的是与自己兴趣/能力相当的工作，或者体面的工作，这个不好统计，每个人都有自己的想法，不过外表光鲜内心苦楚的所谓体面工作在当下不在少数，至于与自己能力相当，呵呵，据说大部分人对自己的判断都有拔高的倾向。&lt;/p&gt;
-
-&lt;p&gt;做官、办党、革命，到现在只剩考公务员一途了。有人说现在公务员是大学生的首选，——各位看官，千万不要说什么时代变了之类。学优或学混混，千年以来，大多读书人想的都是仕途，现在的大学生，人心很古。想想，清朝及清朝以前，读书人除了做官，还有就是做幕僚，剩下的，做教书匠，做闲人，仍然是攀着这一支，这跟人是否高蹈无关，社会给读书人的空间就这么点点。民国以来，读书人的路子多了起来，但走仕途的仍不是少数，胡适，做过驻美大使，也做国立北京大学校长，文学院教授，算是能够悠游游走的；鲁迅也曾在教育部谋过生计。当然，读书人还是终于杀出了一条相对独立的路数，做大学教授，中学老师，办报开书店，投身实业，或者在某个洋行做个书记也行。新中国以来，或者我们把现在跟以前划条线，以前，除了下放或坐牛棚，所有的读书人都在机关或者事业单位里。现在，读书人的路子看着又多起来，杀猪，出国，开网店，创业，给国企打工，给私企打工，给外企打工，但传统永存，公务员/机关仍然是香饽饽（念做xiang bei-bei）。批评现在的年轻人丢掉传统，实在是有失公允，我们一直是一根红线，贯穿到底。&lt;/p&gt;
-
-&lt;p&gt;又，现在，“读书人”的概念不好用了，就用大学生来指代吧。旁边的朋友或者会说，现在大学生不是满街都是吗？不知道大伙为什么会有这么大的口气。现在中国有不到一亿的大学文凭持有者，大概只有一半的年轻人能读上大学。这么丁点大学生，塞伟大祖国的牙缝都不够。现在有股不祥的“读书无用论”的思潮，实在是浅薄之见。有朋友说得好，如果学历是个屁，那么我们不能连个屁也没有，噫。&lt;/p&gt;
-
-&lt;p&gt;跑回来。胡适接着说，除了继续求学，其他几条路，都有堕落的危险。这不是说读研读博就没有堕落，只是说在学校里堕落，大伙都能容忍。“人生的道路上满是陷阱，堕落的方式很多”，胡适总结出主要的两种，一是“容易抛弃学生时代的求知识的欲望”，二是“容易抛弃学生时代的理想的人生的追求”。&lt;/p&gt;
-
-&lt;p&gt;怎么说？胡适还是有些理想主义气质，或者那个时代的大学还存有某些理想主义气质。我们的高校系统，一不能促进学生的求知欲望，二不能鼓励学生的理想主义追求。但高校里还是能够保有一些有求知欲有理想的年轻人，相互期许，并给旁边人以鼓舞或感动，到了社会，这一丁点即使是贫瘠的土壤也没了：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;到了实际社会里，往往所用非所学，往往所学全无用处，往往可以完全用不着学问，而一样可以胡乱混饭吃，混官做。在这种环境里，即使向来抱有求知识学问的决心的人，也不免心灰意懒，把求知的欲望渐渐冷淡下去。况且学问是要有相当的设备的；书籍，试验室，师友的切磋指导，闲暇的工夫，都不是一个平常要糊口养家的人所能容易办到的。&lt;/p&gt;
-
-&lt;p&gt;少年人初次与冷酷的社会接触，容易感觉理想与事实相去太远，容易发生悲观和失望。多年怀抱的人生理想，改造的热诚，奋斗的勇气，到此时候，好像全不是那么一回事，渺小的个人在那强烈的社会炉火里，往往经不起长时期的烤炼就熔化了，一点高尚的理想不久就幻灭了。抱着改造社会的梦想而来，往往是弃甲曳兵而走，或者做了恶力的俘虏。你在那俘虏牢狱里，回想那少年气壮时代的种种理想主义，好像都成了自误误人的迷梦！从此以后，你就甘心放弃理想人生的追求，甘心做现成社会的顺民了。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;接着胡适推荐了三个法子防御这两方面的堕落：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;总得时时寻一两个值得研究的问题！&lt;/li&gt;
-&lt;li&gt;总得多发展一点非职业的兴趣！&lt;/li&gt;
-&lt;li&gt;你总得有一点信心。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;听着是卑之无甚高论。感兴趣的是第二条，也经常跟朋友说过。是篇好文章，做回文抄公：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;离开学校之后,大家总得寻个吃饭的职业。可是你寻得的职业未必就是你所学的,或者未必是你所心喜的,或者是你所学而实在和你的性情不相近的。在这种状况之下,工作就往往成了苦工,就不感觉兴趣了。为糊口而作那种非&amp;rdquo;性之所近而力之所能勉&amp;rdquo;的工作,就很难保持求知的兴趣和生活的理想主义。最好的救济方法只有多多发展职业以外的正当兴趣与活动。一个人应该有他的职业,又应该有他的非职业的玩艺儿,可以叫做业余活动。凡一个人用他的闲暇来做的事业,都是他的业余活动。往往他的业余活动比他的职业还更重要,因为一个人的前程往往全靠他怎样用他的闲暇时间。他用他的闲暇来打麻将,他就成了赌徒;你用你的闲暇来做社会服务,你也许成个社会改革者;或者你用你的闲暇去研究历史,你也许成个史学家。你的闲暇往往定你的终身。&lt;/p&gt;
-
-&lt;p&gt;英国十九世纪的两个哲人,密尔终身做东印度公司的秘书,然而他的业余工作使他在哲学上、经济学上、政治思想史上都占一个很高的位置;斯宾塞是一个测量工程师,然而他的业余工作使他成为前世纪晚期世界思想界的一个重镇。古来成大学问的人,几乎没有一个不是善用他的闲暇时间的。特别在这个组织不健全的中国社会,职业不容易适合我们性惰,我们要想生活不苦痛或不堕落,只有多方发展业余的兴趣,使我们的精神有所寄托,使我们的剩余精力有所施展。有了这种心爱的玩艺儿,你就做六个钟头的抹桌子工夫也不会感觉烦闷了,因为你知道,抹了六点钟的桌子之后,你可以回家去做你的化学研究,或画完你的大幅山水,或写你的小说戏曲,或继续你的历史考据,或做你的社会改革事业。你有了这种称心如意的活动,生活就不枯寂了,精神也就不会烦闷了。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;你可以在这里看到全文，不过与我手头这个杂志版本还是有些出入：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.douban.com/group/topic/4748460/&#34;&gt;http://www.douban.com/group/topic/4748460/&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>前些日子在地铁里翻本杂志，《科学新闻》（2010年13期），里面有胡适的一篇文章，《赠与今年毕业的大学生》（《独立评论》1932年7月3日），跟华科校长李培根（“根叔”）2010年毕业典礼致辞放在一块。近八十年过去了，这篇文章仍然给人启发，即使是对我这种毕业不久的###——现在，都不知道用什么词汇描述自己了，噫。
+胡适说，大伙毕业之后，可走的路无非有：
+ 绝少数的人在国内，或者出国，继续做研究； 少数人能找到相当的工作； 此外还有做官、办党、革命三条路； 还有就是在家享福或者失业闲居。  虽然每年毕业生继续读研读博的人不在少数，但大多数人的归宿仍然是非学术性工作，故第一条，做研究的，现在还是少数。胡适说只有少数人能找到相当的工作，大概说的是与自己兴趣/能力相当的工作，或者体面的工作，这个不好统计，每个人都有自己的想法，不过外表光鲜内心苦楚的所谓体面工作在当下不在少数，至于与自己能力相当，呵呵，据说大部分人对自己的判断都有拔高的倾向。
+做官、办党、革命，到现在只剩考公务员一途了。有人说现在公务员是大学生的首选，——各位看官，千万不要说什么时代变了之类。学优或学混混，千年以来，大多读书人想的都是仕途，现在的大学生，人心很古。想想，清朝及清朝以前，读书人除了做官，还有就是做幕僚，剩下的，做教书匠，做闲人，仍然是攀着这一支，这跟人是否高蹈无关，社会给读书人的空间就这么点点。民国以来，读书人的路子多了起来，但走仕途的仍不是少数，胡适，做过驻美大使，也做国立北京大学校长，文学院教授，算是能够悠游游走的；鲁迅也曾在教育部谋过生计。当然，读书人还是终于杀出了一条相对独立的路数，做大学教授，中学老师，办报开书店，投身实业，或者在某个洋行做个书记也行。新中国以来，或者我们把现在跟以前划条线，以前，除了下放或坐牛棚，所有的读书人都在机关或者事业单位里。现在，读书人的路子看着又多起来，杀猪，出国，开网店，创业，给国企打工，给私企打工，给外企打工，但传统永存，公务员/机关仍然是香饽饽（念做xiang bei-bei）。批评现在的年轻人丢掉传统，实在是有失公允，我们一直是一根红线，贯穿到底。
+又，现在，“读书人”的概念不好用了，就用大学生来指代吧。旁边的朋友或者会说，现在大学生不是满街都是吗？不知道大伙为什么会有这么大的口气。现在中国有不到一亿的大学文凭持有者，大概只有一半的年轻人能读上大学。这么丁点大学生，塞伟大祖国的牙缝都不够。现在有股不祥的“读书无用论”的思潮，实在是浅薄之见。有朋友说得好，如果学历是个屁，那么我们不能连个屁也没有，噫。
+跑回来。胡适接着说，除了继续求学，其他几条路，都有堕落的危险。这不是说读研读博就没有堕落，只是说在学校里堕落，大伙都能容忍。“人生的道路上满是陷阱，堕落的方式很多”，胡适总结出主要的两种，一是“容易抛弃学生时代的求知识的欲望”，二是“容易抛弃学生时代的理想的人生的追求”。
+怎么说？胡适还是有些理想主义气质，或者那个时代的大学还存有某些理想主义气质。我们的高校系统，一不能促进学生的求知欲望，二不能鼓励学生的理想主义追求。但高校里还是能够保有一些有求知欲有理想的年轻人，相互期许，并给旁边人以鼓舞或感动，到了社会，这一丁点即使是贫瘠的土壤也没了：
+ 到了实际社会里，往往所用非所学，往往所学全无用处，往往可以完全用不着学问，而一样可以胡乱混饭吃，混官做。在这种环境里，即使向来抱有求知识学问的决心的人，也不免心灰意懒，把求知的欲望渐渐冷淡下去。况且学问是要有相当的设备的；书籍，试验室，师友的切磋指导，闲暇的工夫，都不是一个平常要糊口养家的人所能容易办到的。
+少年人初次与冷酷的社会接触，容易感觉理想与事实相去太远，容易发生悲观和失望。多年怀抱的人生理想，改造的热诚，奋斗的勇气，到此时候，好像全不是那么一回事，渺小的个人在那强烈的社会炉火里，往往经不起长时期的烤炼就熔化了，一点高尚的理想不久就幻灭了。抱着改造社会的梦想而来，往往是弃甲曳兵而走，或者做了恶力的俘虏。你在那俘虏牢狱里，回想那少年气壮时代的种种理想主义，好像都成了自误误人的迷梦！从此以后，你就甘心放弃理想人生的追求，甘心做现成社会的顺民了。
+ 接着胡适推荐了三个法子防御这两方面的堕落：
+ 总得时时寻一两个值得研究的问题！ 总得多发展一点非职业的兴趣！ 你总得有一点信心。  听着是卑之无甚高论。感兴趣的是第二条，也经常跟朋友说过。是篇好文章，做回文抄公：
+ 离开学校之后,大家总得寻个吃饭的职业。可是你寻得的职业未必就是你所学的,或者未必是你所心喜的,或者是你所学而实在和你的性情不相近的。在这种状况之下,工作就往往成了苦工,就不感觉兴趣了。为糊口而作那种非&amp;rdquo;性之所近而力之所能勉&amp;rdquo;的工作,就很难保持求知的兴趣和生活的理想主义。最好的救济方法只有多多发展职业以外的正当兴趣与活动。一个人应该有他的职业,又应该有他的非职业的玩艺儿,可以叫做业余活动。凡一个人用他的闲暇来做的事业,都是他的业余活动。往往他的业余活动比他的职业还更重要,因为一个人的前程往往全靠他怎样用他的闲暇时间。他用他的闲暇来打麻将,他就成了赌徒;你用你的闲暇来做社会服务,你也许成个社会改革者;或者你用你的闲暇去研究历史,你也许成个史学家。你的闲暇往往定你的终身。
+英国十九世纪的两个哲人,密尔终身做东印度公司的秘书,然而他的业余工作使他在哲学上、经济学上、政治思想史上都占一个很高的位置;斯宾塞是一个测量工程师,然而他的业余工作使他成为前世纪晚期世界思想界的一个重镇。古来成大学问的人,几乎没有一个不是善用他的闲暇时间的。特别在这个组织不健全的中国社会,职业不容易适合我们性惰,我们要想生活不苦痛或不堕落,只有多方发展业余的兴趣,使我们的精神有所寄托,使我们的剩余精力有所施展。有了这种心爱的玩艺儿,你就做六个钟头的抹桌子工夫也不会感觉烦闷了,因为你知道,抹了六点钟的桌子之后,你可以回家去做你的化学研究,或画完你的大幅山水,或写你的小说戏曲,或继续你的历史考据,或做你的社会改革事业。你有了这种称心如意的活动,生活就不枯寂了,精神也就不会烦闷了。
+ 你可以在这里看到全文，不过与我手头这个杂志版本还是有些出入：
+http://www.douban.com/group/topic/4748460/</description>
     </item>
     
     <item>
@@ -288,17 +122,8 @@ on, with all the wisdom that experience can instill in us.&lt;/p&gt;
       <pubDate>Tue, 29 Dec 2009 22:09:54 +0000</pubDate>
       
       <guid>/2009/12/29/wanted-sas%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%88/</guid>
-      <description>&lt;p&gt;是几个公司的职位，地点北京，全职或实习生，我可以帮着中间撮合一下：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;数据分析师，强调数理背景，初级或者高级。&lt;/li&gt;
-&lt;li&gt;SAS程序员，这个要比较靠谱的，不仅仅是会套用几个proc。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;工作描述就不摆出来了，是医药/IT金融行业。感兴趣的朋友给我打电话或者发邮件，我们还可以顺便聊聊。&lt;/p&gt;
-</description>
+      <description>是几个公司的职位，地点北京，全职或实习生，我可以帮着中间撮合一下：
+  数据分析师，强调数理背景，初级或者高级。 SAS程序员，这个要比较靠谱的，不仅仅是会套用几个proc。   工作描述就不摆出来了，是医药/IT金融行业。感兴趣的朋友给我打电话或者发邮件，我们还可以顺便聊聊。</description>
     </item>
     
     <item>
@@ -307,26 +132,16 @@ on, with all the wisdom that experience can instill in us.&lt;/p&gt;
       <pubDate>Thu, 10 Sep 2009 23:04:00 +0000</pubDate>
       
       <guid>/2009/09/10/%E7%90%83%E5%9C%BA%E5%8D%B3%E8%81%8C%E5%9C%BA/</guid>
-      <description>&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;场上的人随机分成两组。你还没来得及熟悉自己的队员，比赛就已经开始了。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;虽然没有明确规定每个队员的分工，但技术最好的队员很快就浮现出来（秩序产生了）。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;进球是一种乐趣。协助进球也是一种乐趣。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;有技术好的球员，也有技术烂的球员。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;有技术好RP好的球员，也有技术好RP不好的球员，——这里说的是“独”。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;有技术烂RP也烂的球员（技术烂+“独”）。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;被边缘化的标志是，他像透明人一样游走于球场。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;改变球场的初始秩序是一件很难的事情，技术烂的球员很少有练习的机会。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;技术好有技术好的乐趣。技术烂的队员一样也有乐趣，每个人进入球场，可能都带着不同的目的。&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+      <description> 场上的人随机分成两组。你还没来得及熟悉自己的队员，比赛就已经开始了。
+ 虽然没有明确规定每个队员的分工，但技术最好的队员很快就浮现出来（秩序产生了）。
+ 进球是一种乐趣。协助进球也是一种乐趣。
+ 有技术好的球员，也有技术烂的球员。
+ 有技术好RP好的球员，也有技术好RP不好的球员，——这里说的是“独”。
+ 有技术烂RP也烂的球员（技术烂+“独”）。
+ 被边缘化的标志是，他像透明人一样游走于球场。
+ 改变球场的初始秩序是一件很难的事情，技术烂的球员很少有练习的机会。
+ 技术好有技术好的乐趣。技术烂的队员一样也有乐趣，每个人进入球场，可能都带着不同的目的。
+  </description>
     </item>
     
     <item>
@@ -335,72 +150,15 @@ on, with all the wisdom that experience can instill in us.&lt;/p&gt;
       <pubDate>Tue, 01 Sep 2009 22:14:20 +0000</pubDate>
       
       <guid>/2009/09/01/%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAit%E5%B0%8F%E5%B0%8F%E9%B8%9F/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/09/bird2.jpg&#34;&gt;&lt;img style=&#34;display: block; float: none; margin-left: auto; margin-right: auto; border-width: 0px;&#34; title=&#34;bird2&#34; alt=&#34;bird2&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/09/bird2-thumb.jpg&#34; width=&#34;390&#34; height=&#34;531&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;就要印了，做回文抄公。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I. 我们的作者团队：&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;蒋宇东 现就职于上海某公司（C++程序员）博客：&lt;a href=&#34;http://blog.csdn.net/NewNebuladream&#34;&gt;http://blog.csdn.net/NewNebuladream&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;居振梁 博客：&lt;a href=&#34;http://wargrey.yo2.cn&#34;&gt;http://wargrey.yo2.cn&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;刘帅 现就职于Amazon（SDE-Test）博客：&lt;a href=&#34;http://lsthu.spaces.live.com/&#34;&gt;http://lsthu.spaces.live.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;李成 现就职于北京飞维美地信息技术有限公司（软件工程师）博客：&lt;a href=&#34;http://www.perlfect.org&#34;&gt;http://www.perlfect.org&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;温卫斌 现就职于中国农业银行软件开发中心 博客：&lt;a href=&#34;http://terry-pekingssm.spaces.live.com&#34;&gt;http://terry-pekingssm.spaces.live.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;胡江堂 现就职于赛诺菲巴斯德（SAS程序员）博客：&lt;a href=&#34;http://li-and-jiang.com/blog/&#34;&gt;http://li-and-jiang.com/blog/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;辜新星 现就职于Google（助理产品经理）博客：&lt;a href=&#34;http://guxinxing.blogbus.com/&#34;&gt;http://guxinxing.blogbus.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;刘未鹏 现就职于微软亚洲研究院（程序员）博客：&lt;a href=&#34;http://mindhacks.cn&#34;&gt;http://mindhacks.cn&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;唐雅薇 现就职于IBM中国研发中心（上海）博客：&lt;a href=&#34;http://cubbyvivi.blogbus.com/&#34;&gt;http://cubbyvivi.blogbus.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;张弦 现就职于百度（软件工程师）博客：&lt;a href=&#34;http://stonefish9.blogbus.com/&#34;&gt;http://stonefish9.blogbus.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;秦琴 现就职于中国银行 博客：&lt;a href=&#34;http://clalietsin.spaces.live.com/&#34;&gt;http://clalietsin.spaces.live.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;张凯峰 现就职于IBM中国软件开发中心（软件工程师）博客：&lt;a href=&#34;http://www.zhangkf.com&#34;&gt;http://www.zhangkf.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;庄表伟 博客：&lt;a href=&#34;http://www.zhuangbiaowei.cn&#34;&gt;http://www.zhuangbiaowei.cn&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;宋劲杉 现就职于北京亚嵌教育研究中心（讲师）博客：&lt;a href=&#34;http://songjinshan.is-programmer.com&#34;&gt;http://songjinshan.is-programmer.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;程露 博客：&lt;a href=&#34;http://roburite.spaces.live.com/&#34;&gt;http://roburite.spaces.live.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;黄小明 现就职于某外资企业（软件开发及项目管理）博客：&lt;a href=&#34;http://blog.csdn.net/view1024&#34;&gt;http://blog.csdn.net/view1024&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;易晓东 现就职于某电子商务网站（运营负责人）博客：&lt;a href=&#34;http://www.tomcat521.com&#34;&gt;http://www.tomcat521.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;简朝阳 现就职于阿里巴巴（MySQL &amp;amp; Oracle DBA）博客：&lt;a href=&#34;http://www.jianzhaoyang.com&#34;&gt;http://www.jianzhaoyang.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;林健 现于中国科学院计算技术研究所就读（硕博连读）博客：&lt;a href=&#34;http://blog.linjian.org&#34;&gt;http://blog.linjian.org&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;高昂 现于中科院地理所攻读博士学位 博客：&lt;a href=&#34;http://www.gaoang.com/&#34;&gt;http://www.gaoang.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;徐宥 现于Washington University 就读（博士）博客：&lt;a href=&#34;http://blog.youxu.info&#34;&gt;http://blog.youxu.info&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;II. 编辑许莹在她的&lt;/strong&gt;&lt;a href=&#34;http://floramay13.blogbus.com/logs/45529500.html&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;编辑心得&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;里说：&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;8月29日晚上，当我在推荐序的稿子上盖下“清样”章的时候，突然觉得很感动。想起小唐给我说：“我有一种养孩子的感觉”，其实，我也是的。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;III. 微软亚洲研究院技术创新中心研发经理&lt;/strong&gt;&lt;a href=&#34;http://www.yishan.cc&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;邹欣&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;老师&lt;/strong&gt;&lt;a href=&#34;http://www.china-pub.com/computers/common/Catalog.asp?IDD=196000&amp;shuming=%u6211%u662F%u4E00%u53EAIT%u5C0F%u5C0F%u9E1F(%u9884%u8BA2%u4E2D,%u4F30%u4EF7)&amp;type=7&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;推荐此书&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;说：&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;书中的许多故事常常让我幻想——如果我们的教育系统能多帮助他们一下,也许会有更多的学生能少走弯路,成为IT业快乐的小小鸟,甚至大鹏鸟！&lt;/p&gt;
-
-&lt;p&gt;希望更多学生.老师在看到这本书之后,能一起动手,让梦想早日成为现实。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;IV. 北京理工大学计算机学院的金旭亮老师的推荐语：&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;本书介绍了许多人的成长经历，对读者而言，的确是“他山之石，可以攻玉”。但另一方面，没有一个人的经历是可以复制的，因为环境不同，时代不同。更重要的是每个人都是独一无二的，而且世上万物时时刻刻都在变化当中。对于青年学生而言，不要看到书中某人做某件事有较大收获，然后你也想来个原样照搬。要仔细分析作者的个性、拥有的独特经历，再结合他当时所处的环境，弄明白他当时为何会做出某个决定。&lt;/p&gt;
-
-&lt;p&gt;写到这里，我不禁联想到中学语文课本中收录的名篇——《庖丁解牛》中庖丁所说的话：臣之所好者，道也；进乎技矣。&lt;/p&gt;
-
-&lt;p&gt;大道无术，其实成功的基本原则是相对稳定的，而走向成功的具体方法则因人因时因地而异。重读《庖丁解牛》，再看看书中各位作者的人生经历，是挺有意思的一件事。&lt;/p&gt;
-
-&lt;p&gt;希望书中这些“IT小小鸟”，最终都能成长为“遨游于九天之上”的“鲲鹏”。&lt;/p&gt;
-
-&lt;p&gt;也希望所有的读者，都能从书中受益，迈出人生向上的步伐！&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;V. 《我是一只IT小小鸟》豆瓣主页&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.douban.com/subject/4006425/&#34;&gt;http://www.douban.com/subject/4006425/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;VI. 《我是一只IT小小鸟》china-pub预订主页&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.china-pub.com/196000&#34;&gt;http://www.china-pub.com/196000&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>就要印了，做回文抄公。
+I. 我们的作者团队：
+ 蒋宇东 现就职于上海某公司（C++程序员）博客：http://blog.csdn.net/NewNebuladream 居振梁 博客：http://wargrey.yo2.cn 刘帅 现就职于Amazon（SDE-Test）博客：http://lsthu.spaces.live.com/ 李成 现就职于北京飞维美地信息技术有限公司（软件工程师）博客：http://www.perlfect.org 温卫斌 现就职于中国农业银行软件开发中心 博客：http://terry-pekingssm.spaces.live.com 胡江堂 现就职于赛诺菲巴斯德（SAS程序员）博客：http://li-and-jiang.com/blog/ 辜新星 现就职于Google（助理产品经理）博客：http://guxinxing.blogbus.com/ 刘未鹏 现就职于微软亚洲研究院（程序员）博客：http://mindhacks.cn 唐雅薇 现就职于IBM中国研发中心（上海）博客：http://cubbyvivi.blogbus.com/ 张弦 现就职于百度（软件工程师）博客：http://stonefish9.blogbus.com/ 秦琴 现就职于中国银行 博客：http://clalietsin.spaces.live.com/ 张凯峰 现就职于IBM中国软件开发中心（软件工程师）博客：http://www.zhangkf.com 庄表伟 博客：http://www.zhuangbiaowei.cn 宋劲杉 现就职于北京亚嵌教育研究中心（讲师）博客：http://songjinshan.is-programmer.com 程露 博客：http://roburite.spaces.live.com/ 黄小明 现就职于某外资企业（软件开发及项目管理）博客：http://blog.csdn.net/view1024 易晓东 现就职于某电子商务网站（运营负责人）博客：http://www.tomcat521.com 简朝阳 现就职于阿里巴巴（MySQL &amp;amp; Oracle DBA）博客：http://www.jianzhaoyang.com 林健 现于中国科学院计算技术研究所就读（硕博连读）博客：http://blog.linjian.org 高昂 现于中科院地理所攻读博士学位 博客：http://www.gaoang.com/ 徐宥 现于Washington University 就读（博士）博客：http://blog.youxu.info  II. 编辑许莹在她的编辑心得里说：
+ 8月29日晚上，当我在推荐序的稿子上盖下“清样”章的时候，突然觉得很感动。想起小唐给我说：“我有一种养孩子的感觉”，其实，我也是的。
+ III. 微软亚洲研究院技术创新中心研发经理邹欣老师推荐此书说：
+ 书中的许多故事常常让我幻想——如果我们的教育系统能多帮助他们一下,也许会有更多的学生能少走弯路,成为IT业快乐的小小鸟,甚至大鹏鸟！
+希望更多学生.老师在看到这本书之后,能一起动手,让梦想早日成为现实。
+ IV. 北京理工大学计算机学院的金旭亮老师的推荐语：
+ 本书介绍了许多人的成长经历，对读者而言，的确是“他山之石，可以攻玉”。但另一方面，没有一个人的经历是可以复制的，因为环境不同，时代不同。更重要的是每个人都是独一无二的，而且世上万物时时刻刻都在变化当中。对于青年学生而言，不要看到书中某人做某件事有较大收获，然后你也想来个原样照搬。要仔细分析作者的个性、拥有的独特经历，再结合他当时所处的环境，弄明白他当时为何会做出某个决定。</description>
     </item>
     
     <item>
@@ -409,72 +167,36 @@ on, with all the wisdom that experience can instill in us.&lt;/p&gt;
       <pubDate>Wed, 19 Aug 2009 23:29:00 +0000</pubDate>
       
       <guid>/2009/08/19/%E6%96%B0%E4%B9%A6%E9%A2%84%E5%91%8A-%E6%88%91%E6%98%AF%E4%B8%80%E5%8F%AAit%E5%B0%8F%E5%B0%8F%E9%B8%9F/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 一群IT小小鸟，来自十几所院校&lt;/p&gt;
+      <description>&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 一群IT小小鸟，来自十几所院校
+&amp;#160;&amp;#160;&amp;#160; 或科班，或非科班；或男生，或女生
+&amp;#160;&amp;#160;&amp;#160; 在失望中追求希望，在迷茫中辨别方向
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 祝愿亲爱的师弟师妹们
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 本科不虚度，考研少盲目
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 实习别耽误，求职心中有数
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 毕业≠失业，自己给自己做主
+ 我们跟武汉博文视点合作的书，《我是一只IT小小鸟》（胡江堂主编，李成、唐雅薇、秦琴副主编，北京：电子工业出版社，2009年9月），广告页也出来了（将出现在《程序员》杂志第九期），欢迎大伙围观。所谓小小鸟，羽翼未丰，但正如微软亚洲研究院的邹欣老师给本书的留言，他们也“开始敲打自己的命令行”。
 
-&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; 或科班，或非科班；或男生，或女生&lt;/p&gt;
-
-&lt;p&gt;&amp;#160;&amp;#160;&amp;#160; 在失望中追求希望，在迷茫中辨别方向&lt;/p&gt;
-
-&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 祝愿亲爱的师弟师妹们&lt;/p&gt;
-
-&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 本科不虚度，考研少盲目&lt;/p&gt;
-
-&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 实习别耽误，求职心中有数&lt;/p&gt;
-
-&lt;p&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 毕业≠失业，自己给自己做主&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;我们跟&lt;a href=&#34;http://blog.csdn.net/bvbook&#34; target=&#34;_blank&#34;&gt;武汉博文视点&lt;/a&gt;合作的书，《我是一只IT小小鸟》（胡江堂主编，李成、唐雅薇、秦琴副主编，北京：电子工业出版社，2009年9月），广告页也出来了（将出现在《程序员》杂志第九期），欢迎大伙围观。所谓小小鸟，羽翼未丰，但正如微软亚洲研究院的&lt;a href=&#34;http://yishan.cc/blogs/xin/&#34; target=&#34;_blank&#34;&gt;邹欣&lt;/a&gt;老师给本书的留言，他们也“开始敲打自己的命令行”。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/08/bird.jpg&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px&#34; title=&#34;Bird&#34; border=&#34;0&#34; alt=&#34;Bird&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/08/bird-thumb.jpg&#34; width=&#34;523&#34; height=&#34;689&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;俗话说“少壮不努力，长大干IT”，这本集子，收录了我身边二十多位朋友的成长轨迹，包括和我一样2009年毕业的应届生和一些有工作经验或出国读博的朋友，计算机背景，风格各异，归宿不一。我从经济学转软件工程，也以混迹IT圈为荣，书里也有一篇写自己这一路的经历。&lt;/p&gt;
-
-&lt;p&gt;说起这本书的故事，要追溯到上半年3月的某一个晚上，我跟Crazy Hou同学在万柳宿舍卧谈，那时我们刚定好工作意向，他要去上海摩根士丹利。我们聊起我们初来北大软件学院的志向与苦闷，也不时提起自己的本科经历，我们梳理影响自己的人和事，说各自的实习感受，说找工作的风风雨雨，说学校的教育制度，说各个公司的文化。这么一夜痛快淋漓地说出来，我们不由得总结道，要是研一或者更早，有师兄师姐能够这么提醒我们，这一路我们可能就会走得更从容更自觉。&lt;/p&gt;
-
-&lt;p&gt;现在我们都成师兄师姐了，或者我们能够在毕业之前，把这些经验教训留下。我联系上博文视点的&lt;a href=&#34;http://yeka.blogbus.com/&#34; target=&#34;_blank&#34;&gt;周筠&lt;/a&gt;老师（查看Gtalk记录，是3月16号），说我想召集些身边的朋友，应届生，计算机背景，在毕业之前，讲讲自己求学、实习、找工作等的经历与感悟，对本身是一个“立此存照”，是反思自己的一个好机会（再过些日子，我们的记忆就不会这么鲜活了），或许师弟师妹们还会对这些故事感兴趣。&lt;/p&gt;
-
-&lt;p&gt;接下来就是跟周老师还有&lt;a href=&#34;http://floramay13.blogbus.com/&#34; target=&#34;_blank&#34;&gt;许莹&lt;/a&gt;等编辑朋友的面对面交流，然后我们就去向身边的朋友约稿，向朋友的朋友约稿。为了体现IT从业人员的层次，我们还特意邀请几位有工作经验的朋友加入作者群，他们对IT产业与职场的认识，能够丰富我们的视野。&lt;/p&gt;
-
-&lt;p&gt;事情就这么结束，而我们都已经毕业。人所处的人生阶段不同，立场或视角就不一样。现在的我们要回顾自己的求学历程，可能就会用三言两语把它打发掉，但这些毕业之前的文字，写的都是自己作为学生自己感兴趣的东西，是自己作为学生认为重要的东西。这种体验不可能再现，所幸我们有记录留下，那不是事后的点评，而是亲历现场的报道。这个集子里，记录下的就是我们大学生活不能绕过的东西：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;专业/技术方向选择&lt;/p&gt;
-
-&lt;p&gt;社团活动&lt;/p&gt;
-
-&lt;p&gt;竞赛&lt;/p&gt;
-
-&lt;p&gt;实验室&lt;/p&gt;
-
-&lt;p&gt;实习&lt;/p&gt;
-
-&lt;p&gt;找工作&lt;/p&gt;
-
-&lt;p&gt;出国&lt;/p&gt;
-
-&lt;p&gt;技术社区&lt;/p&gt;
-
-&lt;p&gt;人际交往&lt;/p&gt;
-
-&lt;p&gt;时间管理&lt;/p&gt;
-
-&lt;p&gt;压力管理&lt;/p&gt;
-
-&lt;p&gt;……&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;有时候我们强调自身的独特性，我们兴趣各异，有不同的家庭背景，不一样的知识储备，不一样的思维方式，但过分强调这些差异也不现实，我们会碰到类似的人生选择的关口，我们会犯类似的错误，有类似的迷惘，也会为同样的精彩鼓掌，或者很明显地，在我们的作者群中，多少都跟计算机沾边，而IT本身就不是很大的圈子。在邀请作者时，我都会附上两句话，一句来自某本跟萨特相关的书，另一句来自博尔赫斯：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;这个青年的经历，只代表他个人，没有任何群体的意义。&lt;/p&gt;
-
-&lt;p&gt;我想写下一段自白,这自白既是我个人的,也具有普遍意义,因为一个人经历过的事情所有的人都可以经历。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;对每个作者而言，这本书写给自己，写给珍惜我们人生历程的朋友，也写给所有会有类似经历的师弟师妹。&lt;/p&gt;
-</description>
+俗话说“少壮不努力，长大干IT”，这本集子，收录了我身边二十多位朋友的成长轨迹，包括和我一样2009年毕业的应届生和一些有工作经验或出国读博的朋友，计算机背景，风格各异，归宿不一。我从经济学转软件工程，也以混迹IT圈为荣，书里也有一篇写自己这一路的经历。
+说起这本书的故事，要追溯到上半年3月的某一个晚上，我跟Crazy Hou同学在万柳宿舍卧谈，那时我们刚定好工作意向，他要去上海摩根士丹利。我们聊起我们初来北大软件学院的志向与苦闷，也不时提起自己的本科经历，我们梳理影响自己的人和事，说各自的实习感受，说找工作的风风雨雨，说学校的教育制度，说各个公司的文化。这么一夜痛快淋漓地说出来，我们不由得总结道，要是研一或者更早，有师兄师姐能够这么提醒我们，这一路我们可能就会走得更从容更自觉。
+现在我们都成师兄师姐了，或者我们能够在毕业之前，把这些经验教训留下。我联系上博文视点的周筠老师（查看Gtalk记录，是3月16号），说我想召集些身边的朋友，应届生，计算机背景，在毕业之前，讲讲自己求学、实习、找工作等的经历与感悟，对本身是一个“立此存照”，是反思自己的一个好机会（再过些日子，我们的记忆就不会这么鲜活了），或许师弟师妹们还会对这些故事感兴趣。
+接下来就是跟周老师还有许莹等编辑朋友的面对面交流，然后我们就去向身边的朋友约稿，向朋友的朋友约稿。为了体现IT从业人员的层次，我们还特意邀请几位有工作经验的朋友加入作者群，他们对IT产业与职场的认识，能够丰富我们的视野。
+事情就这么结束，而我们都已经毕业。人所处的人生阶段不同，立场或视角就不一样。现在的我们要回顾自己的求学历程，可能就会用三言两语把它打发掉，但这些毕业之前的文字，写的都是自己作为学生自己感兴趣的东西，是自己作为学生认为重要的东西。这种体验不可能再现，所幸我们有记录留下，那不是事后的点评，而是亲历现场的报道。这个集子里，记录下的就是我们大学生活不能绕过的东西：
+ 专业/技术方向选择
+社团活动
+竞赛
+实验室
+实习
+找工作
+出国
+技术社区
+人际交往
+时间管理
+压力管理
+……
+ 有时候我们强调自身的独特性，我们兴趣各异，有不同的家庭背景，不一样的知识储备，不一样的思维方式，但过分强调这些差异也不现实，我们会碰到类似的人生选择的关口，我们会犯类似的错误，有类似的迷惘，也会为同样的精彩鼓掌，或者很明显地，在我们的作者群中，多少都跟计算机沾边，而IT本身就不是很大的圈子。在邀请作者时，我都会附上两句话，一句来自某本跟萨特相关的书，另一句来自博尔赫斯：
+ 这个青年的经历，只代表他个人，没有任何群体的意义。
+我想写下一段自白,这自白既是我个人的,也具有普遍意义,因为一个人经历过的事情所有的人都可以经历。
+ 对每个作者而言，这本书写给自己，写给珍惜我们人生历程的朋友，也写给所有会有类似经历的师弟师妹。</description>
     </item>
     
     <item>
@@ -483,18 +205,12 @@ on, with all the wisdom that experience can instill in us.&lt;/p&gt;
       <pubDate>Fri, 17 Apr 2009 23:38:47 +0000</pubDate>
       
       <guid>/2009/04/17/%E5%B7%A5%E4%BD%9C%E7%AC%AC%E4%B8%80%E5%91%A8/</guid>
-      <description>&lt;p&gt;今天是晚上十点到的家。六点下班，跟同事一起吃饭，康师傅私房钱买方便面(master kang chef&amp;#8217;s table)。一起回来开会，跟另外两方同事协调的时间。回家，地铁总算有座。&lt;/p&gt;
-
-&lt;p&gt;这些日子，上班的第一周，是努力理解我这个行业。亲爱的朋友，我投身药厂了。我妈早就说过：大学毕业，进厂子，好好做。这下，我终于进“厂”了。上班下班，回来就是吃饭，开机器，查邮件，回邮件——过会有好玩的计划跟大伙分享，很快就整理好。&lt;/p&gt;
-
-&lt;p&gt;这些日子，几个例外。昨天，16号，晚上，跟li去楼下的金逸看了一场电影，《东邪西毒》（终极版）。我以前没看过非终极版，这次也是新鲜的体验。跟li约好，她要写一篇类似“东邪西毒：给男人的建议”，我呢，打算写“东邪西毒：给女人的建议”，——又是一则广告了。&lt;/p&gt;
-
-&lt;p&gt;还有前天，15号，晚上，&lt;a href=&#34;http://achyia.spaces.live.com/&#34; target=&#34;_blank&#34;&gt;小齐&lt;/a&gt;、&lt;a href=&#34;http://www.douban.com/people/vikingbook/notes&#34; target=&#34;_blank&#34;&gt;Viking&lt;/a&gt;和&lt;a href=&#34;http://mimisea.spaces.live.com/&#34; target=&#34;_blank&#34;&gt;小米&lt;/a&gt;、Taotao过来，一起做饭吃饭聊天。 &lt;a href=&#34;http://www.douban.com/people/vikingbook/notes&#34; target=&#34;_blank&#34;&gt;Viking&lt;/a&gt;送我们一本他新编的书，《&lt;a href=&#34;http://www.douban.com/subject/3598301/?i=1&#34; target=&#34;_blank&#34;&gt;阅读的女人&lt;/a&gt;》：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/04/9d780f7af254.jpg&#34;&gt;&lt;img title=&#34;阅读的女人&#34; style=&#34;border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px&#34; height=&#34;244&#34; alt=&#34;阅读的女人&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/04/thumb.jpg&#34; width=&#34;180&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&amp;#160;&lt;/p&gt;
-
-&lt;p&gt;恩，还有大前天，14号，晚上，小唐和Crazy Hou过来，又是一起聊天，喝水——我们一口气喝了两升的葡萄汁。却说这次聊天的内容，跟我前面提到的计划有关，按下不表。&lt;/p&gt;
-</description>
+      <description>今天是晚上十点到的家。六点下班，跟同事一起吃饭，康师傅私房钱买方便面(master kang chef&amp;#8217;s table)。一起回来开会，跟另外两方同事协调的时间。回家，地铁总算有座。
+这些日子，上班的第一周，是努力理解我这个行业。亲爱的朋友，我投身药厂了。我妈早就说过：大学毕业，进厂子，好好做。这下，我终于进“厂”了。上班下班，回来就是吃饭，开机器，查邮件，回邮件——过会有好玩的计划跟大伙分享，很快就整理好。
+这些日子，几个例外。昨天，16号，晚上，跟li去楼下的金逸看了一场电影，《东邪西毒》（终极版）。我以前没看过非终极版，这次也是新鲜的体验。跟li约好，她要写一篇类似“东邪西毒：给男人的建议”，我呢，打算写“东邪西毒：给女人的建议”，——又是一则广告了。
+还有前天，15号，晚上，小齐、Viking和小米、Taotao过来，一起做饭吃饭聊天。 Viking送我们一本他新编的书，《阅读的女人》：
+&amp;#160;
+恩，还有大前天，14号，晚上，小唐和Crazy Hou过来，又是一起聊天，喝水——我们一口气喝了两升的葡萄汁。却说这次聊天的内容，跟我前面提到的计划有关，按下不表。</description>
     </item>
     
   </channel>

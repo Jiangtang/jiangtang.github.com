@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sas on Jiangtang Hu | 胡江堂</title>
-    <link>/categories/sas/index.xml</link>
+    <link>/categories/sas/</link>
     <description>Recent content in Sas on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/categories/sas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Aug 2012 11:47:36 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/sas/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>去美国工作：简单问答</title>
@@ -14,134 +17,44 @@
       <pubDate>Mon, 13 Aug 2012 11:47:36 +0000</pubDate>
       
       <guid>/2012/08/13/%E5%8E%BB%E7%BE%8E%E5%9B%BD%E5%B7%A5%E4%BD%9C%E7%AE%80%E5%8D%95%E9%97%AE%E7%AD%94/</guid>
-      <description>
-
-&lt;p&gt;这半年断断续续跟一些朋友聊，如何在北京找美国的工作。几番电话邮件下来，发现自己重复了不少东西，这里索性一起整理下。&lt;/p&gt;
-
-&lt;p&gt;在北京拿学位，跟留学生相比，最大的劣势是，我们可能根本没有去美国工作的念头。我09年毕业，甚至都没有去上海工作的想法。对我来说，北京上学，北京工作，似乎就是一种默认的状态。其实对美国雇主来说，你在北京拿学位，跟留学生在法律身份上是一样的(都是H1b)。只是留学生跟我们一样，默认的找工作地点就定在美国，然后才是其他优势，比如英语说得多些，面试也方便些等等，——但是，你看到，这些东西也不是排他性/独断性的。&lt;/p&gt;
-
-&lt;p&gt;我身边接触的在国内拿学位，然后去美国工作的朋友，有这么几种类型：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;公司内部转岗：这个很直接，跨国企业（大小无所谓）里有这个机会&lt;/li&gt;
-&lt;li&gt;在国内直接申请&lt;/li&gt;
-&lt;li&gt;国内公司外派，包括人力资源外包&lt;/li&gt;
-&lt;li&gt;以亲属、访问学者身份去美国，然后直接在美国找工作&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;我讲纯DIY的第二种。先说一下美国当前的经济形势。我不是这方面的专家，纯个人观察而已。美国经济现是在复苏，不过就业形势还不乐观，——先不用着急，说到就业形势，那是宏观经济学的概念，是要解决的是好几百万人的就业问题，但在具体的科技（IT+数学/统计等理工科）领域，美国还是开工不足，需要大量从中国和印度招人，这里的“大量”，就是每年好几万的概念（具体数字我没查，3-5万？）。所以在这个细分市场，形势不会那么紧张，而且在硅谷，对来自中国和印度的工程师需求一直很旺盛。以下具体说些，不分重点。&lt;/p&gt;
-
-&lt;h1 id=&#34;基本流程&#34;&gt;基本流程&lt;/h1&gt;
-
-&lt;ol&gt;
-&lt;li&gt;面试；如果成功，公司给offer。&lt;/li&gt;
-&lt;li&gt;公司向美国劳工部门申请名额；如果成功，会寄过来一些法律文件，I-797之类，这个你现在可以不研究。&lt;/li&gt;
-&lt;li&gt;自己申请签证，出行。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;第三步跟自己出国旅行一样准备就行，第二步，一般公司会聘一个律师来处理，自己跟着做准备材料就是，现在不必操心。其实关键是第一步，而这就跟我们找任何一份工作一样，找机会，准备面试。&lt;/p&gt;
-
-&lt;p&gt;我说跟国内找工作一样，是因为，即使我能在美国找到一份工作，在国内面试其他企业，也一样存在被刷的可能。每个人需要的只是“一”份工作而已，去美国找，不比国内易，也不比国内难。&lt;/p&gt;
-
-&lt;p&gt;查了下个人记录，都是去年的事：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/2011/04/06/sasgf11/&#34; target=&#34;_blank&#34;&gt;4月初去美国开会&lt;/a&gt;，拉斯维加斯，在会场上见到我现在的老板，闲聊了一会。&lt;/p&gt;
-
-&lt;p&gt;同年5月，上旬，一位在加州的朋友问我感不感兴趣去美国工作，他几年前从法国去的美国，正要辞职，想让我顶替。我当然来了兴致，就一直跟加州联系。由于最终没有接受加州的offer，这一支的故事就不讲了（后来我再把这个职位推荐了一个去美国旅行兼找机会的朋友，可惜未成）。&lt;/p&gt;
-
-&lt;p&gt;5月中旬，我写邮件问北卡，就是我现在的单位，有没有空缺职位。&lt;/p&gt;
-
-&lt;p&gt;北卡这边到7月初才给我答复，说可以看看。7月中旬我正式提交简历，而这之前我给他们看过我的博客之类。&lt;/p&gt;
-
-&lt;p&gt;北卡的面试在8月初，谈过两轮，用了电话+Skype视频。8月底正式拿到offer。这是第一阶段。&lt;/p&gt;
-
-&lt;p&gt;然后就一直跟公司请的律师联系，准备各种第二阶段的材料（学历证明之类），到11月初，正式拿到美国劳工部门的类似批文，叫做I-797的表格。有了这份表格，我就可以去美国大使馆申请签证了。&lt;/p&gt;
-
-&lt;p&gt;第三阶段，我12月中旬拿到签证，2012年1月1号离开的北京。然后我在原单位的最后一天是2011年12月31号（实际上31号我请了一天年假，所以物理存在的最后一天是30号）。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;现在回顾一下，&lt;font style=&#34;background-color: #fcfcfc&#34;&gt;我拿北卡的offer时间（8月份）有点晚，在第二阶段，公司多花了几千块钱，在劳工部办了一个所谓快速审批的服务，所以能够在11月份审批下来（到那个时候，年度份额可能都快用完了）。要是上半年拿到offer，下半年准备材料，时间就比较松快些。&lt;/font&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;学历&#34;&gt;学历&lt;/h1&gt;
-
-&lt;p&gt;教育背景很重要，本科以上吧：从信号传递的角度来看，硕士拿出来就比本科要好听些，博士更要比硕士好看，而且大量集中在上面提到的IT+数学/统计等理工科里面。当我提到大量、大多，就是从整个人群里，那个群体的机会大些。如果你不处在这个胜算大的群体里，你就需要在其他方面有超强的资质来补充。&lt;/p&gt;
-
-&lt;p&gt;然后毕业院校，我的感觉是不那么重要。毕业于北大清华当然是加分项目，但是大多数人不是从那里毕业的。美国的大学教授会对中国的大学多些了解，但对大多数雇主来说，知道有北大清华也算是有国际视野了。&lt;/p&gt;
-
-&lt;p&gt;当然，毕业院校，还是有些底线要求的，比如，这个学校是有资质颁发大学毕业证书的，美国那边也有学位认证的机构。&lt;/p&gt;
-
-&lt;h1 id=&#34;技能&#34;&gt;技能&lt;/h1&gt;
-
-&lt;p&gt;这个问题是，在国内接受的专业教育，能够胜任美国的工作吗？&lt;/p&gt;
-
-&lt;p&gt;这个好回答，有的可以，有的不可以，因人而异，有些人还不能胜任北京的工作呢。就我稍微熟悉的IT+数学/统计领域，大伙也接触英文教材，用的计算机CPU也一样，网络也（_可以_）一样，说不能胜任就有些气短了（当然是类似的工种）。在跨国公司呆过的朋友，这点会有更多体会。&lt;/p&gt;
-
-&lt;p&gt;关于是否能胜任，补充一句，if you can make it here, you can make it anywhere.&lt;/p&gt;
-
-&lt;h1 id=&#34;英语&#34;&gt;英语&lt;/h1&gt;
-
-&lt;p&gt;英语重要吗？当然是非常重要。但要掌握到什么程度，这个不好说，但至少不会是最重要的：英语好的，美国本土有的是。所以对个人而言，能多好就多好，底线就是顺利完成面试。&lt;/p&gt;
-
-&lt;p&gt;还有，去美国工作不需要英语成绩，不需要托福、GRE之类。当然，有比没好，多比少好。&lt;/p&gt;
-
-&lt;p&gt;对我个人来说，英语口语稍逊，但写得多，也算是能平衡一点了。&lt;/p&gt;
-
-&lt;h1 id=&#34;面试&#34;&gt;面试&lt;/h1&gt;
-
-&lt;p&gt;如果有机会去美国面试，这是最好不过的情形。对双方成本都低的，就是电话面试。&lt;/p&gt;
-
-&lt;p&gt;面试其实都差不多，在国内找工作，有时也得英语面。你在国内面试成功的经验，几乎可以照搬过来，无非突出自己能干活，会沟通以及其他加分的项目。&lt;/p&gt;
-
-&lt;p&gt;跨洋通话，保持信号流畅很重要。Skype效果很好，如果对方可以不用电话的话。&lt;/p&gt;
-
-&lt;h1 id=&#34;薪水&#34;&gt;薪水&lt;/h1&gt;
-
-&lt;p&gt;其实薪水是最不需要担心的事，如果对方是一家正规公司的话，不论大小。碰上卖人的公司（外包），那就要小心点。&lt;/p&gt;
-
-&lt;p&gt;这份薪水非常透明，几乎可以google到。首先，它不会太高，否则公司不高兴。然后它也不会太低，否则美国老百姓不高兴。怎么说？招募外国人，直接得就影响美国人的就业（抢饭碗啊），所以美国劳工部门把这薪水盯得紧：太低了不就是鼓励公司去海外招人吗？最后这份薪水，大致就是市场的正常水平。&lt;/p&gt;
-
-&lt;p&gt;说是正常水平，但其实还是有一定的讨价还价的余地的，只要最后双方相谈甚欢。而且跟国内一样，最好的讨价还价策略是手头还有另一个offer。&lt;/p&gt;
-
-&lt;p&gt;在技术领域，一般薪水还可以，远远达不到在美国领政府救济的标准。&lt;/p&gt;
-
-&lt;h1 id=&#34;福利&#34;&gt;福利&lt;/h1&gt;
-
-&lt;p&gt;同上，只要薪水正常，其他福利，如医疗保险之类，都是跟公司一起走，而且外国人的身份也没有任何影响。&lt;/p&gt;
-
-&lt;p&gt;还有，可以向公司要求搬家补助。&lt;/p&gt;
-
-&lt;h1 id=&#34;渠道&#34;&gt;渠道&lt;/h1&gt;
-
-&lt;p&gt;说到这里，其实唯一需要操心的只是面试一关。而这之前，找到真实有效的招聘信息最为重要。信息流向分两种，山向穆罕默德走去，或者穆罕默德向山走去。&lt;/p&gt;
-
-&lt;p&gt;向山走去，就是直接跟用人单位接触，比如一起开个技术会议，写邮件直接询问。&lt;/p&gt;
-
-&lt;p&gt;让山走过来，在web2.0的时代，就是写博客，在邮件组发言，参加开源活动等等，总之，最好让雇主知道，自己是真实存在的！&lt;/p&gt;
-
-&lt;p&gt;能够想象，如果我们直接从北京申请美国的公司，对美方公司来说，我们的存在感是很弱的。互联网的存在主义，就是能够搜索到的，存在感就强一些。增加存在感的，比如，至少得有一个显示真实姓名的、联系人数大于2的LinkedIn页面！&lt;/p&gt;
-
-&lt;p&gt;说到存在感，对方公司的google存在也是你需要看看的。&lt;/p&gt;
-
-&lt;h1 id=&#34;人品&#34;&gt;人品&lt;/h1&gt;
-
-&lt;p&gt;什么时候人品都很重要。我是说，找工作时，雇主一般会要求你提供两个人做reference check。我毕业找工作时，给巴斯德提供了三位联系人，在北大的导师、一位清华的教授以及一位SAS北京的前同事。去年找现在这份工作，我给单位提供了两位，一位巴斯德同事、一位SAS美国的朋友（为了增加他们的存在感，我也附上了他们的LinkedIn页面链接）。虽然我人品存在递减的趋势（3—&amp;gt;2），但还是可以找到一些启示：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;目前工作单位很重要！几乎毫无例外地，雇主喜欢提到你的现任同事对你的看法，意思是说，在单位里，你至少得找到一位不会用英语拆你台的同事。&lt;/li&gt;
-&lt;li&gt;有在美国的朋友帮你说好话也是加分项目。这大概跟留学找人写推荐信一样。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&#34;行动行动&#34;&gt;行动行动&lt;/h1&gt;
-
-&lt;p&gt;去年上半年，我对出国的概念，还停留在旅行或者留学上面，那时还跟Crazy Hou讨论过去美国念博士的想法，而且居然考了一次成绩不光彩的GRE。等有朋友提醒其实可以尝试直接出国工作，我的热情一下子被激起。整个过程一路有朋友帮忙，对我个人来说，是不能简单用幸运来概括的。&lt;/p&gt;
-
-&lt;p&gt;那时我没也没多少概念，行动行动就是。我们当然可以做更多的研究，然后成为出国咨询专家，但这就不必出去了，在北京将有这更辉煌的人生（新东方、老罗、李笑来。。。）。其实在这个时候，倒是应该问问自己问什么想出去看看（_这是一个大问题，或者甚至不是一个问题_）。&lt;/p&gt;
-
-&lt;p&gt;假设你已经想出去工作，最后还有一则故事结尾：&lt;/p&gt;
-
-&lt;p&gt;某君天天祈祷，上帝或者其他神灵，说保佑我中彩票云云。上帝心感其诚，终于显灵，拨开云端对他说：大哥，要中彩票，您也得先买一张啊。&lt;/p&gt;
-</description>
+      <description>这半年断断续续跟一些朋友聊，如何在北京找美国的工作。几番电话邮件下来，发现自己重复了不少东西，这里索性一起整理下。
+在北京拿学位，跟留学生相比，最大的劣势是，我们可能根本没有去美国工作的念头。我09年毕业，甚至都没有去上海工作的想法。对我来说，北京上学，北京工作，似乎就是一种默认的状态。其实对美国雇主来说，你在北京拿学位，跟留学生在法律身份上是一样的(都是H1b)。只是留学生跟我们一样，默认的找工作地点就定在美国，然后才是其他优势，比如英语说得多些，面试也方便些等等，——但是，你看到，这些东西也不是排他性/独断性的。
+我身边接触的在国内拿学位，然后去美国工作的朋友，有这么几种类型：
+ 公司内部转岗：这个很直接，跨国企业（大小无所谓）里有这个机会 在国内直接申请 国内公司外派，包括人力资源外包 以亲属、访问学者身份去美国，然后直接在美国找工作  我讲纯DIY的第二种。先说一下美国当前的经济形势。我不是这方面的专家，纯个人观察而已。美国经济现是在复苏，不过就业形势还不乐观，——先不用着急，说到就业形势，那是宏观经济学的概念，是要解决的是好几百万人的就业问题，但在具体的科技（IT+数学/统计等理工科）领域，美国还是开工不足，需要大量从中国和印度招人，这里的“大量”，就是每年好几万的概念（具体数字我没查，3-5万？）。所以在这个细分市场，形势不会那么紧张，而且在硅谷，对来自中国和印度的工程师需求一直很旺盛。以下具体说些，不分重点。
+基本流程  面试；如果成功，公司给offer。 公司向美国劳工部门申请名额；如果成功，会寄过来一些法律文件，I-797之类，这个你现在可以不研究。 自己申请签证，出行。  第三步跟自己出国旅行一样准备就行，第二步，一般公司会聘一个律师来处理，自己跟着做准备材料就是，现在不必操心。其实关键是第一步，而这就跟我们找任何一份工作一样，找机会，准备面试。
+我说跟国内找工作一样，是因为，即使我能在美国找到一份工作，在国内面试其他企业，也一样存在被刷的可能。每个人需要的只是“一”份工作而已，去美国找，不比国内易，也不比国内难。
+查了下个人记录，都是去年的事：
+ 4月初去美国开会，拉斯维加斯，在会场上见到我现在的老板，闲聊了一会。
+同年5月，上旬，一位在加州的朋友问我感不感兴趣去美国工作，他几年前从法国去的美国，正要辞职，想让我顶替。我当然来了兴致，就一直跟加州联系。由于最终没有接受加州的offer，这一支的故事就不讲了（后来我再把这个职位推荐了一个去美国旅行兼找机会的朋友，可惜未成）。
+5月中旬，我写邮件问北卡，就是我现在的单位，有没有空缺职位。
+北卡这边到7月初才给我答复，说可以看看。7月中旬我正式提交简历，而这之前我给他们看过我的博客之类。
+北卡的面试在8月初，谈过两轮，用了电话+Skype视频。8月底正式拿到offer。这是第一阶段。
+然后就一直跟公司请的律师联系，准备各种第二阶段的材料（学历证明之类），到11月初，正式拿到美国劳工部门的类似批文，叫做I-797的表格。有了这份表格，我就可以去美国大使馆申请签证了。
+第三阶段，我12月中旬拿到签证，2012年1月1号离开的北京。然后我在原单位的最后一天是2011年12月31号（实际上31号我请了一天年假，所以物理存在的最后一天是30号）。
+ 现在回顾一下，我拿北卡的offer时间（8月份）有点晚，在第二阶段，公司多花了几千块钱，在劳工部办了一个所谓快速审批的服务，所以能够在11月份审批下来（到那个时候，年度份额可能都快用完了）。要是上半年拿到offer，下半年准备材料，时间就比较松快些。
+学历 教育背景很重要，本科以上吧：从信号传递的角度来看，硕士拿出来就比本科要好听些，博士更要比硕士好看，而且大量集中在上面提到的IT+数学/统计等理工科里面。当我提到大量、大多，就是从整个人群里，那个群体的机会大些。如果你不处在这个胜算大的群体里，你就需要在其他方面有超强的资质来补充。
+然后毕业院校，我的感觉是不那么重要。毕业于北大清华当然是加分项目，但是大多数人不是从那里毕业的。美国的大学教授会对中国的大学多些了解，但对大多数雇主来说，知道有北大清华也算是有国际视野了。
+当然，毕业院校，还是有些底线要求的，比如，这个学校是有资质颁发大学毕业证书的，美国那边也有学位认证的机构。
+技能 这个问题是，在国内接受的专业教育，能够胜任美国的工作吗？
+这个好回答，有的可以，有的不可以，因人而异，有些人还不能胜任北京的工作呢。就我稍微熟悉的IT+数学/统计领域，大伙也接触英文教材，用的计算机CPU也一样，网络也（_可以_）一样，说不能胜任就有些气短了（当然是类似的工种）。在跨国公司呆过的朋友，这点会有更多体会。
+关于是否能胜任，补充一句，if you can make it here, you can make it anywhere.
+英语 英语重要吗？当然是非常重要。但要掌握到什么程度，这个不好说，但至少不会是最重要的：英语好的，美国本土有的是。所以对个人而言，能多好就多好，底线就是顺利完成面试。
+还有，去美国工作不需要英语成绩，不需要托福、GRE之类。当然，有比没好，多比少好。
+对我个人来说，英语口语稍逊，但写得多，也算是能平衡一点了。
+面试 如果有机会去美国面试，这是最好不过的情形。对双方成本都低的，就是电话面试。
+面试其实都差不多，在国内找工作，有时也得英语面。你在国内面试成功的经验，几乎可以照搬过来，无非突出自己能干活，会沟通以及其他加分的项目。
+跨洋通话，保持信号流畅很重要。Skype效果很好，如果对方可以不用电话的话。
+薪水 其实薪水是最不需要担心的事，如果对方是一家正规公司的话，不论大小。碰上卖人的公司（外包），那就要小心点。
+这份薪水非常透明，几乎可以google到。首先，它不会太高，否则公司不高兴。然后它也不会太低，否则美国老百姓不高兴。怎么说？招募外国人，直接得就影响美国人的就业（抢饭碗啊），所以美国劳工部门把这薪水盯得紧：太低了不就是鼓励公司去海外招人吗？最后这份薪水，大致就是市场的正常水平。
+说是正常水平，但其实还是有一定的讨价还价的余地的，只要最后双方相谈甚欢。而且跟国内一样，最好的讨价还价策略是手头还有另一个offer。
+在技术领域，一般薪水还可以，远远达不到在美国领政府救济的标准。
+福利 同上，只要薪水正常，其他福利，如医疗保险之类，都是跟公司一起走，而且外国人的身份也没有任何影响。
+还有，可以向公司要求搬家补助。
+渠道 说到这里，其实唯一需要操心的只是面试一关。而这之前，找到真实有效的招聘信息最为重要。信息流向分两种，山向穆罕默德走去，或者穆罕默德向山走去。
+向山走去，就是直接跟用人单位接触，比如一起开个技术会议，写邮件直接询问。
+让山走过来，在web2.0的时代，就是写博客，在邮件组发言，参加开源活动等等，总之，最好让雇主知道，自己是真实存在的！
+能够想象，如果我们直接从北京申请美国的公司，对美方公司来说，我们的存在感是很弱的。互联网的存在主义，就是能够搜索到的，存在感就强一些。增加存在感的，比如，至少得有一个显示真实姓名的、联系人数大于2的LinkedIn页面！
+说到存在感，对方公司的google存在也是你需要看看的。</description>
     </item>
     
     <item>
@@ -150,112 +63,21 @@
       <pubDate>Wed, 06 Apr 2011 16:59:02 +0000</pubDate>
       
       <guid>/2011/04/06/sasgf11%E6%B5%81%E6%B0%B4%E5%B8%90%E4%B8%804%E6%9C%883%E5%8F%B7-5%E5%8F%B7/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;It’s wonderful. It’s awful. It’s wonderfully awful and awfully wonderful.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;这句话是拿来形容拉斯维加斯的。不过我喜欢这句话甚于维加斯本身，就直接拿来套用这几天在凯撒皇宫酒店（&lt;a href=&#34;http://www.caesarspalace.com&#34;&gt;Caesars Palace Las Vegas Resort and Casino&lt;/a&gt;）参加SAS全球论坛(&lt;a href=&#34;http://support.sas.com/events/sasglobalforum/2011/&#34;&gt;SAS Global Forum 2011&lt;/a&gt;, Apr 4-7, Las Vegas)的感受了，其中把awful改成awesome就是。&lt;/p&gt;
-
-&lt;p&gt;首先，我入手一台Kindle啦。小号的那种，刚好可以给虎头用。虎头说：我还小，不能读书啦。好吧，老爸先帮你用着，不许偷懒哈。这台小玩意是下午参加一个invited focus discussion group时主办方给送的。&lt;/p&gt;
-
-&lt;p&gt;还有，今天下午我终于做完了自己的演讲，整个人就轻松很多。不过轻松也不会去一层的赌场。不喜欢的东西，连尝试的心情都没有。按着倒序时间（美国当地时间），记些流水帐。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;4月5号，周二&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;我住在凯撒旁边一个较便宜的酒店里,叫&lt;a href=&#34;http://www.harrahslasvegas.com/&#34;&gt;Harrah&amp;#8217;s Las Vegas Resort and Casino&lt;/a&gt;。早上七点起来，八点去凯撒。先是SAS研发中心在秀SAS的新玩意，然后是一个所谓的科技独脚秀，非常厉害，那哥们，Don McMillan，据说是世界上唯一一个用PPT讲笑话的演员——慢着，这哥们是斯坦福大学EE的硕士，是AT&amp;amp;T的前工程师。不想废话的，直接去他的主页去看：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.TechnicallyFunny.com/&#34;&gt;http://www.TechnicallyFunny.com/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;这哥们真是让人人仰马翻，比如他讲到SAS Data &lt;strong&gt;Step&lt;/strong&gt;就是SAS用户的国标舞步。回到正题，SAS研发中心的老大Keith Collins讲了下SAS发展的5个主要方面：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;1. high performance computing&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;2.process automation&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3.business visualization&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;4.data management&lt;/p&gt;
-
-&lt;p&gt;5.saas&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;然后一些SAS研发的工程师就相应展示了一下SAS9.3的新功能，看着还是蛮振奋的，比如传统的proc reg加上HP（high performance， proc HPreg），就能够实现高性能计算了。上午还听了一场佛罗里达大学荣休教授Ramon Rittel关于SAS与线性模型(GLM)的专题报告，其中穿插些历史信息，最有八卦趣味。&lt;/p&gt;
-
-&lt;p&gt;下午，前半部分是被邀请参加一个叫SAS BI Product Development的foucs group，主题是SAS BI产品的visualization和mobile computing，有近十位非SAS员工参加了这次讨论，由SAS公司的一些研发、产品与市场总监主持。&lt;/p&gt;
-
-&lt;p&gt;下半场是我自己的演讲。&lt;/p&gt;
-
-&lt;p&gt;晚上主要在social。先是SAS公司组织的一场mixer，里面还摆了几个赌桌，大伙凑一起吃东西，四处走走找人聊天，同时有SAS研发各个方向都摆了机器在秀东西（supp demo），北京研发的朋友也过来展示了一下他们在本地化/国际化方面做的工作。下午空闲的时候也去demo看了看，我最感兴趣的是clinical data integration、visualization和JMP。&lt;/p&gt;
-
-&lt;p&gt;最后参加了一场华人组织的chinese-speaking SAS user group，说年景不好，凑齐的只有四五十人。这次国内北京和上海也来了几家，不过我还是为自个的公司骄傲，数数只有我们公司是自个出钱，其他几家都是受益于乙方的市场活动了，噫。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;4月4号，周一&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;这天排的很满。&lt;/p&gt;
-
-&lt;p&gt;早上跟约好的SAS公司的朋友在凯撒吃早餐，然后去会场转转。凯撒跟迷宫一样，我拿着地图，每次都走错。因为晚上才开始开幕式，人来得不是很多，顺便一路见见新老朋友。&lt;/p&gt;
-
-&lt;p&gt;之前一起在北大做SAS俱乐部的光辉同学，现在加拿大工作，这次在会场也打个碰头，真是很巧。&lt;/p&gt;
-
-&lt;p&gt;10点半到中午，参加一场培训，SAS公司Rick Wicklin讲数据模拟。他是个IML专家，写这方面的博客。&lt;/p&gt;
-
-&lt;p&gt;下午，1点的左右，找到我的menor、SAS全球大会组委会成员Duke，在他面前先排练了一把我的演讲。&lt;/p&gt;
-
-&lt;p&gt;2点的左右，找到我的分会场主席，Nancy，跟她聊些准备工作。&lt;/p&gt;
-
-&lt;p&gt;近4点，跟这次会议所有的mentor和mentee见面聊天。&lt;/p&gt;
-
-&lt;p&gt;5点的左右，参加first-timer session，下一届（2012）会议主席Andrew T. Kuligowski主持，非常搞笑的一位老SAS用户，讲讲会议概览，并穿插无数笑话。&lt;/p&gt;
-
-&lt;p&gt;6点的左右，opening night dinner。我和光辉跟Duke，还有这次会议主席Debbie Buck坐一起。Debbie还把她年迈的父母也带过来了。&lt;/p&gt;
-
-&lt;p&gt;7点开始，开幕式，几千人（？，大概是我见过的人数最多的会议）参加。SAS公司老大Jim Goodnight致辞，然后还请凯撒酒店的老板&lt;a href=&#34;http://en.wikipedia.org/wiki/Gary_Loveman&#34;&gt;Gary Loveman&lt;/a&gt;客串一把。好吧，这位Loveman先生可不仅仅是这家全球闻名的酒店加赌场的老板，他在MIT斯隆管理学院拿的经济学博士，并曾经在哈佛商学院做教授，说话很快，人很风趣。&lt;/p&gt;
-
-&lt;p&gt;开幕式中还有几位高管在秀SAS在Ipad2中的绚丽应用。SAS最近在social media方面用力很多，俨然一股很酷的派头。&lt;/p&gt;
-
-&lt;p&gt;开幕式的高潮之一是会议主席Debbie Buck的入场。这次会议就是她的了，一身皇后的行头，坐在轿子里，由光着膀子的大汉抬进来，并由盛装的男女仕搀扶上台。&lt;/p&gt;
-
-&lt;p&gt;各路人马演讲完毕，会场接着是一场拉斯维加斯show。毕竟是严肃的技术论坛，这个show还真是中规中矩的杂耍，不过对我来说，总算是见识一把了（这样就不需要单独去看了）。&lt;/p&gt;
-
-&lt;p&gt;8点半到11点，social。组办方把凯撒的五个露天游泳池租下，大伙就一起喝水聊天，中间不时有小丑出来逗逗乐子。我就挨着把SAS社区有名的人物找到，一个个走前打个招呼。以后SAS-L上的ID，大多就有鲜活的印象了。&lt;/p&gt;
-
-&lt;p&gt;感觉SAS论坛会上瘾。就世界范围而言，SAS用户是一个很小的圈子，每年就这么一次机会碰面，感觉这对那些自身用户很重要。这是我的第一次，看以后能有多少机会了。几天时间，就能够认识世界上最知名的SAS用户，并且对SAS产品有个更全面的了解，更重要的是还能增强信心，开阔视野。我喜欢这个会议。&lt;/p&gt;
-
-&lt;p&gt;晚上很晚才睡。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;4月3号，周日&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;这天下午赶到维加斯，傍晚去会议报到。维加斯是一座人工城市，太吵太闹，被认为是成人的迪斯尼乐园。但是作为一个成年人，我个人倒是更偏向于去迪斯尼本身（明年的SAS大会就在佛罗里达的迪斯尼乐园举行！！！）。好吧，我对明年充满了期待。&lt;/p&gt;
-
-&lt;p&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/p&gt;
-
-&lt;p&gt;又，有朋友问到SAS大会的事情，可以一起说下：&lt;/p&gt;
-
-&lt;p&gt;1.你可以随便以个人身份参加，注册缴费就是，会议注册费在300美元（学生）到1000美元（工业用户）不等。&lt;/p&gt;
-
-&lt;p&gt;2.一个省钱的办法当然是找人找机构资助；首先是你的公司（说明这是你个人发展的一部分，并且能够有助于公司形象的提升），其次是某个好心人，或者你就干脆找SAS中国，看你的活动能不能满足他们市场营销的需要。&lt;/p&gt;
-
-&lt;p&gt;3.如果想在大会发言，作为新手，你就要积极主动投稿。如果是老鸟，可能会议主办方会直接来邀请你。&lt;/p&gt;
-
-&lt;p&gt;4.准备会议论文的周期一般是半年。比如，明年的会议是4月22号到25号。那么，你最晚要在今年十月份把论文提交了，然后年底你就能知道自己能不能被选中了。如果没有被选中发言，还可以以poster的形式发布。&lt;/p&gt;
-
-&lt;p&gt;5.哪些话题值得写？组委会有一个单子，说&lt;strong&gt;可以&lt;/strong&gt;写的话题。但是作为一个SAS用户，只要是你感兴趣的，把它写出来，一定要有其他用户感兴趣。有其他人感兴趣的东西，对这样的技术论坛来说，就是值得写的话题。一个策略是，先天马行空写出来，然后大刀阔斧削减。&lt;/p&gt;
-
-&lt;p&gt;6.现在想想，找人合作写是一个很好的策略，不但有群思广义的效果，更主要的是能防止自己偷懒。&lt;/p&gt;
-
-&lt;p&gt;7.对SAS用户来说，值得投稿的除了&lt;a href=&#34;http://support.sas.com/events/sasglobalforum&#34;&gt;SAS全球论坛&lt;/a&gt;，还有&lt;a href=&#34;http://www.pharmasug.org/&#34;&gt;PharmaSUG&lt;/a&gt;和&lt;a href=&#34;http://www.cdisc.org/interchange&#34;&gt;CDISC Interchange&lt;/a&gt;；近几年还兴起一个数据挖掘的的会议，&lt;a href=&#34;www.sas.com/events/dmconf&#34;&gt;Data Mining Conference&lt;/a&gt;。一些传统的统计会议（比如&lt;a href=&#34;https://www.amstat.org/meetings/jsm.cfm&#34;&gt;JSM&lt;/a&gt;），很多也有相应的统计软件部分，都值得考虑。对于其他行业的用户来说，可能会有相应的比如质量控制、金融风险之类的会议。&lt;/p&gt;
-
-&lt;p&gt;8.行动最重要。一开始只要有“行动”本身就可以，这会激励后续真正产生结果的行动。任何事情都会耗掉你所有的时间，如果感兴趣，就让业余生活多一道比如论文的束缚。这种束缚是高尚的，类似于储蓄。工作后再写点正式的东西的确很难，这大概也能解释一点，为什么SAS大会要选在维加斯或者迪斯尼？因为那里提供了充足的诱惑。&lt;/p&gt;
-</description>
+      <description>It’s wonderful. It’s awful. It’s wonderfully awful and awfully wonderful.
+ 这句话是拿来形容拉斯维加斯的。不过我喜欢这句话甚于维加斯本身，就直接拿来套用这几天在凯撒皇宫酒店（Caesars Palace Las Vegas Resort and Casino）参加SAS全球论坛(SAS Global Forum 2011, Apr 4-7, Las Vegas)的感受了，其中把awful改成awesome就是。
+首先，我入手一台Kindle啦。小号的那种，刚好可以给虎头用。虎头说：我还小，不能读书啦。好吧，老爸先帮你用着，不许偷懒哈。这台小玩意是下午参加一个invited focus discussion group时主办方给送的。
+还有，今天下午我终于做完了自己的演讲，整个人就轻松很多。不过轻松也不会去一层的赌场。不喜欢的东西，连尝试的心情都没有。按着倒序时间（美国当地时间），记些流水帐。
+ 4月5号，周二
+ 我住在凯撒旁边一个较便宜的酒店里,叫Harrah&amp;#8217;s Las Vegas Resort and Casino。早上七点起来，八点去凯撒。先是SAS研发中心在秀SAS的新玩意，然后是一个所谓的科技独脚秀，非常厉害，那哥们，Don McMillan，据说是世界上唯一一个用PPT讲笑话的演员——慢着，这哥们是斯坦福大学EE的硕士，是AT&amp;amp;T的前工程师。不想废话的，直接去他的主页去看：
+ http://www.TechnicallyFunny.com/
+ 这哥们真是让人人仰马翻，比如他讲到SAS Data Step就是SAS用户的国标舞步。回到正题，SAS研发中心的老大Keith Collins讲了下SAS发展的5个主要方面：
+ 1. high performance computing
+2.process automation
+3.business visualization
+4.data management
+5.saas
+ 然后一些SAS研发的工程师就相应展示了一下SAS9.3的新功能，看着还是蛮振奋的，比如传统的proc reg加上HP（high performance， proc HPreg），就能够实现高性能计算了。上午还听了一场佛罗里达大学荣休教授Ramon Rittel关于SAS与线性模型(GLM)的专题报告，其中穿插些历史信息，最有八卦趣味。
+下午，前半部分是被邀请参加一个叫SAS BI Product Development的foucs group，主题是SAS BI产品的visualization和mobile computing，有近十位非SAS员工参加了这次讨论，由SAS公司的一些研发、产品与市场总监主持。</description>
     </item>
     
     <item>
@@ -264,38 +86,22 @@
       <pubDate>Mon, 20 Sep 2010 21:11:22 +0000</pubDate>
       
       <guid>/2010/09/20/%E6%B5%B7%E4%B8%8A%E8%A1%8C1/</guid>
-      <description>&lt;p&gt;如果上海的朋友来京，标题就会是“故人海上来”——以文辞害意如此，我第一次去上海，难免四处拿北京——我的坐标——来观察上海。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;局&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;比如，我10号晚上到的上海。9号晚上我在一个SAS论坛mysas.net发贴，问，11号下午大伙有没有时间凑一会？上海是SAS程序员的大本营，去上海当然得拜拜码头。上海的shiyiming同学说，这么急的安排，恐怕凑不齐人。&lt;/p&gt;
-
-&lt;p&gt;在飞机上翻一本杂志，作者叫*菲，也提到上海与北京饭局的区别，看得是充满了期待。上海的饭局多是精心准备，提前召集，角色分工明确，北京就粗豪些，点菜前打电话招人都能凑齐一堆。落地时与Crazy Hou提起这档子事，也大概引证了这类似的说法。——不过还好，11号下午在上海谷麦咖啡，还有sxlion、tianwild、ahuige、shiyiming四位活跃的朋友过来。SAS非SAS，技术兼八卦，相谈甚欢。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;会&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;9月15号在上海参加CDISC交流大会中国站会议，我跟同事Na带来的话题_XML: the SAS Approach_安排在下午最后一场。这次聚会来了不少业界牛人，如Frank &lt;font color=&#34;#ff0000&#34;&gt;New&lt;/font&gt;by、Wayne R. Kubick、Yuguang Zhao、Sandy Lei、Andrew &lt;font color=&#34;#ff0000&#34;&gt;New&lt;/font&gt;bigging等人。&lt;/p&gt;
-
-&lt;p&gt;这个九月，除了这次在上海参加mysas和CDISC聚会，月初在北京参加了也参加了一次SAS程序员的聚会，具体的可以跑我技术博客看看：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/cn/2010/09/18/sas-cdisc-gathering/&#34;&gt;http://www.jiangtanghu.com/cn/2010/09/18/sas-cdisc-gathering/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;硬币&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;上海大概聚集了中国所有的一元硬币。几次现金交易下来，口袋里就装满了叮当响的硬币。不过不用担心，上海地铁平均4块一趟，在上海拣的硬币，终究还要在上海花掉。&lt;/p&gt;
-
-&lt;p&gt;抱怨下上海地铁。出入都要经过传统那种梅花桩，每次都跟它亲密接触三次。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;世博：排队、经济学与公平&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;12号去世博看看。那天周日，下了大半天的雨。九点排队，下午三点出来，总共去了四个馆：法国馆、芬兰馆、葡萄牙馆和希腊馆。法国馆走的是绿色通道（同事都高兴说VIP了一把），所以大好青春都花在外面闲逛以及排其他三个馆的队里，而之所以选那三个馆，是它们需要排队的时间最短。&lt;/p&gt;
-
-&lt;p&gt;一个笑话是，世博买票窗口，广播大呼：“世界奇观，惊天骗局，受骗者达四十万人！”你兴匆匆跑去买了一张票，160块，排一小时队进园区了，广播又大呼：“世界奇观，惊天骗局，受骗者达四十万零一人！”进园的朋友习惯开这玩笑，还有，“不去后悔，去了更后悔”，说的都是很多馆排队二三四个小时不等。在经济学里，很简单，这样供不应求的情况，直接提价就是，比如，世博票加到500块钱或1000块钱一张，沙特阿拉伯馆就门可罗雀了。一个商品或服务，价值被低估的一个后果就是商品或服务质量下降，——这就是我们在世博园看到的景象。同时，我们这个商品或服务所付出的代价，也远远超过它的标价——你不仅仅花了160块钱，还花了数小时排队，然后或者下雨，或者高温天气。&lt;/p&gt;
-
-&lt;p&gt;这样的经济学分析可以延伸到，比如，北京协和医院挂号等问题。——经济学到此为止。我们的生活里除了经济学，还有其他需要考究的问题。还说北京协和医院挂号，比如挂专家号费用提到到一万块（他们真值这个价），那么，市场就良好地运作，有支付能力的人不需要怎么排队，服务质量也大幅度提高。但这有个问题，就是某些也需要专家诊治的病人，由于支付能力不足，就没有机会享受到这个服务。现在的排队，提供了一种公平机制，就是让那些没有支付能力的人，通过其他渠道（通宵排队之类，这也是一种付出），也能享受到相应服务。&lt;/p&gt;
-
-&lt;p&gt;回到世博。现在160块钱一张的世博票，是便宜了，但这是一种机制，使得大部分人，可以通过付出其他额外的努力（排队……），也能享受到世博的服务，尽管这服务的质量也相应有了下降。效率与公平，这是永恒的难题。&lt;/p&gt;
-</description>
+      <description>如果上海的朋友来京，标题就会是“故人海上来”——以文辞害意如此，我第一次去上海，难免四处拿北京——我的坐标——来观察上海。
+局
+比如，我10号晚上到的上海。9号晚上我在一个SAS论坛mysas.net发贴，问，11号下午大伙有没有时间凑一会？上海是SAS程序员的大本营，去上海当然得拜拜码头。上海的shiyiming同学说，这么急的安排，恐怕凑不齐人。
+在飞机上翻一本杂志，作者叫*菲，也提到上海与北京饭局的区别，看得是充满了期待。上海的饭局多是精心准备，提前召集，角色分工明确，北京就粗豪些，点菜前打电话招人都能凑齐一堆。落地时与Crazy Hou提起这档子事，也大概引证了这类似的说法。——不过还好，11号下午在上海谷麦咖啡，还有sxlion、tianwild、ahuige、shiyiming四位活跃的朋友过来。SAS非SAS，技术兼八卦，相谈甚欢。
+会
+9月15号在上海参加CDISC交流大会中国站会议，我跟同事Na带来的话题_XML: the SAS Approach_安排在下午最后一场。这次聚会来了不少业界牛人，如Frank Newby、Wayne R. Kubick、Yuguang Zhao、Sandy Lei、Andrew Newbigging等人。
+这个九月，除了这次在上海参加mysas和CDISC聚会，月初在北京参加了也参加了一次SAS程序员的聚会，具体的可以跑我技术博客看看：
+http://www.jiangtanghu.com/cn/2010/09/18/sas-cdisc-gathering/
+硬币
+上海大概聚集了中国所有的一元硬币。几次现金交易下来，口袋里就装满了叮当响的硬币。不过不用担心，上海地铁平均4块一趟，在上海拣的硬币，终究还要在上海花掉。
+抱怨下上海地铁。出入都要经过传统那种梅花桩，每次都跟它亲密接触三次。
+世博：排队、经济学与公平
+12号去世博看看。那天周日，下了大半天的雨。九点排队，下午三点出来，总共去了四个馆：法国馆、芬兰馆、葡萄牙馆和希腊馆。法国馆走的是绿色通道（同事都高兴说VIP了一把），所以大好青春都花在外面闲逛以及排其他三个馆的队里，而之所以选那三个馆，是它们需要排队的时间最短。
+一个笑话是，世博买票窗口，广播大呼：“世界奇观，惊天骗局，受骗者达四十万人！”你兴匆匆跑去买了一张票，160块，排一小时队进园区了，广播又大呼：“世界奇观，惊天骗局，受骗者达四十万零一人！”进园的朋友习惯开这玩笑，还有，“不去后悔，去了更后悔”，说的都是很多馆排队二三四个小时不等。在经济学里，很简单，这样供不应求的情况，直接提价就是，比如，世博票加到500块钱或1000块钱一张，沙特阿拉伯馆就门可罗雀了。一个商品或服务，价值被低估的一个后果就是商品或服务质量下降，——这就是我们在世博园看到的景象。同时，我们这个商品或服务所付出的代价，也远远超过它的标价——你不仅仅花了160块钱，还花了数小时排队，然后或者下雨，或者高温天气。
+这样的经济学分析可以延伸到，比如，北京协和医院挂号等问题。——经济学到此为止。我们的生活里除了经济学，还有其他需要考究的问题。还说北京协和医院挂号，比如挂专家号费用提到到一万块（他们真值这个价），那么，市场就良好地运作，有支付能力的人不需要怎么排队，服务质量也大幅度提高。但这有个问题，就是某些也需要专家诊治的病人，由于支付能力不足，就没有机会享受到这个服务。现在的排队，提供了一种公平机制，就是让那些没有支付能力的人，通过其他渠道（通宵排队之类，这也是一种付出），也能享受到相应服务。
+回到世博。现在160块钱一张的世博票，是便宜了，但这是一种机制，使得大部分人，可以通过付出其他额外的努力（排队……），也能享受到世博的服务，尽管这服务的质量也相应有了下降。效率与公平，这是永恒的难题。</description>
     </item>
     
     <item>
@@ -304,46 +110,17 @@
       <pubDate>Sun, 24 Jan 2010 00:27:34 +0000</pubDate>
       
       <guid>/2010/01/24/sas%E6%95%85%E4%BA%8B/</guid>
-      <description>&lt;p&gt;转一个前东家的新闻，来自CNN：&lt;/p&gt;
+      <description>转一个前东家的新闻，来自CNN：
+ SAS ranks No.1 on the Fortune’ 100 Best Companies to Work For(2010)
+ 在这个《财富》杂志评选出的全美“100 家最适合工作的公司”（2010）的表单中，google排名第4，思科16，微软51，英特尔98。SAS作为一门语言、一个系统，是我现在谋生的活计，作为一个公司，是我曾经效力的地方，它这次赚了一个头筹，当然为它高兴。
+讲些八卦，以后再详细写些。SAS公司(SAS Institute Inc.)的CEO,Jim Goodnight，身价68亿美刀，在福布斯“全美最富有的400人排行榜（2009）”中排名33位。什么概念？一位大众都熟悉的亿万富翁，苹果和皮克斯公司的斯蒂夫·乔布斯(Steve Jobs)，以51亿美刀的身价在这个排行榜排名43；Google的CEO，埃里克·施密特(Eric Schmidt)，则排名40，身价55亿美刀。SAS的二当家，John Sall，在这个榜单排名91，34亿美刀。
+SAS是一家私人公司，做统计软件起家，始创于1976年。当时四个创始人及其份额是：
 
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://money.cnn.com/magazines/fortune/bestcompanies/2010/snapshots/1.html&#34;&gt;SAS ranks No.1 on the Fortune’ 100 Best Companies to Work For(2010)&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;在这个《财富》杂志评选出的全美“&lt;a href=&#34;http://money.cnn.com/magazines/fortune/bestcompanies/2010/full_list/&#34;&gt;100 家最适合工作的公司&lt;/a&gt;”（2010）的表单中，google排名第4，思科16，微软51，英特尔98。SAS作为一门语言、一个系统，是我现在谋生的活计，作为一个公司，是我曾经效力的地方，它这次赚了一个头筹，当然为它高兴。&lt;/p&gt;
-
-&lt;p&gt;讲些八卦，以后再详细写些。SAS公司(SAS Institute Inc.)的CEO,Jim Goodnight，身价68亿美刀，在福布斯“全美最富有的400人排行榜（2009）”中&lt;a href=&#34;http://www.forbes.com/lists/2009/54/rich-list-09_James-Goodnight_50HQ.html&#34;&gt;排名33位&lt;/a&gt;。什么概念？一位大众都熟悉的亿万富翁，苹果和皮克斯公司的斯蒂夫·乔布斯(Steve Jobs)，以51亿美刀的身价在这个排行榜&lt;a href=&#34;http://www.forbes.com/lists/2009/54/rich-list-09_Steve-Jobs_HEDB.html&#34;&gt;排名43&lt;/a&gt;；Google的CEO，埃里克·施密特(Eric Schmidt)，则&lt;a href=&#34;http://www.forbes.com/lists/2009/54/rich-list-09_Eric-Schmidt_OYW6.html&#34;&gt;排名40&lt;/a&gt;，身价55亿美刀。SAS的二当家，John Sall，在这个榜单&lt;a href=&#34;http://www.forbes.com/lists/2009/54/rich-list-09_John-Sall_0VOP.html&#34;&gt;排名91&lt;/a&gt;，34亿美刀。&lt;/p&gt;
-
-&lt;p&gt;SAS是一家私人公司，做统计软件起家，始创于1976年。当时四个创始人及其份额是：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2010/01/4j4.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;4J_thumb2&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2010/01/4j-thumb2.png&#34; border=&#34;0&#34; alt=&#34;4J_thumb2&#34; width=&#34;440&#34; height=&#34;146&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p align=&#34;center&#34;&gt;
-  Anthony James Barr ..40% ，36岁
-&lt;/p&gt;
-
-&lt;p align=&#34;center&#34;&gt;
-  James Goodnight &amp;#8230;&amp;#8230;35% ，33岁
-&lt;/p&gt;
-
-&lt;p align=&#34;center&#34;&gt;
-  John Sall &amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;..17% ，28岁
-&lt;/p&gt;
-
-&lt;p align=&#34;center&#34;&gt;
-  Jane Helwig &amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;.8% ，未知
-&lt;/p&gt;
-
-&lt;p&gt;（Anthony James Barr，一般称他为Tony，有时也拼做Jim Barr。James Goodnight，一般大伙都叫他Jim，或者Dr.Goodnight。John是一个统计学家和程序员，Jane当时负责SAS文档）&lt;/p&gt;
-
-&lt;p&gt;Tony是一位伟大的计算机科学家，SAS系统的发明者。SAS的第一个发行版（1972年），Tony贡献了65%的代码量。一个历史悬案是，1979年初，Tony离开SAS，并把他在公司的40%的份额以34万美元卖给了Jim。与Tony相比，Jim是一个统计学家，更是一个成功的商人，现在SAS是一家年销售额23亿美元的公司。Tony离开SAS公司，又创办了几家公司，只是再也没有像SAS这样成功。&lt;/p&gt;
-
-&lt;p&gt;Jane更像是SAS的一个过客。Tony、Jim和John，都是早期SAS系统的代码贡献者，Jane作为四位创始人之一，志不在此，负责的是SAS文档，而且也很快离开公司。她去上了一家医学院，成为一个儿科医生。后来她有两个孩子为SAS工作。&lt;/p&gt;
-
-&lt;p&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&lt;/p&gt;
-
-&lt;p&gt;SAS的早期历史，特别是Tony的贡献，有空再写了。那时，也正是微软等公司创立的时代。时代变迁，历史沉浮，噫。&lt;/p&gt;
-</description>
+Anthony James Barr ..40% ，36岁 James Goodnight &amp;#8230;&amp;#8230;35% ，33岁 John Sall &amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;..17% ，28岁 Jane Helwig &amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;.8% ，未知 （Anthony James Barr，一般称他为Tony，有时也拼做Jim Barr。James Goodnight，一般大伙都叫他Jim，或者Dr.Goodnight。John是一个统计学家和程序员，Jane当时负责SAS文档）
+Tony是一位伟大的计算机科学家，SAS系统的发明者。SAS的第一个发行版（1972年），Tony贡献了65%的代码量。一个历史悬案是，1979年初，Tony离开SAS，并把他在公司的40%的份额以34万美元卖给了Jim。与Tony相比，Jim是一个统计学家，更是一个成功的商人，现在SAS是一家年销售额23亿美元的公司。Tony离开SAS公司，又创办了几家公司，只是再也没有像SAS这样成功。
+Jane更像是SAS的一个过客。Tony、Jim和John，都是早期SAS系统的代码贡献者，Jane作为四位创始人之一，志不在此，负责的是SAS文档，而且也很快离开公司。她去上了一家医学院，成为一个儿科医生。后来她有两个孩子为SAS工作。
+&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;
+SAS的早期历史，特别是Tony的贡献，有空再写了。那时，也正是微软等公司创立的时代。时代变迁，历史沉浮，噫。</description>
     </item>
     
     <item>
@@ -352,17 +129,8 @@
       <pubDate>Tue, 29 Dec 2009 22:09:54 +0000</pubDate>
       
       <guid>/2009/12/29/wanted-sas%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%88/</guid>
-      <description>&lt;p&gt;是几个公司的职位，地点北京，全职或实习生，我可以帮着中间撮合一下：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;数据分析师，强调数理背景，初级或者高级。&lt;/li&gt;
-&lt;li&gt;SAS程序员，这个要比较靠谱的，不仅仅是会套用几个proc。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;工作描述就不摆出来了，是医药/IT金融行业。感兴趣的朋友给我打电话或者发邮件，我们还可以顺便聊聊。&lt;/p&gt;
-</description>
+      <description>是几个公司的职位，地点北京，全职或实习生，我可以帮着中间撮合一下：
+  数据分析师，强调数理背景，初级或者高级。 SAS程序员，这个要比较靠谱的，不仅仅是会套用几个proc。   工作描述就不摆出来了，是医药/IT金融行业。感兴趣的朋友给我打电话或者发邮件，我们还可以顺便聊聊。</description>
     </item>
     
     <item>
@@ -371,145 +139,30 @@
       <pubDate>Sun, 06 Sep 2009 23:02:52 +0000</pubDate>
       
       <guid>/2009/09/06/%E6%B4%BB%E5%8A%A8%E4%B8%A4%E5%88%99china-pub%E4%B9%9D%E5%91%A8%E5%B9%B4%E5%BA%86/cdisc-interchange-conference-2009beijing/</guid>
-      <description>&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;China-pub九周年现场欢乐庆生会&lt;/strong&gt;，2009年9月13日（周日，北京，赛迪大厦）&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;可以作为周末消遣的一个好去处（_据报_）：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;● 娱乐——互动游戏、棋牌休闲、阅读交流、电影、畅所欲言……&lt;/p&gt;
-
-&lt;p&gt;● 美食——china-pub员工现场亲手制作爱心午餐，与您分享精美蛋糕。&lt;/p&gt;
-
-&lt;p&gt;● 大礼——现场所有图书68折，更将抽取各类超值精彩大礼&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;《&lt;a href=&#34;http://www.china-pub.com/196000&#34; target=&#34;_blank&#34;&gt;我是一只IT小小鸟&lt;/a&gt;》将在会场首发，我跟部分作者会过去聊聊这本新书，欢迎到时捧场了。&lt;/p&gt;
-
-&lt;p&gt;2.   &lt;strong&gt;CDISC Interchange Conference 2009&lt;/strong&gt;，2009年10月31日（周六，北京，富力万丽）&lt;/p&gt;
-
-&lt;p&gt;这个酒店在北京挺糊涂的，就是朝阳东三环的Renaissance Beijing Capital Hotel。&lt;a href=&#34;http://www.cdisc.org/&#34; target=&#34;_blank&#34;&gt;CDISC&lt;/a&gt;会议的北京站。到时可以见识些CDISC组织（包括中国委员会）以及各大药厂与解决方案提供商的朋友。&lt;/p&gt;
-
-&lt;p&gt;我跟同事到时有一个关于SAS与XML的话题，大伙感兴趣可以去砸场子。详见后。&lt;/p&gt;
-
-&lt;p&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/p&gt;
-
-&lt;p&gt;附：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;China-pub九周年现场欢乐庆生会&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;时间：2009年9月13日（周日）&lt;/p&gt;
-
-&lt;p&gt;地点：赛迪大厦二层（北京市海淀区紫竹院路66号）&lt;a href=&#34;http://www.china-pub.com/STATIC07/0908/zh_9znqshmap_090820.asp&#34;&gt;查看地图及行车线路&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;以书会友，以友求贤，分享快乐，分享智慧……&lt;/p&gt;
-
-&lt;p&gt;知识——&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;《Google Android开发入门与实战》作者：靳岩;姚尚朗&lt;/li&gt;
-&lt;li&gt;《把时间当作朋友》作者：李笑来&lt;/li&gt;
-&lt;li&gt;《大象》作者：谭云杰&lt;/li&gt;
-&lt;li&gt;《卓有成效的程序员》译者团队&lt;/li&gt;
-&lt;li&gt;《豆瓣，流行的秘密》作者黄修远&lt;/li&gt;
-&lt;li&gt;IT PUB 数据库专家：盖国强&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&amp;#8230;&amp;#8230;更多嘉宾惊喜期待！&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.china-pub.com/STATIC07/0908/zh_cp9years_090804.asp&#34;&gt;点击此链接网上报名&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;具体行程：&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;09：30-10：00 签到&lt;/p&gt;
-
-&lt;p&gt;09：55 China-pub 致辞&lt;/p&gt;
-
-&lt;p&gt;10：00-11：00 《大象》作者：谭云杰 “大象的前世今生”&lt;/p&gt;
-
-&lt;p&gt;11：00-11：50 《可爱的Python》 哲思社区团队&lt;/p&gt;
-
-&lt;p&gt;12：00-13：10 午餐 电影 游戏&lt;/p&gt;
-
-&lt;p&gt;13：10-14：00 《把时间当作朋友》作者：李笑来 “心智成长与成熟”&lt;/p&gt;
-
-&lt;p&gt;14：00-14：50 “方兴未艾的Android技术开发” 《Google Android 开发入门与实战》作者：靳岩; 姚尚朗&lt;/p&gt;
-
-&lt;p&gt;14：50-15：20 茶歇&lt;/p&gt;
-
-&lt;p&gt;15：20-16：10 “天道酬勤-Eygle的Oracle之路” IT PUB 数据库专家：盖国强&lt;/p&gt;
-
-&lt;p&gt;16：10-17：40 《卓有成效的程序员》译者团队&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;两本新书畅谈 《豆瓣，流行的秘密》 黄修远&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;《我是一只IT小小鸟》 胡江堂&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;17：40 庆生仪式、幸运抽奖&lt;/p&gt;
-
-&lt;p&gt;18：00 结束&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;CDISC Interchange Conference 2009(Beijing)，SATURDAY 31 OCTOBER 2009&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;08:00 &amp;#8211; 09:00    Registration&lt;/p&gt;
-
-&lt;p&gt;09:00 &amp;#8211; 12:00   Exhibition Open&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;09:00 &amp;#8211; 10:30   Session 5: CDISC Standards Implementation and Practice&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Chair: Zibao Zhang, China CDISC Coordinating Committee&lt;/p&gt;
-
-&lt;p&gt;_The Value of CDISC Standards fro CROs and Sponsors&lt;/p&gt;
-
-&lt;p&gt;_ Isabelle de Zegher or Barbara Tardiff, PAREXEL&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The Critical Path Institute’s Coalition Against Major Diseases (CAMD) ADAS-cog Questionnaire SDTM and ADaM Implementation&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Sandy Lei, Johnson &amp;amp; Johnson&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Excel Driven SDTM Implementation&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Xinhua Zhou, Shire Pharmaceuticals&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;em&gt;XML: The SAS Approach&lt;/em&gt;&lt;br /&gt; John (Jiangtang) Hu et al, Sanofi Pasteur Biostatistics, China&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;10:30 &amp;#8211; 11:00    Coffee&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;11:00 &amp;#8211; 12:20   Session 6: Vendor Application &amp;amp; Tools&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Chair: Stanley Wei, China CDISC Coordinating Committee&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;End to End Processing &amp;#8211; A CDISC ODM Metadata-Driven Approach to Accelerate CRF Design and Database Set-Up&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Claus Lindenau, XClinical&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Integration of Electronic Data Capture (EDC) and Interactive Voice Response (IVR) Randomization Systems Using ODM, Vendor Extensions and Web Services&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Andrew Newbigging, Medidata&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Overview of the WebSDM Submission Validation and Review Tool&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Wayne Kubick, Phase Forward Lincoln Safety Group&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;12:20 &amp;#8211; 12:30    Session 7: Closing Address&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Chair: Simon Wang, China CDISC Coordinating Committee&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;8:00 &amp;#8211; 20:30    Social Event (Optional with Extra Charge)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Chair: Bruce Xue, China CDISC Coordinating Committee&lt;/p&gt;
-
-&lt;p&gt;更多日程安排，见&lt;a href=&#34;http://www.cdisc.org/downloads/20080824ChinaProga.pdf&#34; target=&#34;_blank&#34;&gt;这里&lt;/a&gt;。&lt;/p&gt;
-</description>
+      <description>China-pub九周年现场欢乐庆生会，2009年9月13日（周日，北京，赛迪大厦）  可以作为周末消遣的一个好去处（_据报_）：
+ ● 娱乐——互动游戏、棋牌休闲、阅读交流、电影、畅所欲言……
+● 美食——china-pub员工现场亲手制作爱心午餐，与您分享精美蛋糕。
+● 大礼——现场所有图书68折，更将抽取各类超值精彩大礼
+ 《我是一只IT小小鸟》将在会场首发，我跟部分作者会过去聊聊这本新书，欢迎到时捧场了。
+2. CDISC Interchange Conference 2009，2009年10月31日（周六，北京，富力万丽）
+这个酒店在北京挺糊涂的，就是朝阳东三环的Renaissance Beijing Capital Hotel。CDISC会议的北京站。到时可以见识些CDISC组织（包括中国委员会）以及各大药厂与解决方案提供商的朋友。
+我跟同事到时有一个关于SAS与XML的话题，大伙感兴趣可以去砸场子。详见后。
+&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-
+附：
+ China-pub九周年现场欢乐庆生会  时间：2009年9月13日（周日）
+地点：赛迪大厦二层（北京市海淀区紫竹院路66号）查看地图及行车线路
+以书会友，以友求贤，分享快乐，分享智慧……
+知识——
+ 《Google Android开发入门与实战》作者：靳岩;姚尚朗 《把时间当作朋友》作者：李笑来 《大象》作者：谭云杰 《卓有成效的程序员》译者团队 《豆瓣，流行的秘密》作者黄修远 IT PUB 数据库专家：盖国强  &amp;#8230;&amp;#8230;更多嘉宾惊喜期待！
+点击此链接网上报名
+具体行程：
+ 09：30-10：00 签到
+09：55 China-pub 致辞
+10：00-11：00 《大象》作者：谭云杰 “大象的前世今生”
+11：00-11：50 《可爱的Python》 哲思社区团队
+12：00-13：10 午餐 电影 游戏
+13：10-14：00 《把时间当作朋友》作者：李笑来 “心智成长与成熟”
+14：00-14：50 “方兴未艾的Android技术开发” 《Google Android 开发入门与实战》作者：靳岩; 姚尚朗</description>
     </item>
     
     <item>
@@ -538,73 +191,7 @@
 
 &lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;《SAS与我》的英文版，见&lt;/span&gt;&lt;a href=&#34;http://www.beauthor.com/book/sas/sasandi.htm&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;http://www.beauthor.com/book/sas/sasandi.htm&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;color: #000000;&#34;&gt;*/&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;写这本书的原因很简单：我失业了。前人有言：无聊才读书。我这大概可算是：失业才写书。美国与中国的情况不同。&lt;strong&gt;在中国，一个北大毕业的学子去卖肉，很多人会感到不平，认为是社会是制度有缺陷，这是一种资源的浪费。美国不一样。一个博士失业了，才不会有人在乎呢。自己混饭去吧&lt;/strong&gt;。或许会有人为你个人感到可惜：这么多年的书白读了。但是绝对没有人会感到社会有什么不公，你没本事找到工作，这能怪谁？&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;/&lt;em&gt;承认，我是看了第一句话，对下面的内容更加期待。博士失业，中国和美国的反应，的确是显著不同。无聊才读书，失业才写书，作者是一个非常有趣的人，心态也与常人迥异。&lt;/em&gt;/ &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;失业在美国也不是什么大事。这里没有铁饭碗。失业了，再找，再就业就是。而对我来说，情况就不同了，再就业简直比登天还难。做了多年的程序员，也自认是一个不差的程序员，这才认识到自己在就业市场上是如此的脆弱和无能。美国经济的低迷加上大量的外包使得就业市场的板凳上坐满了人。现在的公司需要的都是十门、八门的全才。&lt;strong&gt;只要你的简历上显示出你待业的的时间超过一个月，就没有中介公司来理你了&lt;/strong&gt;。他们的理由很简单：既然你一个月找不到工作，就说明你能力差，说明别人都不要你，你就成了被淘汰下来的垃圾，我干吗要你？&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;/*作为一个应届生，今年的就业行情我也是深有体会。其实，今年high-tech领域的外包也不好做了，总之是全线紧缩。“只要你的简历上显示出你待业的的时间超过一个月，就没有中介公司来理你了”，不知道国内是不是这样，一样警惕就是。 &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;关于程序员的脆弱。一般都觉得在美国做程序员非常爽，国内对程序员的压力更大。在美国可以见很多四五十岁的程序员，天天写代码还自得其乐，在中国你试试。 &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;现在的就业市场，几乎是一刀砍下，纷纷落地，即使是好的程序员，也难免与泥沙俱下。*/&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;看看自己的简历，也实在是寒酸。挂上一个博士，也只能算是对自己的一点安慰。我的简历在就业市场上，就如同林黛玉站在竞技场，面对着这么多五大三粗的汉子，哪里还有我的胜算？&lt;/p&gt;
-
-&lt;p&gt;一些朋友帮忙，爱莫能助，一些朋友帮忙，恨铁不成钢：让你改个简历都改不好。一些朋友，更是避而远之：不帮你吧，面子上不好说，帮帮你吧，只怕在老板面前难以交代：你怎么把这么差的人介绍进来？我都成了鸡肋了。&lt;/p&gt;
-
-&lt;p&gt;说起来自己的生涯，从大学毕业以后，主要的就是和计算机语言打交道，从ALGOL，BASIC，COBOL，FORTRAN，C，C++，UNIX，SQL，JAVA。一个比一个漂亮，一个比一个俊俏。和她们的关系都还是不错，尽管没有一个爆出过火花。工作的时候，常说的是：“你给我要求，我给你程序。”(You give me requirement, I give you code.)意思是说，不管你是什么要求，我总能写出程序。可等到我失业了，情况就两样了。这时可以说是：公子落难，竟无一位佳人伸援手。&lt;/p&gt;
-
-&lt;p&gt;就在我山穷水尽，走投无路的时候，应了中国的一句古语：天无绝人之路。杨振宁博士说，翁小姐是上帝送给他的礼物。SAS，可以说是上天送给我的礼物。&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;/&lt;em&gt;旁白：杨的故事盛传这么广啊。&lt;/em&gt;/&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;初识SAS，还是若干年前当统计课的TA的时候。教了一点DATA和FREQ。那时，用的是一本薄薄的教材：INTRODUCTORY SAS。 在我的感觉中，SAS 依稀还是一个不经人事的小女孩。数年不见，再次相遇，已经成了亭亭玉立的大姑娘了。说起来，SAS也是出身名家。其父叫统计。其母叫软件。故而她的名字采用了父母名的缩写：SAS (STATISTICS AND SOFTWARE)。有个姐姐叫SPSS。只是SAS比她姐姐大众化多了。不过，说起SAS的身世，却可以说是：靓女初成，空有众多郎舅缺关爱。&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;/*SAS一开始是一门统计编程语言，全称就叫做Statistical Analysis System，公司名也叫SAS。后来产品线扩大，SAS已经成为一个商标，不再提起其全称了。SAS上世纪七十年代问世，模样是挺丑的，现在是精致多了。又，SPSS是一款统计软件，不过跟SAS不是一个重量级的，文中说SAS比SPSS“大众化多了”，是说SAS比SPSS更流行（popular）。 &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;作者第一次接触SAS，是在学校做统计助教时。第二次接触，大概是第一次失业后，再从事SAS编程的工作。 &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;关于“靓女初成，空有众多郎舅缺关爱”，实在琢磨不透是啥意思。是说跟C++、Java等语言相比，SAS的应用还不够广泛？ */&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;在我的一生中，失过两次恋(业)。中间相隔几个月。两次失恋，心理感受大不相同。第一次是失望，焦虑，悲观。难道就此独身至老，了却此生么？我迷惘，我困惑。第二次是信心十足，因为我认识了SAS小姐，有把握赢得她的芳心。从一失业，我就展开了猛烈的攻势。虽然也有三媒六婆关心着我，我是铁了心了。一些朋友对此不理解：IT家族又富有，和我关系也不错，为什么要改行呢？其实，我就象是古小说中卖身为奴的公子，目的只是为了拐走主人家的小姐。旁人看来，不解我何以自甘沉沦。在我，则以为是天赐良机，乐不可言。&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;/*从这里（及以下）拼凑的片段，大概可知，作者一开始从事IT行业（++，UNIX，SQL，JAVA），第一次失业后转攻SAS，大概在CRO(Contract Research Organization)做SAS程序员。第二次失业后，有朋友问他为什么不返回IT界，他那里人脉更广，收入也不错，但作者只是认定了SAS。说失业，其实也是有自己的选择。 &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;“象是古小说中卖身为奴的公子，目的只是为了拐走主人家的小姐。旁人看来，不解我何以自甘沉沦。在我，则以为是天赐良机，乐不可言&amp;#8221;，唐伯虎点秋香的故事吧，这里的乐趣，也只有作者能体会了。/&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;SAS与我可以说是一见钟情，二见订终身。SAS，给了我机会，给了我生路，SAS于我，恩重如山。在SAS身上，我找到了久违的青春和活力。我，给了SAS关怀，给了SAS温暖，我待SAS，知心贴肉。从我这里，SAS得到了久盼的关爱。自打见了SAS后，夜夜是止不住的相思浓浓，天天有说不完的情话绵绵。每天凌晨即起，也不梳洗，也不进食，便坐在计算机面前敲打键盘，诉说衷情。累了，倒在床上小寐一下，饿了，泡饭酱菜扒上几口。凭借著CRO(Chief Research Officer) 的优势，我对SAS小姐的多发病少见症常见病疑难症贡献了我个人的意见。而SAS，则喜欢偎依在我的怀中，絮絮叨叨地叙述她家族的趣事。有的时候，却又顽皮得像个小精灵，喜欢玩猫捉老鼠的游戏。明明看见一个DATA SET在这里。眼睛一眨，转眼就不见了。&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;/*第二次失业后，作者就安心写SAS书，”凌晨即起，也不梳洗，也不进食，便坐在计算机面前敲打键盘“。里面情意绵绵的描述，大概是最打动人的地方吧。 &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;作者以前在公司做过Chief Research Officer。DATA SET指SAS数据集。 */&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;她家族中，我最喜欢的是REPORT和ODS，人称金童玉女。REPORT，羸弱而文静，总是衣冠楚楚。ODS，热情、开放、性感、迷人。家族有言：金童玉女一携手，人间美景不可收。回想起和SAS的相聚，真的如同在偷恋。日日相聚，却不能告诉任何一个人我在写书。我若告诉任何一个人，他必定会以为我是疯子。而且这发疯的原因都是现成的：失业压力太重。这时候我有点怀念以前的导师，&amp;lt;线性规划&amp;gt;一书的的合作者，张建中先生。唯有他，或许会理解我，不过最多大约也只是将信将疑了。&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;/*SAS是一个庞大的系统，其中REPORT和ODS是它做结果展现的模块。作者写书，有一种偷恋的感觉，因为不敢告诉别人他在写书：失业了还跑去写书？ &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;作者怀念以前那本《线性规划》一书的合作者，也是他在国内求学时的导师，张建中教授。大概只有他能理解一些写书的乐趣吧。 */&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;所幸的是，忠贞的恋情终于开花结果，这本小书，便可以说是我们爱情的结晶。屈指算来，从再识SAS至今，已经三年有余了。&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;/&lt;em&gt;再识SAS，就是作者第二次接触SAS。大概是第一次失业后，再从事SAS编程的工作。&lt;/em&gt;/&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;最后，在SAS与我的恋爱过程中，有很多朋友帮了忙。尤其是缪建铭博士和史秋湖博士。缪博士给了我SAS小姐儿时的照片：SAS早期的菜单，激起了我对SAS的恋情。史博士，生物统计专家，为我和SAS小姐经常相聚提供了很多方便：后来我就在他的公司里编写SAS程序。至少可以说，没有他们的热情相助，我的宝贝儿子是不会这么顺利出世的。在此，请受我一拜。&lt;/p&gt;
-
-&lt;p&gt;当然，我要感谢我的SAS同行。他们的工作使我对SAS小姐有了更深的了解。我还应该说，SAS家庭是一个很友好的家庭。只要我对SAS小姐有什么疑问并向他们求助的话，他们总能很快地提供答复。&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;/&lt;em&gt;SAS社区，特别是SAS-L，是一个非常开放友好的社区。&lt;/em&gt;/&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;最后的几句话是对我的宝贝女儿说的。儿啊，你可知道我是多么殷切地盼望着你的出世吗?为了你，我食不甘味，寝不安席。每一天，每一时，我都在估量: 孩子，你又长大了几许？每一分，每一秒，我都在算计，离你的生日又近了多少?说句不怕你笑话的话，我从来不曾这般地怕死过，因为我的不幸，意味著你的胎死腹中。远在你的出生之前，我就为你布置了你来到人间后的住房。多少遍我摸摸你的床，捏捏你的被，想象著你出世后的景象。如今，你来到了世上，你还感到满意吗?&lt;/p&gt;
-
-&lt;p&gt;儿啊，祝你成功。&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;/&lt;em&gt;这本书在SAS-L上引起不少人的兴趣，如果能放在Amazon卖就更好了。&lt;/em&gt;/&lt;/span&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

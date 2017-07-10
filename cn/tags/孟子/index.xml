@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>孟子 on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/%E5%AD%9F%E5%AD%90/index.xml</link>
+    <link>/tags/%E5%AD%9F%E5%AD%90/</link>
     <description>Recent content in 孟子 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/%E5%AD%9F%E5%AD%90/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Nov 2010 20:46:22 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E5%AD%9F%E5%AD%90/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>一种伦理观</title>
@@ -14,40 +17,22 @@
       <pubDate>Wed, 17 Nov 2010 20:46:22 +0000</pubDate>
       
       <guid>/2010/11/17/%E4%B8%80%E7%A7%8D%E4%BC%A6%E7%90%86%E8%A7%82/</guid>
-      <description>&lt;p&gt;伦理观大杂烩：&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1. The Golden Rule&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Do unto others as you would have them do unto you. (&lt;em&gt;see&lt;/em&gt; &lt;a href=&#34;http://en.wikisource.org/wiki/Bible_(King_James)/Matthew#7:12&#34;&gt;Matthew 7:12&lt;/a&gt;, or &lt;a href=&#34;http://en.wikisource.org/wiki/Bible_(King_James)/Luke#6:31&#34;&gt;Luke 6:31&lt;/a&gt;)&lt;/p&gt;
-
-&lt;p&gt;&amp;#160;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font style=&#34;background-color: #fcfcfc&#34;&gt;《论语》里称做“己欲不受，勿施于人”。&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font style=&#34;background-color: #fcfcfc&#34;&gt;&lt;strong&gt;2. 休谟：同情（sympathy）&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;这里的同情是人同此情之同情，跟pity还不一样。&lt;/p&gt;
-
-&lt;p&gt;在《孟子》里，这大致叫“恻隐之心，人皆有之”。我认为有些人因为各种原因而没有感受力，但同情仍然是人性的一个有力的原则。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3.罗尔斯：无知之幕&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;这是让人心动的理论，见&lt;a href=&#34;http://li-and-jiang.com/blog/2008/03/16/%E6%97%A0%E7%9F%A5%E4%B9%8B%E5%B9%95/&#34;&gt;这里&lt;/a&gt;和&lt;a href=&#34;http://li-and-jiang.com/blog/2008/12/01/%E4%B8%80%E7%94%9F%E7%9A%84%E6%BF%80%E6%83%85/&#34;&gt;这里&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;在你不知道你的禀赋时（处在“无知之幕”中，你不知道你的家庭条件、智力条件等等），你制定的规则就不会对出身、教育等等有不公平的倾斜。比如，你不知道你将出身在农村或是城市，那你就不会同意诸如城乡二元制之类的政策。&lt;/p&gt;
-
-&lt;p&gt;这类似于你来切蛋糕，然后让对方挑选。“无知之幕”这个机制（思想实验）能保证一种相当的公平。&lt;/p&gt;
-
-&lt;p&gt;有机会平等的倡导者批评“无知之幕”。比如，大伙在考试之前决定考试分数，大伙都不知道各自的考试能力如何，在“无知之幕”下，那是不是要决定让每个人都及格？这是一种很有启发意义的批评。但“无知之幕”不一定要导致绝对的平均主义，所以仍然给机会公平留下了相当的余地。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.彼得·辛格&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;辛格是我&lt;a href=&#34;http://li-and-jiang.com/blog/2009/06/07/practical-ethics-1/&#34;&gt;去年发现&lt;/a&gt;的伦理哲学家。他的理论给我很大的吸引力。在他看来，伦理的普遍性就是要“超越个人的视角，进入不偏不倚的旁观者的立场”，并对利益相关者的利益给予平等的考究（一个人的利益需要而且只能count一次）。&lt;/p&gt;
-
-&lt;p&gt;辛格采取的是一种基于利益的功利主义态度。上面提到的罗尔斯就是当代对功利主义的主要反对者，但是，基于利益的功利主义也不必一定推出多数人统治的观点，所以在我的个人理解里，辛格和罗尔斯的理论可以并行不悖。&lt;/p&gt;
-</description>
+      <description>伦理观大杂烩：
+1. The Golden Rule
+ Do unto others as you would have them do unto you. (see Matthew 7:12, or Luke 6:31)
+&amp;#160;
+ 《论语》里称做“己欲不受，勿施于人”。
+2. 休谟：同情（sympathy）
+这里的同情是人同此情之同情，跟pity还不一样。
+在《孟子》里，这大致叫“恻隐之心，人皆有之”。我认为有些人因为各种原因而没有感受力，但同情仍然是人性的一个有力的原则。
+3.罗尔斯：无知之幕
+这是让人心动的理论，见这里和这里。
+在你不知道你的禀赋时（处在“无知之幕”中，你不知道你的家庭条件、智力条件等等），你制定的规则就不会对出身、教育等等有不公平的倾斜。比如，你不知道你将出身在农村或是城市，那你就不会同意诸如城乡二元制之类的政策。
+这类似于你来切蛋糕，然后让对方挑选。“无知之幕”这个机制（思想实验）能保证一种相当的公平。
+有机会平等的倡导者批评“无知之幕”。比如，大伙在考试之前决定考试分数，大伙都不知道各自的考试能力如何，在“无知之幕”下，那是不是要决定让每个人都及格？这是一种很有启发意义的批评。但“无知之幕”不一定要导致绝对的平均主义，所以仍然给机会公平留下了相当的余地。
+4.彼得·辛格
+辛格是我去年发现的伦理哲学家。他的理论给我很大的吸引力。在他看来，伦理的普遍性就是要“超越个人的视角，进入不偏不倚的旁观者的立场”，并对利益相关者的利益给予平等的考究（一个人的利益需要而且只能count一次）。
+辛格采取的是一种基于利益的功利主义态度。上面提到的罗尔斯就是当代对功利主义的主要反对者，但是，基于利益的功利主义也不必一定推出多数人统治的观点，所以在我的个人理解里，辛格和罗尔斯的理论可以并行不悖。</description>
     </item>
     
     <item>
@@ -56,10 +41,8 @@
       <pubDate>Mon, 18 Oct 2010 20:22:00 +0000</pubDate>
       
       <guid>/2010/10/18/%E7%90%86%E8%A7%A3%E5%AD%9F%E5%AD%90/</guid>
-      <description>&lt;p&gt;这些天在地铁里也翻些《孟子》。以前不太读孟子，觉得他爱说话又不讲逻辑。现在想想，大概是精神气质的原因：不需要讲太多逻辑，只要觉得、认为仁者无敌，虽然迂远而阔于事情，还是会自觉地充满浩然之气。&lt;/p&gt;
-
-&lt;p&gt;换在今天，这大概叫一种被称为是幼稚的、单纯的理想主义。&lt;/p&gt;
-</description>
+      <description>这些天在地铁里也翻些《孟子》。以前不太读孟子，觉得他爱说话又不讲逻辑。现在想想，大概是精神气质的原因：不需要讲太多逻辑，只要觉得、认为仁者无敌，虽然迂远而阔于事情，还是会自觉地充满浩然之气。
+换在今天，这大概叫一种被称为是幼稚的、单纯的理想主义。</description>
     </item>
     
   </channel>

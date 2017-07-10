@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>校园招聘 on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/%E6%A0%A1%E5%9B%AD%E6%8B%9B%E8%81%98/index.xml</link>
+    <link>/tags/%E6%A0%A1%E5%9B%AD%E6%8B%9B%E8%81%98/</link>
     <description>Recent content in 校园招聘 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/%E6%A0%A1%E5%9B%AD%E6%8B%9B%E8%81%98/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Sep 2009 23:53:44 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E6%A0%A1%E5%9B%AD%E6%8B%9B%E8%81%98/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>招聘季</title>
@@ -14,21 +17,8 @@
       <pubDate>Fri, 25 Sep 2009 23:53:44 +0000</pubDate>
       
       <guid>/2009/09/25/%E6%8B%9B%E8%81%98%E5%AD%A3/</guid>
-      <description>&lt;p&gt;中午跟盛大的大勇打电话。他在甲骨文呆过多年，加入盛大不久，问起我以前在学校做社团的朋友小威，盛大前些日子在北大旁边摆了招聘摊拣学生。小威明年毕业，正在赶今年的招聘季，在盛大的校园招聘座谈会上，让人印象深刻，大勇是想通过我侧面了解些他的信息。——与2010年的校园招聘就这样挂上钩了，而我自己却还可能沉浸在2009年校园招聘的气氛里，我说的是我们刚出的《&lt;a href=&#34;http://www.china-pub.com/196000&#34; target=&#34;_blank&#34;&gt;我是一只IT小小鸟&lt;/a&gt;》，里面有13位2009届的计算机专业毕业生。对在校生来说，如何从容地向雇主展示自己，需要自己的摸索，但一些思路不妨借鉴。他们刚好有些印象鲜活的故事分享：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;积极利用技术博客营销自己（微软的&lt;a href=&#34;http://mindhacks.cn/&#34; target=&#34;_blank&#34;&gt;刘未鹏&lt;/a&gt;，常年经营“&lt;a href=&#34;http://blog.csdn.net/pongba/&#34; target=&#34;_blank&#34;&gt;C++的卢浮宫&lt;/a&gt;”，在技术圈内赚得非常好的声誉。）&lt;/li&gt;
-&lt;li&gt;活跃于技术社区（在开源社区活跃的两位博士，&lt;a href=&#34;http://blog.linjian.org/&#34; target=&#34;_blank&#34;&gt;林健&lt;/a&gt;和&lt;a href=&#34;http://www.gaoang.com/&#34; target=&#34;_blank&#34;&gt;高昂&lt;/a&gt;。还有像&lt;a href=&#34;http://www.zhuangbiaowei.cn/&#34; target=&#34;_blank&#34;&gt;庄表伟&lt;/a&gt;等作者，都是相应技术社区的活跃分子。在社区的所为，都是你的名片。）&lt;/li&gt;
-&lt;li&gt;参加技术竞赛（即使身处二线城市，还是可以通过世界一流的技术竞赛展示自己的技术实力。）&lt;/li&gt;
-&lt;li&gt;社团（Google的辜新星说他曾是“社团狂”，社团的确能让你多接触些机会。像刚才提到的小威，以前我们一起为大勇在学校组织了此活动，谁知这n年之后，两人将会在招聘现场相见。）&lt;/li&gt;
-&lt;li&gt;苦钻算法（算法牛，不二话。）&lt;/li&gt;
-&lt;li&gt;通过实习积攒人脉（实习是你正式工作的预演，也是你职业生涯的开始。）&lt;/li&gt;
-&lt;li&gt;（不对称地再说些）积极主动，主动积极，我们的作者甚至建议你可以尝试，抱一台笔记本去找面试官，当场给他敲代码。&lt;/li&gt;
-&lt;li&gt;。。。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;还在学校的朋友，加油。&lt;/p&gt;
-</description>
+      <description>中午跟盛大的大勇打电话。他在甲骨文呆过多年，加入盛大不久，问起我以前在学校做社团的朋友小威，盛大前些日子在北大旁边摆了招聘摊拣学生。小威明年毕业，正在赶今年的招聘季，在盛大的校园招聘座谈会上，让人印象深刻，大勇是想通过我侧面了解些他的信息。——与2010年的校园招聘就这样挂上钩了，而我自己却还可能沉浸在2009年校园招聘的气氛里，我说的是我们刚出的《我是一只IT小小鸟》，里面有13位2009届的计算机专业毕业生。对在校生来说，如何从容地向雇主展示自己，需要自己的摸索，但一些思路不妨借鉴。他们刚好有些印象鲜活的故事分享：
+ 积极利用技术博客营销自己（微软的刘未鹏，常年经营“C++的卢浮宫”，在技术圈内赚得非常好的声誉。） 活跃于技术社区（在开源社区活跃的两位博士，林健和高昂。还有像庄表伟等作者，都是相应技术社区的活跃分子。在社区的所为，都是你的名片。） 参加技术竞赛（即使身处二线城市，还是可以通过世界一流的技术竞赛展示自己的技术实力。） 社团（Google的辜新星说他曾是“社团狂”，社团的确能让你多接触些机会。像刚才提到的小威，以前我们一起为大勇在学校组织了此活动，谁知这n年之后，两人将会在招聘现场相见。） 苦钻算法（算法牛，不二话。） 通过实习积攒人脉（实习是你正式工作的预演，也是你职业生涯的开始。） （不对称地再说些）积极主动，主动积极，我们的作者甚至建议你可以尝试，抱一台笔记本去找面试官，当场给他敲代码。 。。。  还在学校的朋友，加油。</description>
     </item>
     
   </channel>

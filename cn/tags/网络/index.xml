@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>网络 on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/%E7%BD%91%E7%BB%9C/index.xml</link>
+    <link>/tags/%E7%BD%91%E7%BB%9C/</link>
     <description>Recent content in 网络 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 May 2009 23:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>杂记</title>
@@ -14,10 +17,8 @@
       <pubDate>Sun, 17 May 2009 23:30:00 +0000</pubDate>
       
       <guid>/2009/05/17/%E6%9D%82%E8%AE%B0/</guid>
-      <description>&lt;p&gt;近中午昌盛打电话过来，相互更新下状态。他是我研究生同学，去年毕业，想想也是近一年没见了。昌盛说今天心情好，挨个给朋友拨电话，——这也是我一贯的风格，见好天气，好心情，就照着通讯录一路拨过去。有的朋友时常在Gtalk中见，有的朋友经常在MSN、QQ上见，还有朋友能在LinkedIn、Facebook、豆瓣、校内网、开心网或者博客见到些更新，虽然不一定凑上去搭话，但也觉着随时可以在身边，跟邻居差不多。要拨电话的，大多是在网上毫无影踪或者在线时间似乎永远不重合的朋友。&lt;/p&gt;
-
-&lt;p&gt;周五晚上回学校，招呼上社会学系的丁丁博士，还是他大三的师妹心心好同学，一起在南门的天外天吃饭聊天，一会信科的chenying也赶过来，都以前一起在学校做社团的朋友。难得回次学校，就进燕南园走走。真的是一跨入校门，耳边就平静很多。噫，毕业前的心绪。&lt;/p&gt;
-</description>
+      <description>近中午昌盛打电话过来，相互更新下状态。他是我研究生同学，去年毕业，想想也是近一年没见了。昌盛说今天心情好，挨个给朋友拨电话，——这也是我一贯的风格，见好天气，好心情，就照着通讯录一路拨过去。有的朋友时常在Gtalk中见，有的朋友经常在MSN、QQ上见，还有朋友能在LinkedIn、Facebook、豆瓣、校内网、开心网或者博客见到些更新，虽然不一定凑上去搭话，但也觉着随时可以在身边，跟邻居差不多。要拨电话的，大多是在网上毫无影踪或者在线时间似乎永远不重合的朋友。
+周五晚上回学校，招呼上社会学系的丁丁博士，还是他大三的师妹心心好同学，一起在南门的天外天吃饭聊天，一会信科的chenying也赶过来，都以前一起在学校做社团的朋友。难得回次学校，就进燕南园走走。真的是一跨入校门，耳边就平静很多。噫，毕业前的心绪。</description>
     </item>
     
   </channel>

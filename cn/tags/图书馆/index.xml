@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>图书馆 on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/%E5%9B%BE%E4%B9%A6%E9%A6%86/index.xml</link>
+    <link>/tags/%E5%9B%BE%E4%B9%A6%E9%A6%86/</link>
     <description>Recent content in 图书馆 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/%E5%9B%BE%E4%B9%A6%E9%A6%86/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Nov 2009 18:11:25 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E5%9B%BE%E4%B9%A6%E9%A6%86/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>给点阳光就下雪</title>
@@ -14,10 +17,8 @@
       <pubDate>Sun, 01 Nov 2009 18:11:25 +0000</pubDate>
       
       <guid>/2009/11/01/%E7%BB%99%E7%82%B9%E9%98%B3%E5%85%89%E5%B0%B1%E4%B8%8B%E9%9B%AA/</guid>
-      <description>&lt;p&gt;今天下雪。昨下午还在中关村南大街走着，阳光明媚。拣这么个好太阳，有一个小时在街头逛荡，就算是好好犒劳自己一番了。又索性走到国图。&lt;/p&gt;
-
-&lt;p&gt;国图新馆早就开放，我却是第一次过去。以前跟Li都在老馆，从南门出入，去七层（六层？）的文学阅览室翻小说，去楼下的小餐馆吃泡面，去旁边的紫竹院公园闲坐，最后顺道在白石桥的家乐福买东西回去。——都本科的事了。以前的事，现在想起来当然要比当时来得甜蜜一点点。那时候也有许多激荡，但留到现在，想想当当只剩下单纯。就跟现在一样，无论现在有多少犹豫折腾，过些年后，记忆也会过滤掉很多杂质吧。现在的混沌说不清，但将来通常会享受这段记忆，那索性现在就享受了。索性把国图新馆旧馆都走一遍。&lt;/p&gt;
-</description>
+      <description>今天下雪。昨下午还在中关村南大街走着，阳光明媚。拣这么个好太阳，有一个小时在街头逛荡，就算是好好犒劳自己一番了。又索性走到国图。
+国图新馆早就开放，我却是第一次过去。以前跟Li都在老馆，从南门出入，去七层（六层？）的文学阅览室翻小说，去楼下的小餐馆吃泡面，去旁边的紫竹院公园闲坐，最后顺道在白石桥的家乐福买东西回去。——都本科的事了。以前的事，现在想起来当然要比当时来得甜蜜一点点。那时候也有许多激荡，但留到现在，想想当当只剩下单纯。就跟现在一样，无论现在有多少犹豫折腾，过些年后，记忆也会过滤掉很多杂质吧。现在的混沌说不清，但将来通常会享受这段记忆，那索性现在就享受了。索性把国图新馆旧馆都走一遍。</description>
     </item>
     
     <item>
@@ -26,12 +27,9 @@
       <pubDate>Thu, 07 May 2009 01:07:21 +0000</pubDate>
       
       <guid>/2009/05/07/%E8%AE%B0%E4%BA%8B5%E6%9C%886%E5%8F%B7/</guid>
-      <description>&lt;p&gt;（5.6）我们部门要招一个IS Support。上午与IT部门的一个负责人就面一个候选人。略去过程，说，我们年轻人，工作了以后，还要保持旺盛的学习能力和意愿才行。&lt;/p&gt;
-
-&lt;p&gt;中午在万达广场，与yahoo的&lt;a href=&#34;http://liuqingyan.blogspot.com/&#34; target=&#34;_blank&#34;&gt;Evan&lt;/a&gt;一起吃饭。Evan念生物信息，毕业就跑去做互联网，以前我们在一次BI的聚会见过。说，我们工作地点近，家也住得近（人大附近），工作也可能重合（他学生物信息，我进药厂；他现在做BI，我以前的兴趣也在这块，噫）。巧的是路上又见着我现在的同学老纪，算起来他跟Evan也是同事，都阿里系的。&lt;/p&gt;
-
-&lt;p&gt;晚上跑回学校图书馆，在R编号的架子上走了一圈。&lt;/p&gt;
-</description>
+      <description>（5.6）我们部门要招一个IS Support。上午与IT部门的一个负责人就面一个候选人。略去过程，说，我们年轻人，工作了以后，还要保持旺盛的学习能力和意愿才行。
+中午在万达广场，与yahoo的Evan一起吃饭。Evan念生物信息，毕业就跑去做互联网，以前我们在一次BI的聚会见过。说，我们工作地点近，家也住得近（人大附近），工作也可能重合（他学生物信息，我进药厂；他现在做BI，我以前的兴趣也在这块，噫）。巧的是路上又见着我现在的同学老纪，算起来他跟Evan也是同事，都阿里系的。
+晚上跑回学校图书馆，在R编号的架子上走了一圈。</description>
     </item>
     
   </channel>

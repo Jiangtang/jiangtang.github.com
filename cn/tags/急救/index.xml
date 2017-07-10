@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>急救 on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/%E6%80%A5%E6%95%91/index.xml</link>
+    <link>/tags/%E6%80%A5%E6%95%91/</link>
     <description>Recent content in 急救 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/%E6%80%A5%E6%95%91/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Oct 2010 22:05:04 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E6%80%A5%E6%95%91/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>42区；急救</title>
@@ -14,12 +17,9 @@
       <pubDate>Wed, 20 Oct 2010 22:05:04 +0000</pubDate>
       
       <guid>/2010/10/20/42%E5%8C%BA%E6%80%A5%E6%95%91/</guid>
-      <description>&lt;p&gt;晚上在一个（朋友的）朋友的创业项目，42区，注册了一个账户：&lt;a href=&#34;http://42qu.com/-10005439&#34;&gt;http://42qu.com/-10005439&lt;/a&gt;。这个网站的一个特点是给自己的时间估个价钱。作为一个拿SAS讨生活的程序员，我就给了两个SAS的版本号（9.1.3和9.2.0）。想问&lt;a href=&#34;http://zsp.javaeye.com/blog/&#34;&gt;张沈鹏&lt;/a&gt;一个问题：为什么我输入9.2，显示的却是貌似更精确的9.19？&lt;/p&gt;
-
-&lt;p&gt;今白天没有干活，整一天都在接受北京红十字会的急救培训。终于在一个塑料模特身上尝试了一套心肺复苏(CPR)程序，是个让人身心疲惫的活。&lt;/p&gt;
-
-&lt;p&gt;这点小伎俩不敢教人。一个小知识，着急时，北京除了北京急救中心的120可以打，还有一个北京红十字会的999。&lt;/p&gt;
-</description>
+      <description>晚上在一个（朋友的）朋友的创业项目，42区，注册了一个账户：http://42qu.com/-10005439。这个网站的一个特点是给自己的时间估个价钱。作为一个拿SAS讨生活的程序员，我就给了两个SAS的版本号（9.1.3和9.2.0）。想问张沈鹏一个问题：为什么我输入9.2，显示的却是貌似更精确的9.19？
+今白天没有干活，整一天都在接受北京红十字会的急救培训。终于在一个塑料模特身上尝试了一套心肺复苏(CPR)程序，是个让人身心疲惫的活。
+这点小伎俩不敢教人。一个小知识，着急时，北京除了北京急救中心的120可以打，还有一个北京红十字会的999。</description>
     </item>
     
   </channel>

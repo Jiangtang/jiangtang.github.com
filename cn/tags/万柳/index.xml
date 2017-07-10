@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>万柳 on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/%E4%B8%87%E6%9F%B3/index.xml</link>
+    <link>/tags/%E4%B8%87%E6%9F%B3/</link>
     <description>Recent content in 万柳 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/%E4%B8%87%E6%9F%B3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Apr 2009 23:43:12 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E4%B8%87%E6%9F%B3/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>万柳居庸关</title>
@@ -14,24 +17,15 @@
       <pubDate>Mon, 20 Apr 2009 23:43:12 +0000</pubDate>
       
       <guid>/2009/04/20/%E4%B8%87%E6%9F%B3%E5%B1%85%E5%BA%B8%E5%85%B3/</guid>
-      <description>&lt;p&gt;下午去居庸关开会，大boss远道而来。有小雨，有大风，第一次见着这长城，想下次有机会来看看。&lt;/p&gt;
+      <description>下午去居庸关开会，大boss远道而来。有小雨，有大风，第一次见着这长城，想下次有机会来看看。
+晚上折回公司，然后直接倒去万柳，找到Julian聊天，他正在整书打包。临走时我拿上他几本数据库与数据仓库的书。
+又转去小裴的宿舍，聊聊工作。soso.com是一个有趣的搜索引擎，恩，介绍下小裴同学的工作吧，比如，你输入“摩羯座”（你还可以拿“星座”做关键词试试）：
 
-&lt;p&gt;晚上折回公司，然后直接倒去万柳，找到Julian聊天，他正在整书打包。临走时我拿上他几本数据库与数据仓库的书。&lt;/p&gt;
+或者，你输入&amp;#8221;NBA&amp;#8221;，
 
-&lt;p&gt;又转去小裴的宿舍，聊聊工作。&lt;a href=&#34;http://www.soso.com&#34; target=&#34;_blank&#34;&gt;soso.com&lt;/a&gt;是一个有趣的搜索引擎，恩，介绍下小裴同学的工作吧，比如，你输入“摩羯座”（你还可以拿“星座”做关键词试试）：&lt;/p&gt;
+再看看铁汉小裴的其他有趣工作，比如提供广大群众喜闻乐见的QQ插件（小红框，还有那个大红框，点开就有天气预报了）：
 
-&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/04/xingzuo.png&#34;&gt;&lt;img style=&#34;border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px&#34; title=&#34;xingzuo&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/04/xingzuo-thumb.png&#34; border=&#34;0&#34; alt=&#34;xingzuo&#34; width=&#34;548&#34; height=&#34;310&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;或者，你输入&amp;#8221;NBA&amp;#8221;，&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/04/nba.png&#34;&gt;&lt;img style=&#34;border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px&#34; title=&#34;NBA&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/04/nba-thumb.png&#34; border=&#34;0&#34; alt=&#34;NBA&#34; width=&#34;549&#34; height=&#34;313&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;再看看铁汉小裴的其他有趣工作，比如提供广大群众喜闻乐见的QQ插件（小红框，还有那个大红框，点开就有天气预报了）：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/04/qq.png&#34;&gt;&lt;img style=&#34;border-right: 0px; border-top: 0px; display: inline; border-left: 0px; border-bottom: 0px&#34; title=&#34;qq&#34; src=&#34;http://li-and-jiang.com/blog/wp-content/uploads/2009/04/qq-thumb.png&#34; border=&#34;0&#34; alt=&#34;qq&#34; width=&#34;556&#34; height=&#34;199&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;嘻嘻。&lt;/p&gt;
-</description>
+嘻嘻。</description>
     </item>
     
   </channel>

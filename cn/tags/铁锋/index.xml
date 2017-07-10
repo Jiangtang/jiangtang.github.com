@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>铁锋 on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/%E9%93%81%E9%94%8B/index.xml</link>
+    <link>/tags/%E9%93%81%E9%94%8B/</link>
     <description>Recent content in 铁锋 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/%E9%93%81%E9%94%8B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Jun 2009 23:42:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E9%93%81%E9%94%8B/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>记事20090606</title>
@@ -14,10 +17,8 @@
       <pubDate>Sun, 07 Jun 2009 23:42:00 +0000</pubDate>
       
       <guid>/2009/06/07/%E8%AE%B0%E4%BA%8B20090606/</guid>
-      <description>&lt;p&gt;昨晚跑去大望路（虽然离我办公室就一站地，还是找不到是自个地盘的感觉），与&lt;a href=&#34;http://joylite.spaces.live.com/&#34; target=&#34;_blank&#34;&gt;铁锋&lt;/a&gt;、&lt;a href=&#34;http://mindhacks.cn/&#34; target=&#34;_blank&#34;&gt;刘未鹏在&lt;/a&gt;旁边的三千里吃烤肉。接着又转去旁边的上岛咖啡，一起与&lt;a href=&#34;http://blog.csdn.net/myan&#34; target=&#34;_blank&#34;&gt;孟岩&lt;/a&gt;老师聊天，听讲写IT届的掌故人物。在软院快三年，到毕业时方才密集地接触这个行业。&lt;/p&gt;
-
-&lt;p&gt;下地铁时在旁边的光合作用书房，翻了雷蒙德·卡佛的一篇小说，《&lt;a href=&#34;http://www.douban.com/subject/3335362/&#34; target=&#34;_blank&#34;&gt;大教堂&lt;/a&gt;》。&lt;/p&gt;
-</description>
+      <description>昨晚跑去大望路（虽然离我办公室就一站地，还是找不到是自个地盘的感觉），与铁锋、刘未鹏在旁边的三千里吃烤肉。接着又转去旁边的上岛咖啡，一起与孟岩老师聊天，听讲写IT届的掌故人物。在软院快三年，到毕业时方才密集地接触这个行业。
+下地铁时在旁边的光合作用书房，翻了雷蒙德·卡佛的一篇小说，《大教堂》。</description>
     </item>
     
   </channel>

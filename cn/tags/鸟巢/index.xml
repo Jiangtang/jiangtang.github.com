@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>鸟巢 on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/%E9%B8%9F%E5%B7%A2/index.xml</link>
+    <link>/tags/%E9%B8%9F%E5%B7%A2/</link>
     <description>Recent content in 鸟巢 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/%E9%B8%9F%E5%B7%A2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Mar 2009 23:28:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E9%B8%9F%E5%B7%A2/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Happy Pie Day</title>
@@ -14,10 +17,8 @@
       <pubDate>Sat, 14 Mar 2009 23:28:00 +0000</pubDate>
       
       <guid>/2009/03/14/happy-pie-day/</guid>
-      <description>&lt;p&gt;上午一家子去奥体那块散步，晒太阳。往前走是鼓腹而游晒肚皮，回走是晒屁股。我是第一次见着鸟巢水立方，——这大概能解释我为什么这么喜欢北京，北京需要牵挂的地方太多了——这六七年混迹京城，还没去过故宫，没去过长城，没去过颐和园，噫。现在短视的建筑，不说也罢。&lt;/p&gt;
-
-&lt;p&gt;今儿个是3月14。问老吴：“3月14，今啥日子呀”。曰：“白色情人节。”又问小吴：“3-14，啥日子呀。”曰：“白色情人节。”我看果然好日子，好日子扎堆，——我想说的是，3.14，今儿个是&lt;a href=&#34;http://en.wikipedia.org/wiki/Pi_Day&#34;&gt;Pi Day&lt;/a&gt;。Happy Pie Day.&lt;/p&gt;
-</description>
+      <description>上午一家子去奥体那块散步，晒太阳。往前走是鼓腹而游晒肚皮，回走是晒屁股。我是第一次见着鸟巢水立方，——这大概能解释我为什么这么喜欢北京，北京需要牵挂的地方太多了——这六七年混迹京城，还没去过故宫，没去过长城，没去过颐和园，噫。现在短视的建筑，不说也罢。
+今儿个是3月14。问老吴：“3月14，今啥日子呀”。曰：“白色情人节。”又问小吴：“3-14，啥日子呀。”曰：“白色情人节。”我看果然好日子，好日子扎堆，——我想说的是，3.14，今儿个是Pi Day。Happy Pie Day.</description>
     </item>
     
   </channel>
