@@ -29,7 +29,7 @@ class: inverse, center, middle
 
 * I then worked for SAS, Sanofi and d-Wise  
 
-* blogging at http://jiangtanghu.com/blog/  
+* Blogging at http://jiangtanghu.com/blog/  
 
 ---
 # A Personal Journey to SAS, R and Python
@@ -83,7 +83,7 @@ class: inverse, center, middle
 --
 
 
-- long time language battle between SAS and R
+- Long time language battle between SAS and R
 --
 
 - Some biostatisticians in pharma use R  
@@ -168,13 +168,15 @@ Solution #3: package-wise optimization
 
 # Language Design: Python
 
-Python 2 vs Python 3
+Python is getting better!
 
 * Text and binary data in Python 2 are a mess
 
 * Python 3 started at 2008 
-   + backwards-incompatible change!
+   + backwards-incompatible change, dangerous move!
    
+* Python 3 is widely accepted 
+
 * Python 2 will end at Jan 1, 2020
 
 
@@ -186,16 +188,6 @@ Python 2 vs Python 3
 Although facing fundamental drawbacks in core design, 
 
 R enjoys huge success due to its user contributed packages.
-
-
----
-# Ecosystem: R
-
-One of the problems of R ecosystem is 
-
-most packages are one-person-project
-
-* Hadley Wickham: tidyverse
 
 
 ---
