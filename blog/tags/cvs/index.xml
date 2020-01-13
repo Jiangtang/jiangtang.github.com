@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cvs on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/cvs/index.xml</link>
-    <description>Recent content in Cvs on Jiangtang Hu | 胡江堂</description>
+    <title>CVS on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/cvs/</link>
+    <description>Recent content in CVS on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/cvs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Feb 2013 22:01:03 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/cvs/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Github for Clinical/Statistical Programmers</title>
@@ -14,34 +17,8 @@
       <pubDate>Wed, 20 Feb 2013 22:01:03 +0000</pubDate>
       
       <guid>/2013/02/20/github-for-clinical/statistical-programmers/</guid>
-      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;PhUSE-FDA Working Group 5 (&lt;/font&gt;&lt;a href=&#34;http://www.phusewiki.org/wiki/index.php?title=Development_of_Standard_Scripts_for_Analysis_and_Programming&#34;&gt;&lt;font size=&#34;1&#34;&gt;Development of Standard Scripts for Analysis and Programming&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;) just adopted &lt;/font&gt;&lt;a href=&#34;http://code.google.com/p/phuse-scripts/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Code&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;as collaborative programming platform. &lt;/font&gt;&lt;a href=&#34;http://code.google.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Code&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;is one of the most popular and respected open source software hosting sites in the world and it is definitely a good choice for PhUSE-FDA WG5.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;But after viewing one of WG5’s working reports, &lt;em&gt;&lt;a href=&#34;http://www.phusewiki.org/wiki/index.php?title=Platform_for_Standard_Script_Development:_Progress_as_of_September_18_2012&#34;&gt;Sharing Standard Statistical Scripts&lt;/a&gt;&lt;/em&gt; and getting to know why they finally chose Google Code (rather than &lt;/font&gt;&lt;a href=&#34;https://github.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Github&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;which was also tested by WG5 members), I think it’s necessary to clarify some misunderstanding against Github where I’m also &lt;a href=&#34;https://github.com/Jiangtang&#34;&gt;an occasional user&lt;/a&gt;. &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;As stated in &lt;/font&gt;&lt;a href=&#34;http://www.phusewiki.org/wiki/index.php?title=Platform_for_Standard_Script_Development:_Progress_as_of_September_18_2012&#34;&gt;&lt;font size=&#34;1&#34;&gt;Slide 11&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;in the report mentioned before, Github,&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Too complicated an interface &lt;br /&gt;Too much overhead for simple development &lt;br /&gt;Too much training and education needed&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;designed for classic programming languages like C and Java (not for things like R and SAS)&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For the first point regarding &lt;strong&gt;interface&lt;/strong&gt;, it seems only &lt;/font&gt;&lt;a href=&#34;http://git-scm.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Git&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;command line tested, and it may be too complicated to “&lt;strong&gt;classic&lt;/strong&gt; statistical programming users”. Actually, Github offers a great GUI tool, for example, &lt;em&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;GitHub for Windows&lt;/a&gt;&lt;/em&gt; to help users visually clone repositories, commit changes and other management tasks without typing Git commands: &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Github_GUI.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;Github_GUI&#34; border=&#34;0&#34; alt=&#34;Github_GUI&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Github_GUI_thumb.png&#34; width=&#34;487&#34; height=&#34;427&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It’s also worthy to mention that with &lt;/font&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;GitHub for Windows&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;, &lt;/em&gt;users don’t need to install any separated version control software like Git, CVS or SVN. &lt;/font&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;GitHub for Windows&lt;/font&gt;&lt;/em&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;already includes a fully functional version of &lt;/font&gt;&lt;a href=&#34;http://msysgit.github.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;msysGit&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. It just makes users’ life much simpler. To use Google Code, you must install and configure something like TortoiseSVN.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The second, is Github suitable for “&lt;strong&gt;things like R and SAS&lt;/strong&gt;”? It’s true that all hosts including &lt;/font&gt;&lt;a href=&#34;https://github.com/languages&#34;&gt;&lt;font size=&#34;1&#34;&gt;Github&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;are dominated by “classic programming languages like C and Java”. For SAS, SAS programmers as a whole are just not active in&amp;#160; any social coding activities, but for &lt;/font&gt;&lt;a href=&#34;https://github.com/languages/R&#34;&gt;&lt;font size=&#34;1&#34;&gt;R&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, actually it is &lt;/font&gt;&lt;a href=&#34;https://www.google.com/webhp?sourceid=chrome-instant&amp;amp;ion=1&amp;amp;ie=UTF-8#q=github+top+languages+R&amp;amp;hl=en&amp;amp;ei=T4QlUeH-HJP62AXxqYGAAQ&amp;amp;start=10&amp;amp;sa=N&amp;amp;bav=on.2,or.r_gc.r_pw.r_cp.r_qf.&amp;amp;fp=50b26647ad5972f8&amp;amp;ion=1&amp;amp;biw=1536&amp;amp;bih=784&#34;&gt;&lt;font size=&#34;1&#34;&gt;one of the mostly used languages in Github&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Google Code is good and a “Google Code vs Github” question is just mostly subjective. It seems to me the pickup of Google Code by WG5 rather than Github was based on incomplete information. I personally prefer Github and there are also some good reasons:&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Use the GUI tool, &lt;/font&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;GitHub for Windows&lt;/font&gt;&lt;/em&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;to maintain a minimum Git/SVN/CVS setup.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Github supplies much richer statistics reports, including charts.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Github is more social oriented which makes it cool in this Web2.0 world.&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>PhUSE-FDA Working Group 5 (Development of Standard Scripts for Analysis and Programming) just adopted Google Code as collaborative programming platform. Google Code is one of the most popular and respected open source software hosting sites in the world and it is definitely a good choice for PhUSE-FDA WG5.
+But after viewing one of WG5’s working reports, Sharing Standard Statistical Scripts and getting to know why they finally chose Google Code (rather than Github which was also tested by WG5 members), I think it’s necessary to clarify some misunderstanding against Github where I’m also an occasional user.</description>
     </item>
     
   </channel>

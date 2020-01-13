@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Binomial Proportion Inverval on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/binomial-proportion-inverval/index.xml</link>
-    <description>Recent content in Binomial Proportion Inverval on Jiangtang Hu | 胡江堂</description>
+    <title>Binomial proportion inverval on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/binomial-proportion-inverval/</link>
+    <description>Recent content in Binomial proportion inverval on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/binomial-proportion-inverval/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Aug 2013 23:32:29 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/binomial-proportion-inverval/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Confidence Intervals for Difference Between Independent Binomial Proportions: A SAS 9.4/STAT 12.3 Update</title>
@@ -14,36 +17,7 @@
       <pubDate>Sun, 25 Aug 2013 23:32:29 +0000</pubDate>
       
       <guid>/2013/08/25/confidence-intervals-for-difference-between-independent-binomial-proportions-a-sas-9.4/stat-12.3-update/</guid>
-      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For the computing of confidence intervals for difference between two independent binomial proportions in SAS 9.4/STAT 12.3, it’s hard to figure out exactly how many methods are available because there is no “CL=ALL” trigger in RISKDIFF option (but you can get one in &lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/08/22/confidence-intervals-for-binomial-proportion-a-sas-9-4stat-12-3-update/&#34;&gt;BIONOMIAL option&lt;/a&gt; to compute the confidence intervals for binomial proportion). As far as I hacked, I got 11 intervals (&lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/23/statistical-notes-5-confidence-intervals-for-difference-between-independent-binomial-proportions-using-sas/&#34;&gt;&lt;font size=&#34;1&#34;&gt;last year I tried SAS 9.3 and got 8&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;; codes available below):&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/CI_diff_94.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;CI_diff_94&#34; border=&#34;0&#34; alt=&#34;CI_diff_94&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/CI_diff_94_thumb.png&#34; width=&#34;392&#34; height=&#34;346&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. There 3 new methods I just got from SAS 9.4/STAT 12.3 are&amp;#160; Miettinen-Nurminen-Mee, Miettinen-Nurminen and Agresti-Caffo.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2.&amp;#160; The methods with number marks are align with Prof. Newcombe ’s paper, &lt;em&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/9595617?dopt=Abstract&#34;&gt;&lt;strong&gt;Interval estimation for the difference between independent proportions: comparison of eleven methods&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;&amp;#160;&lt;/strong&gt;(a fraction of outputs attached in &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/23/statistical-notes-5-confidence-intervals-for-difference-between-independent-binomial-proportions-using-sas/&#34;&gt;my post&lt;/a&gt;)&lt;/em&gt;.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;3. I’m still trying to figure out why the &lt;font color=&#34;#ff0000&#34;&gt;exact&lt;/font&gt; method produces different numbers compared to what’s in Prof. Newcombe’s report.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;4. The codes produced the outputs:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data ci; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input grp res count; &lt;br /&gt;datalines; &lt;br /&gt;1 0 56 &lt;br /&gt;1 1 14 &lt;br /&gt;2 0 48 &lt;br /&gt;2 1 32 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;non-exactmethods: &lt;br /&gt;Agresti-Caffo &lt;br /&gt;Farrington-Manning &lt;br /&gt;Hauck-Anderson &lt;br /&gt;Miettinen-Nurminen &lt;br /&gt;Newcombe Score &lt;br /&gt;Wald &lt;br /&gt;*/ &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci1; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CL=(AC FM HA MN WILSON WALD)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;exact methods: &lt;br /&gt;Exact &lt;br /&gt;Exact (FM Score) &lt;br /&gt;*/ &lt;br /&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci2; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CL=(EXACT)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; exact riskdiff; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci3; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CL=(EXACT)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; exact riskdiff(fmscore); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;methods (CC): &lt;br /&gt;Mee &lt;br /&gt;Newcombe Score (Corrected) &lt;br /&gt;Wald (Corrected) &lt;br /&gt;*/ &lt;br /&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci4; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CORRECT CL=(MN(CORRECT=NO) WILSON WALD)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data CI_all; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set ci4 ci3 ci2 ci1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; CI=&amp;lsquo;(&amp;#8216;||compress(put(LowerCL,8.4))||&amp;#8217;, &amp;#8216;||compress(put(UpperCL,8.4))||&amp;#8217;)&amp;#8217;; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc sql; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; select &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; case Type &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Wald&amp;rdquo; then &amp;ldquo;a&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Wald (Corrected)&amp;rdquo; then &amp;ldquo;b&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Miettinen-Nurminen-Mee&amp;rdquo; then &amp;ldquo;b1&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Miettinen-Nurminen&amp;rdquo; then &amp;ldquo;b2&amp;rdquo;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Agresti-Caffo&amp;rdquo; then &amp;ldquo;b3&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Exact&amp;rdquo; then &amp;ldquo;c&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Exact (FM Score)&amp;rdquo; then &amp;ldquo;d&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Newcombe Score&amp;rdquo; then &amp;ldquo;e&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Newcombe Score (Corrected)&amp;rdquo; then &amp;ldquo;f&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Farrington-Manning&amp;rdquo; then &amp;ldquo;g&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Hauck-Anderson&amp;rdquo; then &amp;ldquo;h&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; else &amp;ldquo;i&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; end as order length=2, &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Type &amp;ldquo;method&amp;rdquo;, &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; CI &amp;ldquo;95% Confidence Limits&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; from CI_all &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; order by order &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>For the computing of confidence intervals for difference between two independent binomial proportions in SAS 9.4/STAT 12.3, it’s hard to figure out exactly how many methods are available because there is no “CL=ALL” trigger in RISKDIFF option (but you can get one in BIONOMIAL option to compute the confidence intervals for binomial proportion). As far as I hacked, I got 11 intervals (last year I tried SAS 9.3 and got 8; codes available below):</description>
     </item>
     
     <item>
@@ -52,58 +26,7 @@
       <pubDate>Thu, 22 Aug 2013 10:57:01 +0000</pubDate>
       
       <guid>/2013/08/22/confidence-intervals-for-binomial-proportion-a-sas-9.4/stat-12.3-update/</guid>
-      <description>&lt;nav&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#1-a-new-confidence-limits-method-added-wilson-corrected&#34;&gt;1. A new confidence limits method added, Wilson (Corrected)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#2-the-font-color-ff0000-binomialc-font-option-is-no-longer-documented-but-still-works&#34;&gt;2. The &lt;font color=&#34;#ff0000&#34;&gt;binomialc&lt;/font&gt; option is no longer documented, but still works&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/nav&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;After getting the access to &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/07/28/open-box-sas-9-4-in-windows-7/&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS 9.4&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;alone with SAS/STAT 12.3, I first took a look at my favorite SAS statistical procedure, &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/66103/HTML/default/viewer.htm#statug_freq_toc.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;PROF FREQ&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&amp;#160; Last year I had a note on &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/15/confidence-intervals-binomial-proportion/&#34;&gt;&lt;font size=&#34;1&#34;&gt;confidence intervals for binomial proportion based on SAS 9.2/SAS9.3&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. Now it’s time to throw out some updates.&lt;/font&gt;&lt;/p&gt;
-
-&lt;h6 id=&#34;1-a-new-confidence-limits-method-added-wilson-corrected&#34;&gt;1. A new confidence limits method added, Wilson (Corrected)&lt;/h6&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In my previous post, SAS PROC FREQ computed 6 of the 11 intervals (#1, 2, 3, 5, 8, 9; see my macros, &lt;em&gt;&lt;a href=&#34;https://raw.github.com/Jiangtang/Programming-SAS/master/CI_Single_Proportion.sas&#34;&gt;CI_Single_Proportion.sas&lt;/a&gt;&lt;/em&gt;). Since SAS 9.4/STAT 12.3, #4 added:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data test; &lt;br /&gt;input grp outcome $ count; &lt;br /&gt;datalines; &lt;br /&gt;1 f 81 &lt;br /&gt;1 u 182 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods select BinomialCLs; &lt;br /&gt;proc freq data=test; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables outcome / binomial (CL=ALL); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight Count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;ods select BinomialCLs; &lt;br /&gt;proc freq data=test; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables outcome / &lt;font color=&#34;#ff0000&#34;&gt;binomialc&lt;/font&gt; (CL=ALL); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight Count; &lt;br /&gt;run;&lt;/font&gt; &lt;br /&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/CI_9.4.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;CI_9.4&#34; border=&#34;0&#34; alt=&#34;CI_9.4&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/CI_9.4_thumb.png&#34; width=&#34;343&#34; height=&#34;164&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/CI_c_9.4.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;CI_c_9.4&#34; border=&#34;0&#34; alt=&#34;CI_c_9.4&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/CI_c_9.4_thumb.png&#34; width=&#34;351&#34; height=&#34;168&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h6 id=&#34;2-the-font-color-ff0000-binomialc-font-option-is-no-longer-documented-but-still-works&#34;&gt;2. The &lt;font color=&#34;#ff0000&#34;&gt;binomialc&lt;/font&gt; option is no longer documented, but still works&lt;/h6&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In the above session, a &lt;font color=&#34;#ff0000&#34;&gt;binomialc&lt;/font&gt; option was used to compute the intervals with a continuity correction(CC). Actually it still works &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/66103/HTML/default/viewer.htm#statug_freq_syntax08.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;in SAS 9.4/STAT 12.3 but without documentation&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;(it’s in &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/procstat/63104/HTML/default/viewer.htm#procstat_freq_sect010.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS 9.2&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/63962/HTML/default/viewer.htm#statug_freq_sect010.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS 9.3&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;). Instead, a &lt;font color=&#34;#ff0000&#34;&gt;CORRECT&lt;/font&gt; options is used for continuity correction:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods select BinomialCLs; &lt;br /&gt;proc freq data=test; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables outcome / binomial (&lt;font color=&#34;#ff0000&#34;&gt;CORRECT&lt;/font&gt; CL=ALL); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight Count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Also, you can use it this way to only compute intervals with CC:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;ods select BinomialCLs; &lt;br /&gt;proc freq data=test; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables outcome / binomial (CL=W(&lt;font color=&#34;#ff0000&#34;&gt;CORRECT&lt;/font&gt;) WALD(&lt;font color=&#34;#ff0000&#34;&gt;CORRECT&lt;/font&gt;)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight Count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>1. A new confidence limits method added, Wilson (Corrected) 2. The binomialc option is no longer documented, but still works        After getting the access to SAS 9.4 alone with SAS/STAT 12.3, I first took a look at my favorite SAS statistical procedure, PROF FREQ.&amp;#160; Last year I had a note on confidence intervals for binomial proportion based on SAS 9.</description>
     </item>
     
     <item>
@@ -112,85 +35,8 @@
       <pubDate>Sun, 23 Sep 2012 21:23:59 +0000</pubDate>
       
       <guid>/2012/09/23/statistical-notes-5-confidence-intervals-for-difference-between-independent-binomial-proportions-using-sas/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;A guy notices a bunch of targets scattered over a barn wall, and in the center of each, in the &amp;ldquo;bulls-eye,&amp;rdquo; is a bullet hole. &amp;ldquo;Wow,&amp;rdquo; he says to the farmer, &amp;ldquo;that&amp;#8217;s pretty good shooting. How&amp;#8217;d you do it?&amp;rdquo; &amp;ldquo;Oh,&amp;rdquo; says the farmer, &amp;ldquo;it was easy. I painted the targets after I shot the holes.&amp;rdquo; – An Old Joke&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Note on how to get the difference between independent binomial proportions using SAS &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_freq_toc.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;PROC FREQ&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;(tested in SAS 9.3M1).&amp;#160; Also, benchmarks took from Prof. Newcombe ’s paper:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;cite&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=9595617&amp;query_hl=1&#34;&gt;&lt;strong&gt;&lt;font size=&#34;1&#34;&gt;Interval estimation for the difference between independent proportions: comparison of eleven methods.&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt; &lt;/font&gt;&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/Newcombe_diff4.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;Newcombe_diff&#34; border=&#34;0&#34; alt=&#34;Newcombe_diff&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/Newcombe_diff_thumb4.png&#34; width=&#34;291&#34; height=&#34;297&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Key findings (SAS output):&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/CI8.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;CI8&#34; border=&#34;0&#34; alt=&#34;CI8&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/CI8_thumb.png&#34; width=&#34;436&#34; height=&#34;255&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. SAS Proc Freq offers 8 ( including 4 of total 11 in Prof. Newcombe ’s paper) methods to compute confidence intervals for difference between independent binomial proportions:&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Wald &lt;font color=&#34;#ff0000&#34;&gt;#1&lt;/font&gt;&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Wald (Corrected) &lt;font color=&#34;#ff0000&#34;&gt;#2&lt;/font&gt;&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Exact&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Exact (FM Score)&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Newcombe Score &lt;font color=&#34;#ff0000&#34;&gt;#10&lt;/font&gt;&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Newcombe Score (Corrected) &lt;font color=&#34;#ff0000&#34;&gt;#11&lt;/font&gt;&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Farrington-Manning&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Hauck-Anderson&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Note that #1 method is the most popular one in textbook, #10 might&amp;#160; be the most wildly used method in industry.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2. There is a big discrepancy in the outputs in the&amp;#160; so called “&lt;strong&gt;exact&lt;/strong&gt;” method among&amp;#160; SAS Proc Freq and Prof. Newcombe ’s paper. Seems they used different methods (in the same “exact” families) under same name. Needs further investigation.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The SAS codes:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;2*2 table &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; response0 response1 &lt;br /&gt;group1&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 56&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 14 &lt;br /&gt;group2&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 48&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 32 &lt;br /&gt;*/&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data ci; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input grp res count; &lt;br /&gt;datalines; &lt;br /&gt;1 0 56 &lt;br /&gt;1 1 14 &lt;br /&gt;2 0 48 &lt;br /&gt;2 1 32 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;methods: &lt;br /&gt;Exact &lt;br /&gt;Farrington-Manning &lt;br /&gt;Hauck-Anderson &lt;br /&gt;Newcombe Score &lt;br /&gt;Wald &lt;br /&gt;*/ &lt;br /&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci1; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CL=(EXACT FM HA WILSON WALD)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; exact riskdiff; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;methods: &lt;br /&gt;Exact (FM Score) &lt;br /&gt;*/ &lt;br /&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci2; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CL=(EXACT)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; exact riskdiff(fmscore); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/* &lt;br /&gt;methods: &lt;br /&gt;Newcombe Score (Corrected) &lt;br /&gt;Wald (Corrected) &lt;br /&gt;*/ &lt;br /&gt;ods select&amp;#160; PdiffCLs; &lt;br /&gt;ods output PdiffCLs=ci3; &lt;br /&gt;proc freq data=ci order=data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables grp*res /riskdiff (CORRECT CL=(WILSON WALD)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; exact riskdiff; &lt;br /&gt;run; &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;put them all&lt;/em&gt;/ &lt;br /&gt;data CI_all; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set ci3 ci2 ci1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; CI=&amp;lsquo;(&amp;#8216;||compress(put(LowerCL,8.4))||&amp;#8217;, &amp;#8216;||compress(put(UpperCL,8.4))||&amp;#8217;)&amp;#8217;; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc sql; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; select &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; case Type &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Wald&amp;rdquo; then &amp;ldquo;a&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Wald (Corrected)&amp;rdquo; then &amp;ldquo;b&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Exact&amp;rdquo; then &amp;ldquo;c&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Exact (FM Score)&amp;rdquo; then &amp;ldquo;d&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Newcombe Score&amp;rdquo; then &amp;ldquo;e&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Newcombe Score (Corrected)&amp;rdquo; then &amp;ldquo;f&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Farrington-Manning&amp;rdquo; then &amp;ldquo;g&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; when &amp;ldquo;Hauck-Anderson&amp;rdquo; then &amp;ldquo;h&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; else &amp;ldquo;i&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; end as order, &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Type &amp;ldquo;method&amp;rdquo;, &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; CI &amp;ldquo;95% Confidence Limits&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; from CI_all &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; order by order &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You may be also interested in this post on calculating confidence intervals for single proportion: &lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/15/confidence-intervals-binomial-proportion/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Statistical Notes (3): Confidence Intervals for Binomial Proportion Using SAS&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;using the following 11 methods:&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;1.&amp;#160; Simple asymptotic, Without CC | Wald&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;2.&amp;#160; Simple asymptotic, With CC&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;3.&amp;#160; Score method, Without CC | Wilson&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;4.&amp;#160; Score method, With CC&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;5. Binomial-based, &amp;#8216;Exact&amp;#8217; | Clopper-Pearson&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;6.&amp;#160; Binomial-based, Mid-p&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;7.&amp;#160; Likelihood-based&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;8.&amp;#160; Jeffreys&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;9.&amp;#160; Agresti-Coull,z^&lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2&lt;/sub&gt; successes&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;10. Agresti-Coull,2 successes and 2 fail&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;11. Logit&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>A guy notices a bunch of targets scattered over a barn wall, and in the center of each, in the &amp;ldquo;bulls-eye,&amp;rdquo; is a bullet hole. &amp;ldquo;Wow,&amp;rdquo; he says to the farmer, &amp;ldquo;that&amp;#8217;s pretty good shooting. How&amp;#8217;d you do it?&amp;rdquo; &amp;ldquo;Oh,&amp;rdquo; says the farmer, &amp;ldquo;it was easy. I painted the targets after I shot the holes.&amp;rdquo; – An Old Joke
+ Note on how to get the difference between independent binomial proportions using SAS PROC FREQ (tested in SAS 9.</description>
     </item>
     
     <item>
@@ -199,70 +45,8 @@
       <pubDate>Sat, 15 Sep 2012 00:13:03 +0000</pubDate>
       
       <guid>/2012/09/15/statistical-notes-3-confidence-intervals-for-binomial-proportion-using-sas/</guid>
-      <description>
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;A guy notices a bunch of targets scattered over a barn wall, and in the center of each, in the &amp;#8220;bulls-eye,&amp;#8221; is a bullet hole. &amp;#8220;Wow,&amp;#8221; he says to the farmer, &amp;#8220;that&amp;#8217;s pretty good shooting. How&amp;#8217;d you do it?&amp;#8221; &amp;#8220;Oh,&amp;#8221; says the farmer, &amp;#8220;it was easy. I painted the targets after I shot the holes.&amp;#8221; – An Old Joke&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Last year I dumped piece of &lt;/span&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/07/14/a-sas-implementation-of-confidence-intervals-for-single-proportion-eleven-methods/&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;SAS codes to compute confidence intervals&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;for single proportion using 11 methods including 7 presented by one of Prof. Newcombe‘s  most wildly cited papers, &lt;strong&gt;&lt;em&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/9595616?dopt=Abstract&#34; target=&#34;_blank&#34;&gt;Two-sided confidence intervals for the single proportion: comparison of seven methods&lt;/a&gt;&lt;/em&gt; &lt;/strong&gt;(r is the number of event in total cases of n):&lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;text-align: center;&#34;&gt;
-  &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/newcombe1.png&#34; target=&#34;_blank&#34;&gt;&lt;img class=&#34;size-medium wp-image-1220 aligncenter&#34; style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border: 0px;&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/newcombe1-240x300.png&#34; alt=&#34;newcombe&#34; width=&#34;240&#34; height=&#34;300&#34; border=&#34;0&#34; srcset=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/newcombe1-240x300.png 240w, http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/newcombe1.png 300w&#34; sizes=&#34;(max-width: 240px) 100vw, 240px&#34; /&gt;&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;To get such results using my macro, just submit the following SAS codes:&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;filename CI url &amp;#8216;&lt;/span&gt;&lt;a href=&#34;https://raw.github.com/Jiangtang/Programming-SAS/master/CI_Single_Proportion.sas&#34;&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;https://raw.github.com/Jiangtang/Programming-SAS/master/CI_Single_Proportion.sas&amp;#8217;;&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;%include CI;&lt;br /&gt; %CI_Single_Proportion(&lt;span style=&#34;color: #ff0000;&#34;&gt;r=81,n=263&lt;/span&gt;);&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;And the outputs(plus 4 additional methods):&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Jiangtang.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;Jiangtang&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Jiangtang_thumb.png&#34; alt=&#34;Jiangtang&#34; width=&#34;490&#34; height=&#34;303&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;In SAS 9.2 and 9.3, 6 of the 11 intervals can be calculated by &lt;/span&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_freq_syntax08.htm&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;PROC FREQ&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;. First, method 1, 3, 9 ,8, 5 via a &lt;em&gt;binomial&lt;/em&gt; option: &lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data test;&lt;br /&gt; input grp outcome $ count;&lt;br /&gt; datalines;&lt;br /&gt; 1 f 81&lt;br /&gt; 1 u 182&lt;br /&gt; ;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;ods select BinomialCLs;&lt;br /&gt; proc freq data=test;&lt;br /&gt; tables outcome / binomial(all);&lt;br /&gt; weight Count;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;The outputs:&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/SASFreqCI.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;SASFreqCI&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/SASFreqCI_thumb.png&#34; alt=&#34;SASFreqCI&#34; width=&#34;461&#34; height=&#34;223&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;And you can get another Wald interval with a continuity correction (method 2) via &lt;em&gt;binomialC&lt;/em&gt; option:&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;ods select BinomialCLs;&lt;br /&gt; proc freq data=test;&lt;br /&gt; tables outcome / &lt;span style=&#34;color: #ff0000;&#34;&gt;binomialc&lt;/span&gt;(all);&lt;br /&gt; weight Count;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;get:&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/SASFreqCI_CC.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;SASFreqCI_CC&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/SASFreqCI_CC_thumb.png&#34; alt=&#34;SASFreqCI_CC&#34; width=&#34;417&#34; height=&#34;240&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;span-style-font-weight-bold-r-notes-span&#34;&gt;&lt;span style=&#34;font-weight: bold;&#34;&gt;R Notes&lt;/span&gt;&lt;/h1&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;These two R packages contain a bunch of CI calculations:&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://cran.r-project.org/web/packages/binom/&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Binom&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://cran.r-project.org/web/packages/PropCIs/&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;PropCIS&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;For SAS macro %CI_Single_Proportion, I borrowed a lot from this R implementation:&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://www2.jura.uni-hamburg.de/instkrim/kriminologie/Mitarbeiter/Enzmann/Software/prop.CI.r&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;http://www2.jura.uni-hamburg.de/instkrim/kriminologie/Mitarbeiter/Enzmann/Software/prop.CI.r&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&#34;span-style-font-weight-bold-additional-notes-span&#34;&gt;&lt;span style=&#34;font-weight: bold;&#34;&gt;Additional Notes&lt;/span&gt;&lt;/h1&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;If interested, a nice paper on binomial intervals with ties, the paper &lt;em&gt;&lt;a href=&#34;http://stats-www.open.ac.uk/TechnicalReports/BinTies1.pdf&#34; target=&#34;_blank&#34;&gt;Confidence intervals for a binomial proportionin the presence of ties&lt;/a&gt;&lt;/em&gt;,  and&lt;em&gt; &lt;a href=&#34;http://homepages.abdn.ac.uk/j.crawford/pages/dept/Binomial_Ties_CIs.htm&#34; target=&#34;_blank&#34;&gt;the program&lt;/a&gt;&lt;/em&gt;. &lt;/span&gt;&lt;/p&gt;
-</description>
+      <description>A guy notices a bunch of targets scattered over a barn wall, and in the center of each, in the &amp;#8220;bulls-eye,&amp;#8221; is a bullet hole. &amp;#8220;Wow,&amp;#8221; he says to the farmer, &amp;#8220;that&amp;#8217;s pretty good shooting. How&amp;#8217;d you do it?&amp;#8221; &amp;#8220;Oh,&amp;#8221; says the farmer, &amp;#8220;it was easy. I painted the targets after I shot the holes.&amp;#8221; – An Old Joke
+ Last year I dumped piece of SAS codes to compute confidence intervals for single proportion using 11 methods including 7 presented by one of Prof.</description>
     </item>
     
     <item>
@@ -271,28 +55,9 @@
       <pubDate>Wed, 03 Nov 2010 20:47:44 +0000</pubDate>
       
       <guid>/2010/11/03/recursive-referencing-and-binomial-proportion-interval/</guid>
-      <description>&lt;p&gt;To understand &lt;a href=&#34;http://en.wikipedia.org/wiki/Recursion&#34;&gt;recursion&lt;/a&gt;, one of the most important concepts in programming languages, you could watch the movie, Chris Nolan’s &lt;em&gt;&lt;a href=&#34;www.inceptionmovie.com&#34;&gt;Inception&lt;/a&gt;&lt;/em&gt;: it is about a dream within a dream within a dream, …and, read two statistical papers by Professor &lt;a href=&#34;http://medicine.cf.ac.uk/en/person/prof-robert-gordon-newcombe/&#34;&gt;Robert Newcombe&lt;/a&gt;, one of the most &lt;a href=&#34;http://medicine.cf.ac.uk/en/person/prof-robert-gordon-newcombe/publications/&#34;&gt;prolific statisticians&lt;/a&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;cite&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=9595616&amp;query_hl=1&#34;&gt;&lt;strong&gt;Two-sided confidence intervals for the single proportion: comparison of seven methods.&lt;/strong&gt;&lt;/a&gt; &lt;/cite&gt;&lt;br /&gt;
-Newcombe RG, &lt;font color=&#34;#ff0000&#34;&gt;&lt;cite&gt;Stat Med&lt;/cite&gt; , Volume 17 , 8 (April 1998) pp.857-&lt;strong&gt;872&lt;/strong&gt;&lt;/font&gt; ****&lt;/li&gt;
-&lt;li&gt;&lt;cite&gt;&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;dopt=Abstract&amp;list_uids=9595617&amp;query_hl=1&#34;&gt;&lt;strong&gt;Interval estimation for the difference between independent proportions: comparison of eleven methods.&lt;/strong&gt;&lt;/a&gt; &lt;/cite&gt;&lt;br /&gt;
-Newcombe RG, &lt;font color=&#34;#ff0000&#34;&gt;&lt;cite&gt;Stat Med&lt;/cite&gt; , Volume 17 , 8 (April 1998) pp.&lt;strong&gt;873&lt;/strong&gt;-890&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;These two widely cited papers evaluate 7 and 11 methods to calculate single proportion (paper &lt;font color=&#34;#ff0000&#34;&gt;A&lt;/font&gt;) and the difference between proportions (paper &lt;font color=&#34;#ff0000&#34;&gt;B&lt;/font&gt;), respectively. Further more, they were in the same issue of &lt;a href=&#34;http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-0258&#34;&gt;&lt;em&gt;Statistics in Medicine&lt;/em&gt;&lt;/a&gt;(Volume 17, 1998), and, they were also cross referenced! So here is a live story about recursive referencing(thanks to Prof. Newcombe):&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2010/11/megamonalisa_recursion.jpg&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;megamonalisa_recursion&#34; border=&#34;0&#34; alt=&#34;megamonalisa_recursion&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2010/11/megamonalisa_recursion_thumb.jpg&#34; width=&#34;245&#34; height=&#34;371&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;An author writes two papers, A and B;&lt;/li&gt;
-&lt;li&gt;Paper B is in the&amp;#160; bibliographic reference session of paper A;&lt;/li&gt;
-&lt;li&gt;Paper A is also in the&amp;#160; bibliographic reference session of paper B;&lt;/li&gt;
-&lt;li&gt;Paper A and paper B are in the same issue of a journal.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;Note&lt;/font&gt; that for Prof. Newcombe’s two linked papers, it is common and acceptable in publication practices. Recently I used these two wonderful papers to learn CI calculation and this post just want to lead to the concept of “recursion”&amp;#160; (reference in reference in reference).&lt;/p&gt;
-</description>
+      <description>To understand recursion, one of the most important concepts in programming languages, you could watch the movie, Chris Nolan’s Inception: it is about a dream within a dream within a dream, …and, read two statistical papers by Professor Robert Newcombe, one of the most prolific statisticians:
+ Two-sided confidence intervals for the single proportion: comparison of seven methods. 
+Newcombe RG, Stat Med , Volume 17 , 8 (April 1998) pp.</description>
     </item>
     
   </channel>

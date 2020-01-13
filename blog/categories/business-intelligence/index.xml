@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Business Intelligence on Jiangtang Hu | 胡江堂</title>
-    <link>/categories/business-intelligence/index.xml</link>
+    <link>/categories/business-intelligence/</link>
     <description>Recent content in Business Intelligence on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/categories/business-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Mar 2013 21:46:35 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/business-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>New Game in Town: SAS Metadata Administration</title>
@@ -14,28 +17,7 @@
       <pubDate>Wed, 13 Mar 2013 21:46:35 +0000</pubDate>
       
       <guid>/2013/03/13/new-game-in-town-sas-metadata-administration/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;You might also read that there were constant (although still not frequent) posts on SAS metadata querying and other administration tasks in SAS blogosphere since 2012 (&lt;em&gt;when I started to play with it^&lt;/em&gt;). It is yet another evidence that more and more SAS programmers switched from SAS foundation to the so called SAS intelligent platform. In the traditional SAS foundation world, a nice source of metadata is the Dictionary table (or V datasets in SASHELP library); In SAS intelligent platform, a much more comprehensive metadata is stored in a SAS Metadata Server (&lt;a href=&#34;http://www.guardian.co.uk/news/datablog/2010/jul/16/data-plural-singular&#34;&gt;&lt;em&gt;Is &amp;#8220;Data&amp;#8221; singular or plural?&lt;/em&gt;&lt;/a&gt;). &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;To get started, &lt;a href=&#34;http://blogs.sas.com/content/sgf/author/wendymchenry&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Wendy McHenry&lt;/span&gt;&lt;/a&gt; posted a nice introductory blog, &lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;a href=&#34;http://blogs.sas.com/content/sgf/2012/12/05/why-i-love-sas-metadata/&#34;&gt;&lt;em&gt;Why I love SAS metadata&lt;/em&gt;&lt;/a&gt; and &lt;a href=&#34;http://blogs.sas.com/content/bi/author/angelahall&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Angela Hall&lt;/span&gt;&lt;/a&gt;, &lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;em&gt;&lt;a href=&#34;http://blogs.sas.com/content/bi/2012/06/12/using-metabrowse-to-find-metadata/&#34;&gt;How did you find that metadata?&lt;/a&gt;, &lt;a href=&#34;http://blogs.sas.com/content/sgf/author/jenniferparks&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Jennifer Parks&lt;/span&gt;&lt;/a&gt;, &lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;a href=&#34;http://blogs.sas.com/content/sgf/2013/02/06/two-methods-for-editing-sas-metadata/&#34;&gt;Two methods for editing SAS metadata&lt;/a&gt;.&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;To communicate with SAS Metadata Server programmingly, you can use &lt;/span&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/omaref/63063/HTML/default/viewer.htm#titlepage.htm&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Java&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;or &lt;/span&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lrmeta/63180/HTML/default/viewer.htm#titlepage.htm&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Base SAS&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;  which are both well documented. &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/author/chrishemedinger&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Chris Hemedinger&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;recently shared bunch of posts on how to &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/tag/sas-integration-technologies/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;use PowerShell to talk with SAS Metadata Server&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;.&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Industry gurus &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/content/sgf/author/paulhomes&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Paul Homes&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;and &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/content/sgf/author/gregorynelson&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Gregory Nelson&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;also begin to blog in &lt;/span&gt;&lt;a href=&#34;http://blogs.sas.com/content/sgf/&#34;&gt;&lt;em&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;SAS User Groups&lt;/span&gt;&lt;/em&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;em&gt; &lt;/em&gt;on this subject (&lt;/span&gt;&lt;a href=&#34;http://platformadmin.com/blogs/paul/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Paul’s own website&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;is a great source too). &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;A&lt;/span&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;community blog “&lt;em&gt;&lt;a href=&#34;http://www.bi-notes.com/&#34;&gt;BI Notes&lt;/a&gt;&lt;/em&gt;” also has some interesting posts on SAS metadata. Check it out.&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;#8212;&amp;#8212;&amp;#8212;update20140718: Useful Docs&amp;#8212;&amp;#8212;&amp;#8212;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;SAS 9.3 Metadata Model: Reference (&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/omamodref/63903/HTML/default/viewer.htm#titlepage.htm&#34;&gt;HTML&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;SAS 9.4 Open Metadata Interface: Reference and Usage (&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/omaref/64859/PDF/default/omaref.pdf&#34;&gt;PDF&lt;/a&gt;, &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/omaref/64859/HTML/default/viewer.htm#titlepage.htm&#34;&gt;HTML&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;SAS 9.4 Language Interfaces to Metadata (&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lrmeta/64857/PDF/default/lrmeta.pdf&#34;&gt;PDF&lt;/a&gt;, &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lrmeta/64857/HTML/default/viewer.htm#titlepage.htm&#34;&gt;HTML&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;SAS 9.4 Intelligence Platform: Security Administration Guide (&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/bisecag/67045/HTML/default/titlepage.htm&#34;&gt;HTML&lt;/a&gt;, &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/bisecag/67045/PDF/default/bisecag.pdf&#34;&gt;PDF&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-</description>
+      <description>You might also read that there were constant (although still not frequent) posts on SAS metadata querying and other administration tasks in SAS blogosphere since 2012 (when I started to play with it^). It is yet another evidence that more and more SAS programmers switched from SAS foundation to the so called SAS intelligent platform. In the traditional SAS foundation world, a nice source of metadata is the Dictionary table (or V datasets in SASHELP library); In SAS intelligent platform, a much more comprehensive metadata is stored in a SAS Metadata Server (Is &amp;#8220;Data&amp;#8221; singular or plural?</description>
     </item>
     
   </channel>

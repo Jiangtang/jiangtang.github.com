@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sas Certificate on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/sas-certificate/index.xml</link>
-    <description>Recent content in Sas Certificate on Jiangtang Hu | 胡江堂</description>
+    <title>SAS Certificate on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/sas-certificate/</link>
+    <description>Recent content in SAS Certificate on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/sas-certificate/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Dec 2012 23:13:39 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/sas-certificate/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>SAS Certified, Again</title>
@@ -14,27 +17,8 @@
       <pubDate>Sat, 22 Dec 2012 23:13:39 +0000</pubDate>
       
       <guid>/2012/12/22/sas-certified-again/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/logo.jpg&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;logo&#34; border=&#34;0&#34; alt=&#34;logo&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/logo_thumb.jpg&#34; width=&#34;314&#34; height=&#34;72&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Last week I got another SAS certification, &lt;em&gt;&lt;a href=&#34;http://support.sas.com/certify/creds/did.html&#34; target=&#34;_blank&#34;&gt;SAS Certified Data Integration Developer for SAS 9&lt;/a&gt;&lt;/em&gt; and I must say it can’t be better as a &lt;/font&gt;&lt;a href=&#34;http://www.notecolon.info/2012/12/note-present-thinking.html&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS holiday gift&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;for myself!&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I took all my SAS certificates when employed (when in Sanofi Pasteur, 2010, I got two SAS programming certificates, &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/certify/creds/bp.html&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Base&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/certify/creds/ap.html&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Advanced&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;). You may say it’s kind of certificate for sake of certificate and not for applying a job like college students. You are right and few reasons I like to earn such certificates at work:&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;It doesn’t hurt! Little better than nothing and holding a certificate will never make a thing worse off.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;It’s highly relevant. Only few additional efforts needed to take such SAS certificate examinations when worked as SAS programmer and solution consultant.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;It’s necessary(&lt;em&gt;somehow&lt;/em&gt;). When worked as a SAS programmer at pharma,&amp;#160; I played data manipulations techniques heavily, but never used a indexing method because it’s not needed due to limited cases of clinical data: recruiting a thousand subjects is even not a easy task! Then I took SAS Advance test and I filled the hole of SAS index.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;It’s fun; actually I mean the certificate fee was paid by my employers (&lt;em&gt;thanks!&lt;/em&gt;)…I got this &lt;a href=&#34;http://scholar.harvard.edu/files/my_rules_of_thumb_0.pdf&#34; target=&#34;_blank&#34;&gt;from Prof. N. Gregory Mankiw&lt;/a&gt;:&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Most people who pursue an academic career do so because they are fascinated by their subject. It is for this reason that professors report among the highest rates of job satisfaction of all professions. Professors have found what they like to do, and they have found someone to pay them to do it. &lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;(then change “people/professor” to “SAS Programmer”)&lt;/font&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I’m always enamored of playing with SAS in any kind of forms: writing SAS codes, configuring SAS products, reading SAS books, taking SAS certificates, and very important, I’m paid to do these!&lt;/font&gt;&lt;/p&gt;
-</description>
+      <description>Last week I got another SAS certification, SAS Certified Data Integration Developer for SAS 9 and I must say it can’t be better as a SAS holiday gift for myself!
+I took all my SAS certificates when employed (when in Sanofi Pasteur, 2010, I got two SAS programming certificates, Base and Advanced). You may say it’s kind of certificate for sake of certificate and not for applying a job like college students.</description>
     </item>
     
   </channel>

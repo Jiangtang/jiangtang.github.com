@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Fselector on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/fselector/index.xml</link>
-    <description>Recent content in Fselector on Jiangtang Hu | 胡江堂</description>
+    <title>fselector on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/fselector/</link>
+    <description>Recent content in fselector on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/fselector/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jan 2011 10:58:44 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/fselector/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Feature Selection: Collections for Self Study</title>
@@ -14,86 +17,8 @@
       <pubDate>Sat, 15 Jan 2011 10:58:44 +0000</pubDate>
       
       <guid>/2011/01/15/feature-selection-collections-for-self-study/</guid>
-      <description>&lt;p&gt;Recently I start to learn the algorithms and applications of &lt;a href=&#34;http://en.wikipedia.org/wiki/Feature_selection&#34; target=&#34;_blank&#34;&gt;feature selection&lt;/a&gt;. The term  “Feature”, wildly used in machine learning and data mining literatures,  simply means “Variable”. In some practices, for example, a neural network model uses a decision tree as input; the tree performs the function of variables selection.&lt;/p&gt;
-
-&lt;p&gt;The Arizona State University is maintaining a repository of feature selection, including original documentations, Matlab packages and user guide for the following popular algorithms so far:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;BLogReg&lt;/p&gt;
-
-&lt;p&gt;CFS&lt;/p&gt;
-
-&lt;p&gt;Chi Square&lt;/p&gt;
-
-&lt;p&gt;FCBF&lt;/p&gt;
-
-&lt;p&gt;Fisher Score&lt;/p&gt;
-
-&lt;p&gt;Gini Index&lt;/p&gt;
-
-&lt;p&gt;Information Gain&lt;/p&gt;
-
-&lt;p&gt;Kruskal-Wallis&lt;/p&gt;
-
-&lt;p&gt;mRMR&lt;/p&gt;
-
-&lt;p&gt;Relief-F&lt;/p&gt;
-
-&lt;p&gt;SBMLR&lt;/p&gt;
-
-&lt;p&gt;T-test&lt;/p&gt;
-
-&lt;p&gt;SPEC&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;see&lt;/span&gt;&lt;/em&gt; &lt;a href=&#34;http://featureselection.asu.edu/software.php&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://featureselection.asu.edu/software.php&#34;&gt;http://featureselection.asu.edu/software.php&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;A R package, &lt;a href=&#34;http://cran.r-project.org/web/packages/FSelector/index.html&#34; target=&#34;_blank&#34;&gt;FSelector&lt;/a&gt;, is also useful for step-by-step studying. This package covers:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;**Filters:&lt;/p&gt;
-
-&lt;p&gt;** *cfs&lt;/p&gt;
-
-&lt;p&gt;*chi-squared&lt;/p&gt;
-
-&lt;p&gt;*consistency&lt;/p&gt;
-
-&lt;p&gt;*correlation&lt;/p&gt;
-
-&lt;p&gt;&amp;#8211;linear.correlation&lt;/p&gt;
-
-&lt;p&gt;&amp;#8211;rank.correlation&lt;/p&gt;
-
-&lt;p&gt;*entropy.based&lt;/p&gt;
-
-&lt;p&gt;&amp;#8211;information.gain&lt;/p&gt;
-
-&lt;p&gt;&amp;#8211;gain.ratio&lt;/p&gt;
-
-&lt;p&gt;&amp;#8211;symmetrical.uncertainty&lt;/p&gt;
-
-&lt;p&gt;*OneR&lt;/p&gt;
-
-&lt;p&gt;*random.forest.importance&lt;/p&gt;
-
-&lt;p&gt;*relif-F&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Wrappers:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;*best.first.search&lt;/p&gt;
-
-&lt;p&gt;*exhaustive.search&lt;/p&gt;
-
-&lt;p&gt;*greedy.search&lt;/p&gt;
-
-&lt;p&gt;&amp;#8211;backward.search&lt;/p&gt;
-
-&lt;p&gt;&amp;#8211;forward.search&lt;/p&gt;
-
-&lt;p&gt;*hill.climbing.search&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>Recently I start to learn the algorithms and applications of feature selection. The term “Feature”, wildly used in machine learning and data mining literatures, simply means “Variable”. In some practices, for example, a neural network model uses a decision tree as input; the tree performs the function of variables selection.
+The Arizona State University is maintaining a repository of feature selection, including original documentations, Matlab packages and user guide for the following popular algorithms so far:</description>
     </item>
     
   </channel>

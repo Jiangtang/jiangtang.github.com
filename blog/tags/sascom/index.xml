@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sascom on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/sascom/index.xml</link>
-    <description>Recent content in Sascom on Jiangtang Hu | 胡江堂</description>
+    <title>SASCOM on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/sascom/</link>
+    <description>Recent content in SASCOM on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/sascom/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Dec 2008 09:40:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/sascom/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>The Making of an Analyst: A Supplement to What Makes a Good Business Analyst</title>
@@ -14,22 +17,8 @@
       <pubDate>Wed, 17 Dec 2008 09:40:00 +0000</pubDate>
       
       <guid>/2008/12/17/the-making-of-an-analyst-a-supplement-to-what-makes-a-good-business-analyst/</guid>
-      <description>&lt;div&gt;
-  &lt;span style=&#34;font-family: Arial;&#34;&gt;I once commented the entry, &lt;a href=&#34;http://www.intelligententerprise.com/blog/archives/2008/12/what_makes_a_go.html&#34;&gt;&lt;em&gt;&lt;span class=&#34;HeadGiantblack&#34;&gt;What Makes a Good Business Analyst&lt;/span&gt;&lt;/em&gt;&lt;/a&gt; by Rajan Chandras, with an easy tone, &lt;em&gt;&lt;a href=&#34;http://jiangtanghu.blogspot.com/2008/12/if-you-can-make-it-here-you-can-make-it.html&#34;&gt;If You Can Make it Here, You Can Make it Anywhere&lt;/a&gt;&lt;/em&gt;. The standards of a good analyst conclude by Rajan, in my opinion, are somewhat of very high bars.&lt;/p&gt; 
-  
-  &lt;p&gt;
-    &lt;/span&gt;&lt;/div&gt; 
-    
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;div&amp;gt;
-  &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt; &amp;lt;/span&amp;gt;
-&amp;lt;/div&amp;gt;
-
-&amp;lt;div&amp;gt;
-  &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;In the recent SASCOM Magazine, Ted Cuzzillo published a relatively moderate enty, say, &amp;lt;em&amp;gt;&amp;lt;a href=&amp;quot;http://www.sas.com/news/sascom/2008q4/feature_analyst.html&amp;quot;&amp;gt;The Making of An Analyst&amp;lt;/a&amp;gt;&amp;lt;/em&amp;gt;. This paper is considered the fresh graduates to be an analysts in their first job hunting. &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;Yes, there two posts are more compatible than oppositive. Rajan&amp;amp;#8217;s targets are those veteran analysts with years of experience.&amp;lt;/span&amp;gt;
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>I once commented the entry, What Makes a Good Business Analyst by Rajan Chandras, with an easy tone, If You Can Make it Here, You Can Make it Anywhere. The standards of a good analyst conclude by Rajan, in my opinion, are somewhat of very high bars.
+  &amp;lt;div&amp;gt; &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;In the recent SASCOM Magazine, Ted Cuzzillo published a relatively moderate enty, say, &amp;lt;em&amp;gt;&amp;lt;a href=&amp;quot;http://www.</description>
     </item>
     
   </channel>

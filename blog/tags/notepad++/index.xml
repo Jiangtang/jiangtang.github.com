@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notepad&#43;&#43; on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/notepad&#43;&#43;/index.xml</link>
+    <link>/tags/notepad&#43;&#43;/</link>
     <description>Recent content in Notepad&#43;&#43; on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/notepad&#43;&#43;/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Jul 2012 23:10:40 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/notepad++/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Tab is a Tab is a Tab is a Tab</title>
@@ -14,92 +17,12 @@
       <pubDate>Sat, 14 Jul 2012 23:10:40 +0000</pubDate>
       
       <guid>/2012/07/14/tab-is-a-tab-is-a-tab-is-a-tab/</guid>
-      <description>
+      <description>Well I’m a big fan of “tabs” and feel much more comfortable when launching everything into tabs: web pages, text files, PDF files, Windows Office files (Word, Excel, PPT), and even folders.&amp;#160; Followings are my best of choices to share:
+1. File Explorer: Clover  http://ejie.me/
+ 
 
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Well I’m a big fan of “tabs” and feel much more comfortable when launching everything into tabs: web pages, text files, PDF files, Windows Office files (Word, Excel, PPT), and even folders.&amp;#160; Followings are my best of choices to share:&lt;/font&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;1-file-explorer-clover&#34;&gt;1. File Explorer: Clover&lt;/h1&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://ejie.me/&#34;&gt;http://ejie.me/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/clover.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;clover&#34; border=&#34;0&#34; alt=&#34;clover&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/clover_thumb.png&#34; width=&#34;502&#34; height=&#34;367&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;There are lots of fancy/complicated file/folder management system beyond Windows Explore (&lt;a href=&#34;http://www.ghisler.com/&#34; target=&#34;_blank&#34;&gt;Total Commander&lt;/a&gt; might be the most famous one) while Clover, as its name indicates, is just as simple as I need:&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Ctrl+T: open new tab&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Ctrl+W: close tab&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Ctr+tab: switch among tabs&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;And these shortcuts also work at the following applications (so, nothing new need to learn).&lt;/font&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;2-web-browser-chrome&#34;&gt;2. Web Browser: Chrome&lt;/h1&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.google.com/intl/en/chrome/browser/&#34;&gt;https://www.google.com/intl/en/chrome/browser/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/chrome.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;chrome&#34; border=&#34;0&#34; alt=&#34;chrome&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/chrome_thumb.png&#34; width=&#34;497&#34; height=&#34;403&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;While IE, as a saying goes, is a best browser to download Chrome(or &lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.mozilla.org/en-US/firefox/new/&#34; target=&#34;_blank&#34;&gt;Firefox&lt;/a&gt; if you like&lt;/font&gt;).&lt;/font&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;3-pdf-reader-foxit-reader&#34;&gt;3. PDF Reader: Foxit Reader&lt;/h1&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.foxitsoftware.com/Secure_PDF_Reader/&#34;&gt;http://www.foxitsoftware.com/Secure_PDF_Reader/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/foxit.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;foxit&#34; border=&#34;0&#34; alt=&#34;foxit&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/foxit_thumb.png&#34; width=&#34;509&#34; height=&#34;330&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Get rid of &lt;a href=&#34;http://get.adobe.com/reader/&#34; target=&#34;_blank&#34;&gt;Adobe Reader&lt;/a&gt;. Foxit Reader is no doubt the best of best PDF reader as it shows (and it’s free). &lt;/font&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;4-office-suite-office-tab&#34;&gt;4. Office Suite: Office Tab&lt;/h1&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.extendoffice.com/product/office-tab.html&#34;&gt;http://www.extendoffice.com/product/office-tab.html&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/officeTab.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/officeTab1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;officeTab&#34; border=&#34;0&#34; alt=&#34;officeTab&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/officeTab_thumb1.png&#34; width=&#34;511&#34; height=&#34;346&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Office Tab is a Microsoft Office add-in and it works (to launch Word, Excel and PPT files to tabs)!&lt;/font&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;5-text-editor-notepad-sublime-text-2&#34;&gt;5. Text Editor: Notepad++/Sublime Text 2&lt;/h1&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://notepad-plus-plus.org/&#34;&gt;http://notepad-plus-plus.org/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.sublimetext.com/&#34;&gt;http://www.sublimetext.com/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/NPP.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;NPP&#34; border=&#34;0&#34; alt=&#34;NPP&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/NPP_thumb.png&#34; width=&#34;510&#34; height=&#34;424&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://support.sas.com/resources/papers/proceedings11/211-2011.pdf&#34; target=&#34;_blank&#34;&gt;I use Notepad++&lt;/a&gt; for a long time and love it, but when I &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/13/sublimetext2-sas/&#34; target=&#34;_blank&#34;&gt;take a look at Sublime Text 2&lt;/a&gt;, I should admit that it has much of potentials to serve as my default text editor in the future:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/Sublime.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/Sublime1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;Sublime&#34; border=&#34;0&#34; alt=&#34;Sublime&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/Sublime_thumb1.png&#34; width=&#34;510&#34; height=&#34;384&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-</description>
+There are lots of fancy/complicated file/folder management system beyond Windows Explore (Total Commander might be the most famous one) while Clover, as its name indicates, is just as simple as I need:</description>
     </item>
     
     <item>
@@ -108,104 +31,9 @@
       <pubDate>Fri, 13 Jul 2012 00:27:57 +0000</pubDate>
       
       <guid>/2012/07/13/sublime-text-2-for-sas-programmers-a-quick-note/</guid>
-      <description>
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;I’m playing with a new text editor, &lt;/span&gt;&lt;a href=&#34;http://www.sublimetext.com/&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Sublime Text 2&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;, and it has much potentials to replace my current handy &lt;/span&gt;&lt;a href=&#34;http://support.sas.com/resources/papers/proceedings11/211-2011.pdf&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Notepad++&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;and &lt;/span&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/11/13/vim-as-a-sas-ide/&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;VIM&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;. A quick note for further exploration(&lt;em&gt;will keep update&lt;/em&gt;).&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;/**&lt;strong&gt;update: 2012-10-16, Roy  Pardee maintains a nice bundle (&lt;a href=&#34;http://implementing-vdw.blogspot.com/2012/10/new-sublime-text-package-available-for.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;here&lt;/em&gt;&lt;/a&gt;), so the following bundle will be not updated any more.*&lt;/strong&gt;*&lt;strong&gt;*&lt;/strong&gt;**/&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Also created a Github repository to hold all my SAS configuration files for Sublime Text 2. Fork me at&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;a href=&#34;https://github.com/Jiangtang/sas.tmbundle&#34;&gt;https://github.com/Jiangtang/sas.tmbundle&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&#34;span-style-font-weight-bold-1-sas-syntax-highlighting-span&#34;&gt;&lt;span style=&#34;font-weight: bold;&#34;&gt;1. SAS syntax highlighting&lt;/span&gt;&lt;/h1&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Sublime Text 2 doesn’t support SAS syntax natively. I got a workaround so I didn’t need to write my own to play with it in the validation stage. Since  Sublime Text 2 supports &lt;/span&gt;&lt;a href=&#34;http://macromates.com/&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;TextMate&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;’s syntax configuration, Just borrowed a &lt;/span&gt;&lt;a href=&#34;https://github.com/jakob-stoeck/sas.tmbundle&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Textmate’s SAS syntax coloring theme&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;from &lt;/span&gt;&lt;a href=&#34;https://github.com/jakob-stoeck&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Jakob Stoeck&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;(thanks a lot man!).&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;This SAS coloring theme is Github hosted, so you can clone the files to the user created “SAS” folder (C:Program FilesSublime Text 2dataPackagesSAS; I use a Win 7 machine) if your Git is installed properly:&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;git clone git://github.com/jakob-stoeck/sas.tmbundle SAS.tmbundle&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;or you can just simply save and copy this file to the SAS folder above:&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://raw.github.com/jakob-stoeck/sas.tmbundle/master/Syntaxes/SAS.tmLanguage&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;https://raw.github.com/jakob-stoeck/sas.tmbundle/master/Syntaxes/SAS.tmLanguage&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Also can get from my repository forked from Jakob:&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/Jiangtang/sas.tmbundle/tree/master/Syntaxes&#34;&gt;https://github.com/Jiangtang/sas.tmbundle/tree/master/Syntaxes&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Then you get&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/Sublime_SAS.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;Sublime_SAS&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/Sublime_SAS_thumb.png&#34; alt=&#34;Sublime_SAS&#34; width=&#34;528&#34; height=&#34;396&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Pretty nice, isn’t it? One of the neat functionalities of Sublime Text 2 is to open a folder as a project (showed in the left panel).&lt;/span&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;span-style-font-weight-bold-2-vi-m-emulation-span&#34;&gt;&lt;span style=&#34;font-weight: bold;&#34;&gt;2. VI(M) Emulation&lt;/span&gt;&lt;/h1&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;We can also easily launch Vi(M) mode in Sublime Text 2, see&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.sublimetext.com/docs/2/vintage.html&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;http://www.sublimetext.com/docs/2/vintage.html&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/SublimeText/VintageEx&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;https://github.com/SublimeText/VintageEx&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&#34;span-style-font-weight-bold-3-add-comments-span&#34;&gt;&lt;span style=&#34;font-weight: bold;&#34;&gt;3. Add Comments&lt;/span&gt;&lt;/h1&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Use this file from &lt;a href=&#34;https://github.com/Jiangtang/sas.tmbundle&#34; target=&#34;_blank&#34;&gt;my repository&lt;/a&gt;, &lt;em&gt;&lt;a href=&#34;https://github.com/Jiangtang/sas.tmbundle/blob/master/Comments%20(SAS).tmPreferences&#34; target=&#34;_blank&#34;&gt;Comments (SAS).tmPreferences&lt;/a&gt;&lt;/em&gt;, then you can use the Sublime Text 2 default key shortcuts &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/comments.png&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;comments&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/comments_thumb.png&#34; alt=&#34;comments&#34; width=&#34;492&#34; height=&#34;240&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;strong&gt;Ctrl+/&lt;/strong&gt; to add &lt;span style=&#34;color: #ff0000;&#34;&gt;*comment;&lt;/span&gt; style comments(toggle), and&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;strong&gt;Shift + &lt;/strong&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;strong&gt;Ctrl+/&lt;/strong&gt;  to add &lt;span style=&#34;color: #ff0000;&#34;&gt;/&lt;em&gt;comment&lt;/em&gt;/&lt;/span&gt; style comments (toggle block)&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Note that in SAS Enhanced Editor, we use &lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;strong&gt;Ctrl+/ &lt;/strong&gt;&lt;/span&gt;to add toggle block comments.&lt;/span&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;span-style-font-weight-bold-4-code-autocomplete-span&#34;&gt;&lt;span style=&#34;font-weight: bold;&#34;&gt;4. Code Autocomplete&lt;/span&gt;&lt;/h1&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;I added a few snippets in &lt;a href=&#34;https://github.com/Jiangtang/sas.tmbundle&#34; target=&#34;_blank&#34;&gt;my repository&lt;/a&gt; to support some code autocomplete. &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/snippets.png&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;snippets&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/snippets_thumb.png&#34; alt=&#34;snippets&#34; width=&#34;500&#34; height=&#34;279&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;For example, when type “s” and few alternatives show up,&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/sql.png&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;sql&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/sql_thumb.png&#34; alt=&#34;sql&#34; width=&#34;384&#34; height=&#34;265&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Hit RETURN and get&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/sql_auto.png&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;sql_auto&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/sql_auto_thumb.png&#34; alt=&#34;sql_auto&#34; width=&#34;430&#34; height=&#34;233&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;The neat thing is that your cursor is just in the shadow area /* variable(s)*/ after hitting RETURN where you can overwrite.&lt;/span&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;5-run-sas-within-sublime-text-2&#34;&gt;5. Run SAS within Sublime Text 2&lt;/h1&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Copy the following system build file to SAS package folder (mine, &lt;em&gt;C:UsersjhuAppDataRoamingSublime Text 2PackagesSAS&lt;/em&gt;):&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;{&lt;br /&gt; &amp;#8220;cmd&amp;#8221;: [&amp;#8220;SAS&amp;#8221;,&amp;#8221;-sysin&amp;#8221;,&amp;#8221;$file&amp;#8221;],&lt;br /&gt; &amp;#8220;selector&amp;#8221;: &amp;#8220;source.sas&amp;#8221;&lt;br /&gt; }&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/Jiangtang/sas.tmbundle/blob/master/SAS.sublime-build&#34;&gt;https://github.com/Jiangtang/sas.tmbundle/blob/master/SAS.sublime-build&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Then you can run SAS code in Sublime Text 2 (by clicking “&lt;strong&gt;Build&lt;/strong&gt;” or using shortcut &lt;strong&gt;Ctrl+B&lt;/strong&gt;):&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/08/SublimeText2_SAS_build.png&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border: 0px;&#34; title=&#34;SublimeText2_SAS_build&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/08/SublimeText2_SAS_build_thumb.png&#34; alt=&#34;SublimeText2_SAS_build&#34; width=&#34;485&#34; height=&#34;384&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Actually it is batch run mode and you will get all the output files (.log, .lst and .pdf, .png and such) in the same folder you hold you SAS codes.&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;I’m still working on how to set up interactive run mode and please leave any suggestions, comments and hints!&lt;/span&gt;&lt;/p&gt;
-</description>
+      <description>I’m playing with a new text editor, Sublime Text 2, and it has much potentials to replace my current handy Notepad++ and VIM. A quick note for further exploration(will keep update).
+/**update: 2012-10-16, Roy Pardee maintains a nice bundle (here), so the following bundle will be not updated any more.*****/
+Also created a Github repository to hold all my SAS configuration files for Sublime Text 2. Fork me at</description>
     </item>
     
     <item>
@@ -214,126 +42,9 @@
       <pubDate>Sat, 11 Feb 2012 16:35:35 +0000</pubDate>
       
       <guid>/2012/02/11/face-off-review-opencdisc-xml-files/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;http://www.opencdisc.org/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;OpenCDISC&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, the first open source CDISC validator, is already in the toolbox of FDA reviewers (CDER/CBER, see &lt;em&gt;&lt;a href=&#34;http://www.cdisc.org/stuff/contentmgr/files/0/8d99d69f1195d2a2954e62d2fbb3470f/misc/cdisc_standards_in_fda_submissions_2012_01_26pdf.pdf&#34; target=&#34;_blank&#34;&gt;CDISC Standards in the Regulatory Submission Process&lt;/a&gt;&lt;/em&gt;, 26 January 2012, P.33). The key features in OpenCDISC is a &lt;a href=&#34;http://www.opencdisc.org/projects/validator/opencdisc-validation-framework&#34; target=&#34;_blank&#34;&gt;dichotomy of validation rules (XML based) and application logic&lt;/a&gt;. &lt;/font&gt;&lt;font size=&#34;1&#34;&gt;Currently OpenCDISC Validator (&lt;a href=&#34;http://www.opencdisc.org/download&#34; target=&#34;_blank&#34;&gt;Version 1.2.1&lt;/a&gt;) officially supports the four following CDISC modules:&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.opencdisc.org/projects/validator/cdisc-sdtm-3.1.2-validation-rules&#34;&gt;SDTM 3.1.2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.opencdisc.org/projects/validator/cdisc-sdtm-3.1.1-validation-rules&#34;&gt;SDTM 3.1.1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.opencdisc.org/projects/validator/cdisc-define.xml-1.0-validation-rules&#34;&gt;Define.xml 1.0&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.opencdisc.org/projects/validator/cdisc-adam-1.0-validation-rules&#34;&gt;ADaM 1.0&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;font size=&#34;2&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You can get the corresponding configuration files (validation rules) &lt;/font&gt;&lt;a href=&#34;http://www.opencdisc.org/download&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;online&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;or in the software folder (in ..&lt;em&gt;opencdisc-validatorconfig &lt;/em&gt;with extension of .xml). Since SDTM 3.1.2 has the most rich set of validation rules from Janus, WebSDM and of course additional&amp;#160; OpenCDISC rules by itself, its configuration file (&lt;em&gt;&lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;config-sdtm-3.1.2.xml&lt;/a&gt;&lt;/em&gt;) deserves more attention. Better understanding of &lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;&lt;/a&gt;&lt;em&gt;&amp;#160;&lt;/em&gt;is the first step to customize the software according to business needs. Followings are some personal tips and tricks to play and even “torture” the file, using Notepad++, web browsers (IE and Firefox), Excel with MSXML and SAS XML Mapper. &lt;/font&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;1-don-t-use-the-windows-default-notepad-to-open-and-edit-the-xml-file&#34;&gt;1. DON’T use the Windows default Notepad to open and edit the xml file&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad2.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_Notepad&#34; border=&#34;0&#34; alt=&#34;XML_Notepad&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad_thumb2.png&#34; width=&#34;453&#34; height=&#34;275&#34; /&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;while the reason:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;if you use Notepad to open a XML file, almost you get nothing but strings and strings.&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and another supporting reason, see bellowing picture.&lt;/font&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;2-use-a-href-http-notepad-plus-plus-org-target-blank-notepad-a-or-other-real-text-editors-to-open-and-edit-it&#34;&gt;2. USE &lt;a href=&#34;http://notepad-plus-plus.org/&#34; target=&#34;_blank&#34;&gt;Notepad++&lt;/a&gt; or other REAL text editors to open and edit it&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad3.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_Notepad  &#34; border=&#34;0&#34; alt=&#34;XML_Notepad  &#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Notepad_thumb3.png&#34; width=&#34;441&#34; height=&#34;321&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Notepad++ makes the difference. It supports multiple tabs view, XML syntax highlighting and XML tags match and other fancy stuff never in the plain Notepad. And like OpenCDISC, it’s free, both in sense of free beer and free speech.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Other real text editor, include Vim, UltraEdit and such, but for most users, I still think Notepad++ is the most handy one.&lt;/font&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;3-at-first-use-a-web-browsers-to-review-it&#34;&gt;3. At first, use a web browsers to review it&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_IE1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_IE&#34; border=&#34;0&#34; alt=&#34;XML_IE&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_IE_thumb1.png&#34; width=&#34;423&#34; height=&#34;398&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It is the web view of &lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;&lt;/a&gt;&lt;em&gt;. &lt;/em&gt;The secret is a style file, &lt;strong&gt;define-1.0.xsl&lt;/strong&gt; in ..opencdisc-validatorconfigschematron. This is another story of dichotomy. The &lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;&lt;/a&gt; file itself is only used to store metadata (machine-readable), while the style file (also a XML file) used to instruct how to display it (human-readable). Within some proper internal interface, web browsers (I tested in IE and Firefox; Google Chrome doesn’t work). Excel can also render this XML file well (only test on Excel 2010 and 2007) while &lt;/font&gt;&lt;font size=&#34;1&#34;&gt;Web view is much better&lt;/font&gt;&lt;font size=&#34;1&#34;&gt;:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Excel.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;XML_Excel&#34; border=&#34;0&#34; alt=&#34;XML_Excel&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Excel_thumb.png&#34; width=&#34;401&#34; height=&#34;577&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;4-the-real-awesome-job-use-microsoft-xml-parser-or-other-xml-parsers-to-dig-into-xml-structure&#34;&gt;4. The real awesome job: use Microsoft XML parser or other XML parsers to dig into XML structure&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_Tags_Excel&#34; border=&#34;0&#34; alt=&#34;XML_Tags_Excel&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel_thumb1.png&#34; width=&#34;406&#34; height=&#34;622&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I use Excel 2010 with Microsoft XML parser (&lt;a href=&#34;http://en.wikipedia.org/wiki/MSXML&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;MSXML 6.0&lt;/em&gt;&lt;/a&gt;&lt;em&gt;. &lt;/em&gt;You can get the version of your MSXML by visiting &lt;a href=&#34;http://home.arcor.de/martin.honnen/xslt/processorTest.xml&#34; target=&#34;_blank&#34;&gt;this website&lt;/a&gt; in IE and you will get the different results when switching to other web browsers because Firefox and Chrome use other parsers). &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You can also get a instance of each XML tag:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel_preview1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;XML_Tags_Excel_preview&#34; border=&#34;0&#34; alt=&#34;XML_Tags_Excel_preview&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_Tags_Excel_preview_thumb1.png&#34; width=&#34;416&#34; height=&#34;640&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;5-the-real-awesome-job-use-sas-xml-mapper-to-get-the-tabulation-view&#34;&gt;5. The real awesome job: use SAS XML Mapper to get the tabulation view&lt;/h1&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;And you may want to exact all the tables in the XML file with tabulation view, ideally, in SAS dataset:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For example, the first few rows in &lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_xml_tab1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;ODM_xml_tab&#34; border=&#34;0&#34; alt=&#34;ODM_xml_tab&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_xml_tab_thumb1.png&#34; width=&#34;399&#34; height=&#34;148&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;and the corresponding SAS dataset:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_tab1.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;ODM_tab&#34; border=&#34;0&#34; alt=&#34;ODM_tab&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/ODM_tab_thumb1.png&#34; width=&#34;414&#34; height=&#34;48&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Actually you can put all the data in XML into a big dataset but with lots of redundancies. To use SAS XML Mapper (the latest version is 9.3), you should design a mapping file to tell the structure of the XML file. For the simple ODM dataset, you indicate the table name, column name and path, type and length:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/map.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;map&#34; border=&#34;0&#34; alt=&#34;map&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/map_thumb.png&#34; width=&#34;357&#34; height=&#34;150&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It never be fun to play with XML files. SAS XML Mapper is supposed to read CDISC ODM based XML files automatically (OpenCDISC XML files are called ODM compliant), but at least for this config-sdtm-3.1.2.xml, it failed and that’s why we should create a mapping file (&lt;em&gt;see above&lt;/em&gt;) by ourselves. Fortunately you don’t need to write it from scratch (it would be thousands of lines of codes):&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;find a CDISC ODM based XML file that SAS XML Mapper can read automatically, e.g., in &lt;a href=&#34;http://www.cdisc.org/define-xml&#34;&gt;http://www.cdisc.org/define-xml&lt;/a&gt;, a file named &lt;em&gt;define-example1.xml&lt;/em&gt; works well.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;use AutoMap function in SAS XML Mapper to get the mapping file.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;modify the mapping file to fit your needs.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;for details, refer SAS XML mapping syntax.&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;6-final-notes-for-excel&#34;&gt;6. Final Notes for Excel&lt;/h1&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Right click &lt;a href=&#34;http://www.opencdisc.org/downloads/config/config-sdtm-3.1.2-v1.2.zip&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;config-sdtm-3.1.2.xml&lt;/em&gt;&lt;/a&gt; then open with “Microsoft Excel”:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel11.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Excel1&#34; border=&#34;0&#34; alt=&#34;Excel1&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel1_thumb1.png&#34; width=&#34;412&#34; height=&#34;163&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Option 2 will go to section 3. If go with option 1:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel21.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;Excel2&#34; border=&#34;0&#34; alt=&#34;Excel2&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/Excel2_thumb1.png&#34; width=&#34;320&#34; height=&#34;181&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Option 1-1 and 1-2:&amp;#160;&amp;#160; tabulation view in section 5&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Option&amp;#160; &lt;/font&gt;&lt;font size=&#34;1&#34;&gt;1-3:&amp;#160; tag view in section 4.&lt;/font&gt;&lt;/p&gt;
-</description>
+      <description>OpenCDISC, the first open source CDISC validator, is already in the toolbox of FDA reviewers (CDER/CBER, see CDISC Standards in the Regulatory Submission Process, 26 January 2012, P.33). The key features in OpenCDISC is a dichotomy of validation rules (XML based) and application logic. Currently OpenCDISC Validator (Version 1.2.1) officially supports the four following CDISC modules:
+ SDTM 3.1.2 SDTM 3.1.1 Define.xml 1.0 ADaM 1.0  
+You can get the corresponding configuration files (validation rules) online or in the software folder (in .</description>
     </item>
     
   </channel>

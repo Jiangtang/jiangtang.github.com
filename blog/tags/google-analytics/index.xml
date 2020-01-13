@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Google Analytics on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/google-analytics/index.xml</link>
+    <link>/tags/google-analytics/</link>
     <description>Recent content in Google Analytics on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/google-analytics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jan 2013 23:47:44 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/google-analytics/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Blog Statistics: 2012</title>
@@ -14,53 +17,9 @@
       <pubDate>Tue, 01 Jan 2013 23:47:44 +0000</pubDate>
       
       <guid>/2013/01/01/blog-statistics-2012/</guid>
-      <description>
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;(This blog’s page view data from Google Analytics; &lt;/span&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/archives/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;43 posts in total in 2012&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;)&lt;/span&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;top-10-countries-territories-and-cities&#34;&gt;Top 10 countries/territories and cities&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_country.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;blog_country&#34; alt=&#34;blog_country&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_country_thumb.png&#34; width=&#34;382&#34; height=&#34;384&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Most of my readers come from US and I’m glad my Chinese fellows still fork me since I moved to US this year (&lt;em&gt;today is my one year anniversary in US&lt;/em&gt;).&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;To my surprising there are much more readers from South Korea than from Japan(#12) and Singapore(#22).&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Readers from a secret city (#7) are watching me! &lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;top-10-referral-social-networks&#34;&gt;Top 10 referral social networks&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_social-network.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;blog_social network&#34; alt=&#34;blog_social network&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_social-network_thumb.png&#34; width=&#34;168&#34; height=&#34;514&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;I’m happy that people navigating through Facebook also click this technical blog!&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;top-10-mobile-devices&#34;&gt;Top 10 mobile devices&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_mobile.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;blog_mobile&#34; alt=&#34;blog_mobile&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_mobile_thumb.png&#34; width=&#34;396&#34; height=&#34;411&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;I think myself contributed a lot via Google Nexus 7 (#7) visiting my own blog (&lt;em&gt;one upon a time in 2012, I had two new released Nexus 7 tablets at hand until one dropped down and another sold out…&lt;/em&gt;).&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;top-10-most-viewed-posts&#34;&gt;Top 10 most viewed posts&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/13/sublimetext2-sas/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Sublime Text 2 for SAS Programmers: A Quick Note&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/10/23/tony-barr-and-the-early-history-of-sas/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Tony Barr and the Early History of SAS&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/11/xml/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Face Off: Review OpenCDISC XML files&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/12/07/sas-books-2012/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;My SAS Books: Shopping List 2012&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/16/hypothesis-testing/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Statistical Notes (4): Dragon’s Teeth and Fleas: Hypothesis Testing in Plain English&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/geomean/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Statistical Notes (1): Geometric Mean and Geometric Mean Ratio&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/12/column-mode-in-sas-9-3-enhanced-editor/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Column Mode in SAS 9.3 Enhanced Editor&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/11/30/weekend-clip-data-scientist/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Weekend Clip: Data Scientist&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/tost-equivalence-test/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Statistical Notes (2): Equivalence Testing and TOST (Two One-Sided Test)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/19/publishing-cdisc-standards/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Is There Any Better Way? Publishing Process For CDISC Standards Documentation&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Thank you my fellow readers and happy new year (if you like to have another break, follow me to celebrate Chinese new year at Feb 10, 2013 )!&lt;/span&gt;&lt;/p&gt;
-</description>
+      <description>(This blog’s page view data from Google Analytics; 43 posts in total in 2012)
+Top 10 countries/territories and cities 
+ Most of my readers come from US and I’m glad my Chinese fellows still fork me since I moved to US this year (today is my one year anniversary in US). To my surprising there are much more readers from South Korea than from Japan(#12) and Singapore(#22). Readers from a secret city (#7) are watching me!</description>
     </item>
     
   </channel>

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Anti Money Laundering on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/anti-money-laundering/index.xml</link>
-    <description>Recent content in Anti Money Laundering on Jiangtang Hu | 胡江堂</description>
+    <title>Anti-Money Laundering on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/anti-money-laundering/</link>
+    <description>Recent content in Anti-Money Laundering on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/anti-money-laundering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Dec 2008 10:44:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/anti-money-laundering/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Industry Review: SAS and Teradata Partnership</title>
@@ -14,32 +17,7 @@
       <pubDate>Fri, 19 Dec 2008 10:44:00 +0000</pubDate>
       
       <guid>/2008/12/19/industry-review-sas-and-teradata-partnership/</guid>
-      <description>&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
-  &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;SAS and Teradata Partnership: Press&lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
-  &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.sas.com/news/preleases/SASandTeradataAdvantageProgram.html&#34;&gt;Leading Companies See Value in SAS and Teradata Partnership&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.sas.com/news/preleases/TeradataAdvantageProgram.html&#34;&gt;SAS and Teradata Unveil Advantage Program to Bring Powerful In-Database Solutions and Services to Customers&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.teradata.com/t/page/173874/index.html&#34;&gt;SAS and Teradata Enter into Strategic Partnership&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;font-size: 100%;&#34;&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
-  &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
-  &lt;span style=&#34;font-size: 100%;&#34;&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
-  &lt;span style=&#34;font-size: 100%;&#34;&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;In BI industry, the pure players such as SAS, Teradata and Microstrategy, need to demonstrate their indispensable values against the megavendors, IBM (acquired Cognos), SAP (acquired Business Object), Oracle (acquired Hyperion) and Microsoft. Teradata is solely focused on enterprise data warehouse. SAS, dominating in business analytics (e.g. advanced statistics and data mining), will check and balance the BI industry due to the private-hold structure. SAS and Teradata Advantage Program partnership, includes wide business lines, such as Analytics, AML (Anti-Money Laundering), Credit Risk, Enterprise Intelligence and Optimization Services. I think It&amp;#8217;s a effective way to learn from each other in mutual emulation and&lt;/span&gt;&lt;span style=&#34;font-family: Times New Roman;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;counterbalance the &lt;/span&gt;&lt;span class=&#34;wbtrmn&#34;&gt;&lt;span style=&#34;font-family: Times New Roman;&#34;&gt;concentration&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt; market.&lt;/span&gt;&lt;/span&gt;
-&lt;/p&gt;
-</description>
+      <description>SAS and Teradata Partnership: Press   Leading Companies See Value in SAS and Teradata Partnership SAS and Teradata Unveil Advantage Program to Bring Powerful In-Database Solutions and Services to Customers SAS and Teradata Enter into Strategic Partnership    In BI industry, the pure players such as SAS, Teradata and Microstrategy, need to demonstrate their indispensable values against the megavendors, IBM (acquired Cognos), SAP (acquired Business Object), Oracle (acquired Hyperion) and Microsoft.</description>
     </item>
     
   </channel>

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mapreduce on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/mapreduce/index.xml</link>
-    <description>Recent content in Mapreduce on Jiangtang Hu | 胡江堂</description>
+    <title>MapReduce on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/mapreduce/</link>
+    <description>Recent content in MapReduce on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/mapreduce/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Sep 2015 14:01:30 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/mapreduce/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>SAS MapReduce: A Quick Followup by DS2</title>
@@ -14,24 +17,9 @@
       <pubDate>Fri, 04 Sep 2015 14:01:30 +0000</pubDate>
       
       <guid>/2015/09/04/sas-mapreduce-a-quick-followup-by-ds2/</guid>
-      <description>&lt;p&gt;&lt;font size=&#34;2&#34;&gt;(&lt;/font&gt;&lt;a href=&#34;https://support.sas.com/documentation/cdl/en/proc/67916/HTML/default/viewer.htm#n0ox2hnyx7twb2n13200g5hqqsmy.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;2&#34;&gt;DS2&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;2&#34;&gt;would be the king!) Years ago I made up &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/10/04/map-and-reduce-in-mapreduce-a-sas-illustration/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;2&#34;&gt;a piece of SAS code to demonstrate the basic idea of Map-Reduce&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;2&#34;&gt;. Now this idea can be best implemented by this piece of workable program with &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/documentation/cdl/en/proc/67916/HTML/default/viewer.htm#n0ox2hnyx7twb2n13200g5hqqsmy.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;2&#34;&gt;PROC DS2&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;2&#34;&gt;(tested in SAS 9.4 TS1M2, Win7):&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;PROC DS2;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;/* create some data &amp;#8211;&lt;em&gt;/ &lt;br /&gt;data input_data / overwrite = yes; &lt;br /&gt;dcl double d; &lt;br /&gt;method init(); &lt;br /&gt;&amp;#160;&amp;#160; dcl int i; &lt;br /&gt;&amp;#160;&amp;#160; do i = 1 to 10000000; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; /&lt;/em&gt;&amp;#8211; create some money values &amp;#8211;*/ &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; d = round( (ranuni(123) * 10 ), .01 ); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; output; &lt;br /&gt;&amp;#160;&amp;#160; end; &lt;br /&gt;end; &lt;br /&gt;enddata; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;&amp;#8211; count the rows in multiple threads &amp;#8211;&lt;/em&gt;/ &lt;br /&gt;&lt;strong&gt;thread&lt;/strong&gt; &lt;font color=&#34;#ff0000&#34;&gt;map&lt;/font&gt; / overwrite = yes; &lt;br /&gt;dcl double c s; &lt;br /&gt;keep c s; &lt;br /&gt;method run(); &lt;br /&gt;&amp;#160;&amp;#160; set input_data; &lt;br /&gt;&amp;#160;&amp;#160; /&lt;em&gt;&amp;#8211; the more compuation here, the more benefit &amp;#8211;&lt;/em&gt;/ &lt;br /&gt;&amp;#160;&amp;#160; c + 1; &lt;br /&gt;&amp;#160;&amp;#160; s + d; &lt;br /&gt;end; &lt;br /&gt;method term(); &lt;br /&gt;&amp;#160;&amp;#160; output; &lt;br /&gt;&amp;#160;&amp;#160; put s= c=; &lt;br /&gt;end; &lt;br /&gt;endthread; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;&amp;#8211; blend the results into one total &amp;#8211;&lt;/em&gt;/ &lt;br /&gt;data &lt;font color=&#34;#ff0000&#34;&gt;reduce&lt;/font&gt; / overwrite = yes; &lt;br /&gt;dcl thread map m; &lt;br /&gt;dcl double totc tots; &lt;br /&gt;keep totc tots; &lt;br /&gt;method run(); &lt;br /&gt;&amp;#160;&amp;#160; set from m &lt;font color=&#34;#ff0000&#34;&gt;threads=4&lt;/font&gt;; &lt;br /&gt;&amp;#160;&amp;#160; totc + c; &lt;br /&gt;&amp;#160;&amp;#160; tots + s; &lt;br /&gt;end; &lt;br /&gt;method term(); &lt;br /&gt;&amp;#160;&amp;#160; output; &lt;br /&gt;end; &lt;br /&gt;enddata; &lt;br /&gt;run; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;2&#34; face=&#34;Courier New&#34;&gt;proc print data=reduce; run; &lt;br /&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;2&#34;&gt;Notice the option of “&lt;font color=&#34;#ff0000&#34;&gt;threads=4&lt;/font&gt;”. You can specify the thread as any number you want (the number of slaves..).&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;2&#34;&gt;Thanks &lt;/font&gt;&lt;a href=&#34;https://www.linkedin.com/pub/robert-ray/29/814/b73&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;2&#34;&gt;Robert Ray&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;2&#34;&gt;of SAS Institute to kindly allow me to post his code.&lt;/font&gt;&lt;/p&gt;
-</description>
+      <description>(DS2 would be the king!) Years ago I made up a piece of SAS code to demonstrate the basic idea of Map-Reduce. Now this idea can be best implemented by this piece of workable program with PROC DS2 (tested in SAS 9.4 TS1M2, Win7):
+ PROC DS2;
+/* create some data &amp;#8211;/ data input_data / overwrite = yes; dcl double d; method init(); &amp;#160;&amp;#160; dcl int i; &amp;#160;&amp;#160; do i = 1 to 10000000; &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; /&amp;#8211; create some money values &amp;#8211;*/ &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; d = round( (ranuni(123) * 10 ), .</description>
     </item>
     
     <item>
@@ -40,18 +28,7 @@
       <pubDate>Tue, 04 Oct 2011 21:31:18 +0000</pubDate>
       
       <guid>/2011/10/04/map-and-reduce-in-mapreduce-a-sas-illustration/</guid>
-      <description>&lt;p&gt;In &lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/09/14/analytical-valley/&#34; target=&#34;_blank&#34;&gt;last post&lt;/a&gt;, I mentioned &lt;a href=&#34;http://hadoop.apache.org/&#34;&gt;Hadoop&lt;/a&gt;, the open source implementation of Google’s &lt;a href=&#34;http://en.wikipedia.org/wiki/Mapreduce&#34; target=&#34;_blank&#34;&gt;MapReduce&lt;/a&gt; for parallelized processing of big data. In this long National Holiday, I read the original Google paper, _&lt;a href=&#34;http://static.googleusercontent.com/external_content/untrusted_dlcp/labs.google.com/en//papers/mapreduce-osdi04.pdf&#34; target=&#34;_blank&#34;&gt;MapReduce: Simplified Data Processing on Large Clusters&lt;/a&gt;_ by Jeffrey Dean and Sanjay Ghemawat and got that the terminologies of “map” and “reduce” were basically borrowed from Lisp, an old functional language that I even didn’t play “hello world” with. For Python users, the idea of Map and Reduce is also very straightforward because the workhorse data structure in Python is just the list, a sequence of values that you can just imagine that they are the nodes(clusters, chunk servers, …) in a distributed system.&lt;/p&gt;
-
-&lt;p&gt;MapReduce is a programming framework and really language independent, so SAS users can also get the basic idea from their daily programming practices and here is just a simple illustration using data step array (not array in Proc FCMP or matrix in IML). Data step array in SAS is fundamentally not a data structure but a convenient way of processing group of variables, but it can also be used to play some list operations like in Python and other rich data structure supporting languages(an editable version can be founded in &lt;a href=&#34;http://jiangtanghu.com/docs/en/MapReduce.sas&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;):&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/10/MapReduce.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px&#34; title=&#34;MapReduce&#34; border=&#34;0&#34; alt=&#34;MapReduce&#34; align=&#34;left&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/10/MapReduce_thumb.png&#34; width=&#34;506&#34; height=&#34;535&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Follow code above, the programming task is to capitalize a string “Hadoop” (Line 2) and the “master” method is just to capitalize the string in buddle(Line 8): just use a master machine to processing the data.&lt;/p&gt;
-
-&lt;p&gt;Then we introduce the idea of “big data” that the string is too huge to one master machine, so “master method” failed. Now we distribute the task to thousands of low cost machines (workers, slaves, chunk servers,&amp;hellip; in this case, the one dimensional array with size of 6, see Line 11), each machine produces parts of the job (each array element only capitalizes a single letter in sequence, see Line 12-14). Such distributing operation is called “&lt;font color=&#34;#ff0000&#34;&gt;map&lt;/font&gt;”. In a MapReduce system, a master machine is also needed to assign the maps and reduce.&lt;/p&gt;
-
-&lt;p&gt;How about “&lt;font color=&#34;#ff0000&#34;&gt;reduce&lt;/font&gt;”?&amp;#160; A “reduce” operation is also called “fold”—for example, in Line 17, the operation to combine all the separately values into a single value: combine results from multiple worker machines.&lt;/p&gt;
-</description>
+      <description>In last post, I mentioned Hadoop, the open source implementation of Google’s MapReduce for parallelized processing of big data. In this long National Holiday, I read the original Google paper, _MapReduce: Simplified Data Processing on Large Clusters_ by Jeffrey Dean and Sanjay Ghemawat and got that the terminologies of “map” and “reduce” were basically borrowed from Lisp, an old functional language that I even didn’t play “hello world” with. For Python users, the idea of Map and Reduce is also very straightforward because the workhorse data structure in Python is just the list, a sequence of values that you can just imagine that they are the nodes(clusters, chunk servers, …) in a distributed system.</description>
     </item>
     
   </channel>

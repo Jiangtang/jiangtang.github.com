@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Stanford on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/stanford/index.xml</link>
-    <description>Recent content in Stanford on Jiangtang Hu | 胡江堂</description>
+    <title>stanford on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/stanford/</link>
+    <description>Recent content in stanford on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/stanford/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Mar 2009 10:28:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/stanford/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Free Machine Learning Courses (Stanford) in YouTube</title>
@@ -14,18 +17,7 @@
       <pubDate>Mon, 02 Mar 2009 10:28:00 +0000</pubDate>
       
       <guid>/2009/03/02/free-machine-learning-courses-stanford-in-youtube/</guid>
-      <description>&lt;div&gt;
-  &lt;font face=Arial&gt;FYI:&lt;/font&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;font face=Arial&gt;&lt;/font&gt;&amp;nbsp;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;font face=Arial&gt;&lt;a  href=&#34;http://www.youtube.com/view_play_list?p=A89DCFA6ADACE599&#34;&gt;http://www.youtube.com/view_play_list?p=A89DCFA6ADACE599&lt;/a&gt;&lt;/font&gt;
-&lt;/div&gt;
-</description>
+      <description> FYI:   &amp;nbsp;   http://www.youtube.com/view_play_list?p=A89DCFA6ADACE599  </description>
     </item>
     
   </channel>

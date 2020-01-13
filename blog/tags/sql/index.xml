@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sql on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/sql/index.xml</link>
-    <description>Recent content in Sql on Jiangtang Hu | 胡江堂</description>
+    <title>SQL on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/sql/</link>
+    <description>Recent content in SQL on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Feb 2013 23:37:49 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>LearningR!</title>
@@ -14,21 +17,7 @@
       <pubDate>Fri, 08 Feb 2013 23:37:49 +0000</pubDate>
       
       <guid>/2013/02/08/learningr/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Computing_for_data_analysis_Coursera.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Computing_for_data_analysis_Coursera&#34; border=&#34;0&#34; alt=&#34;Computing_for_data_analysis_Coursera&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Computing_for_data_analysis_Coursera_thumb.png&#34; width=&#34;475&#34; height=&#34;422&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I spent almost all of my blogging time last month to follow an online course in &lt;/font&gt;&lt;a href=&#34;https://www.coursera.org&#34;&gt;&lt;font size=&#34;1&#34;&gt;Coursera&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, &lt;em&gt;&lt;a href=&#34;https://www.coursera.org/course/compdata&#34;&gt;Computing for Data Analysis&lt;/a&gt;&lt;/em&gt; (with R) by Dr. &lt;/font&gt;&lt;a href=&#34;http://simplystatistics.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Roger&amp;#160; Peng&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;of Johns Hopkins, Biostatistics Department. I already checked out bunch of Coursera courses just to take a look at what else &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Massive_open_online_course&#34;&gt;&lt;font size=&#34;1&#34;&gt;MOOC&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;look like, this R course was the first and only one I took seriously: I reviewed all slides (although didn’t watch the videos since I didn’t have enough time) and most important, finished all programming assignments(and got full score!).&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Not a frequent R user, I used some R packages for learning purpose (mostly in &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/01/15/feature-selection-collections-for-self-study/&#34;&gt;&lt;font size=&#34;1&#34;&gt;data mining&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;). This &lt;em&gt;&lt;a href=&#34;https://www.coursera.org/course/compdata&#34;&gt;Computing for Data Analysis&lt;/a&gt;&lt;/em&gt; course focused mostly on data manipulation and that’s why I chose it to dig into R. R by design is not a tool for data management (where SAS excels), but it’s nice to have (no hurt since it’s free). Those days I put most of my efforts on R data structures(vector, matrix, array, list, data frame) and by grouping processing(*ply functions). Few resource I found extremely useful as a starter:&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/tagged/r&#34; title=&#34;http://stackoverflow.com/questions/tagged/r&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://stackoverflow.com/questions/tagged/r&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160; when I google a specific R programming technique, mostly I will reach to stackoverflow website, a new generation Q&amp;amp;A hub to replace user forum, mailing list.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;_&lt;a href=&#34;https://www.google.com/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;ved=0CDIQFjAA&amp;amp;url=http%3A%2F%2Fcran.r-project.org%2Fdoc%2Fcontrib%2FLam-IntroductionToR_LHL.pdf&amp;amp;ei=O84VUfK7HIue8gSr5YGYBQ&amp;amp;usg=AFQjCNGmMLsnqaHAxGH368m32E8s4STNTA&amp;amp;sig2=Gz7gjUqiPqD-nq_Sg5X57w&amp;amp;bvm=bv.42080656,d.eWU&#34;&gt;&lt;font size=&#34;1&#34;&gt;An introduction to R&lt;/font&gt;&lt;/a&gt;_ &lt;font size=&#34;1&#34;&gt;by Longhow Lam, a free book. I like its Chapter 2,&lt;em&gt; Data Objects&lt;/em&gt;, including R data types and data structures.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Data Manipulation with R&lt;/em&gt; by Phil Spector, one of the Use R! books. I used its Chapter 8, &lt;em&gt;Data Aggregation &lt;/em&gt;on R by group processing.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.rstudio.com/ide/&#34;&gt;&lt;font size=&#34;1&#34;&gt;RStudio&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, a must have R IDE, the best of best. &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Package &lt;/font&gt;&lt;a href=&#34;http://cran.r-project.org/web/packages/plyr/index.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;plyr&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, tools for splitting, applying and combining data. Actually, it is awful to use R to manipulate data from a SAS programmer point of view. Use plyr to alleviate the pain.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Package &lt;/font&gt;&lt;a href=&#34;http://code.google.com/p/sqldf/&#34;&gt;&lt;font size=&#34;1&#34;&gt;sqldf&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, like SAS Proc SQL against data frame. Reason, ibid. Use sqldf won’t enhance your R programming skill, but sometime when you feel down at R, you may want to launch piece of SQL scripts you really like.&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>I spent almost all of my blogging time last month to follow an online course in Coursera, Computing for Data Analysis (with R) by Dr. Roger&amp;#160; Peng of Johns Hopkins, Biostatistics Department. I already checked out bunch of Coursera courses just to take a look at what else MOOC look like, this R course was the first and only one I took seriously: I reviewed all slides (although didn’t watch the videos since I didn’t have enough time) and most important, finished all programming assignments(and got full score!</description>
     </item>
     
     <item>
@@ -37,42 +26,7 @@
       <pubDate>Sat, 12 Jan 2013 18:08:14 +0000</pubDate>
       
       <guid>/2013/01/12/how-to-jump-into-sas-data-integration-studio/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/SAS2DISJob.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS2DISJob&#34; border=&#34;0&#34; alt=&#34;SAS2DISJob&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/SAS2DISJob_thumb.png&#34; width=&#34;415&#34; height=&#34;452&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This is for for SAS programmers who might be reluctant to check out a GUI tool like SAS Data Integration Studio (DIS for short, which is graphic tool to implement ETL processes: extract, transform, load). DIS translates all users dragged nodes, transformations and process into SAS codes which are traditionally written by SAS programmers. I find one of the benefits of using DIS is that I can package all the ETL work to other players(technical or nontechnical) then they can replay the job by dragging and clicking. &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Actually besides translating all the visual nodes to SAS codes, DIS can also reversely incorporate your SAS codes to the graphic job shown as above. So SAS programmers can easily jump into DIS by importing their codes to get the graphic workflow (to get the first impression). Here is an one-minute demo:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Save the following codes in a file(from &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/sqlproc/63043/HTML/default/viewer.htm#p0o4a5ac71mcchn1kc1zhxdnm139.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS SQL onlinedoc&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;),&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%let dir=C:\;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;libname source BASE &amp;ldquo;&amp;amp;dir&amp;rdquo;; &lt;br /&gt;libname target BASE &amp;ldquo;&amp;amp;dir&amp;rdquo;;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data source.one; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input x y; &lt;br /&gt;datalines; &lt;br /&gt;1 2 &lt;br /&gt;2 3 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data source.two; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input x y; &lt;br /&gt;datalines; &lt;br /&gt;2 5 &lt;br /&gt;3 6 &lt;br /&gt;4 9 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc sql; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; create table target.three as &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; select o.x,o.y &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; from source.one as o, source.two as t &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; where o.x=t.x &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc print data=target.three; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Just create a test folder in DIS (this demo was created in a working repository, in a Windows DIS 4.21 machine ) then right click mouse to “Import”-“Import SAS Code” to import the file created above then run the job generated and all set (you will get all stuff showed above).&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Note that the SAS libraries must be registered first in the &lt;em&gt;SAS Metadata&lt;/em&gt; Server then you can use it. This demo omit this process only for demo purpose.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You can check out the SQL Join by double clicking the SQL node:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/SAS2DISJob_SQLJoin.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS2DISJob_SQLJoin&#34; border=&#34;0&#34; alt=&#34;SAS2DISJob_SQLJoin&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/SAS2DISJob_SQLJoin_thumb.png&#34; width=&#34;412&#34; height=&#34;537&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and your codes in Code panel (still yours!):&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/image.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/image_thumb.png&#34; width=&#34;335&#34; height=&#34;562&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Furthermore, without getting know bunch of the tool first, you can jump into DIS quickly by creating customized Transformations which are basically SAS codes with macro variables as the perimeters in the visual options box. Pretty neat? Just check it out!&lt;/font&gt;&lt;/p&gt;
-</description>
+      <description>This is for for SAS programmers who might be reluctant to check out a GUI tool like SAS Data Integration Studio (DIS for short, which is graphic tool to implement ETL processes: extract, transform, load). DIS translates all users dragged nodes, transformations and process into SAS codes which are traditionally written by SAS programmers. I find one of the benefits of using DIS is that I can package all the ETL work to other players(technical or nontechnical) then they can replay the job by dragging and clicking.</description>
     </item>
     
     <item>
@@ -81,42 +35,7 @@
       <pubDate>Fri, 11 Jan 2013 15:01:09 +0000</pubDate>
       
       <guid>/2013/01/11/how-to-get-row-numbers-in-sas-proc-sql-and-do-not-use-the-undocumented-monotonic-function/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;SAS programmers are longing for row number function used in Proc SQL, like &lt;/span&gt;&lt;a href=&#34;http://docs.oracle.com/cd/B19306_01/server.102/b14200/functions137.htm&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;ROW_NUMBER() in Oracle SQL&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;and it will act like data step system variable &lt;em&gt;N&lt;/em&gt;. When you google this question, most likely you will get MONOTONIC() function, which might be one of the most famous &lt;/span&gt;&lt;a href=&#34;www2.sas.com/proceedings/sugi29/040-29.pdf&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;undocumented features shipped by SAS&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;. You can of course use it, but at your own risk! In SAS Usage Note 15138, it&amp;#8217;s said:&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;The MONOTONIC() function is not supported in PROC SQL. Using the MONOTONIC() function in PROC SQL can cause missing or non-sequential values to be returned.&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Here question is, why stick to the function? Actually there is a long-existing Proc SQL option (&lt;em&gt;at least since SAS 9.1.3 which was my first SAS version&lt;/em&gt;), &lt;/span&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/sqlproc/63043/HTML/default/viewer.htm&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;NUMBER&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;to return the row numbers:&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;proc sql number outobs=5;&lt;br /&gt; select Species&lt;br /&gt; from sashelp.iris&lt;br /&gt; ;&lt;br /&gt; quit;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;See a new column &amp;#8220;Row&amp;#8221; was created in response to this NUMBER option.&lt;/span&gt;&lt;/p&gt;
-
-&lt;p style=&#34;text-align: center;&#34;&gt;
-  &lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;&#34; alt=&#34;&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/011113_2003_HowtoGetRow1.png&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p&gt;[update 2014/03/19] A reader asked how to capture such row number in a data set since the NUMBER option only affects in output. Well, if it shows up in output, we can always use ODS to retrieve it. Submit the follow codes to check which output table will be generated (which is &lt;strong&gt;SQL_Results&lt;/strong&gt;):&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;ods trace on;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;proc sql number outobs=5;&lt;br /&gt; select Species&lt;br /&gt; from sashelp.iris&lt;br /&gt; ;&lt;br /&gt; quit;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;ods trace off;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Then  use the standard ODS OUTPUT statement to get it:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;ods output SQL_Results=rownumber;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;proc sql number outobs=5;&lt;br /&gt; select Species&lt;br /&gt; from sashelp.iris&lt;br /&gt; ;&lt;br /&gt; quit;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>SAS programmers are longing for row number function used in Proc SQL, like ROW_NUMBER() in Oracle SQL and it will act like data step system variable N. When you google this question, most likely you will get MONOTONIC() function, which might be one of the most famous undocumented features shipped by SAS. You can of course use it, but at your own risk! In SAS Usage Note 15138, it&amp;#8217;s said:</description>
     </item>
     
     <item>
@@ -125,42 +44,7 @@
       <pubDate>Wed, 14 Sep 2011 22:15:17 +0000</pubDate>
       
       <guid>/2011/09/14/an-analytical-valley-big-data-and-data-scientists-and-sas-programmers/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/09/hadoop.jpg&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;hadoop&#34; border=&#34;0&#34; alt=&#34;hadoop&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/09/hadoop_thumb.jpg&#34; width=&#34;240&#34; height=&#34;180&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://blogs.sas.com/content/sascom/author/tomdavenport&#34; target=&#34;_blank&#34;&gt;Tom Davenport&lt;/a&gt; reported an observation that &lt;a href=&#34;http://blogs.sas.com/content/sascom/2011/09/13/is-silicone-valley-becoming-more-analytical/&#34; target=&#34;_blank&#34;&gt;Silicon Valley is becoming more analytical&lt;/a&gt; since companies in the Valley such as Google, Facebook, eBay, LinkedLn all have strong presences in analytics. Besides such predominant companies, I’d also like to add Yahoo to the list although Yahoo is no longer in its peak. Yahoo is the largest sponsor and contributor of &lt;a href=&#34;http://hadoop.apache.org/&#34; target=&#34;_blank&#34;&gt;Hadoop&lt;/a&gt;, an open source framework for distributed processing of so called “big data”. When taking a look at the outstanding &lt;a href=&#34;www.facebook.com/data&#34; target=&#34;_blank&#34;&gt;Facebook data team&lt;/a&gt; or &lt;a href=&#34;http://sna-projects.com/sna/&#34; target=&#34;_blank&#34;&gt;LinkedIn data team&lt;/a&gt;, we can see that Hadoop is also one of the most overwhelmingly successful technical factors. Such Valley companies themselves are the huge consumers of big data and have strong incentives to develop analytical solutions beyond their high technology product pipelines.&lt;/p&gt;
-
-&lt;p&gt;Analytical staffs in LinkedLn also helps a lot to promote the widely usage of the term “data scientist”. They identify themselves as data scientists and that’s really cool. Now more and more statisticians are also very glad to accept this brand new title. According to a &lt;a href=&#34;http://blog.revolutionanalytics.com/2011/08/statisticians-at-jsm-consider-themselves-data-scientists.html&#34; target=&#34;_blank&#34;&gt;survey in JSM&lt;/a&gt; (2011, Miami), more than 85% (164) statisticians there considered themselves “data scientists”.&lt;/p&gt;
-
-&lt;p&gt;McKinsey also released a report this May &lt;a href=&#34;http://www.mckinsey.com/mgi/publications/big_data/pdfs/MGI_big_data_full_report.pdf&#34; target=&#34;_blank&#34;&gt;on big data&lt;/a&gt; and the huge gap of qualified analytical talents. You know when a management consulting firm begins to talk something technical, it is no longer a fashion to follow the discussion of the concept. To embrace the challenge of big data, one or the team needs multidiscipline background—basically speaking, computer science and statistics (and data mining or machine learning is just an interdisciplinary subject of them). Here is an ambitious list on “How do I become a data scientist”:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.quora.com/Educational-Resources/How-do-I-become-a-data-scientist&#34;&gt;http://www.quora.com/Educational-Resources/How-do-I-become-a-data-scientist&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;For these learning plans, just feel the meaning and don’t take it too seriously. Check yourself and set up your own priority.&lt;/p&gt;
-
-&lt;h3 id=&#34;notes-for-sas-programmers&#34;&gt;Notes for SAS Programmers&lt;/h3&gt;
-
-&lt;p&gt;For SAS programmers, I read an exciting post besides High Performance Computing that &lt;a href=&#34;http://blogs.sas.com/content/datamanagement/2011/08/29/sas-hadoop-and-big-data&#34; target=&#34;_blank&#34;&gt;SAS will also play with Hadoop&lt;/a&gt; by introducing some functionality in SAS/Access and SAS Data Integration Studio.&lt;/p&gt;
-
-&lt;p&gt;For SAS programmers with no IT background, it is not a good idea to jump into algorithms and data structures and other hard core computer courses immediately. Instead I recommend to take the full advantages of SAS language and system itself to dive into computer world gradually:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Learn and practice and practice &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/sqlproc/63043/HTML/default/viewer.htm#titlepage.htm&#34; target=&#34;_blank&#34;&gt;SAS Proc SQL&lt;/a&gt; which is compliant with the &lt;a href=&#34;http://en.wikipedia.org/wiki/SQL-92&#34;&gt;SQL-92&lt;/a&gt; standard. SQL is the common language in database world and SAS Proc SQL can help you switch smoothly to Oracle SQL, Teradata SQL, MySql SQL and other SQL implementations although there are some non-critical &lt;a href=&#34;http://www.jiangtanghu.com/blog/2009/12/04/work-with-oracle-a-quick-sheet-for-sas-programmers-2/&#34; target=&#34;_blank&#34;&gt;differences&lt;/a&gt; in details.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Dig into the operating system specific documentation of SAS, for example in SAS 9.3,&amp;#160; _&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/hostwin/63047/HTML/default/viewer.htm#titlepage.htm&#34; target=&#34;_blank&#34;&gt;SAS 9.3 Companion for Windows&lt;/a&gt;_ or _&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/hostunx/63053/HTML/default/viewer.htm#titlepage.htm&#34; target=&#34;_blank&#34;&gt;SAS 9.3 Companion for UNIX Environments&lt;/a&gt;_ or others depending the OS you are working on. They are the critical important documentations but unfortunately often missed in SAS programmers’&amp;#160; reading list.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Such docs will help SAS programmers to deal with the machines and expose to the wide computer world in a way that a SAS programmer can understand. You can’t expect to be an expert on computer via such docs, but at least you can communicate fluently with internal IT staff.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Then you get all the confidences to play with computer and can switch to any other topics interested in &lt;a href=&#34;http://www.quora.com/Educational-Resources/How-do-I-become-a-data-scientist&#34; target=&#34;_blank&#34;&gt;the list above&lt;/a&gt;!&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>Tom Davenport reported an observation that Silicon Valley is becoming more analytical since companies in the Valley such as Google, Facebook, eBay, LinkedLn all have strong presences in analytics. Besides such predominant companies, I’d also like to add Yahoo to the list although Yahoo is no longer in its peak. Yahoo is the largest sponsor and contributor of Hadoop, an open source framework for distributed processing of so called “big data”.</description>
     </item>
     
     <item>
@@ -169,170 +53,12 @@
       <pubDate>Fri, 04 Dec 2009 09:33:00 +0000</pubDate>
       
       <guid>/2009/12/04/work-with-oracle-a-quick-sheet-for-sas-programmers/</guid>
-      <description>&lt;p&gt;(Note: All the followings are tested on Windows XP environment.)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;0. Install Oracle Database 10g Express Edition&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Fast (and free) to download, easy to deploy and simple to admin&amp;#8211;for learning and testing purpose, Oracle Database 10g Express Edition (Oracle Database XE, a mini version of Oracle Database 10&lt;em&gt;g&lt;/em&gt; Release 2) are strongly recommended:&lt;/p&gt;
-
-&lt;p&gt;0.1 Download it at &lt;a href=&#34;http://www.oracle.com/technology/software/products/database/xe/index.html&#34;&gt;its homepage&lt;/a&gt;(206MB);&lt;/p&gt;
-
-&lt;p&gt;0.2 Install it following default settings;&lt;/p&gt;
-
-&lt;p&gt;0.3 Unlock accounts for HR and SCOTT. In a windows DOS prompt, using the following scripts:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;pre&gt;sqlplus sys/&lt;span style=&#34;color:#ff0000;&#34;&gt;&lt;em&gt;YourSysPassword&lt;/em&gt; &lt;/span&gt;as sysdba&lt;/pre&gt;
-
-&lt;pre&gt;alter user HR account unlock&lt;/pre&gt;
-
-&lt;pre&gt;alter user HR identified by &lt;em&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;YourHRPassword&lt;/span&gt;&lt;/em&gt;&lt;/pre&gt;
-
-&lt;pre&gt;alter user SCOTT account unlock&lt;/pre&gt;
-
-&lt;pre&gt;alter user SCOTT identified by TIGER&lt;/pre&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;Or you can accomplish these tasks within the Oracle web application:&lt;/pre&gt;
-
-&lt;blockquote&gt;
-&lt;pre&gt;&lt;a title=&#34;http://localhost:8081/apex&#34; href=&#34;http://localhost:8081/apex&#34;&gt;http://localhost:8081/apex&lt;/a&gt;&lt;/pre&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;1. Connect Oracle using SAS libname engine&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;libname SCOTT oracle user=&amp;#8221;SCOTT&amp;#8221; password=&amp;#8221;TIGER&amp;#8221; path=&amp;#8217;xe&amp;#8217; ;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;Note: &lt;em&gt;xe&lt;/em&gt; is the default path for Oracle Database XE.&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;2. Connect Oracle using SQL Procedure Pass-Through Facility&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;proc sql ;&lt;br /&gt;
-connect to oracle as orcl&lt;br /&gt;
-(user=&amp;#8221;SCOTT&amp;#8221; password=&amp;#8221;TIGER&amp;#8221; path=&amp;#8217;xe&amp;#8217;);&lt;/em&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;_select *       
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;from connection to orcl_&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;&lt;em&gt; (&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;&lt;em&gt; &lt;strong&gt;SELECT …&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;&lt;em&gt;&lt;strong&gt;&lt;span class=&#34;Apple-style-span&#34; style=&#34;font-weight: normal; &#34;&gt; ) ;&lt;/span&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;_disconnect from orcl;&amp;lt;/p&amp;gt; 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;quit;&lt;/em&gt;&lt;/blockquote&gt;&lt;/p&gt;
-
-&lt;p&gt;Note: 1) In this approach, Oracle, instead of SAS, processes the SQL statement (i.e., you use the more powerful and flexible Oracle SQL syntax instead of SAS Proc SQL procedure for querying. For more, se&lt;em&gt;e &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lrcon/61722/HTML/default/a001044413.htm&#34;&gt;SAS Doc&lt;/a&gt;&lt;/em&gt;)&lt;em&gt;.&lt;/em&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;      __ 2) Your Oracle SQL codes should be placed in the &amp;lt;span style=&amp;quot;color:#ff0000;&amp;quot;&amp;gt;RED&amp;lt;/span&amp;gt; blocks, and end without a semicolon(;):
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_select *&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;from emp&lt;/em&gt;&lt;/blockquote&gt;&lt;/p&gt;
-
-&lt;p&gt;3) Only basic Oracle SQL statements (&lt;em&gt;select, create table&lt;/em&gt;, &amp;hellip;)can pass through this facility.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3. Load SAS datasets to Oracle database&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;proc copy in=sashelp&lt;br /&gt;
-out=scott;&lt;br /&gt;
-select class;&lt;br /&gt;
-run;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;4. Misc: Some differences between Oracle SQL and SAS Proc SQL&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.1 Table aliases&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Oracle: &lt;em&gt;from employees a;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;SAS: &lt;em&gt;from employees a;&lt;/em&gt; or&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;from employees &lt;span style=&#34;color:#ff0000;&#34;&gt;as&lt;/span&gt; a;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;4.2 Column aliases&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Oracle: don’t use single quotation marks(‘’).&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_select job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;as job&lt;/span&gt;, job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;job&lt;/span&gt;, job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;as &amp;#8220;job&amp;#8221; &lt;span style=&#34;color:#000000;&#34;&gt;,&lt;/span&gt; &lt;strike&gt;job&lt;em&gt;id &lt;span style=&#34;color:#ff0000;&#34;&gt;as ‘job’&lt;/span&gt;&lt;/strike&gt;&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;SAS:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_select job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;as job&lt;/span&gt;, job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;&amp;#8220;job&amp;#8221;&lt;/span&gt; , job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;&amp;#8216;job&amp;#8217;&lt;/span&gt;, &lt;strike&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;job&lt;em&gt;id job&lt;/span&gt;&lt;/strike&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;4.3 Literal Character Strings&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Oracle: Date and character literal values must be enclosed within single quotation marks(‘’).&lt;/p&gt;
-
-&lt;p&gt;SAS: Use both single and double quotation marks.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.4 Order the null value&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Oracle: Null values are displayed last for ascending sequences and first for descending sequences.&lt;/p&gt;
-
-&lt;p&gt;SAS: Null values are displayed first for ascending sequences and last for descending sequences.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.5 Nesting Group Functions&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_select max(avg(salary))&lt;br /&gt;
-from employees&lt;br /&gt;
-group by department&lt;em&gt;id&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;SAS log:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;ERROR: Summary functions nested in this way are not supported.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Optional approach for SAS:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_select max(avg) as max&lt;br /&gt;
-from(&lt;br /&gt;
-select avg(salary) as avg&lt;br /&gt;
-from employees&lt;br /&gt;
-group by department&lt;em&gt;id )&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;4.6 row number(_n_)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Oracle:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;select &lt;span style=&#34;color:#ff0000;&#34;&gt;rownum&lt;/span&gt;&lt;br /&gt;
-from employees&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;SAS:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;select &lt;span style=&#34;color:#ff0000;&#34;&gt;monotonic()&lt;/span&gt;&lt;br /&gt;
-from employees&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Note: &lt;span style=&#34;color:#ff0000;&#34;&gt;monotonic()&lt;/span&gt; is an undocumented function of SAS, &lt;em&gt;see&lt;span class=&#34;Apple-style-span&#34; style=&#34;font-style: normal; &#34;&gt;&lt;a href=&#34;http://www2.sas.com/proceedings/sugi29/040-29.pdf&#34;&gt;http://www2.sas.com/proceedings/sugi29/040-29.pdf&lt;/a&gt;&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>(Note: All the followings are tested on Windows XP environment.)
+0. Install Oracle Database 10g Express Edition
+Fast (and free) to download, easy to deploy and simple to admin&amp;#8211;for learning and testing purpose, Oracle Database 10g Express Edition (Oracle Database XE, a mini version of Oracle Database 10g Release 2) are strongly recommended:
+0.1 Download it at its homepage(206MB);
+0.2 Install it following default settings;
+0.3 Unlock accounts for HR and SCOTT.</description>
     </item>
     
   </channel>

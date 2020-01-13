@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Robert Mitchum on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/robert-mitchum/index.xml</link>
-    <description>Recent content in Robert Mitchum on Jiangtang Hu | 胡江堂</description>
+    <title>robert mitchum on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/robert-mitchum/</link>
+    <description>Recent content in robert mitchum on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/robert-mitchum/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Dec 2009 23:53:47 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/robert-mitchum/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>From A Logical Point of View</title>
@@ -14,12 +17,8 @@
       <pubDate>Mon, 21 Dec 2009 23:53:47 +0000</pubDate>
       
       <guid>/2009/12/21/from-a-logical-point-of-view/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2009/12/QUIFRO.jpg&#34;&gt;&lt;img style=&#34;display: inline; border-width: 0px;&#34; title=&#34;QUIFRO&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2009/12/QUIFRO_thumb.jpg&#34; border=&#34;0&#34; alt=&#34;QUIFRO&#34; width=&#34;158&#34; height=&#34;244&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;This blog, “&lt;a href=&#34;http://www.jiangtanghu.com/blog/&#34;&gt;From A Logical Point of View&lt;/a&gt;”, is not supposed to be owned by a logician. Actually, the book, &lt;em&gt;&lt;a href=&#34;http://www.amazon.com/Logical-Point-View-Logico-Philosophical-Revised/dp/0674323513&#34;&gt;From A Logical Point of View&lt;/a&gt;&lt;/em&gt;, is a collection of logical and philosophical essays by &lt;a href=&#34;http://www.wvquine.org/&#34;&gt;W.V.Quine&lt;/a&gt;(1908-2000), an American philosopher and mathematician. &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;A story about this book. &lt;em&gt;&lt;a href=&#34;http://www.gugalyrics.com/ROBERT-MITCHUM-FROM-A-LOGICAL-POINT-OF-VIEW-LYRICS/411924/&#34;&gt;From A Logical Point of View&lt;/a&gt;&lt;/em&gt;, was a calypso song by &lt;a href=&#34;http://en.wikipedia.org/wiki/Robert_Mitchum&#34;&gt;Robert Mitchum&lt;/a&gt;, an US actor, composer and singer. Quine enjoyed this music and used it as his new book, which is Quine’s best seller. Now I love this book and give the name to my blog from a logical point of view^.&lt;/span&gt;&lt;/p&gt;
-</description>
+      <description>This blog, “From A Logical Point of View”, is not supposed to be owned by a logician. Actually, the book, From A Logical Point of View, is a collection of logical and philosophical essays by W.V.Quine(1908-2000), an American philosopher and mathematician. 
+A story about this book. From A Logical Point of View, was a calypso song by Robert Mitchum, an US actor, composer and singer. Quine enjoyed this music and used it as his new book, which is Quine’s best seller.</description>
     </item>
     
   </channel>

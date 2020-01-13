@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pc Game on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/pc-game/index.xml</link>
-    <description>Recent content in Pc Game on Jiangtang Hu | 胡江堂</description>
+    <title>PC Game on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/pc-game/</link>
+    <description>Recent content in PC Game on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/pc-game/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Dec 2008 09:34:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/pc-game/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Links of 2008-12-16: Financial Engineering, Ponzi Scheme, SAS PC Game</title>
@@ -14,15 +17,7 @@
       <pubDate>Tue, 16 Dec 2008 09:34:00 +0000</pubDate>
       
       <guid>/2008/12/16/links-of-2008-12-16-financial-engineering-ponzi-scheme-sas-pc-game/</guid>
-      <description>&lt;ol&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://creditspectrum.blogspot.com/2008/12/state-of-financial-engineering.html&#34;&gt;The State of Financial Engineering&lt;/a&gt;&lt;/span&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Ponzi_scheme&#34;&gt;Ponzi Scheme&lt;/a&gt; Returns: &lt;a href=&#34;http://www.sec.gov/news/press/2008/2008-293.htm&#34;&gt;SEC Charges Bernard L. Madoff for Multi-Billion Dollar Ponzi Scheme&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://wolfensas.subshock.net/&#34;&gt;WolfenSAS: A PC Game written by SAS Code&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+      <description> The State of Financial Engineering Ponzi Scheme Returns: SEC Charges Bernard L. Madoff for Multi-Billion Dollar Ponzi Scheme WolfenSAS: A PC Game written by SAS Code  </description>
     </item>
     
   </channel>

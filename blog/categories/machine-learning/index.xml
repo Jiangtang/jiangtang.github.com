@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Machine Learning on Jiangtang Hu | 胡江堂</title>
-    <link>/categories/machine-learning/index.xml</link>
+    <link>/categories/machine-learning/</link>
     <description>Recent content in Machine Learning on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>In Search of Lost Time: 2016</title>
@@ -14,25 +17,10 @@
       <pubDate>Thu, 04 May 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/05/04/in-search-of-lost-time-2016/</guid>
-      <description>&lt;!-- BLOGDOWN-HEAD --&gt;
-&lt;!-- /BLOGDOWN-HEAD --&gt;
-
-&lt;!-- BLOGDOWN-BODY-BEFORE --&gt;
-&lt;!-- /BLOGDOWN-BODY-BEFORE --&gt;
-&lt;p&gt;2016 was gone, and I didn’t even leave one single blog post. An obvious inference should be, 2016 doesn’t exist…&lt;/p&gt;
-&lt;p&gt;2016 was a year of struggle for me as a SAS programmer. I earn my bread mostly using SAS, but is a SAS programmer like me cool? It’s not a silly question. Lots of SAS programmers feel the crunch.&lt;/p&gt;
-&lt;p&gt;So, in 2016, I&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Jiangtang/Homer-networkX&#34;&gt;learned some Python&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;attended &lt;a href=&#34;https://pydata.org/carolinas2016/&#34;&gt;Pydata Carolinas&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;learned some Spark, and got certified by edX somehow with all the bubble words in the title, &lt;a href=&#34;https://courses.edx.org/certificates/85c0f27c305b49abafee8da0005191a1&#34;&gt;Distributed Machine Learning with Apache Spark&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;learned some math, &lt;a href=&#34;http://math.mit.edu/~gs/linearalgebra/&#34;&gt;Linear Algebra&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;learned more math, &lt;a href=&#34;https://projects.iq.harvard.edu/stat110/youtube&#34;&gt;Probability&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;learned even more math, &lt;a href=&#34;http://www4.ncsu.edu/~ctk/ma580.html&#34;&gt;Numerical Analysis&lt;/a&gt;, and&lt;/li&gt;
-&lt;li&gt;didn’t update one single blog post, because all my spare time and coffee making time were simply run out.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I feel much better after one year of burying my head in the sand. Keep tuned, 2017.&lt;/p&gt;
-</description>
+      <description>2016 was gone, and I didn&amp;rsquo;t even leave one single blog post. An obvious inference should be, 2016 doesn&amp;rsquo;t exist&amp;hellip;
+2016 was a year of struggle for me as a SAS programmer. I earn my bread mostly using SAS, but is a SAS programmer like me cool? It&amp;rsquo;s not a silly question. Lots of SAS programmers feel the crunch.
+So, in 2016, I
+ learned some Python, attended Pydata Carolinas, learned some Spark, and got certified by edX somehow with all the bubble words in the title, Distributed Machine Learning with Apache Spark, learned some math, Linear Algebra, learned more math, Probability, learned even more math, Numerical Analysis, and didn&amp;rsquo;t update one single blog post, because all my spare time and coffee making time were simply run out.</description>
     </item>
     
   </channel>

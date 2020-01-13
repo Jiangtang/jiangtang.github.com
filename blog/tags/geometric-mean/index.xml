@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Geometric Mean on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/geometric-mean/index.xml</link>
+    <link>/tags/geometric-mean/</link>
     <description>Recent content in Geometric Mean on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/geometric-mean/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Sep 2012 22:39:23 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/geometric-mean/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Statistical Notes (2): Equivalence Testing and TOST (Two One-Sided Test)</title>
@@ -14,76 +17,12 @@
       <pubDate>Wed, 12 Sep 2012 22:39:23 +0000</pubDate>
       
       <guid>/2012/09/12/statistical-notes-2-equivalence-testing-and-tost-two-one-sided-test/</guid>
-      <description>
+      <description>_Programmers Need to Learn Statistics Or I will Kill Them All –Zed A. Shaw_
+ In an equivalence testing&amp;#160;example against lognormal data,&amp;#160; a TOST (Two One-Sided Test)&amp;#160; option used in SAS TTEST procedure:
+ proc ttest data=auc dist=lognormal tost(0.8, 1.25); &amp;#160;&amp;#160; paired TestAUC*RefAUC; run;
+ And the output:
 
-&lt;blockquote&gt;
-&lt;p&gt;_&lt;a href=&#34;http://zedshaw.com/essays/programmer_stats.html&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Programmers Need to Learn Statistics Or I will Kill Them All&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;–Zed A. Shaw&lt;/font&gt;_&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In an &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_intropss_sect006.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;equivalence testing&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_ttest_examples05.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;example&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;against lognormal data,&amp;#160; a TOST (Two One-Sided Test)&amp;#160; option used in SAS TTEST procedure:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc ttest data=auc dist=lognormal &lt;font color=&#34;#ff0000&#34;&gt;tost(0.8, 1.25)&lt;/font&gt;; &lt;br /&gt;&amp;#160;&amp;#160; paired TestAUC*RefAUC; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;And the output:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/tost.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;tost&#34; border=&#34;0&#34; alt=&#34;tost&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/tost_thumb.png&#34; width=&#34;460&#34; height=&#34;177&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Since the 90% (&lt;em&gt;who not 95%? see below&lt;/em&gt;) limit of the geometric mean ratio (0.9412) , [0.8634,1.0260], lies in the FDA endorsed equivalence bounds [0.8,1.25],&amp;#160; then we can make a conclusion of “Equivalent” among these Test and Reference drugs. Following are the notes on how this so called TOST (Two One-Sided Test) works.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In its original form, the hypothesis of equivalence testing is written as &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_intropss_sect006.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;difference on means&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;(equivalence by definition: not above the upper limit, and not below the lower limit):&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/hypo.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;hypo&#34; border=&#34;0&#34; alt=&#34;hypo&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/hypo_thumb.png&#34; width=&#34;244&#34; height=&#34;105&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Since our AUC example with lognormal data, the difference on means is transformed into a ratio,&amp;#160; &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/geomean/&#34; target=&#34;_blank&#34;&gt;geometric mean ratio&lt;/a&gt;: if no difference in means, then the ratio simply equals 1. The two one-sided tests are (with form of ratio, not difference anymore):&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I) upper one-sided T-test with a null ratio as the left bound of predefined limits, here is 0.8&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;II) lower one-sided T-test with a null ratio as the right bound of predefined limits, here is 1.25.&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;T-test I can be done as (with option sides=U, where U means upper one-sided test. This option also only goes with SAS 9.2 and later)&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc ttest data=auc dist=lognormal h0=0.8&amp;#160; &lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;sides=U&lt;/font&gt;&lt;/strong&gt;; &lt;br /&gt;&amp;#160;&amp;#160; paired TestAUC*RefAUC; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;And the output:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/upper.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;upper&#34; border=&#34;0&#34; alt=&#34;upper&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/upper_thumb.png&#34; width=&#34;441&#34; height=&#34;162&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;T-test II, lower one-sided (with option sides=L, where L means lower one-sided test):&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc ttest data=auc dist=lognormal h0=1.25 &lt;font color=&#34;#ff0000&#34;&gt;sides=L&lt;/font&gt;; &lt;br /&gt;&amp;#160;&amp;#160; paired TestAUC*RefAUC; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;And the output:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/lower.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;lower&#34; border=&#34;0&#34; alt=&#34;lower&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/lower_thumb.png&#34; width=&#34;435&#34; height=&#34;162&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;So, the two one-sided tests together get a limit of [0.8634,1.0260], which is exactly as same as we got before using TOST option, except the former noted as “95%” and the later, “90%”. That’s because, the 0.1 (&lt;em&gt;1-90%&lt;/em&gt;) should be dividend by 2 for the two one-sided tests to ensure they can both get their 0.05 significance respectively. Namely, at significant level α=5%, the equivalence test gets a&amp;#160; 100(1-2α)% = 90% interval.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;At last, the overall P-value, will take the maximum one in these two one-sided tests (here we get max{0.0031,&lt;0.0001} = 0.0031).&lt;/font&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;sas-notes&#34;&gt;SAS Notes&lt;/h1&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Just did a quick search, PROC MIXED seemed more popular for statisticians to perform equivalence test years before:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://onbiostatistics.blogspot.com/2012/04/cookbook-sas-codes-for-bioequivalence.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+blogspot%2FsVwyB+%28On+Biostatistics+and+Clinical+Trials%29&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Cookbook SAS Codes for Bioequivalence Test in 2x2x2 Crossover Design&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, by Chunqin Deng (2012)&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;_&lt;a href=&#34;http://www.lexjansen.com/pharmasug/2004/posters/po05.pdf&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;The Paired T-Test: Does PROC MIXED Produce the Same Results as PROC TTEST?&lt;/font&gt;&lt;/a&gt;_ &lt;font size=&#34;1&#34;&gt;by Jack Nyberg (2004)&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Section 8.2&lt;em&gt; Bioequivalence Testing,&lt;/em&gt; in&lt;/font&gt; __&lt;a href=&#34;http://www.amazon.com/Pharmaceutical-Statistics-Using-SAS-Practical/dp/159047886X&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Pharmaceutical Statistics Using SAS: A Practical Guide&lt;/em&gt;&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, by Alex Dmitrienko, Christy Chuang-Stein, and Ralph D&amp;#8217;Agostino (2007)&lt;/font&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;font-style-font-weight-bold-reference-font&#34;&gt;&lt;font style=&#34;font-weight: bold&#34;&gt;Reference&lt;/font&gt;&lt;/h1&gt;
-
-&lt;p&gt;_&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_ttest_syntax01.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS TTEST Procedure User Guide&lt;/font&gt;&lt;/a&gt;_&lt;/p&gt;
-
-&lt;p&gt;_&lt;a href=&#34;http://pubs.acs.org/doi/pdf/10.1021/ac053390m&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Beyond the t-Test&lt;/font&gt;&lt;/a&gt;_&lt;/p&gt;
-</description>
+Since the 90% (who not 95%? see below) limit of the geometric mean ratio (0.9412) , [0.8634,1.0260], lies in the FDA endorsed equivalence bounds [0.</description>
     </item>
     
     <item>
@@ -92,66 +31,9 @@
       <pubDate>Wed, 12 Sep 2012 20:15:15 +0000</pubDate>
       
       <guid>/2012/09/12/statistical-notes-1-geometric-mean-and-geometric-mean-ratio/</guid>
-      <description>
-
-&lt;blockquote&gt;
-&lt;p&gt;_&lt;a href=&#34;http://zedshaw.com/essays/programmer_stats.html&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Programmers Need to Learn Statistics Or I will Kill Them All&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;–Zed A. Shaw&lt;/font&gt;_&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Just read since SAS 9.2, the &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_ttest_examples05.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;TTEST procedure&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;also natively supports &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_intropss_sect006.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Equivalence Test&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by simply adding a TOST option (Two one-sided tests). In a &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_ttest_examples05.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;example&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, TTEST procedure reports a &lt;a href=&#34;http://en.wikipedia.org/wiki/Geometric_mean&#34; target=&#34;_blank&#34;&gt;geometric mean&lt;/a&gt; as 0.9412, which is the geometric mean of a ratio, TestAUC/RefAUC. It can also be calculated manually by&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc sql; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; select exp(mean(log(TestAUC/RefAUC))) &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &amp;ldquo;geometric mean of TestAUC/RefAUC&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; from auc; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/geom.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;geom&#34; border=&#34;0&#34; alt=&#34;geom&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/geom_thumb.png&#34; width=&#34;203&#34; height=&#34;97&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Actually this kind of geometric mean (of a ratio) is more often called &lt;strong&gt;geometric mean ratio&lt;/strong&gt;(a ratio of two geometric means, in this case, geometric mean of TestAUC and geometric mean of RefAUC). Similarly,&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;proc sql; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; select exp(mean(log(TestAUC))) as gmTest &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &amp;ldquo;geometric mean of TestAUC&amp;rdquo;, &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; exp(mean(log(RefAUC)))&amp;#160; as gmRef&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &amp;ldquo;geometric mean of RefAUC&amp;rdquo; , &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; CALCULATED&amp;#160; gmTest / CALCULATED&amp;#160; gmRef as gmr &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &amp;ldquo;geometric mean ratio&amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; from auc; &lt;br /&gt;quit;&lt;/font&gt; &lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/ratio.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;ratio&#34; border=&#34;0&#34; alt=&#34;ratio&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/ratio_thumb.png&#34; width=&#34;409&#34; height=&#34;92&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;78.&lt;sup&gt;315&lt;/sup&gt;&amp;frasl;&lt;sub&gt;83&lt;/sub&gt;.2077 (the ratio of two geometric means) simply gets 0.941199 (geometric mean ratio), which can be also derived by calculating the geometric mean of a ratio (see above). You can prove it mathematically by playing some log-transformations:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;geomean(A) / geomean(B) = geomean(A / B)&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In vaccine trials (I worked before) where the interested values are antibody titers,&amp;#160; the geometric mean is also called &lt;strong&gt;Geometric Mean Titer (GMT)&lt;/strong&gt;, while geometric mean ratio&amp;#160; referred as&lt;strong&gt; Geometric Mean Titer Ratio (GMTR, also named “n-fold rise”)&lt;/strong&gt;. Both GMT and GMTR are wildly presented in statistical analysis reports.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Usually, AUC data mentioned above (Area Under Curve, which is based on blood levels) and antibody titer values are &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Log-normal_distribution&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;log-normal&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;distributed(source data, noted as X), which means, if you take a log-transformation against X, namely Y=log(X), then Y follows the normal distribution (then Y has good properties to perform further statistical analysis). Suppose two treatment groups available, 1 and 2.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Few extremely important conclusions, just as the codes above suggested, exp[mean(Y)]=exp{mean[log(X)]} is just geometric mean of X, and the geometric mean ratio, geomean (X1) / geomean(X2), simply equals exp[mean(Y1) – mean(Y2)]—This is the mathematical equivalence of ratio and difference. &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Back to the AUC example, the FDA endorsed equivalence bounds offered,&amp;#160; 0.8 and 1.25, which are both ratio values. So, in the analysis, the original values are transformed to geometric mean ratio (0.9412 with 90% limit of [0.8634 , 1.0260]) to compare with the predefined bounds. For details of equivalence testing, I may extend it into a separated note.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;sas-notes&#34;&gt;SAS Notes&lt;/h1&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In SAS/Base, &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lefunctionsref/63354/HTML/default/viewer.htm#p0ywq67uqarnnen135hhs9gcsuv0.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;GEOMEAN&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;function is used to calculate the geometric mean. It takes a list of values as argument, which means, it can only perform on rows, but not on columns. So, if need the geometric mean of a variable, TestAUC for example, you should transpose the rows to columns or similarly, use a array:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&lt;strong&gt;/&lt;em&gt;1. transpose&lt;/em&gt;/&lt;/strong&gt; &lt;br /&gt;proc transpose data=auc (keep=TestAUC) out=test prefix=t; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; var TestAUC; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set test; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; gmTest=geomean (of t1-t12); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; put gmTest=; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&lt;strong&gt;/&lt;em&gt;2. array&lt;/em&gt;/&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; if 0 then set auc(keep=TestAUC) nobs=nobs; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; call symputx(&amp;#8216;nobs&amp;#8217;,nobs); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; stop; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set auc(keep=TestAUC) end=eof; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; array gm{&amp;amp;obs} &lt;em&gt;temporary&lt;/em&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; gm{&lt;em&gt;n&lt;/em&gt;}=TestAUC; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; if eof then do; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; gmTest=geomean(of gm{*}); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; put gmTest=; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; end; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Both methods return to the geometric mean of TestAUC as 78.314997096. The SQL solution I used above, &lt;em&gt;&lt;font face=&#34;Courier New&#34;&gt;exp(mean(log(TestAUC)))&lt;/font&gt;&lt;/em&gt;, is much simpler, and most important, it reminds us&amp;#160; the applying of log-transformation.&lt;/font&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;reference&#34;&gt;Reference&lt;/h1&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Appendix F – Data Transformations&lt;/em&gt; in &lt;/font&gt;&lt;a href=&#34;http://www.amazon.com/Statistical-Methods-Clinical-Research-Examples/dp/160764228X/ref=la_B001K8B726_1_1?ie=UTF8&amp;qid=1347463509&amp;sr=1-1&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Common Statistical Methods for Clinical Research with SAS Examples&lt;/font&gt;&lt;/em&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Glenn Walker and Jack Shostak supplies a concise discussion on log-transformation.&amp;#160; Btw, this book is the No.1 statistical book I found ever for SAS programmers without statistical background.&lt;/font&gt;&lt;/p&gt;
-</description>
+      <description>_Programmers Need to Learn Statistics Or I will Kill Them All –Zed A. Shaw_
+ Just read since SAS 9.2, the TTEST procedure also natively supports Equivalence Test by simply adding a TOST option (Two one-sided tests). In a example, TTEST procedure reports a geometric mean as 0.9412, which is the geometric mean of a ratio, TestAUC/RefAUC. It can also be calculated manually by
+ proc sql; &amp;#160;&amp;#160;&amp;#160; select exp(mean(log(TestAUC/RefAUC))) &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &amp;ldquo;geometric mean of TestAUC/RefAUC&amp;rdquo; &amp;#160;&amp;#160;&amp;#160; from auc; quit;</description>
     </item>
     
   </channel>

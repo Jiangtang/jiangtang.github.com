@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>P Value on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/p-value/index.xml</link>
-    <description>Recent content in P Value on Jiangtang Hu | 胡江堂</description>
+    <title>P-value on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/p-value/</link>
+    <description>Recent content in P-value on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/p-value/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Sep 2012 01:20:10 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/p-value/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Frequentist or Baysian in A Binomial Test</title>
@@ -14,40 +17,8 @@
       <pubDate>Fri, 21 Sep 2012 01:20:10 +0000</pubDate>
       
       <guid>/2012/09/21/frequentist-or-baysian-in-a-binomial-test/</guid>
-      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;A latest updated post on &lt;/font&gt;&lt;a href=&#34;http://www.freakonomics.com&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Freakonomics&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, &lt;em&gt;&lt;a href=&#34;http://www.freakonomics.com/2012/09/20/beware-the-weasel-word-statistical-in-statistical-significance/&#34; target=&#34;_blank&#34;&gt;Beware the Weasel Word “Statistical” in Statistical Significance!&lt;/a&gt;&lt;/em&gt;,&amp;#160; seemed to attempt to challenge frequentist statistics by Bayesian. I have no research on Bayesian and won’t jump to the debates. I’d rather to use this case to apply the &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/16/hypothesis-testing/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Dragon’s Teeth and Fleas logic of hypothesis testing&lt;/font&gt;&lt;/a&gt; (at least I think frequentist is pretty intuitive)&lt;font size=&#34;1&#34;&gt;. &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;A story goes with this post, that Bob won 20 times out of total 30 rounds with Alice in a children card game, “War”. War itself is a totally random game, so everyone is supposed to have 50% chance to win in a fair game. Since Bob won 20 out of 30, the question raised: is he cheating?&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;To answer this question, just follow the &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/16/hypothesis-testing/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Dragon’s Teeth and Fleas logic of hypothesis testing&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;:&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;First, assume they are dragon’s teeth; in this case, we assume it is a fair game that everyone has probability of 0.5 to win. &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Under this assumption, we know the the number of winning follows &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Binomial_distribution&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;binomial distribution&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;with probability of 0.5. Now we should check Bob’s 20 winning in 30 in this distribution: is this output extreme, or is it a flea? &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;We then get the p-Value calculated by P(X&amp;gt;=20) which means the chance of winning 20 times and more in 30 games (as extreme or even more extreme ), is 0.0494. Here we only think about winning, so it is a one-sided test. Since this p-Value is less than the default &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Statistical_significance&#34;&gt;&lt;font size=&#34;1&#34;&gt;significance level&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;of 0.05 (IT IS A FLEA!), we reject the null and think this is more likely not a fair game (Bob is cheating in this statistical point of view). &lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Bob.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Bob&#34; border=&#34;0&#34; alt=&#34;Bob&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Bob_thumb.png&#34; width=&#34;503&#34; height=&#34;257&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;That’s all the story. Then &lt;/font&gt;&lt;a href=&#34;http://www.freakonomics.com/2012/09/20/beware-the-weasel-word-statistical-in-statistical-significance/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;this post&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;goes, “Although the procedure is mathematically well defined, it is nonsense”. The following is the first reason listed in the post:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;To calculate the probability of Bob’s winning at least 20 games, you use not only the data that you saw (that Bob won 20 games out of 30) but also the imaginary data of Bob winning 21 out of 30 games, or 22 out of 30 games, all the way up to Bob winning all 30 games. The idea of imaginary data is oxymoronic.&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In my opinion, the so called “imaginary data” are just the data filling out the binomial distribution (under the assumption of true null hypothesis) we got before and they are not oxymoronic at all (&lt;em&gt;sorry I use “data” as plural&lt;/em&gt;).&amp;#160; &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;What do you think? I can’t go far away from here due to my limit knowledge of Bayesian.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-appendix: SAS Codes and Outputs&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data a; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input output count; &lt;br /&gt;datalines; &lt;br /&gt;0 20 &lt;br /&gt;1 10 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc freq data=a; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables output /binomialc (p=0.5) alpha=0.05; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; exact binomial; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Bob_SAS.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;Bob_SAS&#34; border=&#34;0&#34; alt=&#34;Bob_SAS&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Bob_SAS_thumb.png&#34; width=&#34;325&#34; height=&#34;314&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>A latest updated post on Freakonomics, Beware the Weasel Word “Statistical” in Statistical Significance!,&amp;#160; seemed to attempt to challenge frequentist statistics by Bayesian. I have no research on Bayesian and won’t jump to the debates. I’d rather to use this case to apply the Dragon’s Teeth and Fleas logic of hypothesis testing (at least I think frequentist is pretty intuitive). 
+A story goes with this post, that Bob won 20 times out of total 30 rounds with Alice in a children card game, “War”.</description>
     </item>
     
     <item>
@@ -56,154 +27,10 @@
       <pubDate>Sun, 16 Sep 2012 14:12:07 +0000</pubDate>
       
       <guid>/2012/09/16/statistical-notes-4-dragonrsquos-teeth-and-fleas-hypothesis-testing-in-plain-english/</guid>
-      <description>
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://mathbabe.org/2012/07/31/statisticians-arent-the-problem-for-data-science-the-real-problem-is-too-many-posers/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Statisticians aren’t the problem for data science. The real problem is too many posers&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;&amp;#8212; Cathy O’Neil&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://mathbabe.org/2012/07/31/statisticians-arent-the-problem-for-data-science-the-real-problem-is-too-many-posers/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;you actually do need to understand how to invert a matrix at some point in your life if you want to be a data scientist.&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;&amp;#8212; Cathy O’Neil&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://deepbluenine.deviantart.com/art/Red-Dragon-170245865&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Red_Dragon_by_DeepBlueNine&#34; border=&#34;0&#34; alt=&#34;Red_Dragon_by_DeepBlueNine&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Red_Dragon_by_DeepBlueNine.jpg&#34; width=&#34;404&#34; height=&#34;312&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I was asked in several different occasions to explain &lt;a href=&#34;http://en.wikipedia.org/wiki/Statistical_hypothesis_testing&#34; target=&#34;_blank&#34;&gt;hypothesis testing&lt;/a&gt; to non-technical people in plain English. Now I think I got a pretty neat one while honors belong to three great Germans, &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Friedrich_Engels&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Friedrich Engels&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Karl_Marx&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Karl Marx&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, and &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Heinrich_Heine&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Heinrich Heine&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. Engels wrote that Marx once quoted a saying from Heine that “I have sown &lt;strong&gt;dragon’s teeth&lt;/strong&gt; and harvested &lt;strong&gt;fleas&lt;/strong&gt;” (&lt;em&gt;but I didn’t find the original source&lt;/em&gt;):&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font color=&#34;#ff0000&#34; size=&#34;1&#34;&gt;In terms of hypothesis testing, say, if you plant &lt;a href=&#34;http://en.wikipedia.org/wiki/Dragon&#39;s_teeth_(mythology)&#34; target=&#34;_blank&#34;&gt;dragon’s teeth&lt;/a&gt;, you are not supposed to harvest the fleas; but if you do get the fleas, then most likely they are not dragon’s teeth at all!&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;To make up the story as simple as possible while keep most of the key messages, here take a one-sample &lt;a href=&#34;http://en.wikipedia.org/wiki/Student&#39;s_t-test&#34; target=&#34;_blank&#34;&gt;T-test&lt;/a&gt; example from &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_ttest_examples02.htm&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;SAS TTEST Procedure User Guide&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;,&lt;/em&gt; where the investigated data is the Degree of Reading Power (DRP, a measurement of children’s reading skill) from 44 third-grade children. The goal is to test if the mean score of DRP is equal to 30:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Null_hypothesis&#34; target=&#34;_blank&#34;&gt;Null&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Hypothesis&lt;/a&gt; (H0): μ = 30&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Alternative_hypothesis&#34; target=&#34;_blank&#34;&gt;Alternative Hypothesis&lt;/a&gt; (H1): μ ≠ 30&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For the following discussion, three statistical measures needed (number of cases, mean and standard error):&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc means data=read maxdec=4 n mean stderr; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; var score; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; freq count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and the output:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/read.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;read&#34; border=&#34;0&#34; alt=&#34;read&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/read_thumb.png&#34; width=&#34;244&#34; height=&#34;110&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Here we go:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. Suppose H0 is true that the mean score is equal to 30 (population mean μ = 30, we assume they are dragon’s teeth!).&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2.&amp;#160; We know the sample mean is the best estimate of the population mean, here it is 34.8636.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;3. This sample mean is derived from a sample (namely, the 44 children). We’d like to know if this sample (with mean of 34.8636) really come from the population (with mean of 30).&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;4. To get to know this, we can repeat this survey (or trial, experiment), for example, take another 99 samples (also with 44 children in each sample) and calculate their sample means (we then have 100 different means from the whole 100 samples).&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;5.&amp;#160; We may know these means (got from such mechanism), with some necessary mathematical transformation,&amp;#160; follow a &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Student&#39;s_t-distribution&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;t-distribution&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;with degree of freedom of 43 (df = 44 &amp;#8211; 1):&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/test.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;test&#34; border=&#34;0&#34; alt=&#34;test&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/test_thumb.png&#34; width=&#34;309&#34; height=&#34;60&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The denominator as a whole is the standard error.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;6. Now we can check our interested sample (with mean of 34.8636) in this t-distribution. There is a corresponding t-value of this sample in the distribution, (34.8636 &amp;#8211; 30) / 1.6930 =&amp;#160; 2.8728:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/T_2side.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;T_2side&#34; border=&#34;0&#34; alt=&#34;T_2side&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/T_2side_thumb.png&#34; width=&#34;392&#34; height=&#34;427&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;7. In this distribution, there are only 0.63% (0.0063) of t-values either above 2.8728 or below -2.8728 (symmetry of t-distribution). What does this mean?&amp;#160; Obviously, our interested sample (with mean of 34.8636 and t-value of 2.8728) is not in the mainstream of the whole distribution. We can even think it is&amp;#160; very “extreme”&amp;#160; because, there are only 0.63% of elements in the whole that are more (or at least as equal) extreme than it.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;8. We call this number, 0.63% (0.0063) the &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/P-value&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;P-value&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. According to &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/P-value&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;wikipedia&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;the p-value is the &lt;strong&gt;probability&lt;/strong&gt; of obtaining a test statistic at least as &lt;strong&gt;extreme&lt;/strong&gt; as the one that was actually observed, &lt;strong&gt;assuming that the null hypothesis is true&lt;/strong&gt;.&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Here the test statistic that was actually observed is 2.8728, the t-value from our interested sample. And we got from this t-distribution that P{|t|&amp;gt;2.8728} = 0.0063. &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;9. A question is, how extreme is extreme? We can’t define “extreme” exactly, but &lt;em&gt;probably,&lt;/em&gt; we can. The threshold is the &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Statistical_significance&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;significance level&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;α (usually 0.05). As a rule of thumb, if p-value is less than the predefine &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Statistical_significance&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;significance level&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;α, then&amp;#160; we think the event associated&amp;#160; with this p-value is pretty extreme. &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;10. Retell our story: first we assume the population mean is 30 just as the null hypothesis claims (&lt;em&gt;&lt;font color=&#34;#ff0000&#34;&gt;&lt;strong&gt;assume they are dragon’s teeth&lt;/strong&gt;&lt;/font&gt;&lt;/em&gt;), and under this assumption,&amp;#160; we built a t-distribution; we then got that our interested sample is an extreme case (&lt;em&gt;&lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;it is a flea!&lt;/font&gt;&lt;/strong&gt;&lt;/em&gt;). It is so extreme (much less than 0.05) that we can even think about that our assumption (the null hypothesis) is far away from true (&lt;em&gt;&lt;strong&gt;&lt;font color=&#34;#ff0000&#34;&gt;most likely they are not dragon’s teeth at all!&lt;/font&gt;&lt;/strong&gt;&lt;/em&gt;). We reject the null hypothesis and take the alternative that the mean score is different from 30.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;11. Formally, it just follows a simple logic (taken from &lt;/font&gt;&lt;a href=&#34;http://www.amazon.com/Statistical-Methods-Clinical-Research-Examples/dp/160764228X/ref=la_B001K8B726_1_1?ie=UTF8&amp;qid=1347463509&amp;sr=1-1&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Glenn Walker and Jack Shostak&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, P.18): &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/logic.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;logic&#34; border=&#34;0&#34; alt=&#34;logic&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/logic_thumb.png&#34; width=&#34;391&#34; height=&#34;247&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In our story, P is the null hypothesis, while Q is the extreme case: if H0 is true, most likely such extreme case should not happen; now we observe the extreme case (a t-value of 2.8728 in a &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Student&#39;s_t-distribution&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;t-distribution&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;with degree of freedom of 43), then it is reasonable to question the null hypothesis itself.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;12. To end this analysis, we can take a look at the output of &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_ttest_examples02.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS PROC TTEST&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc ttest data=read h0=30; &lt;br /&gt;&amp;#160;&amp;#160; var score; &lt;br /&gt;&amp;#160;&amp;#160; freq count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The same result (P-value 0.0063 &amp;lt; 0.05, reject H0):&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/TTEST_read.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;TTEST_read&#34; border=&#34;0&#34; alt=&#34;TTEST_read&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/TTEST_read_thumb.png&#34; width=&#34;487&#34; height=&#34;268&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;font-style-font-weight-bold-sas-notes-font&#34;&gt;&lt;font style=&#34;font-weight: bold&#34;&gt;SAS Notes&lt;/font&gt;&lt;/h1&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;12. In this &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_ttest_examples02.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;example&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, input data take a form of cell count data, not as raw as the case-record data, so in both PROC MEANS and PROC TTEST, a “FREQ” statement added.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;13. You can compute this P-value in step-6 with SAS using &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lefunctionsref/63354/HTML/default/viewer.htm#n0xy5mce5jgfh3n1wvy919jgm1iv.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;ProbT&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;function:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; t&amp;#160;&amp;#160;&amp;#160; = 2.8727938571; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; df&amp;#160;&amp;#160; = 43; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tail = 2; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; P&amp;#160;&amp;#160;&amp;#160; = tail*(1-probt(t,df)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; put P = ; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;According to the symmetry of t-distribution, you should multiple 2 to get the two-sided probability:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;table border=&#34;0&#34; cellspacing=&#34;0&#34; cellpadding=&#34;2&#34; width=&#34;400&#34;&gt;
-  &lt;tr&gt;
-    &lt;td valign=&#34;top&#34; width=&#34;400&#34;&gt;
-      &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Left.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Left&#34; border=&#34;0&#34; alt=&#34;Left&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Left_thumb.png&#34; width=&#34;450&#34; height=&#34;216&#34; /&gt;&lt;/font&gt;&lt;/a&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  
-  &lt;tr&gt;
-    &lt;td valign=&#34;top&#34; width=&#34;400&#34;&gt;
-      &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Right.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Right&#34; border=&#34;0&#34; alt=&#34;Right&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Right_thumb.png&#34; width=&#34;448&#34; height=&#34;219&#34; /&gt;&lt;/font&gt;&lt;/a&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;14. Long long ago, a so called “&lt;/font&gt;&lt;a href=&#34;https://onlinecourses.science.psu.edu/stat501/node/7&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;critical value&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;” is calculated to support the decision. That’s the calculation method using &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lefunctionsref/63354/HTML/default/viewer.htm#n0yhwu36w3pj41n16j69b3hmzqvc.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;TINV&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;function:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; alpha = 0.05; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tail&amp;#160; = 2; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; df&amp;#160;&amp;#160;&amp;#160; = 43;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; tCritic = tinv(1-alpha&lt;font color=&#34;#ff0000&#34;&gt;/&lt;/font&gt;tail,df); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; put tCritic=; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;We get this critical value of 2.0166921992:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/critical.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;critical&#34; border=&#34;0&#34; alt=&#34;critical&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/critical_thumb.png&#34; width=&#34;395&#34; height=&#34;417&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;These two shaded zones are called “rejection zones”. The rule is, if the t-value we observed lies within the rejection zones, we should then reject the null hypothesis and take the alternative. In step-6, the t-value we calculated is 2.8728, which is bigger than this critical value, so we should reject H0.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Critical value approach is equivalent with the p-value approach we discussed before, but slightly old fashioned. P-value is pretty intuitive and can be also easily calculated by computer. In days when computing power was not wildly available, people just took the t-distribution table to look up the critical values. &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Most statistical packages including SAS software don’t report the critical value (but still alive in statistics text books).&lt;/font&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;font-style-font-weight-bold-reference-font&#34;&gt;&lt;font style=&#34;font-weight: bold&#34;&gt;Reference&lt;/font&gt;&lt;/h1&gt;
-
-&lt;p&gt;_&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_ttest_examples02.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS PROC TTEST USER GUIDE&lt;/font&gt;&lt;/a&gt;_&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.amazon.com/Statistical-Methods-Clinical-Research-Examples/dp/160764228X/ref=la_B001K8B726_1_1?ie=UTF8&amp;amp;qid=1347463509&amp;amp;sr=1-1&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Common Statistical Methods for Clinical Research with SAS Examples&lt;/font&gt;&lt;/em&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Glenn Walker and Jack Shostak&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;_&lt;a href=&#34;http://cos.name/2010/11/hypotheses-testing/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Hypothesis Testing: A Primer&lt;/font&gt;&lt;/a&gt;_ &lt;font size=&#34;1&#34;&gt;(in Chinese)&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://onlinestatbook.com/analysis_lab/t_dist.html&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Two sides T-distribution calculator&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.stat.tamu.edu/~west/applets/tdemo.html&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Single side t-distribution calculator&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.codecogs.com/latex/eqneditor.php&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Online Latex Equation Editor&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Statisticians aren’t the problem for data science. The real problem is too many posers &amp;#8212; Cathy O’Neil
+you actually do need to understand how to invert a matrix at some point in your life if you want to be a data scientist. &amp;#8212; Cathy O’Neil
+ 
+I was asked in several different occasions to explain hypothesis testing to non-technical people in plain English. Now I think I got a pretty neat one while honors belong to three great Germans, Friedrich Engels, Karl Marx, and Heinrich Heine.</description>
     </item>
     
   </channel>

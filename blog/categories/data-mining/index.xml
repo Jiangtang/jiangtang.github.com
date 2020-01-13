@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data Mining on Jiangtang Hu | 胡江堂</title>
-    <link>/categories/data-mining/index.xml</link>
-    <description>Recent content in Data Mining on Jiangtang Hu | 胡江堂</description>
+    <title>data mining on Jiangtang Hu | 胡江堂</title>
+    <link>/categories/data-mining/</link>
+    <description>Recent content in data mining on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/categories/data-mining/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/data-mining/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>In Search of Lost Time: 2016</title>
@@ -14,25 +17,10 @@
       <pubDate>Thu, 04 May 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/05/04/in-search-of-lost-time-2016/</guid>
-      <description>&lt;!-- BLOGDOWN-HEAD --&gt;
-&lt;!-- /BLOGDOWN-HEAD --&gt;
-
-&lt;!-- BLOGDOWN-BODY-BEFORE --&gt;
-&lt;!-- /BLOGDOWN-BODY-BEFORE --&gt;
-&lt;p&gt;2016 was gone, and I didn’t even leave one single blog post. An obvious inference should be, 2016 doesn’t exist…&lt;/p&gt;
-&lt;p&gt;2016 was a year of struggle for me as a SAS programmer. I earn my bread mostly using SAS, but is a SAS programmer like me cool? It’s not a silly question. Lots of SAS programmers feel the crunch.&lt;/p&gt;
-&lt;p&gt;So, in 2016, I&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Jiangtang/Homer-networkX&#34;&gt;learned some Python&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;attended &lt;a href=&#34;https://pydata.org/carolinas2016/&#34;&gt;Pydata Carolinas&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;learned some Spark, and got certified by edX somehow with all the bubble words in the title, &lt;a href=&#34;https://courses.edx.org/certificates/85c0f27c305b49abafee8da0005191a1&#34;&gt;Distributed Machine Learning with Apache Spark&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;learned some math, &lt;a href=&#34;http://math.mit.edu/~gs/linearalgebra/&#34;&gt;Linear Algebra&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;learned more math, &lt;a href=&#34;https://projects.iq.harvard.edu/stat110/youtube&#34;&gt;Probability&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;learned even more math, &lt;a href=&#34;http://www4.ncsu.edu/~ctk/ma580.html&#34;&gt;Numerical Analysis&lt;/a&gt;, and&lt;/li&gt;
-&lt;li&gt;didn’t update one single blog post, because all my spare time and coffee making time were simply run out.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I feel much better after one year of burying my head in the sand. Keep tuned, 2017.&lt;/p&gt;
-</description>
+      <description>2016 was gone, and I didn&amp;rsquo;t even leave one single blog post. An obvious inference should be, 2016 doesn&amp;rsquo;t exist&amp;hellip;
+2016 was a year of struggle for me as a SAS programmer. I earn my bread mostly using SAS, but is a SAS programmer like me cool? It&amp;rsquo;s not a silly question. Lots of SAS programmers feel the crunch.
+So, in 2016, I
+ learned some Python, attended Pydata Carolinas, learned some Spark, and got certified by edX somehow with all the bubble words in the title, Distributed Machine Learning with Apache Spark, learned some math, Linear Algebra, learned more math, Probability, learned even more math, Numerical Analysis, and didn&amp;rsquo;t update one single blog post, because all my spare time and coffee making time were simply run out.</description>
     </item>
     
     <item>
@@ -41,22 +29,11 @@
       <pubDate>Sun, 23 Dec 2012 15:14:13 +0000</pubDate>
       
       <guid>/2012/12/23/weekend-clips-data-scientist-episode-ii/</guid>
-      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+      <description>1. What is A Data Scientist Anyway?
 
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. What is A Data Scientist Anyway?&lt;/font&gt;&lt;/p&gt;
+2. You Just Can’t Be Replaced by Yourselves!
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image3.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image_thumb3.png&#34; width=&#34;487&#34; height=&#34;94&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2. You Just Can’t Be Replaced by Yourselves!&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image1.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image11.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image11_thumb.png&#34; width=&#34;489&#34; height=&#34;94&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;3. We are &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Kaggle&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;all Data Scientists&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;!&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image2.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image12.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image1_thumb.png&#34; width=&#34;482&#34; height=&#34;108&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-</description>
+3. We are all Data Scientists!</description>
     </item>
     
     <item>
@@ -65,26 +42,11 @@
       <pubDate>Fri, 30 Nov 2012 22:31:52 +0000</pubDate>
       
       <guid>/2012/11/30/weekend-clip-data-scientist/</guid>
-      <description>
+      <description>Two tweets: 
 
-&lt;h5 id=&#34;two-tweets&#34;&gt;Two tweets:&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/image.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/image_thumb.png&#34; width=&#34;525&#34; height=&#34;101&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/image1.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/image_thumb1.png&#34; width=&#34;522&#34; height=&#34;87&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;one-blog-post&#34;&gt;One blog post:&lt;/h5&gt;
-
-&lt;p&gt;_&lt;a href=&#34;http://mathbabe.org/2012/07/31/statisticians-arent-the-problem-for-data-science-the-real-problem-is-too-many-posers/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Statisticians aren’t the problem for data science. The real problem is too many posers&lt;/font&gt;&lt;/a&gt;_&lt;/p&gt;
-
-&lt;h5 id=&#34;one-job-advertisement&#34;&gt;One job advertisement:&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.ziprecruiter.com/job/SAS-Data-Scientist/1f127e2e/?source=social-linkedin-group-jobs&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS Data Scientist&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;?(!)&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;a-joke&#34;&gt;A joke:&lt;/h5&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The biggest joke about data scientist is that the Google query “&lt;/font&gt;&lt;a href=&#34;https://www.google.com/search?q=data+scientist+joke&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;data scientist joke&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;” returns nothing interesting.&lt;/font&gt;&lt;/p&gt;
-</description>
+One blog post: _Statisticians aren’t the problem for data science. The real problem is too many posers_
+One job advertisement: SAS Data Scientist ?(!)
+A joke: The biggest joke about data scientist is that the Google query “data scientist joke” returns nothing interesting.</description>
     </item>
     
     <item>
@@ -93,18 +55,7 @@
       <pubDate>Tue, 04 Oct 2011 21:31:18 +0000</pubDate>
       
       <guid>/2011/10/04/map-and-reduce-in-mapreduce-a-sas-illustration/</guid>
-      <description>&lt;p&gt;In &lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/09/14/analytical-valley/&#34; target=&#34;_blank&#34;&gt;last post&lt;/a&gt;, I mentioned &lt;a href=&#34;http://hadoop.apache.org/&#34;&gt;Hadoop&lt;/a&gt;, the open source implementation of Google’s &lt;a href=&#34;http://en.wikipedia.org/wiki/Mapreduce&#34; target=&#34;_blank&#34;&gt;MapReduce&lt;/a&gt; for parallelized processing of big data. In this long National Holiday, I read the original Google paper, _&lt;a href=&#34;http://static.googleusercontent.com/external_content/untrusted_dlcp/labs.google.com/en//papers/mapreduce-osdi04.pdf&#34; target=&#34;_blank&#34;&gt;MapReduce: Simplified Data Processing on Large Clusters&lt;/a&gt;_ by Jeffrey Dean and Sanjay Ghemawat and got that the terminologies of “map” and “reduce” were basically borrowed from Lisp, an old functional language that I even didn’t play “hello world” with. For Python users, the idea of Map and Reduce is also very straightforward because the workhorse data structure in Python is just the list, a sequence of values that you can just imagine that they are the nodes(clusters, chunk servers, …) in a distributed system.&lt;/p&gt;
-
-&lt;p&gt;MapReduce is a programming framework and really language independent, so SAS users can also get the basic idea from their daily programming practices and here is just a simple illustration using data step array (not array in Proc FCMP or matrix in IML). Data step array in SAS is fundamentally not a data structure but a convenient way of processing group of variables, but it can also be used to play some list operations like in Python and other rich data structure supporting languages(an editable version can be founded in &lt;a href=&#34;http://jiangtanghu.com/docs/en/MapReduce.sas&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;):&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/10/MapReduce.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px&#34; title=&#34;MapReduce&#34; border=&#34;0&#34; alt=&#34;MapReduce&#34; align=&#34;left&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/10/MapReduce_thumb.png&#34; width=&#34;506&#34; height=&#34;535&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Follow code above, the programming task is to capitalize a string “Hadoop” (Line 2) and the “master” method is just to capitalize the string in buddle(Line 8): just use a master machine to processing the data.&lt;/p&gt;
-
-&lt;p&gt;Then we introduce the idea of “big data” that the string is too huge to one master machine, so “master method” failed. Now we distribute the task to thousands of low cost machines (workers, slaves, chunk servers,&amp;hellip; in this case, the one dimensional array with size of 6, see Line 11), each machine produces parts of the job (each array element only capitalizes a single letter in sequence, see Line 12-14). Such distributing operation is called “&lt;font color=&#34;#ff0000&#34;&gt;map&lt;/font&gt;”. In a MapReduce system, a master machine is also needed to assign the maps and reduce.&lt;/p&gt;
-
-&lt;p&gt;How about “&lt;font color=&#34;#ff0000&#34;&gt;reduce&lt;/font&gt;”?&amp;#160; A “reduce” operation is also called “fold”—for example, in Line 17, the operation to combine all the separately values into a single value: combine results from multiple worker machines.&lt;/p&gt;
-</description>
+      <description>In last post, I mentioned Hadoop, the open source implementation of Google’s MapReduce for parallelized processing of big data. In this long National Holiday, I read the original Google paper, _MapReduce: Simplified Data Processing on Large Clusters_ by Jeffrey Dean and Sanjay Ghemawat and got that the terminologies of “map” and “reduce” were basically borrowed from Lisp, an old functional language that I even didn’t play “hello world” with. For Python users, the idea of Map and Reduce is also very straightforward because the workhorse data structure in Python is just the list, a sequence of values that you can just imagine that they are the nodes(clusters, chunk servers, …) in a distributed system.</description>
     </item>
     
     <item>
@@ -113,86 +64,8 @@
       <pubDate>Sat, 15 Jan 2011 10:58:44 +0000</pubDate>
       
       <guid>/2011/01/15/feature-selection-collections-for-self-study/</guid>
-      <description>&lt;p&gt;Recently I start to learn the algorithms and applications of &lt;a href=&#34;http://en.wikipedia.org/wiki/Feature_selection&#34; target=&#34;_blank&#34;&gt;feature selection&lt;/a&gt;. The term  “Feature”, wildly used in machine learning and data mining literatures,  simply means “Variable”. In some practices, for example, a neural network model uses a decision tree as input; the tree performs the function of variables selection.&lt;/p&gt;
-
-&lt;p&gt;The Arizona State University is maintaining a repository of feature selection, including original documentations, Matlab packages and user guide for the following popular algorithms so far:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;BLogReg&lt;/p&gt;
-
-&lt;p&gt;CFS&lt;/p&gt;
-
-&lt;p&gt;Chi Square&lt;/p&gt;
-
-&lt;p&gt;FCBF&lt;/p&gt;
-
-&lt;p&gt;Fisher Score&lt;/p&gt;
-
-&lt;p&gt;Gini Index&lt;/p&gt;
-
-&lt;p&gt;Information Gain&lt;/p&gt;
-
-&lt;p&gt;Kruskal-Wallis&lt;/p&gt;
-
-&lt;p&gt;mRMR&lt;/p&gt;
-
-&lt;p&gt;Relief-F&lt;/p&gt;
-
-&lt;p&gt;SBMLR&lt;/p&gt;
-
-&lt;p&gt;T-test&lt;/p&gt;
-
-&lt;p&gt;SPEC&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;see&lt;/span&gt;&lt;/em&gt; &lt;a href=&#34;http://featureselection.asu.edu/software.php&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://featureselection.asu.edu/software.php&#34;&gt;http://featureselection.asu.edu/software.php&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;A R package, &lt;a href=&#34;http://cran.r-project.org/web/packages/FSelector/index.html&#34; target=&#34;_blank&#34;&gt;FSelector&lt;/a&gt;, is also useful for step-by-step studying. This package covers:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;**Filters:&lt;/p&gt;
-
-&lt;p&gt;** *cfs&lt;/p&gt;
-
-&lt;p&gt;*chi-squared&lt;/p&gt;
-
-&lt;p&gt;*consistency&lt;/p&gt;
-
-&lt;p&gt;*correlation&lt;/p&gt;
-
-&lt;p&gt;&amp;#8211;linear.correlation&lt;/p&gt;
-
-&lt;p&gt;&amp;#8211;rank.correlation&lt;/p&gt;
-
-&lt;p&gt;*entropy.based&lt;/p&gt;
-
-&lt;p&gt;&amp;#8211;information.gain&lt;/p&gt;
-
-&lt;p&gt;&amp;#8211;gain.ratio&lt;/p&gt;
-
-&lt;p&gt;&amp;#8211;symmetrical.uncertainty&lt;/p&gt;
-
-&lt;p&gt;*OneR&lt;/p&gt;
-
-&lt;p&gt;*random.forest.importance&lt;/p&gt;
-
-&lt;p&gt;*relif-F&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Wrappers:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;*best.first.search&lt;/p&gt;
-
-&lt;p&gt;*exhaustive.search&lt;/p&gt;
-
-&lt;p&gt;*greedy.search&lt;/p&gt;
-
-&lt;p&gt;&amp;#8211;backward.search&lt;/p&gt;
-
-&lt;p&gt;&amp;#8211;forward.search&lt;/p&gt;
-
-&lt;p&gt;*hill.climbing.search&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>Recently I start to learn the algorithms and applications of feature selection. The term “Feature”, wildly used in machine learning and data mining literatures, simply means “Variable”. In some practices, for example, a neural network model uses a decision tree as input; the tree performs the function of variables selection.
+The Arizona State University is maintaining a repository of feature selection, including original documentations, Matlab packages and user guide for the following popular algorithms so far:</description>
     </item>
     
     <item>
@@ -201,36 +74,9 @@
       <pubDate>Tue, 04 Jan 2011 20:44:50 +0000</pubDate>
       
       <guid>/2011/01/04/decision-trees-in-sas-enterprise-miner-and-spss-clementine/</guid>
-      <description>&lt;p&gt;Decision trees are included in SAS Enterprise Miner(EM). The counterpart is SPSS Clementine, which should be called IBM SPSS Modeler for precision after IBM’s acquisition of SPSS.&lt;/p&gt;
-
-&lt;p&gt;Recently I read a paper on the comparisons of SAS EM, SPSS Clementine and IBM Intelligent Miner on their decision tree and cluster technology:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_&lt;a href=&#34;http://www.gimi.us/CLUTE_INSTITUTE/ORLANDO_2010/Article%2520452.pdf&#34; target=&#34;_blank&#34;&gt;Decision Tree Induction &amp;amp; Clustering Techniques in SAS Enterprise Miner, SPSS Clementine, and IBM Intelligent Miner – A Comparative Analysis&lt;/a&gt;_ by Abdullah M. Al Ghoson, Virginia Commonwealth University&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The output is not that surprising. SAS EM plays better in performance, functionality and auxiliary task support but worse in usability.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SAS_VS_SPSS.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;SAS_VS_SPSS&#34; border=&#34;0&#34; alt=&#34;SAS_VS_SPSS&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SAS_VS_SPSS_thumb.png&#34; width=&#34;503&#34; height=&#34;476&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Here are few comments on decision trees implementations in SAS EM and SPSS Clementine based on my own experiences. Some advises for beginners are also supplied.&lt;/p&gt;
-
-&lt;p&gt;There are four nodes in SPSS Clementine to supports four trees algorithms respectively: &lt;font color=&#34;#ff0000&#34;&gt;C5.0&lt;/font&gt;, Classification And Regression Trees (&lt;font color=&#34;#ff0000&#34;&gt;CART&lt;/font&gt;),&amp;#160; Quick, Unbiased, Efficient Statistical Tree(&lt;font color=&#34;#ff0000&#34;&gt;QUEST&lt;/font&gt;) and Chi-squared Automatic Interaction Detector(&lt;font color=&#34;#ff0000&#34;&gt;CHAID&lt;/font&gt;),&amp;#160; which are most famous and popular in decision trees family.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SPSS_4_trees.png&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;SPSS_4_trees&#34; border=&#34;0&#34; alt=&#34;SPSS_4_trees&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SPSS_4_trees_thumb.png&#34; width=&#34;412&#34; height=&#34;105&#34; /&gt;&lt;/a&gt; Note that CART&amp;reg; is a registered trademark of California Statistical Software, Inc., and is licensed exclusively to Salford Systems, San Diego, California. So SPSS Clementine uses C&amp;amp;R Tree as name.&lt;/p&gt;
-
-&lt;p&gt;In SAS EM, there is only one decision tree node:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SAS_tree.png&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;SAS_tree&#34; border=&#34;0&#34; alt=&#34;SAS_tree&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SAS_tree_thumb.png&#34; width=&#34;155&#34; height=&#34;74&#34; /&gt;&lt;/a&gt; The algorithms behind this node is called SAS tree algorithms, which incorporate and extend the four mentioned before. Just change the settings in decision tree node, you can get the trees you want.&lt;/p&gt;
-
-&lt;p&gt;Obviously, SAS tree algorithms is superior than the separated ones in SPSS Clementine for expansibility and flexibility. But at the other hand, the complexities increase. For a newbie user of SAS EM, he/she may wonder which trees he/she is training. A SPSS Clementine users just picks up a node and says: OK, I am now training a CART or CHAID.—he/she would communicate with others more smoothly.&lt;/p&gt;
-
-&lt;p&gt;Regardless of the industry application, I think this is the educational benefit of SPSS Clementine. Since almost every data mining book introduces decision trees by separated algorithms(such as ID3/C4.5/C5.0, CART, QUEST, CHAID, &amp;hellip;), the beginners using SPSS Clementine as instructional tool may get the clear ideas about the algorithms one by one. Once he/she get the full understanding of the differences among tree algorithms, he/she would train trees in SAS EM more comfortable.&lt;/p&gt;
-
-&lt;p&gt;What’s more, SPSS Clementine supplies rich supporting documentations for beginners and self learners , such as Tutorial, User Guide, Algorithms Guide, Node Reference. The official documentations of SAS EM 5.x and 6.x are relatively poor. Yes there is a good SAS Help and Documentation for SAS EM 4.3 including &lt;em&gt;Getting Started with Enterprise Miner&lt;/em&gt;. EM4.3 is a traditional AF application but EM5.x and above are Java client incorporated in SAS analysis platform(they are totally different!). For EM5.x and above, only installation guides and a plain reference are available.&lt;/p&gt;
-
-&lt;p&gt;SAS Institute may have its own marketing strategies. No rich references available, the Institute DOES offer &lt;a href=&#34;https://support.sas.com/edu/prodcourses.html?code=MINER&amp;ctry=US&#34; target=&#34;_blank&#34;&gt;rich training programs&lt;/a&gt; in data mining and Enterprise Miner application. Wooo, the big-budget purchasers of SAS EM can also afford the trainings.&lt;/p&gt;
-</description>
+      <description>Decision trees are included in SAS Enterprise Miner(EM). The counterpart is SPSS Clementine, which should be called IBM SPSS Modeler for precision after IBM’s acquisition of SPSS.
+Recently I read a paper on the comparisons of SAS EM, SPSS Clementine and IBM Intelligent Miner on their decision tree and cluster technology:
+ _Decision Tree Induction &amp;amp; Clustering Techniques in SAS Enterprise Miner, SPSS Clementine, and IBM Intelligent Miner – A Comparative Analysis_ by Abdullah M.</description>
     </item>
     
     <item>
@@ -239,34 +85,7 @@
       <pubDate>Fri, 20 Mar 2009 11:41:00 +0000</pubDate>
       
       <guid>/2009/03/20/run-data-mining-codes-following-william-potts/</guid>
-      <description>&lt;div&gt;
-  &lt;font face=Arial&gt;FYI: &lt;em&gt;SAS Enterprise Miner and SAS Text Miner Procedures: Reference for SAS 9.1.3&lt;/em&gt;, see:&lt;/font&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;font face=Arial&gt;&lt;/font&gt;&amp;nbsp;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;font face=Arial&gt;&lt;a  href=&#34;http://support.sas.com/documentation/onlinedoc/miner/emtmsas913/listing.html&#34;&gt;http://support.sas.com/documentation/onlinedoc/miner/emtmsas913/listing.html&lt;/a&gt;&lt;/font&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;font face=Arial&gt;&lt;/font&gt;&amp;nbsp;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;font face=Arial&gt;This entry DOES exist in the SAS Support website, but it can&amp;#8217;t be found by any search engine or documentation tree view. &lt;/font&gt;&lt;font face=Arial&gt;You&amp;#8217;re recommended to download these files immediately due to SAS&amp;#8217;s easy-dead hyperlinks.^-^ &lt;/font&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;font face=Arial&gt;&lt;/font&gt;&amp;nbsp;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;font face=Arial&gt;ps.SAS Institute provides no support for the use of Enterprise Miner and Text Miner Procedures when they are invoked directly, outside of the Enterprise Miner graphical user interface.&lt;/font&gt;
-&lt;/div&gt;
-</description>
+      <description>FYI: SAS Enterprise Miner and SAS Text Miner Procedures: Reference for SAS 9.1.3, see:   &amp;nbsp;   http://support.sas.com/documentation/onlinedoc/miner/emtmsas913/listing.html   &amp;nbsp;   This entry DOES exist in the SAS Support website, but it can&amp;#8217;t be found by any search engine or documentation tree view. You&amp;#8217;re recommended to download these files immediately due to SAS&amp;#8217;s easy-dead hyperlinks.^-^    &amp;nbsp;   ps.SAS Institute provides no support for the use of Enterprise Miner and Text Miner Procedures when they are invoked directly, outside of the Enterprise Miner graphical user interface.</description>
     </item>
     
     <item>
@@ -275,18 +94,7 @@
       <pubDate>Mon, 02 Mar 2009 10:28:00 +0000</pubDate>
       
       <guid>/2009/03/02/free-machine-learning-courses-stanford-in-youtube/</guid>
-      <description>&lt;div&gt;
-  &lt;font face=Arial&gt;FYI:&lt;/font&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;font face=Arial&gt;&lt;/font&gt;&amp;nbsp;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;font face=Arial&gt;&lt;a  href=&#34;http://www.youtube.com/view_play_list?p=A89DCFA6ADACE599&#34;&gt;http://www.youtube.com/view_play_list?p=A89DCFA6ADACE599&lt;/a&gt;&lt;/font&gt;
-&lt;/div&gt;
-</description>
+      <description> FYI:   &amp;nbsp;   http://www.youtube.com/view_play_list?p=A89DCFA6ADACE599  </description>
     </item>
     
     <item>
@@ -295,14 +103,7 @@
       <pubDate>Tue, 17 Feb 2009 14:55:00 +0000</pubDate>
       
       <guid>/2009/02/17/sas-user-books-and-data-mining-software-comparision-quick-links/</guid>
-      <description>&lt;ol&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: x-small;&#34;&gt;&lt;a href=&#34;http://support.sas.com/publishing/pdfs/jan09.pdf&#34;&gt;SAS Books Catalog(Jan, 2009)&lt;/a&gt;&lt;/span&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: x-small;&#34;&gt;&lt;em&gt;&lt;a href=&#34;http://www.mayato.com/index.php?option=com_content&amp;task=view&amp;id=105&amp;Itemid=96&amp;lang=en&#34;&gt;Data Mining Software 2009: Succesul Analyses at Affordable Prices&lt;/a&gt;&lt;/em&gt;(Nov. 2008, by mayato)&lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+      <description> SAS Books Catalog(Jan, 2009) Data Mining Software 2009: Succesul Analyses at Affordable Prices(Nov. 2008, by mayato)  </description>
     </item>
     
     <item>
@@ -311,32 +112,7 @@
       <pubDate>Fri, 19 Dec 2008 10:44:00 +0000</pubDate>
       
       <guid>/2008/12/19/industry-review-sas-and-teradata-partnership/</guid>
-      <description>&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
-  &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;SAS and Teradata Partnership: Press&lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
-  &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.sas.com/news/preleases/SASandTeradataAdvantageProgram.html&#34;&gt;Leading Companies See Value in SAS and Teradata Partnership&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.sas.com/news/preleases/TeradataAdvantageProgram.html&#34;&gt;SAS and Teradata Unveil Advantage Program to Bring Powerful In-Database Solutions and Services to Customers&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.teradata.com/t/page/173874/index.html&#34;&gt;SAS and Teradata Enter into Strategic Partnership&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;font-size: 100%;&#34;&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
-  &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
-  &lt;span style=&#34;font-size: 100%;&#34;&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
-  &lt;span style=&#34;font-size: 100%;&#34;&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;In BI industry, the pure players such as SAS, Teradata and Microstrategy, need to demonstrate their indispensable values against the megavendors, IBM (acquired Cognos), SAP (acquired Business Object), Oracle (acquired Hyperion) and Microsoft. Teradata is solely focused on enterprise data warehouse. SAS, dominating in business analytics (e.g. advanced statistics and data mining), will check and balance the BI industry due to the private-hold structure. SAS and Teradata Advantage Program partnership, includes wide business lines, such as Analytics, AML (Anti-Money Laundering), Credit Risk, Enterprise Intelligence and Optimization Services. I think It&amp;#8217;s a effective way to learn from each other in mutual emulation and&lt;/span&gt;&lt;span style=&#34;font-family: Times New Roman;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;counterbalance the &lt;/span&gt;&lt;span class=&#34;wbtrmn&#34;&gt;&lt;span style=&#34;font-family: Times New Roman;&#34;&gt;concentration&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt; market.&lt;/span&gt;&lt;/span&gt;
-&lt;/p&gt;
-</description>
+      <description>SAS and Teradata Partnership: Press   Leading Companies See Value in SAS and Teradata Partnership SAS and Teradata Unveil Advantage Program to Bring Powerful In-Database Solutions and Services to Customers SAS and Teradata Enter into Strategic Partnership    In BI industry, the pure players such as SAS, Teradata and Microstrategy, need to demonstrate their indispensable values against the megavendors, IBM (acquired Cognos), SAP (acquired Business Object), Oracle (acquired Hyperion) and Microsoft.</description>
     </item>
     
     <item>
@@ -345,15 +121,7 @@
       <pubDate>Sat, 13 Dec 2008 23:55:00 +0000</pubDate>
       
       <guid>/2008/12/13/data-mining-in-stock-market/</guid>
-      <description>&lt;p&gt;Data Mining in Stock Market? Is it crazy? or is it just a hopeless try? Every mentor in mathematics and finance educates us that the stock market is too chaotic and &lt;strong&gt;sentimental&lt;/strong&gt; to use mathematical models. Most of all gift rock scientists are concentrated in the study of interest of rates and fixed income securities. It sounds profitable to use mathematical and statistical models to predict the price of stock, but there are little successfull stories.&lt;/p&gt;
-
-&lt;p&gt;I know I might hold some academic doctrines, so I have interest to monitor any effort to try to forecast stock prices using data mining techniques. Some links from a popular data mining blog , &lt;a href=&#34;http://dataminingresearch.blogspot.com/&#34;&gt;&lt;em&gt;Data Mining Research&lt;/em&gt;&lt;/a&gt;, are listed as follows:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://dataminingresearch.blogspot.com/2008/09/stock-prediction-using-decision-tree.html&#34;&gt;Stock Prediction using Decision Tree&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dataminingresearch.blogspot.com/2008/12/stock-picking-using-data-mining_12.html&#34;&gt;Stock Picking using Data Mining: Parameter Tuning&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>Data Mining in Stock Market? Is it crazy? or is it just a hopeless try? Every mentor in mathematics and finance educates us that the stock market is too chaotic and sentimental to use mathematical models. Most of all gift rock scientists are concentrated in the study of interest of rates and fixed income securities. It sounds profitable to use mathematical and statistical models to predict the price of stock, but there are little successfull stories.</description>
     </item>
     
   </channel>

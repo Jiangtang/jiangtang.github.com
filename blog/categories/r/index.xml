@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Jiangtang Hu | 胡江堂</title>
-    <link>/categories/r/index.xml</link>
+    <link>/categories/r/</link>
     <description>Recent content in R on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>In Search of Lost Time: 2016</title>
@@ -14,25 +17,10 @@
       <pubDate>Thu, 04 May 2017 00:00:00 +0000</pubDate>
       
       <guid>/2017/05/04/in-search-of-lost-time-2016/</guid>
-      <description>&lt;!-- BLOGDOWN-HEAD --&gt;
-&lt;!-- /BLOGDOWN-HEAD --&gt;
-
-&lt;!-- BLOGDOWN-BODY-BEFORE --&gt;
-&lt;!-- /BLOGDOWN-BODY-BEFORE --&gt;
-&lt;p&gt;2016 was gone, and I didn’t even leave one single blog post. An obvious inference should be, 2016 doesn’t exist…&lt;/p&gt;
-&lt;p&gt;2016 was a year of struggle for me as a SAS programmer. I earn my bread mostly using SAS, but is a SAS programmer like me cool? It’s not a silly question. Lots of SAS programmers feel the crunch.&lt;/p&gt;
-&lt;p&gt;So, in 2016, I&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Jiangtang/Homer-networkX&#34;&gt;learned some Python&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;attended &lt;a href=&#34;https://pydata.org/carolinas2016/&#34;&gt;Pydata Carolinas&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;learned some Spark, and got certified by edX somehow with all the bubble words in the title, &lt;a href=&#34;https://courses.edx.org/certificates/85c0f27c305b49abafee8da0005191a1&#34;&gt;Distributed Machine Learning with Apache Spark&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;learned some math, &lt;a href=&#34;http://math.mit.edu/~gs/linearalgebra/&#34;&gt;Linear Algebra&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;learned more math, &lt;a href=&#34;https://projects.iq.harvard.edu/stat110/youtube&#34;&gt;Probability&lt;/a&gt;,&lt;/li&gt;
-&lt;li&gt;learned even more math, &lt;a href=&#34;http://www4.ncsu.edu/~ctk/ma580.html&#34;&gt;Numerical Analysis&lt;/a&gt;, and&lt;/li&gt;
-&lt;li&gt;didn’t update one single blog post, because all my spare time and coffee making time were simply run out.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I feel much better after one year of burying my head in the sand. Keep tuned, 2017.&lt;/p&gt;
-</description>
+      <description>2016 was gone, and I didn&amp;rsquo;t even leave one single blog post. An obvious inference should be, 2016 doesn&amp;rsquo;t exist&amp;hellip;
+2016 was a year of struggle for me as a SAS programmer. I earn my bread mostly using SAS, but is a SAS programmer like me cool? It&amp;rsquo;s not a silly question. Lots of SAS programmers feel the crunch.
+So, in 2016, I
+ learned some Python, attended Pydata Carolinas, learned some Spark, and got certified by edX somehow with all the bubble words in the title, Distributed Machine Learning with Apache Spark, learned some math, Linear Algebra, learned more math, Probability, learned even more math, Numerical Analysis, and didn&amp;rsquo;t update one single blog post, because all my spare time and coffee making time were simply run out.</description>
     </item>
     
     <item>
@@ -41,32 +29,11 @@
       <pubDate>Tue, 12 May 2015 13:06:28 +0000</pubDate>
       
       <guid>/2015/05/12/import-.rdata-to-sas-along-with-labels/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;I didn’t &lt;/span&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2010/10/29/sas-iml-basic/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;play with SAS/IML&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;for a while. I call it back when I need to read some R format data.&lt;/span&gt;&lt;/p&gt;
+      <description>I didn’t play with SAS/IML for a while. I call it back when I need to read some R format data.
+Technically, .Rdata is not a data format. It’s rather a big container to hold bunch of R objects:
 
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Technically, .Rdata is not a data format. It’s rather a big container to hold bunch of R objects:&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/Rdata1.png&#34;&gt;&lt;img style=&#34;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border: 0px;&#34; title=&#34;Rdata&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2015/05/Rdata_thumb1.png&#34; alt=&#34;Rdata&#34; width=&#34;408&#34; height=&#34;213&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;In this example, when a .Rdata is loaded, 3 objects are included where ‘data’(the ‘real’ data) and ‘desc’ (data description portion) are of our interests.&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;SAS/IML offers a nice interface to call R command which can be used to read the R format data:&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;proc iml;&lt;br /&gt; &lt;strong&gt;submit / R;&lt;/strong&gt;&lt;br /&gt; load(&amp;#8220;C:/data/w5/R data sets for 5e/GPA1.RData&amp;#8221;)&lt;br /&gt; &lt;strong&gt;endsubmit;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;    &lt;strong&gt;call&lt;/strong&gt; &lt;strong&gt;ImportDataSetFromR&lt;/strong&gt;(&amp;#8220;work.GPA1&amp;#8221;, &amp;#8220;&lt;span style=&#34;color: #ff0000;&#34;&gt;data&lt;/span&gt;&amp;#8220;);&lt;br /&gt; &lt;strong&gt;call&lt;/strong&gt; &lt;strong&gt;ImportDataSetFromR&lt;/strong&gt;(&amp;#8220;work.GPA1desc&amp;#8221;, &amp;#8220;&lt;span style=&#34;color: #ff0000;&#34;&gt;desc&lt;/span&gt;&amp;#8220;);&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;quit;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; set GPA1desc end = eof ;&lt;br /&gt; i+1;&lt;br /&gt; II=left(put(i,3.));&lt;br /&gt; call symputx(&amp;#8216;var&amp;#8217;||II,variable);&lt;br /&gt; call symputx(&amp;#8216;label&amp;#8217;||II,label);&lt;br /&gt; if eof then call symputx(&amp;#8216;n&amp;#8217;,II);&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;%macro labelit;&lt;br /&gt; data gpa1;&lt;br /&gt; set gpa1;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;    label&lt;br /&gt; %do i=1 %to &amp;n;&lt;br /&gt; &amp;amp;&amp;amp;var&amp;amp;i = &amp;amp;&amp;amp;label&amp;amp;i&lt;br /&gt; %end;&lt;br /&gt; ;&lt;br /&gt; run;&lt;br /&gt; %mend;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;%labelit&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+In this example, when a .Rdata is loaded, 3 objects are included where ‘data’(the ‘real’ data) and ‘desc’ (data description portion) are of our interests.
+SAS/IML offers a nice interface to call R command which can be used to read the R format data:</description>
     </item>
     
     <item>
@@ -75,74 +42,7 @@
       <pubDate>Tue, 01 Apr 2014 23:42:24 +0000</pubDate>
       
       <guid>/2014/04/01/use-list-object-in-sas-yet-another-undocumented-feature-in-sas-9.4/</guid>
-      <description>
-
-&lt;p&gt;Last year I gave a talk in SESUG 2013 on &lt;a href=&#34;http://analytics.ncsu.edu/sesug/2013/BtB-18.pdf&#34;&gt;list manipulation on SAS using a collection of function-like macros&lt;/a&gt;. Today I just explored in my recently upgraded SAS 9.4 that I can play with list natively, which means I can create a list, slice a list and do other list operations in Data Steps! This is not documented yet(which means it will not be supported by the software vendor) and I can see warning message in Log window like “WARNING: List object is preproduction in this release”,  and it is still limited somehow, so use it in your own risk (and of course, fun).  Adding such versatile list object will definitely make SAS programmers more powerful. I will keep watch its further development.&lt;/p&gt;
-
-&lt;p&gt;*&lt;strong&gt;*&lt;/strong&gt;*&lt;strong&gt;*&lt;/strong&gt;*&lt;strong&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;Update&lt;/span&gt;&lt;/strong&gt;*&lt;strong&gt;*&lt;/strong&gt;**&lt;/p&gt;
-
-&lt;p&gt;Some readers emailed to me that they can’t get the expected results as I did here. I think it’s best to check your own system:&lt;/p&gt;
-
-&lt;p&gt;I. Make sure you use the latest SAS software. I only tested on a 64-bit Window 7 machine with SAS 9.4 TS1M1:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/SAS94.png&#34;&gt;&lt;img style=&#34;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;&#34; title=&#34;SAS94&#34; alt=&#34;SAS94&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/SAS94_thumb.png&#34; width=&#34;442&#34; height=&#34;186&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;II. Make sure all hotfixes were applied (You can use this &lt;a href=&#34;http://ftp.sas.com/techsup/download/hotfix/HF2/SASHFADD.html&#34;&gt;SAS Hot Fix Analysis, Download and Deployment Tool&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/hotfix.png&#34;&gt;&lt;img style=&#34;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;&#34; title=&#34;hotfix&#34; alt=&#34;hotfix&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/hotfix_thumb.png&#34; width=&#34;432&#34; height=&#34;252&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;*&lt;strong&gt;*&lt;/strong&gt;*&lt;strong&gt;*&lt;/strong&gt;*&lt;strong&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;Update End&lt;/span&gt;&lt;/strong&gt;*&lt;strong&gt;*&lt;/strong&gt;**&lt;/p&gt;
-
-&lt;p&gt;The followings are some quick plays and I will report more after more research:&lt;/p&gt;
-
-&lt;h2 id=&#34;1-create-a-list&#34;&gt;1. Create a List&lt;/h2&gt;
-
-&lt;p&gt;It’s easy to create a list:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; a = [&amp;#8216;apple&amp;#8217;, &amp;#8216;orange&amp;#8217;, &amp;#8216;banana&amp;#8217;];&lt;br /&gt; put a;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;the output in Log window:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list1.png&#34;&gt;&lt;img style=&#34;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;&#34; title=&#34;list1&#34; alt=&#34;list1&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list1_thumb.png&#34; width=&#34;448&#34; height=&#34;84&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;You can also transfer a string to a list:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; a = &amp;#8216;SAS94&amp;#8217;&lt;br /&gt; b =list(a)&lt;br /&gt; put b;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list2.png&#34;&gt;&lt;img style=&#34;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;&#34; title=&#34;list2&#34; alt=&#34;list2&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list2_thumb.png&#34; width=&#34;460&#34; height=&#34;80&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;2-slice-a-list&#34;&gt;2. Slice a List&lt;/h2&gt;
-
-&lt;p&gt;Slicing a list is also pretty straightforward, like in R and Python:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; a = [&amp;#8216;apple&amp;#8217;, &amp;#8216;orange&amp;#8217;, &amp;#8216;banana&amp;#8217;];&lt;br /&gt; b = a[0];&lt;br /&gt; c = a[:-1];&lt;br /&gt; d = a[1:2];&lt;br /&gt; put a;&lt;br /&gt; put b;&lt;br /&gt; put c;&lt;br /&gt; put d;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list3.png&#34;&gt;&lt;img style=&#34;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;&#34; title=&#34;list3&#34; alt=&#34;list3&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list3_thumb.png&#34; width=&#34;406&#34; height=&#34;110&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;3-list-is-immutable-in-sas&#34;&gt;3. List is Immutable in SAS!?&lt;/h2&gt;
-
-&lt;p&gt;I felt much confortable to play list operations in SAS but a weird thing just happened. I tried to change a value in a list:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; a = [&amp;#8216;apple&amp;#8217;, &amp;#8216;orange&amp;#8217;, &amp;#8216;banana&amp;#8217;];&lt;br /&gt; a[0] = &amp;#8216;Kivi&amp;#8217;;&lt;br /&gt; put a;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Unexpectedly, I got an error:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list4.png&#34;&gt;&lt;img style=&#34;background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 3px auto 5px; display: block; padding-right: 0px; border-width: 0px;&#34; title=&#34;list4&#34; alt=&#34;list4&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2014/04/list4_thumb.png&#34; width=&#34;443&#34; height=&#34;76&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;hhh, I need to create a new list to hold such modification? This is funny.&lt;/p&gt;
-
-&lt;p&gt;Based on my quick exploration, the list object in SAS is pretty intuitive from a programmers’ point of view. But since it’s undocumented and I don’t know how long it will stay in “preproduction” phase,  just be careful to implement it in your production work.&lt;/p&gt;
-
-&lt;p&gt;Personally I feel very exciting to “hack” such wonderful list features in SAS 9.4. If well implemented, it will easily beat R and Python (which claim themselves supporting rich data types and objects) as a scripting language for SAS programmers. I will keep update in &lt;a href=&#34;http://en.wikipedia.org/wiki/April_1&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Last year I gave a talk in SESUG 2013 on list manipulation on SAS using a collection of function-like macros. Today I just explored in my recently upgraded SAS 9.4 that I can play with list natively, which means I can create a list, slice a list and do other list operations in Data Steps! This is not documented yet(which means it will not be supported by the software vendor) and I can see warning message in Log window like “WARNING: List object is preproduction in this release”, and it is still limited somehow, so use it in your own risk (and of course, fun).</description>
     </item>
     
     <item>
@@ -151,74 +51,9 @@
       <pubDate>Fri, 29 Nov 2013 00:16:33 +0000</pubDate>
       
       <guid>/2013/11/29/the-hardware-and-software-2013-irsquom-most-thankful-for/</guid>
-      <description>
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It’s time of year to give thanks. As a programmer, e-book reader, blog writer and web surfer, I should express my sincere appreciation to such hardware and software (I use majority of them at daily basis and most of them are free):&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;font-size-1-0-hardware-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;0. Hardware &lt;/font&gt;&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://shop.lenovo.com/us/en/laptops/thinkpad/w-series/w520/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Lenovo Thinkpad W520&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;em&gt;(This is not free):&lt;/em&gt; my workhorse machine, now replaced by &lt;/font&gt;&lt;a href=&#34;http://shop.lenovo.com/SEUILibrary/controller/e/web/LenovoPortal/en_US/catalog.workflow:category.details?current-catalog-id=12F0696583E04D86B9B79B0FEC01C087&amp;amp;current-category-id=F2A3EC7C45634AE8AB0F26CCAC867854&#34;&gt;&lt;font size=&#34;1&#34;&gt;W530&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;font-size-1-1-google-stuff-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;1. Google Stuff&lt;/font&gt;&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.google.com/intl/en/chrome/browser/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Chrome&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;(Windows and Android apps): The first thing to do when getting a new machine is using IE to download the Chrome, then I can just keep moving.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Gmail, Google Maps, Google Voice, Google Talk, Google Search, Google Drive, Google Keep: just can’t live without them!&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.google.com/nexus/7/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Nexus 7&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;em&gt;(This is not free):&lt;/em&gt; first generation. This year I got four tablets, the same nexus 7(that’s a long story..), now I only hold one and I love it: compared to iPad, it’s much portable to hold in my back pocket; to iPad mini, it’s much cheaper! This tablet is heavily used for reading and offline navigation.&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;font-size-1-2-windows-applications-supporting-tabs-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;2. Windows Applications Supporting Tabs&lt;/font&gt;&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/14/tab-is-a-tab-is-a-tab-is-a-tab/&#34;&gt;&lt;font size=&#34;1&#34;&gt;I’m a big fan of “tabs”&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and feel much more comfortable when launching everything into tabs: web pages, text files, PDF files, Windows Office files (Word, Excel, PPT), and even folders:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://ejie.me/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Clover&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;as replacement for Windows Explore;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.google.com/intl/en/chrome/browser/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Chrome&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;as replacement for Internet Explore (IE);&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.foxitsoftware.com/Secure_PDF_Reader/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Foxit Reader&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;as replacement for Adobe Reader;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.extendoffice.com/product/office-tab.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;Office Tab&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;&lt;em&gt;(This is not free)&lt;/em&gt; to open Microsoft Office Word, Excel, Powerpoint files in tabs;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://ttyplus.com/multi-tabbed-putty/&#34;&gt;&lt;font size=&#34;1&#34;&gt;MTPuTTy&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;to open Putty sessions in tabs.&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;font-size-1-3-programming-and-accessories-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;3. Programming and Accessories&lt;/font&gt;&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://notepad-plus-plus.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Notepad++&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: best of best to open and edit all the text files within a folder.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.vim.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Vim&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: my only choice in Unix boxes; it can only serve as &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/11/13/vim-as-a-sas-ide/&#34;&gt;&lt;font size=&#34;1&#34;&gt;a humble SAS IDE&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.sas.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;em&gt;(This is not free):&lt;/em&gt; I’m primarily a SAS programmer and I live on it, my first choice for data manipulation and reporting.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.r-project.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;R&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and &lt;/font&gt;&lt;a href=&#34;http://rstudio.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Rstudio&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: R is hot and this February &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/02/08/learningr/&#34;&gt;&lt;font size=&#34;1&#34;&gt;I followed a R programming course&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;in &lt;/font&gt;&lt;a href=&#34;https://www.coursera.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Coursera&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, &lt;em&gt;&lt;a href=&#34;https://www.coursera.org/course/compdata&#34;&gt;Computing for Data Analysis&lt;/a&gt;&lt;/em&gt; by Dr. &lt;/font&gt;&lt;a href=&#34;http://simplystatistics.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Roger&amp;#160; Peng&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;of Johns Hopkins, Biostatistics Department. It’s nice to learn a new language and I’m now well prepared to jump into R vs SAS debate. Also, Rstudio is a elegant IDE.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.microsoft.com/en-us/download/details.aspx?id=34595&#34;&gt;&lt;font size=&#34;1&#34;&gt;Powershell&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: since I finished a project by Powershell (almost at learn-by-doing basis), I must say it deserves efforts to learn.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.perl.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Perl&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: I learned and used little bit of Perl this year. It’s ugly but good enough to get work done, and most important, it’s pre-installed in every Unix machine I worked with. Vim+Perl seem the perfect pair to survive in any Unix world. By many good reasons, I should keep learning Python, but Python currently doesn’t help me to make any bucks.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.cygwin.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Cygwin&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: My W520 has Windows 7 installed and Cygwin offers nice collection of Unix tools I’m interested in.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Github&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: I put my collection of &lt;/font&gt;&lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS utilities on Github&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.scootersoftware.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Beyond Compare&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;&lt;em&gt;(This is not free): &lt;/em&gt;best on file/folder comparison. &lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;font-size-1-4-reading-and-writing-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;4. Reading and Writing&lt;/font&gt;&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://calibre-ebook.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Calibre&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: my first choice of e-books management, alone with the Android app, &lt;/font&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.multipie.calibreandroid&amp;amp;hl=en&#34;&gt;&lt;font size=&#34;1&#34;&gt;Calibre Companion&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;em&gt;(this is not free).&lt;/em&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;feedly.com&#34;&gt;&lt;font size=&#34;1&#34;&gt;Feedly&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: Google Reader was dead and now Feedly is even much better than Google Reader! My first online resource collector.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.flyersoft.moonreaderp&amp;amp;hl=en&#34;&gt;&lt;font size=&#34;1&#34;&gt;Moon+ Reader Pro&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: my favorite reading app in my phone and tablet, better than Kindle app and any others, nice Dropbox support.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.microsoft.com/en-us/download/details.aspx?id=8621&#34;&gt;&lt;font size=&#34;1&#34;&gt;Windows Live Writer&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: The only Windows Live product left in my machine, I use it to write every of my blog post, best offline writer(its developers also produce Rstudio).&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;font-size-1-5-miscellaneous-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;5. Miscellaneous&lt;/font&gt;&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Dropbox&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: it’s even better than Google Drive!&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.pandora.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Pandora&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: I leave it open when at home.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://passwordsafe.sourceforge.net/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Password Safe&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: I dumped hundreds of passwords there… &lt;/font&gt;&lt;/p&gt;
-</description>
+      <description>It’s time of year to give thanks. As a programmer, e-book reader, blog writer and web surfer, I should express my sincere appreciation to such hardware and software (I use majority of them at daily basis and most of them are free):
+0. Hardware  Lenovo Thinkpad W520&amp;#160;(This is not free): my workhorse machine, now replaced by W530.
+1. Google Stuff Google Chrome (Windows and Android apps): The first thing to do when getting a new machine is using IE to download the Chrome, then I can just keep moving.</description>
     </item>
     
     <item>
@@ -227,24 +62,11 @@
       <pubDate>Wed, 20 Mar 2013 23:09:08 +0000</pubDate>
       
       <guid>/2013/03/20/whatrsquos-new/</guid>
-      <description>&lt;p&gt;I didn’t &lt;a href=&#34;http://www.jiangtanghu.com/blog/archives/&#34;&gt;blog&lt;/a&gt; for a while in this first half March and there are bunches of new stuff to catch up:&lt;/p&gt;
+      <description>I didn’t blog for a while in this first half March and there are bunches of new stuff to catch up:
+I had a new baby! He was delivered on time (and on budget!), lions tigers and bears, oh my&amp;#8230; His brother is Tiger so I named him, Leo.
+And I got the latest SAS 9.3 (TS1M2) installed! SAS is jus getting much beautiful.
 
-&lt;p&gt;I had a new baby! He was delivered on time (and on budget!), &lt;em&gt;lions tigers and bears, oh my&amp;#8230;&lt;/em&gt; His brother is Tiger so I named him, Leo.&lt;/p&gt;
-
-&lt;p&gt;And I got the latest SAS 9.3 (TS1M2) installed! SAS is jus getting much beautiful.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/03/SAS9.3_12.1.png&#34;&gt;&lt;font color=&#34;#cbcbcb&#34;&gt;&lt;/font&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS9.3_12.1&#34; border=&#34;0&#34; alt=&#34;SAS9.3_12.1&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/03/SAS9.3_12.1_thumb.png&#34; width=&#34;383&#34; height=&#34;99&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.opencdisc.org/download&#34;&gt;OpenCDISC&lt;/a&gt; had the latest release, Version 1.4 with the new SDTM 3.1.3 validation checks,—and yes CDISC itself also had some significant updates:&lt;/p&gt;
-
-&lt;p&gt;SDTMv1.3 and SDTMIGv3.1.3 now have the &lt;a href=&#34;http://www.cdisc.org/sdtmv1-4-sdtmigv3-1-3-metadata&#34;&gt;machine readable metadata&lt;/a&gt; online. It’s a nice improvement (last year I just posted &lt;em&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/12/29/cdisc-in-pdf-format/&#34;&gt;The Great, Open, Vendor-neutral, Platform-independent Data Standards, &amp;hellip; Yet in PDF Formats&lt;/a&gt;)&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.cdisc.org/define-xml&#34;&gt;Define-XML&lt;/a&gt; now turns to 2.0 (finally).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://cran.rstudio.com/&#34;&gt;R&lt;/a&gt; had its final 2.* release, Version 2.15.3 and Version 3.0.0 will just come soon. &lt;a href=&#34;http://www.rstudio.com/ide/download/desktop&#34;&gt;RStudio&lt;/a&gt; also had a update recently. RStudio is the best IDE (not just R IDE) I used.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://googlereader.blogspot.com/2013/03/powering-down-google-reader.html&#34;&gt;Google will shut down Google Reader&lt;/a&gt;, the best RSS reader ever. It’s a huge loss and I tell you, for example, the famous SAS and statistical blogger Wensui Liu, once frequently posted on Windows Live Space, and then Blogspot and finally &lt;a href=&#34;http://statcompute.wordpress.com/&#34;&gt;WordPress&lt;/a&gt;. The former two blogs were closed and Google Reader feed is the only way to archive these lost posts!&lt;/p&gt;
-</description>
+OpenCDISC had the latest release, Version 1.</description>
     </item>
     
     <item>
@@ -253,34 +75,8 @@
       <pubDate>Wed, 20 Feb 2013 22:01:03 +0000</pubDate>
       
       <guid>/2013/02/20/github-for-clinical/statistical-programmers/</guid>
-      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;PhUSE-FDA Working Group 5 (&lt;/font&gt;&lt;a href=&#34;http://www.phusewiki.org/wiki/index.php?title=Development_of_Standard_Scripts_for_Analysis_and_Programming&#34;&gt;&lt;font size=&#34;1&#34;&gt;Development of Standard Scripts for Analysis and Programming&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;) just adopted &lt;/font&gt;&lt;a href=&#34;http://code.google.com/p/phuse-scripts/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Code&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;as collaborative programming platform. &lt;/font&gt;&lt;a href=&#34;http://code.google.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Code&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;is one of the most popular and respected open source software hosting sites in the world and it is definitely a good choice for PhUSE-FDA WG5.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;But after viewing one of WG5’s working reports, &lt;em&gt;&lt;a href=&#34;http://www.phusewiki.org/wiki/index.php?title=Platform_for_Standard_Script_Development:_Progress_as_of_September_18_2012&#34;&gt;Sharing Standard Statistical Scripts&lt;/a&gt;&lt;/em&gt; and getting to know why they finally chose Google Code (rather than &lt;/font&gt;&lt;a href=&#34;https://github.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Github&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;which was also tested by WG5 members), I think it’s necessary to clarify some misunderstanding against Github where I’m also &lt;a href=&#34;https://github.com/Jiangtang&#34;&gt;an occasional user&lt;/a&gt;. &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;As stated in &lt;/font&gt;&lt;a href=&#34;http://www.phusewiki.org/wiki/index.php?title=Platform_for_Standard_Script_Development:_Progress_as_of_September_18_2012&#34;&gt;&lt;font size=&#34;1&#34;&gt;Slide 11&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;in the report mentioned before, Github,&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Too complicated an interface &lt;br /&gt;Too much overhead for simple development &lt;br /&gt;Too much training and education needed&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;designed for classic programming languages like C and Java (not for things like R and SAS)&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For the first point regarding &lt;strong&gt;interface&lt;/strong&gt;, it seems only &lt;/font&gt;&lt;a href=&#34;http://git-scm.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Git&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;command line tested, and it may be too complicated to “&lt;strong&gt;classic&lt;/strong&gt; statistical programming users”. Actually, Github offers a great GUI tool, for example, &lt;em&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;GitHub for Windows&lt;/a&gt;&lt;/em&gt; to help users visually clone repositories, commit changes and other management tasks without typing Git commands: &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Github_GUI.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;Github_GUI&#34; border=&#34;0&#34; alt=&#34;Github_GUI&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Github_GUI_thumb.png&#34; width=&#34;487&#34; height=&#34;427&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It’s also worthy to mention that with &lt;/font&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;GitHub for Windows&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;, &lt;/em&gt;users don’t need to install any separated version control software like Git, CVS or SVN. &lt;/font&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;GitHub for Windows&lt;/font&gt;&lt;/em&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;already includes a fully functional version of &lt;/font&gt;&lt;a href=&#34;http://msysgit.github.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;msysGit&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. It just makes users’ life much simpler. To use Google Code, you must install and configure something like TortoiseSVN.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The second, is Github suitable for “&lt;strong&gt;things like R and SAS&lt;/strong&gt;”? It’s true that all hosts including &lt;/font&gt;&lt;a href=&#34;https://github.com/languages&#34;&gt;&lt;font size=&#34;1&#34;&gt;Github&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;are dominated by “classic programming languages like C and Java”. For SAS, SAS programmers as a whole are just not active in&amp;#160; any social coding activities, but for &lt;/font&gt;&lt;a href=&#34;https://github.com/languages/R&#34;&gt;&lt;font size=&#34;1&#34;&gt;R&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, actually it is &lt;/font&gt;&lt;a href=&#34;https://www.google.com/webhp?sourceid=chrome-instant&amp;amp;ion=1&amp;amp;ie=UTF-8#q=github+top+languages+R&amp;amp;hl=en&amp;amp;ei=T4QlUeH-HJP62AXxqYGAAQ&amp;amp;start=10&amp;amp;sa=N&amp;amp;bav=on.2,or.r_gc.r_pw.r_cp.r_qf.&amp;amp;fp=50b26647ad5972f8&amp;amp;ion=1&amp;amp;biw=1536&amp;amp;bih=784&#34;&gt;&lt;font size=&#34;1&#34;&gt;one of the mostly used languages in Github&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Google Code is good and a “Google Code vs Github” question is just mostly subjective. It seems to me the pickup of Google Code by WG5 rather than Github was based on incomplete information. I personally prefer Github and there are also some good reasons:&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Use the GUI tool, &lt;/font&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;GitHub for Windows&lt;/font&gt;&lt;/em&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;to maintain a minimum Git/SVN/CVS setup.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Github supplies much richer statistics reports, including charts.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Github is more social oriented which makes it cool in this Web2.0 world.&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>PhUSE-FDA Working Group 5 (Development of Standard Scripts for Analysis and Programming) just adopted Google Code as collaborative programming platform. Google Code is one of the most popular and respected open source software hosting sites in the world and it is definitely a good choice for PhUSE-FDA WG5.
+But after viewing one of WG5’s working reports, Sharing Standard Statistical Scripts and getting to know why they finally chose Google Code (rather than Github which was also tested by WG5 members), I think it’s necessary to clarify some misunderstanding against Github where I’m also an occasional user.</description>
     </item>
     
     <item>
@@ -289,21 +85,7 @@
       <pubDate>Fri, 08 Feb 2013 23:37:49 +0000</pubDate>
       
       <guid>/2013/02/08/learningr/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Computing_for_data_analysis_Coursera.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Computing_for_data_analysis_Coursera&#34; border=&#34;0&#34; alt=&#34;Computing_for_data_analysis_Coursera&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Computing_for_data_analysis_Coursera_thumb.png&#34; width=&#34;475&#34; height=&#34;422&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I spent almost all of my blogging time last month to follow an online course in &lt;/font&gt;&lt;a href=&#34;https://www.coursera.org&#34;&gt;&lt;font size=&#34;1&#34;&gt;Coursera&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, &lt;em&gt;&lt;a href=&#34;https://www.coursera.org/course/compdata&#34;&gt;Computing for Data Analysis&lt;/a&gt;&lt;/em&gt; (with R) by Dr. &lt;/font&gt;&lt;a href=&#34;http://simplystatistics.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Roger&amp;#160; Peng&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;of Johns Hopkins, Biostatistics Department. I already checked out bunch of Coursera courses just to take a look at what else &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Massive_open_online_course&#34;&gt;&lt;font size=&#34;1&#34;&gt;MOOC&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;look like, this R course was the first and only one I took seriously: I reviewed all slides (although didn’t watch the videos since I didn’t have enough time) and most important, finished all programming assignments(and got full score!).&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Not a frequent R user, I used some R packages for learning purpose (mostly in &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/01/15/feature-selection-collections-for-self-study/&#34;&gt;&lt;font size=&#34;1&#34;&gt;data mining&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;). This &lt;em&gt;&lt;a href=&#34;https://www.coursera.org/course/compdata&#34;&gt;Computing for Data Analysis&lt;/a&gt;&lt;/em&gt; course focused mostly on data manipulation and that’s why I chose it to dig into R. R by design is not a tool for data management (where SAS excels), but it’s nice to have (no hurt since it’s free). Those days I put most of my efforts on R data structures(vector, matrix, array, list, data frame) and by grouping processing(*ply functions). Few resource I found extremely useful as a starter:&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/tagged/r&#34; title=&#34;http://stackoverflow.com/questions/tagged/r&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://stackoverflow.com/questions/tagged/r&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160; when I google a specific R programming technique, mostly I will reach to stackoverflow website, a new generation Q&amp;amp;A hub to replace user forum, mailing list.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;_&lt;a href=&#34;https://www.google.com/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;ved=0CDIQFjAA&amp;amp;url=http%3A%2F%2Fcran.r-project.org%2Fdoc%2Fcontrib%2FLam-IntroductionToR_LHL.pdf&amp;amp;ei=O84VUfK7HIue8gSr5YGYBQ&amp;amp;usg=AFQjCNGmMLsnqaHAxGH368m32E8s4STNTA&amp;amp;sig2=Gz7gjUqiPqD-nq_Sg5X57w&amp;amp;bvm=bv.42080656,d.eWU&#34;&gt;&lt;font size=&#34;1&#34;&gt;An introduction to R&lt;/font&gt;&lt;/a&gt;_ &lt;font size=&#34;1&#34;&gt;by Longhow Lam, a free book. I like its Chapter 2,&lt;em&gt; Data Objects&lt;/em&gt;, including R data types and data structures.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Data Manipulation with R&lt;/em&gt; by Phil Spector, one of the Use R! books. I used its Chapter 8, &lt;em&gt;Data Aggregation &lt;/em&gt;on R by group processing.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.rstudio.com/ide/&#34;&gt;&lt;font size=&#34;1&#34;&gt;RStudio&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, a must have R IDE, the best of best. &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Package &lt;/font&gt;&lt;a href=&#34;http://cran.r-project.org/web/packages/plyr/index.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;plyr&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, tools for splitting, applying and combining data. Actually, it is awful to use R to manipulate data from a SAS programmer point of view. Use plyr to alleviate the pain.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Package &lt;/font&gt;&lt;a href=&#34;http://code.google.com/p/sqldf/&#34;&gt;&lt;font size=&#34;1&#34;&gt;sqldf&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, like SAS Proc SQL against data frame. Reason, ibid. Use sqldf won’t enhance your R programming skill, but sometime when you feel down at R, you may want to launch piece of SQL scripts you really like.&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>I spent almost all of my blogging time last month to follow an online course in Coursera, Computing for Data Analysis (with R) by Dr. Roger&amp;#160; Peng of Johns Hopkins, Biostatistics Department. I already checked out bunch of Coursera courses just to take a look at what else MOOC look like, this R course was the first and only one I took seriously: I reviewed all slides (although didn’t watch the videos since I didn’t have enough time) and most important, finished all programming assignments(and got full score!</description>
     </item>
     
     <item>
@@ -312,22 +94,11 @@
       <pubDate>Sun, 23 Dec 2012 15:14:13 +0000</pubDate>
       
       <guid>/2012/12/23/weekend-clips-data-scientist-episode-ii/</guid>
-      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+      <description>1. What is A Data Scientist Anyway?
 
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. What is A Data Scientist Anyway?&lt;/font&gt;&lt;/p&gt;
+2. You Just Can’t Be Replaced by Yourselves!
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image3.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image_thumb3.png&#34; width=&#34;487&#34; height=&#34;94&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2. You Just Can’t Be Replaced by Yourselves!&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image1.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image11.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image11_thumb.png&#34; width=&#34;489&#34; height=&#34;94&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;3. We are &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Kaggle&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;all Data Scientists&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;!&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image2.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image12.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image1_thumb.png&#34; width=&#34;482&#34; height=&#34;108&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-</description>
+3. We are all Data Scientists!</description>
     </item>
     
     <item>
@@ -336,17 +107,7 @@
       <pubDate>Tue, 16 Oct 2012 22:28:41 +0000</pubDate>
       
       <guid>/2012/10/16/incorporate-sas/iml-to-base-sas/</guid>
-      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Since SAS 9.3, ODS Graphics was moved into Base SAS and other statistical procedures, which means the SAS/Graph license is not needed anymore to access ODS Graphics facilities. It’s definitely nice, but from customers’ point of view, it is not critical necessary: since the “minimum set of SAS system” in most SAS sessions includes the Base SAS, SAS/Stat and SAS/Graph, there is almost no impact for SAS users to switch the license of ODS Graphics. Actually, I do think SAS/IML is better to be included in BASE SAS (play Proc IML in BASE SAS; a MATRIX statement in data step is definitely another bonus) :&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;IML itself, seems have no intention to replace SAS/Stat, SAS/ETS, SAS/QC and other SAS statistical facilities in matrix way like R or Matlab. Instead, by enhancing the abilities to call SAS data steps(including macros), SAS Procedures and R inside,&amp;#160; IML seems to be glad as glue to leverage multiple programming elements. &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;BASE SAS is a collection of lots of programming elements: data step, macro, SQL, array, hash, Java objects, ODS, XML and bunches of procedures. IML is clearly a programming tool rather than a specific application(SAS/Stat and such) and if it is added to BASE SAS, then the SAS programmers&amp;#160; will have one more data structure (matrix) to play with besides SAS table (R copies this idea as data frame), array and hash table (dictionary).&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Actually it is an emergent need (for a matrix). Processing different rows in variable(s) is not an easy task in SAS data steps. Mostly SAS programmers utilize arrays (plus some tricky functions like LAG and DIF) and Dow-loop after its advent. There are really advanced programming techniques, but in matrix with index, such manipulation is pretty easy and straightforward (and saving your loops).&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Although IML can communicate with BASE SAS, but for portable purpose (IML is not expected in every SAS session), most SAS programmers prefer to submit pure BASE codes for data processing. Furthermore, we can even understand why SAS programmers in general invest less in IML. It’s not good: just think about a BASE SAS programmer without a handy matrix manipulation tool (&lt;em&gt;and think about R&lt;/em&gt;)!&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Personally I played IML for a while and still keep eyes on its updates. But since I had some SAS machines without IML, I realize that IML can’t be used as a production language in my clinical SAS programming life: just can’t afford the latency&amp;#160; to ask IT administrators (including in clients side) to manage it!&lt;/font&gt;&lt;/p&gt;
-</description>
+      <description>Since SAS 9.3, ODS Graphics was moved into Base SAS and other statistical procedures, which means the SAS/Graph license is not needed anymore to access ODS Graphics facilities. It’s definitely nice, but from customers’ point of view, it is not critical necessary: since the “minimum set of SAS system” in most SAS sessions includes the Base SAS, SAS/Stat and SAS/Graph, there is almost no impact for SAS users to switch the license of ODS Graphics.</description>
     </item>
     
     <item>
@@ -355,50 +116,8 @@
       <pubDate>Sun, 30 Sep 2012 21:19:31 +0000</pubDate>
       
       <guid>/2012/09/30/set-up-r-for-sas-programmers/</guid>
-      <description>
-
-&lt;blockquote&gt;
-&lt;h1 id=&#34;font-size-1-yep-i-am-a-sas-programmer-during-the-day-time-i-use-sas-for-my-work-at-the-evening-i-use-r-for-entertainment-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;Yep, I am a SAS programmer: during the day time, I use SAS for my work; at the evening, I use R for entertainment.—&lt;/font&gt;&lt;/h1&gt;
-
-&lt;h1 id=&#34;a-href-http-www-sasanalysis-com-2011-05-support-vector-machine-for-html-target-blank-font-size-1-charlie-huang-font-a&#34;&gt;&lt;a href=&#34;http://www.sasanalysis.com/2011/05/support-vector-machine-for.html&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Charlie Huang&lt;/font&gt;&lt;/a&gt;&lt;/h1&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Getting start to play with R (it is really a wonderful learning tool):&lt;/p&gt;
-
-&lt;h5 id=&#34;12-a-href-http-support-sas-com-documentation-cdl-en-imlsstat-65548-html-default-viewer-htm-imlsstat-statr-toc-htm-target-blank-sas-iml-studio-and-r-integration-a-not-tested&#34;&gt;12. &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/imlsstat/65548/HTML/default/viewer.htm#imlsstat_statr_toc.htm&#34; target=&#34;_blank&#34;&gt;SAS IML Studio and R Integration&lt;/a&gt; (&lt;em&gt;not tested&lt;/em&gt;)&lt;/h5&gt;
-
-&lt;h5 id=&#34;11-a-href-http-support-sas-com-documentation-cdl-en-imlug-65547-html-default-viewer-htm-imlug-r-sect001-htm-target-blank-sas-iml-and-r-integration-a-not-tested&#34;&gt;11. &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/imlug/65547/HTML/default/viewer.htm#imlug_r_sect001.htm&#34; target=&#34;_blank&#34;&gt;SAS IML and R Integration&lt;/a&gt; (&lt;em&gt;not tested&lt;/em&gt;)&lt;/h5&gt;
-
-&lt;h5 id=&#34;10-a-href-http-www-jstatsoft-org-v46-c02-target-blank-sas-base-and-r-integration-proc-r-a&#34;&gt;10. &lt;a href=&#34;http://www.jstatsoft.org/v46/c02&#34; target=&#34;_blank&#34;&gt;SAS Base and R Integration: PROC R&lt;/a&gt;&lt;/h5&gt;
-
-&lt;p&gt;also &lt;a href=&#34;http://sas-and-r.blogspot.com/2012/01/sas-macro-simplifies-sas-and-r.html&#34; target=&#34;_blank&#34;&gt;a blog post&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h5 id=&#34;9-data-transfer-among-r-and-sas-xpt&#34;&gt;9. Data transfer among R and SAS(xpt)&lt;/h5&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS: &lt;em&gt;&lt;a href=&#34;http://www.sas.com/industry/government/fda/macro.html&#34; target=&#34;_blank&#34;&gt;SAS Macros that Convert a Directory of Transport Files&lt;/a&gt;&lt;/em&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;R: use &lt;a href=&#34;http://stat.ethz.ch/R-manual/R-devel/library/foreign/html/read.xport.html&#34; target=&#34;_blank&#34;&gt;read.xport&lt;/a&gt; function in Foreign package and write.xport in &lt;a href=&#34;http://cran.cnr.berkeley.edu/web/packages/SASxport/index.html&#34; target=&#34;_blank&#34;&gt;SASXport&lt;/a&gt; package to read/write xpt file&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;8-data-transfer-among-r-and-sas-csv&#34;&gt;8. Data transfer among R and SAS(CSV)&lt;/h5&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS: use &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lebaseutilref/63492/HTML/default/viewer.htm#n0yo3bszlrh0byn1j4fxh4ndei8u.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;%DS2CSV Macro&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;to export SAS dataset to CSV file&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;R: use &lt;a href=&#34;http://stat.ethz.ch/R-manual/R-devel/library/utils/html/read.table.html&#34; target=&#34;_blank&#34;&gt;read.csv&lt;/a&gt; /&lt;a href=&#34;http://stat.ethz.ch/R-manual/R-devel/library/utils/html/write.table.html&#34; target=&#34;_blank&#34;&gt;write.csv&lt;/a&gt;&lt;/font&gt; &lt;font size=&#34;1&#34;&gt;function to read/write CSV file&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;font-style-font-weight-bold-7-font-font-style-font-weight-bold-a-href-http-gallery-r-enthusiasts-com-target-blank-the-r-graph-gallery-a-font&#34;&gt;&lt;font style=&#34;font-weight: bold&#34;&gt;7. &lt;/font&gt;&lt;font style=&#34;font-weight: bold&#34;&gt;&lt;a href=&#34;http://gallery.r-enthusiasts.com/&#34; target=&#34;_blank&#34;&gt;The R Graph Gallery&lt;/a&gt;&lt;/font&gt;&lt;/h5&gt;
-
-&lt;h5 id=&#34;6-a-href-http-www-r-bloggers-com-target-blank-r-blogs-a&#34;&gt;6. &lt;a href=&#34;http://www.r-bloggers.com/&#34; target=&#34;_blank&#34;&gt;R blogs&lt;/a&gt;&lt;/h5&gt;
-
-&lt;h5 id=&#34;5-a-href-http-www-r-project-org-search-html-target-blank-r-search-a&#34;&gt;5. &lt;a href=&#34;http://www.r-project.org/search.html&#34; target=&#34;_blank&#34;&gt;R search&lt;/a&gt;&lt;/h5&gt;
-
-&lt;h5 id=&#34;4-a-href-http-cran-r-project-org-web-views-target-blank-r-task-view-a-packages-recommended&#34;&gt;4. &lt;a href=&#34;http://cran.r-project.org/web/views/&#34; target=&#34;_blank&#34;&gt;R Task View&lt;/a&gt;: packages recommended&lt;/h5&gt;
-
-&lt;h5 id=&#34;3-a-href-http-cran-cnr-berkeley-edu-web-packages-available-packages-by-name-html-target-blank-all-r-packages-a&#34;&gt;3. &lt;a href=&#34;http://cran.cnr.berkeley.edu/web/packages/available_packages_by_name.html&#34; target=&#34;_blank&#34;&gt;All R packages&lt;/a&gt;&lt;/h5&gt;
-
-&lt;h5 id=&#34;2-install-a-href-http-www-rstudio-org-download-target-blank-rstudio-a-a-much-better-r-ide&#34;&gt;2. Install &lt;a href=&#34;http://www.rstudio.org/download/&#34; target=&#34;_blank&#34;&gt;RStudio&lt;/a&gt;, a much better R IDE&lt;/h5&gt;
-
-&lt;h5 id=&#34;1-get-a-href-http-cran-cnr-berkeley-edu-target-blank-r-software-a&#34;&gt;1. Get &lt;a href=&#34;http://cran.cnr.berkeley.edu/&#34; target=&#34;_blank&#34;&gt;R software&lt;/a&gt;&lt;/h5&gt;
-</description>
+      <description>Yep, I am a SAS programmer: during the day time, I use SAS for my work; at the evening, I use R for entertainment.— Charlie Huang  Getting start to play with R (it is really a wonderful learning tool):
+12. SAS IML Studio and R Integration (not tested) 11. SAS IML and R Integration (not tested) 10. SAS Base and R Integration: PROC R also a blog post.</description>
     </item>
     
     <item>
@@ -407,48 +126,8 @@
       <pubDate>Sat, 22 Sep 2012 22:10:12 +0000</pubDate>
       
       <guid>/2012/09/22/where-is-sas-output-anyway/</guid>
-      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It is said in &lt;em&gt;&lt;a href=&#34;http://cran.cnr.berkeley.edu/doc/manuals/R-intro.html#R-and-statistics&#34; target=&#34;_blank&#34;&gt;An Introduction to R&lt;/a&gt;&lt;/em&gt;, one of R official documents (Current Version: 2.15.1):&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;There is an important difference in philosophy between S (and hence R) and the other main statistical systems. In S a statistical analysis is normally done as a series of steps, with intermediate results being stored in objects. &lt;strong&gt;Thus whereas SAS and SPSS will give copious output from a regression or discriminant analysis&lt;/strong&gt;, R will give minimal output and store the results in a fit object for subsequent interrogation by further R functions.&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For SAS, it’s true, but not exactly the whole story. Actually all outputs generated by SAS procedures are stored in datasets besides the “copious output” in Output Window for further processing if needed. It is totally controllable like object in R. Take &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/statug/65328/HTML/default/viewer.htm#statug_reg_examples02.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;a regression example&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, You can use &lt;em&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34;&gt;ODS Select&lt;/font&gt;&lt;/strong&gt;&lt;/em&gt; statement to select what you want to be displayed in Output Window, and &lt;em&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34;&gt;ODS Output&lt;/font&gt;&lt;/strong&gt;&lt;/em&gt; statement to fetch the output datasets(&lt;em&gt;test on SAS 9.3M1 in Windows 7&lt;/em&gt;):&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods select&lt;/font&gt; Anova ResidualPlot; &lt;br /&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods output&lt;/font&gt; Anova=Anova;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc reg data=fitness; &lt;br /&gt;&amp;#160;&amp;#160; model Oxygen=Age Weight RunTime RunPulse RestPulse MaxPulse / selection=forward;&amp;#160; &lt;br /&gt;run; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;or, you can use &lt;em&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34;&gt;ODS Exclude&lt;/font&gt;&lt;/strong&gt;&lt;/em&gt; statement to just drop some outputs in Output Window:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods exclude&lt;/font&gt; ResidualPlot;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc reg data=fitness; &lt;br /&gt;&amp;#160;&amp;#160; model Oxygen=Age Weight RunTime RunPulse RestPulse MaxPulse / selection=forward;&amp;#160; &lt;br /&gt;run; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;To get a list all the ODS outputs like Anova, ResidualPlot, you can trigger on &lt;strong&gt;&lt;em&gt;&lt;font color=&#34;#ff0000&#34;&gt;&lt;font color=&#34;#ffffff&#34;&gt;ODS Trace ON&lt;/font&gt; &lt;/font&gt;&lt;/em&gt;&lt;/strong&gt;statement:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods trace on&lt;/font&gt;;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc reg data=fitness; &lt;br /&gt;&amp;#160;&amp;#160; model Oxygen=Age Weight RunTime RunPulse RestPulse MaxPulse &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; / selection=forward;&amp;#160; &lt;br /&gt;run; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt;ods trace off&lt;/font&gt;;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;then you get a full list in Log Window like:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;- &lt;br /&gt;Name:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;NObs&lt;/font&gt; &lt;br /&gt;Label:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Number of Observations &lt;br /&gt;Template:&amp;#160;&amp;#160; Stat.Reg.NObs &lt;br /&gt;Path:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Reg.MODEL1.SelectionMethod.Oxygen.NObs &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;Output Added: &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;- &lt;br /&gt;Name:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;ANOVA&lt;/font&gt; &lt;br /&gt;Label:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ANOVA &lt;br /&gt;Template:&amp;#160;&amp;#160; Stat.REG.ANOVA &lt;br /&gt;Path:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Reg.MODEL1.SelectionMethod.Oxygen.Step1.ANOVA &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;Output Added: &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;- &lt;br /&gt;Name:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;SelParmEst&lt;/font&gt; &lt;br /&gt;Label:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Parameter Estimates &lt;br /&gt;Template:&amp;#160;&amp;#160; Stat.REG.SelParmEst &lt;br /&gt;Path:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Reg.MODEL1.SelectionMethod.Oxygen.Step1.SelParmEst &lt;br /&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>It is said in An Introduction to R, one of R official documents (Current Version: 2.15.1):
+ There is an important difference in philosophy between S (and hence R) and the other main statistical systems. In S a statistical analysis is normally done as a series of steps, with intermediate results being stored in objects. Thus whereas SAS and SPSS will give copious output from a regression or discriminant analysis, R will give minimal output and store the results in a fit object for subsequent interrogation by further R functions.</description>
     </item>
     
   </channel>

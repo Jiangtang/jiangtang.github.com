@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computer on Jiangtang Hu | 胡江堂</title>
-    <link>/categories/computer/index.xml</link>
+    <link>/categories/computer/</link>
     <description>Recent content in Computer on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/categories/computer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Nov 2013 00:16:33 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/computer/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>The Hardware and Software 2013 I&amp;rsquo;m Most Thankful For</title>
@@ -14,74 +17,9 @@
       <pubDate>Fri, 29 Nov 2013 00:16:33 +0000</pubDate>
       
       <guid>/2013/11/29/the-hardware-and-software-2013-irsquom-most-thankful-for/</guid>
-      <description>
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It’s time of year to give thanks. As a programmer, e-book reader, blog writer and web surfer, I should express my sincere appreciation to such hardware and software (I use majority of them at daily basis and most of them are free):&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;font-size-1-0-hardware-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;0. Hardware &lt;/font&gt;&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://shop.lenovo.com/us/en/laptops/thinkpad/w-series/w520/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Lenovo Thinkpad W520&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;em&gt;(This is not free):&lt;/em&gt; my workhorse machine, now replaced by &lt;/font&gt;&lt;a href=&#34;http://shop.lenovo.com/SEUILibrary/controller/e/web/LenovoPortal/en_US/catalog.workflow:category.details?current-catalog-id=12F0696583E04D86B9B79B0FEC01C087&amp;amp;current-category-id=F2A3EC7C45634AE8AB0F26CCAC867854&#34;&gt;&lt;font size=&#34;1&#34;&gt;W530&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;font-size-1-1-google-stuff-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;1. Google Stuff&lt;/font&gt;&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.google.com/intl/en/chrome/browser/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Chrome&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;(Windows and Android apps): The first thing to do when getting a new machine is using IE to download the Chrome, then I can just keep moving.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Gmail, Google Maps, Google Voice, Google Talk, Google Search, Google Drive, Google Keep: just can’t live without them!&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.google.com/nexus/7/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Nexus 7&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;em&gt;(This is not free):&lt;/em&gt; first generation. This year I got four tablets, the same nexus 7(that’s a long story..), now I only hold one and I love it: compared to iPad, it’s much portable to hold in my back pocket; to iPad mini, it’s much cheaper! This tablet is heavily used for reading and offline navigation.&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;font-size-1-2-windows-applications-supporting-tabs-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;2. Windows Applications Supporting Tabs&lt;/font&gt;&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/14/tab-is-a-tab-is-a-tab-is-a-tab/&#34;&gt;&lt;font size=&#34;1&#34;&gt;I’m a big fan of “tabs”&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and feel much more comfortable when launching everything into tabs: web pages, text files, PDF files, Windows Office files (Word, Excel, PPT), and even folders:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://ejie.me/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Clover&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;as replacement for Windows Explore;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.google.com/intl/en/chrome/browser/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Chrome&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;as replacement for Internet Explore (IE);&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.foxitsoftware.com/Secure_PDF_Reader/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Foxit Reader&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;as replacement for Adobe Reader;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.extendoffice.com/product/office-tab.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;Office Tab&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;&lt;em&gt;(This is not free)&lt;/em&gt; to open Microsoft Office Word, Excel, Powerpoint files in tabs;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://ttyplus.com/multi-tabbed-putty/&#34;&gt;&lt;font size=&#34;1&#34;&gt;MTPuTTy&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;to open Putty sessions in tabs.&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;font-size-1-3-programming-and-accessories-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;3. Programming and Accessories&lt;/font&gt;&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://notepad-plus-plus.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Notepad++&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: best of best to open and edit all the text files within a folder.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.vim.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Vim&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: my only choice in Unix boxes; it can only serve as &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/11/13/vim-as-a-sas-ide/&#34;&gt;&lt;font size=&#34;1&#34;&gt;a humble SAS IDE&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.sas.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;em&gt;(This is not free):&lt;/em&gt; I’m primarily a SAS programmer and I live on it, my first choice for data manipulation and reporting.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.r-project.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;R&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and &lt;/font&gt;&lt;a href=&#34;http://rstudio.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Rstudio&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: R is hot and this February &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/02/08/learningr/&#34;&gt;&lt;font size=&#34;1&#34;&gt;I followed a R programming course&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;in &lt;/font&gt;&lt;a href=&#34;https://www.coursera.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Coursera&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, &lt;em&gt;&lt;a href=&#34;https://www.coursera.org/course/compdata&#34;&gt;Computing for Data Analysis&lt;/a&gt;&lt;/em&gt; by Dr. &lt;/font&gt;&lt;a href=&#34;http://simplystatistics.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Roger&amp;#160; Peng&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;of Johns Hopkins, Biostatistics Department. It’s nice to learn a new language and I’m now well prepared to jump into R vs SAS debate. Also, Rstudio is a elegant IDE.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.microsoft.com/en-us/download/details.aspx?id=34595&#34;&gt;&lt;font size=&#34;1&#34;&gt;Powershell&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: since I finished a project by Powershell (almost at learn-by-doing basis), I must say it deserves efforts to learn.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.perl.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Perl&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: I learned and used little bit of Perl this year. It’s ugly but good enough to get work done, and most important, it’s pre-installed in every Unix machine I worked with. Vim+Perl seem the perfect pair to survive in any Unix world. By many good reasons, I should keep learning Python, but Python currently doesn’t help me to make any bucks.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.cygwin.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Cygwin&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: My W520 has Windows 7 installed and Cygwin offers nice collection of Unix tools I’m interested in.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Github&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: I put my collection of &lt;/font&gt;&lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS utilities on Github&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.scootersoftware.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Beyond Compare&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;&lt;em&gt;(This is not free): &lt;/em&gt;best on file/folder comparison. &lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;font-size-1-4-reading-and-writing-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;4. Reading and Writing&lt;/font&gt;&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://calibre-ebook.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Calibre&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: my first choice of e-books management, alone with the Android app, &lt;/font&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.multipie.calibreandroid&amp;amp;hl=en&#34;&gt;&lt;font size=&#34;1&#34;&gt;Calibre Companion&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;em&gt;(this is not free).&lt;/em&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;feedly.com&#34;&gt;&lt;font size=&#34;1&#34;&gt;Feedly&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: Google Reader was dead and now Feedly is even much better than Google Reader! My first online resource collector.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.flyersoft.moonreaderp&amp;amp;hl=en&#34;&gt;&lt;font size=&#34;1&#34;&gt;Moon+ Reader Pro&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: my favorite reading app in my phone and tablet, better than Kindle app and any others, nice Dropbox support.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.microsoft.com/en-us/download/details.aspx?id=8621&#34;&gt;&lt;font size=&#34;1&#34;&gt;Windows Live Writer&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: The only Windows Live product left in my machine, I use it to write every of my blog post, best offline writer(its developers also produce Rstudio).&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;font-size-1-5-miscellaneous-font&#34;&gt;&lt;font size=&#34;1&#34;&gt;5. Miscellaneous&lt;/font&gt;&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.dropbox.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Dropbox&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: it’s even better than Google Drive!&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.pandora.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Pandora&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: I leave it open when at home.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://passwordsafe.sourceforge.net/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Password Safe&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: I dumped hundreds of passwords there… &lt;/font&gt;&lt;/p&gt;
-</description>
+      <description>It’s time of year to give thanks. As a programmer, e-book reader, blog writer and web surfer, I should express my sincere appreciation to such hardware and software (I use majority of them at daily basis and most of them are free):
+0. Hardware  Lenovo Thinkpad W520&amp;#160;(This is not free): my workhorse machine, now replaced by W530.
+1. Google Stuff Google Chrome (Windows and Android apps): The first thing to do when getting a new machine is using IE to download the Chrome, then I can just keep moving.</description>
     </item>
     
     <item>
@@ -90,26 +28,12 @@
       <pubDate>Sat, 29 Jun 2013 10:36:59 +0000</pubDate>
       
       <guid>/2013/06/29/free-utilities-to-zip-files-in-windows-quick-notes/</guid>
-      <description>
-
-&lt;h5 id=&#34;1-powershell-cmdlet-write-zip-http-www-powershellmanual-com-write-zip-from-pscx-http-pscx-codeplex-com&#34;&gt;1. Powershell cmdlet &lt;a href=&#34;http://www.powershellmanual.com/write-zip&#34;&gt;Write-Zip&lt;/a&gt; from &lt;a href=&#34;http://pscx.codeplex.com/&#34;&gt;PSCX&lt;/a&gt;&lt;/h5&gt;
-
-&lt;p&gt;Pro: flexible, easy to use&lt;/p&gt;
-
-&lt;p&gt;Con: relatively time consuming&lt;/p&gt;
-
-&lt;h5 id=&#34;2-7-zip-http-www-7-zip-org-command-line-http-www-dotnetperls-com-7-zip-examples&#34;&gt;2. &lt;a href=&#34;http://www.7-zip.org/&#34;&gt;7-Zip&lt;/a&gt; &lt;a href=&#34;http://www.dotnetperls.com/7-zip-examples&#34;&gt;Command-Line&lt;/a&gt;&lt;/h5&gt;
-
-&lt;p&gt;Pro: flexible, relatively quicker, easy to be embedded in other scripts&lt;/p&gt;
-
-&lt;p&gt;Con: (…)&lt;/p&gt;
-
-&lt;h5 id=&#34;3-jar-http-docs-oracle-com-javase-6-docs-technotes-tools-windows-jar-html-command-in-jdk&#34;&gt;3. &lt;a href=&#34;http://docs.oracle.com/javase/6/docs/technotes/tools/windows/jar.html&#34;&gt;Jar&lt;/a&gt; command in JDK&lt;/h5&gt;
-
-&lt;p&gt;Pro: flexible, relatively quicker, easy to be embedded in other scripts&lt;/p&gt;
-
-&lt;p&gt;Con: (…)&lt;/p&gt;
-</description>
+      <description>1. Powershell cmdlet Write-Zip from PSCX Pro: flexible, easy to use
+Con: relatively time consuming
+2. 7-Zip Command-Line Pro: flexible, relatively quicker, easy to be embedded in other scripts
+Con: (…)
+3. Jar command in JDK Pro: flexible, relatively quicker, easy to be embedded in other scripts
+Con: (…)</description>
     </item>
     
     <item>
@@ -118,21 +42,7 @@
       <pubDate>Fri, 08 Feb 2013 23:37:49 +0000</pubDate>
       
       <guid>/2013/02/08/learningr/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Computing_for_data_analysis_Coursera.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Computing_for_data_analysis_Coursera&#34; border=&#34;0&#34; alt=&#34;Computing_for_data_analysis_Coursera&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Computing_for_data_analysis_Coursera_thumb.png&#34; width=&#34;475&#34; height=&#34;422&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I spent almost all of my blogging time last month to follow an online course in &lt;/font&gt;&lt;a href=&#34;https://www.coursera.org&#34;&gt;&lt;font size=&#34;1&#34;&gt;Coursera&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, &lt;em&gt;&lt;a href=&#34;https://www.coursera.org/course/compdata&#34;&gt;Computing for Data Analysis&lt;/a&gt;&lt;/em&gt; (with R) by Dr. &lt;/font&gt;&lt;a href=&#34;http://simplystatistics.org/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Roger&amp;#160; Peng&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;of Johns Hopkins, Biostatistics Department. I already checked out bunch of Coursera courses just to take a look at what else &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Massive_open_online_course&#34;&gt;&lt;font size=&#34;1&#34;&gt;MOOC&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;look like, this R course was the first and only one I took seriously: I reviewed all slides (although didn’t watch the videos since I didn’t have enough time) and most important, finished all programming assignments(and got full score!).&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Not a frequent R user, I used some R packages for learning purpose (mostly in &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/01/15/feature-selection-collections-for-self-study/&#34;&gt;&lt;font size=&#34;1&#34;&gt;data mining&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;). This &lt;em&gt;&lt;a href=&#34;https://www.coursera.org/course/compdata&#34;&gt;Computing for Data Analysis&lt;/a&gt;&lt;/em&gt; course focused mostly on data manipulation and that’s why I chose it to dig into R. R by design is not a tool for data management (where SAS excels), but it’s nice to have (no hurt since it’s free). Those days I put most of my efforts on R data structures(vector, matrix, array, list, data frame) and by grouping processing(*ply functions). Few resource I found extremely useful as a starter:&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/tagged/r&#34; title=&#34;http://stackoverflow.com/questions/tagged/r&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://stackoverflow.com/questions/tagged/r&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160; when I google a specific R programming technique, mostly I will reach to stackoverflow website, a new generation Q&amp;amp;A hub to replace user forum, mailing list.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;_&lt;a href=&#34;https://www.google.com/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;ved=0CDIQFjAA&amp;amp;url=http%3A%2F%2Fcran.r-project.org%2Fdoc%2Fcontrib%2FLam-IntroductionToR_LHL.pdf&amp;amp;ei=O84VUfK7HIue8gSr5YGYBQ&amp;amp;usg=AFQjCNGmMLsnqaHAxGH368m32E8s4STNTA&amp;amp;sig2=Gz7gjUqiPqD-nq_Sg5X57w&amp;amp;bvm=bv.42080656,d.eWU&#34;&gt;&lt;font size=&#34;1&#34;&gt;An introduction to R&lt;/font&gt;&lt;/a&gt;_ &lt;font size=&#34;1&#34;&gt;by Longhow Lam, a free book. I like its Chapter 2,&lt;em&gt; Data Objects&lt;/em&gt;, including R data types and data structures.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Data Manipulation with R&lt;/em&gt; by Phil Spector, one of the Use R! books. I used its Chapter 8, &lt;em&gt;Data Aggregation &lt;/em&gt;on R by group processing.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.rstudio.com/ide/&#34;&gt;&lt;font size=&#34;1&#34;&gt;RStudio&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, a must have R IDE, the best of best. &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Package &lt;/font&gt;&lt;a href=&#34;http://cran.r-project.org/web/packages/plyr/index.html&#34;&gt;&lt;font size=&#34;1&#34;&gt;plyr&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, tools for splitting, applying and combining data. Actually, it is awful to use R to manipulate data from a SAS programmer point of view. Use plyr to alleviate the pain.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Package &lt;/font&gt;&lt;a href=&#34;http://code.google.com/p/sqldf/&#34;&gt;&lt;font size=&#34;1&#34;&gt;sqldf&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, like SAS Proc SQL against data frame. Reason, ibid. Use sqldf won’t enhance your R programming skill, but sometime when you feel down at R, you may want to launch piece of SQL scripts you really like.&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>I spent almost all of my blogging time last month to follow an online course in Coursera, Computing for Data Analysis (with R) by Dr. Roger&amp;#160; Peng of Johns Hopkins, Biostatistics Department. I already checked out bunch of Coursera courses just to take a look at what else MOOC look like, this R course was the first and only one I took seriously: I reviewed all slides (although didn’t watch the videos since I didn’t have enough time) and most important, finished all programming assignments(and got full score!</description>
     </item>
     
     <item>
@@ -141,42 +51,7 @@
       <pubDate>Sat, 12 Jan 2013 18:08:14 +0000</pubDate>
       
       <guid>/2013/01/12/how-to-jump-into-sas-data-integration-studio/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/SAS2DISJob.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS2DISJob&#34; border=&#34;0&#34; alt=&#34;SAS2DISJob&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/SAS2DISJob_thumb.png&#34; width=&#34;415&#34; height=&#34;452&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This is for for SAS programmers who might be reluctant to check out a GUI tool like SAS Data Integration Studio (DIS for short, which is graphic tool to implement ETL processes: extract, transform, load). DIS translates all users dragged nodes, transformations and process into SAS codes which are traditionally written by SAS programmers. I find one of the benefits of using DIS is that I can package all the ETL work to other players(technical or nontechnical) then they can replay the job by dragging and clicking. &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Actually besides translating all the visual nodes to SAS codes, DIS can also reversely incorporate your SAS codes to the graphic job shown as above. So SAS programmers can easily jump into DIS by importing their codes to get the graphic workflow (to get the first impression). Here is an one-minute demo:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Save the following codes in a file(from &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/sqlproc/63043/HTML/default/viewer.htm#p0o4a5ac71mcchn1kc1zhxdnm139.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS SQL onlinedoc&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;),&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%let dir=C:\;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;libname source BASE &amp;ldquo;&amp;amp;dir&amp;rdquo;; &lt;br /&gt;libname target BASE &amp;ldquo;&amp;amp;dir&amp;rdquo;;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data source.one; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input x y; &lt;br /&gt;datalines; &lt;br /&gt;1 2 &lt;br /&gt;2 3 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data source.two; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input x y; &lt;br /&gt;datalines; &lt;br /&gt;2 5 &lt;br /&gt;3 6 &lt;br /&gt;4 9 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc sql; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; create table target.three as &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; select o.x,o.y &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; from source.one as o, source.two as t &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; where o.x=t.x &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc print data=target.three; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Just create a test folder in DIS (this demo was created in a working repository, in a Windows DIS 4.21 machine ) then right click mouse to “Import”-“Import SAS Code” to import the file created above then run the job generated and all set (you will get all stuff showed above).&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Note that the SAS libraries must be registered first in the &lt;em&gt;SAS Metadata&lt;/em&gt; Server then you can use it. This demo omit this process only for demo purpose.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You can check out the SQL Join by double clicking the SQL node:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/SAS2DISJob_SQLJoin.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS2DISJob_SQLJoin&#34; border=&#34;0&#34; alt=&#34;SAS2DISJob_SQLJoin&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/SAS2DISJob_SQLJoin_thumb.png&#34; width=&#34;412&#34; height=&#34;537&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and your codes in Code panel (still yours!):&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/image.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/image_thumb.png&#34; width=&#34;335&#34; height=&#34;562&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Furthermore, without getting know bunch of the tool first, you can jump into DIS quickly by creating customized Transformations which are basically SAS codes with macro variables as the perimeters in the visual options box. Pretty neat? Just check it out!&lt;/font&gt;&lt;/p&gt;
-</description>
+      <description>This is for for SAS programmers who might be reluctant to check out a GUI tool like SAS Data Integration Studio (DIS for short, which is graphic tool to implement ETL processes: extract, transform, load). DIS translates all users dragged nodes, transformations and process into SAS codes which are traditionally written by SAS programmers. I find one of the benefits of using DIS is that I can package all the ETL work to other players(technical or nontechnical) then they can replay the job by dragging and clicking.</description>
     </item>
     
     <item>
@@ -185,53 +60,9 @@
       <pubDate>Tue, 01 Jan 2013 23:47:44 +0000</pubDate>
       
       <guid>/2013/01/01/blog-statistics-2012/</guid>
-      <description>
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;(This blog’s page view data from Google Analytics; &lt;/span&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/archives/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;43 posts in total in 2012&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;)&lt;/span&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;top-10-countries-territories-and-cities&#34;&gt;Top 10 countries/territories and cities&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_country.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;blog_country&#34; alt=&#34;blog_country&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_country_thumb.png&#34; width=&#34;382&#34; height=&#34;384&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Most of my readers come from US and I’m glad my Chinese fellows still fork me since I moved to US this year (&lt;em&gt;today is my one year anniversary in US&lt;/em&gt;).&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;To my surprising there are much more readers from South Korea than from Japan(#12) and Singapore(#22).&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Readers from a secret city (#7) are watching me! &lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;top-10-referral-social-networks&#34;&gt;Top 10 referral social networks&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_social-network.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;blog_social network&#34; alt=&#34;blog_social network&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_social-network_thumb.png&#34; width=&#34;168&#34; height=&#34;514&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;I’m happy that people navigating through Facebook also click this technical blog!&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;top-10-mobile-devices&#34;&gt;Top 10 mobile devices&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_mobile.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;blog_mobile&#34; alt=&#34;blog_mobile&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/01/blog_mobile_thumb.png&#34; width=&#34;396&#34; height=&#34;411&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;I think myself contributed a lot via Google Nexus 7 (#7) visiting my own blog (&lt;em&gt;one upon a time in 2012, I had two new released Nexus 7 tablets at hand until one dropped down and another sold out…&lt;/em&gt;).&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;top-10-most-viewed-posts&#34;&gt;Top 10 most viewed posts&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/13/sublimetext2-sas/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Sublime Text 2 for SAS Programmers: A Quick Note&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/10/23/tony-barr-and-the-early-history-of-sas/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Tony Barr and the Early History of SAS&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/11/xml/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Face Off: Review OpenCDISC XML files&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/12/07/sas-books-2012/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;My SAS Books: Shopping List 2012&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/16/hypothesis-testing/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Statistical Notes (4): Dragon’s Teeth and Fleas: Hypothesis Testing in Plain English&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/geomean/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Statistical Notes (1): Geometric Mean and Geometric Mean Ratio&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/12/column-mode-in-sas-9-3-enhanced-editor/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Column Mode in SAS 9.3 Enhanced Editor&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/11/30/weekend-clip-data-scientist/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Weekend Clip: Data Scientist&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/12/tost-equivalence-test/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Statistical Notes (2): Equivalence Testing and TOST (Two One-Sided Test)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/19/publishing-cdisc-standards/&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Is There Any Better Way? Publishing Process For CDISC Standards Documentation&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Thank you my fellow readers and happy new year (if you like to have another break, follow me to celebrate Chinese new year at Feb 10, 2013 )!&lt;/span&gt;&lt;/p&gt;
-</description>
+      <description>(This blog’s page view data from Google Analytics; 43 posts in total in 2012)
+Top 10 countries/territories and cities 
+ Most of my readers come from US and I’m glad my Chinese fellows still fork me since I moved to US this year (today is my one year anniversary in US). To my surprising there are much more readers from South Korea than from Japan(#12) and Singapore(#22). Readers from a secret city (#7) are watching me!</description>
     </item>
     
     <item>
@@ -240,94 +71,8 @@
       <pubDate>Fri, 07 Dec 2012 23:36:30 +0000</pubDate>
       
       <guid>/2012/12/07/my-sas-books-shopping-list-2012/</guid>
-      <description>
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Books.jpg&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS_Books&#34; border=&#34;0&#34; alt=&#34;SAS_Books&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/SAS_Books_thumb.jpg&#34; width=&#34;384&#34; height=&#34;224&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Last year I threw away all my SAS books (to friends and colleagues in Beijing) before moving to US. You might agree that it’s not economically bound to transport such heavy books intercontinentally! Now I just start to build my SAS library one by one. &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I will most probably not buy more SAS books as Christmas gifts for myself, so it’s time to take a 2012 snapshot of shopping:&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;i-programming-books-by-art-carpenter&#34;&gt;I Programming Books by Art Carpenter&lt;/h5&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1 &lt;em&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/1590473841/ref=wms_ohs_product&#34; target=&#34;_blank&#34;&gt;Carpenter&amp;#8217;s Complete Guide to the SAS Macro Language, 2nd Edition&lt;/a&gt;, 2004&lt;/em&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Best of best on SAS (dynamic) programming. I also had a hardcopy in Beijing. &lt;font color=&#34;#ff0000&#34;&gt;★★★★★&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2&lt;em&gt;&amp;#160;&lt;/em&gt;&lt;/font&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/1607649918/ref=wms_ohs_product&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Carpenter&amp;#8217;s Guide to Innovative SAS Techniques&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;, &lt;font size=&#34;1&#34;&gt;2012&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It’s new by Carpenter and nice to check out. &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;3 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=60966&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Carpenter&amp;#8217;s Complete Guide to the SAS REPORT Procedure&lt;/em&gt;&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, 2007&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;Use &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/proc/65145/HTML/default/viewer.htm#p0bqogcics9o4xn17yvt2qjbgdpi.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Proc Report&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;! It is the workhorse procedure for SAS report writing and &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/proc/65145/HTML/default/viewer.htm#n00yutbvvckjwrn1ldg5xkvjy1pu.htm&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Proc Tabulate&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;is not in fashion anymore!&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Btw, The historically called SAS DATA &lt;em&gt;NULL&lt;/em&gt; report writing now has a brand new name, ODS Report Writing Interface, due to the incorporated ODS facility(which is cool). I think it deserves a new title.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font size=&#34;1&#34;&gt;PS: I got it free from the latest &lt;/font&gt;&lt;a href=&#34;http://www.rtsug.org/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;RTSUG&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt; (Research Triangle SAS Users&amp;#8217; Group) meeting. &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;ii-programming-miscellaneous&#34;&gt;II Programming Miscellaneous&lt;/h5&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;4 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=62255&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Web Development with SAS by Example&lt;/em&gt;, Third Edition&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Frederick Pratter, 2011&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Want to play HTML/htmSQL/AJAX/Javascript… within SAS. no comments by far.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;5&amp;#160; &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=62230&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;SAS Hash Object Programming Made Easy&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Michele Burlew, 2012&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Totally new title on this topic. Nice to approach to the new area.&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;iii-ods-graphics&#34;&gt;III ODS Graphics&lt;/h5&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;6 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=63855&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Statistical Graphics Procedures by Example: Effective Graphs Using SAS&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Sanjay Matange and Dan Heath, 2011&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS ODS Graphics is the rising Star! I also read other title on ODS statistical graphics in Beijing, &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=63120&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Statistical Graphics in SAS: An Introduction to the Graph Template Language and the Statistical Graphics Procedures&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Warren Kuhfeld&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;You may read plenty of ODS Graphics&amp;#160; papers by these authors/developers from SAS Institute.&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;iv-statistical-books&#34;&gt;IV Statistical Books&lt;/h5&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;7 &lt;/font&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/160764228X/ref=wms_ohs_product&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Common Statistical Methods for Clinical Research with SAS Examples&lt;/em&gt;, Third Edition&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Glenn Walker, Jack Shostak, 2010&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Best for SAS clinical programmers. Relevant, comprehensive and easy to access. I had a second version in Beijing. &lt;font color=&#34;#ff0000&#34;&gt;★★★★★&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;_&lt;font size=&#34;1&#34;&gt;8 &lt;/font&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/1607647834/ref=wms_ohs_product&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Multiple Comparisons and Multiple Tests Using SAS, Second Edition&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by &lt;/font&gt;_&lt;font size=&#34;1&#34;&gt;Peter H. Westfall, Randall D. Tobias, Russell D. Wolfinger, 2011&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Multiple comparison is an advanced topic and is beyond my limited statistical knowledge. My short term goal is just to follow the codes then interprete results.&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;v-cdisc&#34;&gt;V CDISC&lt;/h5&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;9 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=64409&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Implementing CDISC Using SAS: An End-to-End Guide&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Chris Holland and Jack Shostak, 2012&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Still on the way. The first title on CDISC + SAS and worth of waiting. I read Jack Shostak’s another book when applying a SAS programmer job at Sanofi Pasteur Beijing R&amp;amp;D in 2009:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?pc=59827&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;SAS Programming in the Pharmaceutical Industry&lt;/em&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h5 id=&#34;vi-my-wish-list-2013&#34;&gt;VI My Wish List 2013&lt;/h5&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;10 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=60282&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Building Web Applications with SAS/IntrNet: A Guide to the Application Dispatcher&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Don Henderson&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS web programming again. I might read this title before #4. Don Henderson was the former SAS developer and SAS/IntrNet was just his baby!&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;11 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=63460&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Categorical Data Analysis Using SAS, Third Edition&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Maura Stokes, Charles Davis, and Gary Koch&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I had a second version hardcopy in Beijing and it’s still cool to play with 2*2 table in this so called BIG DATA world! &lt;font color=&#34;#ff0000&#34;&gt;★★★★★&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;12 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=65193&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;Cody&amp;#8217;s Collection of Popular SAS Programming Tasks and How to Tackle Them&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Ron Cody&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I read and like &lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?pc=62857&#34; target=&#34;_blank&#34;&gt;Cody’s book on SAS functions&lt;/a&gt; and it’s always nice to check out his new title.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;13 &lt;/font&gt;&lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=60751&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;The Global English Style Guide: Writing Clear, Translatable Documentation for a Global Market&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by John R. Kohl&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I read the free chapter and it would be good book to polish my English as a technical blog writer.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;14&lt;/font&gt; &lt;a href=&#34;https://support.sas.com/pubscat/bookdetails.jsp?catid=1&amp;amp;pc=65423&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;The Little SAS Book: A Primer, Fifth Edition&lt;/em&gt;&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;by Lora Delwiche and Susan Slaughter&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I forget the version I read back to the time I first approached to SAS and it’s nice to hold a latest version in shelf and I’d rather learn the effective writing! Best for beginners. &lt;font color=&#34;#ff0000&#34;&gt;★★★★★&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-</description>
+      <description>Last year I threw away all my SAS books (to friends and colleagues in Beijing) before moving to US. You might agree that it’s not economically bound to transport such heavy books intercontinentally! Now I just start to build my SAS library one by one. 
+I will most probably not buy more SAS books as Christmas gifts for myself, so it’s time to take a 2012 snapshot of shopping:</description>
     </item>
     
     <item>
@@ -336,88 +81,9 @@
       <pubDate>Sun, 25 Nov 2012 20:36:52 +0000</pubDate>
       
       <guid>/2012/11/25/extract-the-version-of-sas-and-os-of-a-sas-format-or-macro-catalog-a-little-bit-of-perl-regular-expression/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;SAS Sample 34444(&lt;em&gt;&lt;a href=&#34;http://support.sas.com/kb/34/443.html&#34; target=&#34;_blank&#34;&gt;Determine the operating system in which a format catalog was created&lt;/a&gt;&lt;/em&gt;) posts piece of codes to get the version of SAS and OS of a SAS format catalog. It is useful since a SAS catalog can be only read in the operating systems same to its source machine.&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;2 cents add to this note:&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;First, we do not need to write codes to get to know the machine version for a catalog(&lt;em&gt;&lt;strong&gt;formats.sas7bcat &lt;/strong&gt;&lt;/em&gt;or&lt;strong&gt; &lt;em&gt;sasmacr.sas7bcat&lt;/em&gt;&lt;/strong&gt;). Just open the catalog using a text editor, Notepad++, then you get&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;a SAS format catalog created by SAS 9.1 in a Windows XP Pro machine:&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/SAS_Format.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;SAS_Format&#34; alt=&#34;SAS_Format&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/SAS_Format_thumb.png&#34; width=&#34;475&#34; height=&#34;408&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;and a SAS macro catalog by SAS 9.3 in a 64 bits Windows 7 Pro machine:&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/SAS_Macro.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;SAS_Macro&#34; alt=&#34;SAS_Macro&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/SAS_Macro_thumb.png&#34; width=&#34;464&#34; height=&#34;375&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Second, if do want programming (for curiosity purpose; I like this idea), we can also improve the sample codes since the position and length information were hard coded in Line 21 (the question is: how can we know that?):&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;test=substr(theline,&lt;span style=&#34;color: #ff0000;&#34;&gt;210&lt;/span&gt;,&lt;span style=&#34;color: #ff0000;&#34;&gt;20&lt;/span&gt;);&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;To get rid of hard coding, I use Perl Regular Expression. Just copy the archived codes for &lt;/span&gt;&lt;a href=&#34;http://www.sesug.org/SESUG2012/abstract.html#BB-04&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;my SESUG 2012 talk&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;with tiny modification (I always use the same programming blocks if possible):&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/Jiangtang/SESUG2012/blob/master/read_SAP.sas&#34; title=&#34;https://github.com/Jiangtang/SESUG2012/blob/master/read_SAP.sas&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;https://github.com/Jiangtang/SESUG2012/blob/master/read_SAP.sas&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;The following codes can be also used to run against SAS macro catalog:&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;filename fmt &amp;#8220;a:formats.sas7bcat&amp;#8221;;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data fmt;&lt;br /&gt; infile fmt lrecl=1000 truncover;&lt;br /&gt; input line $1000.;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; set fmt;&lt;br /&gt; if &lt;em&gt;n&lt;/em&gt;=1 then do;&lt;br /&gt; retain queVer;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;            &lt;span style=&#34;color: #ff0000;&#34;&gt;ver=&amp;#8221;/(\d+).[\d\w]+_[\d\w]+/&amp;#8221;;&lt;/span&gt;&lt;br /&gt; queVer  = prxparse(ver);&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;            if missing(queVer) then do;&lt;br /&gt; putlog &amp;#8220;ERROR: Invalid regexp&amp;#8221; ver;&lt;br /&gt; stop;&lt;br /&gt; end;&lt;br /&gt; end;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;      queVerN  = prxmatch(queVer ,line);&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;      if queVerN &amp;gt; 0  then do ;&lt;br /&gt; call PRXsubstr(queVer,line,position,length);&lt;br /&gt; version = compress(substr(line, position, length));&lt;br /&gt; output;&lt;br /&gt; end;    &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;      put position= length=;&lt;br /&gt; put version=;&lt;br /&gt; run;&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Test it against five Windows machines: &lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=221 length=16&lt;br /&gt; version=9.0301M1X64_7PRO&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=217 length=15&lt;br /&gt; version=9.0202M2NET_SRV &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=221 length=17&lt;br /&gt; version=9.0202M3X64_SRV08 &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=217 length=14&lt;br /&gt; version=9.0100A0XP_PRO&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=217 length=15&lt;br /&gt; version=9.0101M3NET_SRV &lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;P.S.: The pattern &lt;strong&gt;(d+).[dw]+_[dw]+&lt;/strong&gt;  can be read as&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;number(s)                       +&lt;br /&gt; .                                      +&lt;br /&gt; some digits and words     +&lt;br /&gt; _                                     +&lt;br /&gt; some digits and words&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Since the underscore “_” is also included in meta-character &lt;strong&gt;w&lt;/strong&gt;, it seems OK to simplify the pattern above to &lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;(d+).[dw]+ &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;But in a Window Server 2003 machine with SAS 9.2, it also returns the following unrelated information:&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;position=998 length=3&lt;br /&gt; version=2.S &lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>SAS Sample 34444(Determine the operating system in which a format catalog was created) posts piece of codes to get the version of SAS and OS of a SAS format catalog. It is useful since a SAS catalog can be only read in the operating systems same to its source machine.
+2 cents add to this note:
+First, we do not need to write codes to get to know the machine version for a catalog(formats.</description>
     </item>
     
     <item>
@@ -426,28 +92,11 @@
       <pubDate>Fri, 23 Nov 2012 23:04:03 +0000</pubDate>
       
       <guid>/2012/11/23/wordpress-and-black-friday/</guid>
-      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Yes it’s BLACK that today this WordPress based blog was down for a while with a 500 error:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The website encountered an error while retrieving &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.jiangtanghu.com/blog/&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. It may be down for maintenance or configured incorrectly.&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I checked web log and it says:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;[24-Nov-2012 02:58:49] PHP Parse error:&amp;#160; syntax error, unexpected T_STRING, expecting &amp;#8216;,&amp;#8217; or &amp;#8216;;&amp;#8217; in ../public_html/jiangtanghu/blog/wp-content/plugins/wp-conditional-captcha/wp-conditional-captcha.php on line 401&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;So the problem comes from a WordPress plugin “&lt;/font&gt;&lt;a href=&#34;http://wordpress.org/extend/plugins/wp-conditional-captcha/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Conditional CAPTCHA for WordPress&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;” . The line 401 in &lt;em&gt;wp-conditional-captcha.php&lt;/em&gt; is&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;li&gt;&lt;input type=&#34;radio&#34; name=&#34;pass_action&#34; id=&#34;pass_action_hold&#34; value=&#34;hold&#34; &lt;?php checked( $opts[&amp;#8216;pass_action&amp;#8217;], &amp;#8216;hold&amp;#8217;);?&gt; /&amp;gt; &lt;label for=&#34;pass_action_hold&#34;&gt;&amp;lt;?php _e(&amp;#8216;Queue the comment for moderation&amp;#8217;, &amp;#8216;wp-conditional-captcha&amp;#8217;);?&amp;gt;&lt;/label&gt;&lt;/li&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I use WordPress v3.4.2 and “&lt;/font&gt;&lt;a href=&#34;http://wordpress.org/extend/plugins/wp-conditional-captcha/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Conditional CAPTCHA for WordPress&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;” v3.2.6. I didn’t notice this error before and it may be a compatibility issue (I know 0 about PHP). So my solution: delete the plugin.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Furthermore, I plan to switch to Github+&lt;/font&gt;&lt;a href=&#34;https://github.com/mojombo/jekyll&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;jekyll&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and get rid of WordPress (sorry, you are wonderful; I&amp;#8217;m just an emotional customer in this crazy Black Friday) .&lt;/font&gt;&lt;/p&gt;
-</description>
+      <description>Yes it’s BLACK that today this WordPress based blog was down for a while with a 500 error:
+ The website encountered an error while retrieving http://www.jiangtanghu.com/blog/. It may be down for maintenance or configured incorrectly.
+ I checked web log and it says:
+ [24-Nov-2012 02:58:49] PHP Parse error:&amp;#160; syntax error, unexpected T_STRING, expecting &amp;#8216;,&amp;#8217; or &amp;#8216;;&amp;#8217; in ../public_html/jiangtanghu/blog/wp-content/plugins/wp-conditional-captcha/wp-conditional-captcha.php on line 401
+ So the problem comes from a WordPress plugin “Conditional CAPTCHA for WordPress” .</description>
     </item>
     
     <item>
@@ -456,66 +105,10 @@
       <pubDate>Thu, 18 Oct 2012 19:51:36 +0000</pubDate>
       
       <guid>/2012/10/18/be-your-own-sas-admin-create-customized-sas-sessions/</guid>
-      <description>&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+      <description>&amp;nbsp;
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/SASIcons.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;SASIcons&#34; alt=&#34;SASIcons&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/SASIcons_thumb.png&#34; width=&#34;414&#34; height=&#34;216&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;You may find such SAS desktop shortcuts useful:&lt;/span&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;click icon A then you get a SAS session titled “Project A” (you may notice your SAS session with title “SAS” by default). In this session, the current working folder is just where you put Project A (the default may be like C:usersyourID). Also, some autoexec codes run including libname, fileref, formats search, macro loading and other customized options/settings. &lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Keep session A alive, then click icon B: you get your SAS session specified for Project B. And very important, there are no such annoying logs (you will most likely get such warnings when hitting your own SAS desktop icon twice): &lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;NOTE: &lt;span style=&#34;color: #ff0000;&#34;&gt;Unable&lt;/span&gt; to open SASUSER.REGSTRY. WORK.REGSTRY will be opened instead.&lt;br /&gt; NOTE: All registry changes will be lost at the end of the session.&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;WARNING&lt;/span&gt;: Unable to copy SASUSER registry to WORK registry. Because of this,&lt;br /&gt; WARNING: you will not see registry customizations during this session.&lt;br /&gt; NOTE: Unable to open SASUSER.PROFILE. WORK.PROFILE will be opened instead.&lt;br /&gt; NOTE: All profile changes will be lost at the end of the session.&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Here is the how-to demo (tested in a Window 7 machine with SAS 9.3; the so called project folder is my GitHub programming folder,  &lt;em&gt;C:\Users\jhu\Documents\GitHubProgramming-SAS&lt;/em&gt;):&lt;/span&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;From &lt;em&gt;C:\Users\jhu\Documents\My SAS Files\9.3&lt;/em&gt;, copy user profile file &lt;/span&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/hostunx/61879/HTML/default/viewer.htm#a000386454.htm&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;profile.sas7bcat&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;to  the project folder. This is used to prevent the annoying message above.&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Throw a &lt;strong&gt;autoexec.sas&lt;/strong&gt; file to the project folder with anything you like; or if you do not like, skip it&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Put in the project folder a configuration file &lt;strong&gt;sasv9.cfg&lt;/strong&gt; with the following settings (delete –autoexec option if you want):&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;span style=&#34;color: #ff0000;&#34;&gt;-config&lt;/span&gt; &amp;#8220;C:\Program Files\SASHome\SASFoundation\9.3\nls\ensasv9.cfg&amp;#8221;&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;-sasinitialfolder&lt;/span&gt; &amp;#8220;C:\Users\jhu\Documents\GitHubProgramming-SAS&amp;#8221;&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;-awstitle&lt;/span&gt; &amp;#8220;My SAS Programming@GitHub&amp;#8221;&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;-sasuser&lt;/span&gt; &amp;#8220;C:\Users\jhu\Documents\GitHubProgramming-SAS&amp;#8221;&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;-autoexec&lt;/span&gt; &amp;#8220;C:\Users\jhu\Documents\GitHubProgramming-SASautoexec.sas&amp;#8221;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Send &lt;em&gt;&lt;strong&gt;C:\Program Files\SASHome\SASFoundation\9.3\sas.exe&lt;/strong&gt;&lt;/em&gt; to a desktop shortcut (I renamed it as “GitHub”).&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;In desktop, find this icon and get its properties: in Target, replace all the text with&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;&amp;#8220;C:\Program Files\SASHome\SASFoundation\9.3\sas.exe&amp;#8221; -config &amp;#8220;C:\Users\jhu\Documents\GitHubProgramming-SAS\sasv9.cfg&amp;#8221;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/SASIcons_target.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;SASIcons_target&#34; alt=&#34;SASIcons_target&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/SASIcons_target_thumb.png&#34; width=&#34;337&#34; height=&#34;489&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Save the setting and exit then you click this icon and get:&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/GitHub.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;GitHub&#34; alt=&#34;GitHub&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/GitHub_thumb.png&#34; width=&#34;517&#34; height=&#34;379&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Note:&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.lexjansen.com/&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Lex Jansen&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;made a good trick to start SAS in any specific folder by modifying the registry table in Windows; then you can right click mouse to get in a SAS session:&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/SAShere.png&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;SAShere&#34; alt=&#34;SAShere&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/SAShere_thumb.png&#34; width=&#34;400&#34; height=&#34;301&#34; border=&#34;0&#34; /&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;It’s simple: just save the following text to a file with extension as REG and run it (the configuration also in Windows 7 with SAS 9.3):&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Windows Registry Editor Version 5.00&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;[HKEY_CLASSES_ROOTDirectoryshellSAS_here_v93]&lt;br /&gt; @=&amp;#8221;&amp;amp;SAS here V9.3&amp;#8243;&lt;br /&gt; [HKEY_CLASSES_ROOTDirectoryshellSAS_here_v93command]&lt;br /&gt; @=&amp;#8221;&amp;#8221;C:Program FilesSASHomeSASFoundation9.3sas.exe&amp;#8221; -sasinitialfolder &amp;#8220;%V&amp;#8221; -nosplash -CONFIG &amp;#8220;C:Program FilesSASHomeSASFoundation9.3nlsensasv9.cfg&amp;#8221;&amp;#8221;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+You may find such SAS desktop shortcuts useful:
+ click icon A then you get a SAS session titled “Project A” (you may notice your SAS session with title “SAS” by default). In this session, the current working folder is just where you put Project A (the default may be like C:usersyourID). Also, some autoexec codes run including libname, fileref, formats search, macro loading and other customized options/settings.  Keep session A alive, then click icon B: you get your SAS session specified for Project B.</description>
     </item>
     
     <item>
@@ -524,23 +117,9 @@
       <pubDate>Thu, 11 Oct 2012 21:20:39 +0000</pubDate>
       
       <guid>/2012/10/11/sas-perl-regular-expression-prx-talk-in-the-forthcoming-sesug-2012/</guid>
-      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Research Triangle will host SouthEast SAS Users Group (&lt;/font&gt;&lt;a href=&#34;http://www.sesug.org/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SESUG&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;) 2012 conference (October 14-16, Sheraton Imperial Hotel, Durham, NC; &lt;em&gt;back to the home of SAS!&lt;/em&gt;). It will be my first regional SAS user conference and I will have a talk on &lt;/font&gt;&lt;a href=&#34;http://www.sesug.org/SESUG2012/abstract.html#BB-04&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS Perl Regular Expression(PRX)&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, in the morning of next Monday, Oct 15.&lt;/font&gt;&lt;/p&gt;
+      <description>Research Triangle will host SouthEast SAS Users Group (SESUG) 2012 conference (October 14-16, Sheraton Imperial Hotel, Durham, NC; back to the home of SAS!). It will be my first regional SAS user conference and I will have a talk on SAS Perl Regular Expression(PRX), in the morning of next Monday, Oct 15.
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/Iknow.jpg&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Iknow&#34; border=&#34;0&#34; alt=&#34;Iknow&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/Iknow_thumb.jpg&#34; width=&#34;482&#34; height=&#34;373&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS PRX is an old school topic somehow. After dumping the paper, I think I should restructure my talk in a more accessible way. Regular expression is the de facto standard tool for text processing (&lt;em&gt;you can get help from the whole world besides SAS!&lt;/em&gt;), and SAS 9.3 even incorporates it to Proc Format. My talk will go like this:&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;No picnic! You are already using Regex: remember &lt;font color=&#34;#ff0000&#34;&gt;*&lt;/font&gt;.sas?&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Where to start? what you should do is only to fill the programming block&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Supporting tools: visually play with Regex&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Resources: how to get the Regex for immediate use without digging into the “hairy” metacharacters for days and weeks&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;A demo&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;A Joke&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;See you then!&lt;/font&gt;&lt;/p&gt;
-</description>
+SAS PRX is an old school topic somehow. After dumping the paper, I think I should restructure my talk in a more accessible way.</description>
     </item>
     
     <item>
@@ -549,24 +128,9 @@
       <pubDate>Mon, 08 Oct 2012 22:22:23 +0000</pubDate>
       
       <guid>/2012/10/08/powershell-up-to-v3.0/</guid>
-      <description>
+      <description>Just update Windows Powershell to version 3.0 and I do like this new GUI (Integrated Scripting Environment, ISE) with a console, a script window and a command list (Powershell is a true Windows shell; you may try to type 1+2 in the old CMD console!):
 
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Just &lt;/font&gt;&lt;a href=&#34;http://www.microsoft.com/en-us/download/details.aspx?id=34595&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;update Windows Powershell to version 3.0&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and I do like this new GUI (Integrated Scripting Environment, ISE) with a console, a script window and a command list (Powershell is a true Windows shell; you may try to type &lt;em&gt;1+2&lt;/em&gt; in the old CMD console!):&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/ISE.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;ISE&#34; border=&#34;0&#34; alt=&#34;ISE&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/ISE_thumb.png&#34; width=&#34;506&#34; height=&#34;307&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I also used a free Powershell GUI product, &lt;/font&gt;&lt;a href=&#34;http://powergui.org/index.jspa&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;PowerGUI&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;with similar interface like ISE. The latest PowerGUI (3.2.0.2237) supports Powershell 2.0 by default (while you can &lt;/font&gt;&lt;a href=&#34;http://csharpening.net/?p=588&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;force it to play with PS 3.0&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;). I’m not a script guy but bits of shell do make life easy.&lt;/font&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;getting-started&#34;&gt;Getting Started:&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Windows_PowerShell#Comparison_of_cmdlets_with_similar_commands&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;a quick look of Powershell, Windows CMD and Unix shell&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://technet.microsoft.com/en-us/library/bb978526.aspx&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Powershell 3.0 offical portal&lt;/font&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;a wonderful book(&lt;em&gt;FREE&lt;/em&gt;), &lt;em&gt;&lt;a href=&#34;http://powershell.com/cs/blogs/ebookv2/default.aspx&#34; target=&#34;_blank&#34;&gt;Master Powershell with Dr. Tobias Weltner&lt;/a&gt;&lt;/em&gt;&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;_&lt;a href=&#34;http://technet.microsoft.com/en-us/library/hh848797.aspx&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Powershell Tips&lt;/font&gt;&lt;/a&gt;_&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;For SAS users, blogger &lt;/font&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/tag/powershell/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Chris Hemedinger introduced some useful examples&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+I also used a free Powershell GUI product, PowerGUI with similar interface like ISE. The latest PowerGUI (3.2.0.2237) supports Powershell 2.0 by default (while you can force it to play with PS 3.</description>
     </item>
     
   </channel>

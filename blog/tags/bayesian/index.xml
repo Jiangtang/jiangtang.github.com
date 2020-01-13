@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bayesian on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/bayesian/index.xml</link>
+    <link>/tags/bayesian/</link>
     <description>Recent content in Bayesian on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/bayesian/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Sep 2012 01:20:10 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/bayesian/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Frequentist or Baysian in A Binomial Test</title>
@@ -14,40 +17,8 @@
       <pubDate>Fri, 21 Sep 2012 01:20:10 +0000</pubDate>
       
       <guid>/2012/09/21/frequentist-or-baysian-in-a-binomial-test/</guid>
-      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;A latest updated post on &lt;/font&gt;&lt;a href=&#34;http://www.freakonomics.com&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Freakonomics&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, &lt;em&gt;&lt;a href=&#34;http://www.freakonomics.com/2012/09/20/beware-the-weasel-word-statistical-in-statistical-significance/&#34; target=&#34;_blank&#34;&gt;Beware the Weasel Word “Statistical” in Statistical Significance!&lt;/a&gt;&lt;/em&gt;,&amp;#160; seemed to attempt to challenge frequentist statistics by Bayesian. I have no research on Bayesian and won’t jump to the debates. I’d rather to use this case to apply the &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/16/hypothesis-testing/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Dragon’s Teeth and Fleas logic of hypothesis testing&lt;/font&gt;&lt;/a&gt; (at least I think frequentist is pretty intuitive)&lt;font size=&#34;1&#34;&gt;. &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;A story goes with this post, that Bob won 20 times out of total 30 rounds with Alice in a children card game, “War”. War itself is a totally random game, so everyone is supposed to have 50% chance to win in a fair game. Since Bob won 20 out of 30, the question raised: is he cheating?&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;To answer this question, just follow the &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/09/16/hypothesis-testing/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Dragon’s Teeth and Fleas logic of hypothesis testing&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;:&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;First, assume they are dragon’s teeth; in this case, we assume it is a fair game that everyone has probability of 0.5 to win. &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Under this assumption, we know the the number of winning follows &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Binomial_distribution&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;binomial distribution&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;with probability of 0.5. Now we should check Bob’s 20 winning in 30 in this distribution: is this output extreme, or is it a flea? &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;We then get the p-Value calculated by P(X&amp;gt;=20) which means the chance of winning 20 times and more in 30 games (as extreme or even more extreme ), is 0.0494. Here we only think about winning, so it is a one-sided test. Since this p-Value is less than the default &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Statistical_significance&#34;&gt;&lt;font size=&#34;1&#34;&gt;significance level&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;of 0.05 (IT IS A FLEA!), we reject the null and think this is more likely not a fair game (Bob is cheating in this statistical point of view). &lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Bob.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;Bob&#34; border=&#34;0&#34; alt=&#34;Bob&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Bob_thumb.png&#34; width=&#34;503&#34; height=&#34;257&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;That’s all the story. Then &lt;/font&gt;&lt;a href=&#34;http://www.freakonomics.com/2012/09/20/beware-the-weasel-word-statistical-in-statistical-significance/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;this post&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;goes, “Although the procedure is mathematically well defined, it is nonsense”. The following is the first reason listed in the post:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;To calculate the probability of Bob’s winning at least 20 games, you use not only the data that you saw (that Bob won 20 games out of 30) but also the imaginary data of Bob winning 21 out of 30 games, or 22 out of 30 games, all the way up to Bob winning all 30 games. The idea of imaginary data is oxymoronic.&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In my opinion, the so called “imaginary data” are just the data filling out the binomial distribution (under the assumption of true null hypothesis) we got before and they are not oxymoronic at all (&lt;em&gt;sorry I use “data” as plural&lt;/em&gt;).&amp;#160; &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;What do you think? I can’t go far away from here due to my limit knowledge of Bayesian.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-appendix: SAS Codes and Outputs&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data a; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input output count; &lt;br /&gt;datalines; &lt;br /&gt;0 20 &lt;br /&gt;1 10 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc freq data=a; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; tables output /binomialc (p=0.5) alpha=0.05; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; exact binomial; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; weight count; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Bob_SAS.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;Bob_SAS&#34; border=&#34;0&#34; alt=&#34;Bob_SAS&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/09/Bob_SAS_thumb.png&#34; width=&#34;325&#34; height=&#34;314&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>A latest updated post on Freakonomics, Beware the Weasel Word “Statistical” in Statistical Significance!,&amp;#160; seemed to attempt to challenge frequentist statistics by Bayesian. I have no research on Bayesian and won’t jump to the debates. I’d rather to use this case to apply the Dragon’s Teeth and Fleas logic of hypothesis testing (at least I think frequentist is pretty intuitive). 
+A story goes with this post, that Bob won 20 times out of total 30 rounds with Alice in a children card game, “War”.</description>
     </item>
     
   </channel>

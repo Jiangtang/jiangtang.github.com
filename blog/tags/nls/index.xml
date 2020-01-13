@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nls on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/nls/index.xml</link>
-    <description>Recent content in Nls on Jiangtang Hu | 胡江堂</description>
+    <title>NLS on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/nls/</link>
+    <description>Recent content in NLS on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/nls/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Feb 2013 23:31:04 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/nls/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Linguistic Sorting in SAS Proc Sort</title>
@@ -14,40 +17,12 @@
       <pubDate>Tue, 19 Feb 2013 23:31:04 +0000</pubDate>
       
       <guid>/2013/02/19/linguistic-sorting-in-sas-proc-sort/</guid>
-      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Just took a look at the linguistic sorting features in &lt;/font&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/proc/65145/HTML/default/viewer.htm#p1nd17xr6wof4sn19zkmid81p926.htm&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS Sort procedure&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, and got some neat options to apply to my task. For example, I want to sort ID in the following dataset:&lt;/font&gt;&lt;/p&gt;
+      <description>Just took a look at the linguistic sorting features in SAS Sort procedure, and got some neat options to apply to my task. For example, I want to sort ID in the following dataset:
+ data t1; &amp;#160;&amp;#160;&amp;#160; input ID $ ; datalines; T20 T4 T3 T1 ;
+ and want to get such intuitive orderings (files sorting in Window 7 directory):
 
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data t1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input ID $ ; &lt;br /&gt;datalines; &lt;br /&gt;T20 &lt;br /&gt;T4 &lt;br /&gt;T3 &lt;br /&gt;T1 &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;and want to get such intuitive orderings (files sorting in Window 7 directory):&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/sort_num.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;sort_num&#34; border=&#34;0&#34; alt=&#34;sort_num&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/sort_num_thumb.png&#34; width=&#34;411&#34; height=&#34;214&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;But when apply the default sorting:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc sort data=t1 out=t2; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; by ID; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I get:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;T1 &lt;br /&gt;T20 &lt;br /&gt;T3 &lt;br /&gt;T4&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;To produce what expected, add a &lt;font color=&#34;#ff0000&#34;&gt;SORTSEQ&lt;/font&gt; option:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;proc sort data=t1 out=t3&amp;#160;&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;SORTSEQ=LINGUISTIC(NUMERIC_COLLATION=ON)&lt;/font&gt; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; by ID; &lt;br /&gt;run; &lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;T1 &lt;br /&gt;T3 &lt;br /&gt;T4 &lt;br /&gt;T20&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;In the first block of code, the default sorting is determined by their characters’ appearance in &lt;a href=&#34;en.wikipedia.org/wiki/EBCDIC&#34;&gt;EBCDIC&lt;/a&gt; or the &lt;a href=&#34;en.wikipedia.org/wiki/ASCII&#34;&gt;ASCII&lt;/a&gt; tables (according to OS). To change this default collating sequences, a specific linguistic collation (numeric collation) option added. &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For details, &lt;em&gt;see&lt;/em&gt; the corresponding part in &lt;em&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/proc/65145/HTML/default/viewer.htm#p0guut2xk8yz2yn17ibn9nwcyx8v.htm&#34;&gt;SAS SORT Procedure&lt;/a&gt;&lt;/em&gt; and &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/nlsref/63072/HTML/default/viewer.htm#p1d7k16vtur7s4n1nbbaf8ro6sk7.htm&#34;&gt;&lt;em&gt;Collating Sequence in SAS&amp;reg; 9.3 National Language Support (NLS)&lt;/em&gt;&lt;/a&gt;&lt;em&gt;&amp;#160;&lt;/em&gt;with &lt;a href=&#34;http://www2.sas.com/proceedings/forum2007/297-2007.pdf&#34;&gt;a great paper&lt;/a&gt;.&lt;/font&gt;&lt;/p&gt;
-</description>
+But when apply the default sorting:
+ proc sort data=t1 out=t2; &amp;#160;&amp;#160;&amp;#160; by ID; run;</description>
     </item>
     
   </channel>

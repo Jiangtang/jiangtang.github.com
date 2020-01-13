@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Class on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/class/index.xml</link>
-    <description>Recent content in Class on Jiangtang Hu | 胡江堂</description>
+    <title>class on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/class/</link>
+    <description>Recent content in class on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/class/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Aug 2011 22:18:09 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/class/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Who is Alfred?</title>
@@ -14,24 +17,8 @@
       <pubDate>Wed, 31 Aug 2011 22:18:09 +0000</pubDate>
       
       <guid>/2011/08/31/who-is-alfred/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;Tell me something about Alfred, male or female? age? height and weight?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Oracle database (version 9 and below) had a well known default demo account SCOTT with a password, TIGER (and TIGER was the name of the real person Bruce Scott ’s cat, &lt;a href=&#34;http://www.dba-oracle.com/t_scott_tiger.htm&#34; target=&#34;_blank&#34;&gt;see&lt;/a&gt;) and in this account, there are some tables named DEPT, EMP, BONUS and SALGRADE (you can read their meaning). Almost every Oracle DBA learn SQL using these database and an joke just says that in DBA’s meetings, people just&amp;#160; warm up saying “how about Smith?” And you should know that in the database, Smith is a clerk and his boss is Ford (whose boss is Jones)!&lt;/p&gt;
-
-&lt;p&gt;In the beginning I also raise a question for SAS programmers: who is Alfred? Don’t give quick answer such that “Alfred who”. Actually, you should already go through with Alfred very well as a SAS programmer:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc print data=sashelp.class; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; where name=&amp;ldquo;Alfred&amp;rdquo;; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;As a clinical SAS programmer, I play with data, get acquaintance with the data and subjects and then subjects are no longer “subject”. They have identities and&amp;#160; Alfred is a 14 years old boy. I have such habit mostly because in clinical world, data are very expensive (not like the massive transaction data in financial industry) and should be took more care.&lt;/p&gt;
-
-&lt;p&gt;I dare say that “class” is the most famous SAS dataset in sashelp library and then in the SAS world. The first dataset used for demo is almost this “class”. I just did a quick Google search, “&lt;a href=&#34;http://www.google.com/search?hl=en&amp;source=hp&amp;biw=1111&amp;bih=561&amp;q=sas+sashelp.class&amp;btnG=Google+Search&amp;aq=f&amp;aqi=g10&amp;aql=&amp;oq=&amp;gs_rfai=#pq=+sas+sashelp.class&amp;hl=en&amp;cp=0&amp;gs_id=t&amp;xhr=t&amp;q=sas+sashelp.class&amp;qe=c2FzIHNhc2hlbHAuY2xhc3M&amp;qesig=-1hRQj8XDofruHqJt-7o1Q&amp;pkc=AFgZ2tkn99yjg_kNxO238PUOVve2MCFJUcgPCK-pXmvfyldpJvG0DchYcRuz_Azx9jhciBgWit8jDgrY6zs4T42InGlJtSBhGQ&amp;pf=p&amp;sclient=psy&amp;source=hp&amp;pbx=1&amp;oq=sas+sashelp.class&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=&amp;gs_upl=&amp;bav=on.2,or.r_gc.r_pw.r_cp.&amp;fp=265f5e3edf2ec82b&amp;biw=1166&amp;bih=665&amp;bs=1&#34; target=&#34;_blank&#34;&gt;sas sashelp.class&lt;/a&gt;” returns about 44,400 results. Hope you can find any other SAS datasets to beat it.&lt;/p&gt;
-
-&lt;p&gt;Alfred in “class” pops into my mind because today, I do find a strong candidate. In SAS 9.2 (and 9.3), the sashelp library has a new member, Iris. YES, it is the “&lt;a href=&#34;http://en.wikipedia.org/wiki/Iris_flower_data_set&#34; target=&#34;_blank&#34;&gt;Fisher Iris Flower Data&lt;/a&gt;”, which can be safely considered the most famous and most&amp;#160; used dataset in machine learning and data mining papers and statistical applications. Currently it has &lt;a href=&#34;http://www.google.com/search?hl=en&amp;source=hp&amp;biw=1111&amp;bih=561&amp;q=sas+sashelp.class&amp;btnG=Google+Search&amp;aq=f&amp;aqi=g10&amp;aql=&amp;oq=&amp;gs_rfai=#sclient=psy&amp;hl=en&amp;source=hp&amp;q=sas+sashelp.iris+&amp;pbx=1&amp;oq=sas+sashelp.iris+&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=e&amp;gs_upl=277383l277383l5l277945l1l1l0l0l0l0l0l0ll0l0&amp;bav=on.2,or.r_gc.r_pw.r_cp.&amp;fp=265f5e3edf2ec82b&amp;biw=1166&amp;bih=665&#34; target=&#34;_blank&#34;&gt;only 859 hits in Google&lt;/a&gt;, I think the number will reach high accompany with the wide use of SAS 9.2 and above, and to enforce my prediction, I will definitely play with the Iris data in the following future!&lt;/p&gt;
-</description>
+      <description>Tell me something about Alfred, male or female? age? height and weight?
+ Oracle database (version 9 and below) had a well known default demo account SCOTT with a password, TIGER (and TIGER was the name of the real person Bruce Scott ’s cat, see) and in this account, there are some tables named DEPT, EMP, BONUS and SALGRADE (you can read their meaning). Almost every Oracle DBA learn SQL using these database and an joke just says that in DBA’s meetings, people just&amp;#160; warm up saying “how about Smith?</description>
     </item>
     
   </channel>

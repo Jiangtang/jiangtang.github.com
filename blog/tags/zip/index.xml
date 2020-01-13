@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zip on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/zip/index.xml</link>
+    <link>/tags/zip/</link>
     <description>Recent content in Zip on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/zip/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Jun 2013 10:36:59 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/zip/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Free Utilities to Zip Files in Windows: Quick Notes</title>
@@ -14,26 +17,12 @@
       <pubDate>Sat, 29 Jun 2013 10:36:59 +0000</pubDate>
       
       <guid>/2013/06/29/free-utilities-to-zip-files-in-windows-quick-notes/</guid>
-      <description>
-
-&lt;h5 id=&#34;1-powershell-cmdlet-write-zip-http-www-powershellmanual-com-write-zip-from-pscx-http-pscx-codeplex-com&#34;&gt;1. Powershell cmdlet &lt;a href=&#34;http://www.powershellmanual.com/write-zip&#34;&gt;Write-Zip&lt;/a&gt; from &lt;a href=&#34;http://pscx.codeplex.com/&#34;&gt;PSCX&lt;/a&gt;&lt;/h5&gt;
-
-&lt;p&gt;Pro: flexible, easy to use&lt;/p&gt;
-
-&lt;p&gt;Con: relatively time consuming&lt;/p&gt;
-
-&lt;h5 id=&#34;2-7-zip-http-www-7-zip-org-command-line-http-www-dotnetperls-com-7-zip-examples&#34;&gt;2. &lt;a href=&#34;http://www.7-zip.org/&#34;&gt;7-Zip&lt;/a&gt; &lt;a href=&#34;http://www.dotnetperls.com/7-zip-examples&#34;&gt;Command-Line&lt;/a&gt;&lt;/h5&gt;
-
-&lt;p&gt;Pro: flexible, relatively quicker, easy to be embedded in other scripts&lt;/p&gt;
-
-&lt;p&gt;Con: (…)&lt;/p&gt;
-
-&lt;h5 id=&#34;3-jar-http-docs-oracle-com-javase-6-docs-technotes-tools-windows-jar-html-command-in-jdk&#34;&gt;3. &lt;a href=&#34;http://docs.oracle.com/javase/6/docs/technotes/tools/windows/jar.html&#34;&gt;Jar&lt;/a&gt; command in JDK&lt;/h5&gt;
-
-&lt;p&gt;Pro: flexible, relatively quicker, easy to be embedded in other scripts&lt;/p&gt;
-
-&lt;p&gt;Con: (…)&lt;/p&gt;
-</description>
+      <description>1. Powershell cmdlet Write-Zip from PSCX Pro: flexible, easy to use
+Con: relatively time consuming
+2. 7-Zip Command-Line Pro: flexible, relatively quicker, easy to be embedded in other scripts
+Con: (…)
+3. Jar command in JDK Pro: flexible, relatively quicker, easy to be embedded in other scripts
+Con: (…)</description>
     </item>
     
   </channel>

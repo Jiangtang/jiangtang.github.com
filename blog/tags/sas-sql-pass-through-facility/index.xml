@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sas Sql Pass Through Facility on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/sas-sql-pass-through-facility/index.xml</link>
-    <description>Recent content in Sas Sql Pass Through Facility on Jiangtang Hu | 胡江堂</description>
+    <title>SAS SQL Pass-Through Facility on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/sas-sql-pass-through-facility/</link>
+    <description>Recent content in SAS SQL Pass-Through Facility on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/sas-sql-pass-through-facility/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Dec 2009 09:33:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/sas-sql-pass-through-facility/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Work With Oracle: A Quick Sheet for SAS Programmers</title>
@@ -14,170 +17,12 @@
       <pubDate>Fri, 04 Dec 2009 09:33:00 +0000</pubDate>
       
       <guid>/2009/12/04/work-with-oracle-a-quick-sheet-for-sas-programmers/</guid>
-      <description>&lt;p&gt;(Note: All the followings are tested on Windows XP environment.)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;0. Install Oracle Database 10g Express Edition&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Fast (and free) to download, easy to deploy and simple to admin&amp;#8211;for learning and testing purpose, Oracle Database 10g Express Edition (Oracle Database XE, a mini version of Oracle Database 10&lt;em&gt;g&lt;/em&gt; Release 2) are strongly recommended:&lt;/p&gt;
-
-&lt;p&gt;0.1 Download it at &lt;a href=&#34;http://www.oracle.com/technology/software/products/database/xe/index.html&#34;&gt;its homepage&lt;/a&gt;(206MB);&lt;/p&gt;
-
-&lt;p&gt;0.2 Install it following default settings;&lt;/p&gt;
-
-&lt;p&gt;0.3 Unlock accounts for HR and SCOTT. In a windows DOS prompt, using the following scripts:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;pre&gt;sqlplus sys/&lt;span style=&#34;color:#ff0000;&#34;&gt;&lt;em&gt;YourSysPassword&lt;/em&gt; &lt;/span&gt;as sysdba&lt;/pre&gt;
-
-&lt;pre&gt;alter user HR account unlock&lt;/pre&gt;
-
-&lt;pre&gt;alter user HR identified by &lt;em&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;YourHRPassword&lt;/span&gt;&lt;/em&gt;&lt;/pre&gt;
-
-&lt;pre&gt;alter user SCOTT account unlock&lt;/pre&gt;
-
-&lt;pre&gt;alter user SCOTT identified by TIGER&lt;/pre&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;Or you can accomplish these tasks within the Oracle web application:&lt;/pre&gt;
-
-&lt;blockquote&gt;
-&lt;pre&gt;&lt;a title=&#34;http://localhost:8081/apex&#34; href=&#34;http://localhost:8081/apex&#34;&gt;http://localhost:8081/apex&lt;/a&gt;&lt;/pre&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;1. Connect Oracle using SAS libname engine&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;libname SCOTT oracle user=&amp;#8221;SCOTT&amp;#8221; password=&amp;#8221;TIGER&amp;#8221; path=&amp;#8217;xe&amp;#8217; ;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;Note: &lt;em&gt;xe&lt;/em&gt; is the default path for Oracle Database XE.&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;2. Connect Oracle using SQL Procedure Pass-Through Facility&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;proc sql ;&lt;br /&gt;
-connect to oracle as orcl&lt;br /&gt;
-(user=&amp;#8221;SCOTT&amp;#8221; password=&amp;#8221;TIGER&amp;#8221; path=&amp;#8217;xe&amp;#8217;);&lt;/em&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;_select *       
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;from connection to orcl_&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;&lt;em&gt; (&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;&lt;em&gt; &lt;strong&gt;SELECT …&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;&lt;em&gt;&lt;strong&gt;&lt;span class=&#34;Apple-style-span&#34; style=&#34;font-weight: normal; &#34;&gt; ) ;&lt;/span&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;_disconnect from orcl;&amp;lt;/p&amp;gt; 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;quit;&lt;/em&gt;&lt;/blockquote&gt;&lt;/p&gt;
-
-&lt;p&gt;Note: 1) In this approach, Oracle, instead of SAS, processes the SQL statement (i.e., you use the more powerful and flexible Oracle SQL syntax instead of SAS Proc SQL procedure for querying. For more, se&lt;em&gt;e &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lrcon/61722/HTML/default/a001044413.htm&#34;&gt;SAS Doc&lt;/a&gt;&lt;/em&gt;)&lt;em&gt;.&lt;/em&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;      __ 2) Your Oracle SQL codes should be placed in the &amp;lt;span style=&amp;quot;color:#ff0000;&amp;quot;&amp;gt;RED&amp;lt;/span&amp;gt; blocks, and end without a semicolon(;):
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_select *&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;from emp&lt;/em&gt;&lt;/blockquote&gt;&lt;/p&gt;
-
-&lt;p&gt;3) Only basic Oracle SQL statements (&lt;em&gt;select, create table&lt;/em&gt;, &amp;hellip;)can pass through this facility.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3. Load SAS datasets to Oracle database&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;proc copy in=sashelp&lt;br /&gt;
-out=scott;&lt;br /&gt;
-select class;&lt;br /&gt;
-run;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;4. Misc: Some differences between Oracle SQL and SAS Proc SQL&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.1 Table aliases&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Oracle: &lt;em&gt;from employees a;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;SAS: &lt;em&gt;from employees a;&lt;/em&gt; or&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;from employees &lt;span style=&#34;color:#ff0000;&#34;&gt;as&lt;/span&gt; a;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;4.2 Column aliases&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Oracle: don’t use single quotation marks(‘’).&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_select job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;as job&lt;/span&gt;, job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;job&lt;/span&gt;, job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;as &amp;#8220;job&amp;#8221; &lt;span style=&#34;color:#000000;&#34;&gt;,&lt;/span&gt; &lt;strike&gt;job&lt;em&gt;id &lt;span style=&#34;color:#ff0000;&#34;&gt;as ‘job’&lt;/span&gt;&lt;/strike&gt;&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;SAS:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_select job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;as job&lt;/span&gt;, job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;&amp;#8220;job&amp;#8221;&lt;/span&gt; , job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;&amp;#8216;job&amp;#8217;&lt;/span&gt;, &lt;strike&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;job&lt;em&gt;id job&lt;/span&gt;&lt;/strike&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;4.3 Literal Character Strings&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Oracle: Date and character literal values must be enclosed within single quotation marks(‘’).&lt;/p&gt;
-
-&lt;p&gt;SAS: Use both single and double quotation marks.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.4 Order the null value&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Oracle: Null values are displayed last for ascending sequences and first for descending sequences.&lt;/p&gt;
-
-&lt;p&gt;SAS: Null values are displayed first for ascending sequences and last for descending sequences.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.5 Nesting Group Functions&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_select max(avg(salary))&lt;br /&gt;
-from employees&lt;br /&gt;
-group by department&lt;em&gt;id&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;SAS log:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;ERROR: Summary functions nested in this way are not supported.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Optional approach for SAS:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_select max(avg) as max&lt;br /&gt;
-from(&lt;br /&gt;
-select avg(salary) as avg&lt;br /&gt;
-from employees&lt;br /&gt;
-group by department&lt;em&gt;id )&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;4.6 row number(_n_)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Oracle:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;select &lt;span style=&#34;color:#ff0000;&#34;&gt;rownum&lt;/span&gt;&lt;br /&gt;
-from employees&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;SAS:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;select &lt;span style=&#34;color:#ff0000;&#34;&gt;monotonic()&lt;/span&gt;&lt;br /&gt;
-from employees&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Note: &lt;span style=&#34;color:#ff0000;&#34;&gt;monotonic()&lt;/span&gt; is an undocumented function of SAS, &lt;em&gt;see&lt;span class=&#34;Apple-style-span&#34; style=&#34;font-style: normal; &#34;&gt;&lt;a href=&#34;http://www2.sas.com/proceedings/sugi29/040-29.pdf&#34;&gt;http://www2.sas.com/proceedings/sugi29/040-29.pdf&lt;/a&gt;&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>(Note: All the followings are tested on Windows XP environment.)
+0. Install Oracle Database 10g Express Edition
+Fast (and free) to download, easy to deploy and simple to admin&amp;#8211;for learning and testing purpose, Oracle Database 10g Express Edition (Oracle Database XE, a mini version of Oracle Database 10g Release 2) are strongly recommended:
+0.1 Download it at its homepage(206MB);
+0.2 Install it following default settings;
+0.3 Unlock accounts for HR and SCOTT.</description>
     </item>
     
   </channel>

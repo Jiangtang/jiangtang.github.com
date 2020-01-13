@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Database on Jiangtang Hu | 胡江堂</title>
-    <link>/categories/database/index.xml</link>
+    <link>/categories/database/</link>
     <description>Recent content in Database on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/categories/database/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Oct 2011 21:31:18 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/database/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Map and Reduce in MapReduce: a SAS Illustration</title>
@@ -14,18 +17,7 @@
       <pubDate>Tue, 04 Oct 2011 21:31:18 +0000</pubDate>
       
       <guid>/2011/10/04/map-and-reduce-in-mapreduce-a-sas-illustration/</guid>
-      <description>&lt;p&gt;In &lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/09/14/analytical-valley/&#34; target=&#34;_blank&#34;&gt;last post&lt;/a&gt;, I mentioned &lt;a href=&#34;http://hadoop.apache.org/&#34;&gt;Hadoop&lt;/a&gt;, the open source implementation of Google’s &lt;a href=&#34;http://en.wikipedia.org/wiki/Mapreduce&#34; target=&#34;_blank&#34;&gt;MapReduce&lt;/a&gt; for parallelized processing of big data. In this long National Holiday, I read the original Google paper, _&lt;a href=&#34;http://static.googleusercontent.com/external_content/untrusted_dlcp/labs.google.com/en//papers/mapreduce-osdi04.pdf&#34; target=&#34;_blank&#34;&gt;MapReduce: Simplified Data Processing on Large Clusters&lt;/a&gt;_ by Jeffrey Dean and Sanjay Ghemawat and got that the terminologies of “map” and “reduce” were basically borrowed from Lisp, an old functional language that I even didn’t play “hello world” with. For Python users, the idea of Map and Reduce is also very straightforward because the workhorse data structure in Python is just the list, a sequence of values that you can just imagine that they are the nodes(clusters, chunk servers, …) in a distributed system.&lt;/p&gt;
-
-&lt;p&gt;MapReduce is a programming framework and really language independent, so SAS users can also get the basic idea from their daily programming practices and here is just a simple illustration using data step array (not array in Proc FCMP or matrix in IML). Data step array in SAS is fundamentally not a data structure but a convenient way of processing group of variables, but it can also be used to play some list operations like in Python and other rich data structure supporting languages(an editable version can be founded in &lt;a href=&#34;http://jiangtanghu.com/docs/en/MapReduce.sas&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;):&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/10/MapReduce.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; margin-left: 0px; border-left-width: 0px; margin-right: 0px&#34; title=&#34;MapReduce&#34; border=&#34;0&#34; alt=&#34;MapReduce&#34; align=&#34;left&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/10/MapReduce_thumb.png&#34; width=&#34;506&#34; height=&#34;535&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Follow code above, the programming task is to capitalize a string “Hadoop” (Line 2) and the “master” method is just to capitalize the string in buddle(Line 8): just use a master machine to processing the data.&lt;/p&gt;
-
-&lt;p&gt;Then we introduce the idea of “big data” that the string is too huge to one master machine, so “master method” failed. Now we distribute the task to thousands of low cost machines (workers, slaves, chunk servers,&amp;hellip; in this case, the one dimensional array with size of 6, see Line 11), each machine produces parts of the job (each array element only capitalizes a single letter in sequence, see Line 12-14). Such distributing operation is called “&lt;font color=&#34;#ff0000&#34;&gt;map&lt;/font&gt;”. In a MapReduce system, a master machine is also needed to assign the maps and reduce.&lt;/p&gt;
-
-&lt;p&gt;How about “&lt;font color=&#34;#ff0000&#34;&gt;reduce&lt;/font&gt;”?&amp;#160; A “reduce” operation is also called “fold”—for example, in Line 17, the operation to combine all the separately values into a single value: combine results from multiple worker machines.&lt;/p&gt;
-</description>
+      <description>In last post, I mentioned Hadoop, the open source implementation of Google’s MapReduce for parallelized processing of big data. In this long National Holiday, I read the original Google paper, _MapReduce: Simplified Data Processing on Large Clusters_ by Jeffrey Dean and Sanjay Ghemawat and got that the terminologies of “map” and “reduce” were basically borrowed from Lisp, an old functional language that I even didn’t play “hello world” with. For Python users, the idea of Map and Reduce is also very straightforward because the workhorse data structure in Python is just the list, a sequence of values that you can just imagine that they are the nodes(clusters, chunk servers, …) in a distributed system.</description>
     </item>
     
     <item>
@@ -34,42 +26,7 @@
       <pubDate>Wed, 14 Sep 2011 22:15:17 +0000</pubDate>
       
       <guid>/2011/09/14/an-analytical-valley-big-data-and-data-scientists-and-sas-programmers/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/09/hadoop.jpg&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;hadoop&#34; border=&#34;0&#34; alt=&#34;hadoop&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/09/hadoop_thumb.jpg&#34; width=&#34;240&#34; height=&#34;180&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://blogs.sas.com/content/sascom/author/tomdavenport&#34; target=&#34;_blank&#34;&gt;Tom Davenport&lt;/a&gt; reported an observation that &lt;a href=&#34;http://blogs.sas.com/content/sascom/2011/09/13/is-silicone-valley-becoming-more-analytical/&#34; target=&#34;_blank&#34;&gt;Silicon Valley is becoming more analytical&lt;/a&gt; since companies in the Valley such as Google, Facebook, eBay, LinkedLn all have strong presences in analytics. Besides such predominant companies, I’d also like to add Yahoo to the list although Yahoo is no longer in its peak. Yahoo is the largest sponsor and contributor of &lt;a href=&#34;http://hadoop.apache.org/&#34; target=&#34;_blank&#34;&gt;Hadoop&lt;/a&gt;, an open source framework for distributed processing of so called “big data”. When taking a look at the outstanding &lt;a href=&#34;www.facebook.com/data&#34; target=&#34;_blank&#34;&gt;Facebook data team&lt;/a&gt; or &lt;a href=&#34;http://sna-projects.com/sna/&#34; target=&#34;_blank&#34;&gt;LinkedIn data team&lt;/a&gt;, we can see that Hadoop is also one of the most overwhelmingly successful technical factors. Such Valley companies themselves are the huge consumers of big data and have strong incentives to develop analytical solutions beyond their high technology product pipelines.&lt;/p&gt;
-
-&lt;p&gt;Analytical staffs in LinkedLn also helps a lot to promote the widely usage of the term “data scientist”. They identify themselves as data scientists and that’s really cool. Now more and more statisticians are also very glad to accept this brand new title. According to a &lt;a href=&#34;http://blog.revolutionanalytics.com/2011/08/statisticians-at-jsm-consider-themselves-data-scientists.html&#34; target=&#34;_blank&#34;&gt;survey in JSM&lt;/a&gt; (2011, Miami), more than 85% (164) statisticians there considered themselves “data scientists”.&lt;/p&gt;
-
-&lt;p&gt;McKinsey also released a report this May &lt;a href=&#34;http://www.mckinsey.com/mgi/publications/big_data/pdfs/MGI_big_data_full_report.pdf&#34; target=&#34;_blank&#34;&gt;on big data&lt;/a&gt; and the huge gap of qualified analytical talents. You know when a management consulting firm begins to talk something technical, it is no longer a fashion to follow the discussion of the concept. To embrace the challenge of big data, one or the team needs multidiscipline background—basically speaking, computer science and statistics (and data mining or machine learning is just an interdisciplinary subject of them). Here is an ambitious list on “How do I become a data scientist”:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.quora.com/Educational-Resources/How-do-I-become-a-data-scientist&#34;&gt;http://www.quora.com/Educational-Resources/How-do-I-become-a-data-scientist&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;For these learning plans, just feel the meaning and don’t take it too seriously. Check yourself and set up your own priority.&lt;/p&gt;
-
-&lt;h3 id=&#34;notes-for-sas-programmers&#34;&gt;Notes for SAS Programmers&lt;/h3&gt;
-
-&lt;p&gt;For SAS programmers, I read an exciting post besides High Performance Computing that &lt;a href=&#34;http://blogs.sas.com/content/datamanagement/2011/08/29/sas-hadoop-and-big-data&#34; target=&#34;_blank&#34;&gt;SAS will also play with Hadoop&lt;/a&gt; by introducing some functionality in SAS/Access and SAS Data Integration Studio.&lt;/p&gt;
-
-&lt;p&gt;For SAS programmers with no IT background, it is not a good idea to jump into algorithms and data structures and other hard core computer courses immediately. Instead I recommend to take the full advantages of SAS language and system itself to dive into computer world gradually:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Learn and practice and practice &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/sqlproc/63043/HTML/default/viewer.htm#titlepage.htm&#34; target=&#34;_blank&#34;&gt;SAS Proc SQL&lt;/a&gt; which is compliant with the &lt;a href=&#34;http://en.wikipedia.org/wiki/SQL-92&#34;&gt;SQL-92&lt;/a&gt; standard. SQL is the common language in database world and SAS Proc SQL can help you switch smoothly to Oracle SQL, Teradata SQL, MySql SQL and other SQL implementations although there are some non-critical &lt;a href=&#34;http://www.jiangtanghu.com/blog/2009/12/04/work-with-oracle-a-quick-sheet-for-sas-programmers-2/&#34; target=&#34;_blank&#34;&gt;differences&lt;/a&gt; in details.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Dig into the operating system specific documentation of SAS, for example in SAS 9.3,&amp;#160; _&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/hostwin/63047/HTML/default/viewer.htm#titlepage.htm&#34; target=&#34;_blank&#34;&gt;SAS 9.3 Companion for Windows&lt;/a&gt;_ or _&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/hostunx/63053/HTML/default/viewer.htm#titlepage.htm&#34; target=&#34;_blank&#34;&gt;SAS 9.3 Companion for UNIX Environments&lt;/a&gt;_ or others depending the OS you are working on. They are the critical important documentations but unfortunately often missed in SAS programmers’&amp;#160; reading list.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Such docs will help SAS programmers to deal with the machines and expose to the wide computer world in a way that a SAS programmer can understand. You can’t expect to be an expert on computer via such docs, but at least you can communicate fluently with internal IT staff.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Then you get all the confidences to play with computer and can switch to any other topics interested in &lt;a href=&#34;http://www.quora.com/Educational-Resources/How-do-I-become-a-data-scientist&#34; target=&#34;_blank&#34;&gt;the list above&lt;/a&gt;!&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>Tom Davenport reported an observation that Silicon Valley is becoming more analytical since companies in the Valley such as Google, Facebook, eBay, LinkedLn all have strong presences in analytics. Besides such predominant companies, I’d also like to add Yahoo to the list although Yahoo is no longer in its peak. Yahoo is the largest sponsor and contributor of Hadoop, an open source framework for distributed processing of so called “big data”.</description>
     </item>
     
     <item>
@@ -78,24 +35,8 @@
       <pubDate>Wed, 31 Aug 2011 22:18:09 +0000</pubDate>
       
       <guid>/2011/08/31/who-is-alfred/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;Tell me something about Alfred, male or female? age? height and weight?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Oracle database (version 9 and below) had a well known default demo account SCOTT with a password, TIGER (and TIGER was the name of the real person Bruce Scott ’s cat, &lt;a href=&#34;http://www.dba-oracle.com/t_scott_tiger.htm&#34; target=&#34;_blank&#34;&gt;see&lt;/a&gt;) and in this account, there are some tables named DEPT, EMP, BONUS and SALGRADE (you can read their meaning). Almost every Oracle DBA learn SQL using these database and an joke just says that in DBA’s meetings, people just&amp;#160; warm up saying “how about Smith?” And you should know that in the database, Smith is a clerk and his boss is Ford (whose boss is Jones)!&lt;/p&gt;
-
-&lt;p&gt;In the beginning I also raise a question for SAS programmers: who is Alfred? Don’t give quick answer such that “Alfred who”. Actually, you should already go through with Alfred very well as a SAS programmer:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc print data=sashelp.class; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; where name=&amp;ldquo;Alfred&amp;rdquo;; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;As a clinical SAS programmer, I play with data, get acquaintance with the data and subjects and then subjects are no longer “subject”. They have identities and&amp;#160; Alfred is a 14 years old boy. I have such habit mostly because in clinical world, data are very expensive (not like the massive transaction data in financial industry) and should be took more care.&lt;/p&gt;
-
-&lt;p&gt;I dare say that “class” is the most famous SAS dataset in sashelp library and then in the SAS world. The first dataset used for demo is almost this “class”. I just did a quick Google search, “&lt;a href=&#34;http://www.google.com/search?hl=en&amp;source=hp&amp;biw=1111&amp;bih=561&amp;q=sas+sashelp.class&amp;btnG=Google+Search&amp;aq=f&amp;aqi=g10&amp;aql=&amp;oq=&amp;gs_rfai=#pq=+sas+sashelp.class&amp;hl=en&amp;cp=0&amp;gs_id=t&amp;xhr=t&amp;q=sas+sashelp.class&amp;qe=c2FzIHNhc2hlbHAuY2xhc3M&amp;qesig=-1hRQj8XDofruHqJt-7o1Q&amp;pkc=AFgZ2tkn99yjg_kNxO238PUOVve2MCFJUcgPCK-pXmvfyldpJvG0DchYcRuz_Azx9jhciBgWit8jDgrY6zs4T42InGlJtSBhGQ&amp;pf=p&amp;sclient=psy&amp;source=hp&amp;pbx=1&amp;oq=sas+sashelp.class&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=&amp;gs_upl=&amp;bav=on.2,or.r_gc.r_pw.r_cp.&amp;fp=265f5e3edf2ec82b&amp;biw=1166&amp;bih=665&amp;bs=1&#34; target=&#34;_blank&#34;&gt;sas sashelp.class&lt;/a&gt;” returns about 44,400 results. Hope you can find any other SAS datasets to beat it.&lt;/p&gt;
-
-&lt;p&gt;Alfred in “class” pops into my mind because today, I do find a strong candidate. In SAS 9.2 (and 9.3), the sashelp library has a new member, Iris. YES, it is the “&lt;a href=&#34;http://en.wikipedia.org/wiki/Iris_flower_data_set&#34; target=&#34;_blank&#34;&gt;Fisher Iris Flower Data&lt;/a&gt;”, which can be safely considered the most famous and most&amp;#160; used dataset in machine learning and data mining papers and statistical applications. Currently it has &lt;a href=&#34;http://www.google.com/search?hl=en&amp;source=hp&amp;biw=1111&amp;bih=561&amp;q=sas+sashelp.class&amp;btnG=Google+Search&amp;aq=f&amp;aqi=g10&amp;aql=&amp;oq=&amp;gs_rfai=#sclient=psy&amp;hl=en&amp;source=hp&amp;q=sas+sashelp.iris+&amp;pbx=1&amp;oq=sas+sashelp.iris+&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=e&amp;gs_upl=277383l277383l5l277945l1l1l0l0l0l0l0l0ll0l0&amp;bav=on.2,or.r_gc.r_pw.r_cp.&amp;fp=265f5e3edf2ec82b&amp;biw=1166&amp;bih=665&#34; target=&#34;_blank&#34;&gt;only 859 hits in Google&lt;/a&gt;, I think the number will reach high accompany with the wide use of SAS 9.2 and above, and to enforce my prediction, I will definitely play with the Iris data in the following future!&lt;/p&gt;
-</description>
+      <description>Tell me something about Alfred, male or female? age? height and weight?
+ Oracle database (version 9 and below) had a well known default demo account SCOTT with a password, TIGER (and TIGER was the name of the real person Bruce Scott ’s cat, see) and in this account, there are some tables named DEPT, EMP, BONUS and SALGRADE (you can read their meaning). Almost every Oracle DBA learn SQL using these database and an joke just says that in DBA’s meetings, people just&amp;#160; warm up saying “how about Smith?</description>
     </item>
     
     <item>
@@ -104,170 +45,12 @@
       <pubDate>Fri, 04 Dec 2009 09:33:00 +0000</pubDate>
       
       <guid>/2009/12/04/work-with-oracle-a-quick-sheet-for-sas-programmers/</guid>
-      <description>&lt;p&gt;(Note: All the followings are tested on Windows XP environment.)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;0. Install Oracle Database 10g Express Edition&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Fast (and free) to download, easy to deploy and simple to admin&amp;#8211;for learning and testing purpose, Oracle Database 10g Express Edition (Oracle Database XE, a mini version of Oracle Database 10&lt;em&gt;g&lt;/em&gt; Release 2) are strongly recommended:&lt;/p&gt;
-
-&lt;p&gt;0.1 Download it at &lt;a href=&#34;http://www.oracle.com/technology/software/products/database/xe/index.html&#34;&gt;its homepage&lt;/a&gt;(206MB);&lt;/p&gt;
-
-&lt;p&gt;0.2 Install it following default settings;&lt;/p&gt;
-
-&lt;p&gt;0.3 Unlock accounts for HR and SCOTT. In a windows DOS prompt, using the following scripts:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;pre&gt;sqlplus sys/&lt;span style=&#34;color:#ff0000;&#34;&gt;&lt;em&gt;YourSysPassword&lt;/em&gt; &lt;/span&gt;as sysdba&lt;/pre&gt;
-
-&lt;pre&gt;alter user HR account unlock&lt;/pre&gt;
-
-&lt;pre&gt;alter user HR identified by &lt;em&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;YourHRPassword&lt;/span&gt;&lt;/em&gt;&lt;/pre&gt;
-
-&lt;pre&gt;alter user SCOTT account unlock&lt;/pre&gt;
-
-&lt;pre&gt;alter user SCOTT identified by TIGER&lt;/pre&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;Or you can accomplish these tasks within the Oracle web application:&lt;/pre&gt;
-
-&lt;blockquote&gt;
-&lt;pre&gt;&lt;a title=&#34;http://localhost:8081/apex&#34; href=&#34;http://localhost:8081/apex&#34;&gt;http://localhost:8081/apex&lt;/a&gt;&lt;/pre&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;1. Connect Oracle using SAS libname engine&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;libname SCOTT oracle user=&amp;#8221;SCOTT&amp;#8221; password=&amp;#8221;TIGER&amp;#8221; path=&amp;#8217;xe&amp;#8217; ;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;pre&gt;Note: &lt;em&gt;xe&lt;/em&gt; is the default path for Oracle Database XE.&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;2. Connect Oracle using SQL Procedure Pass-Through Facility&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;proc sql ;&lt;br /&gt;
-connect to oracle as orcl&lt;br /&gt;
-(user=&amp;#8221;SCOTT&amp;#8221; password=&amp;#8221;TIGER&amp;#8221; path=&amp;#8217;xe&amp;#8217;);&lt;/em&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;_select *       
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;from connection to orcl_&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;&lt;em&gt; (&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;&lt;em&gt; &lt;strong&gt;SELECT …&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;&lt;em&gt;&lt;strong&gt;&lt;span class=&#34;Apple-style-span&#34; style=&#34;font-weight: normal; &#34;&gt; ) ;&lt;/span&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;_disconnect from orcl;&amp;lt;/p&amp;gt; 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;quit;&lt;/em&gt;&lt;/blockquote&gt;&lt;/p&gt;
-
-&lt;p&gt;Note: 1) In this approach, Oracle, instead of SAS, processes the SQL statement (i.e., you use the more powerful and flexible Oracle SQL syntax instead of SAS Proc SQL procedure for querying. For more, se&lt;em&gt;e &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lrcon/61722/HTML/default/a001044413.htm&#34;&gt;SAS Doc&lt;/a&gt;&lt;/em&gt;)&lt;em&gt;.&lt;/em&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;      __ 2) Your Oracle SQL codes should be placed in the &amp;lt;span style=&amp;quot;color:#ff0000;&amp;quot;&amp;gt;RED&amp;lt;/span&amp;gt; blocks, and end without a semicolon(;):
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_select *&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;from emp&lt;/em&gt;&lt;/blockquote&gt;&lt;/p&gt;
-
-&lt;p&gt;3) Only basic Oracle SQL statements (&lt;em&gt;select, create table&lt;/em&gt;, &amp;hellip;)can pass through this facility.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3. Load SAS datasets to Oracle database&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;proc copy in=sashelp&lt;br /&gt;
-out=scott;&lt;br /&gt;
-select class;&lt;br /&gt;
-run;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;4. Misc: Some differences between Oracle SQL and SAS Proc SQL&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.1 Table aliases&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Oracle: &lt;em&gt;from employees a;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;SAS: &lt;em&gt;from employees a;&lt;/em&gt; or&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;from employees &lt;span style=&#34;color:#ff0000;&#34;&gt;as&lt;/span&gt; a;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;4.2 Column aliases&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Oracle: don’t use single quotation marks(‘’).&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_select job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;as job&lt;/span&gt;, job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;job&lt;/span&gt;, job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;as &amp;#8220;job&amp;#8221; &lt;span style=&#34;color:#000000;&#34;&gt;,&lt;/span&gt; &lt;strike&gt;job&lt;em&gt;id &lt;span style=&#34;color:#ff0000;&#34;&gt;as ‘job’&lt;/span&gt;&lt;/strike&gt;&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;SAS:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_select job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;as job&lt;/span&gt;, job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;&amp;#8220;job&amp;#8221;&lt;/span&gt; , job_id &lt;span style=&#34;color:#ff0000;&#34;&gt;&amp;#8216;job&amp;#8217;&lt;/span&gt;, &lt;strike&gt;&lt;span style=&#34;color:#ff0000;&#34;&gt;job&lt;em&gt;id job&lt;/span&gt;&lt;/strike&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;4.3 Literal Character Strings&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Oracle: Date and character literal values must be enclosed within single quotation marks(‘’).&lt;/p&gt;
-
-&lt;p&gt;SAS: Use both single and double quotation marks.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.4 Order the null value&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Oracle: Null values are displayed last for ascending sequences and first for descending sequences.&lt;/p&gt;
-
-&lt;p&gt;SAS: Null values are displayed first for ascending sequences and last for descending sequences.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4.5 Nesting Group Functions&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_select max(avg(salary))&lt;br /&gt;
-from employees&lt;br /&gt;
-group by department&lt;em&gt;id&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;SAS log:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;ERROR: Summary functions nested in this way are not supported.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Optional approach for SAS:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_select max(avg) as max&lt;br /&gt;
-from(&lt;br /&gt;
-select avg(salary) as avg&lt;br /&gt;
-from employees&lt;br /&gt;
-group by department&lt;em&gt;id )&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;4.6 row number(_n_)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Oracle:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;select &lt;span style=&#34;color:#ff0000;&#34;&gt;rownum&lt;/span&gt;&lt;br /&gt;
-from employees&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;SAS:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;select &lt;span style=&#34;color:#ff0000;&#34;&gt;monotonic()&lt;/span&gt;&lt;br /&gt;
-from employees&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Note: &lt;span style=&#34;color:#ff0000;&#34;&gt;monotonic()&lt;/span&gt; is an undocumented function of SAS, &lt;em&gt;see&lt;span class=&#34;Apple-style-span&#34; style=&#34;font-style: normal; &#34;&gt;&lt;a href=&#34;http://www2.sas.com/proceedings/sugi29/040-29.pdf&#34;&gt;http://www2.sas.com/proceedings/sugi29/040-29.pdf&lt;/a&gt;&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>(Note: All the followings are tested on Windows XP environment.)
+0. Install Oracle Database 10g Express Edition
+Fast (and free) to download, easy to deploy and simple to admin&amp;#8211;for learning and testing purpose, Oracle Database 10g Express Edition (Oracle Database XE, a mini version of Oracle Database 10g Release 2) are strongly recommended:
+0.1 Download it at its homepage(206MB);
+0.2 Install it following default settings;
+0.3 Unlock accounts for HR and SCOTT.</description>
     </item>
     
   </channel>

@@ -2,18 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fisher on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/fisher/index.xml</link>
+    <link>/tags/fisher/</link>
     <description>Recent content in Fisher on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/fisher/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Sep 2011 21:13:42 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/fisher/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Fours Errors in SAS 9.2 Fisher&amp;#8217;s Iris Data in SASHELP Library</title>
-      <link>/2011/09/03/fours-errors-in-sas-9.2-fisher</link>
+      <link>/2011/09/03/fours-errors-in-sas-9.2-fisher#8217s-iris-data-in-sashelp-library/</link>
       <pubDate>Sat, 03 Sep 2011 21:13:42 +0000</pubDate>
       
-      <guid>/2011/09/03/fours-errors-in-sas-9.2-fisher</guid>
+      <guid>/2011/09/03/fours-errors-in-sas-9.2-fisher#8217s-iris-data-in-sashelp-library/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/09/iris.gif&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;iris&#34; border=&#34;0&#34; alt=&#34;iris&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/09/iris_thumb.gif&#34; width=&#34;240&#34; height=&#34;237&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;In the &lt;a href=&#34;http://www.jiangtanghu.com/blog/2011/08/31/who-is-alfred/&#34; target=&#34;_blank&#34;&gt;previous post&lt;/a&gt;, I just mentioned that &lt;a href=&#34;http://en.wikipedia.org/wiki/Iris_flower_data_set&#34; target=&#34;_blank&#34;&gt;Fisher&amp;#8217;s Iris Data&lt;/a&gt; is embedded officially in SASHELP library in SAS 9.2. Note that even in SAS 9.1.3, you can also find this data with several instances from some demos in user guide (just search &amp;ldquo;Iris&amp;rdquo; in &amp;ldquo;SAS Help and Documentation&amp;rdquo; accompany with you SAS product), for example, in &lt;a href=&#34;http://support.sas.com/onlinedoc/913/getDoc/en/imlug.hlp/graphstart_sect13.htm&#34; target=&#34;_blank&#34;&gt;SAS 9.1.3 IML&lt;/a&gt;.&lt;/p&gt;
@@ -50,32 +53,6 @@
 &lt;p&gt;iris_mm: &lt;font color=&#34;#ff0000&#34;&gt;UCI Version&lt;/font&gt; with MM as unit and attributes alike SASHELP.iris, &lt;font color=&#34;#ff0000&#34;&gt;SAS Version&lt;/font&gt;&lt;/p&gt;
 
 &lt;p&gt;bezdekiris_mm: &lt;font color=&#34;#ff0000&#34;&gt;Bezdek Version&lt;/font&gt; or &lt;font color=&#34;#ff0000&#34;&gt;Fisher Version&lt;/font&gt; with MM as unit and attributes alike SASHELP.iris, &lt;font color=&#34;#ff0000&#34;&gt;SAS Version&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;filename iris URL &amp;ldquo;&lt;/font&gt;&lt;a href=&#34;http://archive.ics.uci.edu/ml/machine-learning-databases/iris/&amp;quot;;&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;http://archive.ics.uci.edu/ml/machine-learning-databases/iris/&amp;ldquo;;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%macro getIris(input); &lt;br /&gt;data &amp;amp;input._uci; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; length _Species $15.; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; length&amp;#160; Species $10.; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; infile iris(&amp;amp;input..data) dlm=&amp;#8217;,&amp;#8217;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input _SepalLength _SepalWidth _PetalLength _PetalWidth _Species $; &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; Species=propcase(scan(_Species,2)); &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; array iris {*}&amp;#160; _SepalLength _SepalWidth _PetalLength _PetalWidth; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; array iris_mm{4} SepalLength&amp;#160; SepalWidth&amp;#160; PetalLength&amp;#160; PetalWidth; &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; do i=1 to dim(iris); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; iris_mm{i}=iris{i}*10; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; end; &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; drop i; &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; label&amp;#160;&amp;#160; _sepallength=&amp;#8217;Sepal Length (cm)&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; _sepalwidth =&amp;#8217;Sepal Width (cm)&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; _petallength=&amp;#8217;Petal Length (cm)&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; _petalwidth =&amp;#8217;Petal Width (cm)&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; _Species =&amp;#8217;Iris Species&amp;#8217;; &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; label&amp;#160;&amp;#160; sepallength=&amp;#8217;Sepal Length (mm)&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; sepalwidth =&amp;#8217;Sepal Width (mm)&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; petallength=&amp;#8217;Petal Length (mm)&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; petalwidth =&amp;#8217;Petal Width (mm)&amp;#8217; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Species =&amp;#8217;Iris Species&amp;#8217;; &lt;br /&gt;run; &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;data &amp;amp;input._mm (label=&amp;ldquo;Fisher&amp;#8217;s Iris Data (1936)&amp;ldquo;); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set &amp;amp;input._uci; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; drop _:; &lt;br /&gt;run; &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%mend getIris; &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;%getIris(iris) &lt;br /&gt;%getIris(bezdekIris)&lt;/font&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     

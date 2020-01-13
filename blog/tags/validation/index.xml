@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Validation on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/validation/index.xml</link>
+    <link>/tags/validation/</link>
     <description>Recent content in Validation on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/validation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 31 Mar 2012 16:58:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/validation/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>OpenCDISC Validator V1.3: An Unboxing Review (1): counting issue</title>
@@ -14,120 +17,7 @@
       <pubDate>Sat, 31 Mar 2012 16:58:00 +0000</pubDate>
       
       <guid>/2012/03/31/opencdisc-validator-v1.3-an-unboxing-review-1-counting-issue/</guid>
-      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/p&gt;
-
-&lt;p&gt;
-  The lasted &lt;a href=&#34;http://www.opencdisc.org&#34; target=&#34;_blank&#34;&gt;OpenCDISC&lt;/a&gt; Validator version 1.3 was released at 29 March, 2012 (btw, there is a typo in the Line 1 of &lt;em&gt;CHANGELOG.txt&lt;/em&gt; within the package: “2012” not “2011”). &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/19/github-and-weekend-programming/&#34; target=&#34;_blank&#34;&gt;As usual&lt;/a&gt;, you can submit the following SAS scripts to get some basic information(remember to customize your directory):
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;
-    &lt;font face=&#34;Courier New&#34;&gt;filename CDISC url &#34;&lt;/font&gt;&lt;a href=&#34;https://raw.github.com/Jiangtang/Programming-SAS/master/Rules_Count_OpenCDISC_XML.sas&amp;quot;;&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;https://raw.github.com/Jiangtang/Programming-SAS/master/Rules_Count_OpenCDISC_XML.sas&#34;;&lt;/font&gt;&lt;/a&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &lt;font face=&#34;Courier New&#34;&gt;%include CDISC;&lt;/font&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &lt;font face=&#34;Courier New&#34;&gt;%Rules_Count_OpenCDISC_XML(dir=C:OpenCDISC1.3compareopencdisc-validator_1.3config)&lt;/font&gt;
-  &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;
-  and you get a summary of validation rules of OpenCDISC Validator V1.3 (&lt;strong&gt;499&lt;/strong&gt; total unique rules):
-&lt;/p&gt;
-
-&lt;p&gt;
-  &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/OpenCDISC_V1.3.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;OpenCDISC_V1.3&#34; border=&#34;0&#34; alt=&#34;OpenCDISC_V1.3&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/OpenCDISC_V1.3_thumb.png&#34; width=&#34;444&#34; height=&#34;312&#34; /&gt;&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-  where
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;
-    AD: Analytical Data &lt;br /&gt;CT: Controlled Terminology &lt;br /&gt;DD: Data Definition &lt;br /&gt;OD: Operation Data Model &lt;br /&gt;SD: Study Data &lt;br /&gt;SE: &lt;a href=&#34;http://www.cdisc.org/send&#34; target=&#34;_blank&#34;&gt;SEND&lt;/a&gt; data
-  &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;
-  As comparison, a summary of V1.2.1 (&lt;strong&gt;385&lt;/strong&gt; total unique rules) posted before:
-&lt;/p&gt;
-
-&lt;p&gt;
-  &lt;img style=&#34;margin: 3px auto 5px; display: block; float: none&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/OC_by_model.png&#34; width=&#34;446&#34; height=&#34;292&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-  The most significant enhancement of V1.3 against V1.2.1 is the adding of rules for &lt;a href=&#34;http://www.cdisc.org/stuff/contentmgr/files/0/3fa5f30f40ce5ecc7b3f91e558b55f73/misc/amendment_1_to_study_data_tabulation_model_v1_2_and_sdtmig_v3_1_2_final_2011_12_14.pdf&#34; target=&#34;_blank&#34;&gt;SDTM 3.1.2 with Amendment 1&lt;/a&gt; and &lt;a href=&#34;http://www.cdisc.org/send&#34; target=&#34;_blank&#34;&gt;SEND 3.0&lt;/a&gt;. You can see there are also some changes among others modules, such ADaM 1.0 and SDTM 3.1.2. The OpenCDISC release newsletter said that there are &lt;strong&gt;43&lt;/strong&gt; new SDTM rules added. Well, rules deleted, rules added, rules commented, we now have some arithmetical discrepancies.
-&lt;/p&gt;
-
-&lt;p&gt;
-  The scripts above capture all instances of validation rule IDs (also delete some commented for example in &lt;em&gt;config-&lt;strong&gt;define&lt;/strong&gt;-1.0.xml&lt;/em&gt;, four rules commented: OD0004, OD0005, OD0007, OD0008). We can also double validate the counts manually:
-&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    copy all contents for example in &lt;a href=&#34;http://www.opencdisc.org/projects/validator/cdisc-sdtm-3.1.2-validation-rules&#34; target=&#34;_blank&#34;&gt;SDTM 3.1.2&lt;/a&gt; in its website into Notepad++ (where line numbers displayed)
-  &lt;/li&gt;
-  &lt;li&gt;
-    delete all unnecessary entries
-  &lt;/li&gt;
-  &lt;li&gt;
-    then the last line number is the total number of the rules (227 in this case).
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-  Another way to check the rules is to &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/11/xml/&#34; target=&#34;_blank&#34;&gt;open the XML configuration files using a web browser&lt;/a&gt;:
-&lt;/p&gt;
-
-&lt;p&gt;
-  &lt;img style=&#34;margin: 3px auto 5px; display: block; float: none&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/XML_IE1.png&#34; width=&#34;455&#34; height=&#34;405&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-  Theoretically the three ways are identical in counting, but there is an open bug in the style sheet file in …OpenCDISC1.3opencdisc-validatorconfigresourcesxsl&lt;strong&gt;config.xsl&lt;/strong&gt;, Line 175:
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;
-    &lt;font face=&#34;Courier New&#34;&gt;&lt;xsl:template match=&#34;val:Unique|val:Condition|val:Match|val:Regex&lt;/font&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &lt;font face=&#34;Courier New&#34;&gt;|val:Required|val:Lookup|val:Metadata&#34;&gt;&lt;/font&gt;
-  &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;
-  There is no “val:Find” to render all the Find validation rules (AD0061 in config-&lt;strong&gt;adam&lt;/strong&gt;-1.0.xml) so all Find validators are not displayed. A suggested workaround is just to add “val:Find” to the file:
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;
-    &lt;font face=&#34;Courier New&#34;&gt;&lt;xsl:template match=&#34;val:Unique|val:Condition|val:Match|val:Regex&lt;/font&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &lt;font face=&#34;Courier New&#34;&gt;|val:Required|val:Lookup|val:Metadata&lt;font color=&#34;#ff0000&#34;&gt;|val:Find&lt;/font&gt;&#34;&gt;&lt;/font&gt;
-  &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;
-  Actually in the “&lt;em&gt;&lt;a href=&#34;http://www.opencdisc.org/projects/validator/opencdisc-validation-framework#validation-rules&#34; target=&#34;_blank&#34;&gt;OpenCDISC Validation Framework&lt;/a&gt;&lt;/em&gt;” page of OpenCDISC website, the “Find”validator is not &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/29/not-documented-not-exist/&#34; target=&#34;_blank&#34;&gt;documented&lt;/a&gt; yet.
-&lt;/p&gt;
-
-&lt;p&gt;
-  &lt;&lt;em&gt;to be continued&lt;/em&gt;&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-  &lt;/font&gt;
-&lt;/p&gt;
-</description>
+      <description>The lasted OpenCDISC Validator version 1.3 was released at 29 March, 2012 (btw, there is a typo in the Line 1 of CHANGELOG.txt within the package: “2012” not “2011”). As usual, you can submit the following SAS scripts to get some basic information(remember to customize your directory):   filename CDISC url &#34;https://raw.github.com/Jiangtang/Programming-SAS/master/Rules_Count_OpenCDISC_XML.sas&#34;;  %include CDISC;  %Rules_Count_OpenCDISC_XML(dir=C:OpenCDISC1.3compareopencdisc-validator_1.3config)   and you get a summary of validation rules of OpenCDISC Validator V1.</description>
     </item>
     
   </channel>

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sgf on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/sgf/index.xml</link>
-    <description>Recent content in Sgf on Jiangtang Hu | 胡江堂</description>
+    <title>SGF on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/sgf/</link>
+    <description>Recent content in SGF on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/sgf/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Mar 2011 21:53:48 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/sgf/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Sail for Las Vegas!</title>
@@ -14,26 +17,14 @@
       <pubDate>Sat, 19 Mar 2011 21:53:48 +0000</pubDate>
       
       <guid>/2011/03/19/sail-for-las-vegas/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;look to the master,&lt;/p&gt;
-
-&lt;p&gt;follow the master,&lt;/p&gt;
-
-&lt;p&gt;walk with the master,&lt;/p&gt;
-
-&lt;p&gt;see through the master,&lt;/p&gt;
-
-&lt;p&gt;become the master.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The SAS Global Forum 2011 (Apr 4-7, Las Vegas) papers are now available on line:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://support.sas.com/resources/papers/proceedings11/TOC.html&#34;&gt;http://support.sas.com/resources/papers/proceedings11/TOC.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;There are lots of Web 2.0 elements in this year’s SGF, including a Twitter hashtag &lt;a href=&#34;http://twitter.com/SASGlobalForum&#34; target=&#34;_blank&#34;&gt;#SASGF11&lt;/a&gt;, &lt;a href=&#34;www.facebook.com/SASGlobalForum&#34; target=&#34;_blank&#34;&gt;a Facebook account&lt;/a&gt;, &lt;a href=&#34;blogs.sas.com/sgf&#34; target=&#34;_blank&#34;&gt;a blog&lt;/a&gt;, &lt;a href=&#34;http://www.linkedin.com/groups/SAS-Global-Forum-2011-2993852&#34; target=&#34;_blank&#34;&gt;a LinkedIn group&lt;/a&gt;, and of course, &lt;a href=&#34;sasCommunity.org&#34; target=&#34;_blank&#34;&gt;sasCommunity.org&lt;/a&gt;. I will give a talk at this conference (&lt;a href=&#34;http://sgf2011.confnav.com/sgf2011/web/sessions/detail.html?id=20101023091009653775000000&#34; target=&#34;_blank&#34;&gt;Tuesday, April 5, 05:30- 05:50 PM, Promenade Level, Neopolitan IV&lt;/a&gt;) to discuss how to get informed with little efforts from such multiple channels for SAS programmers using Gmail and Good Reader to create a personal information portal. That is part of my first SAS paper, _&lt;a href=&#34;http://support.sas.com/resources/papers/proceedings11/211-2011.pdf&#34; target=&#34;_blank&#34;&gt;Work Smarter Rather than Harder- Tools for Growing up A SAS® Programmer&lt;/a&gt;._&lt;/p&gt;
-
-&lt;p&gt;It will also be my first presence in SGF. Just can’t wait to walk with SAS masters there!&lt;/p&gt;
-</description>
+      <description>look to the master,
+follow the master,
+walk with the master,
+see through the master,
+become the master.
+ The SAS Global Forum 2011 (Apr 4-7, Las Vegas) papers are now available on line:
+http://support.sas.com/resources/papers/proceedings11/TOC.html
+There are lots of Web 2.0 elements in this year’s SGF, including a Twitter hashtag #SASGF11, a Facebook account, a blog, a LinkedIn group, and of course, sasCommunity.org. I will give a talk at this conference (Tuesday, April 5, 05:30- 05:50 PM, Promenade Level, Neopolitan IV) to discuss how to get informed with little efforts from such multiple channels for SAS programmers using Gmail and Good Reader to create a personal information portal.</description>
     </item>
     
   </channel>

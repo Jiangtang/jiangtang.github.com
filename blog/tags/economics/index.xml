@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Economics on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/economics/index.xml</link>
-    <description>Recent content in Economics on Jiangtang Hu | 胡江堂</description>
+    <title>economics on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/economics/</link>
+    <description>Recent content in economics on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/economics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Mar 2012 01:29:47 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/economics/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>US Post Beats Menu Cost</title>
@@ -14,52 +17,8 @@
       <pubDate>Sat, 24 Mar 2012 01:29:47 +0000</pubDate>
       
       <guid>/2012/03/24/us-post-beats-menu-cost/</guid>
-      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;table border=&#34;0&#34; cellspacing=&#34;0&#34; cellpadding=&#34;2&#34; width=&#34;400&#34;&gt;
-  &lt;tr&gt;
-    &lt;td valign=&#34;top&#34; width=&#34;200&#34;&gt;
-      &lt;p&gt;
-        &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/stamp_5c.jpg&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px 0px 5px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;stamp_5c&#34; border=&#34;0&#34; alt=&#34;stamp_5c&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/stamp_5c_thumb.jpg&#34; width=&#34;196&#34; height=&#34;235&#34; /&gt;&lt;/a&gt;
-      &lt;/p&gt;
-    &lt;/td&gt;
-    
-    &lt;td valign=&#34;top&#34; width=&#34;200&#34;&gt;
-      &lt;p&gt;
-        &lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/stamp2011.jpg&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px 0px 5px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;stamp2011&#34; border=&#34;0&#34; alt=&#34;stamp2011&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/stamp2011_thumb.jpg&#34; width=&#34;201&#34; height=&#34;236&#34; /&gt;&lt;/a&gt;
-      &lt;/p&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;One of the interesting observations in my first few months in US: there is no price printed in the new mail stamps!&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It is interesting because as a former student of economics, I think US Post system did a nice attempt to beat the so called “&lt;a href=&#34;http://en.wikipedia.org/wiki/Menu_cost&#34; target=&#34;_blank&#34;&gt;menu cost&lt;/a&gt;” which should honor to Harvard economist &lt;a href=&#34;http://en.wikipedia.org/wiki/N._Gregory_Mankiw&#34; target=&#34;_blank&#34;&gt;Mankiw&lt;/a&gt;. Literally the menu cost is the cost of a restaurant to print new menus due to price adjustment. In this story, it is the cost of US Post to print new stamps with adjusted price.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/US_CPI.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;US_CPI&#34; border=&#34;0&#34; alt=&#34;US_CPI&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/US_CPI_thumb.png&#34; width=&#34;459&#34; height=&#34;360&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Why US Post need to print new stamps with new price? It is because of the inflation! I took a quick search, the first class postage rate was 5 cents in 1963 and never changed until 1968. But during this 5 years, the CPI (&lt;a href=&#34;http://en.wikipedia.org/wiki/Consumer_price_index&#34; target=&#34;_blank&#34;&gt;consumer price index&lt;/a&gt;, one of the robust measures of inflation; data see &lt;a href=&#34;http://www.johnstonsarchive.net/other/postage.html&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;, codes see below) increased from 30.6 to 33.4, which means, the actual price (see &lt;font color=&#34;#ff0000&#34;&gt;red&lt;/font&gt; line below) of a postage in 1967 was even less than in 1963! &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/US_Postage_Rates.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;US_Postage_Rates&#34; border=&#34;0&#34; alt=&#34;US_Postage_Rates&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/03/US_Postage_Rates_thumb.png&#34; width=&#34;484&#34; height=&#34;384&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Why US Post didn’t adjust the postage rate accordingly in these years? In a free market, prices are supposed to be adjusted immediately upon market demands and supplies. &lt;a href=&#34;http://en.wikipedia.org/wiki/New_Keynesian_economics&#34; target=&#34;_blank&#34;&gt;A school of economics&lt;/a&gt; argues that even in free markets, the prices can be sticky. One of causes of such price stickiness is the menu cost. In this case, US Post knew that the actual cost of posting a mail was up, but it still didn’t will to print new stamps with new price due to printing cost itself (suppose there were lots of stocks) and even the cost to inform people(and such small costs).&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Now US Post doesn’t want to lose money by supplying mail services with a price under market value while also want to avoid so called menu cost, then a stamp without price printed seems good enough to solve such dilemma!&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;/&lt;em&gt;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8211;codes for graphics go here and it’s nice to post the first SGPLOT in this blog while watching NCAA game of NCSU vs Kansas&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8211;&lt;/em&gt;/&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;data rate; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; input Year Nominal Real CPI; &lt;br /&gt;datalines; &lt;br /&gt;1866&amp;#160;&amp;#160;&amp;#160; 3&amp;#160;&amp;#160;&amp;#160; 44.0&amp;#160;&amp;#160;&amp;#160; 15.4 &lt;br /&gt;1867&amp;#160;&amp;#160;&amp;#160; 3&amp;#160;&amp;#160;&amp;#160; 47.4&amp;#160;&amp;#160;&amp;#160; 14.3 &lt;br /&gt;1868&amp;#160;&amp;#160;&amp;#160; 3&amp;#160;&amp;#160;&amp;#160; 49.1&amp;#160;&amp;#160;&amp;#160; 13.8 &lt;br /&gt;&lt;em&gt;(data see &lt;/em&gt;&lt;a href=&#34;http://www.johnstonsarchive.net/other/postage.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;here&lt;/em&gt;&lt;/a&gt;&lt;em&gt;)&lt;/em&gt; &lt;br /&gt;;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc means data=rate; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; var Nominal Real CPI; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc sgplot data=rate; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; title &amp;ldquo;History of United States CPI&amp;rdquo;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; series x=year y=cpi; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; xaxis values= (1870 to 2010 by 10); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; refline 100 / transparency = 0.5; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font face=&#34;Courier New&#34;&gt;proc sgplot data=rate; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; title &amp;#8216;History of United States Postage Rates&amp;#8217;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; series x=Year y=Nominal; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; series x=Year y=Real; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; xaxis values= (1870 to 2010 by 10); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; yaxis label=&amp;#8217;Rates&amp;#8217;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; refline 10 44 / transparency = 0.5&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; label = (&amp;#8216;Nominal (Mean)&amp;#8217; &amp;#8216;Real (Mean)&amp;#8217;); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&lt;/font&gt;&lt;/p&gt;
-</description>
+      <description>One of the interesting observations in my first few months in US: there is no price printed in the new mail stamps!
+It is interesting because as a former student of economics, I think US Post system did a nice attempt to beat the so called “menu cost” which should honor to Harvard economist Mankiw. Literally the menu cost is the cost of a restaurant to print new menus due to price adjustment.</description>
     </item>
     
   </channel>

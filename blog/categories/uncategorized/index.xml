@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Uncategorized on Jiangtang Hu | 胡江堂</title>
-    <link>/categories/uncategorized/index.xml</link>
+    <link>/categories/uncategorized/</link>
     <description>Recent content in Uncategorized on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/categories/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Oct 2012 22:19:47 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Current Working Folder in SAS</title>
@@ -14,71 +17,9 @@
       <pubDate>Mon, 08 Oct 2012 22:19:47 +0000</pubDate>
       
       <guid>/2012/10/08/current-working-folder-in-sas/</guid>
-      <description>
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/whereamI.jpg&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border: 0px;&#34; title=&#34;whereamI&#34; alt=&#34;whereamI&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/10/whereamI_thumb.jpg&#34; width=&#34;377&#34; height=&#34;370&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;The concept of &lt;/span&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/hostwin/63047/HTML/default/viewer.htm#p16esisc4nrd5sn1ps5l6u8f79k6.htm&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;current working directory in SAS&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;font-size: xx-small;&#34;&gt;is not as important as it sounds. Most SAS users point to file reference (fileref) and library reference (libname, a “namespace”-like mechanism to access files ), which are much convenient in large project with multiple folders.&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Sometimes I push files to the current folder in relatively small task because I don’t want to&lt;/span&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;jump to &lt;em&gt;C:\Users\jhu\appdata\Local\Temp\SAS\Temporary Files_TD2820_&lt;/em&gt;like folder to get the temporary datasets (in WORK library) &lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;hard code a folder to receive ODS outputs.&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;The demo codes(a SAS system autocall macro %xlog used):&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;/&lt;em&gt;display current directory in LOG window&lt;/em&gt;/&lt;br /&gt; %&lt;span style=&#34;color: #ff0000;&#34;&gt;xlog&lt;/span&gt;(cd);&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;/*change current working directory */&lt;br /&gt; x &amp;#8220;cd a:\test&amp;#8221;;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;/&lt;em&gt;display current directory in LOG window&lt;/em&gt;/&lt;br /&gt; %xlog(cd);&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;/*output a dataset in current directory */&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;data &amp;#8220;iris&amp;#8221;;&lt;/span&gt;&lt;br /&gt; set sashelp.iris;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;/*output a pdf file in current directory */&lt;br /&gt; ods pdf &lt;span style=&#34;color: #ff0000;&#34;&gt;file=&amp;#8221;iris.pdf&amp;#8221;;&lt;/span&gt;&lt;br /&gt; proc print data=&amp;#8221;iris&amp;#8221;;&lt;br /&gt; run;&lt;br /&gt; ods pdf close;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;/*show files in current directory */&lt;br /&gt; %xlog(dir);&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;And the LOG window may like:&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: Consolas; font-size: xx-small;&#34;&gt;Path&lt;br /&gt; &amp;#8212;-&lt;br /&gt; C:\Users\jhu&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: Consolas; font-size: xx-small;&#34;&gt;Path&lt;br /&gt; &amp;#8212;-&lt;br /&gt; A:\test&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;span style=&#34;font-family: Consolas;&#34;&gt;    Directory: A:test&lt;/span&gt;&lt;br /&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Consolas; font-size: xx-small;&#34;&gt;Mode        LastWriteTime   Length Name&lt;br /&gt; &amp;#8212;-        &amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-   &amp;#8212;&amp;#8212; &amp;#8212;-&lt;br /&gt; -a&amp;#8212; 10/8/2012  12:49 PM   113665 iris.pdf&lt;br /&gt; -a&amp;#8212; 10/8/2012  12:49 PM    13312 iris.sas7bdat&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&#34;notes&#34;&gt;NOTES:&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;You can get autocall macro %xlog in (if SAS 9.3 in Windows 7)&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;C:\Program Files\SASHome\SASFoundation\9.3&amp;lt;span style=&amp;ldquo;color: #ff0000;&amp;ldquo;&amp;gt;core\sasmacro&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;An equivalent macro &lt;span style=&#34;color: #ff0000;&#34;&gt;%xlst&lt;/span&gt; generates the shell command outputs to LIST window.&lt;/span&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;If prefer Windows Powershell, a similar macro can be used (put it to autocall if needed):&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: xx-small;&#34;&gt;%macro &lt;span style=&#34;color: #ff0000;&#34;&gt;pslog&lt;/span&gt;(cmd);&lt;br /&gt; option nonotes;&lt;br /&gt; filename pslogcmd pipe &amp;#8220;&lt;span style=&#34;color: #ff0000;&#34;&gt;powershell&lt;/span&gt; &amp;amp;cmd&amp;#8221;;&lt;br /&gt; data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; file log;&lt;br /&gt; infile pslogcmd;&lt;br /&gt; input;&lt;br /&gt; put &lt;em&gt;INFILE&lt;/em&gt;;&lt;br /&gt; run;&lt;br /&gt; option notes;&lt;br /&gt; %mend pslog;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;Test the following commands:&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-size: xx-small;&#34;&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;%pslog(gl);&lt;br /&gt; %pslog(get-location);&lt;br /&gt; %pslog(get-host)&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>The concept of current working directory in SAS is not as important as it sounds. Most SAS users point to file reference (fileref) and library reference (libname, a “namespace”-like mechanism to access files ), which are much convenient in large project with multiple folders.
+Sometimes I push files to the current folder in relatively small task because I don’t want to
+ jump to C:\Users\jhu\appdata\Local\Temp\SAS\Temporary Files_TD2820_like folder to get the temporary datasets (in WORK library)  hard code a folder to receive ODS outputs.</description>
     </item>
     
     <item>
@@ -87,28 +28,13 @@
       <pubDate>Sun, 19 Feb 2012 16:17:32 +0000</pubDate>
       
       <guid>/2012/02/19/github-and-weekend-programming/</guid>
-      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;https://github.com/yihui&#34; target=&#34;_blank&#34;&gt;Yihui&lt;/a&gt; of Iowa State just texted me that &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt; is programmers’ Facebook. Inspired by him(great thanks!), I also begin to play with GitHub now:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/Jiangtang&#34;&gt;&lt;font size=&#34;1&#34;&gt;https://github.com/Jiangtang&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Currently I only created one repo as &lt;a href=&#34;https://github.com/Jiangtang/Programming-SAS&#34; target=&#34;_blank&#34;&gt;personal SAS code repository&lt;/a&gt;. To kill weekend time, I uploaded piece of codes to &lt;a href=&#34;https://github.com/Jiangtang/Programming-SAS/blob/master/Rules_Count_OpenCDISC_XML.sas&#34; target=&#34;_blank&#34;&gt;count the OpenCDISC validation rules by models&lt;/a&gt;. To use it:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;filename CDISC url “&lt;a href=&#34;https://raw.github.com/Jiangtang/Programming-SAS/master/Rules_Count_OpenCDISC_XML.sas&#34;&gt;https://raw.github.com/Jiangtang/Programming-SAS/master/Rules_Count_OpenCDISC_XML.sas&lt;/a&gt;”;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;%include CDISC;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;%Rules_Count_OpenCDISC_XML(dir=C:tempOpenCDISCsoftwareopencdisc-validatorconfig)&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;while get:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/OC_by_model.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;OC_by_model&#34; border=&#34;0&#34; alt=&#34;OC_by_model&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/02/OC_by_model_thumb.png&#34; width=&#34;360&#34; height=&#34;238&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Happy weekend and happy programming.&lt;/font&gt;&lt;/p&gt;
-</description>
+      <description>Yihui of Iowa State just texted me that GitHub is programmers’ Facebook. Inspired by him(great thanks!), I also begin to play with GitHub now:
+ https://github.com/Jiangtang
+ Currently I only created one repo as personal SAS code repository. To kill weekend time, I uploaded piece of codes to count the OpenCDISC validation rules by models. To use it:
+ filename CDISC url “https://raw.github.com/Jiangtang/Programming-SAS/master/Rules_Count_OpenCDISC_XML.sas”;
+%include CDISC;
+%Rules_Count_OpenCDISC_XML(dir=C:tempOpenCDISCsoftwareopencdisc-validatorconfig)
+ while get:</description>
     </item>
     
   </channel>

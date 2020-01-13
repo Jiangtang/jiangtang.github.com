@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Macro Array on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/macro-array/index.xml</link>
-    <description>Recent content in Macro Array on Jiangtang Hu | 胡江堂</description>
+    <title>macro array on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/macro-array/</link>
+    <description>Recent content in macro array on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/macro-array/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Nov 2013 10:10:21 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/macro-array/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>SAS Data Driven Programming: My 4 Favorite Techniques</title>
@@ -14,89 +17,8 @@
       <pubDate>Thu, 07 Nov 2013 10:10:21 +0000</pubDate>
       
       <guid>/2013/11/07/sas-data-driven-programming-my-4-favorite-techniques/</guid>
-      <description>
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I use relatively fixed patterns in my SAS&amp;#160; programming life. For so called data driven programming (or dynamic programming), I used the following 4 techniques, chronologically:&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;macro array &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;call execute &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;list processing &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;for each loop &lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For a quick demo, I will start with a simple scenario in which the data set sashelp.zipcode should be spitted to pieces of datasets by states (in real projects, the codes would be more complicated but share the simple atom structure). For example, the dataset for North Carolina:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data zipcode_NC; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set sashelp.zipcode(where=(statecode=&amp;ldquo;NC&amp;rdquo;)); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;There are 50 states plus territories like Puerto Rico in the source data, so you won’t just use a simple string replacement by macro variable. My first SAS dynamic programming technique is using macro array, learned from Chapter 6 of &lt;em&gt;Carpenter&amp;#8217;s Complete Guide to the SAS Macro Language&lt;/em&gt;:&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;1-macro-array&#34;&gt;1. Macro array&lt;/h5&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc sort data=sashelp.zipcode (keep=statecode) nodupkey out=statecode; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; by statecode; &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set statecode end=eof; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; i+1; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; II=left(put(i,2.)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; call symputx(&amp;#8216;statecode&amp;#8217;||II,statecode); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; if eof then call symputx(&amp;#8216;n&amp;#8217;,II); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%macro doit; &lt;br /&gt;%do i=1 %to &amp;n; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; data class_&amp;amp;&amp;amp;statecode&amp;i; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; set sashelp.zipcode(where=(statecode=&amp;rdquo;&amp;amp;&amp;amp;statecode&amp;amp;i&amp;rdquo;)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; run; &lt;br /&gt;%end; &lt;br /&gt;%mend; &lt;br /&gt;%doit&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Macro array is still my favorite and I use it everywhere. It creates multiple macros variables by sequence (macro array) from the control file, then apply a do loop over each macro variable to get job done: straightforward while robust(verbose somehow).&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;2-call-execute&#34;&gt;2. Call Execute&lt;/h5&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Call Execute is a power tool. It will make your codes much concise and efficient. I love it but with little bit of reluctance: regardless the potential timing issue, for me, it is not aesthetically readable in most cases. To make a relatively enjoyable Call Execute, I prefer to enclose the atom part of the program to a macro then use a single Call Execute to resolve it:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%macro break(statecode); &lt;br /&gt;&amp;#160;&amp;#160; data class_&amp;statecode; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; set sashelp.zipcode(where=(statecode=&amp;rdquo;&amp;amp;statecode&amp;rdquo;)); &lt;br /&gt;&amp;#160;&amp;#160; run; &lt;br /&gt;%mend;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt;; &lt;br /&gt;&amp;#160; set statecode; &lt;br /&gt;&amp;#160; call execute(&amp;#8216;%break(&amp;#8216;||trim(statecode)||&amp;#8217;)&amp;#8217;); &lt;br /&gt;run;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Heavily interacting with data step will just make Call Execute like black magic (this snippet comes from Mike Molter’s 2013 paper, &lt;em&gt;&lt;a href=&#34;http://www.lexjansen.com/pharmasug/2013/BB/PharmaSUG-2013-BB08.pdf&#34;&gt;Coding For the Long Haul With Managed Metadata and Process Parameters&lt;/a&gt;&lt;/em&gt;; sorry Mike, I know it works):&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;data &lt;em&gt;null&lt;/em&gt; ; &lt;br /&gt; length lastds $4 ; &lt;br /&gt; set meta2 end=thatsit ; &lt;br /&gt; if &lt;em&gt;n&lt;/em&gt; eq 1 then do; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; call execute (&amp;#8216;proc sql; &amp;#8216;) ; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160; lastds=&amp;#8217;ae&amp;#8217;; &lt;br /&gt; end; &lt;br /&gt; retain lastds ; &lt;br /&gt;&amp;#160; &lt;br /&gt;&lt;/font&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;&lt;font color=&#34;#ff0000&#34;&gt; call execute (&amp;#8216;create table &amp;#8216;||data set||&amp;#8217; as select a.*,&amp;#8217;||left(keepvars)||&amp;#8217; from &lt;br /&gt;&amp;#8216;||lastds a left join suppae_tran(where=(idvar eq &amp;ldquo;&amp;#8217;||compress(idvar)||&amp;#8217;&amp;rdquo;)) b on &lt;br /&gt;a.usubjid=b.usubjid and a.&amp;#8217;||compress(idvar)||&amp;#8217;=&amp;#8217;||left(joincond)||&amp;#8217;;&amp;#8217;);&lt;/font&gt; &lt;br /&gt;&amp;#160; &lt;br /&gt; if thatsit then call execute(&amp;#8216; quit; &amp;#8216;) ; &lt;br /&gt; lastds=data set ; &lt;br /&gt;run;&lt;/font&gt; &lt;br /&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Well there are always trade-offs. Separating Call Execute with data steps (my preference) will make it much more readable, but it is not cool anymore(compared to Mike’s style)! Coolness deserves the efforts and I know it’s part of programmers proud.&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;3-list-processing&#34;&gt;3. List Processing&lt;/h5&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I started to use list in SAS since 2011 and now I have a big collection:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/Jiangtang/SAS_ListProcessing&#34;&gt;&lt;font size=&#34;1&#34;&gt;https://github.com/Jiangtang/SAS_ListProcessing&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Macro array approach will create series of macro variables, while in list method, a single macro variable will be generated which hold series of values:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;proc sql noprint; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; select statecode into:statecode separated by &amp;ldquo; &amp;rdquo; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; from statecode &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; ; &lt;br /&gt;quit;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;%macro doit; &lt;br /&gt;%do i=1 %to %sysfunc(countw(&amp;amp;statecode)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %let a=%sysfunc(scan(&amp;amp;statecode,&amp;amp;i,&amp;#8217; &amp;#8216;)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; data class_&amp;a; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; set sashelp.zipcode(where=(statecode=&amp;rdquo;&amp;amp;a&amp;rdquo;)); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; run; &lt;br /&gt;%end; &lt;br /&gt;%mend; &lt;br /&gt;%doit&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h5 id=&#34;4-for-each&#34;&gt;4. For each&lt;/h5&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;A foreach operation is dream for SAS programmers. Now I have one, for.sas by Jim Anderson:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;filename list url &amp;ldquo;&lt;/font&gt;&lt;a href=&#34;https://raw.github.com/Jiangtang/SAS_ListProcessing/master/_ListProcessing&amp;quot;;&#34;&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;https://raw.github.com/Jiangtang/SAS_ListProcessing/master/_ListProcessing&amp;rdquo;;&lt;/font&gt;&lt;/a&gt;        &lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&lt;br /&gt;%inc list;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;font face=&#34;Courier New&#34;&gt;data %for(statecode, in=[statecode], do=%nrstr(class_&amp;amp;statecode(where=(statecode=&amp;rdquo;&amp;amp;statecode&amp;rdquo;)))); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; set sashelp.zipcode; &lt;br /&gt;run;&lt;/font&gt; &lt;br /&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Actually this %for is much more versatile than it appears in this simple demo. It can proceeds sequentially against SAS datasets, value list, number range, along with dataset contents and directory contents. Check it out and you will definitely love it:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.sascommunity.org/wiki/Streamlining_Data-Driven_SAS_With_The_%25FOR_Macro&#34; title=&#34;http://www.sascommunity.org/wiki/Streamlining_Data-Driven_SAS_With_The_%25FOR_Macro&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.sascommunity.org/wiki/Streamlining_Data-Driven_SAS_With&lt;em&gt;The&lt;/em&gt;%25FOR_Macro&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>I use relatively fixed patterns in my SAS&amp;#160; programming life. For so called data driven programming (or dynamic programming), I used the following 4 techniques, chronologically:
+ macro array  call execute  list processing  for each loop   For a quick demo, I will start with a simple scenario in which the data set sashelp.zipcode should be spitted to pieces of datasets by states (in real projects, the codes would be more complicated but share the simple atom structure).</description>
     </item>
     
   </channel>

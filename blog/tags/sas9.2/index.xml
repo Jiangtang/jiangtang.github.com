@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sas9.2 on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/sas9.2/index.xml</link>
-    <description>Recent content in Sas9.2 on Jiangtang Hu | 胡江堂</description>
+    <title>SAS9.2 on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/sas9.2/</link>
+    <description>Recent content in SAS9.2 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/sas9.2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Jan 2009 16:20:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/sas9.2/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Options Pricing Using SAS</title>
@@ -14,144 +17,9 @@
       <pubDate>Tue, 06 Jan 2009 16:20:00 +0000</pubDate>
       
       <guid>/2009/01/06/options-pricing-using-sas/</guid>
-      <description>&lt;p&gt;There are some new financial functions in SAS9.2 Base, including 8 options pricing functions(formerly in SAS Risk Dimension). These functions can compute the price of both call and put options on different underlying assets (stock, futures, currency, and exchange asset), using the following models respectively:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Black-Scholes&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Black-Scholes model&lt;/span&gt;&lt;/a&gt;，the traditional stock options pricing model, &lt;em&gt;see&lt;/em&gt; &lt;a href=&#34;http://riem.swufe.edu.cn/new/techupload/course/200742423245359181.pdf&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Fischer Black and Myron Scholes (1973)&lt;/span&gt;&lt;/a&gt; ;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Black_model&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Black model&lt;/span&gt;&lt;/a&gt;，extension of Black-Scholes model on futures option (also called Black-76 model)，&lt;em&gt;see&lt;/em&gt; &lt;a href=&#34;http://math.ucalgary.ca/%7Eware/jc/black76_slides.pdf&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Fischer Black(1976)&lt;/span&gt;&lt;/a&gt;;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.riskglossary.com/link/garman_kohlhagen_1983.htm&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Garman-Kohlhagen model&lt;/span&gt;&lt;/a&gt;，pricing model on foreign currency options，&lt;em&gt;see&lt;/em&gt; &lt;a href=&#34;http://ideas.repec.org/a/eee/jimfin/v2y1983i3p231-237.html&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Mark Garman and Steven Kohlhagen(1983)&lt;/span&gt;&lt;/a&gt; ;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.sitmo.com/eq/671&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Margrabe model&lt;/span&gt;&lt;/a&gt;，on exchange options，&lt;em&gt;see&lt;/em&gt; &lt;a href=&#34;http://www.er.ethz.ch/teaching/Margrabe_Option.pdf&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;William Margrabe(1978)&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;table border=&#34;0&#34; cellspacing=&#34;0&#34; cellpadding=&#34;2&#34; width=&#34;473&#34;&gt;
-  &lt;tr&gt;
-    &lt;td width=&#34;137&#34; valign=&#34;top&#34;&gt;
-      Model
-    &lt;/td&gt;
-    
-    &lt;td width=&#34;103&#34; valign=&#34;top&#34;&gt;
-      Underlying
-    &lt;/td&gt;
-    
-    &lt;td width=&#34;119&#34; valign=&#34;top&#34;&gt;
-      Call
-    &lt;/td&gt;
-    
-    &lt;td width=&#34;112&#34; valign=&#34;top&#34;&gt;
-      Put
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  
-  &lt;tr&gt;
-    &lt;td width=&#34;134&#34; valign=&#34;top&#34;&gt;
-      Black model
-    &lt;/td&gt;
-    
-    &lt;td width=&#34;104&#34; valign=&#34;top&#34;&gt;
-      Futures
-    &lt;/td&gt;
-    
-    &lt;td width=&#34;120&#34; valign=&#34;top&#34;&gt;
-      BLACK&lt;span style=&#34;color: #ff0000;&#34;&gt;CL&lt;/span&gt;PRC
-    &lt;/td&gt;
-    
-    &lt;td width=&#34;112&#34; valign=&#34;top&#34;&gt;
-      BLACK&lt;span style=&#34;color: #ff0000;&#34;&gt;PT&lt;/span&gt;PRC
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  
-  &lt;tr&gt;
-    &lt;td width=&#34;133&#34; valign=&#34;top&#34;&gt;
-      Black-Scholes model
-    &lt;/td&gt;
-    
-    &lt;td width=&#34;105&#34; valign=&#34;top&#34;&gt;
-      Stock
-    &lt;/td&gt;
-    
-    &lt;td width=&#34;121&#34; valign=&#34;top&#34;&gt;
-      BLKSH&lt;span style=&#34;color: #ff0000;&#34;&gt;CL&lt;/span&gt;PRC
-    &lt;/td&gt;
-    
-    &lt;td width=&#34;112&#34; valign=&#34;top&#34;&gt;
-      BLKSH&lt;span style=&#34;color: #ff0000;&#34;&gt;PT&lt;/span&gt;PRC
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  
-  &lt;tr&gt;
-    &lt;td width=&#34;132&#34; valign=&#34;top&#34;&gt;
-      Garman-Kohlhagen model
-    &lt;/td&gt;
-    
-    &lt;td width=&#34;105&#34; valign=&#34;top&#34;&gt;
-      Currency
-    &lt;/td&gt;
-    
-    &lt;td width=&#34;122&#34; valign=&#34;top&#34;&gt;
-      GARKH&lt;span style=&#34;color: #ff0000;&#34;&gt;CL&lt;/span&gt;PRC
-    &lt;/td&gt;
-    
-    &lt;td width=&#34;112&#34; valign=&#34;top&#34;&gt;
-      GARKH&lt;span style=&#34;color: #ff0000;&#34;&gt;PT&lt;/span&gt;PRC
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  
-  &lt;tr&gt;
-    &lt;td width=&#34;133&#34; valign=&#34;top&#34;&gt;
-      Margrabe model
-    &lt;/td&gt;
-    
-    &lt;td width=&#34;105&#34; valign=&#34;top&#34;&gt;
-      Exchange
-    &lt;/td&gt;
-    
-    &lt;td width=&#34;122&#34; valign=&#34;top&#34;&gt;
-      MARGR&lt;span style=&#34;color: #ff0000;&#34;&gt;CL&lt;/span&gt;PRC
-    &lt;/td&gt;
-    
-    &lt;td width=&#34;112&#34; valign=&#34;top&#34;&gt;
-      MARGR&lt;span style=&#34;color: #ff0000;&#34;&gt;PT&lt;/span&gt;PRC
-    &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;BLACKCLPRC: calculates the call price for European options on futures, based on the Black model.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;BLACKPTPRC: calculates the put price for European options on futures, based on the Black model.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;BLKSHCLPRT: calculates the call price for European options, based on the Black-Scholes model.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;BLKSHPTPRT: calculates the put price for European options, based on the Black-Scholes model.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;GARKHCLPRC: calculates the call price for European options on currencies, based on the Garman-Kohlhagen model.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;GARKHPTPRC: calculates the put price for European options on currencies, based on the Garman-Kohlhagen model.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;MARGRCLPRC: calculates the call price for European options on exchange assets, based on the Margrabe model.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;MARGRPTPRC: calculates the put price for European options on exchange assets, based on the Margrabe model.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;For more，see SAS9.2 online help，_Functions and CALL Routines by Category: Financial_：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/lrdict/59540/HTML/default/a000245860.htm&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;http://support.sas.com/documentation/cdl/en/lrdict/59540/HTML/default/a000245860.htm&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Note: A good web site for options pricing with different models, &lt;a href=&#34;http://www.montegodata.co.uk/&#34; title=&#34;http://www.montegodata.co.uk/&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;http://www.montegodata.co.uk/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #669966;&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;div id=&#34;scid:0767317B-992E-4b12-91E0-4F059A8CECA8:a25c1b69-c356-4773-9162-c96f6558b8e8&#34; class=&#34;wlWriterEditableSmartContent&#34; style=&#34;margin: 0px; padding: 0px; display: inline;&#34;&gt;
-  del.icio.us Tags: &lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/SAS&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;SAS&lt;/span&gt;&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/Base&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Base&lt;/span&gt;&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/ETS&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;ETS&lt;/span&gt;&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/SAS9.2&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;SAS9.2&lt;/span&gt;&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/Financial%20Functions&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Financial Functions&lt;/span&gt;&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/Options&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Options&lt;/span&gt;&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/Call&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Call&lt;/span&gt;&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/Put&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Put&lt;/span&gt;&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/Pricing&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Pricing&lt;/span&gt;&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/Black-Scholes%20model&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Black-Scholes model&lt;/span&gt;&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/Black%20model&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Black model&lt;/span&gt;&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/Black-76&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Black-76&lt;/span&gt;&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/Garman-Kohlhagen%20model&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Garman-Kohlhagen model&lt;/span&gt;&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/Margrabe%20model&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Margrabe model&lt;/span&gt;&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/Futures%20Option&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Futures Option&lt;/span&gt;&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/Stock%20Option&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Stock Option&lt;/span&gt;&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/Currency%20Option&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Currency Option&lt;/span&gt;&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/Exchange%20Option&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Exchange Option&lt;/span&gt;&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/Financial%20Engineering&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Financial Engineering&lt;/span&gt;&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: Arial; font-size: 85%;&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-</description>
+      <description>There are some new financial functions in SAS9.2 Base, including 8 options pricing functions(formerly in SAS Risk Dimension). These functions can compute the price of both call and put options on different underlying assets (stock, futures, currency, and exchange asset), using the following models respectively:
+  Black-Scholes model，the traditional stock options pricing model, see Fischer Black and Myron Scholes (1973) ;
+ Black model，extension of Black-Scholes model on futures option (also called Black-76 model)，see Fischer Black(1976);</description>
     </item>
     
   </channel>

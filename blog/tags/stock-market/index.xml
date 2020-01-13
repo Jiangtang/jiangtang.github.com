@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Stock Market on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/stock-market/index.xml</link>
-    <description>Recent content in Stock Market on Jiangtang Hu | 胡江堂</description>
+    <title>stock market on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/stock-market/</link>
+    <description>Recent content in stock market on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/stock-market/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Dec 2008 23:55:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/stock-market/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Data Mining in Stock Market</title>
@@ -14,15 +17,7 @@
       <pubDate>Sat, 13 Dec 2008 23:55:00 +0000</pubDate>
       
       <guid>/2008/12/13/data-mining-in-stock-market/</guid>
-      <description>&lt;p&gt;Data Mining in Stock Market? Is it crazy? or is it just a hopeless try? Every mentor in mathematics and finance educates us that the stock market is too chaotic and &lt;strong&gt;sentimental&lt;/strong&gt; to use mathematical models. Most of all gift rock scientists are concentrated in the study of interest of rates and fixed income securities. It sounds profitable to use mathematical and statistical models to predict the price of stock, but there are little successfull stories.&lt;/p&gt;
-
-&lt;p&gt;I know I might hold some academic doctrines, so I have interest to monitor any effort to try to forecast stock prices using data mining techniques. Some links from a popular data mining blog , &lt;a href=&#34;http://dataminingresearch.blogspot.com/&#34;&gt;&lt;em&gt;Data Mining Research&lt;/em&gt;&lt;/a&gt;, are listed as follows:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://dataminingresearch.blogspot.com/2008/09/stock-prediction-using-decision-tree.html&#34;&gt;Stock Prediction using Decision Tree&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dataminingresearch.blogspot.com/2008/12/stock-picking-using-data-mining_12.html&#34;&gt;Stock Picking using Data Mining: Parameter Tuning&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>Data Mining in Stock Market? Is it crazy? or is it just a hopeless try? Every mentor in mathematics and finance educates us that the stock market is too chaotic and sentimental to use mathematical models. Most of all gift rock scientists are concentrated in the study of interest of rates and fixed income securities. It sounds profitable to use mathematical and statistical models to predict the price of stock, but there are little successfull stories.</description>
     </item>
     
   </channel>

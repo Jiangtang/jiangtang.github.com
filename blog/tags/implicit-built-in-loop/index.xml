@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Implicit Built In Loop on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/implicit-built-in-loop/index.xml</link>
-    <description>Recent content in Implicit Built In Loop on Jiangtang Hu | 胡江堂</description>
+    <title>implicit built-in loop on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/implicit-built-in-loop/</link>
+    <description>Recent content in implicit built-in loop on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/implicit-built-in-loop/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Jan 2011 17:29:40 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/implicit-built-in-loop/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>SAS Data Step&amp;rsquo;s Built-in Loop: An illustrated Example</title>
@@ -14,56 +17,9 @@
       <pubDate>Mon, 03 Jan 2011 17:29:40 +0000</pubDate>
       
       <guid>/2011/01/03/sas-data-steprsquos-built-in-loop-an-illustrated-example/</guid>
-      <description>&lt;p&gt;Some newbie SAS programmers take SAS as their first programming language even learned. Sometimes they are confused by the concept of “data step’s built-in loop” even after reading the well-written &lt;em&gt;The Little SAS Book: A Primer&lt;/em&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;DATA steps also have an underlying structure, an implicit, built-in loop. You don’t tell SAS to execute this loop: SAS does it automatically. Memorize this:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;DATA steps execute line by line and observation by observation.&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Programmers could memorize the statement above and apply it well in their programming practices, but still find it hard to get the vivid idea about the so called &lt;strong&gt;implicit&lt;/strong&gt; built-in loop. –This post would make it easy.&lt;/p&gt;
-
-&lt;p&gt;The following will show an &lt;strong&gt;explicit&lt;/strong&gt; loop example in C++. Note that you do not need to know any about C++ to get the idea. Suppose that a data file &lt;em&gt;data.dat&lt;/em&gt; in D driver holds three numbers&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;1&lt;/p&gt;
-
-&lt;p&gt;2&lt;/p&gt;
-
-&lt;p&gt;3&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The question is how to (read and) print out these numbers and their sums.  Following is the C++ approach (&lt;strong&gt;just read the bold session&lt;/strong&gt;):&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;#include &lt;iostream&gt;&lt;br /&gt; #include &lt;fstream&gt;&lt;br /&gt; using namespace std;&lt;br /&gt; int main()&lt;br /&gt; {&lt;br /&gt; int x;&lt;br /&gt; int sum=0;&lt;br /&gt; ifstream inFile;&lt;br /&gt; inFile.open(&amp;#8220;d:data.dat&amp;#8221;);&lt;br /&gt; inFile &amp;gt;&amp;gt; x; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;&lt;strong&gt; while (&lt;span style=&#34;color: #ff0000;&#34;&gt;!inFile.eof( )&lt;/span&gt;)&lt;br /&gt; {&lt;br /&gt; cout&amp;lt;&lt;x&lt;&lt;endl;&lt;br /&gt; sum = sum + x;&lt;br /&gt; inFile &amp;gt;&amp;gt; x;&lt;br /&gt; }&lt;/strong&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;inFile.close( );&lt;br /&gt; cout &amp;lt;&amp;lt; &amp;#8220;Sum = &amp;#8221; &amp;lt;&amp;lt; sum &amp;lt;&amp;lt; endl;&lt;br /&gt; return 0;&lt;br /&gt; }&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;There is an &lt;strong&gt;explicit&lt;/strong&gt; loop in these C++ codes: while (&lt;span style=&#34;color: #ff0000;&#34;&gt;!inFile.eof( )&lt;/span&gt;) .  While it is not at the end of infile, the codes above will keep print out the numbers and do the accumulation. The final output is&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;1&lt;/p&gt;
-
-&lt;p&gt;2&lt;/p&gt;
-
-&lt;p&gt;3&lt;/p&gt;
-
-&lt;p&gt;sum=6&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The following SAS codes produce the exactly same output:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;;&#34;&gt;data &lt;em&gt;null&lt;/em&gt;;&lt;br /&gt; infile &amp;#8220;d:data.dat&amp;#8221; end=eof;&lt;br /&gt; input x;&lt;br /&gt; sum+x;&lt;br /&gt; put x;&lt;br /&gt; if eof then put sum=;&lt;br /&gt; run;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Note that SAS codes do not need an &lt;strong&gt;explicit&lt;/strong&gt; loop to reach to the end of file. There is a so called &lt;strong&gt;implicit&lt;/strong&gt; built-in loop.&lt;the end&gt;&lt;/p&gt;
-</description>
+      <description>Some newbie SAS programmers take SAS as their first programming language even learned. Sometimes they are confused by the concept of “data step’s built-in loop” even after reading the well-written The Little SAS Book: A Primer:
+ DATA steps also have an underlying structure, an implicit, built-in loop. You don’t tell SAS to execute this loop: SAS does it automatically. Memorize this:
+DATA steps execute line by line and observation by observation.</description>
     </item>
     
   </channel>

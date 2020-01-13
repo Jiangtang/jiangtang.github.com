@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Wps on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/wps/index.xml</link>
-    <description>Recent content in Wps on Jiangtang Hu | 胡江堂</description>
+    <title>WPS on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/wps/</link>
+    <description>Recent content in WPS on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/wps/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Nov 2011 21:50:42 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/wps/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Get Start with WPS, and Call for an Elegant SAS IDE!</title>
@@ -14,24 +17,7 @@
       <pubDate>Sat, 05 Nov 2011 21:50:42 +0000</pubDate>
       
       <guid>/2011/11/05/get-start-with-wps-and-call-for-an-elegant-sas-ide/</guid>
-      <description>&lt;p&gt;I got a trial version of &lt;a href=&#34;http://www.teamwpc.co.uk/products/wps&#34; target=&#34;_blank&#34;&gt;WPS&lt;/a&gt; (the latest version 2.5.2.0 at Windows), which engine can interpret “some of the language of SAS”. I took piece of codes for testing and some passed while some popped up with errors (so currently it is only a limited version of SAS). I don’t drive into the deep part yet of what WPS can do and can’t do, but I do love the WPS way to organize projects, folders and files (including souse files):&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/11/WPS_SAS.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;WPS_SAS&#34; border=&#34;0&#34; alt=&#34;WPS_SAS&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/11/WPS_SAS_thumb.png&#34; width=&#34;507&#34; height=&#34;380&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;WPS uses a lite version of &lt;a href=&#34;http://www.eclipse.org/&#34; target=&#34;_blank&#34;&gt;Eclipse&lt;/a&gt; as GUI(WPS Workbench; the “lite” means WPS Workbench can’t be extensible as the original Eclipse but really with shorter response time). Besides its Project Explore for folders and files management(left panel), I also love its Outline in right panel to show the SAS programming elements and errors information in log window:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/11/WPS_LOG.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;WPS_LOG&#34; border=&#34;0&#34; alt=&#34;WPS_LOG&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/11/WPS_LOG_thumb.png&#34; width=&#34;502&#34; height=&#34;381&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Then I’d like to switch to SAS itself. Frankly speaking, at least in IDE part, WPS looks pretty better than the current corresponding SAS:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/11/SAS_GUI.png&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;SAS_GUI&#34; border=&#34;0&#34; alt=&#34;SAS_GUI&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/11/SAS_GUI_thumb.png&#34; width=&#34;495&#34; height=&#34;406&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Of course I hold the principle of “substance over form”, but if available, the form itself also make people comfortable and enjoyable (for example, the Apple products…). As far as I know, the new version of SAS DI Studio and Enterprise Miner both have pretty much improvement in GUI from ergonomic point of view. Even for code editor, Enterprise Guide Editor&amp;#160; is now more superior than so called SAS Enhanced Editor. But as a SAS programmer (not only the SAS user), I may spend all my day in the Base SAS window!&lt;/p&gt;
-
-&lt;p&gt;I also spent some time to configure VIM as a relative simple SAS IDE as a temporally replacement (F3 to run, F5 to jump to program window, F6 to log window, F7 to output window just as the same as in SAS IDE):&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/11/VIM_SAS.png&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;VIM_SAS&#34; border=&#34;0&#34; alt=&#34;VIM_SAS&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/11/VIM_SAS_thumb.png&#34; width=&#34;488&#34; height=&#34;575&#34; /&gt;&lt;/a&gt; It’s simple but always can do the job as SAS itself while looks really cool to comfort myself as a programmer. So, what’s going on in the next release? Still wait.&lt;/p&gt;
-</description>
+      <description>I got a trial version of WPS (the latest version 2.5.2.0 at Windows), which engine can interpret “some of the language of SAS”. I took piece of codes for testing and some passed while some popped up with errors (so currently it is only a limited version of SAS). I don’t drive into the deep part yet of what WPS can do and can’t do, but I do love the WPS way to organize projects, folders and files (including souse files):</description>
     </item>
     
   </channel>

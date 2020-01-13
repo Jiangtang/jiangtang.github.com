@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sas System Viewer on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/sas-system-viewer/index.xml</link>
-    <description>Recent content in Sas System Viewer on Jiangtang Hu | 胡江堂</description>
+    <title>SAS System Viewer on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/sas-system-viewer/</link>
+    <description>Recent content in SAS System Viewer on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/sas-system-viewer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Aug 2013 09:42:36 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/sas-system-viewer/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>SAS System Viewer Doesn&amp;rsquo;t support SAS 9.4 Datasets</title>
@@ -14,16 +17,8 @@
       <pubDate>Tue, 27 Aug 2013 09:42:36 +0000</pubDate>
       
       <guid>/2013/08/27/sas-system-viewer-doesnrsquot-support-sas-9.4-datasets/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/SAS_system_viewer_SAS941.png&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border: 0px;&#34; title=&#34;SAS_system_viewer_SAS94&#34; alt=&#34;SAS_system_viewer_SAS94&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/08/SAS_system_viewer_SAS94_thumb1.png&#34; width=&#34;389&#34; height=&#34;350&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This is sad, really sad. SAS System Viewer is not officially supported by SAS since the launch of SAS Universal Viewer, but it can still open SAS 9.3 datasets and I love it. &lt;a href=&#34;http://www.jiangtanghu.com/blog/2013/07/16/sas-system-viewer/&#34;&gt;SAS System Viewer is mush superior&lt;/a&gt; than SAS Universal Viewer and any other data viewers in Enterprise Guide, JMP, SAS Drug Development and SAS Data Integration Studio regarding response time.&lt;/p&gt;
-
-&lt;p&gt;[update 2014/03/18] A new SAS 9.4 data set option &amp;#8220;EXTENDOBSCOUNTER&amp;#8221; prevents SV to read the data set correctly, &lt;em&gt;see&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a title=&#34;Extending the Observation Count for a 32-Bit SAS Data File&#34; href=&#34;https://support.sas.com/documentation/cdl/en/lrcon/67227/HTML/default/viewer.htm#p1ldhc0p7imdegn1hie6vh2kfm1k.htm&#34; target=&#34;_blank&#34;&gt;Extending the Observation Count for a 32-Bit SAS Data File&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-</description>
+      <description>This is sad, really sad. SAS System Viewer is not officially supported by SAS since the launch of SAS Universal Viewer, but it can still open SAS 9.3 datasets and I love it. SAS System Viewer is mush superior than SAS Universal Viewer and any other data viewers in Enterprise Guide, JMP, SAS Drug Development and SAS Data Integration Studio regarding response time.
+[update 2014/03/18] A new SAS 9.4 data set option &amp;#8220;EXTENDOBSCOUNTER&amp;#8221; prevents SV to read the data set correctly, see</description>
     </item>
     
     <item>
@@ -32,24 +27,7 @@
       <pubDate>Tue, 16 Jul 2013 22:37:50 +0000</pubDate>
       
       <guid>/2013/07/16/the-return-of-sas-system-viewer/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/07/SAS_System_Viewer.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS_System_Viewer&#34; border=&#34;0&#34; alt=&#34;SAS_System_Viewer&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/07/SAS_System_Viewer_thumb.png&#34; width=&#34;379&#34; height=&#34;455&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/07/SAS_Universal_Viewer.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS_Universal_Viewer&#34; border=&#34;0&#34; alt=&#34;SAS_Universal_Viewer&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/07/SAS_Universal_Viewer_thumb.png&#34; width=&#34;475&#34; height=&#34;502&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SAS Universal Viewer (UV) jumped out since SAS 9.2 and in most cases, it’s installed as replacement for the &lt;a href=&#34;http://support.sas.com/demosdownloads/sysdep_t1.jsp?packageID=000313&amp;jmpflag=N&#34;&gt;SAS System Viewer&lt;/a&gt;(SV) but I reinstalled SV in all machines where I had the right privileges. UV has some nice new feature but for me it is extremely and unacceptably slow. Every time I open a relatively not entirely small dataset (literally, 30MB) in UV, it shows up “initializing” &lt;strong&gt;forever &lt;/strong&gt;(even the initializing process is done, I guess). SV will be “Ready” all the way in the same machine.&amp;#160; &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;UV will load all the datasets (called a library) in the same folder even when you only click one dataset to view. Yes it’s not a bug, actually it should be considered as a feature. When I click one dataset, I only need and want to view this specific one dataset; if needed, I will open multiple datasets in SV’s tabs, and it’s much quicker!&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Also compared to SV, UV has too many bells and whistles. In a single page, UV shows less information. Actually I do not need a UNIVERSAL viewer; I need only a SAS dataset viewer. It’s claimed that you can view SAS programs, logs, listings (and other general text files) and even HTML files in UV. It’s cool, but we already have other much better tools to open them.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;To those who want to switch the oldie and goodie SV, some tips:&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. If possible, install SV before any other SAS foundation installation. If you reverse the process, an critical important SV component (&lt;strong&gt;sassfiod.dll&lt;/strong&gt;) will be put in the SAS foundation folder (&lt;em&gt;C:\Program Files\SASHome\x86\General &lt;/em&gt;for in a Windows 7 machine with SAS 9.3). Since SV is a stand-alone application, it is much safer to be separated from the SAS foundation. Install SV first and &lt;strong&gt;sassfiod.dll &lt;/strong&gt;will be in &lt;em&gt;C:\Program Files (x86)\SAS\Shared Files\General&lt;/em&gt; while SV itself, &lt;em&gt;C:\Program Files (x86)\SAS\SAS System Viewer&lt;/em&gt;.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2. If for any reason, you got error message like “&lt;em&gt;Cannot find file SASSFIOD&lt;/em&gt;.&lt;em&gt;DLL&lt;/em&gt;” when using SV, reinstall it or copy this file from a right machine to the proper folder(see #1).&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;3. Use it as default SAS dataset viewer explicitly. Otherwise, UV, SAS Enterprise Guide and SAS Display Manager will compete to serve as the viewer.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;4. Enable the tabbed view through View-&amp;gt;Options-&amp;gt;General-&amp;gt;File Display Mode.&lt;/font&gt;&lt;/p&gt;
-</description>
+      <description>SAS Universal Viewer (UV) jumped out since SAS 9.2 and in most cases, it’s installed as replacement for the SAS System Viewer(SV) but I reinstalled SV in all machines where I had the right privileges. UV has some nice new feature but for me it is extremely and unacceptably slow. Every time I open a relatively not entirely small dataset (literally, 30MB) in UV, it shows up “initializing” forever (even the initializing process is done, I guess).</description>
     </item>
     
   </channel>

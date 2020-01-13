@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Happy New Year on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/happy-new-year/index.xml</link>
+    <link>/tags/happy-new-year/</link>
     <description>Recent content in Happy New Year on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/happy-new-year/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Jan 2009 23:45:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/happy-new-year/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Happy New Year</title>
@@ -14,23 +17,20 @@
       <pubDate>Thu, 01 Jan 2009 23:45:00 +0000</pubDate>
       
       <guid>/2009/01/01/happy-new-year/</guid>
-      <description>&lt;div class=&#34;gmail_quote&#34;&gt;
-  新年快乐 ( Xin Nian Kuai Le),&lt;/p&gt; 
-  
-  &lt;div class=&#34;gmail_quote&#34;&gt;
-    &lt;div&gt;
-      Guten Rutsch ins neue Jahr,&lt;br /&gt; Bonne Année,&lt;br /&gt; Nav varsh ki shubh kamnayey,&lt;br /&gt; Felice Anno Nuovo,&lt;br /&gt; Feliz Año Nuevo,&lt;br /&gt; Feliz Ano Novo,&lt;br /&gt; 明けましておめでとうございます (Akemashite Omedetô),&lt;br /&gt; Gelukkig Nieuwjaar,&lt;br /&gt; Szczęśliwego Nowego Roku,&lt;br /&gt; Καλή Χρονιά (Kalí Chroniá),&lt;br /&gt; Seh Heh Bok Mani Bat Uh Seyo,&lt;br /&gt; חג חנוכה שמח (Hag Hanukkah Sameah),&lt;br /&gt; Cчастливого Нового Года,
-    &lt;/div&gt;
-    
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;
-  Happy New Year,
-&amp;lt;/p&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/div&gt;
-&lt;/div&gt;&lt;/p&gt;
-</description>
+      <description>新年快乐 ( Xin Nian Kuai Le),
+ Guten Rutsch ins neue Jahr,
+Bonne Année,
+Nav varsh ki shubh kamnayey,
+Felice Anno Nuovo,
+Feliz Año Nuevo,
+Feliz Ano Novo,
+明けましておめでとうございます (Akemashite Omedetô),
+Gelukkig Nieuwjaar,
+Szczęśliwego Nowego Roku,
+Καλή Χρονιά (Kalí Chroniá),
+Seh Heh Bok Mani Bat Uh Seyo,
+חג חנוכה שמח (Hag Hanukkah Sameah),
+Cчастливого Нового Года,  &amp;lt;p&amp;gt; Happy New Year, &amp;lt;/p&amp;gt;</description>
     </item>
     
   </channel>

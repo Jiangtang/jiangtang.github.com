@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Quantitative Finance on Jiangtang Hu | 胡江堂</title>
-    <link>/categories/quantitative-finance/index.xml</link>
-    <description>Recent content in Quantitative Finance on Jiangtang Hu | 胡江堂</description>
+    <title>Quantitative finance on Jiangtang Hu | 胡江堂</title>
+    <link>/categories/quantitative-finance/</link>
+    <description>Recent content in Quantitative finance on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/categories/quantitative-finance/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Feb 2009 09:37:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/quantitative-finance/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Basel II on Incremental Risk Charge(IRC): Quick Links</title>
@@ -14,14 +17,7 @@
       <pubDate>Thu, 12 Feb 2009 09:37:00 +0000</pubDate>
       
       <guid>/2009/02/12/basel-ii-on-incremental-risk-chargeirc-quick-links/</guid>
-      <description>&lt;ol&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: x-small;&#34;&gt;&lt;a href=&#34;http://www.bis.org/publ/bcbs149.pdf&#34;&gt;Basel Committee on Banking Supervision(Jan, 2009). Guidelines for computing capital for incremental default risk in the trading book. Consultative document. January.&lt;/a&gt;&lt;/span&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: x-small;&#34;&gt;&lt;a href=&#34;http://www.riskmetrics.com/sites/default/files/Research20090200.pdf&#34;&gt;IRC Comments&lt;/a&gt; by RiskMetrics&lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+      <description> Basel Committee on Banking Supervision(Jan, 2009). Guidelines for computing capital for incremental default risk in the trading book. Consultative document. January. IRC Comments by RiskMetrics  </description>
     </item>
     
     <item>
@@ -30,15 +26,7 @@
       <pubDate>Tue, 16 Dec 2008 09:34:00 +0000</pubDate>
       
       <guid>/2008/12/16/links-of-2008-12-16-financial-engineering-ponzi-scheme-sas-pc-game/</guid>
-      <description>&lt;ol&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://creditspectrum.blogspot.com/2008/12/state-of-financial-engineering.html&#34;&gt;The State of Financial Engineering&lt;/a&gt;&lt;/span&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Ponzi_scheme&#34;&gt;Ponzi Scheme&lt;/a&gt; Returns: &lt;a href=&#34;http://www.sec.gov/news/press/2008/2008-293.htm&#34;&gt;SEC Charges Bernard L. Madoff for Multi-Billion Dollar Ponzi Scheme&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://wolfensas.subshock.net/&#34;&gt;WolfenSAS: A PC Game written by SAS Code&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+      <description> The State of Financial Engineering Ponzi Scheme Returns: SEC Charges Bernard L. Madoff for Multi-Billion Dollar Ponzi Scheme WolfenSAS: A PC Game written by SAS Code  </description>
     </item>
     
     <item>
@@ -47,15 +35,7 @@
       <pubDate>Sat, 13 Dec 2008 23:55:00 +0000</pubDate>
       
       <guid>/2008/12/13/data-mining-in-stock-market/</guid>
-      <description>&lt;p&gt;Data Mining in Stock Market? Is it crazy? or is it just a hopeless try? Every mentor in mathematics and finance educates us that the stock market is too chaotic and &lt;strong&gt;sentimental&lt;/strong&gt; to use mathematical models. Most of all gift rock scientists are concentrated in the study of interest of rates and fixed income securities. It sounds profitable to use mathematical and statistical models to predict the price of stock, but there are little successfull stories.&lt;/p&gt;
-
-&lt;p&gt;I know I might hold some academic doctrines, so I have interest to monitor any effort to try to forecast stock prices using data mining techniques. Some links from a popular data mining blog , &lt;a href=&#34;http://dataminingresearch.blogspot.com/&#34;&gt;&lt;em&gt;Data Mining Research&lt;/em&gt;&lt;/a&gt;, are listed as follows:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://dataminingresearch.blogspot.com/2008/09/stock-prediction-using-decision-tree.html&#34;&gt;Stock Prediction using Decision Tree&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dataminingresearch.blogspot.com/2008/12/stock-picking-using-data-mining_12.html&#34;&gt;Stock Picking using Data Mining: Parameter Tuning&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>Data Mining in Stock Market? Is it crazy? or is it just a hopeless try? Every mentor in mathematics and finance educates us that the stock market is too chaotic and sentimental to use mathematical models. Most of all gift rock scientists are concentrated in the study of interest of rates and fixed income securities. It sounds profitable to use mathematical and statistical models to predict the price of stock, but there are little successfull stories.</description>
     </item>
     
   </channel>

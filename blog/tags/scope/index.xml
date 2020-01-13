@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scope on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/scope/index.xml</link>
-    <description>Recent content in Scope on Jiangtang Hu | 胡江堂</description>
+    <title>scope on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/scope/</link>
+    <description>Recent content in scope on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/scope/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Mar 2013 19:22:46 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/scope/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Localize Your Macro Variable? Mostly Not Needed or Do It If You Only Want to Initiate It</title>
@@ -14,42 +17,11 @@
       <pubDate>Fri, 29 Mar 2013 19:22:46 +0000</pubDate>
       
       <guid>/2013/03/29/localize-your-macro-variable-mostly-not-needed-or-do-it-if-you-only-want-to-initiate-it/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/03/Scope.jpg&#34;&gt;&lt;img style=&#34;background-image: none; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; padding-top: 0px; border-width: 0px;&#34; title=&#34;Scope&#34; alt=&#34;Scope&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/03/Scope_thumb.jpg&#34; width=&#34;240&#34; height=&#34;180&#34; border=&#34;0&#34; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #ff0000; font-size: small;&#34;&gt;&lt;strong&gt;[NOTE2013-05-30: This post is permanently suspended. In this post, I only focused on the initialization effect of the %local statement and totally ignored its function to avoid variable collisions as Quentin mentioned in comment box.]&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;A piece of SAS codes to create a list of all variables within a dataset (a nice programming trick from &lt;/span&gt;&lt;a href=&#34;http://www2.sas.com/proceedings/sugi30/028-30.pdf&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Art Carpenter, 2004&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;font-size: small;&#34;&gt;):&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: small;&#34;&gt;%macro getvars(dset) ;&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;%local varlist ;&lt;/span&gt;&lt;br /&gt; %let fid = %sysfunc(open(&amp;amp;dset)) ;&lt;br /&gt; %if &amp;amp;fid %then %do ;&lt;br /&gt; %do i=1 %to %sysfunc(attrn(&amp;amp;fid,nvars)) ;&lt;br /&gt; %let &lt;span style=&#34;color: #ff0000;&#34;&gt;varlist&lt;/span&gt;= &lt;span style=&#34;color: #ff0000;&#34;&gt;&amp;amp;varlist&lt;/span&gt; %sysfunc(varname(&amp;amp;fid,&amp;amp;i));&lt;br /&gt; %end ;&lt;br /&gt; %let fid = %sysfunc(close(&amp;amp;fid)) ;&lt;br /&gt; %end ;&lt;br /&gt; &amp;amp;varlist&lt;br /&gt; %mend ;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: small;&#34;&gt;%put %getvars(%str(sashelp.iris));&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;One question would be: why declare macro variable &lt;em&gt;varlist&lt;/em&gt; as local explicitly by a &lt;em&gt;%local&lt;/em&gt; statement? Since it was defined within the macro &lt;em&gt;%getvar&lt;/em&gt;, it just went to the local macro table automatically and the &lt;em&gt;%local&lt;/em&gt; statement is not necessary anymore!&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Such argument is definitely right. But the &lt;em&gt;%local&lt;/em&gt; statement above was not intent to localize a macro variable, actually, it’s used to initiate it. If you just delete it, you will get a warning then an error:&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;WARNING: Apparent symbolic reference VARLIST not resolved.&lt;br /&gt; ERROR: The text expression &amp;amp;VARLIST SPECIES contains a recursive reference to the macro variable VARLIST.  The&lt;br /&gt; macro variable will be assigned the null value.&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;This is because the macro variable &lt;span style=&#34;color: #ff0000;&#34;&gt;&lt;em&gt;&amp;amp;varlist&lt;/em&gt;&lt;/span&gt;&lt;span style=&#34;color: #cccccc;&#34;&gt; in right side of the second&lt;/span&gt; &lt;em&gt;%let&lt;/em&gt; statement was not declared before. To be clear, you can also replace the &lt;em&gt;%local&lt;/em&gt; statement  with an explicit initiating statement:&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;color: #ff0000; font-family: &#39;Courier New&#39;; font-size: small;&#34;&gt;%let varlist=;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;In this example, the &lt;em&gt;%local&lt;/em&gt; statement and the &lt;em&gt;%let&lt;/em&gt; statement simply do the same job and the choice is totally subject to programmers’ preference(&lt;em&gt;well I prefer the later&lt;/em&gt;).&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-size: small;&#34;&gt;So, take home question: any comments on the following snippet to count the numbers of word in a string&lt;span style=&#34;font-size: small;&#34;&gt;(also from &lt;/span&gt;&lt;a href=&#34;http://www2.sas.com/proceedings/sugi30/028-30.pdf&#34;&gt;&lt;span style=&#34;font-size: small;&#34;&gt;Art Carpenter, 2004&lt;/span&gt;&lt;/a&gt;; &lt;em&gt;sorry Carpenter, your books and papers are the most familiar sources for me to learn SAS macro programming&lt;/em&gt;&lt;span style=&#34;font-size: small;&#34;&gt;)&lt;/span&gt;:&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: small;&#34;&gt;%macro wordcount(list);&lt;br /&gt; &lt;span style=&#34;color: #ff0000;&#34;&gt;    %local count;&lt;br /&gt; %let count=0;&lt;/span&gt;&lt;br /&gt; %do %while(%qscan(&amp;amp;list,&amp;amp;count+1,%str( )) ne %str());&lt;br /&gt; %let count = %eval(&amp;amp;count+1);&lt;br /&gt; %end;&lt;br /&gt; &amp;amp;count&lt;br /&gt; %mend wordcount;&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;font-family: &#39;Courier New&#39;; font-size: small;&#34;&gt;%put %wordcount(a b cd);&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>[NOTE2013-05-30: This post is permanently suspended. In this post, I only focused on the initialization effect of the %local statement and totally ignored its function to avoid variable collisions as Quentin mentioned in comment box.]
+A piece of SAS codes to create a list of all variables within a dataset (a nice programming trick from Art Carpenter, 2004):
+ %macro getvars(dset) ;
+%local varlist ;
+%let fid = %sysfunc(open(&amp;amp;dset)) ;</description>
     </item>
     
   </channel>

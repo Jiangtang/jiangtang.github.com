@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Matsuo Basho on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/matsuo-basho/index.xml</link>
+    <link>/tags/matsuo-basho/</link>
     <description>Recent content in Matsuo Basho on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/matsuo-basho/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Dec 2008 11:37:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/matsuo-basho/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Haiku from SAS R&amp;amp;D staff</title>
@@ -14,34 +17,13 @@
       <pubDate>Wed, 10 Dec 2008 11:37:00 +0000</pubDate>
       
       <guid>/2008/12/10/haiku-from-sas-rampd-staff/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;First prompts are silent.&lt;/p&gt;
-
-&lt;p&gt;Subsequent prompts loud and clear.&lt;/p&gt;
-
-&lt;p&gt;Now all prompts are heard.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Poem from R&amp;amp;D staff?&lt;/p&gt;
-
-&lt;p&gt;Yes. Rhyming sonnets were shakespeare-like complex;&lt;/p&gt;
-
-&lt;p&gt;they wrote Japanese haiku, showed as above.&lt;/p&gt;
-
-&lt;p&gt;The SAS R&amp;amp;D staff should complete some paper work in defects system before changing a code. They use informal descriptive language(HAIKUUU!) in the early stage. &lt;a href=&#34;http://blogs.sas.com/sasdummy/&#34; target=&#34;_blank&#34;&gt;Chris Hemedinger&lt;/a&gt;, a senior software engineer at SAS, collected some &lt;a href=&#34;http://blogs.sas.com/sasdummy/index.php?/archives/62-Poetry-in-commotion.html&#34; target=&#34;_blank&#34;&gt;haikus&lt;/a&gt; in his blog to show the humor side of SAS R&amp;amp;D staff. It&amp;#8217;s interesting to cite one of the most famous haikus by &lt;a href=&#34;http://en.wikipedia.org/wiki/Matsuo_Bash%C5%8D&#34; target=&#34;_blank&#34;&gt;Matsuo Bashō&lt;/a&gt; for comparison:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Old pond&lt;/p&gt;
-
-&lt;p&gt;a frog jumps&lt;/p&gt;
-
-&lt;p&gt;the sound of water&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div id=&#34;scid:0767317B-992E-4b12-91E0-4F059A8CECA8:e0bef7d3-3ec5-4580-99ea-fd432ffbdcce&#34; class=&#34;wlWriterSmartContent&#34; style=&#34;margin: 0px; padding: 0px; display: inline;&#34;&gt;
-  del.icio.us Tags: &lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/haiku&#34;&gt;haiku&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/SAS&#34;&gt;SAS&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/R&amp;D&#34;&gt;R&amp;D&lt;/a&gt;,&lt;a rel=&#34;tag&#34; href=&#34;http://del.icio.us/popular/Matsuo%20Bash%c3%b4&#34;&gt;Matsuo Bashô&lt;/a&gt;
-&lt;/div&gt;
-</description>
+      <description>First prompts are silent.
+Subsequent prompts loud and clear.
+Now all prompts are heard.
+ Poem from R&amp;amp;D staff?
+Yes. Rhyming sonnets were shakespeare-like complex;
+they wrote Japanese haiku, showed as above.
+The SAS R&amp;amp;D staff should complete some paper work in defects system before changing a code. They use informal descriptive language(HAIKUUU!) in the early stage. Chris Hemedinger, a senior software engineer at SAS, collected some haikus in his blog to show the humor side of SAS R&amp;amp;D staff.</description>
     </item>
     
   </channel>

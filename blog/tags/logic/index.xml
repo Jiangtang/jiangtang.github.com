@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Logic on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/logic/index.xml</link>
+    <link>/tags/logic/</link>
     <description>Recent content in Logic on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/logic/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Sep 2014 22:55:59 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/logic/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>To Exit or Not Exit, the SAS Ways</title>
@@ -14,30 +17,9 @@
       <pubDate>Thu, 11 Sep 2014 22:55:59 +0000</pubDate>
       
       <guid>/2014/09/11/to-exit-or-not-exit-the-sas-ways/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The tragedy of life is not that it ends so soon, but that we wait so long to begin it. –by W. M. Lewis&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;So, which is the exit style you prefer, in the following 3 macros (which are all valid SAS codes): &lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;#1 if branch&lt;/em&gt;/ &lt;br /&gt;%macro tragedy_of_life1(ds); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %if %sysfunc(exist(&amp;amp;ds)) %then %do; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; proc print data=&amp;amp;ds noobs; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; run; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %end; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; &lt;font color=&#34;#ff0000&#34;&gt;%else %do&lt;/font&gt;; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; %put ERROR: Dataset &amp;amp;ds not exist.; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %end; &lt;br /&gt;%mend;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;#2 abort&lt;/em&gt;/ &lt;br /&gt;%macro tragedy_of_life2(ds); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %if %sysfunc(exist(&amp;amp;ds)) ^= 1 %then %do; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; %put ERROR: Dataset &amp;amp;ds not exist.; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; %&lt;font color=&#34;#ff0000&#34;&gt;abort&lt;/font&gt; cancel;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %end;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; proc print data=&amp;amp;ds noobs; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; run; &lt;br /&gt;%mend;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;/&lt;em&gt;#3 goto&lt;/em&gt;/ &lt;br /&gt;%macro tragedy_of_life3(ds); &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %if %sysfunc(exist(&amp;amp;ds)) ^= 1 %then %do; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; %put ERROR: Dataset &amp;amp;ds not exist.; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; %&lt;font color=&#34;#ff0000&#34;&gt;goto&lt;/font&gt; iExit;&amp;#160;&amp;#160;&amp;#160; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; %end;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; proc print data=&amp;amp;ds noobs; &lt;br /&gt;&amp;#160;&amp;#160;&amp;#160; run;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34; face=&#34;Courier New&#34;&gt;&amp;#160;&amp;#160;&amp;#160; %iExit: &lt;br /&gt;%mend;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I personally use #2, &lt;em&gt;&lt;strong&gt;%abort cancel&lt;/strong&gt;&lt;/em&gt;. For &lt;strong&gt;&lt;em&gt;goto&lt;/em&gt;&lt;/strong&gt; in #3, it might not a good idea to use &lt;strong&gt;&lt;em&gt;goto&lt;/em&gt;&lt;/strong&gt; statement in any cases, so I avoid it as long as I can. &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;#1 is good, but you can imagine that the branches will grow dramatically if lots of exceptions are under checking. &lt;em&gt;&lt;strong&gt;%abort cancel&lt;/strong&gt;&lt;/em&gt; in #2 will best serve the purpose to isolate the blocks.&lt;/font&gt;&lt;/p&gt;
-</description>
+      <description>The tragedy of life is not that it ends so soon, but that we wait so long to begin it. –by W. M. Lewis
+ So, which is the exit style you prefer, in the following 3 macros (which are all valid SAS codes): 
+ /#1 if branch/ %macro tragedy_of_life1(ds); &amp;#160;&amp;#160;&amp;#160; %if %sysfunc(exist(&amp;amp;ds)) %then %do; &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; proc print data=&amp;amp;ds noobs; &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; run; &amp;#160;&amp;#160;&amp;#160; %end; &amp;#160;&amp;#160;&amp;#160; %else %do; &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; %put ERROR: Dataset &amp;amp;ds not exist.</description>
     </item>
     
     <item>
@@ -46,49 +28,13 @@
       <pubDate>Fri, 08 Oct 2010 22:47:00 +0000</pubDate>
       
       <guid>/2010/10/08/logics-in-mathematics-and-in-daily-life-a-statistical-programming-example/</guid>
-      <description>&lt;p&gt;Refresh some &lt;a href=&#34;http://en.wikipedia.org/wiki/Contraposition&#34;&gt;basic logical propositions&lt;/a&gt; (or statements):&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;implication&lt;/font&gt;:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; if&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; P then&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Q (P&lt;strong&gt;—&lt;/strong&gt;&amp;gt;Q)&lt;/p&gt;
-
-&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;inverse&lt;/font&gt;:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; if not P then not Q (-P&lt;strong&gt;—&lt;/strong&gt;&amp;gt;-Q)&lt;/p&gt;
-
-&lt;p&gt;converse:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; if&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Q then&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; P (Q&lt;strong&gt;—&lt;/strong&gt;&amp;gt;P)&lt;/p&gt;
-
-&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;contrapositive&lt;/font&gt;: if not Q then not P (-Q&lt;strong&gt;—&lt;/strong&gt;&amp;gt;-P)&lt;/p&gt;
-
-&lt;p&gt;contradition:&amp;#160;&amp;#160;&amp;#160; if&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; P then not Q (P&lt;strong&gt;—&lt;/strong&gt;&amp;gt;-Q)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Mathematically or logically speaking, if the &lt;font color=&#34;#ff0000&#34;&gt;implication&lt;/font&gt; statement holds, then the &lt;font color=&#34;#ff0000&#34;&gt;contrapositive&lt;/font&gt; holds, but the &lt;font color=&#34;#ff0000&#34;&gt;inverse&lt;/font&gt; does not hold, i.e., &lt;em&gt;if P then Q&lt;/em&gt;, then we can get &lt;em&gt;if not Q then not P&lt;/em&gt;, but we can not get &lt;em&gt;if not P then not Q&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;That’s all logics needed here and Let’s turn to the ambiguous English in daily life. &lt;a href=&#34;http://en.wikipedia.org/wiki/James_Munkres&#34;&gt;James R. Munkres&lt;/a&gt; of MIT gave an example in _&lt;a href=&#34;http://www.amazon.com/Topology-2nd-James-Munkres/dp/0131816292/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1286432430&amp;amp;sr=1-1&#34;&gt;Topology&lt;/a&gt;_ (2nd edition, 2000, P.7):&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Mr. Jones, if&amp;#160; you get a grade below&amp;#160; 70 on&amp;#160; the final, you are going to flunk&amp;#160; this course.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;We adapt it in a logical &lt;font color=&#34;#ff0000&#34;&gt;implication&lt;/font&gt; form:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Mr. Jones, if &lt;font color=&#34;#ff0000&#34;&gt;P &lt;/font&gt;then &lt;font color=&#34;#ff0000&#34;&gt;Q&lt;/font&gt;, where&lt;/p&gt;
-
-&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;P&lt;/font&gt;: you get a grade below&amp;#160; 70 on&amp;#160; the final&lt;/p&gt;
-
-&lt;p&gt;&lt;font color=&#34;#ff0000&#34;&gt;Q&lt;/font&gt;: you are going to flunk&amp;#160; this course&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Considering the context, we can also get that the &lt;font color=&#34;#ff0000&#34;&gt;inverse&lt;/font&gt; holds: if you get a grade above er or equal to 70, then you are going to pass this course(if not P then not Q ).&lt;/p&gt;
-
-&lt;p&gt;Question: when do statistical programming, what types of logics you use?&lt;/p&gt;
-
-&lt;p&gt;Answer: Not all mathematically. &lt;em&gt;see&lt;/em&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;if score&lt;70 then grade=&#34;flunk&#34;;&amp;#160; ***_if &lt;font color=&#34;#ff0000&#34;&gt;P&lt;/font&gt; then &lt;font color=&#34;#ff0000&#34;&gt;Q&lt;/font&gt;_**;&lt;br /&gt;
-else&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; grade=&amp;ldquo;pass&amp;rdquo;;&amp;#160; *&lt;strong&gt;&lt;em&gt;if not P then not Q&lt;/em&gt;&lt;/strong&gt;;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>Refresh some basic logical propositions (or statements):
+ implication:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; if&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; P then&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Q (P—&amp;gt;Q)
+inverse:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; if not P then not Q (-P—&amp;gt;-Q)
+converse:&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; if&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; Q then&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; P (Q—&amp;gt;P)
+contrapositive: if not Q then not P (-Q—&amp;gt;-P)
+contradition:&amp;#160;&amp;#160;&amp;#160; if&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; P then not Q (P—&amp;gt;-Q)
+ Mathematically or logically speaking, if the implication statement holds, then the contrapositive holds, but the inverse does not hold, i.e., if P then Q, then we can get if not Q then not P, but we can not get if not P then not Q.</description>
     </item>
     
   </channel>

@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Industry Review on Jiangtang Hu | 胡江堂</title>
-    <link>/categories/industry-review/index.xml</link>
+    <link>/categories/industry-review/</link>
     <description>Recent content in Industry Review on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/categories/industry-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Mar 2013 23:09:08 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/industry-review/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>What&amp;rsquo;s New</title>
@@ -14,24 +17,11 @@
       <pubDate>Wed, 20 Mar 2013 23:09:08 +0000</pubDate>
       
       <guid>/2013/03/20/whatrsquos-new/</guid>
-      <description>&lt;p&gt;I didn’t &lt;a href=&#34;http://www.jiangtanghu.com/blog/archives/&#34;&gt;blog&lt;/a&gt; for a while in this first half March and there are bunches of new stuff to catch up:&lt;/p&gt;
+      <description>I didn’t blog for a while in this first half March and there are bunches of new stuff to catch up:
+I had a new baby! He was delivered on time (and on budget!), lions tigers and bears, oh my&amp;#8230; His brother is Tiger so I named him, Leo.
+And I got the latest SAS 9.3 (TS1M2) installed! SAS is jus getting much beautiful.
 
-&lt;p&gt;I had a new baby! He was delivered on time (and on budget!), &lt;em&gt;lions tigers and bears, oh my&amp;#8230;&lt;/em&gt; His brother is Tiger so I named him, Leo.&lt;/p&gt;
-
-&lt;p&gt;And I got the latest SAS 9.3 (TS1M2) installed! SAS is jus getting much beautiful.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/03/SAS9.3_12.1.png&#34;&gt;&lt;font color=&#34;#cbcbcb&#34;&gt;&lt;/font&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SAS9.3_12.1&#34; border=&#34;0&#34; alt=&#34;SAS9.3_12.1&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/03/SAS9.3_12.1_thumb.png&#34; width=&#34;383&#34; height=&#34;99&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.opencdisc.org/download&#34;&gt;OpenCDISC&lt;/a&gt; had the latest release, Version 1.4 with the new SDTM 3.1.3 validation checks,—and yes CDISC itself also had some significant updates:&lt;/p&gt;
-
-&lt;p&gt;SDTMv1.3 and SDTMIGv3.1.3 now have the &lt;a href=&#34;http://www.cdisc.org/sdtmv1-4-sdtmigv3-1-3-metadata&#34;&gt;machine readable metadata&lt;/a&gt; online. It’s a nice improvement (last year I just posted &lt;em&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/12/29/cdisc-in-pdf-format/&#34;&gt;The Great, Open, Vendor-neutral, Platform-independent Data Standards, &amp;hellip; Yet in PDF Formats&lt;/a&gt;)&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.cdisc.org/define-xml&#34;&gt;Define-XML&lt;/a&gt; now turns to 2.0 (finally).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://cran.rstudio.com/&#34;&gt;R&lt;/a&gt; had its final 2.* release, Version 2.15.3 and Version 3.0.0 will just come soon. &lt;a href=&#34;http://www.rstudio.com/ide/download/desktop&#34;&gt;RStudio&lt;/a&gt; also had a update recently. RStudio is the best IDE (not just R IDE) I used.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://googlereader.blogspot.com/2013/03/powering-down-google-reader.html&#34;&gt;Google will shut down Google Reader&lt;/a&gt;, the best RSS reader ever. It’s a huge loss and I tell you, for example, the famous SAS and statistical blogger Wensui Liu, once frequently posted on Windows Live Space, and then Blogspot and finally &lt;a href=&#34;http://statcompute.wordpress.com/&#34;&gt;WordPress&lt;/a&gt;. The former two blogs were closed and Google Reader feed is the only way to archive these lost posts!&lt;/p&gt;
-</description>
+OpenCDISC had the latest release, Version 1.</description>
     </item>
     
     <item>
@@ -40,34 +30,8 @@
       <pubDate>Wed, 20 Feb 2013 22:01:03 +0000</pubDate>
       
       <guid>/2013/02/20/github-for-clinical/statistical-programmers/</guid>
-      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;PhUSE-FDA Working Group 5 (&lt;/font&gt;&lt;a href=&#34;http://www.phusewiki.org/wiki/index.php?title=Development_of_Standard_Scripts_for_Analysis_and_Programming&#34;&gt;&lt;font size=&#34;1&#34;&gt;Development of Standard Scripts for Analysis and Programming&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;) just adopted &lt;/font&gt;&lt;a href=&#34;http://code.google.com/p/phuse-scripts/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Code&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;as collaborative programming platform. &lt;/font&gt;&lt;a href=&#34;http://code.google.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Google Code&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;is one of the most popular and respected open source software hosting sites in the world and it is definitely a good choice for PhUSE-FDA WG5.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;But after viewing one of WG5’s working reports, &lt;em&gt;&lt;a href=&#34;http://www.phusewiki.org/wiki/index.php?title=Platform_for_Standard_Script_Development:_Progress_as_of_September_18_2012&#34;&gt;Sharing Standard Statistical Scripts&lt;/a&gt;&lt;/em&gt; and getting to know why they finally chose Google Code (rather than &lt;/font&gt;&lt;a href=&#34;https://github.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Github&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;which was also tested by WG5 members), I think it’s necessary to clarify some misunderstanding against Github where I’m also &lt;a href=&#34;https://github.com/Jiangtang&#34;&gt;an occasional user&lt;/a&gt;. &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;As stated in &lt;/font&gt;&lt;a href=&#34;http://www.phusewiki.org/wiki/index.php?title=Platform_for_Standard_Script_Development:_Progress_as_of_September_18_2012&#34;&gt;&lt;font size=&#34;1&#34;&gt;Slide 11&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;in the report mentioned before, Github,&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Too complicated an interface &lt;br /&gt;Too much overhead for simple development &lt;br /&gt;Too much training and education needed&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;designed for classic programming languages like C and Java (not for things like R and SAS)&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;For the first point regarding &lt;strong&gt;interface&lt;/strong&gt;, it seems only &lt;/font&gt;&lt;a href=&#34;http://git-scm.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;Git&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;command line tested, and it may be too complicated to “&lt;strong&gt;classic&lt;/strong&gt; statistical programming users”. Actually, Github offers a great GUI tool, for example, &lt;em&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;GitHub for Windows&lt;/a&gt;&lt;/em&gt; to help users visually clone repositories, commit changes and other management tasks without typing Git commands: &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Github_GUI.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;Github_GUI&#34; border=&#34;0&#34; alt=&#34;Github_GUI&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2013/02/Github_GUI_thumb.png&#34; width=&#34;487&#34; height=&#34;427&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It’s also worthy to mention that with &lt;/font&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;GitHub for Windows&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;, &lt;/em&gt;users don’t need to install any separated version control software like Git, CVS or SVN. &lt;/font&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;GitHub for Windows&lt;/font&gt;&lt;/em&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;already includes a fully functional version of &lt;/font&gt;&lt;a href=&#34;http://msysgit.github.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;msysGit&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;. It just makes users’ life much simpler. To use Google Code, you must install and configure something like TortoiseSVN.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The second, is Github suitable for “&lt;strong&gt;things like R and SAS&lt;/strong&gt;”? It’s true that all hosts including &lt;/font&gt;&lt;a href=&#34;https://github.com/languages&#34;&gt;&lt;font size=&#34;1&#34;&gt;Github&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;are dominated by “classic programming languages like C and Java”. For SAS, SAS programmers as a whole are just not active in&amp;#160; any social coding activities, but for &lt;/font&gt;&lt;a href=&#34;https://github.com/languages/R&#34;&gt;&lt;font size=&#34;1&#34;&gt;R&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, actually it is &lt;/font&gt;&lt;a href=&#34;https://www.google.com/webhp?sourceid=chrome-instant&amp;amp;ion=1&amp;amp;ie=UTF-8#q=github+top+languages+R&amp;amp;hl=en&amp;amp;ei=T4QlUeH-HJP62AXxqYGAAQ&amp;amp;start=10&amp;amp;sa=N&amp;amp;bav=on.2,or.r_gc.r_pw.r_cp.r_qf.&amp;amp;fp=50b26647ad5972f8&amp;amp;ion=1&amp;amp;biw=1536&amp;amp;bih=784&#34;&gt;&lt;font size=&#34;1&#34;&gt;one of the mostly used languages in Github&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Google Code is good and a “Google Code vs Github” question is just mostly subjective. It seems to me the pickup of Google Code by WG5 rather than Github was based on incomplete information. I personally prefer Github and there are also some good reasons:&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Use the GUI tool, &lt;/font&gt;&lt;a href=&#34;http://windows.github.com/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;GitHub for Windows&lt;/font&gt;&lt;/em&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;to maintain a minimum Git/SVN/CVS setup.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Github supplies much richer statistics reports, including charts.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Github is more social oriented which makes it cool in this Web2.0 world.&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>PhUSE-FDA Working Group 5 (Development of Standard Scripts for Analysis and Programming) just adopted Google Code as collaborative programming platform. Google Code is one of the most popular and respected open source software hosting sites in the world and it is definitely a good choice for PhUSE-FDA WG5.
+But after viewing one of WG5’s working reports, Sharing Standard Statistical Scripts and getting to know why they finally chose Google Code (rather than Github which was also tested by WG5 members), I think it’s necessary to clarify some misunderstanding against Github where I’m also an occasional user.</description>
     </item>
     
     <item>
@@ -76,10 +40,8 @@
       <pubDate>Sat, 29 Dec 2012 17:47:36 +0000</pubDate>
       
       <guid>/2012/12/29/the-great-open-vendor-neutral-platform-independent-data-standards-.-.-.-yet-in-pdf-formats/</guid>
-      <description>&lt;p&gt;You know I mean the &lt;a href=&#34;http://www.cdisc.org/mission-and-principles&#34; target=&#34;_blank&#34;&gt;CDISC&lt;/a&gt; standards including CDASH, SDTM, SEND, ADaM, … and you are right there are few not only in PDF format (ODM, define.xml for example).&lt;/p&gt;
-
-&lt;p&gt;Today Jozef (Jos) Aerts from &lt;a href=&#34;http://www.xml4pharma.com&#34; target=&#34;_blank&#34;&gt;XML4Pharma&lt;/a&gt; posted his &lt;a href=&#34;http://cdiscguru.blogspot.com/2012/12/another-copy-and-paste-frustration.html&#34; target=&#34;_blank&#34;&gt;frustration of copying and pasting metadata from only PDF-formed SDTM-IG 3.1.4&lt;/a&gt;.&amp;#160; I hate to complain the volunteer work by the CDISC team but it is worth a discussion, &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/07/19/publishing-cdisc-standards/&#34;&gt;is there any better way to publish CDISC Standards&lt;/a&gt;?&lt;/p&gt;
-</description>
+      <description>You know I mean the CDISC standards including CDASH, SDTM, SEND, ADaM, … and you are right there are few not only in PDF format (ODM, define.xml for example).
+Today Jozef (Jos) Aerts from XML4Pharma posted his frustration of copying and pasting metadata from only PDF-formed SDTM-IG 3.1.4.&amp;#160; I hate to complain the volunteer work by the CDISC team but it is worth a discussion, is there any better way to publish CDISC Standards?</description>
     </item>
     
     <item>
@@ -88,22 +50,11 @@
       <pubDate>Sun, 23 Dec 2012 15:14:13 +0000</pubDate>
       
       <guid>/2012/12/23/weekend-clips-data-scientist-episode-ii/</guid>
-      <description>&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+      <description>1. What is A Data Scientist Anyway?
 
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;1. What is A Data Scientist Anyway?&lt;/font&gt;&lt;/p&gt;
+2. You Just Can’t Be Replaced by Yourselves!
 
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image3.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image_thumb3.png&#34; width=&#34;487&#34; height=&#34;94&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;2. You Just Can’t Be Replaced by Yourselves!&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image1.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image11.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image11_thumb.png&#34; width=&#34;489&#34; height=&#34;94&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;3. We are &lt;/font&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Kaggle&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;all Data Scientists&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;!&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image2.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image12.png&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/12/image1_thumb.png&#34; width=&#34;482&#34; height=&#34;108&#34; /&gt;&lt;/a&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-</description>
+3. We are all Data Scientists!</description>
     </item>
     
     <item>
@@ -112,26 +63,11 @@
       <pubDate>Fri, 30 Nov 2012 22:31:52 +0000</pubDate>
       
       <guid>/2012/11/30/weekend-clip-data-scientist/</guid>
-      <description>
+      <description>Two tweets: 
 
-&lt;h5 id=&#34;two-tweets&#34;&gt;Two tweets:&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/image.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/image_thumb.png&#34; width=&#34;525&#34; height=&#34;101&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/image1.png&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;img style=&#34;background-image: none; border-bottom: 0px; border-left: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top: 0px; border-right: 0px; padding-top: 0px&#34; title=&#34;image&#34; border=&#34;0&#34; alt=&#34;image&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/11/image_thumb1.png&#34; width=&#34;522&#34; height=&#34;87&#34; /&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;one-blog-post&#34;&gt;One blog post:&lt;/h5&gt;
-
-&lt;p&gt;_&lt;a href=&#34;http://mathbabe.org/2012/07/31/statisticians-arent-the-problem-for-data-science-the-real-problem-is-too-many-posers/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Statisticians aren’t the problem for data science. The real problem is too many posers&lt;/font&gt;&lt;/a&gt;_&lt;/p&gt;
-
-&lt;h5 id=&#34;one-job-advertisement&#34;&gt;One job advertisement:&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.ziprecruiter.com/job/SAS-Data-Scientist/1f127e2e/?source=social-linkedin-group-jobs&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;SAS Data Scientist&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;?(!)&lt;/font&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;a-joke&#34;&gt;A joke:&lt;/h5&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The biggest joke about data scientist is that the Google query “&lt;/font&gt;&lt;a href=&#34;https://www.google.com/search?q=data+scientist+joke&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;data scientist joke&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;” returns nothing interesting.&lt;/font&gt;&lt;/p&gt;
-</description>
+One blog post: _Statisticians aren’t the problem for data science. The real problem is too many posers_
+One job advertisement: SAS Data Scientist ?(!)
+A joke: The biggest joke about data scientist is that the Google query “data scientist joke” returns nothing interesting.</description>
     </item>
     
     <item>
@@ -140,66 +76,8 @@
       <pubDate>Thu, 19 Jul 2012 01:54:10 +0000</pubDate>
       
       <guid>/2012/07/19/is-there-any-better-way-publishing-process-for-cdisc-standards-documentation/</guid>
-      <description>
-
-&lt;h1 id=&#34;160&#34;&gt;&amp;#160;&lt;/h1&gt;
-
-&lt;h1 id=&#34;font-style-font-weight-bold-1-the-pain-font&#34;&gt;&lt;font style=&#34;font-weight: bold&#34;&gt;1. The Pain&lt;/font&gt;&lt;/h1&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I read from Lex Jansen (&lt;/font&gt;&lt;a href=&#34;https://twitter.com/lexjansen&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;@LexJansen&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;) that &lt;a href=&#34;http://www.cdisc.org/sdtm&#34; target=&#34;_blank&#34;&gt;CDISC SDTM v1.3 and SDTMIG v3.1.3 were newly released&lt;/a&gt;&lt;/font&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;font size=&#34;1&#34;&gt;. It’s pretty nice since CDISC SDTM was &lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/03/28/rtp_cdisc_q1/&#34; target=&#34;_blank&#34;&gt;supposed to be released semiannually&lt;/a&gt; in the new publishing cycle. We can see the team put great efforts on this new version, but frankly speaking, this delivery (the way to display, not the content itself) is far away elegant.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The new SDTM Implementation Guide (IG) v1.3 is just a temporary workaround shipment, as an embedded file “&lt;em&gt;How to Use SDTMIG 3.1.3&lt;/em&gt;” indicates, &lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;SDTMIG 3.1.3 is presented as an annotated version of SDTMIG 3.1.2. This approach was taken for SDTMIG in order for the document to be released quickly without an extensive rewrite. The content presented as annotations will be incorporated into a single version of documentation in a future release.&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;What does “annotated” mean? When you replace “should” to “must” in the file,&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;strikethrough the word “should”&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;insert the replacement “must”, and&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;add a sticky note to indicate the change above&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/SDTMv313.png&#34;&gt;&lt;img style=&#34;background-image: none; border-right-width: 0px; margin: 3px auto 5px; padding-left: 0px; padding-right: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px&#34; title=&#34;SDTMv313&#34; border=&#34;0&#34; alt=&#34;SDTMv313&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2012/07/SDTMv313_thumb.png&#34; width=&#34;471&#34; height=&#34;167&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This is annoying. There are 143 sticky notes throughout the whole documentation, including replacement, deleting, files attachment and such and the reason, is said to ensure “the document to be released quickly without an extensive rewrite”. BUT 143 sticky notes in a PDF file! it’s already huge editing effort ever!&lt;/font&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;font-style-font-weight-bold-2-the-reason-em-or-the-conjecture-em-font&#34;&gt;&lt;font style=&#34;font-weight: bold&#34;&gt;2. The Reason (&lt;em&gt;or The Conjecture&lt;/em&gt;)&lt;/font&gt;&lt;/h1&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Almost everybody complains of Microsoft Office Excel and Word, but Ура(!), they are still dominant in our working spaces (&lt;em&gt;especially heavy in clinical world? I’m not sure&lt;/em&gt;). I didn’t have any personal connection with CDISC publishing team, but from the documentation released, I’m pretty confident that these files (SDTMIG v3.1.3 and others) were edited in Word and then published into PDF via Adobe products (very common practice, isn’t it?).&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Now you may understand why CDISC publishing team delivered this “annotated”&amp;#160; version due to limited time and human resource (although editing 143 sticky notes was also a big work load). The clue is Word! Word! Word! &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Microsoft Word is extremely popular for its WYSIWYG (What You See Is What You Get), but it can&amp;#8217;t separate contents from formats and it will a disaster when maintaining a frequent updated Word file by multiple users. In this CDISC SDTMIG case,&amp;#160; there are about 143 &lt;font color=&#34;#ff0000&#34;&gt;content&lt;/font&gt; updates supplied by CDISC community worldwide, but when applying such content updates to the original Word file, you are always reasonable to worry about that such updates would change something(&lt;em&gt;yes SOMETHING&lt;/em&gt;) unexpectedly!&lt;/font&gt; &lt;font size=&#34;1&#34;&gt;The biggest concern for CDISC standard files, I guess, again with confidence, is if such updates destroy the in-text links&amp;#160; or other cross references which offers the nice navigation throughout the documentation.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;So, this “annotated” version at least is safe (&lt;em&gt;and SAFE is much more important than what it looks&lt;/em&gt;): no links proven worktable in v3.1.2 will broken in this time pushing new release, and things would get better in the future (from the same source, “&lt;em&gt;How to Use SDTMIG 3.1.3&lt;/em&gt;”):&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;CDISC is currently discussing how future documentation will be published ensure documentation is easy to navigate and read and at the same time easy to maintain.&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&#34;3-the-prospective&#34;&gt;3. The Prospective&lt;/h1&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Yes I will end with a (set of) suggestion(s). The bottom line is no Word anymore and I promise no additional cost and pain compared to digging into Microsoft Word and Adobe Acrobat.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Take SDTM IG v3.1.3 as a demo project:&lt;/font&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Convert all the contents of SDTM IG v3.1.2 (from PDF, or original Word) to a text based format. Personally I prefer &lt;/font&gt;&lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Markdown&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and &lt;a href=&#34;http://docutils.sourceforge.net/docs/ref/rst/introduction.html&#34; target=&#34;_blank&#34;&gt;reStructuredText&lt;/a&gt;. Actually it doesn’t matter which one is chosen for test purpose, because such text based formats can be easily transferred (much easier than from Word/PDF). The benefits of these two formats are separation of contents and formats, and very intuitive to learn (much easier than HTML; &lt;a href=&#34;http://docutils.sourceforge.net/docs/user/rst/quickref.html&#34; target=&#34;_blank&#34;&gt;almost WYSIWYG&lt;/a&gt;). This task is machine doable somehow but also needs manually modification. But all in all,&amp;#160; &lt;/font&gt;&lt;font size=&#34;1&#34;&gt;it is not a big deal, it is only about 300 pages. &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Edit these text files according to the new SDTM IG v3.1.3 updates. &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Distribute these text files (and rendered output files in PDF/ HTML formats) to a vendor supported or self hosted collaborating site, like &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;.&lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Call for CDISC team members and users to &lt;/font&gt;&lt;font size=&#34;1&#34;&gt;report any issues and even encourage them to directly edit them online (don’t worry, it won’t be mess; we are in a version control system like &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;).&amp;#160; &lt;/font&gt;&lt;/li&gt;
-&lt;li&gt;&lt;font size=&#34;1&#34;&gt;Then the next version will come out naturally (and peacefully).&lt;/font&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;then I’m looking forward to hearing your ideas.&lt;/font&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;4-additional-notes&#34;&gt;4. Additional Notes&lt;/h1&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;The markup standards mentioned above in my proposal, &lt;/font&gt;&amp;#160;&lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Markdown&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;and &lt;a href=&#34;http://docutils.sourceforge.net/docs/ref/rst/introduction.html&#34; target=&#34;_blank&#34;&gt;reStructuredText&lt;/a&gt;, are not replacement for CDISC metadata standard, &lt;a href=&#34;http://www.cdisc.org/odm&#34; target=&#34;_blank&#34;&gt;ODM&lt;/a&gt; and its XML derivatives &lt;a href=&#34;http://www.cdisc.org/define-xml&#34; target=&#34;_blank&#34;&gt;Define.xml&lt;/a&gt;. Instead, they are better formats to get rid of Microsoft Word for community collaborating of editing the “narrative” parts of models (the PDF files we read from CDISC), for example, SDTMIG we discussed before. &lt;/font&gt;&lt;/p&gt;
-</description>
+      <description>&amp;#160; 1. The Pain I read from Lex Jansen (@LexJansen) that CDISC SDTM v1.3 and SDTMIG v3.1.3 were newly released. It’s pretty nice since CDISC SDTM was supposed to be released semiannually in the new publishing cycle. We can see the team put great efforts on this new version, but frankly speaking, this delivery (the way to display, not the content itself) is far away elegant.
+The new SDTM Implementation Guide (IG) v1.</description>
     </item>
     
     <item>
@@ -208,134 +86,12 @@
       <pubDate>Fri, 04 May 2012 22:42:32 +0000</pubDate>
       
       <guid>/2012/05/04/blogging-is-awesome-cdisc-bloggers/</guid>
-      <description>
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://peterdewolf.com/i-remember-when-blogging-was-cool/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;I remember when blogging was cool.&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Before the specializing and monetizing and Twitter-izing.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &amp;#8212;&lt;/font&gt;&lt;a href=&#34;http://peterdewolf.com/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Peter Dewolf&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Well I think blogging is still cool (&lt;em&gt;and &lt;/em&gt;&lt;/font&gt;&lt;a href=&#34;http://add-vodka.com/7-reasons-why-blogging-is-awesome/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;awesome&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;_ &lt;font size=&#34;1&#34;&gt;and &lt;/font&gt;_&lt;a href=&#34;http://elevenminuteawesome.com/12-reasons-blogging-awesome/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;awesome&lt;/font&gt;&lt;/em&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;…). The most appealing personal reason is, blog posts are Google searchable and suitable for archive while Tweets NOT. Admittedly I hold some sort of&amp;#160; &lt;/font&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/2012/02/29/not-documented-not-exist/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Existentialism 2.0&lt;/font&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;: &lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;if it is not Google searched, it doesn’t exit!&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Last month I placed a post on how to &lt;/font&gt;&lt;a href=&#34;http://www.d-wise.com/blog/2012/04/26/keep-pace-with-cdisc/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;keep pace with CDISC&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;&amp;#160;&lt;/em&gt;from its official channel&lt;em&gt;s &lt;/em&gt;and I feel cool to add an appendix of source from the &lt;em&gt;awesome&lt;/em&gt; blogosphere. Fortunately or not, CDISC is still in the niche market of topics and it takes few efforts to get the list(update me if someone else available! if you are a Google Reader user, just simply import &lt;/font&gt;&lt;a href=&#34;http://jiangtanghu.com/docs/en/google-reader-subscriptions_CDISC_JiangtangHu.xml&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;this file&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, my Google Reader subscription on CDISC):&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;1. Blog @ &lt;/font&gt;&lt;/strong&gt;&lt;a href=&#34;http://www.assero.co.uk&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;Assero&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;** &lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;by &lt;/font&gt;&lt;strong&gt;&lt;a href=&#34;http://www.assero.co.uk/about/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;Dave Iberson-Hurst&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/strong&gt; &lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;(“Dave IH”)&lt;/font&gt;**&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.assero.co.uk/category/blog/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.assero.co.uk/category/blog/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Insightful and full of humor. I retweeted all of its latest posts and you can feel somehow on these tittles (YES on CDISC):&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;h4 id=&#34;font-size-1-what-i-want-what-i-really-really-want-font-http-www-assero-co-uk-2012-what-i-want-what-i-really-really-want&#34;&gt;&lt;a href=&#34;http://www.assero.co.uk/2012/what-i-want-what-i-really-really-want/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;What I Want, What I Really Really Want&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/h4&gt;
-
-&lt;h4 id=&#34;font-size-1-churchill-the-fda-and-a-fall-font-http-www-assero-co-uk-2012-churchill-the-fda-and-a-fall&#34;&gt;&lt;a href=&#34;http://www.assero.co.uk/2012/churchill-the-fda-and-a-fall/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Churchill, the FDA and a Fall&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/h4&gt;
-
-&lt;h4 id=&#34;font-size-1-mad-march-and-the-fda-font-http-www-assero-co-uk-2012-mad-march-and-the-fda&#34;&gt;&lt;a href=&#34;http://www.assero.co.uk/2012/mad-march-and-the-fda/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Mad March and the FDA&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/h4&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Btw, I write blogs casual way while it is very impressive to read IH reminding me the George Orwell style.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt;2. &lt;/strong&gt;&lt;/font&gt;&lt;a href=&#34;http://www.d-wise.com/&#34; target=&#34;_blank&#34;&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt;d-Wise Technologies&lt;/strong&gt;&lt;/font&gt;&lt;/a&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt; Blog&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.d-wise.com/blog/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.d-wise.com/blog/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;It is my employer’s official blog site where &lt;/font&gt;&lt;a href=&#34;http://www.linkedin.com/pub/chris-decker/8/52/72&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Chris Decker&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;is the key contributor to CDISC. You can check out his latest posts on &lt;/font&gt;&lt;a href=&#34;http://www.phuse.eu/css&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;FDA/PhUSE Annual Computational Science Symposium&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;where he served as committee lead:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;h4 id=&#34;font-size-1-overcoming-industry-challenges-a-shift-to-collaboration-font-http-www-d-wise-com-blog-2012-03-08-overcoming-industry-challenges-a-shift-to-collaboration&#34;&gt;&lt;a href=&#34;http://www.d-wise.com/blog/2012/03/08/overcoming-industry-challenges-a-shift-to-collaboration/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Overcoming Industry Challenges: A Shift to Collaboration&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/h4&gt;
-
-&lt;h4 id=&#34;font-size-1-validation-and-quality-are-they-the-same-font-http-www-d-wise-com-blog-2012-03-19-validation-and-quality-are-they-the-same&#34;&gt;&lt;a href=&#34;http://www.d-wise.com/blog/2012/03/19/validation-and-quality-are-they-the-same/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;Validation and Quality: Are They the Same?&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;/h4&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;I will also commit to update this blog as my understanding on clinical standards goes. Here is the saying:&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;look to the master, &lt;br /&gt;follow the master, &lt;br /&gt;walk with the master, &lt;br /&gt;see through the master, &lt;br /&gt;become the master.&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt;3.&amp;#160; &lt;/strong&gt;&lt;/font&gt;&lt;a href=&#34;http://www.xml4pharma.com/&#34; target=&#34;_blank&#34;&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt;XML4Pharma&lt;/strong&gt;&lt;/font&gt;&lt;/a&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt; Blog&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://cdiscguru.blogspot.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://cdiscguru.blogspot.com/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;with industry news and hard (while cool) way writing on XML (CDISC ODM, define.xml).&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;4. &lt;/font&gt;&lt;/strong&gt;&lt;a href=&#34;http://blog.clinovo.com/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;eClinical Trends&lt;/font&gt;&lt;/strong&gt;&lt;/a&gt;** &lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;by &lt;/font&gt;&lt;a href=&#34;http://www.clinovo.com/&#34; target=&#34;_blank&#34;&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;Clinovo&lt;/font&gt;&lt;/a&gt;**&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://blog.clinovo.com/category/cdisc/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://blog.clinovo.com/category/cdisc/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Clinovo jumps to this topic by launching a CDISC SDTM convertor CDISC Express.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;5. eClinicalOpinion&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://eclinicalopinion.blogspot.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://eclinicalopinion.blogspot.com/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This blog is most focused on EDC, the clinical data management part. I like its &lt;a href=&#34;http://eclinicalopinion.blogspot.com/2009/05/odm-tutorial-index.html&#34; target=&#34;_blank&#34;&gt;series discussion on CDISC ODM&lt;/a&gt;.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;strong&gt;6. eCTD Regulatory Submissions Network&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://ectdregulatorysubmissionsnetwork.blogspot.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://ectdregulatorysubmissionsnetwork.blogspot.com/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;This is a personal blog by Shakul Hameed. I read it mostly to get some information on submission requirements from European regulatory.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://cdisc-end-to-end.blogspot.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt;7. HL7 Watch&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://hl7-watch.blogspot.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://hl7-watch.blogspot.com/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;while it is not CDISC directly related (#6 also), it’s nice to get some voice of &lt;/font&gt;&lt;a href=&#34;http://www.hl7.org/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;HL7&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;which would be the future of CDISC.&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font color=&#34;#ffffff&#34; size=&#34;1&#34;&gt;&lt;strong&gt;8. From a Logical Point of View-CDISC&lt;/strong&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/category/cdisc/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://www.jiangtanghu.com/blog/category/cdisc/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Yes this one, my 2 cents. I will keep recording my personal immersion and understanding on CDISC and related clinical standards. (while it is privilege to cross reference oneself in his/her own blog! Keep awesome, keep blogging.) &lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;font size=&#34;1&#34;&gt;9. Linked Data and URI&lt;font color=&#34;#ff0000&#34;&gt;:&lt;/font&gt;s for Enterprises&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://kerfors.blogspot.com/&#34;&gt;&lt;font size=&#34;1&#34;&gt;http://kerfors.blogspot.com/&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;Look at the colon (:) in the title of this blog and you’re right this blog plays (at least) with XML. I find it is good resource (thanks &lt;a href=&#34;https://twitter.com/kerfors&#34;&gt;@kerfors&lt;/a&gt; for referencing!) to learn ODM, the foundation of CDISC while the latest post is &lt;/font&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;em&gt;&lt;a href=&#34;http://kerfors.blogspot.com/2012/05/semantic-models-for-cdisc-based.html&#34; target=&#34;_blank&#34;&gt;Semantic models for CDISC based standard and metadata management&lt;/a&gt;&lt;/em&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;&lt;/font&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;font size=&#34;1&#34;&gt;P.S.: Blogger &lt;/font&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;Chris Hemedinger&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;maintains a nice &lt;/font&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/2010/12/02/aggregating-assault-sas-blogs-are-everywhere/&#34; target=&#34;_blank&#34;&gt;&lt;font size=&#34;1&#34;&gt;list of SAS bloggers&lt;/font&gt;&lt;/a&gt; &lt;font size=&#34;1&#34;&gt;(&lt;/font&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/2010/12/10/blogs-by-sas-employees-google-reader-bundle/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;blogs by SAS employees&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;, and &lt;/font&gt;&lt;a href=&#34;http://blogs.sas.com/content/sasdummy/2010/12/10/blogs-by-sas-community-google-reader-bundle/&#34;&gt;&lt;em&gt;&lt;font size=&#34;1&#34;&gt;blogs by SAS customers, consultants, and the analytics community&lt;/font&gt;&lt;/em&gt;&lt;/a&gt;&lt;font size=&#34;1&#34;&gt;).&lt;/font&gt;&lt;/p&gt;
-</description>
+      <description>I remember when blogging was cool.
+Before the specializing and monetizing and Twitter-izing.
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; &amp;#8212;Peter Dewolf
+ Well I think blogging is still cool (and awesome_ and _awesome …). The most appealing personal reason is, blog posts are Google searchable and suitable for archive while Tweets NOT. Admittedly I hold some sort of&amp;#160; Existentialism 2.0: 
+ if it is not Google searched, it doesn’t exit!
+ Last month I placed a post on how to keep pace with CDISC&amp;#160;from its official channels and I feel cool to add an appendix of source from the awesome blogosphere.</description>
     </item>
     
     <item>
@@ -344,42 +100,7 @@
       <pubDate>Wed, 14 Sep 2011 22:15:17 +0000</pubDate>
       
       <guid>/2011/09/14/an-analytical-valley-big-data-and-data-scientists-and-sas-programmers/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/09/hadoop.jpg&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;hadoop&#34; border=&#34;0&#34; alt=&#34;hadoop&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/09/hadoop_thumb.jpg&#34; width=&#34;240&#34; height=&#34;180&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://blogs.sas.com/content/sascom/author/tomdavenport&#34; target=&#34;_blank&#34;&gt;Tom Davenport&lt;/a&gt; reported an observation that &lt;a href=&#34;http://blogs.sas.com/content/sascom/2011/09/13/is-silicone-valley-becoming-more-analytical/&#34; target=&#34;_blank&#34;&gt;Silicon Valley is becoming more analytical&lt;/a&gt; since companies in the Valley such as Google, Facebook, eBay, LinkedLn all have strong presences in analytics. Besides such predominant companies, I’d also like to add Yahoo to the list although Yahoo is no longer in its peak. Yahoo is the largest sponsor and contributor of &lt;a href=&#34;http://hadoop.apache.org/&#34; target=&#34;_blank&#34;&gt;Hadoop&lt;/a&gt;, an open source framework for distributed processing of so called “big data”. When taking a look at the outstanding &lt;a href=&#34;www.facebook.com/data&#34; target=&#34;_blank&#34;&gt;Facebook data team&lt;/a&gt; or &lt;a href=&#34;http://sna-projects.com/sna/&#34; target=&#34;_blank&#34;&gt;LinkedIn data team&lt;/a&gt;, we can see that Hadoop is also one of the most overwhelmingly successful technical factors. Such Valley companies themselves are the huge consumers of big data and have strong incentives to develop analytical solutions beyond their high technology product pipelines.&lt;/p&gt;
-
-&lt;p&gt;Analytical staffs in LinkedLn also helps a lot to promote the widely usage of the term “data scientist”. They identify themselves as data scientists and that’s really cool. Now more and more statisticians are also very glad to accept this brand new title. According to a &lt;a href=&#34;http://blog.revolutionanalytics.com/2011/08/statisticians-at-jsm-consider-themselves-data-scientists.html&#34; target=&#34;_blank&#34;&gt;survey in JSM&lt;/a&gt; (2011, Miami), more than 85% (164) statisticians there considered themselves “data scientists”.&lt;/p&gt;
-
-&lt;p&gt;McKinsey also released a report this May &lt;a href=&#34;http://www.mckinsey.com/mgi/publications/big_data/pdfs/MGI_big_data_full_report.pdf&#34; target=&#34;_blank&#34;&gt;on big data&lt;/a&gt; and the huge gap of qualified analytical talents. You know when a management consulting firm begins to talk something technical, it is no longer a fashion to follow the discussion of the concept. To embrace the challenge of big data, one or the team needs multidiscipline background—basically speaking, computer science and statistics (and data mining or machine learning is just an interdisciplinary subject of them). Here is an ambitious list on “How do I become a data scientist”:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.quora.com/Educational-Resources/How-do-I-become-a-data-scientist&#34;&gt;http://www.quora.com/Educational-Resources/How-do-I-become-a-data-scientist&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;For these learning plans, just feel the meaning and don’t take it too seriously. Check yourself and set up your own priority.&lt;/p&gt;
-
-&lt;h3 id=&#34;notes-for-sas-programmers&#34;&gt;Notes for SAS Programmers&lt;/h3&gt;
-
-&lt;p&gt;For SAS programmers, I read an exciting post besides High Performance Computing that &lt;a href=&#34;http://blogs.sas.com/content/datamanagement/2011/08/29/sas-hadoop-and-big-data&#34; target=&#34;_blank&#34;&gt;SAS will also play with Hadoop&lt;/a&gt; by introducing some functionality in SAS/Access and SAS Data Integration Studio.&lt;/p&gt;
-
-&lt;p&gt;For SAS programmers with no IT background, it is not a good idea to jump into algorithms and data structures and other hard core computer courses immediately. Instead I recommend to take the full advantages of SAS language and system itself to dive into computer world gradually:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Learn and practice and practice &lt;a href=&#34;http://support.sas.com/documentation/cdl/en/sqlproc/63043/HTML/default/viewer.htm#titlepage.htm&#34; target=&#34;_blank&#34;&gt;SAS Proc SQL&lt;/a&gt; which is compliant with the &lt;a href=&#34;http://en.wikipedia.org/wiki/SQL-92&#34;&gt;SQL-92&lt;/a&gt; standard. SQL is the common language in database world and SAS Proc SQL can help you switch smoothly to Oracle SQL, Teradata SQL, MySql SQL and other SQL implementations although there are some non-critical &lt;a href=&#34;http://www.jiangtanghu.com/blog/2009/12/04/work-with-oracle-a-quick-sheet-for-sas-programmers-2/&#34; target=&#34;_blank&#34;&gt;differences&lt;/a&gt; in details.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Dig into the operating system specific documentation of SAS, for example in SAS 9.3,&amp;#160; _&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/hostwin/63047/HTML/default/viewer.htm#titlepage.htm&#34; target=&#34;_blank&#34;&gt;SAS 9.3 Companion for Windows&lt;/a&gt;_ or _&lt;a href=&#34;http://support.sas.com/documentation/cdl/en/hostunx/63053/HTML/default/viewer.htm#titlepage.htm&#34; target=&#34;_blank&#34;&gt;SAS 9.3 Companion for UNIX Environments&lt;/a&gt;_ or others depending the OS you are working on. They are the critical important documentations but unfortunately often missed in SAS programmers’&amp;#160; reading list.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Such docs will help SAS programmers to deal with the machines and expose to the wide computer world in a way that a SAS programmer can understand. You can’t expect to be an expert on computer via such docs, but at least you can communicate fluently with internal IT staff.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Then you get all the confidences to play with computer and can switch to any other topics interested in &lt;a href=&#34;http://www.quora.com/Educational-Resources/How-do-I-become-a-data-scientist&#34; target=&#34;_blank&#34;&gt;the list above&lt;/a&gt;!&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>Tom Davenport reported an observation that Silicon Valley is becoming more analytical since companies in the Valley such as Google, Facebook, eBay, LinkedLn all have strong presences in analytics. Besides such predominant companies, I’d also like to add Yahoo to the list although Yahoo is no longer in its peak. Yahoo is the largest sponsor and contributor of Hadoop, an open source framework for distributed processing of so called “big data”.</description>
     </item>
     
     <item>
@@ -388,36 +109,9 @@
       <pubDate>Tue, 04 Jan 2011 20:44:50 +0000</pubDate>
       
       <guid>/2011/01/04/decision-trees-in-sas-enterprise-miner-and-spss-clementine/</guid>
-      <description>&lt;p&gt;Decision trees are included in SAS Enterprise Miner(EM). The counterpart is SPSS Clementine, which should be called IBM SPSS Modeler for precision after IBM’s acquisition of SPSS.&lt;/p&gt;
-
-&lt;p&gt;Recently I read a paper on the comparisons of SAS EM, SPSS Clementine and IBM Intelligent Miner on their decision tree and cluster technology:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;_&lt;a href=&#34;http://www.gimi.us/CLUTE_INSTITUTE/ORLANDO_2010/Article%2520452.pdf&#34; target=&#34;_blank&#34;&gt;Decision Tree Induction &amp;amp; Clustering Techniques in SAS Enterprise Miner, SPSS Clementine, and IBM Intelligent Miner – A Comparative Analysis&lt;/a&gt;_ by Abdullah M. Al Ghoson, Virginia Commonwealth University&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The output is not that surprising. SAS EM plays better in performance, functionality and auxiliary task support but worse in usability.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SAS_VS_SPSS.png&#34;&gt;&lt;img style=&#34;border-right-width: 0px; display: block; float: none; border-top-width: 0px; border-bottom-width: 0px; margin-left: auto; border-left-width: 0px; margin-right: auto&#34; title=&#34;SAS_VS_SPSS&#34; border=&#34;0&#34; alt=&#34;SAS_VS_SPSS&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SAS_VS_SPSS_thumb.png&#34; width=&#34;503&#34; height=&#34;476&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Here are few comments on decision trees implementations in SAS EM and SPSS Clementine based on my own experiences. Some advises for beginners are also supplied.&lt;/p&gt;
-
-&lt;p&gt;There are four nodes in SPSS Clementine to supports four trees algorithms respectively: &lt;font color=&#34;#ff0000&#34;&gt;C5.0&lt;/font&gt;, Classification And Regression Trees (&lt;font color=&#34;#ff0000&#34;&gt;CART&lt;/font&gt;),&amp;#160; Quick, Unbiased, Efficient Statistical Tree(&lt;font color=&#34;#ff0000&#34;&gt;QUEST&lt;/font&gt;) and Chi-squared Automatic Interaction Detector(&lt;font color=&#34;#ff0000&#34;&gt;CHAID&lt;/font&gt;),&amp;#160; which are most famous and popular in decision trees family.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SPSS_4_trees.png&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;SPSS_4_trees&#34; border=&#34;0&#34; alt=&#34;SPSS_4_trees&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SPSS_4_trees_thumb.png&#34; width=&#34;412&#34; height=&#34;105&#34; /&gt;&lt;/a&gt; Note that CART&amp;reg; is a registered trademark of California Statistical Software, Inc., and is licensed exclusively to Salford Systems, San Diego, California. So SPSS Clementine uses C&amp;amp;R Tree as name.&lt;/p&gt;
-
-&lt;p&gt;In SAS EM, there is only one decision tree node:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SAS_tree.png&#34;&gt;&lt;img style=&#34;border-bottom: 0px; border-left: 0px; display: block; float: none; margin-left: auto; border-top: 0px; margin-right: auto; border-right: 0px&#34; title=&#34;SAS_tree&#34; border=&#34;0&#34; alt=&#34;SAS_tree&#34; src=&#34;http://www.jiangtanghu.com/blog/wp-content/uploads/2011/01/SAS_tree_thumb.png&#34; width=&#34;155&#34; height=&#34;74&#34; /&gt;&lt;/a&gt; The algorithms behind this node is called SAS tree algorithms, which incorporate and extend the four mentioned before. Just change the settings in decision tree node, you can get the trees you want.&lt;/p&gt;
-
-&lt;p&gt;Obviously, SAS tree algorithms is superior than the separated ones in SPSS Clementine for expansibility and flexibility. But at the other hand, the complexities increase. For a newbie user of SAS EM, he/she may wonder which trees he/she is training. A SPSS Clementine users just picks up a node and says: OK, I am now training a CART or CHAID.—he/she would communicate with others more smoothly.&lt;/p&gt;
-
-&lt;p&gt;Regardless of the industry application, I think this is the educational benefit of SPSS Clementine. Since almost every data mining book introduces decision trees by separated algorithms(such as ID3/C4.5/C5.0, CART, QUEST, CHAID, &amp;hellip;), the beginners using SPSS Clementine as instructional tool may get the clear ideas about the algorithms one by one. Once he/she get the full understanding of the differences among tree algorithms, he/she would train trees in SAS EM more comfortable.&lt;/p&gt;
-
-&lt;p&gt;What’s more, SPSS Clementine supplies rich supporting documentations for beginners and self learners , such as Tutorial, User Guide, Algorithms Guide, Node Reference. The official documentations of SAS EM 5.x and 6.x are relatively poor. Yes there is a good SAS Help and Documentation for SAS EM 4.3 including &lt;em&gt;Getting Started with Enterprise Miner&lt;/em&gt;. EM4.3 is a traditional AF application but EM5.x and above are Java client incorporated in SAS analysis platform(they are totally different!). For EM5.x and above, only installation guides and a plain reference are available.&lt;/p&gt;
-
-&lt;p&gt;SAS Institute may have its own marketing strategies. No rich references available, the Institute DOES offer &lt;a href=&#34;https://support.sas.com/edu/prodcourses.html?code=MINER&amp;ctry=US&#34; target=&#34;_blank&#34;&gt;rich training programs&lt;/a&gt; in data mining and Enterprise Miner application. Wooo, the big-budget purchasers of SAS EM can also afford the trainings.&lt;/p&gt;
-</description>
+      <description>Decision trees are included in SAS Enterprise Miner(EM). The counterpart is SPSS Clementine, which should be called IBM SPSS Modeler for precision after IBM’s acquisition of SPSS.
+Recently I read a paper on the comparisons of SAS EM, SPSS Clementine and IBM Intelligent Miner on their decision tree and cluster technology:
+ _Decision Tree Induction &amp;amp; Clustering Techniques in SAS Enterprise Miner, SPSS Clementine, and IBM Intelligent Miner – A Comparative Analysis_ by Abdullah M.</description>
     </item>
     
     <item>
@@ -426,116 +120,9 @@
       <pubDate>Tue, 13 Jan 2009 10:37:00 +0000</pubDate>
       
       <guid>/2009/01/13/r-or-sas-quick-links-to-the-recent-debates/</guid>
-      <description>&lt;p&gt;&lt;span style=&#34;font-family: Arial;&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;div&gt;
-  &lt;strong&gt;&lt;br /&gt; Original post, 7 Jan, 2009&lt;/strong&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;strong&gt; &lt;/strong&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  New York Times, &lt;a href=&#34;http://www.nytimes.com/2009/01/07/technology/business-computing/07program.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Data Analysts Captivated by R&amp;#8217;s Power&lt;/span&gt;&lt;/em&gt;&lt;/a&gt; by&lt;a href=&#34;http://topics.nytimes.com/top/reference/timestopics/people/v/ashlee_vance/index.html?inline=nyt-per&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Ashlee Vance&lt;/span&gt;&lt;/a&gt;.
-&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;strong&gt;&lt;br /&gt; Key Point&lt;/strong&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  The popularity of R at universities could threaten SAS Institute.
-&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;strong&gt;&lt;br /&gt; A Controversial Review by Anee Milley from SAS&lt;/strong&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;strong&gt; &lt;/strong&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  We have customers who build engines for aircraft. I am happy they are not using freeware when I get on a jet.
-&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;strong&gt;&lt;br /&gt; 7 Jan, 2009, &lt;/strong&gt;&lt;a href=&#34;http://www.listserv.uga.edu/cgi-bin/wa?A1=ind0901b&amp;L=sas-l#44&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;&lt;strong&gt;SAS-L&lt;/strong&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  Discussion in &lt;a href=&#34;http://www.listserv.uga.edu/cgi-bin/wa?A1=ind0901b&amp;L=sas-l#44&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;SAS-L&lt;/span&gt;&lt;/a&gt;, the most popular SAS mailing list. Most voices call for the incorporate both R and SAS.
-&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;strong&gt;&lt;br /&gt; 7 Jan, 2009, &lt;/strong&gt;&lt;a href=&#34;http://groups.google.com/group/r-help-archive/browse_thread/thread/5502fdc60d063833/352fc11a5b833f12&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;&lt;strong&gt;R-help&lt;/strong&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  Cheer for the victory of R.
-&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;strong&gt;&lt;br /&gt; 8 Jan, 2009, &lt;/strong&gt;&lt;a href=&#34;http://topics.nytimes.com/top/reference/timestopics/people/v/ashlee_vance/index.html?inline=nyt-per&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;&lt;strong&gt;Ashlee Vance&lt;/strong&gt;&lt;/span&gt;&lt;/a&gt;&lt;strong&gt;&amp;#8216;s blog&lt;/strong&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;a href=&#34;http://bits.blogs.nytimes.com/2009/01/08/r-you-ready-for-r/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;span style=&#34;color: #669966;&#34;&gt;R You Ready for R&lt;/span&gt;&lt;/em&gt;&lt;/a&gt;, with lots of comments
-&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;strong&gt;&lt;br /&gt; 9 Jan, 2009, &lt;/strong&gt;&lt;a href=&#34;http://groups.google.com/group/sasconsulting/topics&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;&lt;strong&gt;SAS Consulting&lt;/strong&gt;&lt;/span&gt;&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;strong&gt;&lt;br /&gt; 9 Jan, 2009, Anee Milley&lt;/strong&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  &lt;a href=&#34;http://blogs.sas.com/sascom/index.php?/archives/434-This-post-is-rated-R.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;span style=&#34;color: #669966;&#34;&gt;This Post Is Rated R&lt;/span&gt;&lt;/em&gt;&lt;/a&gt;, stating the viewpoints from SAS about open source software: support and participant.
-&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  For more, see &lt;a href=&#34;http://blogsearch.google.com/blogsearch?hl=en&amp;ie=UTF-8&amp;q=R+SAS&amp;btnG=Search+Blogs&#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Google Blog Search&lt;/span&gt;&lt;/a&gt;.
-&lt;/div&gt;
-</description>
+      <description>Original post, 7 Jan, 2009       New York Times, Data Analysts Captivated by R&amp;#8217;s Power byAshlee Vance.     
+Key Point     The popularity of R at universities could threaten SAS Institute.     
+A Controversial Review by Anee Milley from SAS       We have customers who build engines for aircraft.</description>
     </item>
     
     <item>
@@ -544,249 +131,18 @@
       <pubDate>Thu, 25 Dec 2008 16:26:00 +0000</pubDate>
       
       <guid>/2008/12/25/links-risk-intelligence-vendors-review-2008/</guid>
-      <description>&lt;div&gt;
-  &lt;span style=&#34;font-family: Arial;&#34;&gt;You can get the big picture viewing different sources(REMEMBER: A vendor&amp;#8217;s research methodology is as important as its rating):&lt;/p&gt; 
-  
-  &lt;p&gt;
-    &lt;/span&gt;&lt;/div&gt; 
-    
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;div&amp;gt;
-&amp;lt;/div&amp;gt;
-
-&amp;lt;div&amp;gt;
-  &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;Chartis RiskTech 100 (October 2008)&amp;lt;/span&amp;gt;
-&amp;lt;/div&amp;gt;
-
-&amp;lt;div&amp;gt;
-  &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://www.chartisresearch.com/showreport.asp?id=46&amp;quot;&amp;gt;http://www.chartisresearch.com/showreport.asp?id=46&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt; 
-
-  &amp;lt;p&amp;gt;
-    &amp;lt;a href=&amp;quot;http://2.bp.blogspot.com/_qlX7zyUQhog/SVNELKlQf2I/AAAAAAAABBk/O9jIagazNHU/s1600-h/RiskTech100-2008.PNG&amp;quot; onblur=&amp;quot;try {parent.deselectBloggerImageGracefully();} catch(e) {}&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;BLOGGER_PHOTO_ID_5283641746445598562&amp;quot; style=&amp;quot;cursor: pointer; width: 320px; height: 290px;&amp;quot; src=&amp;quot;http://2.bp.blogspot.com/_qlX7zyUQhog/SVNELKlQf2I/AAAAAAAABBk/O9jIagazNHU/s320/RiskTech100-2008.PNG&amp;quot; border=&amp;quot;0&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;
-  &amp;lt;/p&amp;gt;
-
-  &amp;lt;p&amp;gt;
-    &amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt; 
-
-    &amp;lt;div&amp;gt;
-      &amp;lt;span style=&amp;quot;font-family: Arial; font-size: 85%;&amp;quot;&amp;gt; &amp;lt;/span&amp;gt;
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div&amp;gt;
-      &amp;lt;img src=&amp;quot;cid:01d201c9666a$7afda6e0$22121bac@apac.sas.com&amp;quot; border=&amp;quot;0&amp;quot; alt=&amp;quot;&amp;quot; hspace=&amp;quot;0&amp;quot; align=&amp;quot;baseline&amp;quot; /&amp;gt;
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div&amp;gt;
-      &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt; &amp;lt;/span&amp;gt;
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div&amp;gt;
-      &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;&amp;lt;br /&amp;gt; FinTech100(2008)&amp;lt;/span&amp;gt;
-    &amp;lt;/div&amp;gt;
-
-    &amp;lt;div&amp;gt;
-      &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://www.americanbanker.com/article.html?id=20081112EGE9065B&amp;quot;&amp;gt;http://www.americanbanker.com/article.html?id=20081112EGE9065B&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt; 
-
-      &amp;lt;p&amp;gt;
-        &amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt; 
-
-        &amp;lt;div&amp;gt;
-          &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt; &amp;lt;/span&amp;gt;
-        &amp;lt;/div&amp;gt;
-
-        &amp;lt;div&amp;gt;
-          &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;FinTech100(2008): Top 25 Enterprise Companies&amp;lt;/span&amp;gt;
-        &amp;lt;/div&amp;gt;
-
-        &amp;lt;div&amp;gt;
-          &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://www.americanbanker.com/article.html?id=200811125HE027YZ&amp;quot;&amp;gt;http://www.americanbanker.com/article.html?id=200811125HE027YZ&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt; 
-
-          &amp;lt;p&amp;gt;
-            &amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt; 
-
-            &amp;lt;div&amp;gt;
-              &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt; &amp;lt;/span&amp;gt;
-            &amp;lt;/div&amp;gt;
-
-            &amp;lt;div&amp;gt;
-              &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;FinTech100(2008): Banking Top 10&amp;lt;/span&amp;gt;
-            &amp;lt;/div&amp;gt;
-
-            &amp;lt;div&amp;gt;
-              &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://www.americanbanker.com/article.html?id=20081112UMI813RM&amp;quot;&amp;gt;http://www.americanbanker.com/article.html?id=20081112UMI813RM&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt; 
-
-              &amp;lt;p&amp;gt;
-                &amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt; 
-
-                &amp;lt;div&amp;gt;
-                  &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt; &amp;lt;/span&amp;gt;
-                &amp;lt;/div&amp;gt;
-
-                &amp;lt;div&amp;gt;
-                  &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;FinTech100(2008): Capital Market Top 10&amp;lt;/span&amp;gt;
-                &amp;lt;/div&amp;gt;
-
-                &amp;lt;div&amp;gt;
-                  &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://www.americanbanker.com/article.html?id=20081112N00MER4M&amp;quot;&amp;gt;http://www.americanbanker.com/article.html?id=20081112N00MER4M&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt; 
-
-                  &amp;lt;p&amp;gt;
-                    &amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt; 
-
-                    &amp;lt;div&amp;gt;
-                      &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt; &amp;lt;/span&amp;gt;
-                    &amp;lt;/div&amp;gt;
-
-                    &amp;lt;div&amp;gt;
-                      &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;FinTech100(2008): Insurance Top 10&amp;lt;/span&amp;gt;
-                    &amp;lt;/div&amp;gt;
-
-                    &amp;lt;div&amp;gt;
-                      &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://www.americanbanker.com/article.html?id=200811125LHKU4ZO&amp;quot;&amp;gt;http://www.americanbanker.com/article.html?id=200811125LHKU4ZO&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt; 
-
-                      &amp;lt;p&amp;gt;
-                        &amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt; 
-
-                        &amp;lt;div&amp;gt;
-                          &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt; &amp;lt;/span&amp;gt;
-                        &amp;lt;/div&amp;gt;
-
-                        &amp;lt;div&amp;gt;
-                          &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;Celnet Credit Risk/Basel II Vendors(2008):&amp;lt;/span&amp;gt;
-                        &amp;lt;/div&amp;gt;
-
-                        &amp;lt;div&amp;gt;
-                          &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://www.celent.com/PressReleases/200804143/FinCreditRiskVendors.asp&amp;quot;&amp;gt;http://www.celent.com/PressReleases/200804143/FinCreditRiskVendors.asp&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;/span&amp;gt;&amp;lt;a href=&amp;quot;http://2.bp.blogspot.com/_qlX7zyUQhog/SVNEYBQ4f9I/AAAAAAAABBs/3LU_2yt0-Ac/s1600-h/Celent10.PNG&amp;quot; onblur=&amp;quot;try {parent.deselectBloggerImageGracefully();} catch(e) {}&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;BLOGGER_PHOTO_ID_5283641967282520018&amp;quot; style=&amp;quot;cursor: pointer; width: 320px; height: 238px;&amp;quot; src=&amp;quot;http://2.bp.blogspot.com/_qlX7zyUQhog/SVNEYBQ4f9I/AAAAAAAABBs/3LU_2yt0-Ac/s320/Celent10.PNG&amp;quot; border=&amp;quot;0&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt;
-                        &amp;lt;/div&amp;gt;
-
-                        &amp;lt;div&amp;gt;
-                          &amp;lt;img src=&amp;quot;cid:01d301c9666a$7afda6e0$22121bac@apac.sas.com&amp;quot; border=&amp;quot;0&amp;quot; alt=&amp;quot;&amp;quot; hspace=&amp;quot;0&amp;quot; align=&amp;quot;baseline&amp;quot; /&amp;gt;
-                        &amp;lt;/div&amp;gt;
-
-                        &amp;lt;div&amp;gt;
-                          &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt; &amp;lt;/span&amp;gt;
-                        &amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>You can get the big picture viewing different sources(REMEMBER: A vendor&amp;#8217;s research methodology is as important as its rating):
+  &amp;lt;div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;Chartis RiskTech 100 (October 2008)&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://www.chartisresearch.com/showreport.asp?id=46&amp;quot;&amp;gt;http://www.chartisresearch.com/showreport.asp?id=46&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; &amp;lt;a href=&amp;quot;http://2.bp.blogspot.com/_qlX7zyUQhog/SVNELKlQf2I/AAAAAAAABBk/O9jIagazNHU/s1600-h/RiskTech100-2008.PNG&amp;quot; onblur=&amp;quot;try {parent.deselectBloggerImageGracefully();} catch(e) {}&amp;quot;&amp;gt;&amp;lt;img id=&amp;quot;BLOGGER_PHOTO_ID_5283641746445598562&amp;quot; style=&amp;quot;cursor: pointer; width: 320px; height: 290px;&amp;quot; src=&amp;quot;http://2.bp.blogspot.com/_qlX7zyUQhog/SVNELKlQf2I/AAAAAAAABBk/O9jIagazNHU/s320/RiskTech100-2008.PNG&amp;quot; border=&amp;quot;0&amp;quot; alt=&amp;quot;&amp;quot; /&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; &amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;span style=&amp;quot;font-family: Arial; font-size: 85%;&amp;quot;&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;img src=&amp;quot;cid:01d201c9666a$7afda6e0$22121bac@apac.sas.com&amp;quot; border=&amp;quot;0&amp;quot; alt=&amp;quot;&amp;quot; hspace=&amp;quot;0&amp;quot; align=&amp;quot;baseline&amp;quot; /&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;&amp;lt;br /&amp;gt; FinTech100(2008)&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://www.</description>
     </item>
     
     <item>
       <title>Links&amp;#8211;BI Industry 2008: Review and Prospect</title>
-      <link>/2008/12/24/links</link>
+      <link>/2008/12/24/links#8211bi-industry-2008-review-and-prospect/</link>
       <pubDate>Wed, 24 Dec 2008 17:42:00 +0000</pubDate>
       
-      <guid>/2008/12/24/links</guid>
-      <description>&lt;div&gt;
-  &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;/*Thanks the hints supplied by: &lt;/span&gt;&lt;/p&gt; 
-  
-  &lt;p&gt;
-    &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://blogs.sas.com/bipie/index.php?/archives/43-A-look-back-at-2008-and-some-crystal-ball-predictions....html&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;&lt;em&gt;A look back at 2008 and some crystal ball predictions&amp;#8230;,&lt;/em&gt; &lt;/span&gt;&lt;/a&gt;byTammi Kay Geroge, from &lt;a href=&#34;http://blogs.sas.com/&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;SASBlog&lt;/span&gt;&lt;/a&gt;*/ &lt;/span&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.tdwi.org/News/display.aspx?ID=9261&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Major Data Warehousing Events of 2008 (and Predictions for 2009), &lt;/span&gt;&lt;/a&gt;by Michael Schiff, from &lt;a href=&#34;http://www.tdwi.org/&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;TDWI&lt;/span&gt;&lt;/a&gt;, &lt;/span&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
-  &lt;/p&gt;
-  
-  &lt;blockquote&gt;
-    &lt;p&gt;
-      &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;Major Data Warehousing Events of 2008: &lt;/span&gt;
-    &lt;/p&gt;
-    
-    &lt;p&gt;
-      &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
-    &lt;/p&gt;
-    
-    &lt;ul&gt;
-      &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;/p&gt; 
-      
-      &lt;li&gt;
-        Everyone had an appliance story
-      &lt;/li&gt;
-      &lt;li&gt;
-        Industry consolidations continued
-      &lt;/li&gt;
-      &lt;li&gt;
-        The recessionary environment encourage further BI developments
-      &lt;/li&gt;
-      &lt;li&gt;
-        Open source grew
-      &lt;/li&gt;
-      &lt;p&gt;
-        &lt;/span&gt;&lt;/ul&gt; &lt;/blockquote&gt; 
-        
-        &lt;p&gt;
-          &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
-        &lt;/p&gt;
-        
-        &lt;blockquote&gt;
-          &lt;p&gt;
-            &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;Predictions for 2009: &lt;/span&gt;
-          &lt;/p&gt;
-          
-          &lt;p&gt;
-            &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
-          &lt;/p&gt;
-          
-          &lt;ul&gt;
-            &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;/p&gt; 
-            
-            &lt;li&gt;
-              Further industry consolidation(Informatica by HP, SPSS by SAP)
-            &lt;/li&gt;
-            &lt;li&gt;
-              Cloud computing will come down to earth
-            &lt;/li&gt;
-            &lt;li&gt;
-              Open source growth will accelerate
-            &lt;/li&gt;
-            &lt;li&gt;
-              The IT world will become greener
-            &lt;/li&gt;
-            &lt;li&gt;
-              Major emphasis on solutions rather than tools and technology
-            &lt;/li&gt;
-            &lt;p&gt;
-              &lt;/span&gt;&lt;/ul&gt; &lt;/blockquote&gt; 
-              
-              &lt;p&gt;
-                &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
-              &lt;/p&gt;
-              
-              &lt;p&gt;
-                &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;em&gt;&lt;a href=&#34;http://www.b-eye-network.com/view/9298&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;BusinessIntelligence Tools: Year in Review&lt;/span&gt;&lt;/a&gt;&lt;/em&gt;，by Cindi Howson, from&lt;a href=&#34;http://www.b-eye-network.com/&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt; BeyeNetwork&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;
-              &lt;/p&gt;
-              
-              &lt;p&gt;
-                &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
-              &lt;/p&gt;
-              
-              &lt;p&gt;
-                &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;em&gt;&lt;a href=&#34;http://news.zdnet.com/2424-9595_22-255255.html&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;Top Virtualization Trends for 2009&lt;/span&gt;&lt;/a&gt;&lt;/em&gt;, by John Suit, from &lt;a href=&#34;http://www.zdnet.com/&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;ZDNet&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;
-              &lt;/p&gt;
-              
-              &lt;p&gt;
-                &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
-              &lt;/p&gt;
-              
-              &lt;p&gt;
-                &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.intelligententerprise.com/blog/archives/2008/12/a_prediction_fo.html&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;&lt;em&gt;Surround the Warehouse: Prediction for 2009&lt;/em&gt; &lt;/span&gt;&lt;/a&gt;, by Neil Raden, from &lt;a href=&#34;http://www.intelligententerprise.com/&#34;&gt;&lt;span style=&#34;color: #669966;&#34;&gt;IntelligentEnterprise&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;
-              &lt;/p&gt;
-              
-              &lt;p&gt;
-                &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
-              &lt;/p&gt;&lt;/div&gt;
-</description>
+      <guid>/2008/12/24/links#8211bi-industry-2008-review-and-prospect/</guid>
+      <description> /*Thanks the hints supplied by: 
+   A look back at 2008 and some crystal ball predictions&amp;#8230;, byTammi Kay Geroge, from SASBlog*/     Major Data Warehousing Events of 2008 (and Predictions for 2009), by Michael Schiff, from TDWI,      Major Data Warehousing Events of 2008:      Everyone had an appliance story   Industry consolidations continued   The recessionary environment encourage further BI developments   Open source grew         Predictions for 2009:      Further industry consolidation(Informatica by HP, SPSS by SAP)   Cloud computing will come down to earth   Open source growth will accelerate   The IT world will become greener   Major emphasis on solutions rather than tools and technology        BusinessIntelligence Tools: Year in Review，by Cindi Howson, fromBeyeNetwork    Top Virtualization Trends for 2009, by John Suit, from ZDNet    Surround the Warehouse: Prediction for 2009 , by Neil Raden, from IntelligentEnterprise    </description>
     </item>
     
     <item>
@@ -795,32 +151,7 @@
       <pubDate>Fri, 19 Dec 2008 10:44:00 +0000</pubDate>
       
       <guid>/2008/12/19/industry-review-sas-and-teradata-partnership/</guid>
-      <description>&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
-  &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;SAS and Teradata Partnership: Press&lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
-  &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.sas.com/news/preleases/SASandTeradataAdvantageProgram.html&#34;&gt;Leading Companies See Value in SAS and Teradata Partnership&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.sas.com/news/preleases/TeradataAdvantageProgram.html&#34;&gt;SAS and Teradata Unveil Advantage Program to Bring Powerful In-Database Solutions and Services to Customers&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt;&lt;a href=&#34;http://www.teradata.com/t/page/173874/index.html&#34;&gt;SAS and Teradata Enter into Strategic Partnership&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;font-size: 100%;&#34;&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
-  &lt;span style=&#34;font-family: Arial; font-size: 100%;&#34;&gt; &lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
-  &lt;span style=&#34;font-size: 100%;&#34;&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/span&gt;
-&lt;/p&gt;
-
-&lt;p class=&#34;MsoNormal&#34; style=&#34;margin: 0in 0in 0pt;&#34;&gt;
-  &lt;span style=&#34;font-size: 100%;&#34;&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;In BI industry, the pure players such as SAS, Teradata and Microstrategy, need to demonstrate their indispensable values against the megavendors, IBM (acquired Cognos), SAP (acquired Business Object), Oracle (acquired Hyperion) and Microsoft. Teradata is solely focused on enterprise data warehouse. SAS, dominating in business analytics (e.g. advanced statistics and data mining), will check and balance the BI industry due to the private-hold structure. SAS and Teradata Advantage Program partnership, includes wide business lines, such as Analytics, AML (Anti-Money Laundering), Credit Risk, Enterprise Intelligence and Optimization Services. I think It&amp;#8217;s a effective way to learn from each other in mutual emulation and&lt;/span&gt;&lt;span style=&#34;font-family: Times New Roman;&#34;&gt; &lt;/span&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt;counterbalance the &lt;/span&gt;&lt;span class=&#34;wbtrmn&#34;&gt;&lt;span style=&#34;font-family: Times New Roman;&#34;&gt;concentration&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;font-family: Arial; font-size: 10;&#34;&gt; market.&lt;/span&gt;&lt;/span&gt;
-&lt;/p&gt;
-</description>
+      <description>SAS and Teradata Partnership: Press   Leading Companies See Value in SAS and Teradata Partnership SAS and Teradata Unveil Advantage Program to Bring Powerful In-Database Solutions and Services to Customers SAS and Teradata Enter into Strategic Partnership    In BI industry, the pure players such as SAS, Teradata and Microstrategy, need to demonstrate their indispensable values against the megavendors, IBM (acquired Cognos), SAP (acquired Business Object), Oracle (acquired Hyperion) and Microsoft.</description>
     </item>
     
     <item>
@@ -829,22 +160,8 @@
       <pubDate>Wed, 17 Dec 2008 09:40:00 +0000</pubDate>
       
       <guid>/2008/12/17/the-making-of-an-analyst-a-supplement-to-what-makes-a-good-business-analyst/</guid>
-      <description>&lt;div&gt;
-  &lt;span style=&#34;font-family: Arial;&#34;&gt;I once commented the entry, &lt;a href=&#34;http://www.intelligententerprise.com/blog/archives/2008/12/what_makes_a_go.html&#34;&gt;&lt;em&gt;&lt;span class=&#34;HeadGiantblack&#34;&gt;What Makes a Good Business Analyst&lt;/span&gt;&lt;/em&gt;&lt;/a&gt; by Rajan Chandras, with an easy tone, &lt;em&gt;&lt;a href=&#34;http://jiangtanghu.blogspot.com/2008/12/if-you-can-make-it-here-you-can-make-it.html&#34;&gt;If You Can Make it Here, You Can Make it Anywhere&lt;/a&gt;&lt;/em&gt;. The standards of a good analyst conclude by Rajan, in my opinion, are somewhat of very high bars.&lt;/p&gt; 
-  
-  &lt;p&gt;
-    &lt;/span&gt;&lt;/div&gt; 
-    
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;div&amp;gt;
-  &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt; &amp;lt;/span&amp;gt;
-&amp;lt;/div&amp;gt;
-
-&amp;lt;div&amp;gt;
-  &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;In the recent SASCOM Magazine, Ted Cuzzillo published a relatively moderate enty, say, &amp;lt;em&amp;gt;&amp;lt;a href=&amp;quot;http://www.sas.com/news/sascom/2008q4/feature_analyst.html&amp;quot;&amp;gt;The Making of An Analyst&amp;lt;/a&amp;gt;&amp;lt;/em&amp;gt;. This paper is considered the fresh graduates to be an analysts in their first job hunting. &amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;Yes, there two posts are more compatible than oppositive. Rajan&amp;amp;#8217;s targets are those veteran analysts with years of experience.&amp;lt;/span&amp;gt;
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>I once commented the entry, What Makes a Good Business Analyst by Rajan Chandras, with an easy tone, If You Can Make it Here, You Can Make it Anywhere. The standards of a good analyst conclude by Rajan, in my opinion, are somewhat of very high bars.
+  &amp;lt;div&amp;gt; &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt; &amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; &amp;lt;span style=&amp;quot;font-family: Arial;&amp;quot;&amp;gt;In the recent SASCOM Magazine, Ted Cuzzillo published a relatively moderate enty, say, &amp;lt;em&amp;gt;&amp;lt;a href=&amp;quot;http://www.</description>
     </item>
     
     <item>
@@ -853,31 +170,9 @@
       <pubDate>Sun, 14 Dec 2008 00:24:00 +0000</pubDate>
       
       <guid>/2008/12/14/if-you-can-make-it-here-you-can-make-it-anywhere-on-what-makes-a-good-business-analyst-by-rajan-chandras/</guid>
-      <description>&lt;p&gt;In the latest post, &lt;a href=&#34;http://www.intelligententerprise.com/blog/archives/2008/12/what_makes_a_go.html&#34;&gt;&lt;em&gt;&lt;span class=&#34;HeadGiantblack&#34;&gt;What Makes a Good Business Analyst?&lt;/span&gt;&lt;/em&gt;&lt;/a&gt;, Rajan Chandras cites some soft items from  &lt;span class=&#34;hpTopStoryBlurb&#34;&gt;&lt;em&gt;Forrester&amp;#8217;s Business Analyst Assessment Workbook&lt;/em&gt;:&lt;br /&gt; &lt;/span&gt; &lt;span class=&#34;hpTopStoryBlurb&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Ability to think abstractly, identify patterns, and generate ideas and solutions&lt;/li&gt;
-&lt;li&gt;Understanding of when and how to escalate issues or needs&lt;/li&gt;
-&lt;li&gt;Understanding of and ability to delivery the appropriate level of detail needed for each task&lt;/li&gt;
-&lt;li&gt;Interest in exploring and understanding new concepts and topic areas&lt;/li&gt;
-&lt;li&gt;Emotionally invested in the work&lt;/li&gt;
-&lt;li&gt;Ability to learn by shadowing stakeholders&lt;/li&gt;
-&lt;li&gt;Ability to clearly articulate technology in terms stakeholders can understand&lt;/li&gt;
-&lt;li&gt;Understanding of the organizational culture and its impact on processes and projects (this one seems obvious, but the latter phrase is more profound than might seem at first glance)&lt;/li&gt;
-&lt;li&gt;Ability to drive a decision analysis and selection process&lt;/li&gt;
-&lt;li&gt;Ability to recognize patterns in requirements and categorize them appropriately&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;What&amp;#8217;s more, there are some suggestions by Rajan Chandras himself: &lt;span class=&#34;hpTopStoryBlurb&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Know the organization&amp;#8217;s external environment: its competitive position, current state of the industry, geographical &amp;amp; social factors, etc.&lt;/li&gt;
-&lt;li&gt;Know the organization&amp;#8217;s internal environment: its financial position, organization culture, IT maturity, etc.&lt;/li&gt;
-&lt;li&gt;Adapt to the needs (your language, dress etc.), but be yourself. Imperfect, yet genuine, is fine; falsity comes through easily, and will destroy your credibility in no time.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;span class=&#34;hpTopStoryBlurb&#34;&gt;No doubt, no boss can reject such a perfect analyst. But I&amp;#8217;m afraid these standards are suitable for every professionals.&lt;/span&gt; &lt;span class=&#34;hpTopStoryBlurb&#34;&gt;That is to say, they create a model to explain everything. It is too universal to be served as a good filter to select the most proper analysts. She or he may more marketable in any other business line.&lt;/span&gt;&lt;/p&gt;
-</description>
+      <description>In the latest post, What Makes a Good Business Analyst?, Rajan Chandras cites some soft items from Forrester&amp;#8217;s Business Analyst Assessment Workbook:
+ 
+ Ability to think abstractly, identify patterns, and generate ideas and solutions Understanding of when and how to escalate issues or needs Understanding of and ability to delivery the appropriate level of detail needed for each task Interest in exploring and understanding new concepts and topic areas Emotionally invested in the work Ability to learn by shadowing stakeholders Ability to clearly articulate technology in terms stakeholders can understand Understanding of the organizational culture and its impact on processes and projects (this one seems obvious, but the latter phrase is more profound than might seem at first glance) Ability to drive a decision analysis and selection process Ability to recognize patterns in requirements and categorize them appropriately  What&amp;#8217;s more, there are some suggestions by Rajan Chandras himself:</description>
     </item>
     
   </channel>

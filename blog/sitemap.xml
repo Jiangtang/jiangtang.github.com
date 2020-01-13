@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/data-mining/</loc>
+    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
+  </url>
   
   <url>
     <loc>/2017/05/04/in-search-of-lost-time-2016/</loc>
@@ -7,8 +18,73 @@
   </url>
   
   <url>
+    <loc>/</loc>
+    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/machine-learning/</loc>
+    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/machine-learning/</loc>
+    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/python/</loc>
+    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/python/</loc>
+    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/spark/</loc>
+    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/about/</loc>
     <lastmod>2016-05-05T21:48:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ds2/</loc>
+    <lastmod>2015-09-04T14:01:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/mapreduce/</loc>
+    <lastmod>2015-09-04T14:01:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sas/</loc>
+    <lastmod>2015-09-04T14:01:30+00:00</lastmod>
   </url>
   
   <url>
@@ -22,8 +98,33 @@
   </url>
   
   <url>
+    <loc>/tags/merge/</loc>
+    <lastmod>2015-09-04T12:02:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/sas/</loc>
+    <lastmod>2015-09-04T12:02:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/combination/</loc>
+    <lastmod>2015-06-25T12:55:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/iml/</loc>
+    <lastmod>2015-06-25T12:55:38+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2015/06/25/sas-combinatorial-functions-snippets/</loc>
     <lastmod>2015-06-25T12:55:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/confidence-interval/</loc>
+    <lastmod>2015-05-22T22:05:39+00:00</lastmod>
   </url>
   
   <url>
@@ -32,8 +133,23 @@
   </url>
   
   <url>
+    <loc>/categories/statistics/</loc>
+    <lastmod>2015-05-22T22:05:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/statistics/</loc>
+    <lastmod>2015-05-22T22:05:39+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2015/05/12/calculating-covariance-by-sas-a-brutal-way/</loc>
     <lastmod>2015-05-12T15:56:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/format/</loc>
+    <lastmod>2015-05-12T13:06:28+00:00</lastmod>
   </url>
   
   <url>
@@ -52,13 +168,33 @@
   </url>
   
   <url>
+    <loc>/tags/cdisc/</loc>
+    <lastmod>2014-09-29T21:59:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/cdisc/</loc>
+    <lastmod>2014-09-29T21:59:02+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2014/09/29/takeaway-materials-from-pharmasug-sde-cary-nc/</loc>
     <lastmod>2014-09-29T21:59:02+00:00</lastmod>
   </url>
   
   <url>
+    <loc>/tags/logic/</loc>
+    <lastmod>2014-09-11T22:55:59+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2014/09/11/to-exit-or-not-exit-the-sas-ways/</loc>
     <lastmod>2014-09-11T22:55:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ods/</loc>
+    <lastmod>2014-09-04T14:24:16+00:00</lastmod>
   </url>
   
   <url>
@@ -102,8 +238,18 @@
   </url>
   
   <url>
+    <loc>/tags/enterprise-guide/</loc>
+    <lastmod>2014-02-06T23:28:26+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2014/02/06/sas-format-viewer-and-others-eg/</loc>
     <lastmod>2014-02-06T23:28:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/json/</loc>
+    <lastmod>2013-12-12T13:30:49+00:00</lastmod>
   </url>
   
   <url>
@@ -112,8 +258,58 @@
   </url>
   
   <url>
+    <loc>/tags/xml/</loc>
+    <lastmod>2013-12-12T13:30:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/xml/</loc>
+    <lastmod>2013-12-12T13:30:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/computer/</loc>
+    <lastmod>2013-11-29T00:16:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/computer/</loc>
+    <lastmod>2013-11-29T00:16:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/software/</loc>
+    <lastmod>2013-11-29T00:16:33+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2013/11/29/the-hardware-and-software-2013-irsquom-most-thankful-for/</loc>
     <lastmod>2013-11-29T00:16:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/call-execute/</loc>
+    <lastmod>2013-11-07T10:10:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/foreach/</loc>
+    <lastmod>2013-11-07T10:10:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/list/</loc>
+    <lastmod>2013-11-07T10:10:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/macro/</loc>
+    <lastmod>2013-11-07T10:10:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/macro-array/</loc>
+    <lastmod>2013-11-07T10:10:21+00:00</lastmod>
   </url>
   
   <url>
@@ -127,8 +323,28 @@
   </url>
   
   <url>
+    <loc>/tags/ods-markup/</loc>
+    <lastmod>2013-11-04T21:19:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sas-enterprise-guide/</loc>
+    <lastmod>2013-11-04T21:19:49+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2013/09/18/community-contributors-to-sas/stat/</loc>
     <lastmod>2013-09-18T19:24:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/github/</loc>
+    <lastmod>2013-09-17T15:59:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ods-tagsets/</loc>
+    <lastmod>2013-09-17T15:59:12+00:00</lastmod>
   </url>
   
   <url>
@@ -142,13 +358,48 @@
   </url>
   
   <url>
+    <loc>/tags/sas-9.4/</loc>
+    <lastmod>2013-09-16T12:48:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sas-system-viewer/</loc>
+    <lastmod>2013-08-27T09:42:36+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2013/08/27/sas-system-viewer-doesnrsquot-support-sas-9.4-datasets/</loc>
     <lastmod>2013-08-27T09:42:36+00:00</lastmod>
   </url>
   
   <url>
+    <loc>/tags/equivalence-test/</loc>
+    <lastmod>2013-08-26T22:59:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/noninferiority-test/</loc>
+    <lastmod>2013-08-26T22:59:27+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2013/08/26/noninferiority-testing-with-sas/</loc>
     <lastmod>2013-08-26T22:59:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/proc-freq/</loc>
+    <lastmod>2013-08-26T22:59:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/proc-ttest/</loc>
+    <lastmod>2013-08-26T22:59:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/binomial-proportion-inverval/</loc>
+    <lastmod>2013-08-25T23:32:29+00:00</lastmod>
   </url>
   
   <url>
@@ -167,12 +418,27 @@
   </url>
   
   <url>
+    <loc>/tags/do-loop/</loc>
+    <lastmod>2013-08-07T23:49:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dow-loop/</loc>
+    <lastmod>2013-08-07T23:49:55+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2013/08/07/yet-another-instance-of-dow-loop/</loc>
     <lastmod>2013-08-07T23:49:55+00:00</lastmod>
   </url>
   
   <url>
     <loc>/2013/07/29/good-morning-hotfix-tool-for-sas-9.4/</loc>
+    <lastmod>2013-07-29T09:56:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sas-hotfix/</loc>
     <lastmod>2013-07-29T09:56:11+00:00</lastmod>
   </url>
   
@@ -184,6 +450,11 @@
   <url>
     <loc>/2013/07/26/list-processing-with-sas-2-list-creating-ii/</loc>
     <lastmod>2013-07-26T00:24:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sas-universal-viewer/</loc>
+    <lastmod>2013-07-16T22:37:50+00:00</lastmod>
   </url>
   
   <url>
@@ -207,6 +478,16 @@
   </url>
   
   <url>
+    <loc>/tags/zip/</loc>
+    <lastmod>2013-06-29T10:36:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/preproduction/</loc>
+    <lastmod>2013-06-29T09:51:52+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2013/06/29/preproduction-in-sas/</loc>
     <lastmod>2013-06-29T09:51:52+00:00</lastmod>
   </url>
@@ -222,8 +503,38 @@
   </url>
   
   <url>
+    <loc>/tags/scope/</loc>
+    <lastmod>2013-03-29T19:22:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/blog/</loc>
+    <lastmod>2013-03-20T23:09:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/industry-review/</loc>
+    <lastmod>2013-03-20T23:09:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/opencdisc/</loc>
+    <lastmod>2013-03-20T23:09:08+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2013/03/20/whatrsquos-new/</loc>
     <lastmod>2013-03-20T23:09:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/business-intelligence/</loc>
+    <lastmod>2013-03-13T21:46:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/metadata/</loc>
+    <lastmod>2013-03-13T21:46:35+00:00</lastmod>
   </url>
   
   <url>
@@ -237,6 +548,16 @@
   </url>
   
   <url>
+    <loc>/tags/transpose/</loc>
+    <lastmod>2013-03-11T21:10:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/undocumented-feature/</loc>
+    <lastmod>2013-02-26T21:00:14+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2013/02/26/yet-another-undocumented-feature-new-in-sas-9.3/</loc>
     <lastmod>2013-02-26T21:00:14+00:00</lastmod>
   </url>
@@ -247,7 +568,57 @@
   </url>
   
   <url>
+    <loc>/tags/perl-regular-expression/</loc>
+    <lastmod>2013-02-24T21:59:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/cvs/</loc>
+    <lastmod>2013-02-20T22:01:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/fda/</loc>
+    <lastmod>2013-02-20T22:01:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/git/</loc>
+    <lastmod>2013-02-20T22:01:03+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2013/02/20/github-for-clinical/statistical-programmers/</loc>
+    <lastmod>2013-02-20T22:01:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/google-code/</loc>
+    <lastmod>2013-02-20T22:01:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/misc/</loc>
+    <lastmod>2013-02-20T22:01:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/phuse/</loc>
+    <lastmod>2013-02-20T22:01:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/social-coding/</loc>
+    <lastmod>2013-02-20T22:01:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/svn/</loc>
+    <lastmod>2013-02-20T22:01:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/version-control/</loc>
     <lastmod>2013-02-20T22:01:03+00:00</lastmod>
   </url>
   
@@ -257,8 +628,33 @@
   </url>
   
   <url>
+    <loc>/tags/nls/</loc>
+    <lastmod>2013-02-19T23:31:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sort/</loc>
+    <lastmod>2013-02-19T23:31:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ods-report-writing/</loc>
+    <lastmod>2013-02-17T20:21:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/report/</loc>
+    <lastmod>2013-02-17T20:21:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2013/02/17/sas-ods-report-writing-interface-a-quick-demo/</loc>
     <lastmod>2013-02-17T20:21:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/coursera/</loc>
+    <lastmod>2013-02-08T23:37:49+00:00</lastmod>
   </url>
   
   <url>
@@ -267,7 +663,47 @@
   </url>
   
   <url>
+    <loc>/tags/mooc/</loc>
+    <lastmod>2013-02-08T23:37:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/plyr/</loc>
+    <lastmod>2013-02-08T23:37:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/rstudio/</loc>
+    <lastmod>2013-02-08T23:37:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sql/</loc>
+    <lastmod>2013-02-08T23:37:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sqldf/</loc>
+    <lastmod>2013-02-08T23:37:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/etl/</loc>
+    <lastmod>2013-01-12T18:08:14+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2013/01/12/how-to-jump-into-sas-data-integration-studio/</loc>
+    <lastmod>2013-01-12T18:08:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sas-data-integration-studio/</loc>
+    <lastmod>2013-01-12T18:08:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/transformations/</loc>
     <lastmod>2013-01-12T18:08:14+00:00</lastmod>
   </url>
   
@@ -277,7 +713,22 @@
   </url>
   
   <url>
+    <loc>/tags/excel/</loc>
+    <lastmod>2013-01-05T17:46:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/excelxp/</loc>
+    <lastmod>2013-01-05T17:46:24+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2013/01/05/get-started-with-sas-tagsets.excelxp/</loc>
+    <lastmod>2013-01-05T17:46:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ods-template/</loc>
     <lastmod>2013-01-05T17:46:24+00:00</lastmod>
   </url>
   
@@ -287,7 +738,32 @@
   </url>
   
   <url>
+    <loc>/tags/google-analytics/</loc>
+    <lastmod>2013-01-01T23:47:44+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2012/12/31/best-of-sas-a-personal-nomination-2012/</loc>
+    <lastmod>2012-12-31T01:13:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/graph/</loc>
+    <lastmod>2012-12-31T01:13:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ods-graphics/</loc>
+    <lastmod>2012-12-31T01:13:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sas-xml-mapper/</loc>
+    <lastmod>2012-12-31T01:13:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/t-test/</loc>
     <lastmod>2012-12-31T01:13:03+00:00</lastmod>
   </url>
   
@@ -297,8 +773,23 @@
   </url>
   
   <url>
+    <loc>/tags/data-scientist/</loc>
+    <lastmod>2012-12-23T15:14:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/kaggle/</loc>
+    <lastmod>2012-12-23T15:14:13+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2012/12/23/weekend-clips-data-scientist-episode-ii/</loc>
     <lastmod>2012-12-23T15:14:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sas-certificate/</loc>
+    <lastmod>2012-12-22T23:13:39+00:00</lastmod>
   </url>
   
   <url>
@@ -307,8 +798,28 @@
   </url>
   
   <url>
+    <loc>/tags/book/</loc>
+    <lastmod>2012-12-07T23:36:30+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2012/12/07/my-sas-books-shopping-list-2012/</loc>
     <lastmod>2012-12-07T23:36:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/web-programming/</loc>
+    <lastmod>2012-12-07T23:36:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/joke/</loc>
+    <lastmod>2012-11-30T22:31:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tweet/</loc>
+    <lastmod>2012-11-30T22:31:52+00:00</lastmod>
   </url>
   
   <url>
@@ -322,8 +833,33 @@
   </url>
   
   <url>
+    <loc>/tags/black-friday/</loc>
+    <lastmod>2012-11-23T23:04:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/jekyll/</loc>
+    <lastmod>2012-11-23T23:04:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/php/</loc>
+    <lastmod>2012-11-23T23:04:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/wordpress/</loc>
+    <lastmod>2012-11-23T23:04:03+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2012/11/23/wordpress-and-black-friday/</loc>
     <lastmod>2012-11-23T23:04:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/macro-quoting/</loc>
+    <lastmod>2012-11-19T21:35:04+00:00</lastmod>
   </url>
   
   <url>
@@ -337,8 +873,28 @@
   </url>
   
   <url>
+    <loc>/tags/groovy/</loc>
+    <lastmod>2012-10-28T23:07:12+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2012/10/28/hello-groovy-in-sas-9.3/</loc>
     <lastmod>2012-10-28T23:07:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/java/</loc>
+    <lastmod>2012-10-28T23:07:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sas-history/</loc>
+    <lastmod>2012-10-23T22:32:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tony-barr/</loc>
+    <lastmod>2012-10-23T22:32:17+00:00</lastmod>
   </url>
   
   <url>
@@ -357,8 +913,28 @@
   </url>
   
   <url>
+    <loc>/tags/base-sas/</loc>
+    <lastmod>2012-10-16T22:28:41+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2012/10/16/incorporate-sas/iml-to-base-sas/</loc>
     <lastmod>2012-10-16T22:28:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/matrix/</loc>
+    <lastmod>2012-10-16T22:28:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/regex/</loc>
+    <lastmod>2012-10-11T21:20:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/regular-expression/</loc>
+    <lastmod>2012-10-11T21:20:39+00:00</lastmod>
   </url>
   
   <url>
@@ -367,13 +943,53 @@
   </url>
   
   <url>
+    <loc>/tags/sesug/</loc>
+    <lastmod>2012-10-11T21:20:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/powershell/</loc>
+    <lastmod>2012-10-08T22:22:23+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2012/10/08/powershell-up-to-v3.0/</loc>
     <lastmod>2012-10-08T22:22:23+00:00</lastmod>
   </url>
   
   <url>
+    <loc>/tags/cmd/</loc>
+    <lastmod>2012-10-08T22:19:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/current-folder/</loc>
+    <lastmod>2012-10-08T22:19:47+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2012/10/08/current-working-folder-in-sas/</loc>
     <lastmod>2012-10-08T22:19:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/shell/</loc>
+    <lastmod>2012-10-08T22:19:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/uncategorized/</loc>
+    <lastmod>2012-10-08T22:19:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/af/</loc>
+    <lastmod>2012-10-02T14:40:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/log/</loc>
+    <lastmod>2012-10-02T14:40:05+00:00</lastmod>
   </url>
   
   <url>
@@ -392,6 +1008,11 @@
   </url>
   
   <url>
+    <loc>/tags/output/</loc>
+    <lastmod>2012-09-22T22:10:12+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2012/09/22/where-is-sas-output-anyway/</loc>
     <lastmod>2012-09-22T22:10:12+00:00</lastmod>
   </url>
@@ -402,7 +1023,32 @@
   </url>
   
   <url>
+    <loc>/tags/bayesian/</loc>
+    <lastmod>2012-09-21T01:20:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/frequentist-inference/</loc>
+    <lastmod>2012-09-21T01:20:10+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2012/09/21/frequentist-or-baysian-in-a-binomial-test/</loc>
+    <lastmod>2012-09-21T01:20:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hypothesis-testing/</loc>
+    <lastmod>2012-09-21T01:20:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/logic/</loc>
+    <lastmod>2012-09-21T01:20:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/p-value/</loc>
     <lastmod>2012-09-21T01:20:10+00:00</lastmod>
   </url>
   
@@ -417,8 +1063,43 @@
   </url>
   
   <url>
+    <loc>/tags/geometric-mean/</loc>
+    <lastmod>2012-09-12T22:39:23+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2012/09/12/statistical-notes-2-equivalence-testing-and-tost-two-one-sided-test/</loc>
     <lastmod>2012-09-12T22:39:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tost/</loc>
+    <lastmod>2012-09-12T22:39:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/auc/</loc>
+    <lastmod>2012-09-12T20:15:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/clinical-programmer/</loc>
+    <lastmod>2012-09-12T20:15:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/gmt/</loc>
+    <lastmod>2012-09-12T20:15:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/gmtr/</loc>
+    <lastmod>2012-09-12T20:15:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/log-transformation/</loc>
+    <lastmod>2012-09-12T20:15:15+00:00</lastmod>
   </url>
   
   <url>
@@ -432,6 +1113,56 @@
   </url>
   
   <url>
+    <loc>/tags/markdown/</loc>
+    <lastmod>2012-07-19T01:54:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/publishing/</loc>
+    <lastmod>2012-07-19T01:54:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/restructuredtext/</loc>
+    <lastmod>2012-07-19T01:54:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sdtm/</loc>
+    <lastmod>2012-07-19T01:54:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/chrome/</loc>
+    <lastmod>2012-07-14T23:10:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/clover/</loc>
+    <lastmod>2012-07-14T23:10:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/foxit-reader/</loc>
+    <lastmod>2012-07-14T23:10:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/notepad&#43;&#43;/</loc>
+    <lastmod>2012-07-14T23:10:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/office-tab/</loc>
+    <lastmod>2012-07-14T23:10:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sublime-text-2/</loc>
+    <lastmod>2012-07-14T23:10:40+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2012/07/14/tab-is-a-tab-is-a-tab-is-a-tab/</loc>
     <lastmod>2012-07-14T23:10:40+00:00</lastmod>
   </url>
@@ -442,7 +1173,32 @@
   </url>
   
   <url>
+    <loc>/tags/vim/</loc>
+    <lastmod>2012-07-13T00:27:57+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2012/05/04/blogging-is-awesome-cdisc-bloggers/</loc>
+    <lastmod>2012-05-04T22:42:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/clinical-standards/</loc>
+    <lastmod>2012-05-04T22:42:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ectd/</loc>
+    <lastmod>2012-05-04T22:42:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/edc/</loc>
+    <lastmod>2012-05-04T22:42:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/odm/</loc>
     <lastmod>2012-05-04T22:42:32+00:00</lastmod>
   </url>
   
@@ -452,12 +1208,57 @@
   </url>
   
   <url>
+    <loc>/tags/ebook/</loc>
+    <lastmod>2012-04-04T20:32:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/google-reader/</loc>
+    <lastmod>2012-04-04T20:32:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/jmp/</loc>
+    <lastmod>2012-04-04T20:32:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/stephen-wolfram/</loc>
+    <lastmod>2012-04-04T20:32:06+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2012/03/31/opencdisc-validator-v1.3-an-unboxing-review-1-counting-issue/</loc>
     <lastmod>2012-03-31T16:58:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>/tags/validation/</loc>
+    <lastmod>2012-03-31T16:58:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/control-terminology/</loc>
+    <lastmod>2012-03-30T00:23:17+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2012/03/30/fetch-cdisc-control-terminology-files-in-nci-vocabulary-repository-all-in-one-click/</loc>
+    <lastmod>2012-03-30T00:23:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/gnu/</loc>
+    <lastmod>2012-03-30T00:23:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/nci/</loc>
+    <lastmod>2012-03-30T00:23:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/wget/</loc>
     <lastmod>2012-03-30T00:23:17+00:00</lastmod>
   </url>
   
@@ -467,8 +1268,38 @@
   </url>
   
   <url>
+    <loc>/tags/cpi/</loc>
+    <lastmod>2012-03-24T01:29:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/economics/</loc>
+    <lastmod>2012-03-24T01:29:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/inflation/</loc>
+    <lastmod>2012-03-24T01:29:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/mail-stamp/</loc>
+    <lastmod>2012-03-24T01:29:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/menu-cost/</loc>
+    <lastmod>2012-03-24T01:29:47+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2012/03/24/us-post-beats-menu-cost/</loc>
     <lastmod>2012-03-24T01:29:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/documentation/</loc>
+    <lastmod>2012-02-29T19:48:44+00:00</lastmod>
   </url>
   
   <url>
@@ -478,6 +1309,11 @@
   
   <url>
     <loc>/2012/02/29/happy-leap-year-from-logical-point-of-view-operators/</loc>
+    <lastmod>2012-02-29T00:14:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/logic-operator/</loc>
     <lastmod>2012-02-29T00:14:07+00:00</lastmod>
   </url>
   
@@ -497,8 +1333,18 @@
   </url>
   
   <url>
+    <loc>/tags/open-source/</loc>
+    <lastmod>2012-02-11T16:35:35+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2012/01/24/happy-new-year-yes-again/</loc>
     <lastmod>2012-01-24T12:06:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ide/</loc>
+    <lastmod>2011-11-13T11:11:14+00:00</lastmod>
   </url>
   
   <url>
@@ -517,6 +1363,11 @@
   </url>
   
   <url>
+    <loc>/tags/wps/</loc>
+    <lastmod>2011-11-05T21:50:42+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2011/10/31/hello-python/</loc>
     <lastmod>2011-10-31T20:29:43+00:00</lastmod>
   </url>
@@ -524,6 +1375,41 @@
   <url>
     <loc>/2011/10/08/an-online-latin-to-english-translator-via-sas/</loc>
     <lastmod>2011-10-08T21:47:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/google/</loc>
+    <lastmod>2011-10-08T21:47:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/latin/</loc>
+    <lastmod>2011-10-08T21:47:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/translate/</loc>
+    <lastmod>2011-10-08T21:47:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/array/</loc>
+    <lastmod>2011-10-04T21:31:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/database/</loc>
+    <lastmod>2011-10-04T21:31:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hadoop/</loc>
+    <lastmod>2011-10-04T21:31:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/lisp/</loc>
+    <lastmod>2011-10-04T21:31:18+00:00</lastmod>
   </url>
   
   <url>
@@ -537,8 +1423,38 @@
   </url>
   
   <url>
-    <loc>/2011/09/03/fours-errors-in-sas-9.2-fisher</loc>
+    <loc>/tags/big-data/</loc>
+    <lastmod>2011-09-14T22:15:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data-mining/</loc>
+    <lastmod>2011-09-14T22:15:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/fisher/</loc>
     <lastmod>2011-09-03T21:13:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2011/09/03/fours-errors-in-sas-9.2-fisher#8217s-iris-data-in-sashelp-library/</loc>
+    <lastmod>2011-09-03T21:13:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/iris/</loc>
+    <lastmod>2011-09-03T21:13:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/class/</loc>
+    <lastmod>2011-08-31T22:18:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/oracle/</loc>
+    <lastmod>2011-08-31T22:18:09+00:00</lastmod>
   </url>
   
   <url>
@@ -552,6 +1468,11 @@
   </url>
   
   <url>
+    <loc>/tags/programming/</loc>
+    <lastmod>2011-08-15T20:59:29+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2011/08/15/sas-bloggers-in-action-2-jian-dai-and-his-sas-academy/</loc>
     <lastmod>2011-08-15T20:59:29+00:00</lastmod>
   </url>
@@ -562,8 +1483,18 @@
   </url>
   
   <url>
+    <loc>/tags/rick-wicklin/</loc>
+    <lastmod>2011-07-20T21:47:46+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2011/07/17/sas-bloggers-in-action1-rick-wicklin-sas/iml-and-ldquocolor-revolutionrdquo/</loc>
     <lastmod>2011-07-17T16:16:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/haiku/</loc>
+    <lastmod>2011-07-15T22:50:18+00:00</lastmod>
   </url>
   
   <url>
@@ -574,6 +1505,21 @@
   <url>
     <loc>/2011/07/14/a-sas-implementation-of-confidence-intervals-for-single-proportion-eleven-methods/</loc>
     <lastmod>2011-07-14T22:05:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/newcombe/</loc>
+    <lastmod>2011-07-14T22:05:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/single-proportion/</loc>
+    <lastmod>2011-07-14T22:05:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/cdisc-express/</loc>
+    <lastmod>2011-07-07T22:32:03+00:00</lastmod>
   </url>
   
   <url>
@@ -597,13 +1543,33 @@
   </url>
   
   <url>
+    <loc>/tags/adjective/</loc>
+    <lastmod>2011-07-02T10:51:57+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2011/07/02/adjective-encounters/</loc>
+    <lastmod>2011-07-02T10:51:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/english/</loc>
     <lastmod>2011-07-02T10:51:57+00:00</lastmod>
   </url>
   
   <url>
     <loc>/2011/06/28/dive-into-cdisc-express-1-introductory/</loc>
     <lastmod>2011-06-28T21:24:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/las-vegas/</loc>
+    <lastmod>2011-06-04T16:05:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sas-global-forum/</loc>
+    <lastmod>2011-06-04T16:05:46+00:00</lastmod>
   </url>
   
   <url>
@@ -622,8 +1588,53 @@
   </url>
   
   <url>
+    <loc>/tags/sgf/</loc>
+    <lastmod>2011-03-19T21:53:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/approximation/</loc>
+    <lastmod>2011-01-22T17:05:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/c&#43;&#43;/</loc>
+    <lastmod>2011-01-22T17:05:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/factorial/</loc>
+    <lastmod>2011-01-22T17:05:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/google-calculator/</loc>
+    <lastmod>2011-01-22T17:05:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/recursion/</loc>
+    <lastmod>2011-01-22T17:05:17+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2011/01/22/too-big-to-be-accurate1-which-is-the-most-powerful-calculator-in-the-world/</loc>
     <lastmod>2011-01-22T17:05:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/windows-calculator/</loc>
+    <lastmod>2011-01-22T17:05:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/wolframalpha/</loc>
+    <lastmod>2011-01-22T17:05:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/feature-selection/</loc>
+    <lastmod>2011-01-15T10:58:44+00:00</lastmod>
   </url>
   
   <url>
@@ -632,8 +1643,63 @@
   </url>
   
   <url>
+    <loc>/tags/fselector/</loc>
+    <lastmod>2011-01-15T10:58:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/c5.0/</loc>
+    <lastmod>2011-01-04T20:44:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/cart/</loc>
+    <lastmod>2011-01-04T20:44:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/chaid/</loc>
+    <lastmod>2011-01-04T20:44:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/decision-tree/</loc>
+    <lastmod>2011-01-04T20:44:50+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2011/01/04/decision-trees-in-sas-enterprise-miner-and-spss-clementine/</loc>
     <lastmod>2011-01-04T20:44:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ibm/</loc>
+    <lastmod>2011-01-04T20:44:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/quest/</loc>
+    <lastmod>2011-01-04T20:44:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/spss/</loc>
+    <lastmod>2011-01-04T20:44:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/spss-clementine/</loc>
+    <lastmod>2011-01-04T20:44:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/implicit-built-in-loop/</loc>
+    <lastmod>2011-01-03T17:29:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/loop/</loc>
+    <lastmod>2011-01-03T17:29:40+00:00</lastmod>
   </url>
   
   <url>
@@ -667,6 +1733,11 @@
   </url>
   
   <url>
+    <loc>/tags/inception/</loc>
+    <lastmod>2010-11-03T20:47:44+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2010/11/03/recursive-referencing-and-binomial-proportion-interval/</loc>
     <lastmod>2010-11-03T20:47:44+00:00</lastmod>
   </url>
@@ -674,6 +1745,21 @@
   <url>
     <loc>/2010/10/29/play-matrix-within-sas1-basic-files-processing/</loc>
     <lastmod>2010-10-29T21:02:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/algorithms/</loc>
+    <lastmod>2010-10-21T21:39:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/newthon-raphson/</loc>
+    <lastmod>2010-10-21T21:39:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/numeric-precision/</loc>
+    <lastmod>2010-10-21T21:39:42+00:00</lastmod>
   </url>
   
   <url>
@@ -707,6 +1793,31 @@
   </url>
   
   <url>
+    <loc>/tags/from-a-logical-point-of-view/</loc>
+    <lastmod>2009-12-21T23:53:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/quine/</loc>
+    <lastmod>2009-12-21T23:53:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/robert-mitchum/</loc>
+    <lastmod>2009-12-21T23:53:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/oracle-database-10g-express-edition/</loc>
+    <lastmod>2009-12-04T09:33:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sas-sql-pass-through-facility/</loc>
+    <lastmod>2009-12-04T09:33:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2009/12/04/work-with-oracle-a-quick-sheet-for-sas-programmers/</loc>
     <lastmod>2009-12-04T09:33:00+00:00</lastmod>
   </url>
@@ -717,7 +1828,27 @@
   </url>
   
   <url>
+    <loc>/tags/sas-enterprise-miner/</loc>
+    <lastmod>2009-03-20T11:41:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/william-potts/</loc>
+    <lastmod>2009-03-20T11:41:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2009/03/02/free-machine-learning-courses-stanford-in-youtube/</loc>
+    <lastmod>2009-03-02T10:28:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/stanford/</loc>
+    <lastmod>2009-03-02T10:28:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/youtube/</loc>
     <lastmod>2009-03-02T10:28:00+00:00</lastmod>
   </url>
   
@@ -727,8 +1858,33 @@
   </url>
   
   <url>
+    <loc>/tags/basel-ii/</loc>
+    <lastmod>2009-02-12T09:37:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2009/02/12/basel-ii-on-incremental-risk-chargeirc-quick-links/</loc>
     <lastmod>2009-02-12T09:37:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/incremental-risk-charge/</loc>
+    <lastmod>2009-02-12T09:37:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/irc/</loc>
+    <lastmod>2009-02-12T09:37:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/quantitative-finance/</loc>
+    <lastmod>2009-02-12T09:37:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dashboard/</loc>
+    <lastmod>2009-01-13T15:01:00+00:00</lastmod>
   </url>
   
   <url>
@@ -737,8 +1893,78 @@
   </url>
   
   <url>
+    <loc>/tags/sask/</loc>
+    <lastmod>2009-01-13T15:01:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/new-york-times/</loc>
+    <lastmod>2009-01-13T10:37:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2009/01/13/r-or-sas-quick-links-to-the-recent-debates/</loc>
     <lastmod>2009-01-13T10:37:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sas-l/</loc>
+    <lastmod>2009-01-13T10:37:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/black/</loc>
+    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/black-scholes/</loc>
+    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/call/</loc>
+    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/currency-option/</loc>
+    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/exchange-option/</loc>
+    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/financial-engineering/</loc>
+    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/financial-functions/</loc>
+    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/futures-option/</loc>
+    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/garman-kohlhagen/</loc>
+    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/margrabe/</loc>
+    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/options/</loc>
+    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
   </url>
   
   <url>
@@ -747,8 +1973,38 @@
   </url>
   
   <url>
+    <loc>/tags/put/</loc>
+    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sas9.2/</loc>
+    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/stock-option/</loc>
+    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/happy-new-year/</loc>
+    <lastmod>2009-01-01T23:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2009/01/01/happy-new-year/</loc>
     <lastmod>2009-01-01T23:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/celnet/</loc>
+    <lastmod>2008-12-25T16:26:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/fintech100/</loc>
+    <lastmod>2008-12-25T16:26:00+00:00</lastmod>
   </url>
   
   <url>
@@ -757,8 +2013,78 @@
   </url>
   
   <url>
-    <loc>/2008/12/24/links</loc>
+    <loc>/tags/risk/</loc>
+    <lastmod>2008-12-25T16:26:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/risk-intelligence/</loc>
+    <lastmod>2008-12-25T16:26:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/risk-vendors/</loc>
+    <lastmod>2008-12-25T16:26:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/risktech100/</loc>
+    <lastmod>2008-12-25T16:26:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/business-intelligence/</loc>
     <lastmod>2008-12-24T17:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/cloud-computing/</loc>
+    <lastmod>2008-12-24T17:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data-warehouse/</loc>
+    <lastmod>2008-12-24T17:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hp/</loc>
+    <lastmod>2008-12-24T17:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/informatica/</loc>
+    <lastmod>2008-12-24T17:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2008/12/24/links#8211bi-industry-2008-review-and-prospect/</loc>
+    <lastmod>2008-12-24T17:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sap/</loc>
+    <lastmod>2008-12-24T17:42:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/anti-money-laundering/</loc>
+    <lastmod>2008-12-19T10:44:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/business-analytics/</loc>
+    <lastmod>2008-12-19T10:44:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/credit-risk/</loc>
+    <lastmod>2008-12-19T10:44:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/enterprise-intelligence-and-optimization-services/</loc>
+    <lastmod>2008-12-19T10:44:00+00:00</lastmod>
   </url>
   
   <url>
@@ -767,8 +2093,53 @@
   </url>
   
   <url>
-    <loc>/2008/12/18/santa-and-sas-again-santa</loc>
+    <loc>/tags/teradata/</loc>
+    <lastmod>2008-12-19T10:44:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/christmas/</loc>
     <lastmod>2008-12-18T09:34:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/robert-allison/</loc>
+    <lastmod>2008-12-18T09:34:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/santa/</loc>
+    <lastmod>2008-12-18T09:34:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2008/12/18/santa-and-sas-again-santa#8217s-dashboard/</loc>
+    <lastmod>2008-12-18T09:34:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/visualization/</loc>
+    <lastmod>2008-12-18T09:34:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/analyst/</loc>
+    <lastmod>2008-12-17T09:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/rajan-chandras/</loc>
+    <lastmod>2008-12-17T09:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sascom/</loc>
+    <lastmod>2008-12-17T09:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ted-cuzzillo/</loc>
+    <lastmod>2008-12-17T09:40:00+00:00</lastmod>
   </url>
   
   <url>
@@ -777,7 +2148,32 @@
   </url>
   
   <url>
+    <loc>/tags/arch/</loc>
+    <lastmod>2008-12-16T16:07:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ets/</loc>
+    <lastmod>2008-12-16T16:07:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/forecast/</loc>
+    <lastmod>2008-12-16T16:07:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/garch/</loc>
+    <lastmod>2008-12-16T16:07:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2008/12/16/learn-time-series-analysis-free-materials-for-sas-users/</loc>
+    <lastmod>2008-12-16T16:07:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/time-series/</loc>
     <lastmod>2008-12-16T16:07:00+00:00</lastmod>
   </url>
   
@@ -787,12 +2183,52 @@
   </url>
   
   <url>
+    <loc>/tags/madoff/</loc>
+    <lastmod>2008-12-16T09:34:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/pc-game/</loc>
+    <lastmod>2008-12-16T09:34:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ponzi-scheme/</loc>
+    <lastmod>2008-12-16T09:34:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sec/</loc>
+    <lastmod>2008-12-16T09:34:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2008/12/14/delivers-the-right-toys-and-goodies-to-the-right-boys-and-girls-story-of-santa-and-sas/</loc>
     <lastmod>2008-12-14T19:57:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>/tags/assessment/</loc>
+    <lastmod>2008-12-14T00:24:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/business-analyst/</loc>
+    <lastmod>2008-12-14T00:24:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/forrester/</loc>
+    <lastmod>2008-12-14T00:24:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2008/12/14/if-you-can-make-it-here-you-can-make-it-anywhere-on-what-makes-a-good-business-analyst-by-rajan-chandras/</loc>
+    <lastmod>2008-12-14T00:24:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/skills/</loc>
     <lastmod>2008-12-14T00:24:00+00:00</lastmod>
   </url>
   
@@ -802,8 +2238,33 @@
   </url>
   
   <url>
+    <loc>/tags/parameter-tuning/</loc>
+    <lastmod>2008-12-13T23:55:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/predictive-models/</loc>
+    <lastmod>2008-12-13T23:55:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/stock-market/</loc>
+    <lastmod>2008-12-13T23:55:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2008/12/10/haiku-from-sas-rampd-staff/</loc>
     <lastmod>2008-12-10T11:37:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/matsuo-basho/</loc>
+    <lastmod>2008-12-10T11:37:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/beijing/</loc>
+    <lastmod>2008-12-10T10:21:00+00:00</lastmod>
   </url>
   
   <url>
@@ -812,1771 +2273,18 @@
   </url>
   
   <url>
-    <loc>/tags/adjective/</loc>
-    <lastmod>2011-07-02T10:51:57+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/af/</loc>
-    <lastmod>2012-10-02T14:40:05+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/algorithms/</loc>
-    <lastmod>2010-10-21T21:39:42+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/analyst/</loc>
-    <lastmod>2008-12-17T09:40:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/anti-money-laundering/</loc>
-    <lastmod>2008-12-19T10:44:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/approximation/</loc>
-    <lastmod>2011-01-22T17:05:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/arch/</loc>
-    <lastmod>2008-12-16T16:07:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/array/</loc>
-    <lastmod>2011-10-04T21:31:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/assessment/</loc>
-    <lastmod>2008-12-14T00:24:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/auc/</loc>
-    <lastmod>2012-09-12T20:15:15+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/base-sas/</loc>
-    <lastmod>2012-10-16T22:28:41+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/basel-ii/</loc>
-    <lastmod>2009-02-12T09:37:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/bayesian/</loc>
-    <lastmod>2012-09-21T01:20:10+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/beijing/</loc>
-    <lastmod>2008-12-10T10:21:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/big-data/</loc>
-    <lastmod>2011-09-14T22:15:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/binomial-proportion-inverval/</loc>
-    <lastmod>2013-08-25T23:32:29+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/black/</loc>
-    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/black-friday/</loc>
-    <lastmod>2012-11-23T23:04:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/black-scholes/</loc>
-    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/blog/</loc>
-    <lastmod>2013-03-20T23:09:08+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/book/</loc>
-    <lastmod>2012-12-07T23:36:30+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/business-analyst/</loc>
-    <lastmod>2008-12-14T00:24:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/business-analytics/</loc>
-    <lastmod>2008-12-19T10:44:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/business-intelligence/</loc>
-    <lastmod>2013-03-13T21:46:35+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/business-intelligence/</loc>
-    <lastmod>2008-12-24T17:42:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/c&#43;&#43;/</loc>
-    <lastmod>2011-01-22T17:05:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/c5/index.0/</loc>
-    <lastmod>2011-01-04T20:44:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/call/</loc>
-    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/call-execute/</loc>
-    <lastmod>2013-11-07T10:10:21+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/cart/</loc>
-    <lastmod>2011-01-04T20:44:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/cdisc/</loc>
-    <lastmod>2014-09-29T21:59:02+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/cdisc/</loc>
-    <lastmod>2014-09-29T21:59:02+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/cdisc-express/</loc>
-    <lastmod>2011-07-07T22:32:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/celnet/</loc>
-    <lastmod>2008-12-25T16:26:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/chaid/</loc>
-    <lastmod>2011-01-04T20:44:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/christmas/</loc>
-    <lastmod>2008-12-18T09:34:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/chrome/</loc>
-    <lastmod>2012-07-14T23:10:40+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/class/</loc>
-    <lastmod>2011-08-31T22:18:09+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/clinical-programmer/</loc>
-    <lastmod>2012-09-12T20:15:15+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/clinical-standards/</loc>
-    <lastmod>2012-05-04T22:42:32+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/cloud-computing/</loc>
-    <lastmod>2008-12-24T17:42:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/clover/</loc>
-    <lastmod>2012-07-14T23:10:40+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/cmd/</loc>
-    <lastmod>2012-10-08T22:19:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/combination/</loc>
-    <lastmod>2015-06-25T12:55:38+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/computer/</loc>
-    <lastmod>2013-11-29T00:16:33+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/computer/</loc>
-    <lastmod>2013-11-29T00:16:33+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/confidence-interval/</loc>
-    <lastmod>2015-05-22T22:05:39+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/control-terminology/</loc>
-    <lastmod>2012-03-30T00:23:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/coursera/</loc>
-    <lastmod>2013-02-08T23:37:49+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/cpi/</loc>
-    <lastmod>2012-03-24T01:29:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/credit-risk/</loc>
-    <lastmod>2008-12-19T10:44:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/currency-option/</loc>
-    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/current-folder/</loc>
-    <lastmod>2012-10-08T22:19:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/cvs/</loc>
-    <lastmod>2013-02-20T22:01:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/dashboard/</loc>
-    <lastmod>2009-01-13T15:01:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/data-mining/</loc>
-    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/data-mining/</loc>
-    <lastmod>2011-09-14T22:15:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/data-scientist/</loc>
-    <lastmod>2012-12-23T15:14:13+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/data-warehouse/</loc>
-    <lastmod>2008-12-24T17:42:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/database/</loc>
-    <lastmod>2011-10-04T21:31:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/decision-tree/</loc>
-    <lastmod>2011-01-04T20:44:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/do-loop/</loc>
-    <lastmod>2013-08-07T23:49:55+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/documentation/</loc>
-    <lastmod>2012-02-29T19:48:44+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/dow-loop/</loc>
-    <lastmod>2013-08-07T23:49:55+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ds2/</loc>
-    <lastmod>2015-09-04T14:01:30+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ebook/</loc>
-    <lastmod>2012-04-04T20:32:06+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/economics/</loc>
-    <lastmod>2012-03-24T01:29:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ectd/</loc>
-    <lastmod>2012-05-04T22:42:32+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/edc/</loc>
-    <lastmod>2012-05-04T22:42:32+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/english/</loc>
-    <lastmod>2011-07-02T10:51:57+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/enterprise-guide/</loc>
-    <lastmod>2014-02-06T23:28:26+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/enterprise-intelligence-and-optimization-services/</loc>
-    <lastmod>2008-12-19T10:44:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/equivalence-test/</loc>
-    <lastmod>2013-08-26T22:59:27+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/etl/</loc>
-    <lastmod>2013-01-12T18:08:14+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ets/</loc>
-    <lastmod>2008-12-16T16:07:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/excel/</loc>
-    <lastmod>2013-01-05T17:46:24+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/excelxp/</loc>
-    <lastmod>2013-01-05T17:46:24+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/exchange-option/</loc>
-    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/factorial/</loc>
-    <lastmod>2011-01-22T17:05:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/fda/</loc>
-    <lastmod>2013-02-20T22:01:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/feature-selection/</loc>
-    <lastmod>2011-01-15T10:58:44+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/financial-engineering/</loc>
-    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/financial-functions/</loc>
-    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/fintech100/</loc>
-    <lastmod>2008-12-25T16:26:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/fisher/</loc>
-    <lastmod>2011-09-03T21:13:42+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/foreach/</loc>
-    <lastmod>2013-11-07T10:10:21+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/forecast/</loc>
-    <lastmod>2008-12-16T16:07:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/format/</loc>
-    <lastmod>2015-05-12T13:06:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/forrester/</loc>
-    <lastmod>2008-12-14T00:24:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/foxit-reader/</loc>
-    <lastmod>2012-07-14T23:10:40+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/frequentist-inference/</loc>
-    <lastmod>2012-09-21T01:20:10+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/from-a-logical-point-of-view/</loc>
-    <lastmod>2009-12-21T23:53:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/fselector/</loc>
-    <lastmod>2011-01-15T10:58:44+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/futures-option/</loc>
-    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/garch/</loc>
-    <lastmod>2008-12-16T16:07:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/garman-kohlhagen/</loc>
-    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/geometric-mean/</loc>
-    <lastmod>2012-09-12T22:39:23+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/git/</loc>
-    <lastmod>2013-02-20T22:01:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/github/</loc>
-    <lastmod>2013-09-17T15:59:12+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/gmt/</loc>
-    <lastmod>2012-09-12T20:15:15+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/gmtr/</loc>
-    <lastmod>2012-09-12T20:15:15+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/gnu/</loc>
-    <lastmod>2012-03-30T00:23:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/google/</loc>
-    <lastmod>2011-10-08T21:47:59+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/google-analytics/</loc>
-    <lastmod>2013-01-01T23:47:44+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/google-calculator/</loc>
-    <lastmod>2011-01-22T17:05:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/google-code/</loc>
-    <lastmod>2013-02-20T22:01:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/google-reader/</loc>
-    <lastmod>2012-04-04T20:32:06+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/graph/</loc>
-    <lastmod>2012-12-31T01:13:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/groovy/</loc>
-    <lastmod>2012-10-28T23:07:12+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/hadoop/</loc>
-    <lastmod>2011-10-04T21:31:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/haiku/</loc>
-    <lastmod>2011-07-15T22:50:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/happy-new-year/</loc>
-    <lastmod>2009-01-01T23:45:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/hp/</loc>
-    <lastmod>2008-12-24T17:42:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/hypothesis-testing/</loc>
-    <lastmod>2012-09-21T01:20:10+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ibm/</loc>
-    <lastmod>2011-01-04T20:44:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ide/</loc>
-    <lastmod>2011-11-13T11:11:14+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/iml/</loc>
-    <lastmod>2015-06-25T12:55:38+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/implicit-built-in-loop/</loc>
-    <lastmod>2011-01-03T17:29:40+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/inception/</loc>
-    <lastmod>2010-11-03T20:47:44+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/incremental-risk-charge/</loc>
-    <lastmod>2009-02-12T09:37:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/industry-review/</loc>
-    <lastmod>2013-03-20T23:09:08+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/inflation/</loc>
-    <lastmod>2012-03-24T01:29:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/informatica/</loc>
-    <lastmod>2008-12-24T17:42:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/irc/</loc>
-    <lastmod>2009-02-12T09:37:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/iris/</loc>
-    <lastmod>2011-09-03T21:13:42+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/java/</loc>
-    <lastmod>2012-10-28T23:07:12+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/jekyll/</loc>
-    <lastmod>2012-11-23T23:04:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/jmp/</loc>
-    <lastmod>2012-04-04T20:32:06+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/joke/</loc>
-    <lastmod>2012-11-30T22:31:52+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/json/</loc>
-    <lastmod>2013-12-12T13:30:49+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/kaggle/</loc>
-    <lastmod>2012-12-23T15:14:13+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/las-vegas/</loc>
-    <lastmod>2011-06-04T16:05:46+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/latin/</loc>
-    <lastmod>2011-10-08T21:47:59+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/lisp/</loc>
-    <lastmod>2011-10-04T21:31:18+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/list/</loc>
-    <lastmod>2013-11-07T10:10:21+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/log/</loc>
-    <lastmod>2012-10-02T14:40:05+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/log-transformation/</loc>
-    <lastmod>2012-09-12T20:15:15+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/logic/</loc>
-    <lastmod>2012-09-21T01:20:10+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/logic/</loc>
-    <lastmod>2014-09-11T22:55:59+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/logic-operator/</loc>
-    <lastmod>2012-02-29T00:14:07+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/loop/</loc>
-    <lastmod>2011-01-03T17:29:40+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/machine-learning/</loc>
-    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/machine-learning/</loc>
-    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/macro/</loc>
-    <lastmod>2013-11-07T10:10:21+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/macro-array/</loc>
-    <lastmod>2013-11-07T10:10:21+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/macro-quoting/</loc>
-    <lastmod>2012-11-19T21:35:04+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/madoff/</loc>
-    <lastmod>2008-12-16T09:34:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/mail-stamp/</loc>
-    <lastmod>2012-03-24T01:29:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/mapreduce/</loc>
-    <lastmod>2015-09-04T14:01:30+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/margrabe/</loc>
-    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/markdown/</loc>
-    <lastmod>2012-07-19T01:54:10+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/matrix/</loc>
-    <lastmod>2012-10-16T22:28:41+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/matsuo-basho/</loc>
-    <lastmod>2008-12-10T11:37:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/menu-cost/</loc>
-    <lastmod>2012-03-24T01:29:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/merge/</loc>
-    <lastmod>2015-09-04T12:02:39+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/metadata/</loc>
-    <lastmod>2013-03-13T21:46:35+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/misc/</loc>
-    <lastmod>2013-02-20T22:01:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/mooc/</loc>
-    <lastmod>2013-02-08T23:37:49+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/nci/</loc>
-    <lastmod>2012-03-30T00:23:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/new-york-times/</loc>
-    <lastmod>2009-01-13T10:37:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/newcombe/</loc>
-    <lastmod>2011-07-14T22:05:44+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/newthon-raphson/</loc>
-    <lastmod>2010-10-21T21:39:42+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/nls/</loc>
-    <lastmod>2013-02-19T23:31:04+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/noninferiority-test/</loc>
-    <lastmod>2013-08-26T22:59:27+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/notepad&#43;&#43;/</loc>
-    <lastmod>2012-07-14T23:10:40+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/numeric-precision/</loc>
-    <lastmod>2010-10-21T21:39:42+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/odm/</loc>
-    <lastmod>2012-05-04T22:42:32+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ods/</loc>
-    <lastmod>2014-09-04T14:24:16+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ods-graphics/</loc>
-    <lastmod>2012-12-31T01:13:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ods-markup/</loc>
-    <lastmod>2013-11-04T21:19:49+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ods-report-writing/</loc>
-    <lastmod>2013-02-17T20:21:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ods-tagsets/</loc>
-    <lastmod>2013-09-17T15:59:12+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ods-template/</loc>
-    <lastmod>2013-01-05T17:46:24+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/office-tab/</loc>
-    <lastmod>2012-07-14T23:10:40+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/open-source/</loc>
-    <lastmod>2012-02-11T16:35:35+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/opencdisc/</loc>
-    <lastmod>2013-03-20T23:09:08+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/options/</loc>
-    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/oracle/</loc>
-    <lastmod>2011-08-31T22:18:09+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/oracle-database-10g-express-edition/</loc>
-    <lastmod>2009-12-04T09:33:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/output/</loc>
-    <lastmod>2012-09-22T22:10:12+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/p-value/</loc>
-    <lastmod>2012-09-21T01:20:10+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/parameter-tuning/</loc>
-    <lastmod>2008-12-13T23:55:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/pc-game/</loc>
-    <lastmod>2008-12-16T09:34:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/perl-regular-expression/</loc>
-    <lastmod>2013-02-24T21:59:02+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/php/</loc>
-    <lastmod>2012-11-23T23:04:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/phuse/</loc>
-    <lastmod>2013-02-20T22:01:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/plyr/</loc>
-    <lastmod>2013-02-08T23:37:49+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ponzi-scheme/</loc>
-    <lastmod>2008-12-16T09:34:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/powershell/</loc>
-    <lastmod>2012-10-08T22:22:23+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/predictive-models/</loc>
-    <lastmod>2008-12-13T23:55:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/preproduction/</loc>
-    <lastmod>2013-06-29T09:51:52+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/proc-freq/</loc>
-    <lastmod>2013-08-26T22:59:27+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/proc-ttest/</loc>
-    <lastmod>2013-08-26T22:59:27+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/programming/</loc>
-    <lastmod>2011-08-15T20:59:29+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/publishing/</loc>
-    <lastmod>2012-07-19T01:54:10+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/put/</loc>
-    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/python/</loc>
-    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/python/</loc>
-    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/quantitative-finance/</loc>
-    <lastmod>2009-02-12T09:37:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/quest/</loc>
-    <lastmod>2011-01-04T20:44:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/quine/</loc>
-    <lastmod>2009-12-21T23:53:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/rajan-chandras/</loc>
-    <lastmod>2008-12-17T09:40:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/recursion/</loc>
-    <lastmod>2011-01-22T17:05:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/regex/</loc>
-    <lastmod>2012-10-11T21:20:39+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/regular-expression/</loc>
-    <lastmod>2012-10-11T21:20:39+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/report/</loc>
-    <lastmod>2013-02-17T20:21:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/restructuredtext/</loc>
-    <lastmod>2012-07-19T01:54:10+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/rick-wicklin/</loc>
-    <lastmod>2011-07-20T21:47:46+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/risk/</loc>
-    <lastmod>2008-12-25T16:26:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/risk-intelligence/</loc>
-    <lastmod>2008-12-25T16:26:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/risk-vendors/</loc>
-    <lastmod>2008-12-25T16:26:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/risktech100/</loc>
-    <lastmod>2008-12-25T16:26:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/robert-allison/</loc>
-    <lastmod>2008-12-18T09:34:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/robert-louis-stevenson/</loc>
     <lastmod>2008-12-10T10:21:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/robert-mitchum/</loc>
-    <lastmod>2009-12-21T23:53:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/rstudio/</loc>
-    <lastmod>2013-02-08T23:37:49+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/santa/</loc>
-    <lastmod>2008-12-18T09:34:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sap/</loc>
-    <lastmod>2008-12-24T17:42:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/sas/</loc>
-    <lastmod>2015-09-04T12:02:39+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sas/</loc>
-    <lastmod>2015-09-04T14:01:30+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sas-9/index.4/</loc>
-    <lastmod>2013-09-16T12:48:31+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sas-certificate/</loc>
-    <lastmod>2012-12-22T23:13:39+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sas-data-integration-studio/</loc>
-    <lastmod>2013-01-12T18:08:14+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sas-enterprise-guide/</loc>
-    <lastmod>2013-11-04T21:19:49+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sas-enterprise-miner/</loc>
-    <lastmod>2009-03-20T11:41:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sas-global-forum/</loc>
-    <lastmod>2011-06-04T16:05:46+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sas-history/</loc>
-    <lastmod>2012-10-23T22:32:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sas-hotfix/</loc>
-    <lastmod>2013-07-29T09:56:11+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sas-l/</loc>
-    <lastmod>2009-01-13T10:37:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sas-sql-pass-through-facility/</loc>
-    <lastmod>2009-12-04T09:33:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sas-system-viewer/</loc>
-    <lastmod>2013-08-27T09:42:36+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sas-universal-viewer/</loc>
-    <lastmod>2013-07-16T22:37:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sas-xml-mapper/</loc>
-    <lastmod>2012-12-31T01:13:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sas9/index.2/</loc>
-    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sascom/</loc>
-    <lastmod>2008-12-17T09:40:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sask/</loc>
-    <lastmod>2009-01-13T15:01:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/scope/</loc>
-    <lastmod>2013-03-29T19:22:46+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sdtm/</loc>
-    <lastmod>2012-07-19T01:54:10+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sec/</loc>
-    <lastmod>2008-12-16T09:34:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sesug/</loc>
-    <lastmod>2012-10-11T21:20:39+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sgf/</loc>
-    <lastmod>2011-03-19T21:53:48+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/shell/</loc>
-    <lastmod>2012-10-08T22:19:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/single-proportion/</loc>
-    <lastmod>2011-07-14T22:05:44+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/skills/</loc>
-    <lastmod>2008-12-14T00:24:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/social-coding/</loc>
-    <lastmod>2013-02-20T22:01:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/software/</loc>
-    <lastmod>2013-11-29T00:16:33+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sort/</loc>
-    <lastmod>2013-02-19T23:31:04+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/spark/</loc>
-    <lastmod>2017-05-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/spss/</loc>
-    <lastmod>2011-01-04T20:44:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/spss-clementine/</loc>
-    <lastmod>2011-01-04T20:44:50+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sql/</loc>
-    <lastmod>2013-02-08T23:37:49+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sqldf/</loc>
-    <lastmod>2013-02-08T23:37:49+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/stanford/</loc>
-    <lastmod>2009-03-02T10:28:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/statistics/</loc>
-    <lastmod>2015-05-22T22:05:39+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/statistics/</loc>
-    <lastmod>2015-05-22T22:05:39+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/stephen-wolfram/</loc>
-    <lastmod>2012-04-04T20:32:06+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/stock-market/</loc>
-    <lastmod>2008-12-13T23:55:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/stock-option/</loc>
-    <lastmod>2009-01-06T16:20:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sublime-text-2/</loc>
-    <lastmod>2012-07-14T23:10:40+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/svn/</loc>
-    <lastmod>2013-02-20T22:01:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/t-test/</loc>
-    <lastmod>2012-12-31T01:13:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ted-cuzzillo/</loc>
-    <lastmod>2008-12-17T09:40:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/teradata/</loc>
-    <lastmod>2008-12-19T10:44:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/the-book-of-virutes/</loc>
     <lastmod>2008-12-10T10:21:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/time-series/</loc>
-    <lastmod>2008-12-16T16:07:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/tony-barr/</loc>
-    <lastmod>2012-10-23T22:32:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/tost/</loc>
-    <lastmod>2012-09-12T22:39:23+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/transformations/</loc>
-    <lastmod>2013-01-12T18:08:14+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/translate/</loc>
-    <lastmod>2011-10-08T21:47:59+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/transpose/</loc>
-    <lastmod>2013-03-11T21:10:28+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/tweet/</loc>
-    <lastmod>2012-11-30T22:31:52+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/uncategorized/</loc>
-    <lastmod>2012-10-08T22:19:47+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/undocumented-feature/</loc>
-    <lastmod>2013-02-26T21:00:14+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/validation/</loc>
-    <lastmod>2012-03-31T16:58:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/version-control/</loc>
-    <lastmod>2013-02-20T22:01:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/vim/</loc>
-    <lastmod>2012-07-13T00:27:57+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/visualization/</loc>
-    <lastmod>2008-12-18T09:34:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/w/index.-bennentt/</loc>
+    <loc>/tags/w.-bennentt/</loc>
     <lastmod>2008-12-10T10:21:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/web-programming/</loc>
-    <lastmod>2012-12-07T23:36:30+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/wget/</loc>
-    <lastmod>2012-03-30T00:23:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/william-potts/</loc>
-    <lastmod>2009-03-20T11:41:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/windows-calculator/</loc>
-    <lastmod>2011-01-22T17:05:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/wolframalpha/</loc>
-    <lastmod>2011-01-22T17:05:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/wordpress/</loc>
-    <lastmod>2012-11-23T23:04:03+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/wps/</loc>
-    <lastmod>2011-11-05T21:50:42+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/xml/</loc>
-    <lastmod>2013-12-12T13:30:49+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/xml/</loc>
-    <lastmod>2013-12-12T13:30:49+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/youtube/</loc>
-    <lastmod>2009-03-02T10:28:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/zip/</loc>
-    <lastmod>2013-06-29T10:36:59+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

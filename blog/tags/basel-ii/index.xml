@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Basel Ii on Jiangtang Hu | 胡江堂</title>
-    <link>/tags/basel-ii/index.xml</link>
-    <description>Recent content in Basel Ii on Jiangtang Hu | 胡江堂</description>
+    <title>basel II on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/basel-ii/</link>
+    <description>Recent content in basel II on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/tags/basel-ii/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Feb 2009 09:37:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/basel-ii/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Basel II on Incremental Risk Charge(IRC): Quick Links</title>
@@ -14,14 +17,7 @@
       <pubDate>Thu, 12 Feb 2009 09:37:00 +0000</pubDate>
       
       <guid>/2009/02/12/basel-ii-on-incremental-risk-chargeirc-quick-links/</guid>
-      <description>&lt;ol&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: x-small;&#34;&gt;&lt;a href=&#34;http://www.bis.org/publ/bcbs149.pdf&#34;&gt;Basel Committee on Banking Supervision(Jan, 2009). Guidelines for computing capital for incremental default risk in the trading book. Consultative document. January.&lt;/a&gt;&lt;/span&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;span style=&#34;font-family: Arial; font-size: x-small;&#34;&gt;&lt;a href=&#34;http://www.riskmetrics.com/sites/default/files/Research20090200.pdf&#34;&gt;IRC Comments&lt;/a&gt; by RiskMetrics&lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+      <description> Basel Committee on Banking Supervision(Jan, 2009). Guidelines for computing capital for incremental default risk in the trading book. Consultative document. January. IRC Comments by RiskMetrics  </description>
     </item>
     
   </channel>
