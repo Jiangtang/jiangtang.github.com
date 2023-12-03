@@ -1,30 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gdp on Jiangtang Hu | 胡江堂</title>
+    <title>GDP on A Hugo website</title>
     <link>/tags/gdp/</link>
-    <description>Recent content in Gdp on Jiangtang Hu | 胡江堂</description>
+    <description>Recent content in GDP on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Sun, 17 Oct 2010 19:05:02 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/gdp/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="/tags/gdp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>说些GDP</title>
       <link>/2010/10/17/%E8%AF%B4%E4%BA%9Bgdp/</link>
       <pubDate>Sun, 17 Oct 2010 19:05:02 +0000</pubDate>
-      
       <guid>/2010/10/17/%E8%AF%B4%E4%BA%9Bgdp/</guid>
       <description>最近一些朋友在twitter分享这段话：
- 美国经济学家曼昆曾引用前总统肯尼迪弟弟、参议员罗伯特·肯尼迪的话说：“(GDP)并未考虑到孩子的健康、他们的教育，或他们游戏的欢乐时光;它既未包括我们的诗歌之美，也不能反映可贵的婚姻稳定;它既不反映公众的智慧，也不包含公务员的廉正。”
- 你还能发现它们在网络上很流行。不知道是不是因为觉得中国GDP太多，反正我们周围有一股轻视甚至敌视GDP的味道。一位网友给我之前那篇《看图说话：2010年第一课》留言说：
- ……
+美国经济学家曼昆曾引用前总统肯尼迪弟弟、参议员罗伯特·肯尼迪的话说：“(GDP)并未考虑到孩子的健康、他们的教育，或他们游戏的欢乐时光;它既未包括我们的诗歌之美，也不能反映可贵的婚姻稳定;它既不反映公众的智慧，也不包含公务员的廉正。”
+你还能发现它们在网络上很流行**。**不知道是不是因为觉得中国GDP太多，反正我们周围有一股轻视甚至敌视GDP的味道。一位网友给我之前那篇《看图说话：2010年第一课》留言说：
+……
 而且，GDP不是衡量大国强国的唯一标准~更不是衡量人民幸福度的标准……
- 红色加粗字体是我加的。在网络传播的这句话中提到了曼昆，但明显是断章取义。在叙述GDP的一章习题里，曼昆让学生评价参议员罗伯特·肯尼迪的这段话(Macroeconomics by Mankiw, 5th, P39)：
- [GDP] does not allow for the health of our children, the quality of their education, or the joy of their play. It does not include the beauty of our poetry or the strength of our marriages, the intelligence of our public debate or the integrity of our public officials. It measures neither our courage, nor our wisdom, nor our devotion to our country.</description>
+红色加粗字体是我加的。在网络传播的这句话中提到了曼昆，但明显是断章取义。在叙述GDP的一章习题里，曼昆让学生评价参议员罗伯特·肯尼迪的这段话(Macroeconomics by Mankiw, 5th, P39)：
+[GDP] does not allow for the health of our children, the quality of their education, or the joy of their play. It does not include the beauty of our poetry or the strength of our marriages, the intelligence of our public debate or the integrity of our public officials. It measures neither our courage, nor our wisdom, nor our devotion to our country.</description>
     </item>
-    
   </channel>
 </rss>

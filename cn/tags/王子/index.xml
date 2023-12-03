@@ -1,21 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>王子 on Jiangtang Hu | 胡江堂</title>
+    <title>王子 on A Hugo website</title>
     <link>/tags/%E7%8E%8B%E5%AD%90/</link>
-    <description>Recent content in 王子 on Jiangtang Hu | 胡江堂</description>
+    <description>Recent content in 王子 on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Fri, 25 Dec 2009 20:36:19 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/%E7%8E%8B%E5%AD%90/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="/tags/%E7%8E%8B%E5%AD%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>12.25清晨好梦</title>
       <link>/2009/12/25/12.25%E6%B8%85%E6%99%A8%E5%A5%BD%E6%A2%A6/</link>
       <pubDate>Fri, 25 Dec 2009 20:36:19 +0000</pubDate>
-      
       <guid>/2009/12/25/12.25%E6%B8%85%E6%99%A8%E5%A5%BD%E6%A2%A6/</guid>
       <description>今天一早从巨甜美的梦中醒过来，眼角眉梢都开放着笑意。为啥？因为梦中的我是一个小国家的太子妃（呵呵我真不知道为啥会做这种梦），太子爱，公婆疼，已经钦准还未办大婚的准太子妃。呵呵
 梦一开始，就是王子要带我去参加一个非正式的舞会。我不知做什么折腾到好晚（好像是因为工作？如果是的话，那要么是我很独立，要么就证明这还真是个小国家，嘻嘻），然后赶紧穿上礼服，妆也来不及画，就急匆匆地赶过去了。
@@ -30,6 +26,5 @@
 真是难得的清晰又明朗的梦。梦中的王子，就是J的样子，他凑在我耳边说的话，他温柔的方式，体贴和爱护，就是生活中的J。
 梦中的他和我，在王家相遇。清晨起床后的他，竟然用圣诞歌的调子对我唱：叮叮当，叮叮当，穷得响叮当。让我又是乐，又是恼。</description>
     </item>
-    
   </channel>
 </rss>

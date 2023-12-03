@@ -1,21 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>生日 雪 Cheesecake on Jiangtang Hu | 胡江堂</title>
+    <title>生日 雪 cheesecake on A Hugo website</title>
     <link>/tags/%E7%94%9F%E6%97%A5-%E9%9B%AA-cheesecake/</link>
-    <description>Recent content in 生日 雪 Cheesecake on Jiangtang Hu | 胡江堂</description>
+    <description>Recent content in 生日 雪 cheesecake on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Thu, 17 Jan 2013 06:06:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/%E7%94%9F%E6%97%A5-%E9%9B%AA-cheesecake/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="/tags/%E7%94%9F%E6%97%A5-%E9%9B%AA-cheesecake/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>生日快乐</title>
       <link>/2013/01/17/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90/</link>
       <pubDate>Thu, 17 Jan 2013 06:06:00 +0000</pubDate>
-      
       <guid>/2013/01/17/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90/</guid>
       <description>在美国的第一个生日。
 买了条钻石项链，尚在邮寄途中。
@@ -25,6 +21,5 @@
 生日快乐。
 享受生活。</description>
     </item>
-    
   </channel>
 </rss>

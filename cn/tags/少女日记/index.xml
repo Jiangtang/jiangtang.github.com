@@ -1,28 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>少女日记 on Jiangtang Hu | 胡江堂</title>
+    <title>少女日记 on A Hugo website</title>
     <link>/tags/%E5%B0%91%E5%A5%B3%E6%97%A5%E8%AE%B0/</link>
-    <description>Recent content in 少女日记 on Jiangtang Hu | 胡江堂</description>
+    <description>Recent content in 少女日记 on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Sun, 11 Apr 2010 23:32:14 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/%E5%B0%91%E5%A5%B3%E6%97%A5%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="/tags/%E5%B0%91%E5%A5%B3%E6%97%A5%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>四手联弹</title>
       <link>/2010/04/11/%E5%9B%9B%E6%89%8B%E8%81%94%E5%BC%B9/</link>
       <pubDate>Sun, 11 Apr 2010 23:32:14 +0000</pubDate>
-      
       <guid>/2010/04/11/%E5%9B%9B%E6%89%8B%E8%81%94%E5%BC%B9/</guid>
-      <description>&amp;#160;
-上面这书就是被小齐同学称为“四手联弹”的《少女日记》。何谓“四手联弹”？很久很久以前，Viking最早翻译此书，大概整了三分之一，但小齐觉得他的语言不适合本书的主人公（11至14岁的少女），便拿去重译。后来小齐工作忙，最后就由Li来完稿。我再把上世纪二三十年代《纽约时报》一遍评论文章翻了加进去，算是凑了个热闹。
+      <description>上面这书就是被小齐同学称为“四手联弹”的《少女日记》。何谓“四手联弹”？很久很久以前，Viking最早翻译此书，大概整了三分之一，但小齐觉得他的语言不适合本书的主人公（11至14岁的少女），便拿去重译。后来小齐工作忙，最后就由Li来完稿。我再把上世纪二三十年代《纽约时报》一遍评论文章翻了加进去，算是凑了个热闹。
 《少女日记》（1919）写的是一战前维也纳一贵族少女的日常生活，主人公叫丽塔。这部日记就是丽塔对她的家庭及学校生活的记录，它在精神分析学的发展史上很有名，弗洛伊德当年盛赞此书，称之为“瑰宝”。这部日记1921年首次在英语世界出版，据说英国检察官在考察本书后，猛敲桌子说，“污秽，太污秽了”。精神分析家或者教育工作者喜欢引用此书，大概是因为他们能从丽塔的这部隐秘日记，读到禁锢的知识、压抑的性以及其他种种有利于他们学说的东西。——那些学术的喧嚣，我们现在倒不必在意，但这部日记，的确不是写给小孩子看的，按书后附玛丽·艾莎姆博士的说法，“阅读这本书，需要成熟的心智”。
-&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-
+—————————-
 “四手联弹”之后，小齐煽情地写道：“我和Viking，丽萍和HuJT，在翻译、出版《少女日记》期间，各自结为了夫妇。嘿嘿！”</description>
     </item>
-    
   </channel>
 </rss>

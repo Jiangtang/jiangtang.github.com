@@ -1,21 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>止庵 on Jiangtang Hu | 胡江堂</title>
+    <title>止庵 on A Hugo website</title>
     <link>/tags/%E6%AD%A2%E5%BA%B5/</link>
-    <description>Recent content in 止庵 on Jiangtang Hu | 胡江堂</description>
+    <description>Recent content in 止庵 on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Sat, 06 Jun 2009 23:34:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/%E6%AD%A2%E5%BA%B5/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="/tags/%E6%AD%A2%E5%BA%B5/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>小团圆</title>
       <link>/2009/06/06/%E5%B0%8F%E5%9B%A2%E5%9C%86/</link>
       <pubDate>Sat, 06 Jun 2009 23:34:00 +0000</pubDate>
-      
       <guid>/2009/06/06/%E5%B0%8F%E5%9B%A2%E5%9C%86/</guid>
       <description>提笔写张爱玲是很难的事情，因为我对她的阅读并不算多，对于她的身世遭际也只是道听途说的一点而已，加上她的苍凉、感性和惜墨，有时令我如坠云里。然而看完《小团圆》还是忍不住说一些。
 这本书的前言里，宋以朗先生详细交待了出版这本书的前因后果与种种考虑，从张爱玲和宋淇夫妇的信件往来中可以看书他们对这本书的定位是自传体小说，但是任何对张爱玲有过一点阅读的人都能读出浓重的“自传”而非“小说”的味道。宋淇在信件中提到“尤其是中国读者绝不理什么是fiction，什么是自传那一套”，话如此说，可正是因为这本书自传的痕迹太过明显和浓重，才更多有这方面的顾虑吧。我倒并非是说张爱玲实际写的就是自传而为了掩饰称为小说，只不过，“最好的材料是你最深知的材料”，当笔转到自己的人生时，再多的小说杜撰和虚拟的打算都会被现实征服，尤其是当人生的记忆那么深入肺腑。书中前三分之一，是所有读过的张爱玲的作品中最乱的文字，乱得没有头绪，时空毫无征兆地切换，突然来一段莫名其妙的对话，此时的张爱玲混乱而不得章法，一切只是铺垫和遮掩，当真正的男主人公邵之雍（她的胡兰成）出场之后，思路才清晰，文字才安定，作者才开始找到了叙述的节奏。“我是太钻在这小说里了”，她惦念了一辈子的，进去了又岂忍轻易出来？
@@ -26,6 +22,5 @@
 这本书是在来回家乡、北京间的火车上读完的，不方便做笔记，又不打算再读一遍，引用就很困难了。读完也是奄奄，抱着不似结尾的结尾，结束了阅读。
 这个版本陆续会出成全集，止庵主编。不得不提一下他，是因为我关于尤瑟纳尔的硕士毕业论文主要得启发于他。法国这位当代的女作家国人研究的并不多，国内的研究论文大多是介绍性质的，因此止庵先生的一篇论文对我来说是开启我的论文思路的重要参考。心中对他甚为感激。论文答辩时，系里一位老师提到他认识止庵，并把止庵先生的手机和家里电话都给了我。然而毕业后投入工作，于专业上是一下抛开再无深入，于是心怯，存着止庵先生的电话一直也不敢打，现在手机丢了，也不知是否再无缘见。</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>博客搬家 on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/%E5%8D%9A%E5%AE%A2%E6%90%AC%E5%AE%B6/</link>
+    <description>Recent content in 博客搬家 on Jiangtang Hu | 胡江堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Sep 2010 23:53:44 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AC%E5%AE%B6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>最后，你还是要把Windows Live Space迁移到WordPress</title>
+      <link>/2010/09/28/%E6%9C%80%E5%90%8E%E4%BD%A0%E8%BF%98%E6%98%AF%E8%A6%81%E6%8A%8Awindows-live-space%E8%BF%81%E7%A7%BB%E5%88%B0wordpress/</link>
+      <pubDate>Tue, 28 Sep 2010 23:53:44 +0000</pubDate>
+      
+      <guid>/2010/09/28/%E6%9C%80%E5%90%8E%E4%BD%A0%E8%BF%98%E6%98%AF%E8%A6%81%E6%8A%8Awindows-live-space%E8%BF%81%E7%A7%BB%E5%88%B0wordpress/</guid>
+      <description>登录Windows Live Space，你将看到如上界面。这个以前叫MSN博客的家伙终于扛不住了，整个要给WordPress托管。这是个好事情，去年我写的《博客搬家：从Windows Live Space到Wordpress（图解）》终于可以没用了，现在Live Space提供一步步的操作指令，帮助用户迁移。这篇是去年我架这个博客的第一篇文章，大概也是这里最受搜索引擎喜欢的文章，——这个生活博客，我自己最喜欢的是，比如，“我心里老虎在细嗅蔷薇”。</description>
+    </item>
+    
+    <item>
+      <title>博客搬家：从Windows Live Space到WordPress（图解）</title>
+      <link>/2009/03/30/%E5%8D%9A%E5%AE%A2%E6%90%AC%E5%AE%B6%E4%BB%8Ewindows-live-space%E5%88%B0wordpress%E5%9B%BE%E8%A7%A3/</link>
+      <pubDate>Mon, 30 Mar 2009 15:47:15 +0000</pubDate>
+      
+      <guid>/2009/03/30/%E5%8D%9A%E5%AE%A2%E6%90%AC%E5%AE%B6%E4%BB%8Ewindows-live-space%E5%88%B0wordpress%E5%9B%BE%E8%A7%A3/</guid>
+      <description>&lt;p&gt;独立开博，在Hostmonster上用Wordpress上搭建完自个的空间，第一件事就是把以前发布在Windows Live Space上的博客导进来。其中，下载WindowsLiveSpace的全部文章和评论所用的Python脚本，来自&lt;a href=&#34;http://b2.broom9.com/?page_id=519#note1&#34;&gt;Broom&lt;/a&gt;，剩下的一些优化工作，比如删除垃圾评论，用了一些简单的SQL脚本。从WindowsLiveSpace搬家，向来最为麻烦，以下把刚做的功课记下来，鼓励大伙及时退出WindowsLiveSpace。我06年开博，至今在WindowsLiveSpace上积攒下近六百篇博文，所谓积重难返路径依赖，这次全部顺畅导出，兀的不高兴死我也么哥。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

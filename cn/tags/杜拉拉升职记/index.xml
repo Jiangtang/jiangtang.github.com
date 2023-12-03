@@ -1,26 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>杜拉拉升职记 on Jiangtang Hu | 胡江堂</title>
+    <title>杜拉拉升职记 on A Hugo website</title>
     <link>/tags/%E6%9D%9C%E6%8B%89%E6%8B%89%E5%8D%87%E8%81%8C%E8%AE%B0/</link>
-    <description>Recent content in 杜拉拉升职记 on Jiangtang Hu | 胡江堂</description>
+    <description>Recent content in 杜拉拉升职记 on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Fri, 28 Aug 2009 23:14:06 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/%E6%9D%9C%E6%8B%89%E6%8B%89%E5%8D%87%E8%81%8C%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="/tags/%E6%9D%9C%E6%8B%89%E6%8B%89%E5%8D%87%E8%81%8C%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>一周书讯</title>
       <link>/2009/08/28/%E4%B8%80%E5%91%A8%E4%B9%A6%E8%AE%AF/</link>
       <pubDate>Fri, 28 Aug 2009 23:14:06 +0000</pubDate>
-      
       <guid>/2009/08/28/%E4%B8%80%E5%91%A8%E4%B9%A6%E8%AE%AF/</guid>
       <description>今天家里多摆了些色彩斑斓的杂志，地理杂志若干（这个我能叫得上名字，国家地理和华夏地理），时尚杂志若干和家居杂志一册，然后再添一份我的《商业评论》（2009-08，很不实在的东西，定价虚高，以后看样子是不会再买了）
 家里又添了三本杜拉拉（Li的手笔），一册遗刚回美国Ke同学，一册家里留着，一册是续集，正好实现环球同此炎凉的太平梦想。
 地铁阅读，薄伽丘的《十日谈》。十个人（7女3男）十天讲的一百个小故事，被有志之士称为诲淫诲盗的那种。文艺复兴的伟大著作啊，这下故事箱里又多了100枚。</description>
     </item>
-    
   </channel>
 </rss>

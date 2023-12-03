@@ -1,37 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>猪 on Jiangtang Hu | 胡江堂</title>
+    <title>猪 on A Hugo website</title>
     <link>/tags/%E7%8C%AA/</link>
-    <description>Recent content in 猪 on Jiangtang Hu | 胡江堂</description>
+    <description>Recent content in 猪 on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Fri, 11 Dec 2009 22:39:20 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/%E7%8C%AA/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="/tags/%E7%8C%AA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>像猪一样生活</title>
       <link>/2009/12/11/%E5%83%8F%E7%8C%AA%E4%B8%80%E6%A0%B7%E7%94%9F%E6%B4%BB/</link>
       <pubDate>Fri, 11 Dec 2009 22:39:20 +0000</pubDate>
-      
       <guid>/2009/12/11/%E5%83%8F%E7%8C%AA%E4%B8%80%E6%A0%B7%E7%94%9F%E6%B4%BB/</guid>
-      <description>
-Living like a pig could be good for you. Research has shown how dirty piglets obtain &amp;#8216;friendly&amp;#8217; bacteria that help them to develop healthy immune systems later in life.
-&amp;#8212;Nature, Dirty pigs are healthy pigs, 2009-11-27
-(附：全文可见bioedonline)[](http://www.bioedonline.org/news/news-print.cfm?art=5889#b1)
+      <description>Living like a pig could be good for you. Research has shown how dirty piglets obtain ‘friendly’ bacteria that help them to develop healthy immune systems later in life.
+—Nature, Dirty pigs are healthy pigs, 2009-11-27
+(附：全文可见bioedonline)
 这篇报导其实也没有什么出人意料的结论。拱烂泥的猪，能接触到适当的细菌来培养免疫能力，从而比白乎乎的猪更健康，——给旁边各位快养孩子的朋友一个提醒，以后小宝宝接触到一些所谓的脏东西，千万不要大呼小叫。
-&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8211;
+———–
 童年一个常见的场景。一个小P孩P颠P颠跑回家，挂了一脸的泥巴，——突然眼前一黑，拼命挣扎，原来迎面就被妈妈早就准备好的热乎乎的毛巾捂住。
-&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;
+————
 诗抄，泰戈尔《新月集·责备》（郑振铎译）：
- 为什么你眼里有了眼泪，我的孩子？
+为什么你眼里有了眼泪，我的孩子？
 他们真是可怕，常常无谓地责备你！
 你写字时墨水玷污了你的手和脸——这就是他们所以骂你龌龊的原故么？
-呵，呸！他们也敢因为圆圆的月儿用墨水涂了脸，便骂它龌龊么？
- </description>
+呵，呸！他们也敢因为圆圆的月儿用墨水涂了脸，便骂它龌龊么？</description>
     </item>
-    
   </channel>
 </rss>

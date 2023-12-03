@@ -1,26 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bi on Jiangtang Hu | 胡江堂</title>
+    <title>BI on A Hugo website</title>
     <link>/tags/bi/</link>
-    <description>Recent content in Bi on Jiangtang Hu | 胡江堂</description>
+    <description>Recent content in BI on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Thu, 07 May 2009 01:07:21 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/bi/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="/tags/bi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>记事：5月6号</title>
       <link>/2009/05/07/%E8%AE%B0%E4%BA%8B5%E6%9C%886%E5%8F%B7/</link>
       <pubDate>Thu, 07 May 2009 01:07:21 +0000</pubDate>
-      
       <guid>/2009/05/07/%E8%AE%B0%E4%BA%8B5%E6%9C%886%E5%8F%B7/</guid>
       <description>（5.6）我们部门要招一个IS Support。上午与IT部门的一个负责人就面一个候选人。略去过程，说，我们年轻人，工作了以后，还要保持旺盛的学习能力和意愿才行。
 中午在万达广场，与yahoo的Evan一起吃饭。Evan念生物信息，毕业就跑去做互联网，以前我们在一次BI的聚会见过。说，我们工作地点近，家也住得近（人大附近），工作也可能重合（他学生物信息，我进药厂；他现在做BI，我以前的兴趣也在这块，噫）。巧的是路上又见着我现在的同学老纪，算起来他跟Evan也是同事，都阿里系的。
 晚上跑回学校图书馆，在R编号的架子上走了一圈。</description>
     </item>
-    
   </channel>
 </rss>

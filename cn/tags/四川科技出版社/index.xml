@@ -1,29 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>四川科技出版社 on Jiangtang Hu | 胡江堂</title>
+    <title>四川科技出版社 on A Hugo website</title>
     <link>/tags/%E5%9B%9B%E5%B7%9D%E7%A7%91%E6%8A%80%E5%87%BA%E7%89%88%E7%A4%BE/</link>
-    <description>Recent content in 四川科技出版社 on Jiangtang Hu | 胡江堂</description>
+    <description>Recent content in 四川科技出版社 on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Fri, 15 May 2009 23:13:36 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/%E5%9B%9B%E5%B7%9D%E7%A7%91%E6%8A%80%E5%87%BA%E7%89%88%E7%A4%BE/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="/tags/%E5%9B%9B%E5%B7%9D%E7%A7%91%E6%8A%80%E5%87%BA%E7%89%88%E7%A4%BE/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>可怕的douban推荐</title>
       <link>/2009/05/15/%E5%8F%AF%E6%80%95%E7%9A%84douban%E6%8E%A8%E8%8D%90/</link>
       <pubDate>Fri, 15 May 2009 23:13:36 +0000</pubDate>
-      
       <guid>/2009/05/15/%E5%8F%AF%E6%80%95%E7%9A%84douban%E6%8E%A8%E8%8D%90/</guid>
       <description>登录到douban，看了下豆瓣网给我的推荐，大吃一斤：
-
 douban给我推荐6本书，其中5本都是科幻小说。不知道豆瓣是怎么判断我是科幻小说的重度读者的，反正最近是没碰过。莫非它闻出来了，本科毕业那阵，在宿舍，跟着拓拔波波，密集阅读了几乎所有来自《科幻世界增刊》的科幻/奇幻小说？现在又到了毕业的时候……
 又，这些科幻小说都来自四川科技出版社，这倒一点都不奇怪，几乎所有好的科幻小说都来自他们家。
 又，推荐的6本书中，唯一稍显突兀的就是《生死阅读》。不过想想，前些日子我看过这部电影，就很好理解了。就这本能讲得通。
 最后提到张爱玲的《小团圆》，没读过，不过摸过。家里有一册，是小齐上次来，提到这本书，Li就去订了一本回家。她倒是读得津津有味，我对张的了解，就是以前读过她的散文，大概说，“女人是猫”……</description>
     </item>
-    
   </channel>
 </rss>

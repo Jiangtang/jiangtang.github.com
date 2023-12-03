@@ -1,28 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>中级微观经济学 on Jiangtang Hu | 胡江堂</title>
+    <title>中级微观经济学 on A Hugo website</title>
     <link>/tags/%E4%B8%AD%E7%BA%A7%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/</link>
-    <description>Recent content in 中级微观经济学 on Jiangtang Hu | 胡江堂</description>
+    <description>Recent content in 中级微观经济学 on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Sat, 13 Jun 2009 12:24:35 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/%E4%B8%AD%E7%BA%A7%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="/tags/%E4%B8%AD%E7%BA%A7%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>伦理学ABC-经济学视角</title>
       <link>/2009/06/13/%E4%BC%A6%E7%90%86%E5%AD%A6abc-%E7%BB%8F%E6%B5%8E%E5%AD%A6%E8%A7%86%E8%A7%92/</link>
       <pubDate>Sat, 13 Jun 2009 12:24:35 +0000</pubDate>
-      
       <guid>/2009/06/13/%E4%BC%A6%E7%90%86%E5%AD%A6abc-%E7%BB%8F%E6%B5%8E%E5%AD%A6%E8%A7%86%E8%A7%92/</guid>
       <description>最近的阅读兴趣是伦理学，就回顾些以前做经济学学生时，从经济学教材中学到的伦理学基础知识。手头用的这个，大概是当今最出色的经济学入门书，
- _Principles of Economics (3rd)_ , by N.Gregory Mankiw, 2003
- 本文需要的部分，The Political Philosophy of Redistribution Income, 来自其中Ch.20 Income Inequality and Poverty,介绍了几种政治哲学（伦理学的公共生活层面）观点（功利主义、自由主义、自由意志论）。
+Principles of Economics (3rd) , by N.Gregory Mankiw, 2003
+本文需要的部分，The Political Philosophy of Redistribution Income, 来自其中Ch.20 Income Inequality and Poverty,介绍了几种政治哲学（伦理学的公共生活层面）观点（功利主义、自由主义、自由意志论）。
 另外，文中偶尔出现的数学表述，来自同样有名的一本微观经济学教材，
- _Intermediate Microecomonics: A Modern Apporoach_ (6th), by Hal R. Varian, 2003
- &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 1. Utilitarianism (功利主义)
+Intermediate Microecomonics: A Modern Apporoach (6th), by Hal R. Varian, 2003
+1. Utilitarianism (功利主义)
 我们把Utilitarianism翻译成“功利主义”，带一种浓重的商贾味，可能会给人一种先入为主的误解。Utility这个词，在通常的意义上，是“实用”、“公共事业”的意思（当说public utility时，就指水电等公共事业）。在经济学里，Utility翻译成“效用”，说的是消费商品或服务带来的满足感。作为一种有影响力的学说和流派，Utilitarianism大致取以上两种意思：公共和效用。它的创始人是两位英国哲学家，边沁(Jeremy Bentham, 1748-1832)和约翰·穆勒(John Stuart Mill, 1806-1873)。约翰·穆勒他老子也挺有名，叫詹姆斯·穆勒(James Mill, 1773-1836)。严复那本有名的《穆勒名学》，翻自小穆勒，不提。
 功利主义者认为效用（福利，满足感，幸福感，……）是个人或社会选择的终极目标，主张最大化社会中所有人的效用（之和）。
 对于到曼昆书中提到的收入再分配问题，功利主义者认为，比如，有两个人，一穷一富，穷者有1块钱，富者有100块钱，那么，富者再获得1块钱的满足感，就要小于穷者再获得1块钱所带来的满足感，所以为了最大化社会整体的福利，政府的收入再分配政策应该倾向于穷人。这里的理论基础就是我们常说的边际效用递减(Diminishing Marginal Utility)。
@@ -30,13 +26,12 @@
 为了表述（和接下来对比）的方便，我们认为，个人的满足感可以用效用函数U来表达，它是某种商品x（服务，方案，……）的函数（各位朋友，我无意打断你的阅读节奏，以下只是初中代数）,
 U=U(x)
 个人1的效用函数记为U1，以此类推。又存在一个表达社会整体福利(Welfare)的函数，W，它是社会中所有人的福利的函数，
-W=W(U1, U2,&amp;hellip;)
+W=W(U1, U2,. . .)
 根据功利主义的标准，一个理想的社会整体福利函数应该考虑到社会中所有人的福利（单个福利之和），即
-W{功利主义}=U1+U2+U3+&amp;hellip;
-
-&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 2. Liberalism (自由主义)
-重拾自由主义传统，最有影响力的当属美国哲学家罗尔斯(John Rawls, 1921-2002)。关于这个话题，他最有名的书是《正义论》（1971），最有名的概念是“无知之幕”(veil of ignorance)。关于“无知之幕”，以前我情绪激动地提过几次（这里和这里），有个机会再学习一次。</description>
+W{功利主义}=U1+U2+U3+. . .
+2. Liberalism (自由主义)
+重拾自由主义传统，最有影响力的当属美国哲学家罗尔斯(John Rawls, 1921-2002)。关于这个话题，他最有名的书是《正义论》（1971），最有名的概念是“无知之幕”(veil of ignorance)。关于“无知之幕”，以前我情绪激动地提过几次（这里和这里），有个机会再学习一次。
+罗尔斯的理论，从一个前提（预设）开始，即，社会体制、法律、政治制度等都应该是公平(Just)的。但由于每个人的背景不一样（家庭背景，性别，教育，种族，……），对公平的理解和要求就不一样。那么，我们如何才能（客观地）决定，一个公平的社会应该是什么样子的？这个决定，不能由屎壳郎做出，因为他们倾向于一个充满粪球的世界。同样，这个决定，不能由美国作出，也不能由朝鲜做出，总之不能由任何一个带倾向的群体或个人做出。</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,32 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Coders At Work on Jiangtang Hu | 胡江堂</title>
+    <title>Coders at Work on A Hugo website</title>
     <link>/tags/coders-at-work/</link>
-    <description>Recent content in Coders At Work on Jiangtang Hu | 胡江堂</description>
+    <description>Recent content in Coders at Work on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Thu, 15 Oct 2009 23:17:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/coders-at-work/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="/tags/coders-at-work/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>地铁书</title>
       <link>/2009/10/15/%E5%9C%B0%E9%93%81%E4%B9%A6/</link>
       <pubDate>Thu, 15 Oct 2009 23:17:00 +0000</pubDate>
-      
       <guid>/2009/10/15/%E5%9C%B0%E9%93%81%E4%B9%A6/</guid>
       <description>这些日子的地铁书。
 1. 理查德·怀斯曼《怪诞心理学：揭秘不可思议的日常现象》（Quirky psychology, 路本福译，天津教育，2009）
 好玩的书，适合在地铁颠簸中阅读。作者Richard Wiseman是位心理学教授。相信大伙都会喜欢上这本书：
- 念统计的朋友，从《女士品茶》中读到许多有趣的典故，比如高尔顿。这本书提到里的同一位高尔顿，也在研究牧师祈祷的效果。整本书里都能看到实验设计和数据分析在社会/心理学的应用；
+念统计的朋友，从《女士品茶》中读到许多有趣的典故，比如高尔顿。这本书提到里的同一位高尔顿，也在研究牧师祈祷的效果。整本书里都能看到实验设计和数据分析在社会/心理学的应用；
 喜欢“把妹”理论的同学（熟悉PUA、AFC等术语），这本书里也有一节，“如何打造完美的搭讪词和征友广告”；
 关注星座的朋友，本书的第一章就在讨论占星术是否灵验；
 或者你自称唐吉诃德式的“愁容骑士”，第一章又有关于幸运儿的话题；
 书里还有大量笑话，有一章专门讲“以科学的方式搜寻全球最爆笑的笑话”；
 还有看似实用的话题，比如如何区别真诚的微笑和，空姐的微笑。类似的，还有如何读出或听出谎言；
- 其他还有关于灵异事件等有趣的话题。笑完之后，这书或许还有某些启迪心智的作用。书中的例子，都来自作者与全世界严肃的学者的研究成果。
+其他还有关于灵异事件等有趣的话题。笑完之后，这书或许还有某些启迪心智的作用。书中的例子，都来自作者与全世界严肃的学者的研究成果。
 2. 福楼拜《包法利夫人》（李健吾译，人民文学，2005）
 李健吾就是写《雨中登泰山》的那位，他译的这本书质量很高。关于这本书，作者福楼拜先生说了一句：“爱玛，就是我！”
 爱玛是包法利夫人的闺名。表面上，爱玛的故事，非常适合收录于《阅读的女人危险》：她出身一般，父亲是个富农吧，但把她送去一个修女院，接受太太小姐的教育。期间爱玛读了很多浪漫小说，里面男主人公是“勇敢如狮，温柔如羔羊，……永远衣冠楚楚，哭起来泪如泉涌”，从此便想望这样的生活。后来她就嫁给了一个乡村医生（包法利先生），现实与想象的差距，——再后来就成了一出悲剧。
@@ -36,16 +32,15 @@
 这本书也是拿字根串起来的，每个字根举四个例子，有解释，有例句，有社会文化背景介绍，总共是1000个词。有空读几个，不枯燥，是书写得不枯燥。
 4. 李奭学《得意忘言》（北京三联，2007）
 见前。
-5.&amp;#160; Peter Seibel, Coders at Work: Reflectons on the Craft of Programming, Apress, 2009
+5. Peter Seibel, Coders at Work: Reflectons on the Craft of Programming, Apress, 2009
 看的是电子书，但还是习惯于把它归类于“地铁书”，大概表示闲暇时读的非技术书。这书是看了刘未鹏同学的推荐。访谈体，这本书采访了15位程序员（名单略），第一句大概都是问你啥时开始编程的。了解同行的一部好书，读着会让人兴奋起来的那种。
-类似的书还有programmers at work, f_ounders at work_，待一本一本读来。
+类似的书还有_programmers at work_, f_ounders at work_，待一本一本读来。
 6. 《千家诗》（浙江人民，1980）
 这部诗集的编选者谢枋得是我江西老乡，是跟文天祥一起的好汉子。这部诗选，跟《唐诗三百首》比起来是更风花雪月一点。
 看扉页，这本小书是在99年6月某书摊买的，我还在里面夹了从语文阅读课本撕下来的一篇文章，于漪的《我与&amp;lt;千家诗&amp;gt;》。在他们这辈人看来，《千家诗》和《芥子园画谱》一样，让他们的童年色彩斑斓。编选的第一首是程颢的《春日偶成》：
- 云淡风轻近午天，傍花随柳过前川。
+云淡风轻近午天，傍花随柳过前川。
 时人不识余心乐，将谓偷闲学少年。
- 这书一读起来，就再也放不下。</description>
+这书一读起来，就再也放不下。</description>
     </item>
-    
   </channel>
 </rss>

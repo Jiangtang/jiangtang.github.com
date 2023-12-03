@@ -1,21 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>效率 on Jiangtang Hu | 胡江堂</title>
+    <title>效率 on A Hugo website</title>
     <link>/tags/%E6%95%88%E7%8E%87/</link>
-    <description>Recent content in 效率 on Jiangtang Hu | 胡江堂</description>
+    <description>Recent content in 效率 on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Mon, 20 Sep 2010 21:11:22 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="/tags/%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>海上行（1）</title>
       <link>/2010/09/20/%E6%B5%B7%E4%B8%8A%E8%A1%8C1/</link>
       <pubDate>Mon, 20 Sep 2010 21:11:22 +0000</pubDate>
-      
       <guid>/2010/09/20/%E6%B5%B7%E4%B8%8A%E8%A1%8C1/</guid>
       <description>如果上海的朋友来京，标题就会是“故人海上来”——以文辞害意如此，我第一次去上海，难免四处拿北京——我的坐标——来观察上海。
 局
@@ -34,6 +30,5 @@ http://www.jiangtanghu.com/cn/2010/09/18/sas-cdisc-gathering/
 这样的经济学分析可以延伸到，比如，北京协和医院挂号等问题。——经济学到此为止。我们的生活里除了经济学，还有其他需要考究的问题。还说北京协和医院挂号，比如挂专家号费用提到到一万块（他们真值这个价），那么，市场就良好地运作，有支付能力的人不需要怎么排队，服务质量也大幅度提高。但这有个问题，就是某些也需要专家诊治的病人，由于支付能力不足，就没有机会享受到这个服务。现在的排队，提供了一种公平机制，就是让那些没有支付能力的人，通过其他渠道（通宵排队之类，这也是一种付出），也能享受到相应服务。
 回到世博。现在160块钱一张的世博票，是便宜了，但这是一种机制，使得大部分人，可以通过付出其他额外的努力（排队……），也能享受到世博的服务，尽管这服务的质量也相应有了下降。效率与公平，这是永恒的难题。</description>
     </item>
-    
   </channel>
 </rss>

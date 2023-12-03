@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sql on Jiangtang Hu | 胡江堂</title>
+    <link>/tags/sql/</link>
+    <description>Recent content in Sql on Jiangtang Hu | 胡江堂</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Mar 2009 15:47:15 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>博客搬家：从Windows Live Space到WordPress（图解）</title>
+      <link>/2009/03/30/%E5%8D%9A%E5%AE%A2%E6%90%AC%E5%AE%B6%E4%BB%8Ewindows-live-space%E5%88%B0wordpress%E5%9B%BE%E8%A7%A3/</link>
+      <pubDate>Mon, 30 Mar 2009 15:47:15 +0000</pubDate>
+      
+      <guid>/2009/03/30/%E5%8D%9A%E5%AE%A2%E6%90%AC%E5%AE%B6%E4%BB%8Ewindows-live-space%E5%88%B0wordpress%E5%9B%BE%E8%A7%A3/</guid>
+      <description>&lt;p&gt;独立开博，在Hostmonster上用Wordpress上搭建完自个的空间，第一件事就是把以前发布在Windows Live Space上的博客导进来。其中，下载WindowsLiveSpace的全部文章和评论所用的Python脚本，来自&lt;a href=&#34;http://b2.broom9.com/?page_id=519#note1&#34;&gt;Broom&lt;/a&gt;，剩下的一些优化工作，比如删除垃圾评论，用了一些简单的SQL脚本。从WindowsLiveSpace搬家，向来最为麻烦，以下把刚做的功课记下来，鼓励大伙及时退出WindowsLiveSpace。我06年开博，至今在WindowsLiveSpace上积攒下近六百篇博文，所谓积重难返路径依赖，这次全部顺畅导出，兀的不高兴死我也么哥。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

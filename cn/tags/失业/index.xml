@@ -1,44 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>失业 on Jiangtang Hu | 胡江堂</title>
+    <title>失业 on A Hugo website</title>
     <link>/tags/%E5%A4%B1%E4%B8%9A/</link>
-    <description>Recent content in 失业 on Jiangtang Hu | 胡江堂</description>
+    <description>Recent content in 失业 on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Thu, 07 May 2009 00:30:13 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/%E5%A4%B1%E4%B8%9A/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="/tags/%E5%A4%B1%E4%B8%9A/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SAS：人和书</title>
       <link>/2009/05/07/sas%E4%BA%BA%E5%92%8C%E4%B9%A6/</link>
       <pubDate>Thu, 07 May 2009 00:30:13 +0000</pubDate>
-      
       <guid>/2009/05/07/sas%E4%BA%BA%E5%92%8C%E4%B9%A6/</guid>
       <description>&lt;p&gt;我那&lt;a href=&#34;http://johnthu.spaces.live.com/&#34; target=&#34;_blank&#34;&gt;（所谓）技术博客&lt;/a&gt;好久没更新了。前些日子贴出一则&lt;a href=&#34;http://johnthu.spaces.live.com/blog/cns!2053CD511E6D5B1E!1097.entry&#34; target=&#34;_blank&#34;&gt;通告&lt;/a&gt;，说那个Windows Live Space从此停止更新，换了个新东家，技术路线有所偏倚，关于技术文章，想沉淀一段时间。以后我大概会开一个独立博客，跟这个生活博客还是要分开来。&lt;/p&gt;
-
-&lt;p&gt;闭门贴挂出来不多久，跟上海一位写SAS博客的朋友聊了聊，说些人生的坚持与选择，都是跟SAS有关的事，生出无限感慨。前天在SAS全球用户组SAS-L上面，一家POD出版社(Print-on-Demand Publisher)登出一则书讯，书是一个自称失业的SAS程序员写的。看介绍书非常有意思，就顺着链接找关于书和作者的更多信息。下面贴出来的《SAS与我》是作者的自述。这作者叫Shaoji Xu，在美国拿的PHD，这自述就写他失业后写SAS书的经过，第一句话就说，“写这本书的原因很简单：我失业了”。一样是SAS程序员，我大概能读出一些他跟SAS&amp;#8221;情意绵绵&amp;#8221;的趣味，以及一些长歌当哭的感触。 注释符号 &lt;em&gt;/**/&lt;/em&gt; 里面的内容是随手做的一些批注。&lt;/p&gt;
-
+&lt;p&gt;闭门贴挂出来不多久，跟上海一位写SAS博客的朋友聊了聊，说些人生的坚持与选择，都是跟SAS有关的事，生出无限感慨。前天在SAS全球用户组SAS-L上面，一家POD出版社(Print-on-Demand Publisher)登出一则书讯，书是一个自称失业的SAS程序员写的。看介绍书非常有意思，就顺着链接找关于书和作者的更多信息。下面贴出来的《SAS与我》是作者的自述。这作者叫Shaoji Xu，在美国拿的PHD，这自述就写他失业后写SAS书的经过，第一句话就说，“写这本书的原因很简单：我失业了”。一样是SAS程序员，我大概能读出一些他跟SAS”情意绵绵”的趣味，以及一些长歌当哭的感触。 注释符号 &lt;em&gt;/**/&lt;/em&gt; 里面的内容是随手做的一些批注。&lt;/p&gt;
 &lt;p align=&#34;center&#34;&gt;
   &amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;br /&gt; SAS与我
 &lt;/p&gt;
-
 &lt;p align=&#34;center&#34;&gt;
   By Shaoji Xu&lt;br /&gt; &lt;a href=&#34;http://www.beauthor.com/book/sas/sasandi_c.htm&#34;&gt;http://www.beauthor.com/book/sas/sasandi_c.htm&lt;/a&gt;
 &lt;/p&gt;
-
 &lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;/*作者Shaoji Xu，在美国罗格斯大学(Rutgers University)拿的Ph.D，运筹学方向，他还有统计学的背景。刚写了两本书，被他称为“大姐”的&lt;em&gt;Understanding SAS&lt;/em&gt;，SAS入门书，和被他称为“小妹”的&lt;em&gt;Selected Papers on SAS&lt;/em&gt;，关于SAS应用技巧的一些专题。以前他跟人合作了一本《线性规划》（科学出版社，1990）。 &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;这两本SAS书放在一家叫“成家”&lt;a href=&#34;www.beauthor.com&#34; target=&#34;_self&#34;&gt;(&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;color: #000000;&#34;&gt;&lt;a href=&#34;www.beauthor.com&#34; target=&#34;_self&#34;&gt;www.beauthor.com&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;color: #000000;&#34;&gt;&lt;a href=&#34;www.beauthor.com&#34; target=&#34;_self&#34;&gt;)&lt;/a&gt;的POD出版社(Print-on-Demand Publisher)上面。POD就是作者把书稿给出版社，出版社不审不校，觉得有市场就给申请书号做推广之类，有一本的需求就印出一本，然后与作者分成。 &lt;/span&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;这两本SAS书放在一家叫“成家”&lt;a href=&#34;www.beauthor.com&#34; target=&#34;_self&#34;&gt;(&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;color: #000000;&#34;&gt;&lt;a href=&#34;www.beauthor.com&#34; target=&#34;_self&#34;&gt;&lt;a href=&#34;https://www.beauthor.com&#34;&gt;www.beauthor.com&lt;/a&gt;&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;color: #000000;&#34;&gt;&lt;a href=&#34;www.beauthor.com&#34; target=&#34;_self&#34;&gt;)&lt;/a&gt;的POD出版社(Print-on-Demand Publisher)上面。POD就是作者把书稿给出版社，出版社不审不校，觉得有市场就给申请书号做推广之类，有一本的需求就印出一本，然后与作者分成。 &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;又，&lt;em&gt;Understanding SAS&lt;/em&gt;这本书，&lt;/span&gt;&lt;a href=&#34;http://www.beauthor.com/book/sas/contents_u.htm &#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;目录&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: #000000;&#34;&gt;,&lt;/span&gt;&lt;a href=&#34;http://www.beauthor.com/book/sas/preface_u.htm &#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;前言&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: #000000;&#34;&gt;；&lt;em&gt;Selected Papers on SAS&lt;/em&gt;这本书，&lt;/span&gt;&lt;a href=&#34;http://www.beauthor.com/book/sas/contents.htm &#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;目录&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: #000000;&#34;&gt;,&lt;/span&gt;&lt;a href=&#34;http://www.beauthor.com/book/sas/preface.htm &#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;前言&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: #000000;&#34;&gt;。&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;《SAS与我》的英文版，见&lt;/span&gt;&lt;a href=&#34;http://www.beauthor.com/book/sas/sasandi.htm&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;http://www.beauthor.com/book/sas/sasandi.htm&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;color: #000000;&#34;&gt;*/&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;《SAS与我》的英文版，见&lt;/span&gt;&lt;a href=&#34;http://www.beauthor.com/book/sas/sasandi.htm&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;http://www.beauthor.com/book/sas/sasandi.htm&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;color: #000000;&#34;&gt;*/&lt;/span&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,21 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>滑板 on Jiangtang Hu | 胡江堂</title>
+    <title>滑板 on A Hugo website</title>
     <link>/tags/%E6%BB%91%E6%9D%BF/</link>
-    <description>Recent content in 滑板 on Jiangtang Hu | 胡江堂</description>
+    <description>Recent content in 滑板 on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Mon, 29 Nov 2010 22:59:56 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/%E6%BB%91%E6%9D%BF/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="/tags/%E6%BB%91%E6%9D%BF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我为滑板狂</title>
       <link>/2010/11/29/%E6%88%91%E4%B8%BA%E6%BB%91%E6%9D%BF%E7%8B%82/</link>
       <pubDate>Mon, 29 Nov 2010 22:59:56 +0000</pubDate>
-      
       <guid>/2010/11/29/%E6%88%91%E4%B8%BA%E6%BB%91%E6%9D%BF%E7%8B%82/</guid>
       <description>上周末与Li去旁边的公园逛，看到一群小孩在玩滑板滑轮什么的。Li问：羡慕吧。
 答曰：No，以后小宝可以教我。
@@ -24,6 +20,5 @@
 当时就想跟着学艺，骅骝说，无他，时间，还有不怕摔。好吧，我不怕摔。要是能让我重重地摔一次（不要摔死，半死就可以），然后就能够学会，我干啊。提到时间，说，我还是等以后跟着家里的小家伙练吧。
 让程序员老胡学滑板，还有诸如此类的活动，让人兴奋，那是真正为自己投资的项目。投资小家伙，顺便投资下自个，这活计值。</description>
     </item>
-    
   </channel>
 </rss>

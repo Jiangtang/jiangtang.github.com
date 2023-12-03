@@ -1,27 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>伤心咖啡馆之歌 on Jiangtang Hu | 胡江堂</title>
+    <title>伤心咖啡馆之歌 on A Hugo website</title>
     <link>/tags/%E4%BC%A4%E5%BF%83%E5%92%96%E5%95%A1%E9%A6%86%E4%B9%8B%E6%AD%8C/</link>
-    <description>Recent content in 伤心咖啡馆之歌 on Jiangtang Hu | 胡江堂</description>
+    <description>Recent content in 伤心咖啡馆之歌 on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Sun, 27 Jun 2010 20:43:41 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/%E4%BC%A4%E5%BF%83%E5%92%96%E5%95%A1%E9%A6%86%E4%B9%8B%E6%AD%8C/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="/tags/%E4%BC%A4%E5%BF%83%E5%92%96%E5%95%A1%E9%A6%86%E4%B9%8B%E6%AD%8C/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>伤心咖啡馆之歌</title>
       <link>/2010/06/27/%E4%BC%A4%E5%BF%83%E5%92%96%E5%95%A1%E9%A6%86%E4%B9%8B%E6%AD%8C/</link>
       <pubDate>Sun, 27 Jun 2010 20:43:41 +0000</pubDate>
-      
       <guid>/2010/06/27/%E4%BC%A4%E5%BF%83%E5%92%96%E5%95%A1%E9%A6%86%E4%B9%8B%E6%AD%8C/</guid>
       <description>标题党。昨天下午一起去汤老师家玩，茶余饭后，把书架里那册麦卡勒斯的《伤心咖啡馆之歌》翻完。麦氏是个标题党，最有名的小说就是《心是孤独的猎手》——没找到这册，随手只能看《伤心咖啡馆之歌》了。
 读完实在不知道能说些什么。
-&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-
+——————————————-
 想读一下节奏优缓的小说，佩内洛普·菲茨杰拉德的《天使之门》，讲剑桥学院里学术男的爱情故事。</description>
     </item>
-    
   </channel>
 </rss>

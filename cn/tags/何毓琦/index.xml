@@ -1,29 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>何毓琦 on Jiangtang Hu | 胡江堂</title>
+    <title>何毓琦 on A Hugo website</title>
     <link>/tags/%E4%BD%95%E6%AF%93%E7%90%A6/</link>
-    <description>Recent content in 何毓琦 on Jiangtang Hu | 胡江堂</description>
+    <description>Recent content in 何毓琦 on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Mon, 08 Nov 2010 21:19:54 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/%E4%BD%95%E6%AF%93%E7%90%A6/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="/tags/%E4%BD%95%E6%AF%93%E7%90%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>两教授</title>
       <link>/2010/11/08/%E4%B8%A4%E6%95%99%E6%8E%88/</link>
       <pubDate>Mon, 08 Nov 2010 21:19:54 +0000</pubDate>
-      
       <guid>/2010/11/08/%E4%B8%A4%E6%95%99%E6%8E%88/</guid>
       <description>何毓琦 昨晚读铁锋转过来何毓琦教授的一篇自述文章，说他在MIT和哈佛求学及科研的故事（很好的文章，读了让人心头至少一热那种，在学术领域攻城拔寨，真是向往地紧）。何是最优控制理论的专家，文中提到他跟另一位控制专家Kalman的合作。
 K……？心头又一热，翻箱倒柜找出以前念经济学时激励自己用的一本书，来自邹恒甫之前在武大办的高级研究中心，Dynamic Optimization: The Calculus of Variations and Optimal Control in Economics and Management,——原来这个作者是Kamien。
-最近多看些应用统计学方面的书。看着“应用”二字，想着K&amp;hellip;K两名，——人不坚强真抗不过去。噫。
+最近多看些应用统计学方面的书。看着“应用”二字，想着K. . .K两名，——人不坚强真抗不过去。噫。
 王以培 王以培是人大中文系的副教授，小说家，诗人，写了很多关于三峡问题的文字。王老师是Li的研究生导师，我跟他也有些沟通。下面这个访谈，让我对理想主义者王以培而不是老师王以培有了更多的了解：
- http://blog.sina.com.cn/s/blog_531310240100f7c4.html
- 一个诗人的坚持，在我们身边，理解都是一件很困难的事情。</description>
+http://blog.sina.com.cn/s/blog_531310240100f7c4.html
+一个诗人的坚持，在我们身边，理解都是一件很困难的事情。</description>
     </item>
-    
   </channel>
 </rss>

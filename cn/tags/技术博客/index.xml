@@ -1,60 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>技术博客 on Jiangtang Hu | 胡江堂</title>
+    <title>技术博客 on A Hugo website</title>
     <link>/tags/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/</link>
-    <description>Recent content in 技术博客 on Jiangtang Hu | 胡江堂</description>
+    <description>Recent content in 技术博客 on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Sun, 31 Oct 2010 21:37:03 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="/tags/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2010，精彩刚刚开始</title>
       <link>/2010/10/31/2010%E7%B2%BE%E5%BD%A9%E5%88%9A%E5%88%9A%E5%BC%80%E5%A7%8B/</link>
       <pubDate>Sun, 31 Oct 2010 21:37:03 +0000</pubDate>
-      
       <guid>/2010/10/31/2010%E7%B2%BE%E5%BD%A9%E5%88%9A%E5%88%9A%E5%BC%80%E5%A7%8B/</guid>
       <description>周五，中午从上海回来，赶到了家里的午饭，接着去航天桥参加幼教培训。晚上回来查邮件，更新博客；
 周六，上午人大西门，又一场幼儿健康讲座。下午朝阳，方鹤画展；
 周日，今天，上午去天坛，中检所，下午三点回家吃饭，接着去世纪城，与Li一起去拜访老师。
 晚上回家泡脚。明天就是周一，十一月一号，头脑中乎乎又是崭新的开始。这年还有整两月，有朋友就开始贴出2010年的回顾展。还有两月，这一年期待的精彩，才刚刚开始。</description>
     </item>
-    
     <item>
       <title>技术博客展望</title>
       <link>/2010/01/03/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E5%B1%95%E6%9C%9B/</link>
       <pubDate>Sun, 03 Jan 2010 23:33:00 +0000</pubDate>
-      
       <guid>/2010/01/03/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E5%B1%95%E6%9C%9B/</guid>
       <description>北京终于下了一场像样的雪，算是跟南方同步。早上起来，吟诗一首：
- 雪，好大的雪啊，洁白的雪，
+雪，好大的雪啊，洁白的雪，
 银子一样的雪。
 嗯，这不是银子。
 要是银子，早被巴依老爷给抢掉了。
-&amp;#160;
 雪，好大的雪啊，洁白的雪，
 面粉一样的雪。
 嗯，这不是面粉。
 要是面粉，早被巴依老爷给吃掉了。
- 沉吟至今，才想到以前还有个月亮版本，真斯文扫大街，不提。
+沉吟至今，才想到以前还有个月亮版本，真斯文扫大街，不提。
 终于把以前在windows live space的所谓技术博客鼓捣到自己的名下：
- http://www.jiangtanghu.com/cn/
- 简陋戏台搭好，就鼓励自个以后多写些技术文章了。我跟Li的生活博客合集，当然还是会这里，
- http://li-and-jiang.com/blog/
- 所谓技术博客，无非是自个的一些读书笔记技术心得之类。这新得白花花扎眼的一年，还想多写些关于SAS程序员本身的文字，关于这个职业，它依托的行业环境等等。SAS程序员在国内还不是一个很兴盛的职业。
+http://www.jiangtanghu.com/cn/
+简陋戏台搭好，就鼓励自个以后多写些技术文章了。我跟Li的生活博客合集，当然还是会这里，
+http://li-and-jiang.com/blog/
+所谓技术博客，无非是自个的一些读书笔记技术心得之类。这新得白花花扎眼的一年，还想多写些关于SAS程序员本身的文字，关于这个职业，它依托的行业环境等等。SAS程序员在国内还不是一个很兴盛的职业。
 还会有关于SAS本身的文字，关于SAS语言，SAS公司，关于它的创始人等等。最近我对SAS的创始人Tony Barr比较感兴趣。
 技术本身，这个跟饭碗相关，除了SAS技术，很多笔墨可能会停留在CDISC上面。当然还会有自个兴之所至的其他文字，才年初呢，啥都没定。作为跟“统计之都”的约定，所有跟统计相关的文字，我会首先发布到“统计之都”，然后在自个的博客做个备份：
- http://cos.name/author/hujiangtang/
- 这2010年的第一场雪，可以摇头晃脑吟诵一番张打油先生的著名诗作，《咏雪》：
- 江上一笼统，
+http://cos.name/author/hujiangtang/
+这2010年的第一场雪，可以摇头晃脑吟诵一番张打油先生的著名诗作，《咏雪》：
+江上一笼统，
 井上黑窟窿。
 黄狗身上白，
 白狗身上肿。
- 噫。</description>
+噫。</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,21 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Aiweiwei on Jiangtang Hu | 胡江堂</title>
+    <title>aiweiwei on A Hugo website</title>
     <link>/tags/aiweiwei/</link>
-    <description>Recent content in Aiweiwei on Jiangtang Hu | 胡江堂</description>
+    <description>Recent content in aiweiwei on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Sun, 05 Jul 2009 22:37:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/aiweiwei/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="/tags/aiweiwei/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>毕业倒计时</title>
       <link>/2009/07/05/%E6%AF%95%E4%B8%9A%E5%80%92%E8%AE%A1%E6%97%B6/</link>
       <pubDate>Sun, 05 Jul 2009 22:37:00 +0000</pubDate>
-      
       <guid>/2009/07/05/%E6%AF%95%E4%B8%9A%E5%80%92%E8%AE%A1%E6%97%B6/</guid>
       <description>7月8号毕业典礼。
 7月5号，今天，星期天，早上六点起来，带着Li和jUn爬百花山，来回车上八小时加上下山五小时。同行者，我的大学同学Yan、nQQ和辉辉，以及这次活动的组织者空错及其媳妇，还有刚认识的木鱼、天宝及其媳妇等。
@@ -26,6 +22,5 @@
 6月30号，周二，一天培训，京伦饭店。
 6月29号，周一，一天培训，京伦饭店。</description>
     </item>
-    
   </channel>
 </rss>

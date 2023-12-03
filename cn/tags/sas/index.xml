@@ -1,21 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sas on Jiangtang Hu | 胡江堂</title>
+    <title>SAS on A Hugo website</title>
     <link>/tags/sas/</link>
-    <description>Recent content in Sas on Jiangtang Hu | 胡江堂</description>
+    <description>Recent content in SAS on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-US</language>
     <lastBuildDate>Mon, 05 Mar 2012 12:01:12 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/sas/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="/tags/sas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>大公司和小公司</title>
       <link>/2012/03/05/%E5%A4%A7%E5%85%AC%E5%8F%B8%E5%92%8C%E5%B0%8F%E5%85%AC%E5%8F%B8/</link>
       <pubDate>Mon, 05 Mar 2012 12:01:12 +0000</pubDate>
-      
       <guid>/2012/03/05/%E5%A4%A7%E5%85%AC%E5%8F%B8%E5%92%8C%E5%B0%8F%E5%85%AC%E5%8F%B8/</guid>
       <description>我现在北卡的单位，是个不折不扣的小公司，有多少人掰着手指头就能数出来。先前在北京，集团公司全球有十来万，国内也好几千，怎么算都是一个大公司。但说实话，我没怎么感觉到自己是在大公司（膨胀的“大”的公司），只是当读着外部新闻时或外部交流时，我能推断出自己是在大公司并且知道其他人也知道我在大公司。怎么说？对外大公司，对内小公司。从那十几万人一层层看下来，数到我们北京的研发中心也就几十个，加上一个业务链的国外同事，数到一百就很撑了。研发跟国内外的销售、市场等等部门联系本来就很少，所以感觉大公司这名号，是给他们而不是我们的（我猜HR的同事最能体会到大公司的感觉，翻翻花名册就是了）。《杜拉拉升职记》为什么很多人读着很有感觉，就是因为场景是设在市场、销售、人力资源和其他所谓白领喜闻乐见的办公室部门：里面要插入一个研发中心，销量保准降低一倍（跟科普书里插入一个数学公式一样的灾难效果）。
 提下我现在的公司，从头到下，一个显著的特点是来自北卡州立大学(NCSU)的毕业生占半数以上，以至于一个新同事过来，大老板（来自NCSU）打趣说，哦，我们有了第二个杜克毕业生！在北卡，NCSU、杜克和北卡大学(UNC)三足鼎立，相互打趣的机会比较多，像我来自北大，其他同事有来自芝大什么的，在单位一点浪花都没有。然后公司又从头到下，有三分之一的人在SAS公司呆过。SAS是当地最大的雇主之一，声势很旺，居民可能不知道SAS是做什么的，但大多知道这个SAS公司很牛。
@@ -23,12 +19,10 @@
 我们部门还有一位麦克，是CDISC子标准XML （ODM）组的成员，又在CDISC Terminology组里很活跃。加里，先前在美国一家比较大的CRO PAREXEL做临床数据管理的总监，提姆，前SAS公司研发经理，然后就数到自己：我自然而然就垫底了（当然，我至少还是有一个优势的，比如，我的Twiter帐号比他们都早）。
 在小公司一个好处是，你可以不时地碰到CEO，然后跟他开个玩笑谈谈天气什么的。当然，最实惠的好处还是，只要有一小部分人中午开会，公司所有人都有免费皮萨吃！</description>
     </item>
-    
     <item>
       <title>此间的少年</title>
       <link>/2011/06/02/%E6%AD%A4%E9%97%B4%E7%9A%84%E5%B0%91%E5%B9%B4/</link>
       <pubDate>Thu, 02 Jun 2011 00:40:55 +0000</pubDate>
-      
       <guid>/2011/06/02/%E6%AD%A4%E9%97%B4%E7%9A%84%E5%B0%91%E5%B9%B4/</guid>
       <description>上个月Leading博士推荐了北大学生会推出的校园电影《此间的少年》，剧本是江南的同名小说，主角是郭靖、黄蓉等一帮金庸小说的人物，背景是南宋时期的汴京大学（就是北京大学），故事就是谈恋爱了。Leading博士今年毕业，能想象这部电影能帮他回顾些北大的人事和风景。
 我09年毕业，不过这部电影没让我回忆起北大的生活。想的倒是更早些，在北京工商的那些年。当时江南在《科幻世界》以及接下来的《九州》写连载，《此间的少年》就是其中之一。等着杂志上的连载小说——这是真正值得回忆的大学生活：我读科幻小说以及奇幻/玄幻小说，刚好是因为同宿舍的赫连波波同学，那些杂志他每期必买。我就一边跟着等连载，顺便把他收藏的旧刊一并读了。这样下来，近五十部的科幻小说就给入账了，然后就踩着点毕业了。
@@ -38,9 +32,9 @@
 3
 提到凌晨一两点打扫卫生。待通道打开，浑身就都给运动开了，自然是兴奋不已。洗漱停当，在床头揪了一本书，一看却是部双语《圣经》，是简化字和合本，英文是New Revised Standard Version（新标准修订版）。
 话说深夜读经，必有**。有分教，好家伙，这一读，眼睛还真亮堂了不少。以前读《圣经》原文，都是看中文版，也积累了一些疑问。同时又通过其他参考资料，了解些关于《圣经》学术方面的东西。比如，《旧约》前五部经书，“摩西五经”，一些故事，明显就有两种版本同时存在（双重记述）。比如，《创世记》一开始，上帝创造万物，到第六天，
- 神说：“我们要照着我们的形象，按着我们的样式造人，……”神就照着自己的形象造人，乃是照着他的形象造男造女。
- 看，这里上帝造人，男人和女人一起。接下来的故事，我们也很熟悉，神造的第一个人是男人亚当，然后用亚当的一根肋骨造了女人夏娃。关于造人，这就明显是两个版本。之前读中文，也疑惑过这点。
-后来又读些辅助材料，知道五经的作者不止一位。1878年，德国学者Julius Wellhausen认为，五经有四种基本来源，分别是J、E、P、D，代表了五经不同系统的传说等等。这个晚上，眼睛比较亮，同时读了下英文，在七天创世记故事之后，有一节的题目就叫做Another Account of the Creation(《创世记的另一个版本》)，开始讲亚当和夏娃的出生，——创世记有两个版本，一开始就明确指出来了啊（这个标题当然是后人追加的，但是代表了一种有影响力的说法）。
+神说：“我们要照着我们的形象，按着我们的样式造人，……”神就照着自己的形象造人，乃是照着他的形象造男造女。
+看，这里上帝造人，男人和女人一起。接下来的故事，我们也很熟悉，神造的第一个人是男人亚当，然后用亚当的一根肋骨造了女人夏娃。关于造人，这就明显是两个版本。之前读中文，也疑惑过这点。
+后来又读些辅助材料，知道五经的作者不止一位。1878年，德国学者Julius Wellhausen认为，五经有四种基本来源，分别是J、E、P、D，代表了五经不同系统的传说等等。这个晚上，眼睛比较亮，同时读了下英文，在七天创世记故事之后，有一节的题目就叫做**Another Account of the Creation**(《创世记的另一个版本》)，开始讲亚当和夏娃的出生，——创世记有两个版本，一开始就明确指出来了啊（这个标题当然是后人追加的，但是代表了一种有影响力的说法）。
 4
 上个周末过得人气旺些。周六上午去人大参加“第四届中国R语言会议”，下午Crazy Hou夫妇过来聊天，晚上一起吃饭，他们叫上了以前研究生同学，多是软件开发或者嵌入式的。研究生一毕业，我就离开IT这行当，这不时跟继续从事IT的朋友沟通些，冲击还是蛮大的。
 周日上午还是人大R语言会议，作为一个SAS用户，我有一个“踢场子的”报告，叫做_R versus SAS_，讲大伙对R与SAS的一些误解。晚上跟会议的主办者（江麒、魏太云、邱怡轩、陈偃平等人大统计系的青壮小伙）以及一些演讲嘉宾（李舰等）一起吃饭。下次再单列一个会议记录。
@@ -51,118 +45,107 @@
 7
 Li说要给虎头多听些音乐。好吧，这让我压力很大。这些日子，偷偷找来耶鲁大学的一个公开课程，MUSI 112: Listening to Music with Professor Craig Wright (Fall, 2008)，恶补些古典音乐的知识（也可以在网易公开课找到）。
 虎爸动真格的了，同时计划读下面三本书：
- _The NPR Curious Listener&amp;#8217;s Guide to Classical Music_ -这本是因为有朋友推荐NPR电台 _The Mozart Effect for Children: Awakening Your Child&amp;#8217;s Mind, Health, and Creativity with Music_ -这本书争议无数，关于莫扎特与幼儿教育 _Music Theory For Dummies_ -傻瓜书，读过好几本for dummies系列  </description>
+The NPR Curious Listener’s Guide to Classical Music -这本是因为有朋友推荐NPR电台 The Mozart Effect for Children: Awakening Your Child’s Mind, Health, and Creativity with Music -这本书争议无数，关于莫扎特与幼儿教育 Music Theory For Dummies -傻瓜书，读过好几本for dummies系列 </description>
     </item>
-    
     <item>
       <title>北卡纪行</title>
       <link>/2011/04/16/%E5%8C%97%E5%8D%A1%E7%BA%AA%E8%A1%8C/</link>
       <pubDate>Sat, 16 Apr 2011 23:40:11 +0000</pubDate>
-      
       <guid>/2011/04/16/%E5%8C%97%E5%8D%A1%E7%BA%AA%E8%A1%8C/</guid>
       <description>4月15@Duke
- 
 今一天都在杜克大学，杜克有漂亮的哥特式校园。辛苦Sandra，一天开车，带着我在杜克两个校区的各个楼群里穿梭，医学中心、眼科中心、生物统计系、临床研究所、统计系，早上九点一直到下午四点，一路拜访，下午三点来钟一起吃的午饭。提一下，在杜克临床研究所（Duke Clinical Research Institute）拜访的是SAS程序员，说话很快很搞笑，他已经写了两本流行的SAS与统计书，明年他有一本关于CDISC的书面世，那将是业内第一本相关的书籍，期待中。
 晚上杜克统计系的李博士，还有她刚取得教职的老公，杜克商学院的汪博士，带我一起去看杜克一个叫DCDT（Duke Chinese Dance Troupe）的学生社团的舞蹈表演。远远超出我的预期，非常精彩。以中国传统舞蹈为主，但舞者除了华人，还有大量的非亚裔学生，节目也穿插视频、街舞、印度舞、脱口秀和互动节目，形式多样，生动活泼。这帮本科生的想象力真是无穷无尽。
- 4月14@UNC
- 
+4月14@UNC
 这个UNC全称叫北卡罗来纳_大学_教堂山分校（University of North Carolina at Chapel Hill），是北卡大学系统中的旗舰大学，是美国州立大学中的“常青藤”。UNC的校园也挺漂亮，我参观的是生物统计系，然后他们系中午给请吃了个饭。
- 4月13@SAS
- 
+4月13@SAS
 4月13号，上午，拜访SAS总部。SAS市场部的Allison Lane女士开车带着我认识了下SAS的建筑楼群，感兴趣的如研发楼、体育场之类就就去瞅瞅。然后找以前研发的同事聊聊天。
 SAS总部(SAS campus)的占地面积，相当于一个中型的大学，里面却不到4000人（想想那松快程度吧）。回北京来详细贴贴SAS之行，SAS大概是世界上最好的公司。
- 4月13@NCSU
- 
+4月13@NCSU
 4月13号，下午，拜访NCSU，北卡罗来纳州立大学（North Carolina State University）。中午跟统计系的一位博士朋友在校园内一家中餐馆吃炒粉(没吃完)。
- 研究三角
- Duke在Durham，UNC在Chapel Hill，NCSU在Raleigh，SAS在Cary。前三个地方圈起来，刚好是一个三角形(research triangle)，里面是一个工业园区，叫RTP(Research Triangle Park)，里面驻扎着像GSK、Quintiles、IBM等近200家公司。你大概能想像，为什么这里会是世界上最好的地方。</description>
+研究三角
+Duke在Durham，UNC在Chapel Hill，NCSU在Raleigh，SAS在Cary。前三个地方圈起来，刚好是一个三角形(research triangle)，里面是一个工业园区，叫RTP(Research Triangle Park)，里面驻扎着像GSK、Quintiles、IBM等近200家公司。你大概能想像，为什么这里会是世界上最好的地方。</description>
     </item>
-    
     <item>
       <title>SASGF11流水帐（一）：4月3号-5号</title>
       <link>/2011/04/06/sasgf11%E6%B5%81%E6%B0%B4%E5%B8%90%E4%B8%804%E6%9C%883%E5%8F%B7-5%E5%8F%B7/</link>
       <pubDate>Wed, 06 Apr 2011 16:59:02 +0000</pubDate>
-      
       <guid>/2011/04/06/sasgf11%E6%B5%81%E6%B0%B4%E5%B8%90%E4%B8%804%E6%9C%883%E5%8F%B7-5%E5%8F%B7/</guid>
       <description>It’s wonderful. It’s awful. It’s wonderfully awful and awfully wonderful.
- 这句话是拿来形容拉斯维加斯的。不过我喜欢这句话甚于维加斯本身，就直接拿来套用这几天在凯撒皇宫酒店（Caesars Palace Las Vegas Resort and Casino）参加SAS全球论坛(SAS Global Forum 2011, Apr 4-7, Las Vegas)的感受了，其中把awful改成awesome就是。
+这句话是拿来形容拉斯维加斯的。不过我喜欢这句话甚于维加斯本身，就直接拿来套用这几天在凯撒皇宫酒店（Caesars Palace Las Vegas Resort and Casino）参加SAS全球论坛(SAS Global Forum 2011, Apr 4-7, Las Vegas)的感受了，其中把awful改成awesome就是。
 首先，我入手一台Kindle啦。小号的那种，刚好可以给虎头用。虎头说：我还小，不能读书啦。好吧，老爸先帮你用着，不许偷懒哈。这台小玩意是下午参加一个invited focus discussion group时主办方给送的。
 还有，今天下午我终于做完了自己的演讲，整个人就轻松很多。不过轻松也不会去一层的赌场。不喜欢的东西，连尝试的心情都没有。按着倒序时间（美国当地时间），记些流水帐。
- 4月5号，周二
- 我住在凯撒旁边一个较便宜的酒店里,叫Harrah&amp;#8217;s Las Vegas Resort and Casino。早上七点起来，八点去凯撒。先是SAS研发中心在秀SAS的新玩意，然后是一个所谓的科技独脚秀，非常厉害，那哥们，Don McMillan，据说是世界上唯一一个用PPT讲笑话的演员——慢着，这哥们是斯坦福大学EE的硕士，是AT&amp;amp;T的前工程师。不想废话的，直接去他的主页去看：
- http://www.TechnicallyFunny.com/
- 这哥们真是让人人仰马翻，比如他讲到SAS Data Step就是SAS用户的国标舞步。回到正题，SAS研发中心的老大Keith Collins讲了下SAS发展的5个主要方面：
- 1. high performance computing
+4月5号，周二
+我住在凯撒旁边一个较便宜的酒店里,叫Harrah’s Las Vegas Resort and Casino。早上七点起来，八点去凯撒。先是SAS研发中心在秀SAS的新玩意，然后是一个所谓的科技独脚秀，非常厉害，那哥们，Don McMillan，据说是世界上唯一一个用PPT讲笑话的演员——慢着，这哥们是斯坦福大学EE的硕士，是AT&amp;amp;T的前工程师。不想废话的，直接去他的主页去看：
+http://www.TechnicallyFunny.com/
+这哥们真是让人人仰马翻，比如他讲到SAS Data Step就是SAS用户的国标舞步。回到正题，SAS研发中心的老大Keith Collins讲了下SAS发展的5个主要方面：
+1. high performance computing
 2.process automation
 3.business visualization
 4.data management
 5.saas
- 然后一些SAS研发的工程师就相应展示了一下SAS9.3的新功能，看着还是蛮振奋的，比如传统的proc reg加上HP（high performance， proc HPreg），就能够实现高性能计算了。上午还听了一场佛罗里达大学荣休教授Ramon Rittel关于SAS与线性模型(GLM)的专题报告，其中穿插些历史信息，最有八卦趣味。
-下午，前半部分是被邀请参加一个叫SAS BI Product Development的foucs group，主题是SAS BI产品的visualization和mobile computing，有近十位非SAS员工参加了这次讨论，由SAS公司的一些研发、产品与市场总监主持。</description>
+然后一些SAS研发的工程师就相应展示了一下SAS9.3的新功能，看着还是蛮振奋的，比如传统的proc reg加上HP（high performance， proc HPreg），就能够实现高性能计算了。上午还听了一场佛罗里达大学荣休教授Ramon Rittel关于SAS与线性模型(GLM)的专题报告，其中穿插些历史信息，最有八卦趣味。
+下午，前半部分是被邀请参加一个叫SAS BI Product Development的foucs group，主题是SAS BI产品的visualization和mobile computing，有近十位非SAS员工参加了这次讨论，由SAS公司的一些研发、产品与市场总监主持。
+下半场是我自己的演讲。
+晚上主要在social。先是SAS公司组织的一场mixer，里面还摆了几个赌桌，大伙凑一起吃东西，四处走走找人聊天，同时有SAS研发各个方向都摆了机器在秀东西（supp demo），北京研发的朋友也过来展示了一下他们在本地化/国际化方面做的工作。下午空闲的时候也去demo看了看，我最感兴趣的是clinical data integration、visualization和JMP。</description>
     </item>
-    
     <item>
       <title>虎头心动</title>
       <link>/2011/03/06/%E8%99%8E%E5%A4%B4%E5%BF%83%E5%8A%A8/</link>
       <pubDate>Sun, 06 Mar 2011 19:00:07 +0000</pubDate>
-      
       <guid>/2011/03/06/%E8%99%8E%E5%A4%B4%E5%BF%83%E5%8A%A8/</guid>
       <description>1
- 虎头躺在童车里，虎头他爸挥动着那张序号为50的卡片逗他。一会又停下来，改推着车玩。问虎头：卡片在动，还是小车在动呀？
+虎头躺在童车里，虎头他爸挥动着那张序号为50的卡片逗他。一会又停下来，改推着车玩。问虎头：卡片在动，还是小车在动呀？
 虎头正色答道：卡不动，车不动，仁者心动。
 接下来就是银河星系般的沉默。
- 2
- 周四上午去美国驻华使馆交换通关文牒。为此我把自个所有的文件都整了一遍，包括虎头的出生证明。最后签证官（美国白人）就问我两个问题（中文）：
+2
+周四上午去美国驻华使馆交换通关文牒。为此我把自个所有的文件都整了一遍，包括虎头的出生证明。最后签证官（美国白人）就问我两个问题（中文）：
 1）SAS是什么？
 2）你公司卖什么？
 同样用中文给普及了下SAS和疫苗。签证官接着看了下我的简历，over。
- 3
- 我四月初去拉斯维加斯参加SAS全球大会（SAS Global Forum 2011，Las Vegas）。Be there or be square? 这个四月最in的事情大概就是去维加斯。
+3
+我四月初去拉斯维加斯参加SAS全球大会（SAS Global Forum 2011，Las Vegas）。Be there or be square? 这个四月最in的事情大概就是去维加斯。
 一个朋友也去维加斯，他过去做SAS培训，听着太土了，他说自己是be there and be square。
 终于为广大技术人员找到了一句比较酷的歌词：
 It’s hip to be square.
- 4
- 找文件，挖出自个以前写的很多好玩的东西，包括《周易》与三段论、布尔逻辑与推理、科斯定理的数学证明、为胡氏家谱做的文言文序言等等，有空慢慢贴出来。
+4
+找文件，挖出自个以前写的很多好玩的东西，包括《周易》与三段论、布尔逻辑与推理、科斯定理的数学证明、为胡氏家谱做的文言文序言等等，有空慢慢贴出来。
 有个朋友说他翻出以前写的代码，大为惊叹，自己居然能写出这么漂亮的代码出来，说天才只属于少年云云。我尽量想自己还不老，不过同样惊叹少年虎头他爸的灵感，噫。</description>
     </item>
-    
     <item>
       <title>2010年度总结</title>
       <link>/2010/12/30/2010%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</link>
       <pubDate>Thu, 30 Dec 2010 23:09:48 +0000</pubDate>
-      
       <guid>/2010/12/30/2010%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</guid>
-      <description>历史文档： 生产任务完成情况：2009 2008：随手盘点 2008-2009：向前看，向后看（一）  12月8号虎头出世，这一年我就没什么惊喜的事了。昨天在单位，把项目给结了，然后关电脑，回家休假。当时做顺口溜一首，给大伙道新年愉快：
- In December my baby born
+      <description>历史文档： 生产任务完成情况：2009 2008：随手盘点 2008-2009：向前看，向后看（一） 12月8号虎头出世，这一年我就没什么惊喜的事了。昨天在单位，把项目给结了，然后关电脑，回家休假。当时做顺口溜一首，给大伙道新年愉快：
+In December my baby born
 my project deliveries followed on
 Now my computers shutdown
 do until(6 Jan 2011) I will be OOO
 Please take blessings from John
- 作为一个程序员，即使作顺口溜也不能不加注释。OOO是out of office，do until是SAS语言表示循环的一个语句，说直到1月6号我都不在办公室（我把这句发给同事，然后收到无数OOO的回复）。最后，John是我混外企的花名，读作“Jiang”。
+作为一个程序员，即使作顺口溜也不能不加注释。OOO是out of office，do until是SAS语言表示循环的一个语句，说直到1月6号我都不在办公室（我把这句发给同事，然后收到无数OOO的回复）。最后，John是我混外企的花名，读作“Jiang”。
 为了取悦英文读者，这种顺口溜被叫做Haiku，翻译成中文叫“俳句”。但我写的可以是Haiku，但绝不敢称是俳句，中文就叫“顺口溜”。这是我一年来唯一的“文学作品”，记上一笔。
 按照惯例，我会在年末做个总结，算是给朋友做一个简报，给自己留存一份记录。今年过得很简单，我升级了：年初我结婚，成为一位女子的丈夫；年末我们的孩子出生，我从此成为一个小男孩的父亲。这时我仍想摘录一句北岛的诗，表达这种传承的意味，这句诗写给父亲：
- 你召唤我成为儿子，
+你召唤我成为儿子，
 我追随你成为父亲
- 生活 &amp;#160;
-这一年的生活，有一部分写进了这个生活博客。近100篇，你可以在这里看到所有的历史存档：
- http://li-and-jiang.com/blog/archives/
- 读书(非技术类) &amp;#160;
-毕业后，几乎所有的阅读，都在地铁里完成。我有一个术语，就叫做“公车上书”，说的就是在公车（公交车和地铁）上读书。现在的感触是，在地铁里读书，比在哪效率都高。人挤没关系，刚好帮助集中自己的精神。
+生活 这一年的生活，有一部分写进了这个生活博客。近100篇，你可以在这里看到所有的历史存档：
+http://li-and-jiang.com/blog/archives/
+读书(非技术类) 毕业后，几乎所有的阅读，都在地铁里完成。我有一个术语，就叫做“公车上书”，说的就是在公车（公交车和地铁）上读书。现在的感触是，在地铁里读书，比在哪效率都高。人挤没关系，刚好帮助集中自己的精神。
 这一年的阅读,数量相比往年不多。最大一块，集中在家里所有的古籍方面，包括《四书集注》、《诗经》、《世说新语》、《史记》、《老子·庄子·列子》、《金刚经》、《唐诗百家全集》、《李太白集·杜工部集》等。不是思古之幽情顿起，而是要为虎头取名字。这算是我这十多年来读书成果最大的一次。
 然后是育儿经，包括郑玉巧的两本，在上海出差时读完了保罗·豪伶格《不会说话的孩子想“说”什么》，还有就是龙应台的两本，《孩子你慢慢来》和《亲爱的安德烈》。然后为了未雨绸缪，跟Li一起为出版社校读了两部译稿，《孩童厌学：治疗师指南/父母自助手册》。
 其他的就很零散，包括
- 一部小说，Child 44 by Tom Rob Smith
+一部小说，Child 44 by Tom Rob Smith
 一部政治学，贡斯当的《古代人的自由和现代人的自由》
 一部伦理学，重读了彼得·辛格的《实践伦理学》
 一部经济学，重读亚当·斯密的《国富论》
-两部传记，冯至的《杜甫传》和李长之的《李白传》</description>
+两部传记，冯至的《杜甫传》和李长之的《李白传》
+提一下《国富论》，我读的是台湾谢宗林和李华夏的繁体译本，顺便帮出版社的朋友做些校对的工作（也找了朋友帮忙），这书的简体字版刚由中央编译出版社出版。今年算是做了点编辑的工作。
+工作 正式工作二十来个月了。有时心不免浮躁，就打趣自己：“出道还不到两年呢”。问过很多朋友，很多都有这方面的忧虑，一方面我们工作年限太短（刚毕业不久），但一方面我们好像都很大了，研究生毕业出来都二十六二十七的，好像刚一出道就奔三十，然后打算要买房了、打算要结婚了、打算要小孩子了，——每一项都是让刚工作的人觉得压力很大。这些焦虑在参加工作后产生，期待能在工作中消融掉了。我认为工作状态更有利于人格的养成，在于它不再是一个单一的环境。
+现在单兵工作还挺顺手，有时候想对自己要求更多。十一月份去上海参加了一个关于leadership的培训，让自己眼界开了不少（有一句话让我印象深刻，leadership is not a position; it is a choice）。但作为一个职场新手，我需要更多的是项目管理的积累，——又是时间，时间，时间。</description>
     </item>
-    
     <item>
       <title>海上行（1）</title>
       <link>/2010/09/20/%E6%B5%B7%E4%B8%8A%E8%A1%8C1/</link>
       <pubDate>Mon, 20 Sep 2010 21:11:22 +0000</pubDate>
-      
       <guid>/2010/09/20/%E6%B5%B7%E4%B8%8A%E8%A1%8C1/</guid>
       <description>如果上海的朋友来京，标题就会是“故人海上来”——以文辞害意如此，我第一次去上海，难免四处拿北京——我的坐标——来观察上海。
 局
@@ -181,131 +164,117 @@ http://www.jiangtanghu.com/cn/2010/09/18/sas-cdisc-gathering/
 这样的经济学分析可以延伸到，比如，北京协和医院挂号等问题。——经济学到此为止。我们的生活里除了经济学，还有其他需要考究的问题。还说北京协和医院挂号，比如挂专家号费用提到到一万块（他们真值这个价），那么，市场就良好地运作，有支付能力的人不需要怎么排队，服务质量也大幅度提高。但这有个问题，就是某些也需要专家诊治的病人，由于支付能力不足，就没有机会享受到这个服务。现在的排队，提供了一种公平机制，就是让那些没有支付能力的人，通过其他渠道（通宵排队之类，这也是一种付出），也能享受到相应服务。
 回到世博。现在160块钱一张的世博票，是便宜了，但这是一种机制，使得大部分人，可以通过付出其他额外的努力（排队……），也能享受到世博的服务，尽管这服务的质量也相应有了下降。效率与公平，这是永恒的难题。</description>
     </item>
-    
     <item>
       <title>不耕作，就写作</title>
       <link>/2010/06/26/%E4%B8%8D%E8%80%95%E4%BD%9C%E5%B0%B1%E5%86%99%E4%BD%9C/</link>
       <pubDate>Sat, 26 Jun 2010 22:23:36 +0000</pubDate>
-      
       <guid>/2010/06/26/%E4%B8%8D%E8%80%95%E4%BD%9C%E5%B0%B1%E5%86%99%E4%BD%9C/</guid>
       <description>夏天来了。客户和同事休假去了，项目延迟了，工作节奏慢下来了，人也觉着无聊了，——描述完这些，Michael Raithel，SAS社区的活跃分子，三本SAS技术书的作者，号召大伙说，干嘛不考虑写一本SAS书来打发时间和精力呢？
 写书写书。</description>
     </item>
-    
     <item>
       <title>SAS故事</title>
       <link>/2010/01/24/sas%E6%95%85%E4%BA%8B/</link>
       <pubDate>Sun, 24 Jan 2010 00:27:34 +0000</pubDate>
-      
       <guid>/2010/01/24/sas%E6%95%85%E4%BA%8B/</guid>
       <description>转一个前东家的新闻，来自CNN：
- SAS ranks No.1 on the Fortune’ 100 Best Companies to Work For(2010)
- 在这个《财富》杂志评选出的全美“100 家最适合工作的公司”（2010）的表单中，google排名第4，思科16，微软51，英特尔98。SAS作为一门语言、一个系统，是我现在谋生的活计，作为一个公司，是我曾经效力的地方，它这次赚了一个头筹，当然为它高兴。
+SAS ranks No.1 on the Fortune’ 100 Best Companies to Work For(2010)
+在这个《财富》杂志评选出的全美“100 家最适合工作的公司”（2010）的表单中，google排名第4，思科16，微软51，英特尔98。SAS作为一门语言、一个系统，是我现在谋生的活计，作为一个公司，是我曾经效力的地方，它这次赚了一个头筹，当然为它高兴。
 讲些八卦，以后再详细写些。SAS公司(SAS Institute Inc.)的CEO,Jim Goodnight，身价68亿美刀，在福布斯“全美最富有的400人排行榜（2009）”中排名33位。什么概念？一位大众都熟悉的亿万富翁，苹果和皮克斯公司的斯蒂夫·乔布斯(Steve Jobs)，以51亿美刀的身价在这个排行榜排名43；Google的CEO，埃里克·施密特(Eric Schmidt)，则排名40，身价55亿美刀。SAS的二当家，John Sall，在这个榜单排名91，34亿美刀。
 SAS是一家私人公司，做统计软件起家，始创于1976年。当时四个创始人及其份额是：
-
-Anthony James Barr ..40% ，36岁 James Goodnight &amp;#8230;&amp;#8230;35% ，33岁 John Sall &amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;..17% ，28岁 Jane Helwig &amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;.8% ，未知 （Anthony James Barr，一般称他为Tony，有时也拼做Jim Barr。James Goodnight，一般大伙都叫他Jim，或者Dr.Goodnight。John是一个统计学家和程序员，Jane当时负责SAS文档）
+Anthony James Barr ..40% ，36岁James Goodnight &amp;#8230;&amp;#8230;35% ，33岁John Sall &amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;..17% ，28岁Jane Helwig &amp;#8230;&amp;#8230;&amp;#8230;&amp;#8230;.8% ，未知（Anthony James Barr，一般称他为Tony，有时也拼做Jim Barr。James Goodnight，一般大伙都叫他Jim，或者Dr.Goodnight。John是一个统计学家和程序员，Jane当时负责SAS文档）
 Tony是一位伟大的计算机科学家，SAS系统的发明者。SAS的第一个发行版（1972年），Tony贡献了65%的代码量。一个历史悬案是，1979年初，Tony离开SAS，并把他在公司的40%的份额以34万美元卖给了Jim。与Tony相比，Jim是一个统计学家，更是一个成功的商人，现在SAS是一家年销售额23亿美元的公司。Tony离开SAS公司，又创办了几家公司，只是再也没有像SAS这样成功。
 Jane更像是SAS的一个过客。Tony、Jim和John，都是早期SAS系统的代码贡献者，Jane作为四位创始人之一，志不在此，负责的是SAS文档，而且也很快离开公司。她去上了一家医学院，成为一个儿科医生。后来她有两个孩子为SAS工作。
-&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;
+——————
 SAS的早期历史，特别是Tony的贡献，有空再写了。那时，也正是微软等公司创立的时代。时代变迁，历史沉浮，噫。</description>
     </item>
-    
     <item>
       <title>技术博客展望</title>
       <link>/2010/01/03/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E5%B1%95%E6%9C%9B/</link>
       <pubDate>Sun, 03 Jan 2010 23:33:00 +0000</pubDate>
-      
       <guid>/2010/01/03/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E5%B1%95%E6%9C%9B/</guid>
       <description>北京终于下了一场像样的雪，算是跟南方同步。早上起来，吟诗一首：
- 雪，好大的雪啊，洁白的雪，
+雪，好大的雪啊，洁白的雪，
 银子一样的雪。
 嗯，这不是银子。
 要是银子，早被巴依老爷给抢掉了。
-&amp;#160;
 雪，好大的雪啊，洁白的雪，
 面粉一样的雪。
 嗯，这不是面粉。
 要是面粉，早被巴依老爷给吃掉了。
- 沉吟至今，才想到以前还有个月亮版本，真斯文扫大街，不提。
+沉吟至今，才想到以前还有个月亮版本，真斯文扫大街，不提。
 终于把以前在windows live space的所谓技术博客鼓捣到自己的名下：
- http://www.jiangtanghu.com/cn/
- 简陋戏台搭好，就鼓励自个以后多写些技术文章了。我跟Li的生活博客合集，当然还是会这里，
- http://li-and-jiang.com/blog/
- 所谓技术博客，无非是自个的一些读书笔记技术心得之类。这新得白花花扎眼的一年，还想多写些关于SAS程序员本身的文字，关于这个职业，它依托的行业环境等等。SAS程序员在国内还不是一个很兴盛的职业。
+http://www.jiangtanghu.com/cn/
+简陋戏台搭好，就鼓励自个以后多写些技术文章了。我跟Li的生活博客合集，当然还是会这里，
+http://li-and-jiang.com/blog/
+所谓技术博客，无非是自个的一些读书笔记技术心得之类。这新得白花花扎眼的一年，还想多写些关于SAS程序员本身的文字，关于这个职业，它依托的行业环境等等。SAS程序员在国内还不是一个很兴盛的职业。
 还会有关于SAS本身的文字，关于SAS语言，SAS公司，关于它的创始人等等。最近我对SAS的创始人Tony Barr比较感兴趣。
 技术本身，这个跟饭碗相关，除了SAS技术，很多笔墨可能会停留在CDISC上面。当然还会有自个兴之所至的其他文字，才年初呢，啥都没定。作为跟“统计之都”的约定，所有跟统计相关的文字，我会首先发布到“统计之都”，然后在自个的博客做个备份：
- http://cos.name/author/hujiangtang/
- 这2010年的第一场雪，可以摇头晃脑吟诵一番张打油先生的著名诗作，《咏雪》：
- 江上一笼统，
+http://cos.name/author/hujiangtang/
+这2010年的第一场雪，可以摇头晃脑吟诵一番张打油先生的著名诗作，《咏雪》：
+江上一笼统，
 井上黑窟窿。
 黄狗身上白，
 白狗身上肿。
- 噫。</description>
+噫。</description>
     </item>
-    
     <item>
       <title>WANTED: SAS程序员、数据分析师</title>
       <link>/2009/12/29/wanted-sas%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%88/</link>
       <pubDate>Tue, 29 Dec 2009 22:09:54 +0000</pubDate>
-      
       <guid>/2009/12/29/wanted-sas%E7%A8%8B%E5%BA%8F%E5%91%98%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%88/</guid>
       <description>是几个公司的职位，地点北京，全职或实习生，我可以帮着中间撮合一下：
-  数据分析师，强调数理背景，初级或者高级。 SAS程序员，这个要比较靠谱的，不仅仅是会套用几个proc。   工作描述就不摆出来了，是医药/IT金融行业。感兴趣的朋友给我打电话或者发邮件，我们还可以顺便聊聊。</description>
+数据分析师，强调数理背景，初级或者高级。 SAS程序员，这个要比较靠谱的，不仅仅是会套用几个proc。 工作描述就不摆出来了，是医药/IT金融行业。感兴趣的朋友给我打电话或者发邮件，我们还可以顺便聊聊。</description>
     </item>
-    
     <item>
       <title>R乌乎在？</title>
       <link>/2009/12/05/r%E4%B9%8C%E4%B9%8E%E5%9C%A8/</link>
       <pubDate>Sat, 05 Dec 2009 23:22:00 +0000</pubDate>
-      
       <guid>/2009/12/05/r%E4%B9%8C%E4%B9%8E%E5%9C%A8/</guid>
       <description>R乌乎在？无处不在。
- 上午去人大参加“第二届中国R语言会议”。R是一门开源的统计软件，源自S语言，一直在学院流行。或问，作为一个SAS程序员和前SAS员工，我为什么对R感兴趣。曰：我是观察家。
+上午去人大参加“第二届中国R语言会议”。R是一门开源的统计软件，源自S语言，一直在学院流行。或问，作为一个SAS程序员和前SAS员工，我为什么对R感兴趣。曰：我是观察家。
 年初在“统计之都”灌了个水，跟踪《纽约时报》关于R的一个报道，以及此事在R社区与SAS社区的反应，要知道，那是自1996年诞生以来，R第一次出现在公众视野。R也好，SAS也好，都工具而已，不过某个东西用熟了，它本身也就有趣味来，故后世有刀剑之争。呵呵，我们都未能免俗。
 这次R会议的主题是R eveRywheRe(按R社区故制，但凡出现字母r，一律大写)，意为“无处不在的R”，我翻译成“R乌乎在？无处不在”，是衷心希望R能在国内发扬光大。这不是R占领SAS用户市场的问题，而是整个量化分析领域繁荣昌盛的问题。很多朋友，都是R的布道者，这次参加会议，又能跟一群朋友聚聚，听听他们的兴趣所在，也是非常高兴的事。
 题外话。会场上我见到一册《我是一只IT小小鸟》，真是比较兴奋，这书居然还有统计背景的读者。经中南大学的魏太云介绍，这位捧场的朋友，就是他的同学肖楠。这也巧了，肖楠要在这次会议分享的话题，《R环境安全特性初探与前瞻》，刚好是我拿到会议安排时第一个勾上的。就凑一起多聊会了。
 还是太云的介绍，认识了一位谢益辉老早就推荐的陈丽云。她在山大念经济学，计算机和数学俱佳，博客做得很漂亮。
 说说会场的趣事。开场时被会议主席陈偃平同学点名了，原来我是这次会议第一个报名者，——貌似最近我频频中奖，奖品有米老鼠口杯、整理箱、电子挂历……</description>
     </item>
-    
     <item>
       <title>活动两则：China-pub九周年庆/CDISC Interchange Conference 2009(Beijing)</title>
       <link>/2009/09/06/%E6%B4%BB%E5%8A%A8%E4%B8%A4%E5%88%99china-pub%E4%B9%9D%E5%91%A8%E5%B9%B4%E5%BA%86/cdisc-interchange-conference-2009beijing/</link>
       <pubDate>Sun, 06 Sep 2009 23:02:52 +0000</pubDate>
-      
       <guid>/2009/09/06/%E6%B4%BB%E5%8A%A8%E4%B8%A4%E5%88%99china-pub%E4%B9%9D%E5%91%A8%E5%B9%B4%E5%BA%86/cdisc-interchange-conference-2009beijing/</guid>
-      <description>China-pub九周年现场欢乐庆生会，2009年9月13日（周日，北京，赛迪大厦）  可以作为周末消遣的一个好去处（_据报_）：
- ● 娱乐——互动游戏、棋牌休闲、阅读交流、电影、畅所欲言……
+      <description>China-pub九周年现场欢乐庆生会，2009年9月13日（周日，北京，赛迪大厦） 可以作为周末消遣的一个好去处（据报）：
+● 娱乐——互动游戏、棋牌休闲、阅读交流、电影、畅所欲言……
 ● 美食——china-pub员工现场亲手制作爱心午餐，与您分享精美蛋糕。
 ● 大礼——现场所有图书68折，更将抽取各类超值精彩大礼
- 《我是一只IT小小鸟》将在会场首发，我跟部分作者会过去聊聊这本新书，欢迎到时捧场了。
+《我是一只IT小小鸟》将在会场首发，我跟部分作者会过去聊聊这本新书，欢迎到时捧场了。
 2. CDISC Interchange Conference 2009，2009年10月31日（周六，北京，富力万丽）
 这个酒店在北京挺糊涂的，就是朝阳东三环的Renaissance Beijing Capital Hotel。CDISC会议的北京站。到时可以见识些CDISC组织（包括中国委员会）以及各大药厂与解决方案提供商的朋友。
 我跟同事到时有一个关于SAS与XML的话题，大伙感兴趣可以去砸场子。详见后。
-&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-
+—————————————————-
 附：
- China-pub九周年现场欢乐庆生会  时间：2009年9月13日（周日）
+China-pub九周年现场欢乐庆生会 时间：2009年9月13日（周日）
 地点：赛迪大厦二层（北京市海淀区紫竹院路66号）查看地图及行车线路
 以书会友，以友求贤，分享快乐，分享智慧……
 知识——
- 《Google Android开发入门与实战》作者：靳岩;姚尚朗 《把时间当作朋友》作者：李笑来 《大象》作者：谭云杰 《卓有成效的程序员》译者团队 《豆瓣，流行的秘密》作者黄修远 IT PUB 数据库专家：盖国强  &amp;#8230;&amp;#8230;更多嘉宾惊喜期待！
+《Google Android开发入门与实战》作者：靳岩;姚尚朗 《把时间当作朋友》作者：李笑来 《大象》作者：谭云杰 《卓有成效的程序员》译者团队 《豆瓣，流行的秘密》作者黄修远 IT PUB 数据库专家：盖国强 ……更多嘉宾惊喜期待！
 点击此链接网上报名
 具体行程：
- 09：30-10：00 签到
+09：30-10：00 签到
 09：55 China-pub 致辞
 10：00-11：00 《大象》作者：谭云杰 “大象的前世今生”
 11：00-11：50 《可爱的Python》 哲思社区团队
 12：00-13：10 午餐 电影 游戏
 13：10-14：00 《把时间当作朋友》作者：李笑来 “心智成长与成熟”
-14：00-14：50 “方兴未艾的Android技术开发” 《Google Android 开发入门与实战》作者：靳岩; 姚尚朗</description>
+14：00-14：50 “方兴未艾的Android技术开发” 《Google Android 开发入门与实战》作者：靳岩; 姚尚朗
+14：50-15：20 茶歇
+15：20-16：10 “天道酬勤-Eygle的Oracle之路” IT PUB 数据库专家：盖国强</description>
     </item>
-    
     <item>
       <title>君自故乡来</title>
       <link>/2009/08/14/%E5%90%9B%E8%87%AA%E6%95%85%E4%B9%A1%E6%9D%A5/</link>
       <pubDate>Fri, 14 Aug 2009 00:38:00 +0000</pubDate>
-      
       <guid>/2009/08/14/%E5%90%9B%E8%87%AA%E6%95%85%E4%B9%A1%E6%9D%A5/</guid>
       <description>1
 更新是一种习惯。不更新也会成为一种习惯。下班地铁里，一直盯着一位姑娘看。
@@ -335,12 +304,10 @@ SAS在业内，大概是唯一一家（会不会是最后一家？）还保持�
 很多场合，道德评判都显得突兀，不适合。这时候如果我还想有所言说，就说，道德无好坏，境界有高低。
 从克尔凯郭尔到冯友兰，境界说也绵延不绝。</description>
     </item>
-    
     <item>
       <title>工作</title>
       <link>/2009/07/11/%E5%B7%A5%E4%BD%9C/</link>
       <pubDate>Sat, 11 Jul 2009 23:43:47 +0000</pubDate>
-      
       <guid>/2009/07/11/%E5%B7%A5%E4%BD%9C/</guid>
       <description>毕业证书除了拎着照相，还可以签合同。那天我们毕业典礼结束，走过学位门，等候老师给我们的学位帽拨穗，——学位门？一个爆炸式的新闻标题可以是这样，“北大惊爆学位门事件”……
 前天把合同签了。毕业典礼那天，放电影般的，把研究生三年的人事都过了一遍，很幸运，正如周筠老师提到的，一路都有“贵人指路”。就现在这份工作（药厂/SAS程序员）来说，要感谢的朋友，就可以从现在回溯到研一。工作是双向选择的结果，但我还是要悄悄感谢一下我现在的老板。我从经济学转到软件工程，最后投身医药行业，她让我体会到平等、尊重以及专业素养的力量。
@@ -349,35 +316,23 @@ SAS是我研究生学习和生活的关键词。研一修一门信用评分课�
 SAS和统计，又不得不提在学校社团认识的朋友，北大应用统计研究会及其下属的北大SAS俱乐部。当然还有老谢和他的“统计之都”，Qing和他的商务智能邮件组TTNN。
 SAS在我三年里这般紧凑，这个概率是要用乘法来算的。</description>
     </item>
-    
     <item>
       <title>SAS：人和书</title>
       <link>/2009/05/07/sas%E4%BA%BA%E5%92%8C%E4%B9%A6/</link>
       <pubDate>Thu, 07 May 2009 00:30:13 +0000</pubDate>
-      
       <guid>/2009/05/07/sas%E4%BA%BA%E5%92%8C%E4%B9%A6/</guid>
       <description>&lt;p&gt;我那&lt;a href=&#34;http://johnthu.spaces.live.com/&#34; target=&#34;_blank&#34;&gt;（所谓）技术博客&lt;/a&gt;好久没更新了。前些日子贴出一则&lt;a href=&#34;http://johnthu.spaces.live.com/blog/cns!2053CD511E6D5B1E!1097.entry&#34; target=&#34;_blank&#34;&gt;通告&lt;/a&gt;，说那个Windows Live Space从此停止更新，换了个新东家，技术路线有所偏倚，关于技术文章，想沉淀一段时间。以后我大概会开一个独立博客，跟这个生活博客还是要分开来。&lt;/p&gt;
-
-&lt;p&gt;闭门贴挂出来不多久，跟上海一位写SAS博客的朋友聊了聊，说些人生的坚持与选择，都是跟SAS有关的事，生出无限感慨。前天在SAS全球用户组SAS-L上面，一家POD出版社(Print-on-Demand Publisher)登出一则书讯，书是一个自称失业的SAS程序员写的。看介绍书非常有意思，就顺着链接找关于书和作者的更多信息。下面贴出来的《SAS与我》是作者的自述。这作者叫Shaoji Xu，在美国拿的PHD，这自述就写他失业后写SAS书的经过，第一句话就说，“写这本书的原因很简单：我失业了”。一样是SAS程序员，我大概能读出一些他跟SAS&amp;#8221;情意绵绵&amp;#8221;的趣味，以及一些长歌当哭的感触。 注释符号 &lt;em&gt;/**/&lt;/em&gt; 里面的内容是随手做的一些批注。&lt;/p&gt;
-
+&lt;p&gt;闭门贴挂出来不多久，跟上海一位写SAS博客的朋友聊了聊，说些人生的坚持与选择，都是跟SAS有关的事，生出无限感慨。前天在SAS全球用户组SAS-L上面，一家POD出版社(Print-on-Demand Publisher)登出一则书讯，书是一个自称失业的SAS程序员写的。看介绍书非常有意思，就顺着链接找关于书和作者的更多信息。下面贴出来的《SAS与我》是作者的自述。这作者叫Shaoji Xu，在美国拿的PHD，这自述就写他失业后写SAS书的经过，第一句话就说，“写这本书的原因很简单：我失业了”。一样是SAS程序员，我大概能读出一些他跟SAS”情意绵绵”的趣味，以及一些长歌当哭的感触。 注释符号 &lt;em&gt;/**/&lt;/em&gt; 里面的内容是随手做的一些批注。&lt;/p&gt;
 &lt;p align=&#34;center&#34;&gt;
   &amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;br /&gt; SAS与我
 &lt;/p&gt;
-
 &lt;p align=&#34;center&#34;&gt;
   By Shaoji Xu&lt;br /&gt; &lt;a href=&#34;http://www.beauthor.com/book/sas/sasandi_c.htm&#34;&gt;http://www.beauthor.com/book/sas/sasandi_c.htm&lt;/a&gt;
 &lt;/p&gt;
-
 &lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;/*作者Shaoji Xu，在美国罗格斯大学(Rutgers University)拿的Ph.D，运筹学方向，他还有统计学的背景。刚写了两本书，被他称为“大姐”的&lt;em&gt;Understanding SAS&lt;/em&gt;，SAS入门书，和被他称为“小妹”的&lt;em&gt;Selected Papers on SAS&lt;/em&gt;，关于SAS应用技巧的一些专题。以前他跟人合作了一本《线性规划》（科学出版社，1990）。 &lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;这两本SAS书放在一家叫“成家”&lt;a href=&#34;www.beauthor.com&#34; target=&#34;_self&#34;&gt;(&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;color: #000000;&#34;&gt;&lt;a href=&#34;www.beauthor.com&#34; target=&#34;_self&#34;&gt;www.beauthor.com&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;color: #000000;&#34;&gt;&lt;a href=&#34;www.beauthor.com&#34; target=&#34;_self&#34;&gt;)&lt;/a&gt;的POD出版社(Print-on-Demand Publisher)上面。POD就是作者把书稿给出版社，出版社不审不校，觉得有市场就给申请书号做推广之类，有一本的需求就印出一本，然后与作者分成。 &lt;/span&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;这两本SAS书放在一家叫“成家”&lt;a href=&#34;www.beauthor.com&#34; target=&#34;_self&#34;&gt;(&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;color: #000000;&#34;&gt;&lt;a href=&#34;www.beauthor.com&#34; target=&#34;_self&#34;&gt;&lt;a href=&#34;https://www.beauthor.com&#34;&gt;www.beauthor.com&lt;/a&gt;&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;color: #000000;&#34;&gt;&lt;a href=&#34;www.beauthor.com&#34; target=&#34;_self&#34;&gt;)&lt;/a&gt;的POD出版社(Print-on-Demand Publisher)上面。POD就是作者把书稿给出版社，出版社不审不校，觉得有市场就给申请书号做推广之类，有一本的需求就印出一本，然后与作者分成。 &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;又，&lt;em&gt;Understanding SAS&lt;/em&gt;这本书，&lt;/span&gt;&lt;a href=&#34;http://www.beauthor.com/book/sas/contents_u.htm &#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;目录&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: #000000;&#34;&gt;,&lt;/span&gt;&lt;a href=&#34;http://www.beauthor.com/book/sas/preface_u.htm &#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;前言&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: #000000;&#34;&gt;；&lt;em&gt;Selected Papers on SAS&lt;/em&gt;这本书，&lt;/span&gt;&lt;a href=&#34;http://www.beauthor.com/book/sas/contents.htm &#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;目录&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: #000000;&#34;&gt;,&lt;/span&gt;&lt;a href=&#34;http://www.beauthor.com/book/sas/preface.htm &#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;前言&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: #000000;&#34;&gt;。&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;《SAS与我》的英文版，见&lt;/span&gt;&lt;a href=&#34;http://www.beauthor.com/book/sas/sasandi.htm&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;http://www.beauthor.com/book/sas/sasandi.htm&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;color: #000000;&#34;&gt;*/&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;《SAS与我》的英文版，见&lt;/span&gt;&lt;a href=&#34;http://www.beauthor.com/book/sas/sasandi.htm&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;http://www.beauthor.com/book/sas/sasandi.htm&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;color: #000000;&#34;&gt;*/&lt;/span&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
