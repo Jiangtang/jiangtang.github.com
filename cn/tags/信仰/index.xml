@@ -1,22 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>信仰 on A Hugo website</title>
+    <title>信仰 on Jiangtang Hu | 胡江堂</title>
     <link>/tags/%E4%BF%A1%E4%BB%B0/</link>
-    <description>Recent content in 信仰 on A Hugo website</description>
+    <description>Recent content in 信仰 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Wed, 18 May 2011 00:07:18 +0000</lastBuildDate>
-    <atom:link href="/tags/%E4%BF%A1%E4%BB%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/%E4%BF%A1%E4%BB%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>恐惧与颤栗</title>
       <link>/2011/05/18/%E6%81%90%E6%83%A7%E4%B8%8E%E9%A2%A4%E6%A0%97/</link>
       <pubDate>Wed, 18 May 2011 00:07:18 +0000</pubDate>
+      
       <guid>/2011/05/18/%E6%81%90%E6%83%A7%E4%B8%8E%E9%A2%A4%E6%A0%97/</guid>
       <description>高考后面对箱子里一大堆书，到底要拣几本带入大学，是费了一番考虑。那时我要去念经济学，还满怀着要遍读天下诗书的豪情；然后是大学毕业，面对的是积累下来的更多的书本，心里也琢磨一阵，到底还要带哪些“闲书”去上研究生院，这时我已经在国家图书馆和各大高校图书馆面前谦虚了很多，手头也收藏了不少的电子书。最后能装进行囊的书是大不相同，一本小书却是一直揣在我牛仔裤兜里，跟着我搬来搬去。当然，严格意义上它不能叫一本书：这书名叫《恐惧与颤栗》，里面包括这部同名的著作和另一部日记体小说《诱引者手记》，但我把这书的后半部分撕了，只留下这部《恐惧与颤栗》。它们是丹麦哲学家克尔凯郭尔的作品（一谌等译，华夏出版社，1999），高三那阵在我们鹰潭市的席殊书屋买的。高中读《苏菲日记》时，克尔凯郭尔还叫做“祁克果”。
 这是一部由一位宗教哲学家写的关于宗教信仰的著作，多年的阅读，对书对作者我都有很多话要说，这里就只谈些这书了。这本书由《圣经·旧约》里亚伯拉罕杀子的故事说起。以撒是亚伯拉罕老年始得的爱子，上帝却要他杀死以撒作为对神的献祭。这过程中亚伯拉罕绝少言语，最后是把以撒绑起来，在他动刀的时候天使出现，用一只羊代替了以撒（替罪羊的由来）。我不是宗教徒，每每却能感受到其间的激情。伦理和信仰的选择，这是一个多么充满“恐惧与颤栗”的悖论：信仰带来这种巨大的痛苦，又要保持对它的忠诚。杀死自己心爱的儿子，在伦理和情感上都无法让人接受，这无法说服大众也无法说服自己，但亚伯拉罕最终还是追随了信仰的指示。这种信仰无法证明（克尔凯郭尔也认为神的存在无法证明），信仰它就需要勇气和激情。这种勇气令人震撼，痛苦却无法言说。
 多次的阅读没有让我想到更多宗教性的东西，一次次促使我思考的是在世俗生活中的信仰、激情还有孤独：依靠缄默的激情，承受着不可言说的痛苦，追求着一种无法证明的信仰。
 （旧时笔记一篇，略有修改）</description>
     </item>
+    
   </channel>
 </rss>

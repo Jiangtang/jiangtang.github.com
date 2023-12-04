@@ -1,26 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>春游 on A Hugo website</title>
+    <title>春游 on Jiangtang Hu | 胡江堂</title>
     <link>/tags/%E6%98%A5%E6%B8%B8/</link>
-    <description>Recent content in 春游 on A Hugo website</description>
+    <description>Recent content in 春游 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Tue, 31 Mar 2009 17:28:07 +0000</lastBuildDate>
-    <atom:link href="/tags/%E6%98%A5%E6%B8%B8/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/%E6%98%A5%E6%B8%B8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>中关村散人</title>
       <link>/2009/03/31/%E4%B8%AD%E5%85%B3%E6%9D%91%E6%95%A3%E4%BA%BA/</link>
       <pubDate>Tue, 31 Mar 2009 17:28:07 +0000</pubDate>
+      
       <guid>/2009/03/31/%E4%B8%AD%E5%85%B3%E6%9D%91%E6%95%A3%E4%BA%BA/</guid>
       <description>常言三四月中，北窗下卧，遇凉风暂至，自谓是中关村散人。
-上周五辞去的实习工作，可以在家休整两周了。早上去菜市场，以爷爷奶奶辈的为主。放眼中关村地区，大清早起来买萝卜白菜的青壮年，大概不多。噫。
+ 上周五辞去的实习工作，可以在家休整两周了。早上去菜市场，以爷爷奶奶辈的为主。放眼中关村地区，大清早起来买萝卜白菜的青壮年，大概不多。噫。
 中午一起吃饭，窗外阳光明媚。Jun说大好春光，可惜被论文绊着，春游不成。“春游”，这是个好话头，我我我有灵感了，赋诗一首：
-春天坐小舟，顺着江水流。船上没有桨，看你往哪游。
-各位看官，这还是一首藏头诗呢。以前说过，我有一个朴素的想法，立志读完所有的故事书，以期在所有场合都有调用。这句歪诗，大概是很久很久以前，《今古传奇》里面有一篇武侠小说，其中一个附庸风雅的贼人（？），与薛蟠同，在类似的场合，非常雄壮地作出这首诗。恩，在风雅的场合，如果有需要，我喜欢念另一首打油诗，其间充满瑰丽的想象力：
-远看山来黑乎乎，上头尖来下头粗。有朝一日翻过来，下头尖来上头粗。
-这首在很多笑话选本都能见到了。
+ 春天坐小舟，顺着江水流。船上没有桨，看你往哪游。
+ 各位看官，这还是一首藏头诗呢。以前说过，我有一个朴素的想法，立志读完所有的故事书，以期在所有场合都有调用。这句歪诗，大概是很久很久以前，《今古传奇》里面有一篇武侠小说，其中一个附庸风雅的贼人（？），与薛蟠同，在类似的场合，非常雄壮地作出这首诗。恩，在风雅的场合，如果有需要，我喜欢念另一首打油诗，其间充满瑰丽的想象力：
+ 远看山来黑乎乎，上头尖来下头粗。有朝一日翻过来，下头尖来上头粗。
+ 这首在很多笑话选本都能见到了。
 这几天倒春寒，倒了个狠的，屋里也跟南方的冬天一样冷。昨天，Li说在家里，原地慢跑挺好的啊。我们就面对面原地跑动起来，顺便聊聊天。就着这个节奏，不一会，我就冒出一句：“竹板这个一打呀，……”……</description>
     </item>
+    
   </channel>
 </rss>

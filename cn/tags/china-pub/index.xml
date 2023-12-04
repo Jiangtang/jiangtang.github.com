@@ -1,55 +1,63 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>China-pub on A Hugo website</title>
+    <title>China Pub on Jiangtang Hu | 胡江堂</title>
     <link>/tags/china-pub/</link>
-    <description>Recent content in China-pub on A Hugo website</description>
+    <description>Recent content in China Pub on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Sun, 20 Sep 2009 19:20:00 +0000</lastBuildDate>
-    <atom:link href="/tags/china-pub/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/china-pub/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>周末记事:种树、做书</title>
       <link>/2009/09/20/%E5%91%A8%E6%9C%AB%E8%AE%B0%E4%BA%8B%E7%A7%8D%E6%A0%91%E5%81%9A%E4%B9%A6/</link>
       <pubDate>Sun, 20 Sep 2009 19:20:00 +0000</pubDate>
+      
       <guid>/2009/09/20/%E5%91%A8%E6%9C%AB%E8%AE%B0%E4%BA%8B%E7%A7%8D%E6%A0%91%E5%81%9A%E4%B9%A6/</guid>
       <description>作为一个种水稻的，我羡慕的是种水果的。两个周末都与一群朋友在密云的山里走，仰天长望，左顾右盼，就想找到一棵长着果子的树。恩，脖子是得到了最高限度的锻炼。
 傍晚回家，开机，收到几个让人心情愉悦的消息。我跟20位朋友一起做的书，《我是一只IT小小鸟》，在china-pub网站的计算机类的图书热销排名又窜到了第四名（我们的书9月13号在china-pub九周年首发，15号就能在网上订购，17号看见它的排名是22，18号是8，19号有朋友电话向我沟通说是5。这本书首印7000册，算了下，每卖出一本，本人能（净）赚1毛钱。这一毛毛钱攒下来，老家种果树去。这个网页是动态更新的，截个图先）：
+&amp;#160;
+
+&amp;#160;
 在豆瓣网上，一个叫“乌龟也会飞”的朋友（90年），给《我是一只IT小小鸟》写了一则书评，《我也是一只IT小小鸟》，讲他与本书的共鸣，说：
-这本书没有直接告诉我们答案，但是它引导我们去思考，去寻找自己的解决之道。
-这本书最直接的读者就是像“乌龟也会飞”这样IT专业的学生。能看到这样的反馈，真给人长精气神不少，正如这本书的出版人周筠老师所言，“再次看了这篇书评，连白天一直作痛的头都不那么疼了：）”。加油。</description>
+ 这本书没有直接告诉我们答案，但是它引导我们去思考，去寻找自己的解决之道。
+ 这本书最直接的读者就是像“乌龟也会飞”这样IT专业的学生。能看到这样的反馈，真给人长精气神不少，正如这本书的出版人周筠老师所言，“再次看了这篇书评，连白天一直作痛的头都不那么疼了：）”。加油。</description>
     </item>
+    
     <item>
       <title>活动两则：China-pub九周年庆/CDISC Interchange Conference 2009(Beijing)</title>
       <link>/2009/09/06/%E6%B4%BB%E5%8A%A8%E4%B8%A4%E5%88%99china-pub%E4%B9%9D%E5%91%A8%E5%B9%B4%E5%BA%86/cdisc-interchange-conference-2009beijing/</link>
       <pubDate>Sun, 06 Sep 2009 23:02:52 +0000</pubDate>
+      
       <guid>/2009/09/06/%E6%B4%BB%E5%8A%A8%E4%B8%A4%E5%88%99china-pub%E4%B9%9D%E5%91%A8%E5%B9%B4%E5%BA%86/cdisc-interchange-conference-2009beijing/</guid>
-      <description>China-pub九周年现场欢乐庆生会，2009年9月13日（周日，北京，赛迪大厦） 可以作为周末消遣的一个好去处（据报）：
-● 娱乐——互动游戏、棋牌休闲、阅读交流、电影、畅所欲言……
+      <description>China-pub九周年现场欢乐庆生会，2009年9月13日（周日，北京，赛迪大厦）  可以作为周末消遣的一个好去处（_据报_）：
+ ● 娱乐——互动游戏、棋牌休闲、阅读交流、电影、畅所欲言……
 ● 美食——china-pub员工现场亲手制作爱心午餐，与您分享精美蛋糕。
 ● 大礼——现场所有图书68折，更将抽取各类超值精彩大礼
-《我是一只IT小小鸟》将在会场首发，我跟部分作者会过去聊聊这本新书，欢迎到时捧场了。
+ 《我是一只IT小小鸟》将在会场首发，我跟部分作者会过去聊聊这本新书，欢迎到时捧场了。
 2. CDISC Interchange Conference 2009，2009年10月31日（周六，北京，富力万丽）
 这个酒店在北京挺糊涂的，就是朝阳东三环的Renaissance Beijing Capital Hotel。CDISC会议的北京站。到时可以见识些CDISC组织（包括中国委员会）以及各大药厂与解决方案提供商的朋友。
 我跟同事到时有一个关于SAS与XML的话题，大伙感兴趣可以去砸场子。详见后。
-—————————————————-
+&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-
 附：
-China-pub九周年现场欢乐庆生会 时间：2009年9月13日（周日）
+ China-pub九周年现场欢乐庆生会  时间：2009年9月13日（周日）
 地点：赛迪大厦二层（北京市海淀区紫竹院路66号）查看地图及行车线路
 以书会友，以友求贤，分享快乐，分享智慧……
 知识——
-《Google Android开发入门与实战》作者：靳岩;姚尚朗 《把时间当作朋友》作者：李笑来 《大象》作者：谭云杰 《卓有成效的程序员》译者团队 《豆瓣，流行的秘密》作者黄修远 IT PUB 数据库专家：盖国强 ……更多嘉宾惊喜期待！
+ 《Google Android开发入门与实战》作者：靳岩;姚尚朗 《把时间当作朋友》作者：李笑来 《大象》作者：谭云杰 《卓有成效的程序员》译者团队 《豆瓣，流行的秘密》作者黄修远 IT PUB 数据库专家：盖国强  &amp;#8230;&amp;#8230;更多嘉宾惊喜期待！
 点击此链接网上报名
 具体行程：
-09：30-10：00 签到
+ 09：30-10：00 签到
 09：55 China-pub 致辞
 10：00-11：00 《大象》作者：谭云杰 “大象的前世今生”
 11：00-11：50 《可爱的Python》 哲思社区团队
 12：00-13：10 午餐 电影 游戏
 13：10-14：00 《把时间当作朋友》作者：李笑来 “心智成长与成熟”
-14：00-14：50 “方兴未艾的Android技术开发” 《Google Android 开发入门与实战》作者：靳岩; 姚尚朗
-14：50-15：20 茶歇
-15：20-16：10 “天道酬勤-Eygle的Oracle之路” IT PUB 数据库专家：盖国强</description>
+14：00-14：50 “方兴未艾的Android技术开发” 《Google Android 开发入门与实战》作者：靳岩; 姚尚朗</description>
     </item>
+    
   </channel>
 </rss>

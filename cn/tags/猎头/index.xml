@@ -1,17 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>猎头 on A Hugo website</title>
+    <title>猎头 on Jiangtang Hu | 胡江堂</title>
     <link>/tags/%E7%8C%8E%E5%A4%B4/</link>
-    <description>Recent content in 猎头 on A Hugo website</description>
+    <description>Recent content in 猎头 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Sat, 11 Jul 2009 23:43:47 +0000</lastBuildDate>
-    <atom:link href="/tags/%E7%8C%8E%E5%A4%B4/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/%E7%8C%8E%E5%A4%B4/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>工作</title>
       <link>/2009/07/11/%E5%B7%A5%E4%BD%9C/</link>
       <pubDate>Sat, 11 Jul 2009 23:43:47 +0000</pubDate>
+      
       <guid>/2009/07/11/%E5%B7%A5%E4%BD%9C/</guid>
       <description>毕业证书除了拎着照相，还可以签合同。那天我们毕业典礼结束，走过学位门，等候老师给我们的学位帽拨穗，——学位门？一个爆炸式的新闻标题可以是这样，“北大惊爆学位门事件”……
 前天把合同签了。毕业典礼那天，放电影般的，把研究生三年的人事都过了一遍，很幸运，正如周筠老师提到的，一路都有“贵人指路”。就现在这份工作（药厂/SAS程序员）来说，要感谢的朋友，就可以从现在回溯到研一。工作是双向选择的结果，但我还是要悄悄感谢一下我现在的老板。我从经济学转到软件工程，最后投身医药行业，她让我体会到平等、尊重以及专业素养的力量。
@@ -20,5 +24,6 @@ SAS是我研究生学习和生活的关键词。研一修一门信用评分课�
 SAS和统计，又不得不提在学校社团认识的朋友，北大应用统计研究会及其下属的北大SAS俱乐部。当然还有老谢和他的“统计之都”，Qing和他的商务智能邮件组TTNN。
 SAS在我三年里这般紧凑，这个概率是要用乘法来算的。</description>
     </item>
+    
   </channel>
 </rss>

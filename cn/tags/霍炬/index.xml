@@ -1,31 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>霍炬 on A Hugo website</title>
+    <title>霍炬 on Jiangtang Hu | 胡江堂</title>
     <link>/tags/%E9%9C%8D%E7%82%AC/</link>
-    <description>Recent content in 霍炬 on A Hugo website</description>
+    <description>Recent content in 霍炬 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Thu, 04 Jun 2009 23:22:00 +0000</lastBuildDate>
-    <atom:link href="/tags/%E9%9C%8D%E7%82%AC/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/%E9%9C%8D%E7%82%AC/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>婚礼简报：霍炬先生&amp;#038;西乔小姐</title>
       <link>/2009/06/04/%E5%A9%9A%E7%A4%BC%E7%AE%80%E6%8A%A5%E9%9C%8D%E7%82%AC%E5%85%88%E7%94%9F#038%E8%A5%BF%E4%B9%94%E5%B0%8F%E5%A7%90/</link>
       <pubDate>Thu, 04 Jun 2009 23:22:00 +0000</pubDate>
+      
       <guid>/2009/06/04/%E5%A9%9A%E7%A4%BC%E7%AE%80%E6%8A%A5%E9%9C%8D%E7%82%AC%E5%85%88%E7%94%9F#038%E8%A5%BF%E4%B9%94%E5%B0%8F%E5%A7%90/</guid>
       <description>是 愿
 前 天
 生 下
 注 有
 定 情
-事 人 莫 终 错 成 过 了 姻 眷 缘 属 下班就赶往西直门，7点10分到的奇遇花园咖啡馆，霍炬先生和西乔小姐的婚礼正在热闹举行中。都一群少壮不努力长大做IT的朋友，各自说些与霍炬和西乔的交往史，其间爆料ex-ex-ex无数，还有上场的数十套山寨版天津煎饼果子（Made in 西直门），更是打出来一个小小的高潮。
+事 人 莫 终 错 成 过 了 姻 眷 缘 属  下班就赶往西直门，7点10分到的奇遇花园咖啡馆，霍炬先生和西乔小姐的婚礼正在热闹举行中。都一群少壮不努力长大做IT的朋友，各自说些与霍炬和西乔的交往史，其间爆料ex-ex-ex无数，还有上场的数十套山寨版天津煎饼果子（Made in 西直门），更是打出来一个小小的高潮。
 我与霍炬的交往，年初写到，《有朋友就在楼下，不亦乐乎》：
-中午跟霍炬(virushuo)在庄胜六层吃饭。新认识的朋友，但订阅他的博客很久了，他在互联网行业很活跃。前些日子他博客说，也在sogo办公，这太巧了，立马联系。
+ 中午跟霍炬(virushuo)在庄胜六层吃饭。新认识的朋友，但订阅他的博客很久了，他在互联网行业很活跃。前些日子他博客说，也在sogo办公，这太巧了，立马联系。
 吃完饭一起到他的创业公司（GinkgoTek）。郝培强(Tinyfool)也在，就凑一起闲聊。霍说到余晟刚好不在办公室。余，就是翻译《精通正则表达式》的那位。
 霍炬还推荐我看徐宥的博客。说我们去年月底刚好都提到俳句，“古池塘，青蛙跃入，水声响”：
 徐宥，“一首汉俳”,12月20
 胡，Haiku from SAS Staff，12月10
-好吧，通过霍炬认识的这群朋友，都一股脑在场。霍炬说这次婚礼，也是想借个机会，让各位朋友凑一凑。关于本次旷世婚礼的进一步报导（和现场照片），随时关注中。</description>
+ 好吧，通过霍炬认识的这群朋友，都一股脑在场。霍炬说这次婚礼，也是想借个机会，让各位朋友凑一凑。关于本次旷世婚礼的进一步报导（和现场照片），随时关注中。</description>
     </item>
+    
   </channel>
 </rss>

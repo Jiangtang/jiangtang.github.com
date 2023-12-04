@@ -1,17 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>当当网 on A Hugo website</title>
+    <title>当当网 on Jiangtang Hu | 胡江堂</title>
     <link>/tags/%E5%BD%93%E5%BD%93%E7%BD%91/</link>
-    <description>Recent content in 当当网 on A Hugo website</description>
+    <description>Recent content in 当当网 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Fri, 02 Oct 2009 21:17:00 +0000</lastBuildDate>
-    <atom:link href="/tags/%E5%BD%93%E5%BD%93%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/%E5%BD%93%E5%BD%93%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>排行榜</title>
       <link>/2009/10/02/%E6%8E%92%E8%A1%8C%E6%A6%9C/</link>
       <pubDate>Fri, 02 Oct 2009 21:17:00 +0000</pubDate>
+      
       <guid>/2009/10/02/%E6%8E%92%E8%A1%8C%E6%A6%9C/</guid>
       <description>唐伯虎：老娘，我想离开家几天避避风头，免得宁王他又派人来找我的麻烦。
 朱茜：那你要记着带着这只铁枪头以防万一，要记着了啦啊！由于当年你爹他打输了，所以当今兵 器谱上，书生夺命剑是排行第二，我们霸王枪排行第三，小李飞刀呢算是第四啦。
@@ -19,19 +23,26 @@
 唐伯虎：那排名第一的是谁呢？
 朱茜：就是小李飞刀他娘，可惜她已经过世了！
 唐伯虎：哦，原来是小李他妈的飞刀，真可惜！
-以前读小说，乐趣之一就是跟朋友一起数各种兵器排名武功排名。后来突然又看到周密的《武林旧事》，还以为这是一本宋朝江湖高手的排行榜，噫。按上架顺利,现在也来数数《我是一只IT小小鸟》在国内三大网店的排名情况。我们这本书有21位作者，打榜当然利索些。
+ 以前读小说，乐趣之一就是跟朋友一起数各种兵器排名武功排名。后来突然又看到周密的《武林旧事》，还以为这是一本宋朝江湖高手的排行榜，噫。按上架顺利,现在也来数数《我是一只IT小小鸟》在国内三大网店的排名情况。我们这本书有21位作者，打榜当然利索些。
 1.china-pub（互动网）排名
 这些日子，《我是一只IT小小鸟》在互动网计算机图书销售排名，一直在3-5位震荡（有一次飙到2）。这是今天的模样(2009-10-02)：
+
 除了“计算机”这个标签，本书在互动网还归在经管一类。经济管理图书销售排名(2009-10-02)：
+
 《我是一只IT小小鸟》，跟李开复老师的《世界因你不同》，出版时间都是2009年9月，定价也一样（29.8RMB），除了同时在这里打榜，还有一个现实的接触：
+
 这个更多的，见博文视点编辑夏青同学的博客文章。
 2. 当当网排名
 在当当网的计算机新书热卖榜(2009-10-02)：
+
 跟《算法导论》之类的经典好书摆在一起，有沾光的感觉。看见它跟一群考试书在一起，也就认了。
 有段时间，我们这本书也在当当网的励志类图书停留（“自我实现/励志”，2009-09-26），忍了：
+
 3. 卓越（amazon.cn）排名****
 在卓越亚马逊的“计算机与互联网”销售排行榜(2009-10-02)：
+
 这里排行榜的感觉，相当于互动网与当当网相应排行的一个糅合。</description>
     </item>
+    
   </channel>
 </rss>

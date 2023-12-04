@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>思维 on A Hugo website</title>
+    <title>思维 on Jiangtang Hu | 胡江堂</title>
     <link>/tags/%E6%80%9D%E7%BB%B4/</link>
-    <description>Recent content in 思维 on A Hugo website</description>
+    <description>Recent content in 思维 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Wed, 20 Apr 2011 13:19:39 +0000</lastBuildDate>
-    <atom:link href="/tags/%E6%80%9D%E7%BB%B4/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/%E6%80%9D%E7%BB%B4/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>生存还是</title>
       <link>/2011/04/20/%E7%94%9F%E5%AD%98%E8%BF%98%E6%98%AF/</link>
       <pubDate>Wed, 20 Apr 2011 13:19:39 +0000</pubDate>
+      
       <guid>/2011/04/20/%E7%94%9F%E5%AD%98%E8%BF%98%E6%98%AF/</guid>
       <description>顾虑就使我们都变成了懦夫，使得那果断的本色蒙上了一层思虑的惨白的容颜，本来可以做出伟大的事业，由于思虑就化为乌有了，丧失了行动的能力。
-——《哈姆雷特》“生存还是毁灭”
-“生存还是毁灭”？这不是一个问题。由于生存是一个默认的状态，改变它需要更充分的理由。刚又看到这段独白，这次的重点不是那第一句，而是“顾虑与行动”，最后一句。
+&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; ——《哈姆雷特》“生存还是毁灭”
+ “生存还是毁灭”？这不是一个问题。由于生存是一个默认的状态，改变它需要更充分的理由。刚又看到这段独白，这次的重点不是那第一句，而是“顾虑与行动”，最后一句。
 2
 还是关于“顾虑与行动”。这是一个会把人逼上绝境的话题：思考是好的，行动也是好的！所以，一个叫“智慧”的东西出来了：你要知道啥时应该行动，啥时不应该行动。（不用费心找格林斯潘的漫画了，都一个道理）——而这几乎都是事后诸葛亮或者经济学模型，解释力超强，预测力为零。
 3
@@ -26,14 +30,15 @@
 我的用词习惯。当说“可能”或者“大概”的时候，通常我自己是非常坚定的。
 当我认为，比如，“MIT是世界上最好的大学”，我会说，“MIT大概是世界上最好的大学”。——这里我想表达的是一种毋庸置疑或者懒得跟人争的趣味。
 还有，比如，我认为，“杜克大学是一所非常好的大学”，那我则会说，“有一所最好的大学，杜克大学”。这里我想表达一种倾向或者强烈的支持。当然，通常我不会吝啬自己的赞美，我会说，比如，在北卡，有最好的大学，NCSU、UNC和杜克。
-自测题：下面哪句陈述比较恰当地表现了笔者的用词习惯？
+ 自测题：下面哪句陈述比较恰当地表现了笔者的用词习惯？
 a）北京大学是中国最好的大学。
 b）北京大学大概是中国最好的大学。
-6
+ 6
 扯远了。刚我提到，在思考与行动的角力中，对我个人而言，倾向于行动可能会是一个较好的选择。
 但是，在思维中，还另有一种乐趣。讲一个故事，极端的故事。
 假设你手头剩下一手好牌，比如，两张大鬼，通吃。当然，在这里，思考也是可以存在的（为零），你出牌就是（直接行动）。好，现在你选择不行动，我是说，你迟迟不出牌，手头持有两张大鬼而最后做输家（“乌龟”）。
 这里的重点不是什么“变态”啊“糊涂”啊之类。这里的重点是，当你持有好牌而看着自己做下家，这表明，你的乐趣在牌局之外。</description>
     </item>
+    
   </channel>
 </rss>

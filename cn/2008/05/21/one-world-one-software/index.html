@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-us">
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.120.4">
+<meta name="generator" content="Hugo 0.18.1" />
 
 
-<title>One World One Software - A Hugo website</title>
-<meta property="og:title" content="One World One Software - A Hugo website">
-
-
-  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<title>One World One Software - Jiangtang Hu | 胡江堂</title>
+<meta property="og:title" content="One World One Software - Jiangtang Hu | 胡江堂">
 
 
 
@@ -22,8 +19,8 @@
 
 
 
-<link rel="stylesheet" href="/css/fonts.css" media="all">
-<link rel="stylesheet" href="/css/main.css" media="all">
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
 
 
 
@@ -32,8 +29,8 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="/" class="nav-logo">
-    <img src="/images/logo.png"
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
          width="50"
          height="50"
          alt="Logo">
@@ -41,7 +38,7 @@
 
   <ul class="nav-links">
     
-    <li><a href="/about/">About</a></li>
+    <li><a href="../../../../about/">About</a></li>
     
     <li><a href="https://github.com/jiangtang">GitHub</a></li>
     
@@ -63,31 +60,42 @@
     <h1 class="article-title">One World One Software</h1>
 
     
-    <span class="article-date">2008-05-21</span>
+    <span class="article-date">2008/05/21</span>
     
 
     <div class="article-content">
-      
-      <p>早上六点四十起来，洗澡，刷牙，煮面条，一番折腾，也是近八点出门，九点赶到公司。九点半我们在旁边的海格（<em>国际？</em>）酒店有个Town Hall Meeting，有大老板的老板从Cary过来。活动内容无非是几个Cary的同事，还有一个欧洲的同事讲讲各自的部门，大伙混个脸熟，然后就是大老板讲讲北京研发这边的情况（这次讲话对我有私人价值的是，大老板还记得我们部门有一个实习生，当然没有多说什么，我在台下却是比较激动，这就是我啦，接下来大老板只说多少多少fulltime多少多少Intern）。</p>
+      <p>早上六点四十起来，洗澡，刷牙，煮面条，一番折腾，也是近八点出门，九点赶到公司。九点半我们在旁边的海格（_国际？_）酒店有个Town Hall Meeting，有大老板的老板从Cary过来。活动内容无非是几个Cary的同事，还有一个欧洲的同事讲讲各自的部门，大伙混个脸熟，然后就是大老板讲讲北京研发这边的情况（这次讲话对我有私人价值的是，大老板还记得我们部门有一个实习生，当然没有多说什么，我在台下却是比较激动，这就是我啦，接下来大老板只说多少多少fulltime多少多少Intern）。</p>
+
 <p>在公司呆几个月了，讲讲我的工作吧。首先是培训了一个月，熟悉些SAS编程，然后更多的是SAS BI方面的产品和Solution，然后就是国际化本地化方面的知识（One World One Software），还有就是找了二十来天的hard coding，也趁着review代码的机会熟悉下产品的结构，这个产品就是现我正在做的Solution的一部分，关于Credit Scoring for Banking Intelligence。</p>
+
 <p>再科普一下我的领域，大伙印象深的，可能还是我的文史哲或经济学阶段——命途多舛，我现在攻读是软件工程的硕士项目。我现在这个公司专注于Business Intelligence(BI,商务智能)和Predictive Analytics，对BI这个词来说，如果指行业，就包括我们所认为的一切，如数据仓库、报表、数据挖掘之类，如果指产品，BI产品一般就是报表，所以上面说了BI还要加一个Predictive Analytics，以正视听。 BI这个行业的主要玩家，除了我现在的SAS，还有Oracle、IBM、SAP、Microsoft、Teradata等等。</p>
+
 <p>又，关于hard coding，最简单地，比如，一段代码，直接在屏幕上显示了“四川加油！”，它这么写</p>
+
 <blockquote>
 <p>在屏幕，显示  四川加油！   （1）</p>
 </blockquote>
+
 <p>这样在功能上当然没有什么不妥。不过，这个产品要在拼音国家使用，我就要把上面这句改成</p>
+
 <blockquote>
 <p>在屏幕，显示  Sichuan Jiayou！  （2）</p>
 </blockquote>
+
 <p>同时，这个东西还有在象形文字国家使用，（1）句就要写成</p>
+
 <blockquote>
 <p>在屏幕，显示  @#*(_~*^！  （3）</p>
 </blockquote>
-<p>如此不一而足。这么看来，虽然（1）句没什么语法错误，但它没有做得更好，它把“四川加油！”这个东西写死了(hard coding)，不够有通用性，在其他场合只能手工替换。一个解决的办法是定义一个变量，比如blablabla，这个变量在中文环境下表示“四川加油！”，在拼音国家表示&quot;Sichuan Jiayou！&quot;，而在象形文字国家，就表示&quot;@#*(_~*^！&quot;。这么一来，（1）句就可以写成，以下这句就可以在各个语文下通行无阻：</p>
+
+<p>如此不一而足。这么看来，虽然（1）句没什么语法错误，但它没有做得更好，它把“四川加油！”这个东西写死了(hard coding)，不够有通用性，在其他场合只能手工替换。一个解决的办法是定义一个变量，比如blablabla，这个变量在中文环境下表示“四川加油！”，在拼音国家表示&rdquo;Sichuan Jiayou！&rdquo;，而在象形文字国家，就表示&rdquo;@#*(_~*^！&rdquo;。这么一来，（1）句就可以写成，以下这句就可以在各个语文下通行无阻：</p>
+
 <blockquote>
 <p>在屏幕，显示  blablabla  （4）</p>
 </blockquote>
+
 <p>以上的例子是个简单情况，不多说了。找hard coding是个体力活，跟出版社的文字编辑差不多。几周下来，人就云里雾里，智商下降，期间我的脑袋就碰过一次玻璃橱窗，硬生生撞过去，疼了才发现旁边有温馨提示：“小心玻璃”。</p>
+
 <p>最后，就是我现在做的Credit Scoring，信用评分，银行要用。比如，你申请一张信用卡，填些个人信息，就等着批准。对银行来说，最好是通过你给的信息，再根据它以前大量账户的表现，来给你打个分数，60分及格，59就pass。这个东西在统计学上比较直观，拿台计算机蹭蹭蹭就可以做下来。不过Credit Scoring作为一个Solution，它预定义了很多数据模型，所以除了数据挖掘算法外，还有很多计算引擎框架以及数据仓库/数据集市方面的讲究。不说了不说了，新词越来越多。科普结束，有兴趣可以去<a href="http://johnthu.spaces.live.com/" target="_blank">我的（所谓）技术博客</a>瞄一眼。</p>
 
     </div>
@@ -100,9 +108,11 @@
 
       <footer class="footer">
         <ul class="footer-links">
-          
           <li>
-            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
           </li>
         </ul>
       </footer>

@@ -1,17 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>辛弃疾 on A Hugo website</title>
+    <title>辛弃疾 on Jiangtang Hu | 胡江堂</title>
     <link>/tags/%E8%BE%9B%E5%BC%83%E7%96%BE/</link>
-    <description>Recent content in 辛弃疾 on A Hugo website</description>
+    <description>Recent content in 辛弃疾 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Mon, 04 Oct 2010 21:55:44 +0000</lastBuildDate>
-    <atom:link href="/tags/%E8%BE%9B%E5%BC%83%E7%96%BE/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/%E8%BE%9B%E5%BC%83%E7%96%BE/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>公车上书（九、十月）</title>
       <link>/2010/10/04/%E5%85%AC%E8%BD%A6%E4%B8%8A%E4%B9%A6%E4%B9%9D%E5%8D%81%E6%9C%88/</link>
       <pubDate>Mon, 04 Oct 2010 21:55:44 +0000</pubDate>
+      
       <guid>/2010/10/04/%E5%85%AC%E8%BD%A6%E4%B8%8A%E4%B9%A6%E4%B9%9D%E5%8D%81%E6%9C%88/</guid>
       <description>翻书效率，现站在地铁车厢里，已经远远超过坐在椅子里或沙发里。闹市，拥挤的车厢，反而生出一股清静和恒心，由着自己把数百页的印刷品一页页翻过——在地铁里，没有比阅读更惬意的事情，但在家里，阅读只是无数的选项之一。
 1. Child 44 by Tom Rob Smith, Grand Central, 2008
@@ -19,8 +23,8 @@
 这本书是楚楚可小姐去年回国时落我们家的，大概是我看得最顺畅的英文小说。作者1979年出生，用的是一种类似与国际英语那样的广大群众都很喜欢的英语。
 2.保罗·豪伶格《不会说话的孩子想“说”什么》（林义华译，北京：金城，2010）
 小齐同学送我们的书。上次上海出差时在机场与宾馆里看完的，又一本关于小孩子的书。这书的第一句是：
-看着别人家的新生儿，似乎都很乖巧听话，就像刚出炉的小面包，松软喷香，……
-What babies say before they can talk?这本书提供了婴儿情绪的9个特征（好奇、开心、惊奇、苦恼、生气、害怕、羞愧、恶心、厌恶），以方便父母们察言观色，按图索骥，——对我来说，这些都不是重点。对父母而言，教小孩是个很困难的事。比如，无论父母本身如何，大多会教育小孩要有一些“正面的”特性，比如有礼貌、懂事、乐观等等——而这些讨人喜欢的、脸谱化的特征，本身就是很多父母所不具备的。而如果父母不具备这些特征，对小孩来说，它们也只是一些抽象的条目而已。——这里我不是说小孩教不好，庆幸的是，除了父母，小孩还有很多渠道学到“正面的”东西。
+ 看着别人家的新生儿，似乎都很乖巧听话，就像刚出炉的小面包，松软喷香，……
+ What babies say before they can talk?这本书提供了婴儿情绪的9个特征（好奇、开心、惊奇、苦恼、生气、害怕、羞愧、恶心、厌恶），以方便父母们察言观色，按图索骥，——对我来说，这些都不是重点。对父母而言，教小孩是个很困难的事。比如，无论父母本身如何，大多会教育小孩要有一些“正面的”特性，比如有礼貌、懂事、乐观等等——而这些讨人喜欢的、脸谱化的特征，本身就是很多父母所不具备的。而如果父母不具备这些特征，对小孩来说，它们也只是一些抽象的条目而已。——这里我不是说小孩教不好，庆幸的是，除了父母，小孩还有很多渠道学到“正面的”东西。
 到最后，教育小孩就是一个教育自己的过程。跟老师一样，这都是需要“资质”的。
 3. 邓广铭《辛弃疾传·辛稼轩年谱》（北京：三联书店，2007）
 中国古典诗词是一个很个人化的文体，所以吃蛋之余最好也要知道些下蛋的鸡。前些日子买来邓广铭的《稼轩词编年笺注》，现在觉得还是要购入些作者传记，多了解些作者，也就能多了解些作品。
@@ -34,35 +38,44 @@ What babies say before they can talk?这本书提供了婴儿情绪的9个特征
 7. 龙应台《亲爱的安德烈》（北京：人民文学，2008）
 上次读了《孩子你慢慢来》（龙应台，文汇，2005），觉着不错，就再买来这册与Li一起看看了。很好的关于母子沟通的书。
 大概是母亲写的书吧，其中一些地方我觉着“矫情”，不利于培养孩子的豪迈之气。比如，P.41：
-至于“玩”，你知道吗，我觉得不懂得“玩”，确实是一种缺点。怎么说呢？席慕容阿姨（记得吗？那个又写诗又画画的蒙古公主）曾经说，**如果一个孩子在他的生活里没接触过大自然，譬如摸过树的皮、踩过干而脆的落叶，她就没办法教他美术。**因为，他没有第一手接触过美。
-开玩笑对Li说，我从小摸过、剥过无数“树的皮”，也踩过、扫过、烧过无数“干而脆的落叶”，但席慕容阿姨就是没办法教我美术。大自然是生活的一部分，至少对男孩子来说，没必要这么一惊一咋。</description>
+ 至于“玩”，你知道吗，我觉得不懂得“玩”，确实是一种缺点。怎么说呢？席慕容阿姨（记得吗？那个又写诗又画画的蒙古公主）曾经说，如果一个孩子在他的生活里没接触过大自然，譬如摸过树的皮、踩过干而脆的落叶，她就没办法教他美术。因为，他没有第一手接触过美。
+ 开玩笑对Li说，我从小摸过、剥过无数“树的皮”，也踩过、扫过、烧过无数“干而脆的落叶”，但席慕容阿姨就是没办法教我美术。大自然是生活的一部分，至少对男孩子来说，没必要这么一惊一咋。</description>
     </item>
+    
     <item>
       <title>流动的盛宴</title>
       <link>/2010/05/15/%E6%B5%81%E5%8A%A8%E7%9A%84%E7%9B%9B%E5%AE%B4/</link>
       <pubDate>Sat, 15 May 2010 17:02:00 +0000</pubDate>
+      
       <guid>/2010/05/15/%E6%B5%81%E5%8A%A8%E7%9A%84%E7%9B%9B%E5%AE%B4/</guid>
       <description>If you are lucky enough to have lived in Paris as a young man, then wherever you go for the rest of your life, it stays with you, for Paris is a moveable feast.
-主题：运动，休闲，shopping。下午去海淀图书城那块。走路是运动，逛书店是休闲，买书是shopping：
+ 主题：运动，休闲，shopping。下午去海淀图书城那块。走路是运动，逛书店是休闲，买书是shopping：
+&amp;#160;
 1.海明威《流动的盛宴》（汤永宽译，上海译文，2008）
 这本书是买给前法国文学研究生Li的，就为着一句话：
-假如你有幸年轻时在巴黎生活过，那么你此后一生中不论到哪里她都与你同在，因为巴黎是一席流动的盛宴。
-2.张撝之《世说新语译注》（上海古籍，1996）
+ 假如你有幸年轻时在巴黎生活过，那么你此后一生中不论到哪里她都与你同在，因为巴黎是一席流动的盛宴。
+ 2.张撝之《世说新语译注》（上海古籍，1996）
 跟Li一直想要一本适合阅读的《世说》，全本，简体横排，注释恰当。中华书局见过一套三册的本子，稍稍嫌笨。
 我不熟悉张撝之。买下他的本子，纯粹是因为大一时我买过这同一个书系下的《周易译注》（黄寿祺、 张善文），做笔记比较勤。这套丛书叫做“中华古籍译注丛书”，看着舒服。
 高中时生菜买了二册广西师大版的《世说》，借来看着，就一直想要一个合适的本子。听说余嘉锡的《世说新语笺疏》不错，待通了这册再图。
+&amp;#160;
 3.邓广铭《稼轩词编年笺注》（增订本）（上海古籍，1993）
 上古的“中国古典文学丛书”之一。能接受这个繁体竖排的本子，是因为之前一直在读《辛弃疾词选》（朱德才选注，人民文学，1998），依的就是这个邓广铭的本子。辛弃疾是我最喜欢的词人，有学问，有性情。
+&amp;#160;
 4.《白居易全集》（丁如明、聂世美校点，上海古籍，1999）
 这又是一个裸本，没有一丁点注释。除了《唐诗三百首》，唐诗我读的都是裸本：王维、孟浩然、岑参、高适、李白、杜甫，没有一点背景，读得是似懂非懂。现再加一个白居易，噫。</description>
     </item>
+    
     <item>
       <title>稼轩词（1）</title>
       <link>/2009/11/11/%E7%A8%BC%E8%BD%A9%E8%AF%8D1/</link>
       <pubDate>Wed, 11 Nov 2009 23:23:24 +0000</pubDate>
+      
       <guid>/2009/11/11/%E7%A8%BC%E8%BD%A9%E8%AF%8D1/</guid>
       <description>早上在书橱里盯好久，最终卷一册《辛弃疾词选》（朱德才选注，人民文学，1998）出门，大概过冬了，偶有些慷慨纵横激昂排宕的情绪需要抒发。来回地铁里，整出最想大声念出来的稼轩词8首。
-&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 贺新郎&amp;lt;p&amp;gt;老大那堪说。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;似而今、元龙臭味，孟公瓜葛。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;我病君来高歌饮，惊散楼头飞雪。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;笑富贵千钧如发。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;硬语盘空谁来听？&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;记当时、只有西窗月。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;重进酒，换鸣瑟。&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td valign=&amp;quot;top&amp;quot; width=&amp;quot;225&amp;quot;&amp;gt;&amp;lt;p&amp;gt;&amp;amp;#160;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;事无两事人心别。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;问渠侬、神州毕竟，几番离合？&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;汗血盐车无人顾，千里空收骏骨。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;正目断、关河路绝。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;我最怜君中宵舞，道“&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;男人、到死心如铁。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;看试手，补天裂”。&amp;amp;#160;&amp;amp;#160;&amp;amp;#160;&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 贺新郎&amp;lt;p&amp;gt;甚矣吾衰矣。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;恨平生、交游零落，只今余几！&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;白发空垂三千丈，一笑人间万事。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;问何物、能令公喜？&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;我见青山多妩媚，料青山、见我应如是。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;情与貌，略相似。&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td valign=&amp;quot;top&amp;quot; width=&amp;quot;243&amp;quot;&amp;gt;&amp;lt;p&amp;gt;&amp;amp;#160;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;一尊搔首东窗里。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;想渊明、停云诗就，此时风味。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;江左沉酣求名者，岂识浊醪妙理。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;回首叫、云飞风起。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;不恨古人吾不见，恨古人、不见吾狂耳。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;知我者，二三子。&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 水龙吟&amp;lt;p&amp;gt;举头西北浮云，倚天万里须长剑。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;人言此地，夜深长见，斗牛光焰。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;我觉山高，潭空水冷，月明星淡。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;待燃犀下看，凭栏却怕，风雷怒，鱼龙惨。&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td valign=&amp;quot;top&amp;quot; width=&amp;quot;227&amp;quot;&amp;gt;&amp;lt;p&amp;gt;&amp;amp;#160;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;峡束苍江对起，过危楼、欲飞还敛。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;元龙老矣，不妨高卧，冰壶凉簟。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;千古兴亡，百年悲笑，一时登览。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;问何人又卸，片帆沙岸，系斜阳缆。&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 水龙吟&amp;lt;p&amp;gt;楚天千里清秋，水随天去秋无际。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;遥岑远目， 献愁供恨，玉簪螺髻。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;落日楼头，断鸿声里， 江南游子。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;把吴钩看了， 栏干拍遍， 无人会、登临意。&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td valign=&amp;quot;top&amp;quot; width=&amp;quot;228&amp;quot;&amp;gt;&amp;lt;p&amp;gt;&amp;amp;#160;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;休说鲈鱼堪脍， 尽西风、季鹰归未？&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;求田问舍， 怕应羞见， 刘郎才气。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;可惜流年， 忧愁风雨， 树犹如此！&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;倩何人唤取， 红巾翠袖，揾英雄泪！&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 念奴娇&amp;lt;p&amp;gt;近来何处，有吾愁， 何处还知吾乐。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;一点凄凉千古意， 独倚西风寥廓。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;并竹寻泉， 和云种树， 唤做真闲客。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;此心闲处， 未应长藉邱壑。&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td valign=&amp;quot;top&amp;quot; width=&amp;quot;261&amp;quot;&amp;gt;&amp;lt;p&amp;gt;&amp;amp;#160;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;休说往事皆非， 而今云是， 且把清尊酌。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;醉里不知谁是我， 非月非云非鹤。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;露冷风高， 松梢桂子， 醉了还醒却。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;北窗高卧， 莫教啼鸟惊著。&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 沁园春&amp;lt;p&amp;gt;三径初成，鹤怨猿惊，稼轩未来。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;甚云山自许，平生意气；衣冠人笑，抵死尘埃。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;意倦须还，身闲贵早，岂为莼羹鲈鲙哉？&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;秋江上，看惊弦雁避，骇浪船回。&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td valign=&amp;quot;top&amp;quot; width=&amp;quot;299&amp;quot;&amp;gt;&amp;lt;p&amp;gt;&amp;amp;#160;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;东冈更葺茅斋，好都把轩窗临水开。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;要小舟行钓，先应种柳；疏篱护竹，莫碍观梅。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;秋菊堪餐，春兰可佩，留待先生手自栽。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;沉吟久，怕君恩未许，此意徘徊。&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 水调歌头&amp;lt;p&amp;gt;带湖吾甚爱，千丈翠奁开。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;先生杖屦无事，一日走千回。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;凡我同盟鸥鹭，今日既盟之后，来往莫相猜。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;白鹤在何处？尝试与偕来。&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td valign=&amp;quot;top&amp;quot; width=&amp;quot;277&amp;quot;&amp;gt;&amp;lt;p&amp;gt;&amp;amp;#160;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;破青萍，排翠藻，立苍苔。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;窥鱼笑汝痴计，不解举吾怀。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;废沼荒丘畴昔，明月清风此夜，人世几欢哀？&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;东岸绿阴少，杨柳更须栽。&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 永遇乐&amp;lt;p&amp;gt;千古江山，英雄无觅、孙仲谋处。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;舞榭歌台，风流总被、雨打风吹去。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;斜阳草树，寻常巷陌，人道寄奴曾住。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;想当年，金戈铁马，气吞万里如虎。&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td valign=&amp;quot;top&amp;quot; width=&amp;quot;241&amp;quot;&amp;gt;&amp;lt;p&amp;gt;&amp;amp;#160;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;元嘉草草，封狼居胥，赢得仓皇北顾。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;四十三年，望中犹记、烽火扬州路。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;可堪回首，佛狸祠下，一片神鸦社鼓！&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;凭谁问，廉颇老矣，尚能饭否？&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;</description>
+  &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 贺新郎  老大那堪说。  似而今、元龙臭味，孟公瓜葛。  我病君来高歌饮，惊散楼头飞雪。  笑富贵千钧如发。  硬语盘空谁来听？  记当时、只有西窗月。  重进酒，换鸣瑟。   &amp;#160;  事无两事人心别。  问渠侬、神州毕竟，几番离合？  汗血盐车无人顾，千里空收骏骨。  正目断、关河路绝。  我最怜君中宵舞，道“  男人、到死心如铁。  看试手，补天裂”。&amp;#160;&amp;#160;&amp;#160;    &amp;#160;
+  &amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160; 贺新郎  甚矣吾衰矣。  恨平生、交游零落，只今余几！  白发空垂三千丈，一笑人间万事。  问何物、能令公喜？  我见青山多妩媚，料青山、见我应如是。  情与貌，略相似。   &amp;#160;  一尊搔首东窗里。  想渊明、停云诗就，此时风味。  江左沉酣求名者，岂识浊醪妙理。  回首叫、云飞风起。  不恨古人吾不见，恨古人、不见吾狂耳。  知我者，二三子。    &amp;#160;</description>
     </item>
+    
   </channel>
 </rss>

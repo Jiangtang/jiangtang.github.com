@@ -1,17 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>运动 on A Hugo website</title>
+    <title>运动 on Jiangtang Hu | 胡江堂</title>
     <link>/tags/%E8%BF%90%E5%8A%A8/</link>
-    <description>Recent content in 运动 on A Hugo website</description>
+    <description>Recent content in 运动 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Mon, 29 Nov 2010 22:59:56 +0000</lastBuildDate>
-    <atom:link href="/tags/%E8%BF%90%E5%8A%A8/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/%E8%BF%90%E5%8A%A8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>我为滑板狂</title>
       <link>/2010/11/29/%E6%88%91%E4%B8%BA%E6%BB%91%E6%9D%BF%E7%8B%82/</link>
       <pubDate>Mon, 29 Nov 2010 22:59:56 +0000</pubDate>
+      
       <guid>/2010/11/29/%E6%88%91%E4%B8%BA%E6%BB%91%E6%9D%BF%E7%8B%82/</guid>
       <description>上周末与Li去旁边的公园逛，看到一群小孩在玩滑板滑轮什么的。Li问：羡慕吧。
 答曰：No，以后小宝可以教我。
@@ -20,17 +24,20 @@
 当时就想跟着学艺，骅骝说，无他，时间，还有不怕摔。好吧，我不怕摔。要是能让我重重地摔一次（不要摔死，半死就可以），然后就能够学会，我干啊。提到时间，说，我还是等以后跟着家里的小家伙练吧。
 让程序员老胡学滑板，还有诸如此类的活动，让人兴奋，那是真正为自己投资的项目。投资小家伙，顺便投资下自个，这活计值。</description>
     </item>
+    
     <item>
       <title>水调歌头-游泳</title>
       <link>/2009/08/15/%E6%B0%B4%E8%B0%83%E6%AD%8C%E5%A4%B4-%E6%B8%B8%E6%B3%B3/</link>
       <pubDate>Sat, 15 Aug 2009 23:39:00 +0000</pubDate>
+      
       <guid>/2009/08/15/%E6%B0%B4%E8%B0%83%E6%AD%8C%E5%A4%B4-%E6%B8%B8%E6%B3%B3/</guid>
       <description>才饮长沙水，
 又食武昌鱼。
-中午吃鱼，下午游泳（做水）。在楼下的新中关，奥力健身。我追求的是小英雄雨来的风采，一个猛子扎下水，半天不见人影。有机会要找个高手教我换气。
+ 中午吃鱼，下午游泳（做水）。在楼下的新中关，奥力健身。我追求的是小英雄雨来的风采，一个猛子扎下水，半天不见人影。有机会要找个高手教我换气。
 最近一次做水，是非典结束后那个暑假，在厦门云顶山（？）的一座水库里，玩了几次，又在厦门东边那海里游过一次。每年夏天，福建的电视台都要报告很多溺水事件，我浑身都是水，自然不担心。
 今天这么一动弹，果然舒畅许多。又说上周四晚上，在soho运动广场，跟同事一起踢足球，——（莫非）我的运动季又来啦。
 说，看书是重要的，发呆是重要的，上网是重要的，找朋友聊天是重要的，吃饭是重要的，一天天下来，工作之余的时间都这么过去。都知道身体是重要的，但优先度从来不高。健身卡很早就有，硬是到今天才派上用场。下次要多邀请些中关村附近的朋友一起去游泳，顺便可以多包揽些事，——恩，还可以聊天，还可以一起吃饭。投资于身体，同时又跟朋友活络感情，噫。</description>
     </item>
+    
   </channel>
 </rss>

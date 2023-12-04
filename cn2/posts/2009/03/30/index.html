@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="jiang">
+<meta name="dcterms.date" content="2009-03-30">
+
+<title>丽·江行 - 博客搬家：从Windows Live Space到WordPress（图解）</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../../../index.html">
+    <span class="navbar-title">丽·江行</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Jiangtang" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/JiangtangHu" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">博客搬家：从Windows Live Space到WordPress（图解）</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">技术</div>
+                <div class="quarto-category">网络</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>jiang </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">March 30, 2009</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>独立开博，在Hostmonster上用Wordpress上搭建完自个的空间，第一件事就是把以前发布在Windows Live Space上的博客导进来。其中，下载WindowsLiveSpace的全部文章和评论所用的Python脚本，来自<a href="http://b2.broom9.com/?page_id=519#note1">Broom</a>，剩下的一些优化工作，比如删除垃圾评论，用了一些简单的SQL脚本。从WindowsLiveSpace搬家，向来最为麻烦，以下把刚做的功课记下来，鼓励大伙及时退出WindowsLiveSpace。我06年开博，至今在WindowsLiveSpace上积攒下近六百篇博文，所谓积重难返路径依赖，这次全部顺畅导出，兀的不高兴死我也么哥。</p>
+<!--more-->
+<p>对不熟悉Python的朋友来说，以下的内容也一样没有没有障碍：只需要按着相应的步骤，复制粘贴再回车即可。这是我的生活博客，里面所有涉及所谓技术的内容，也是中文系高材生Li也能看懂的。</p>
+<blockquote class="blockquote">
+<p>1.准备工作</p>
+</blockquote>
+<p><strong>1.1. 设置Windows Live Space和Wordpress的日期格式</strong></p>
+<p>重要的是让WindowsLiveSpace和Wordpress的日期格式一致，这里我两个设置的是2009/03/30。在WindowsLiveSpace中，我的时间格式是10:24:05，设置的路径是“选项”-&gt;“常规”-&gt;“日期和时间格式”：</p>
+<p><a href="http://jiangtanghu.com/cn/wp-content/uploads/2009/03/space-date.png"><img style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" title="space_date" src="http://jiangtanghu.com/cn/wp-content/uploads/2009/03/space-date-thumb.png" border="0" alt="space_date" width="233" height="121"></a></p>
+<p>另外，在“选项”-&gt;“日志”-&gt;“显示日志日期”选项中，勾选“在页首出显示日志发布日期”。在Wordpress中，相应的路径是“设置”-&gt;“常规”-&gt;”日期格式”。</p>
+<p><strong>1.2.下载安装Python 2.5.2</strong></p>
+<p><a href="http://b2.broom9.com/?page_id=519#note1">Broom</a>测试了两种组合，Python 2.5.2+Beautiful Soup 3.0.6和Python 2.5.1+Beautiful Soup 3.0.4。但后面的低版本组合需要打些补丁，我们就不必麻烦了，我是直接用的高版本。Python 2.5.2的官方下载地址在：</p>
+<p><a href="http://www.python.org/download/releases/2.5.2/" class="uri">http://www.python.org/download/releases/2.5.2/</a></p>
+<p>我用的是Windows平台，选择的是X86 processors python-2.5.2.msi。下载完毕，一路安装过去就是，不妨依着它默认的安装路径c:Python25。接下来看看Python好不好使：</p>
+<p>开始-&gt;运行-&gt;在冒出来的框里输入 <span style="color: #ff0000;">cmd</span> 回车-&gt;在冒出来的命令行输入 <span style="color: #ff0000;">python </span>再回车</p>
+<p>顺利的话，你将看到类似的回应：</p>
+<p><a href="http://jiangtanghu.com/cn/wp-content/uploads/2009/03/cmd.png"><img style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" title="cmd" src="http://jiangtanghu.com/cn/wp-content/uploads/2009/03/cmd-thumb.png" border="0" alt="cmd" width="558" height="125"></a></p>
+<p>如果提示说python不可识别，就需要为Python设置环境变量，如果不明白什么是“环境变量”，依着下面的操作就是。</p>
+<p>“我的电脑”-&gt;右键“属性”-&gt;“高级”-&gt;“环境变量”-&gt;“系统变量”-&gt;点中一个叫Path的系统变量-&gt;“编辑”-&gt;在Path的变量值框的末尾，加上一个分号<span style="color: #ff0000;">;</span>（英文状态下），然后跟着是填上Python的安装目录，比如<span style="color: #ff0000;">c:Python25</span>。一路确定后，再回刚才的命令行试试python这个命令。</p>
+<p><a href="http://jiangtanghu.com/cn/wp-content/uploads/2009/03/path.png"><img style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" title="path" src="http://jiangtanghu.com/cn/wp-content/uploads/2009/03/path-thumb.png" border="0" alt="path" width="452" height="325"></a></p>
+<p><strong>1.3.下载Beautiful Soup 3.0.6</strong></p>
+<p>Beautiful Soup 3.0.6是一个解析HTML页面的类库，接下来那个下载博客文章的脚本需要用它。下载地址：</p>
+<p><a href="http://www.crummy.com/software/BeautifulSoup/download/3.x/BeautifulSoup-3.0.6.tar.gz" class="uri">http://www.crummy.com/software/BeautifulSoup/download/3.x/BeautifulSoup-3.0.6.tar.gz</a></p>
+<p>解压到一个文件夹，比如D:downloadBeautifulSoup-3.0.6。你将看到BeautifulSoup.py等几个脚本。</p>
+<p><strong>1.4.下载脚本Live-space-mover</strong></p>
+<p>Live-space-mover这个脚本，能够把WindowsLiveSpace中的所有文章和评论等，生成一个Wordpress能够识别的XML文件，以实现博客搬家的目的。下载地址：</p>
+<p><a href="http://code.google.com/p/live-space-mover/downloads/list" class="uri">http://code.google.com/p/live-space-mover/downloads/list</a></p>
+<p>现在的最新版本是live-space-mover.1.7.5.zip。解压到D:downloadBeautifulSoup-3.0.6。在D:downloadBeautifulSoup-3.0.6目录下，你应该看到脚本live-space-mover.py。</p>
+<blockquote class="blockquote">
+<p>2.运行脚本，下载博客，生成XML文件</p>
+</blockquote>
+<p>在刚才提到过的cmd命令行，转到D:downloadBeautifulSoup-3.0.6文件夹(先敲入<span style="color: #ff0000;">d:</span> 回车，然后敲入 <span style="color: #ff0000;">cd D:downloadBeautifulSoup-3.0.6</span> 回车)，敲入下面的<strong>一行</strong>语句并回车：</p>
+<p>python live-space-mover.py -s <a href="http://yourSpaceName.spaces.live.com/">http://<span style="color: #ff0000;">yourSpaceName</span>.spaces.live.com/</a> -t “%m/%d/%Y %I:%M:%S %p”</p>
+<p>其中，<span style="color: #ff0000;">yourSpaceName</span>是你Windows Live Space的名字。</p>
+<p><a href="http://jiangtanghu.com/cn/wp-content/uploads/2009/03/spacemover.png"><img style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" title="Space-mover" src="http://jiangtanghu.com/cn/wp-content/uploads/2009/03/spacemover-thumb.png" border="0" alt="Space-mover" width="425" height="149"></a></p>
+<p>这个运行时间视你博客文章的多少而定，如果在屏幕上看到博客标题显示为乱码，不必在意。成功之后，在D:downloadBeautifulSoup-3.0.6文件夹，将生成一个类似export_03292009-2238.xml的文件，这就是你整个Space的文章、评论以及类别之类的了。</p>
+<p>又，如果在准备工作1.1中，你Windows Live Space的时间格式是10:24而不是10:24:05，那么，以上命令就将更简洁些：</p>
+<p>python live-space-mover.py -s <a href="http://yourSpaceName.spaces.live.com/">http://<span style="color: #ff0000;">yourSpaceName</span>.spaces.live.com/</a></p>
+<blockquote class="blockquote">
+<p>3.把XML文件导入到Wordpress</p>
+</blockquote>
+<p>这个就相对简单了。Wordpress后台-&gt;“工具”-&gt;“导入”-&gt;选择WordPress，上传那个export_03292009-2238.xml文件，再指定一个作者就行。这个速度就快多了。</p>
+<p>一个问题是，系统只允许导入最大为2MB的文件，对超过2MB的文件（像我这次导入的近六百篇博文），只好手动分割文件或想其他办法了。如果一次导入不漂亮，可以把所有的文章及评论先删除了再试试，两个简单的SQL语句可以参考：</p>
+<p>DELETE from wp_posts WHERE post_author=1;</p>
+<p>DELETE from wp_comments WHERE comment_ID&gt;1;</p>
+<p>作者ID(post_author)和评论ID(comment_ID)你可以在phpMyAdmin中找到。</p>
+<p><a href="http://jiangtanghu.com/cn/wp-content/uploads/2009/03/python-space-over.png"><img style="border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px" title="python_space_over" src="http://jiangtanghu.com/cn/wp-content/uploads/2009/03/python-space-over-thumb.png" border="0" alt="python_space_over" width="363" height="103"></a></p>
+<p>待看到“导入完毕。好好享受吧！”，心情当真是无比舒畅，按着赖哥哥宁的说法，是比大热天吃了冰水还舒服。</p>
+<blockquote class="blockquote">
+<p>4.一些优化工作</p>
+</blockquote>
+<p>对全盘导入的博文，难免泥沙俱下，以前大量垃圾评论也跟着过来了。垃圾评论的一个特点是姓名为空（“没有名称”或者No name），下面的SQL语句就可以把它们清除：</p>
+<p>DELETE FROM wp_comments WHERE CONVERT(`wp_comments`.`comment_author` USING utf8) = ‘（没有名称）nwrote:’ ;</p>
+<p>DELETE FROM `wp_comments` WHERE CONVERT(`wp_comments`.`comment_author` USING utf8) = ‘No name’ ;</p>
+<p>—-by <a href="mailto:Jiang@li-and-jiang.com">Jiang<at>li-and-jiang.com</at></a>——-</p>
+<div id="scid:0767317B-992E-4b12-91E0-4F059A8CECA8:bb94781d-fd3f-4efb-a2fc-66a7650a0578" class="wlWriterEditableSmartContent" style="padding-right: 0px; display: inline; padding-left: 0px; float: none; padding-bottom: 0px; margin: 0px; padding-top: 0px">
+<p>Technorati 标签: <a rel="tag" href="http://technorati.com/tags/Windows+Live+Space">Windows Live Space</a>,<a rel="tag" href="http://technorati.com/tags/Wordpress">WordPress</a>,<a rel="tag" href="http://technorati.com/tags/%e5%8d%9a%e5%ae%a2%e6%90%ac%e5%ae%b6">博客搬家</a>,<a rel="tag" href="http://technorati.com/tags/SQL">SQL</a>,<a rel="tag" href="http://technorati.com/tags/Python">Python</a></p>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -1,17 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>becoming Jane on A Hugo website</title>
+    <title>Becoming Jane on Jiangtang Hu | 胡江堂</title>
     <link>/tags/becoming-jane/</link>
-    <description>Recent content in becoming Jane on A Hugo website</description>
+    <description>Recent content in Becoming Jane on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Tue, 07 Apr 2009 22:55:35 +0000</lastBuildDate>
-    <atom:link href="/tags/becoming-jane/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/becoming-jane/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>成为简奥斯汀</title>
       <link>/2009/04/07/%E6%88%90%E4%B8%BA%E7%AE%80%E5%A5%A5%E6%96%AF%E6%B1%80/</link>
       <pubDate>Tue, 07 Apr 2009 22:55:35 +0000</pubDate>
+      
       <guid>/2009/04/07/%E6%88%90%E4%B8%BA%E7%AE%80%E5%A5%A5%E6%96%AF%E6%B1%80/</guid>
       <description>看电影的乐趣，就在于投入。投入你的情感，扩张你的每一寸神经，去感受电影里面每一个人物（当然，更多的时候是主人公）的喜怒哀乐。不必把自己想象为男主角或是女主角，一个人不非得成为另一个人才能了解他。
 看奥斯汀有关的每一部电影，感觉都很好。像凯拉·奈特莉最新版的《傲慢与偏见》、像李安导演凯特·温斯蕾特主演的《理智与情感》、像前不久看的《奥斯汀书会》，当然，还有小时候看的老版的《傲慢与偏见》，估计是现在BBC系列的那一版，印象已不是很深了。
@@ -23,15 +27,16 @@
 奥斯汀读书会：The Jane Austen Book Club (2007)
 导演： 罗宾·史威考德
 主演： 艾米莉·布朗特，休·丹西，玛丽亚·贝罗等
-**类型：**爱情 / 剧情
+类型：爱情 / 剧情
 上映日期： 2007年9月21日 美国
-**片长：**106min
+片长：106min
 成为简奥斯汀：Becoming Jane (2007)
 导演： 朱里安·杰拉德
 主演： 安妮·海瑟薇，詹姆斯·麦卡沃伊，朱丽·沃特斯等
 类型： 爱情 / 传记 / 剧情
 上映日期： 2007年3月9日 英国
-**片长：**120 min</description>
+片长：120 min</description>
     </item>
+    
   </channel>
 </rss>

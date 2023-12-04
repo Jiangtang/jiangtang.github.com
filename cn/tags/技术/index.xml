@@ -1,56 +1,62 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>技术 on A Hugo website</title>
+    <title>技术 on Jiangtang Hu | 胡江堂</title>
     <link>/tags/%E6%8A%80%E6%9C%AF/</link>
-    <description>Recent content in 技术 on A Hugo website</description>
+    <description>Recent content in 技术 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Thu, 30 Dec 2010 23:09:48 +0000</lastBuildDate>
-    <atom:link href="/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>2010年度总结</title>
       <link>/2010/12/30/2010%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</link>
       <pubDate>Thu, 30 Dec 2010 23:09:48 +0000</pubDate>
+      
       <guid>/2010/12/30/2010%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/</guid>
-      <description>历史文档： 生产任务完成情况：2009 2008：随手盘点 2008-2009：向前看，向后看（一） 12月8号虎头出世，这一年我就没什么惊喜的事了。昨天在单位，把项目给结了，然后关电脑，回家休假。当时做顺口溜一首，给大伙道新年愉快：
-In December my baby born
+      <description>历史文档： 生产任务完成情况：2009 2008：随手盘点 2008-2009：向前看，向后看（一）  12月8号虎头出世，这一年我就没什么惊喜的事了。昨天在单位，把项目给结了，然后关电脑，回家休假。当时做顺口溜一首，给大伙道新年愉快：
+ In December my baby born
 my project deliveries followed on
 Now my computers shutdown
 do until(6 Jan 2011) I will be OOO
 Please take blessings from John
-作为一个程序员，即使作顺口溜也不能不加注释。OOO是out of office，do until是SAS语言表示循环的一个语句，说直到1月6号我都不在办公室（我把这句发给同事，然后收到无数OOO的回复）。最后，John是我混外企的花名，读作“Jiang”。
+ 作为一个程序员，即使作顺口溜也不能不加注释。OOO是out of office，do until是SAS语言表示循环的一个语句，说直到1月6号我都不在办公室（我把这句发给同事，然后收到无数OOO的回复）。最后，John是我混外企的花名，读作“Jiang”。
 为了取悦英文读者，这种顺口溜被叫做Haiku，翻译成中文叫“俳句”。但我写的可以是Haiku，但绝不敢称是俳句，中文就叫“顺口溜”。这是我一年来唯一的“文学作品”，记上一笔。
 按照惯例，我会在年末做个总结，算是给朋友做一个简报，给自己留存一份记录。今年过得很简单，我升级了：年初我结婚，成为一位女子的丈夫；年末我们的孩子出生，我从此成为一个小男孩的父亲。这时我仍想摘录一句北岛的诗，表达这种传承的意味，这句诗写给父亲：
-你召唤我成为儿子，
+ 你召唤我成为儿子，
 我追随你成为父亲
-生活 这一年的生活，有一部分写进了这个生活博客。近100篇，你可以在这里看到所有的历史存档：
-http://li-and-jiang.com/blog/archives/
-读书(非技术类) 毕业后，几乎所有的阅读，都在地铁里完成。我有一个术语，就叫做“公车上书”，说的就是在公车（公交车和地铁）上读书。现在的感触是，在地铁里读书，比在哪效率都高。人挤没关系，刚好帮助集中自己的精神。
+ 生活 &amp;#160;
+这一年的生活，有一部分写进了这个生活博客。近100篇，你可以在这里看到所有的历史存档：
+ http://li-and-jiang.com/blog/archives/
+ 读书(非技术类) &amp;#160;
+毕业后，几乎所有的阅读，都在地铁里完成。我有一个术语，就叫做“公车上书”，说的就是在公车（公交车和地铁）上读书。现在的感触是，在地铁里读书，比在哪效率都高。人挤没关系，刚好帮助集中自己的精神。
 这一年的阅读,数量相比往年不多。最大一块，集中在家里所有的古籍方面，包括《四书集注》、《诗经》、《世说新语》、《史记》、《老子·庄子·列子》、《金刚经》、《唐诗百家全集》、《李太白集·杜工部集》等。不是思古之幽情顿起，而是要为虎头取名字。这算是我这十多年来读书成果最大的一次。
 然后是育儿经，包括郑玉巧的两本，在上海出差时读完了保罗·豪伶格《不会说话的孩子想“说”什么》，还有就是龙应台的两本，《孩子你慢慢来》和《亲爱的安德烈》。然后为了未雨绸缪，跟Li一起为出版社校读了两部译稿，《孩童厌学：治疗师指南/父母自助手册》。
 其他的就很零散，包括
-一部小说，Child 44 by Tom Rob Smith
+ 一部小说，Child 44 by Tom Rob Smith
 一部政治学，贡斯当的《古代人的自由和现代人的自由》
 一部伦理学，重读了彼得·辛格的《实践伦理学》
 一部经济学，重读亚当·斯密的《国富论》
-两部传记，冯至的《杜甫传》和李长之的《李白传》
-提一下《国富论》，我读的是台湾谢宗林和李华夏的繁体译本，顺便帮出版社的朋友做些校对的工作（也找了朋友帮忙），这书的简体字版刚由中央编译出版社出版。今年算是做了点编辑的工作。
-工作 正式工作二十来个月了。有时心不免浮躁，就打趣自己：“出道还不到两年呢”。问过很多朋友，很多都有这方面的忧虑，一方面我们工作年限太短（刚毕业不久），但一方面我们好像都很大了，研究生毕业出来都二十六二十七的，好像刚一出道就奔三十，然后打算要买房了、打算要结婚了、打算要小孩子了，——每一项都是让刚工作的人觉得压力很大。这些焦虑在参加工作后产生，期待能在工作中消融掉了。我认为工作状态更有利于人格的养成，在于它不再是一个单一的环境。
-现在单兵工作还挺顺手，有时候想对自己要求更多。十一月份去上海参加了一个关于leadership的培训，让自己眼界开了不少（有一句话让我印象深刻，leadership is not a position; it is a choice）。但作为一个职场新手，我需要更多的是项目管理的积累，——又是时间，时间，时间。</description>
+两部传记，冯至的《杜甫传》和李长之的《李白传》</description>
     </item>
+    
     <item>
       <title>技术博客开张</title>
       <link>/2009/12/20/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%BC%A0/</link>
       <pubDate>Sun, 20 Dec 2009 23:27:24 +0000</pubDate>
+      
       <guid>/2009/12/20/%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%BC%A0/</guid>
-      <description>这一打折，铁打的汉子也扛不住。域名厂商Godaddy现在推出一个.com域名0.99美刀一年（原价10美刀）的促销活动（国内的.cn域名不好弄了），手痒，赶紧注册了一个（促销码 BUYCOM99 ），以后就当门面使了：
-http://www.jiangtanghu.com/
-又开出一个英文技术博客，
-http://www.jiangtanghu.com/blog/
-把以前在blogger的文章都盘过来了。过些日子再开通中文技术博客，以前在windows live space的博客就关了。激励自己勤读书，多写字了。摊开一张空白纸，接下来就会想涂些东西。
+      <description>这一打折，铁打的汉子也扛不住。域名厂商Godaddy现在推出一个.com域名0.99美刀一年（原价10美刀）的促销活动（国内的.cn域名不好弄了），手痒，赶紧注册了一个（促销码&amp;#160; BUYCOM99 ），以后就当门面使了：
+ http://www.jiangtanghu.com/
+ 又开出一个英文技术博客，
+ http://www.jiangtanghu.com/blog/
+ 把以前在blogger的文章都盘过来了。过些日子再开通中文技术博客，以前在windows live space的博客就关了。激励自己勤读书，多写字了。摊开一张空白纸，接下来就会想涂些东西。
 个人主页，就是改革开放的窗口，今天着急懒得整，这界面，完全抄袭了FreeWheel的朋友Bloom的网页。他是做导弹的，我是卖茶叶蛋的，这商标一样，侵权也大概不会很严重。有朋友看不过去了，赶紧过来伸一援手。
 这个http://li-and-jiang.com/blog/，仍然作为我跟Li的生活博客。生活与技术的分离，一直是我两分法哲学的一部分。</description>
     </item>
+    
   </channel>
 </rss>

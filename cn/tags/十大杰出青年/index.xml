@@ -1,23 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>十大杰出青年 on A Hugo website</title>
+    <title>十大杰出青年 on Jiangtang Hu | 胡江堂</title>
     <link>/tags/%E5%8D%81%E5%A4%A7%E6%9D%B0%E5%87%BA%E9%9D%92%E5%B9%B4/</link>
-    <description>Recent content in 十大杰出青年 on A Hugo website</description>
+    <description>Recent content in 十大杰出青年 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Tue, 26 May 2009 23:09:00 +0000</lastBuildDate>
-    <atom:link href="/tags/%E5%8D%81%E5%A4%A7%E6%9D%B0%E5%87%BA%E9%9D%92%E5%B9%B4/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/%E5%8D%81%E5%A4%A7%E6%9D%B0%E5%87%BA%E9%9D%92%E5%B9%B4/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>回家</title>
       <link>/2009/05/26/%E5%9B%9E%E5%AE%B6/</link>
       <pubDate>Tue, 26 May 2009 23:09:00 +0000</pubDate>
+      
       <guid>/2009/05/26/%E5%9B%9E%E5%AE%B6/</guid>
       <description>不觉路长，行至伊家土亦香。
-明天下午回家，6月1号回北京。湖畔般的地方(beyond the lake)，当然不方便收邮件了，各位可着劲给我拨电话吧。
-————–
+ 明天下午回家，6月1号回北京。湖畔般的地方(beyond the lake)，当然不方便收邮件了，各位可着劲给我拨电话吧。
+&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8211;
 北京市十大杰出青年 幽默时间。惊闻Viking张同学荣膺“北京市十大杰出青年”，进入世界先进民族之林，遥相祝贺一番。
+
 如果我提起“BTbu十大杰出青年”，默哥、毅哥、佳哥、深哥、聪哥……好家伙，各路神仙一时还真凑不齐。</description>
     </item>
+    
   </channel>
 </rss>

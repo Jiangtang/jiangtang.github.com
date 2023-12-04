@@ -1,17 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>第一推动 on A Hugo website</title>
+    <title>第一推动 on Jiangtang Hu | 胡江堂</title>
     <link>/tags/%E7%AC%AC%E4%B8%80%E6%8E%A8%E5%8A%A8/</link>
-    <description>Recent content in 第一推动 on A Hugo website</description>
+    <description>Recent content in 第一推动 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Sat, 19 Mar 2011 22:55:13 +0000</lastBuildDate>
-    <atom:link href="/tags/%E7%AC%AC%E4%B8%80%E6%8E%A8%E5%8A%A8/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/%E7%AC%AC%E4%B8%80%E6%8E%A8%E5%8A%A8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>先有鸡</title>
       <link>/2011/03/19/%E5%85%88%E6%9C%89%E9%B8%A1/</link>
       <pubDate>Sat, 19 Mar 2011 22:55:13 +0000</pubDate>
+      
       <guid>/2011/03/19/%E5%85%88%E6%9C%89%E9%B8%A1/</guid>
       <description>一些问题，胡搅蛮缠不清楚，比如，“先有鸡还是先有鸡蛋？”但是逼急了，一定要我表个态，那我就会回答：“先有鸡。”
 理由有的。很多物种可以进化成鸡：鸭子可以变成鸡，恐龙可以变成鸡，某种微生物可以变成鸡，但是，鸡蛋，顾名思义，只能由鸡生出来。
@@ -29,5 +33,6 @@
 回到第一推动那个问题，这里我不试图解答它。假设某东西重要是因为它是那个初始的第一推动力，那么，根据上一段的论述，这个东西可能就不是那么重要。或者，推到起初，可能并不像它看起来那么有力。
 思路还不是很清楚，再议。</description>
     </item>
+    
   </channel>
 </rss>

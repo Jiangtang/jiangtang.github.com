@@ -1,20 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>社团 on A Hugo website</title>
+    <title>社团 on Jiangtang Hu | 胡江堂</title>
     <link>/tags/%E7%A4%BE%E5%9B%A2/</link>
-    <description>Recent content in 社团 on A Hugo website</description>
+    <description>Recent content in 社团 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Fri, 25 Sep 2009 23:53:44 +0000</lastBuildDate>
-    <atom:link href="/tags/%E7%A4%BE%E5%9B%A2/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/%E7%A4%BE%E5%9B%A2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>招聘季</title>
       <link>/2009/09/25/%E6%8B%9B%E8%81%98%E5%AD%A3/</link>
       <pubDate>Fri, 25 Sep 2009 23:53:44 +0000</pubDate>
+      
       <guid>/2009/09/25/%E6%8B%9B%E8%81%98%E5%AD%A3/</guid>
       <description>中午跟盛大的大勇打电话。他在甲骨文呆过多年，加入盛大不久，问起我以前在学校做社团的朋友小威，盛大前些日子在北大旁边摆了招聘摊拣学生。小威明年毕业，正在赶今年的招聘季，在盛大的校园招聘座谈会上，让人印象深刻，大勇是想通过我侧面了解些他的信息。——与2010年的校园招聘就这样挂上钩了，而我自己却还可能沉浸在2009年校园招聘的气氛里，我说的是我们刚出的《我是一只IT小小鸟》，里面有13位2009届的计算机专业毕业生。对在校生来说，如何从容地向雇主展示自己，需要自己的摸索，但一些思路不妨借鉴。他们刚好有些印象鲜活的故事分享：
-积极利用技术博客营销自己（微软的刘未鹏，常年经营“C++的卢浮宫”，在技术圈内赚得非常好的声誉。） 活跃于技术社区（在开源社区活跃的两位博士，林健和高昂。还有像庄表伟等作者，都是相应技术社区的活跃分子。在社区的所为，都是你的名片。） 参加技术竞赛（即使身处二线城市，还是可以通过世界一流的技术竞赛展示自己的技术实力。） 社团（Google的辜新星说他曾是“社团狂”，社团的确能让你多接触些机会。像刚才提到的小威，以前我们一起为大勇在学校组织了此活动，谁知这n年之后，两人将会在招聘现场相见。） 苦钻算法（算法牛，不二话。） 通过实习积攒人脉（实习是你正式工作的预演，也是你职业生涯的开始。） （不对称地再说些）积极主动，主动积极，我们的作者甚至建议你可以尝试，抱一台笔记本去找面试官，当场给他敲代码。 。。。 还在学校的朋友，加油。</description>
+ 积极利用技术博客营销自己（微软的刘未鹏，常年经营“C++的卢浮宫”，在技术圈内赚得非常好的声誉。） 活跃于技术社区（在开源社区活跃的两位博士，林健和高昂。还有像庄表伟等作者，都是相应技术社区的活跃分子。在社区的所为，都是你的名片。） 参加技术竞赛（即使身处二线城市，还是可以通过世界一流的技术竞赛展示自己的技术实力。） 社团（Google的辜新星说他曾是“社团狂”，社团的确能让你多接触些机会。像刚才提到的小威，以前我们一起为大勇在学校组织了此活动，谁知这n年之后，两人将会在招聘现场相见。） 苦钻算法（算法牛，不二话。） 通过实习积攒人脉（实习是你正式工作的预演，也是你职业生涯的开始。） （不对称地再说些）积极主动，主动积极，我们的作者甚至建议你可以尝试，抱一台笔记本去找面试官，当场给他敲代码。 。。。  还在学校的朋友，加油。</description>
     </item>
+    
   </channel>
 </rss>

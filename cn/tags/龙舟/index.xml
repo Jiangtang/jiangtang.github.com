@@ -1,17 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>龙舟 on A Hugo website</title>
+    <title>龙舟 on Jiangtang Hu | 胡江堂</title>
     <link>/tags/%E9%BE%99%E8%88%9F/</link>
-    <description>Recent content in 龙舟 on A Hugo website</description>
+    <description>Recent content in 龙舟 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Tue, 02 Jun 2009 21:19:00 +0000</lastBuildDate>
-    <atom:link href="/tags/%E9%BE%99%E8%88%9F/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/%E9%BE%99%E8%88%9F/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>端午 家乡</title>
       <link>/2009/06/02/%E7%AB%AF%E5%8D%88-%E5%AE%B6%E4%B9%A1/</link>
       <pubDate>Tue, 02 Jun 2009 21:19:00 +0000</pubDate>
+      
       <guid>/2009/06/02/%E7%AB%AF%E5%8D%88-%E5%AE%B6%E4%B9%A1/</guid>
       <description>趁着端午的三天假，再请了一天假，回家办了护照和港澳通行证。自从念大学以来，很少在家过端午节，只有2003年非典时逃也似的回家，在家享受了4.23-6.22整整两个月的假期。端午前后是家乡气候最舒服的一段时间，温暖湿润，清爽的雨间着温和的阳光，空气、天地和江里的水都是一派温柔的气息。南方的天，过了端午就要真正的热起来了。
 5.28一早到家，兴奋得根本睡不着，午饭是我们一家加上大姨姨父舅妈姑姑姑父大伯，晚上表姐姐夫又带了她家的小宝宝过来玩，真是热闹得不行。老爸的手艺：韭菜炒螺蛳，萝卜干炒猪肚，煎鲫鱼，炖土鸡，砂钵腐竹，碎椒毛豆，酸菜黄（鱼牙）头……天哪！除了炖土鸡比较令我为难之外，每一个菜都是我在北京听到就要垂涎三尺的，满足感真是无以言表啊，话说我就一直吃一直吃。
@@ -21,5 +25,6 @@
 6.1在小朋友的节日里回到北京，一下被北京的高温闷热杀个措手不及。
 四天时间，大会亲朋，大快朵颐，也曾大谈发展之道，都是心情大好，唯一一点伤心，就是丢了手机。娘说破财消灾，鱼儿说就当给家乡人民做了贡献，也罢也罢，总是遗憾成就圆满。</description>
     </item>
+    
   </channel>
 </rss>

@@ -1,17 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>电影 on A Hugo website</title>
+    <title>电影 on Jiangtang Hu | 胡江堂</title>
     <link>/categories/%E7%94%B5%E5%BD%B1/</link>
-    <description>Recent content in 电影 on A Hugo website</description>
+    <description>Recent content in 电影 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Thu, 02 Jun 2011 00:40:55 +0000</lastBuildDate>
-    <atom:link href="/categories/%E7%94%B5%E5%BD%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/categories/%E7%94%B5%E5%BD%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>此间的少年</title>
       <link>/2011/06/02/%E6%AD%A4%E9%97%B4%E7%9A%84%E5%B0%91%E5%B9%B4/</link>
       <pubDate>Thu, 02 Jun 2011 00:40:55 +0000</pubDate>
+      
       <guid>/2011/06/02/%E6%AD%A4%E9%97%B4%E7%9A%84%E5%B0%91%E5%B9%B4/</guid>
       <description>上个月Leading博士推荐了北大学生会推出的校园电影《此间的少年》，剧本是江南的同名小说，主角是郭靖、黄蓉等一帮金庸小说的人物，背景是南宋时期的汴京大学（就是北京大学），故事就是谈恋爱了。Leading博士今年毕业，能想象这部电影能帮他回顾些北大的人事和风景。
 我09年毕业，不过这部电影没让我回忆起北大的生活。想的倒是更早些，在北京工商的那些年。当时江南在《科幻世界》以及接下来的《九州》写连载，《此间的少年》就是其中之一。等着杂志上的连载小说——这是真正值得回忆的大学生活：我读科幻小说以及奇幻/玄幻小说，刚好是因为同宿舍的赫连波波同学，那些杂志他每期必买。我就一边跟着等连载，顺便把他收藏的旧刊一并读了。这样下来，近五十部的科幻小说就给入账了，然后就踩着点毕业了。
@@ -21,9 +25,9 @@
 3
 提到凌晨一两点打扫卫生。待通道打开，浑身就都给运动开了，自然是兴奋不已。洗漱停当，在床头揪了一本书，一看却是部双语《圣经》，是简化字和合本，英文是New Revised Standard Version（新标准修订版）。
 话说深夜读经，必有**。有分教，好家伙，这一读，眼睛还真亮堂了不少。以前读《圣经》原文，都是看中文版，也积累了一些疑问。同时又通过其他参考资料，了解些关于《圣经》学术方面的东西。比如，《旧约》前五部经书，“摩西五经”，一些故事，明显就有两种版本同时存在（双重记述）。比如，《创世记》一开始，上帝创造万物，到第六天，
-神说：“我们要照着我们的形象，按着我们的样式造人，……”神就照着自己的形象造人，乃是照着他的形象造男造女。
-看，这里上帝造人，男人和女人一起。接下来的故事，我们也很熟悉，神造的第一个人是男人亚当，然后用亚当的一根肋骨造了女人夏娃。关于造人，这就明显是两个版本。之前读中文，也疑惑过这点。
-后来又读些辅助材料，知道五经的作者不止一位。1878年，德国学者Julius Wellhausen认为，五经有四种基本来源，分别是J、E、P、D，代表了五经不同系统的传说等等。这个晚上，眼睛比较亮，同时读了下英文，在七天创世记故事之后，有一节的题目就叫做**Another Account of the Creation**(《创世记的另一个版本》)，开始讲亚当和夏娃的出生，——创世记有两个版本，一开始就明确指出来了啊（这个标题当然是后人追加的，但是代表了一种有影响力的说法）。
+ 神说：“我们要照着我们的形象，按着我们的样式造人，……”神就照着自己的形象造人，乃是照着他的形象造男造女。
+ 看，这里上帝造人，男人和女人一起。接下来的故事，我们也很熟悉，神造的第一个人是男人亚当，然后用亚当的一根肋骨造了女人夏娃。关于造人，这就明显是两个版本。之前读中文，也疑惑过这点。
+后来又读些辅助材料，知道五经的作者不止一位。1878年，德国学者Julius Wellhausen认为，五经有四种基本来源，分别是J、E、P、D，代表了五经不同系统的传说等等。这个晚上，眼睛比较亮，同时读了下英文，在七天创世记故事之后，有一节的题目就叫做Another Account of the Creation(《创世记的另一个版本》)，开始讲亚当和夏娃的出生，——创世记有两个版本，一开始就明确指出来了啊（这个标题当然是后人追加的，但是代表了一种有影响力的说法）。
 4
 上个周末过得人气旺些。周六上午去人大参加“第四届中国R语言会议”，下午Crazy Hou夫妇过来聊天，晚上一起吃饭，他们叫上了以前研究生同学，多是软件开发或者嵌入式的。研究生一毕业，我就离开IT这行当，这不时跟继续从事IT的朋友沟通些，冲击还是蛮大的。
 周日上午还是人大R语言会议，作为一个SAS用户，我有一个“踢场子的”报告，叫做_R versus SAS_，讲大伙对R与SAS的一些误解。晚上跟会议的主办者（江麒、魏太云、邱怡轩、陈偃平等人大统计系的青壮小伙）以及一些演讲嘉宾（李舰等）一起吃饭。下次再单列一个会议记录。
@@ -34,20 +38,25 @@
 7
 Li说要给虎头多听些音乐。好吧，这让我压力很大。这些日子，偷偷找来耶鲁大学的一个公开课程，MUSI 112: Listening to Music with Professor Craig Wright (Fall, 2008)，恶补些古典音乐的知识（也可以在网易公开课找到）。
 虎爸动真格的了，同时计划读下面三本书：
-The NPR Curious Listener’s Guide to Classical Music -这本是因为有朋友推荐NPR电台 The Mozart Effect for Children: Awakening Your Child’s Mind, Health, and Creativity with Music -这本书争议无数，关于莫扎特与幼儿教育 Music Theory For Dummies -傻瓜书，读过好几本for dummies系列 </description>
+ _The NPR Curious Listener&amp;#8217;s Guide to Classical Music_ -这本是因为有朋友推荐NPR电台 _The Mozart Effect for Children: Awakening Your Child&amp;#8217;s Mind, Health, and Creativity with Music_ -这本书争议无数，关于莫扎特与幼儿教育 _Music Theory For Dummies_ -傻瓜书，读过好几本for dummies系列  </description>
     </item>
+    
     <item>
       <title>九三年&amp;middot;悲惨世界</title>
       <link>/2010/06/01/%E4%B9%9D%E4%B8%89%E5%B9%B4middot%E6%82%B2%E6%83%A8%E4%B8%96%E7%95%8C/</link>
       <pubDate>Tue, 01 Jun 2010 20:29:00 +0000</pubDate>
+      
       <guid>/2010/06/01/%E4%B9%9D%E4%B8%89%E5%B9%B4middot%E6%82%B2%E6%83%A8%E4%B8%96%E7%95%8C/</guid>
       <description>前些日子跟Li一起看光盘，歌剧《悲惨世界》第一幕（Les Miserables, 8th October 1995, 10th Anniversday Concert @ Royal Albert Hall。你可以在youku找到）。现在才知道，以前在选秀节目“英国达人”中脱颖而出的苏珊大妈，她唱的_I Dreamed a Dream_就是这剧里的选段:
-There was a time when men were kind When their voices were soft And their words inviting There was a time when love was blind And the world was a song And the song was exciting There was a time Then it all went wrong&amp;lt;p&amp;gt;I dreamed a dream in time gone by &amp;lt;br /&amp;gt;When hope was high &amp;lt;br /&amp;gt;And life worth living &amp;lt;br /&amp;gt;I dreamed that love would never die &amp;lt;br /&amp;gt;I dreamed that God would be forgiving &amp;lt;br /&amp;gt;Then I was young and unafraid &amp;lt;br /&amp;gt;And dreams were made and used and wasted &amp;lt;br /&amp;gt;There was no ransom to be paid &amp;lt;br /&amp;gt;No song unsung, no wine untasted&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;But the tigers come at night &amp;lt;br /&amp;gt;With their voices soft as thunder &amp;lt;br /&amp;gt;As they tear your hope apart &amp;lt;br /&amp;gt;And they turn your dream to shame&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;He slept a summer by my side &amp;lt;br /&amp;gt;He filled my days with endless wonder &amp;lt;br /&amp;gt;He took my childhood in his stride &amp;lt;br /&amp;gt;But he was gone when autumn came&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;And still I dream he&amp;amp;#8217;ll come to me &amp;lt;br /&amp;gt;That we will live the years together &amp;lt;br /&amp;gt;But there are dreams that cannot be &amp;lt;br /&amp;gt;And there are storms we cannot weather&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;I had a dream my life would be &amp;lt;br /&amp;gt;So different from this hell I&amp;amp;#8217;m living &amp;lt;br /&amp;gt;So different now from what it seemed &amp;lt;br /&amp;gt;Now life has killed the dream I dreamed&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td valign=&amp;quot;top&amp;quot; width=&amp;quot;246&amp;quot;&amp;gt;&amp;lt;p&amp;gt;曾经,人们和善有礼 &amp;lt;br /&amp;gt;声音轻柔温和 &amp;lt;br /&amp;gt;话语亲切动人 &amp;lt;br /&amp;gt;曾经,爱情盲目 &amp;lt;br /&amp;gt;整个世界仿若一首歌曲 &amp;lt;br /&amp;gt;振奋人心 &amp;lt;br /&amp;gt;但是,这一切终究改变了&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;我梦见了往日美梦 &amp;lt;br /&amp;gt;那时希望无限, &amp;lt;br /&amp;gt;生活澎湃 &amp;lt;br /&amp;gt;我梦见爱情永不消逝 &amp;lt;br /&amp;gt;我梦见上帝包容着一切 &amp;lt;br /&amp;gt;那时,我是如此年轻而无惧 &amp;lt;br /&amp;gt;做着美梦,挥霍着梦想 &amp;lt;br /&amp;gt;了无牵挂 &amp;lt;br /&amp;gt;我,无歌不唱,无酒不欢&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;然而老虎(危险)在夜晚潜密而来 &amp;lt;br /&amp;gt;伴随着如雷般的低吼 &amp;lt;br /&amp;gt;他们将你的希望撕成碎片 &amp;lt;br /&amp;gt;他们将你的梦想变成耻辱&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;整个夏天他在我身旁安睡 &amp;lt;br /&amp;gt;他让我的生活充满无尽的惊喜 &amp;lt;br /&amp;gt;他轻易地带走我年轻的时光 &amp;lt;br /&amp;gt;但秋天来临,他却离去&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;我依旧梦想着他会回到我身边 &amp;lt;br /&amp;gt;梦想着我们快乐度过余生 &amp;lt;br /&amp;gt;然而总有难圆的美梦 &amp;lt;br /&amp;gt;总有难以避免的风浪&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;我曾经梦想我的生活 &amp;lt;br /&amp;gt;全然不似现在这地狱般的生活 &amp;lt;br /&amp;gt;全然不似我曾经想象的 &amp;lt;br /&amp;gt;现在,现实扼杀了我往日的梦想 &amp;lt;br /&amp;gt;我往日的梦想&amp;lt;/p&amp;gt;&amp;lt;/td&amp;gt;屋里没有小说《悲惨世界》，这些天就在地铁里把雨果的《九三年》给读了。历史小说，写罗伯斯庇尔还活着那阵子革命中的法国，1793年，主角是一位苏格拉底式的共和国远征军司令、一位曹操式的叛军首领以及一位教父式的政治委员——这里，苏格拉底奉命去剿灭曹操，而曹操是苏格拉底的叔叔，苏格拉底是教父的学生，教父是苏格拉底大军的政委。苏格拉底释放了冷酷的曹操，因为他看到曹操一点人道的火花。最后，冷酷的教父按照革命的教义处死了苏格拉底，自己也开枪自杀——政治与人性，革命和人道，这本书值得一读，如果你现在还能忍受雨果华丽丽的剧本式的抒情。当然，有时你还可以用读古龙小说类似的心情去阅读：</description>
+&amp;#160;
+  There was a time when men were kind When their voices were soft And their words inviting There was a time when love was blind And the world was a song And the song was exciting There was a time Then it all went wrong  I dreamed a dream in time gone by When hope was high And life worth living I dreamed that love would never die I dreamed that God would be forgiving Then I was young and unafraid And dreams were made and used and wasted There was no ransom to be paid No song unsung, no wine untasted  But the tigers come at night With their voices soft as thunder As they tear your hope apart And they turn your dream to shame  He slept a summer by my side He filled my days with endless wonder He took my childhood in his stride But he was gone when autumn came  And still I dream he&amp;#8217;ll come to me That we will live the years together But there are dreams that cannot be And there are storms we cannot weather  I had a dream my life would be So different from this hell I&amp;#8217;m living So different now from what it seemed Now life has killed the dream I dreamed   曾经,人们和善有礼 声音轻柔温和 话语亲切动人 曾经,爱情盲目 整个世界仿若一首歌曲 振奋人心 但是,这一切终究改变了  我梦见了往日美梦 那时希望无限, 生活澎湃 我梦见爱情永不消逝 我梦见上帝包容着一切 那时,我是如此年轻而无惧 做着美梦,挥霍着梦想 了无牵挂 我,无歌不唱,无酒不欢  然而老虎(危险)在夜晚潜密而来 伴随着如雷般的低吼 他们将你的希望撕成碎片 他们将你的梦想变成耻辱  整个夏天他在我身旁安睡 他让我的生活充满无尽的惊喜 他轻易地带走我年轻的时光 但秋天来临,他却离去  我依旧梦想着他会回到我身边 梦想着我们快乐度过余生 然而总有难圆的美梦 总有难以避免的风浪  我曾经梦想我的生活 全然不似现在这地狱般的生活 全然不似我曾经想象的 现在,现实扼杀了我往日的梦想 我往日的梦想    &amp;#160;</description>
     </item>
+    
     <item>
       <title>成为简奥斯汀</title>
       <link>/2009/04/07/%E6%88%90%E4%B8%BA%E7%AE%80%E5%A5%A5%E6%96%AF%E6%B1%80/</link>
       <pubDate>Tue, 07 Apr 2009 22:55:35 +0000</pubDate>
+      
       <guid>/2009/04/07/%E6%88%90%E4%B8%BA%E7%AE%80%E5%A5%A5%E6%96%AF%E6%B1%80/</guid>
       <description>看电影的乐趣，就在于投入。投入你的情感，扩张你的每一寸神经，去感受电影里面每一个人物（当然，更多的时候是主人公）的喜怒哀乐。不必把自己想象为男主角或是女主角，一个人不非得成为另一个人才能了解他。
 看奥斯汀有关的每一部电影，感觉都很好。像凯拉·奈特莉最新版的《傲慢与偏见》、像李安导演凯特·温斯蕾特主演的《理智与情感》、像前不久看的《奥斯汀书会》，当然，还有小时候看的老版的《傲慢与偏见》，估计是现在BBC系列的那一版，印象已不是很深了。
@@ -59,30 +68,34 @@ There was a time when men were kind When their voices were soft And their words 
 奥斯汀读书会：The Jane Austen Book Club (2007)
 导演： 罗宾·史威考德
 主演： 艾米莉·布朗特，休·丹西，玛丽亚·贝罗等
-**类型：**爱情 / 剧情
+类型：爱情 / 剧情
 上映日期： 2007年9月21日 美国
-**片长：**106min
+片长：106min
 成为简奥斯汀：Becoming Jane (2007)
 导演： 朱里安·杰拉德
 主演： 安妮·海瑟薇，詹姆斯·麦卡沃伊，朱丽·沃特斯等
 类型： 爱情 / 传记 / 剧情
 上映日期： 2007年3月9日 英国
-**片长：**120 min</description>
+片长：120 min</description>
     </item>
+    
     <item>
       <title>状态更新-离职和刺杀希特勒</title>
       <link>/2009/03/24/%E7%8A%B6%E6%80%81%E6%9B%B4%E6%96%B0-%E7%A6%BB%E8%81%8C%E5%92%8C%E5%88%BA%E6%9D%80%E5%B8%8C%E7%89%B9%E5%8B%92/</link>
       <pubDate>Tue, 24 Mar 2009 21:51:00 +0000</pubDate>
+      
       <guid>/2009/03/24/%E7%8A%B6%E6%80%81%E6%9B%B4%E6%96%B0-%E7%A6%BB%E8%81%8C%E5%92%8C%E5%88%BA%E6%9D%80%E5%B8%8C%E7%89%B9%E5%8B%92/</guid>
-      <description>西直门地铁。见一个小伙，怎么着都像我高中同学橙子 ，号高公寨之鹰的那位。当然一定不是了，不过，他要说是我也不反对，我随时准备接受意外的相逢 。实在忍不住，拍拍他的肩头：“实在忍不住了，你长得可真像我以前一个朋友。”这哥们也不意外，道，“呵呵。你哪啊。”“江西。”“我也江西。”“哈哈，那我们可以缩小一下范围了。我鹰潭。”“我是上饶。”“哦。你面试回来啊？”这小伙西装革履，原来是哈工大过来找工作的同道。&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;更新一下状态。好久没更新博客了。是事多，但忙不是不写博客的原因——经常是越忙越有表达欲。不写，真的就是不想写，没有任何动力任何契机让我敲动键盘，懒得理它。昨天上午跟老板说辞职的事，这周五就走，唉，我的SAS。过不了多久，我这个工作邮箱(@sas.com)和两个学校邮箱(@pku.edu.cn, @ss.pku.edu.cn)都作废，各位朋友，尽早熟悉我的私人邮箱吧(@gmail.com)。
-这些日子一直想对电影《行动目标希特勒》背后的历史做些评论，懒得动笔，先记个大概。直接原因不是这部电影，而是我朋友Ian的一篇影评 。关于刺杀希特勒，他说：这是一种贵族式的理想主义，军事贵族就是国家和人民的护卫者，他们应当最清楚什么是值得他们以性命护卫的，并立即采取勇敢的行动。正义、勇敢、荣誉正是他们对自身的期许。我能理解Ian写这段话时想到了什么。前些日子我们一起读柏拉图《理想国》，这大概也能用来形容理想城邦里的卫士。这些文字给人精英的感觉，我只想说，德国的参谋总部（”军官团“）或许曾经有过这份荣耀，但绝不存在于希特勒时代的德国陆军。从个人背景来说，他们几乎无可指摘。跟电影的主角冯.施道芬堡伯爵类似，他们家教良好，恪守传统道德，珍惜荣誉，是非常好的基督徒——非常完美，问题是，在精神和意志方面的麻木。一个可以类比的例子，也是最近上映的片子《生死阅读》(Reader)，女主角，纳粹集中营的看守者，同样有常人的情感良知，但也就因为精神或意志方面的麻木不仁，照样成为纳粹的杀人机器。仍然说纳粹德国军官的荣誉，还有刺杀希特勒。刺杀希特勒，或绑架希特勒，早在希特勒想攻占捷克斯洛伐克之前，就有一群参谋部的军官谋划，因为他们估计，由于德军的实力，陷入战争将是德国的灾难。后来呢？希特勒的能量，德军的能量超出他们的预期，很多很好的刺杀希特勒的机会就被搁置了。在德国军队频频报捷的时候，军官团正忙于为希特勒制定各种作战计划。二战后期，德军节节败退，军官团”刺杀希特勒“的传统又兴盛起来了，理由照样是理想主义的”拯救德国和世界“。在纽伦堡审判时，很多德国战犯都纷纷表示，自己早早就看希特勒不顺眼，谋刺之事，由来已久矣。呵呵。冯.施道芬堡伯爵个人或许是完美的。但”他们“，具有”精英“意识的德国陆军军官团，从来不要指望他们能有理想主义的献身精神。/*有时间倒是可以整理一下整个二战间军官团谋刺希特勒的经过。或者，你可以直接去读读夏伊勒的《第三帝国的兴亡 》。*/</description>
+      <description>西直门地铁。见一个小伙，怎么着都像我高中同学橙子 ，号高公寨之鹰的那位。当然一定不是了，不过，他要说是我也不反对，我随时准备接受意外的相逢 。实在忍不住，拍拍他的肩头：     “实在忍不住了，你长得可真像我以前一个朋友。”     这哥们也不意外，道，“呵呵。你哪啊。”     “江西。”     “我也江西。”     “哈哈，那我们可以缩小一下范围了。我鹰潭。”     “我是上饶。”     “哦。你面试回来啊？”     这小伙西装革履，原来是哈工大过来找工作的同道。   &amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;    更新一下状态。好久没更新博客了。是事多，但忙不是不写博客的原因——经常是越忙越有表达欲。不写，真的就是不想写，没有任何动力任何契机让我敲动键盘，懒得理它。昨天上午跟老板说辞职的事，这周五就走，唉，我的SAS。过不了多久，我这个工作邮箱(@sas.com)和两个学校邮箱(@pku.edu.cn, @ss.pku.edu.cn)都作废，各位朋友，尽早熟悉我的私人邮箱吧(@gmail.com)。
+   这些日子一直想对电影《行动目标希特勒》背后的历史做些评论，懒得动笔，先记个大概。直接原因不是这部电影，而是我朋友Ian的一篇影评 。关于刺杀希特勒，他说：     这是一种贵族式的理想主义，军事贵族就是国家和人民的护卫者，他们应当最清楚什么是值得他们以性命护卫的，并立即采取勇敢的行动。正义、勇敢、荣誉正是他们对自身的期许。     我能理解Ian写这段话时想到了什么。前些日子我们一起读柏拉图《理想国》，这大概也能用来形容理想城邦里的卫士。这些文字给人精英的感觉，我只想说，德国的参谋总部（”军官团“）或许曾经有过这份荣耀，但绝不存在于希特勒时代的德国陆军。     从个人背景来说，他们几乎无可指摘。跟电影的主角冯.</description>
     </item>
+    
     <item>
       <title>一半是海水，一半是火焰</title>
       <link>/2008/06/06/%E4%B8%80%E5%8D%8A%E6%98%AF%E6%B5%B7%E6%B0%B4%E4%B8%80%E5%8D%8A%E6%98%AF%E7%81%AB%E7%84%B0/</link>
       <pubDate>Fri, 06 Jun 2008 23:06:00 +0000</pubDate>
+      
       <guid>/2008/06/06/%E4%B8%80%E5%8D%8A%E6%98%AF%E6%B5%B7%E6%B0%B4%E4%B8%80%E5%8D%8A%E6%98%AF%E7%81%AB%E7%84%B0/</guid>
-      <description>Technorati 标签: Love the hard way,一半是海水，一半是火焰,Peter Sehr,Adrien Brody,Charlotte AyannaJ，一个吊儿郎当的街头痞子，看上了一个生物系大学女生K，他总是在校园里转悠，去她打工的地方看电影。他长相潇洒，言辞幽默，她长相清纯，学习优秀，还有一个书呆子的男朋友。他们显而易见地为对方吸引，他们一起吃饭，出来时她还说会和他保持距离，却在他家楼梯的转角和他激吻，在他的床上为他销魂。他问她，这是你的第一次吗？而她说，你真的上过200个女人吗？
+      <description>Technorati 标签: Love the hard way,一半是海水，一半是火焰,Peter Sehr,Adrien Brody,Charlotte Ayanna  J，一个吊儿郎当的街头痞子，看上了一个生物系大学女生K，他总是在校园里转悠，去她打工的地方看电影。他长相潇洒，言辞幽默，她长相清纯，学习优秀，还有一个书呆子的男朋友。他们显而易见地为对方吸引，他们一起吃饭，出来时她还说会和他保持距离，却在他家楼梯的转角和他激吻，在他的床上为他销魂。他问她，这是你的第一次吗？而她说，你真的上过200个女人吗？
 K回到学校，继续她的功课，从此半个多月没有他的任何消息，失魂落魄。
 而J，他和一个朋友，一个合伙人，两个女人是一个小团伙。合伙人在宾馆工作，提供嫖客信息，女人扮妓女，他们扮警察，以恐吓勒索来的钱财为生。除此之外，他租有一个独立的小房间，那是没有其他任何人知道的私人天地，他在里面看书、写小说似的日记（像卡夫卡似的以另一个名字写他自己）、听一些温柔的乐曲。
 因为一次报错房间号的失误，那两个女人被警察带走了。
@@ -94,16 +107,19 @@ K去找J，J带她去跳舞，因为K，J和他朋友和另一帮混混打了起
 K在J和他朋友住的地方看到了她同学转过来的信，其中有她向往的研究机构的面试通知，那代表着所有她以前的生活和梦想。J又出去扮警察，他说他回来的时候希望还在家里看到K。
 J和他朋友这次碰上了真的警察，他们被捕了。
 K在空荡的房子里，捧着以前J和她的录音，里面有她的梦想，她期待的和J 的生活，以及J对她的承诺。她的手颤抖得几乎捧不住录音机，她在J的床上结束了自己的生命，割脉，她眼睁睁地看着自己的血流干，把床头的地板洇湿了一大块。
+
 这是电影《一半是海水，一半是火焰》描述的故事，电影原名LOVE THE HARD WAY，又译为《爱得太辛苦》。故事如此揪心，更加之，男主角是阿德里安·布罗迪（Adrien Brody）扮演的，他拥有艺术家的敏感忧郁的眼神，和两撇痛苦时拧成倒八字的眉毛，女主角是夏洛特·阿亚娜（Charlotte Ayanna），她好像不怎么有名，五官也长得有些大众化，不像布罗迪那样给人留下很深刻的印象，但是一双纯净的绿色眼睛很动人，整部戏中的演技表现也特别到位，是一个很有天分和实力的演员。
 鲁迅说悲剧就是把美的东西毁灭给人看，在这部电影里，美和善毁灭得太彻底了，一个漂亮、优秀、开朗的女大学生，因为爱上了一个颓废、不负责任、不务正业的花花公子，整个人生发生了一百八十度的大转弯。因为对爱的绝望，她完全丧失了爱的能力，放弃了曾经的梦想，沦为一个靠出卖身体打发日子的娼妓。而这位花花公子，终于爱上了一个女子，无法为她负责任，为她的堕落自责心碎，却仍是无法摆脱颓废生活的惯性。他的乐观、敏感、善良的天性吸引了K，但是这个天性是如此的弱小和见不得人，岂是那么容易就能激发出来的？那只是它在黑暗的小角落里才敢展现的另一个自我，是他面对外面颓废堕落没有意义的生活的一点点寄托和发泄的窗口。中国有句古话叫，从善如登，从恶如崩。善良和软弱在面对恶的时候是多么的无力，当人的意志和希望被击垮，善良和软弱就很容易变成恶，恶导致更深的绝望和无奈，人像陷入了魔咒，再难脱身出来。
 影片没有低俗的煽情，镜头一直保持着面对人物的朴素和真实，我的情绪也一直绷着，抑郁到极点。就像在看《越狱》的时候，一开始是被情节的紧凑吸引，但是渐渐看下去，会被人性的脆弱和扭曲震撼，抑郁而伤心，那种伤心不像是摔碎了一个青花瓷那么直接，它有着更深更广的触动力，仿佛来自你的身体深处，甚至逼着你拷问自己的灵魂。
 幸而导演彼特·塞尔（Peter Sehr）不是一个这么绝望的人。影片并不在我刚刚叙述完的地方结束。将J逮捕的女警官在后面发挥了很重要的作用。她带着手下去J家里端他老巢，结果发现并救了割腕的K。
 J在监狱里坚持写着日记。他在一次犯人斗殴中受伤，女警官去看他，还给了他他的日记本，告诉了他K自杀并获救的消息。得知这一切的J终于幡然醒悟，仿佛拾获了重生的力量。他决定出狱后开始写作。他回到家里，轻轻推开他房间的门，用力刷着那</description>
     </item>
+    
     <item>
       <title>色易守 情难防</title>
       <link>/2007/12/13/%E8%89%B2%E6%98%93%E5%AE%88-%E6%83%85%E9%9A%BE%E9%98%B2/</link>
       <pubDate>Thu, 13 Dec 2007 11:45:00 +0000</pubDate>
+      
       <guid>/2007/12/13/%E8%89%B2%E6%98%93%E5%AE%88-%E6%83%85%E9%9A%BE%E9%98%B2/</guid>
       <description>又是极差的行动力的一个鲜活案例：n周前的周日晚和朋友在五道口的电影院看了时下甚火的《色戒》，出来之后感慨良多，却一直没有形诸文字。昨天看了一个年轻作者写的影评，大意是说李安也耐不住寂寞，用过火的镜头来争取卖点，可惜国内的删节版最终让这些噱头没有了卖弄的空间，而紧张的故事和过于简单的对白让符号化的易先生和王佳芝失去了个性，也失去了触动观众的任何可能。
 在人大的宣传橱窗里看到这一篇文字，文笔倒还内敛，只是作者的人生还太年轻，触觉还太生涩，小孩，全然没有领会那眼角眉梢上演的万种风情，那智慧与情欲的较量、爱与忠的抉择。
@@ -113,38 +129,46 @@ J在监狱里坚持写着日记。他在一次犯人斗殴中受伤，女警官�
 有朋友问我，《色戒》中的易先生是纯粹的坏人还是那种有真情的坏人，我说是后者，他表示非常愤慨，说最恨这种阻碍人大爱大恨的设定。其实人世间又哪有纯粹的好人或者是纯粹的坏人呢。没有看电影的人可以根据种种报道对“概念化”的易先生和王佳芝评头论足，就如同我们总是可以相对轻松地对离我们稍远的人事发表看法，但是一旦深入故事之中，犹如深入生活之中，会发现一切都是那么复杂，判断也就不易了。
 Ps：看汤唯参加各种活动的着装和她在金马奖上失手影后只拿到一个最佳新人奖后说的话，不免感慨，这是一个聪明沉稳的女人。</description>
     </item>
+    
     <item>
       <title>如何欣赏诗歌</title>
       <link>/2007/07/27/%E5%A6%82%E4%BD%95%E6%AC%A3%E8%B5%8F%E8%AF%97%E6%AD%8C/</link>
       <pubDate>Fri, 27 Jul 2007 08:56:00 +0000</pubDate>
+      
       <guid>/2007/07/27/%E5%A6%82%E4%BD%95%E6%AC%A3%E8%B5%8F%E8%AF%97%E6%AD%8C/</guid>
       <description>昨天借的《如何欣赏欧美诗歌》（作者Laurence Petteine，劳·坡林，原书名是《声音与意义——诗学概论》），翻到第十五章，《坏诗与好诗》，一段话让我大吃一惊：
-评论一首诗，和评论任何一件艺术品一样，我们要向它提出三个基本问题：（1）本诗的中心目的是什么？（2）这一目的在多大程度上实现了？（3）这一目的有多大重要性？为理解一首诗，我们必须回答头一个问题。后两个问题是我们用来做出诗的评价的。后面的第一个问题是以艺术完美的标准来衡量这首诗的，后面的第二个问题是以重大意义的标准来衡量这首诗的。正如一个长方形的面积由长和宽之积所决定，一首诗的伟大也决定于艺术完美与重大意义之积。如果一首诗在完美方面合格，我们将称之为好诗，如果它在完美与意义两个方面都合格，我们将称之为伟大的诗。
-不知道各位看官读了当下有什么反应。我的第一反应就是这论调何其熟悉，赶忙翻出Robin Williams(演Welton Academy-威尔顿预备学院新来的教师John Keating)主演的电影《死亡诗社》，Keating要求他的学生撕掉的那页教材就有这么一段，：
-要完全理解诗歌，我们首先必须了解它的格调、音律和修辞手法，然后提两个问题：第一，诗歌的主题是如何艺术地实现的？第二，该主题的重要性如何？第一个问题解决的是诗歌的艺术性，第二个问题回答的是它的重要性。一旦弄清这两个问题，判断该诗的优劣也就不是个太难的问题了。如果把诗歌艺术性得分画在图表的横轴上，把它的重要性记在竖轴上，计算一下所覆盖的面积，也就得出了它的优劣。
+ 评论一首诗，和评论任何一件艺术品一样，我们要向它提出三个基本问题：（1）本诗的中心目的是什么？（2）这一目的在多大程度上实现了？（3）这一目的有多大重要性？为理解一首诗，我们必须回答头一个问题。后两个问题是我们用来做出诗的评价的。后面的第一个问题是以艺术完美的标准来衡量这首诗的，后面的第二个问题是以重大意义的标准来衡量这首诗的。正如一个长方形的面积由长和宽之积所决定，一首诗的伟大也决定于艺术完美与重大意义之积。如果一首诗在完美方面合格，我们将称之为好诗，如果它在完美与意义两个方面都合格，我们将称之为伟大的诗。
+ 不知道各位看官读了当下有什么反应。我的第一反应就是这论调何其熟悉，赶忙翻出Robin Williams(演Welton Academy-威尔顿预备学院新来的教师John Keating)主演的电影《死亡诗社》，Keating要求他的学生撕掉的那页教材就有这么一段，：
+ 要完全理解诗歌，我们首先必须了解它的格调、音律和修辞手法，然后提两个问题：第一，诗歌的主题是如何艺术地实现的？第二，该主题的重要性如何？第一个问题解决的是诗歌的艺术性，第二个问题回答的是它的重要性。一旦弄清这两个问题，判断该诗的优劣也就不是个太难的问题了。如果把诗歌艺术性得分画在图表的横轴上，把它的重要性记在竖轴上，计算一下所覆盖的面积，也就得出了它的优劣。
 Understanding Poetry by Dr. J. Evans Pritchard, Ph.D. To fully understand poetry, we must first rhyme, and figures of speech, then ask two questions:
 1) how artfully has the objective of the poem been rendered; and
 2) how important is that objective?
-Question 1) rates the poem’s perfection; question 2) rates its importance; and once these questions have been answered, determining the poem’s greatness becomes a relatively simple matter.</description>
+Question 1) rates the poem&amp;#8217;s perfection; question 2) rates its importance; and once these questions have been answered, determining the poem&amp;#8217;s greatness becomes a relatively simple matter.</description>
     </item>
+    
     <item>
       <title>时时刻刻 The Hours</title>
       <link>/2007/01/06/%E6%97%B6%E6%97%B6%E5%88%BB%E5%88%BB-the-hours/</link>
       <pubDate>Sat, 06 Jan 2007 10:31:00 +0000</pubDate>
+      
       <guid>/2007/01/06/%E6%97%B6%E6%97%B6%E5%88%BB%E5%88%BB-the-hours/</guid>
-      <description>每个人都在努力的生活和生活得更好，每个人都在尽自己最大的努力。To look life in the face
+      <description> 每个人都在努力的生活和生活得更好，每个人都在尽自己最大的努力。  
+To look life in the face
 Always to look life in the face
 And know it
 For what it is
+
 And last to know it
 To love it for what it is
 And then
-To put it away很难因为文字直接触摸到背后的生活，但是当生活呈现在我们面前的时候，每个人为生活甚至生存所做的努力都令人无法漠然而过。因为我们要面对的不只是自己的生活，我们还要承担亲人的爱、信任和依赖，承担社会角色，我们有义务为周围的人提供一个健康的环境和榜样，有义务对人微笑和给予关怀，有义务接受和回报他人的付出，有义务吃他们做好的饭。应该相信，当人认为还能为自己找到一线生活在这个世上的理由，他们就不会抛弃生存。我们必须生活在社会给定的角色里面，这个束缚就像是伍尔芙生活的Richmond小镇，看起来安静平和，然而生活的谋杀者都是打扮成理性安静善良的面孔扼杀生活、想象力和自我。社会还是更为开放和自由了，虽然这句话绝对的是女性主义的老调重弹，但是这种变化确实为电影中的女主人公提供了越来越好、越自由的生活空间。从伍尔芙走向混浊冰冷的水里，到劳拉离开家人到陌生的地方生活，到克拉丽莎自由的生活，即使生活仍是貌似虚伪的安慰。What a terrible joke! 命运总是爱和我们开各种各样的玩笑，虽然我们念念不忘的是和爱的人共享清晨的那缕风，我们却总是和其他的人度过我们生命中的大部分时光；虽然我们心头挚爱的人就在眼前，然而我们的身体却不要他。在命运面前，人是多么脆弱的玩偶。而这玩偶因为上帝的一个玩笑要付出多少的挣扎和泪水换得内心的平静，为自己的生存找到一个借口，找到一条出路。我们都在生活。努力的生活。</description>
+ To put it away     很难因为文字直接触摸到背后的生活，但是当生活呈现在我们面前的时候，每个人为生活甚至生存所做的努力都令人无法漠然而过。因为我们要面对的不只是自己的生活，我们还要承担亲人的爱、信任和依赖，承担社会角色，我们有义务为周围的人提供一个健康的环境和榜样，有义务对人微笑和给予关怀，有义务接受和回报他人的付出，有义务吃他们做好的饭。应该相信，当人认为还能为自己找到一线生活在这个世上的理由，他们就不会抛弃生存。  我们必须生活在社会给定的角色里面，这个束缚就像是伍尔芙生活的Richmond小镇，看起来安静平和，然而生活的谋杀者都是打扮成理性安静善良的面孔扼杀生活、想象力和自我。社会还是更为开放和自由了，虽然这句话绝对的是女性主义的老调重弹，但是这种变化确实为电影中的女主人公提供了越来越好、越自由的生活空间。从伍尔芙走向混浊冰冷的水里，到劳拉离开家人到陌生的地方生活，到克拉丽莎自由的生活，即使生活仍是貌似虚伪的安慰。  What a terrible joke! 命运总是爱和我们开各种各样的玩笑，虽然我们念念不忘的是和爱的人共享清晨的那缕风，我们却总是和其他的人度过我们生命中的大部分时光；虽然我们心头挚爱的人就在眼前，然而我们的身体却不要他。在命运面前，人是多么脆弱的玩偶。而这玩偶因为上帝的一个玩笑要付出多少的挣扎和泪水换得内心的平静，为自己的生存找到一个借口，找到一条出路。我们都在生活。努力的生活。  </description>
     </item>
+    
     <item>
       <title>爱玛（Emma）——悠闲心情，发现细节，揣摩心理</title>
       <link>/2006/12/13/%E7%88%B1%E7%8E%9Bemma%E6%82%A0%E9%97%B2%E5%BF%83%E6%83%85%E5%8F%91%E7%8E%B0%E7%BB%86%E8%8A%82%E6%8F%A3%E6%91%A9%E5%BF%83%E7%90%86/</link>
       <pubDate>Wed, 13 Dec 2006 22:46:00 +0000</pubDate>
+      
       <guid>/2006/12/13/%E7%88%B1%E7%8E%9Bemma%E6%82%A0%E9%97%B2%E5%BF%83%E6%83%85%E5%8F%91%E7%8E%B0%E7%BB%86%E8%8A%82%E6%8F%A3%E6%91%A9%E5%BF%83%E7%90%86/</guid>
       <description>昨天一起看了一部老片子，《爱玛》，奥斯汀的小说改编。我说可能很难得有心情看这么一部根据十八世纪的小说改编的电影了。小说是一个富足而单纯的女作家写就，她一辈子都住在乡村，故事也发生在乡村，有一个善良漂亮的女主角，难得的是还冰雪聪明，然后一个同样高大全的男主角，有误会，有波折，更多的是舞会和乡村风光，所有的就需要一时的悠闲心情，发现细节，揣摩心理。
 小说我没读过，以后没什么契机也就不会再拣起这部小说了——想不出还真有什么契机能让我看这书。一开始选这部电影，也考虑到以后没机会读这它。真、善、美，然后用不教条不粗俗的方式表达，看这电影是让我激起好些温馨的想法，又想每隔一段时间看看《霍华德庄园》之类根据名著改编的田园式电影。
@@ -153,12 +177,15 @@ To put it away很难因为文字直接触摸到背后的生活，但是当生�
 English Version——http://www.woyouxian.com/b06/b060401/emma_enindex.html
 电影资料介绍在电驴：http://base.verycd.com/entries/0000401055/</description>
     </item>
+    
     <item>
       <title>CRASH</title>
       <link>/2006/06/23/crash/</link>
       <pubDate>Fri, 23 Jun 2006 13:35:00 +0000</pubDate>
+      
       <guid>/2006/06/23/crash/</guid>
-      <description>刚看完今年好莱坞的片子CRASH，中间高潮迭起，结尾发人深思。片子的开头平行的讲述了几个发生在不同人身上的故事，都是关于文化种族的冲突和误解，沉重愤怒。故事进行的过程中，人物之间的关系相互交错。开始的愤怒和憎恨渐渐以一种可以令人理解和同情的原因被呈现出来。每个人都是受害者，反过来又对别人充满怀疑和憎恨，想尽办法保护自己和报复。于是伤害以多米诺骨牌倒下的方式被一一制造出来。高潮发生在两个地方：持有种族歧视的警察不顾生命危险救出曾被他侮辱过的黑人妇女；充满仇恨的伊朗（？）老先生冲着黑人小女孩扣响了扳机，什么伤害都没有发生——小女孩的斗篷救了一家人，也救了老人。电影展示了乐观和宽容的精神，危机在片尾一一得到化解，在种族面前，人性的高贵通过那个持有种族歧视的警察得到了证明。面临极境，人性的温柔和脆弱和善良也在老人的身上被激发了出来。可是故事并不是单纯的乐观主义的，它的深刻在于它按照生活本来的荒诞和错位表现它。为什么化解了警察和黑人导演之间剧烈冲突的小警察，会被一个黑人善意的笑激怒，并且误会他要掏出手枪而在情绪无法控制时开枪打死了他？为什么误会这么容易会发生，即使是在没有心存恶意的人身上？而这两个人有着相同的音乐爱好甚至信仰，如果没有肤色种族的差异，这可能是一对非常要好的朋友？一切都是矛盾，如果我们多信任他人一点，可能我们就会更容易受到伤害，可是我们事事防范怀疑任何人，我们只有更加隔绝毫无希望。所以也许影片试图向我们展示：受一些伤害也许很痛苦，可是这种伤害会比怀疑一切仇恨一切带来的伤害小很多很多。假如我们都能坦诚相对，多一些宽容和理解，甚至是多给对方一点点时间，也许世界会比现在好很多很多。我们总是要等到伤害真的发生了才追悔。才知道一切都晚了。人都是善良的，可是到底是什么使得人们相互怀疑相互冲突相互伤害呢？一个人的善良和坚持可以创造奇迹。</description>
+      <description>  刚看完今年好莱坞的片子CRASH，中间高潮迭起，结尾发人深思。片子的开头平行的讲述了几个发生在不同人身上的故事，都是关于文化种族的冲突和误解，沉重愤怒。  故事进行的过程中，人物之间的关系相互交错。开始的愤怒和憎恨渐渐以一种可以令人理解和同情的原因被呈现出来。每个人都是受害者，反过来又对别人充满怀疑和憎恨，想尽办法保护自己和报复。于是伤害以多米诺骨牌倒下的方式被一一制造出来。高潮发生在两个地方：持有种族歧视的警察不顾生命危险救出曾被他侮辱过的黑人妇女；充满仇恨的伊朗（？）老先生冲着黑人小女孩扣响了扳机，什么伤害都没有发生——小女孩的斗篷救了一家人，也救了老人。  电影展示了乐观和宽容的精神，危机在片尾一一得到化解，在种族面前，人性的高贵通过那个持有种族歧视的警察得到了证明。面临极境，人性的温柔和脆弱和善良也在老人的身上被激发了出来。  可是故事并不是单纯的乐观主义的，它的深刻在于它按照生活本来的荒诞和错位表现它。为什么化解了警察和黑人导演之间剧烈冲突的小警察，会被一个黑人善意的笑激怒，并且误会他要掏出手枪而在情绪无法控制时开枪打死了他？为什么误会这么容易会发生，即使是在没有心存恶意的人身上？而这两个人有着相同的音乐爱好甚至信仰，如果没有肤色种族的差异，这可能是一对非常要好的朋友？一切都是矛盾，如果我们多信任他人一点，可能我们就会更容易受到伤害，可是我们事事防范怀疑任何人，我们只有更加隔绝毫无希望。所以也许影片试图向我们展示：受一些伤害也许很痛苦，可是这种伤害会比怀疑一切仇恨一切带来的伤害小很多很多。假如我们都能坦诚相对，多一些宽容和理解，甚至是多给对方一点点时间，也许世界会比现在好很多很多。  我们总是要等到伤害真的发生了才追悔。才知道一切都晚了。  人都是善良的，可是到底是什么使得人们相互怀疑相互冲突相互伤害呢？一个人的善良和坚持可以创造奇迹。  </description>
     </item>
+    
   </channel>
 </rss>

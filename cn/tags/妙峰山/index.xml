@@ -1,24 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>妙峰山 on A Hugo website</title>
+    <title>妙峰山 on Jiangtang Hu | 胡江堂</title>
     <link>/tags/%E5%A6%99%E5%B3%B0%E5%B1%B1/</link>
-    <description>Recent content in 妙峰山 on A Hugo website</description>
+    <description>Recent content in 妙峰山 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Sun, 19 Apr 2009 23:18:00 +0000</lastBuildDate>
-    <atom:link href="/tags/%E5%A6%99%E5%B3%B0%E5%B1%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/%E5%A6%99%E5%B3%B0%E5%B1%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>爬山归来-阳台山、鹫峰</title>
       <link>/2009/04/19/%E7%88%AC%E5%B1%B1%E5%BD%92%E6%9D%A5-%E9%98%B3%E5%8F%B0%E5%B1%B1%E9%B9%AB%E5%B3%B0/</link>
       <pubDate>Sun, 19 Apr 2009 23:18:00 +0000</pubDate>
+      
       <guid>/2009/04/19/%E7%88%AC%E5%B1%B1%E5%BD%92%E6%9D%A5-%E9%98%B3%E5%8F%B0%E5%B1%B1%E9%B9%AB%E5%B3%B0/</guid>
       <description>当待春中，草木蔓发，春山可望，轻鲦出水，白鸥矫翼，露湿青皋，麦陇朝雊，斯之不远，倘能从我游乎？非子天机清妙者，岂能以此不急之务相邀。然是中有深趣矣！无忽。
-爬山爬山。一行五人，十点在颐和园北宫门凑齐，坐公车346到北安河西口，从阳台山风景区门口入，到傍晚五点从鹫峰风景区大门出。原路折回中关村，在楼下九头鹰吃晚饭，八点出，纷纷归巢。五人者，去年7月份同游妙峰山的大朱、佳哥，还有刚鼓动起来的会长、小李子。
+ 爬山爬山。一行五人，十点在颐和园北宫门凑齐，坐公车346到北安河西口，从阳台山风景区门口入，到傍晚五点从鹫峰风景区大门出。原路折回中关村，在楼下九头鹰吃晚饭，八点出，纷纷归巢。五人者，去年7月份同游妙峰山的大朱、佳哥，还有刚鼓动起来的会长、小李子。
 会长一路拍照甚勤，过些日子等他的照片。我的相机只有几张可用：
+&amp;#160;
 小李子打电话，佳哥发呆。
+
 大朱摆造型，会长忙照相。
+
 叫大朱给我留的一张。</description>
     </item>
+    
   </channel>
 </rss>

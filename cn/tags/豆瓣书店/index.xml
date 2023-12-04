@@ -1,21 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>豆瓣书店 on A Hugo website</title>
+    <title>豆瓣书店 on Jiangtang Hu | 胡江堂</title>
     <link>/tags/%E8%B1%86%E7%93%A3%E4%B9%A6%E5%BA%97/</link>
-    <description>Recent content in 豆瓣书店 on A Hugo website</description>
+    <description>Recent content in 豆瓣书店 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Mon, 01 Jun 2009 23:28:00 +0000</lastBuildDate>
-    <atom:link href="/tags/%E8%B1%86%E7%93%A3%E4%B9%A6%E5%BA%97/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/%E8%B1%86%E7%93%A3%E4%B9%A6%E5%BA%97/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>回到北京</title>
       <link>/2009/06/01/%E5%9B%9E%E5%88%B0%E5%8C%97%E4%BA%AC/</link>
       <pubDate>Mon, 01 Jun 2009 23:28:00 +0000</pubDate>
+      
       <guid>/2009/06/01/%E5%9B%9E%E5%88%B0%E5%8C%97%E4%BA%AC/</guid>
       <description>下午回到北京。下车的第一感受就是，北京还是太热乎了，家里现在还是端午雨后般的天气。
 三点半去万圣书园逛了逛。回来再对面的豆瓣书店拿了两册书回来，《批判的思考》和《实践伦理学》。想想，这还是上班时间呢，赶紧回家整理东西，整理自己。
 想读读伦理学。是想起一些看似跟自己无关的事，自己还是会有些道德上的焦虑，比如上面那本书提到的杀生、贫穷、动物和环境。</description>
     </item>
+    
   </channel>
 </rss>

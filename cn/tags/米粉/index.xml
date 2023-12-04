@@ -1,22 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>米粉 on A Hugo website</title>
+    <title>米粉 on Jiangtang Hu | 胡江堂</title>
     <link>/tags/%E7%B1%B3%E7%B2%89/</link>
-    <description>Recent content in 米粉 on A Hugo website</description>
+    <description>Recent content in 米粉 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Thu, 10 Dec 2009 18:04:00 +0000</lastBuildDate>
-    <atom:link href="/tags/%E7%B1%B3%E7%B2%89/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/%E7%B1%B3%E7%B2%89/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>广西越南行之三</title>
       <link>/2009/12/10/%E5%B9%BF%E8%A5%BF%E8%B6%8A%E5%8D%97%E8%A1%8C%E4%B9%8B%E4%B8%89/</link>
       <pubDate>Thu, 10 Dec 2009 18:04:00 +0000</pubDate>
+      
       <guid>/2009/12/10/%E5%B9%BF%E8%A5%BF%E8%B6%8A%E5%8D%97%E8%A1%8C%E4%B9%8B%E4%B8%89/</guid>
       <description>2009.11.29 下龙-河内
 今天过得特别开心。一大早起床，吃完早饭，就去下龙湾出海。9：00-14：00，各种各样的小山立在水中，水青绿青绿的，视野开阔，清风阵阵。去过桂林的同事说，这边和桂林很像呢。
 其实这些所谓的狼狗头、拇指山、斗鸡石，对我而言并没有什么吸引力。靠在船头的扶手上吹海风，啃柚子，才是人生美事。坐在甲板上晒太阳，感受热的凉的同时两种温度，享受那种似有似无却照得你只能眯着眼睛的太阳才安逸。
 晒饱了太阳，吹饱了海风，我们才回到船舱里打牌。船不小，能坐近一百号人，我们才二十几人，很是空阔舒适。吃吃当地的水果，打打牌，一路上坐车的煎熬都在这种安逸中消失无形。
+ 
 午饭就在船上吃，每顿必有的豆腐、红烧肉、蘸料、清汤，加上鸡蛋卷、越南小春卷、鱿鱼，吃的也很开心。
 下午三个半小时的车程到河内，终于告别了按摩路，住在下龙酒店。
 晚上，导游组织去看降旗，我却一直按奈不住，想要自己去遛达遛达。于是，纠集5位同道中人，在前台换好越盾，出发！碰上的司机很面善，我们问他会不会英语，他点点头。接下来我们再问他路程要多久之类的，他就直摆手了。刚做妈妈的LJ大夸他nice，不知道他到底能听懂多少，但是我们的快乐感染了他，每一次我们大笑他也跟着笑得很开心，最后还少收了我们一千盾，调了车头后还跟站在路边的我们说byebye。
@@ -24,9 +29,11 @@
 抓狂的是，竟然原路返回，原来一开始，我们就离目的地很近了，走了个相反的方向。不过，如果不是碰到那几个越南小妹妹指错路，我们也就不会碰到这个nice的越南哥哥，所谓有得必有失，套句俗话c’est la vie.
 顺利地到达木偶剧院（water puppet theater)，正好下一场演出还有二十分钟才开始。我们买了票，就去旁边的小吃街填肚子喽。吃到传说中的越南小油条，太拧了，没咱们的好吃，呵呵。
 木偶戏很不错的喔，超出我们的预期。配的传统越南歌谣也很好听，尤其是凤凰那段，可惜没录下来。我们的木偶戏，表演的人是垂直的动作，而他们的木偶戏，表演者站在水里，在帘子后面，水平的动作。表演的都是他们的传说故事或传统的生活场景，像越南李朝的开国君主李太祖还剑给神龟的传说，小孩子嬉戏、网鱼等。
+ 
 一个小时的表演结束了，我们意犹未尽，沿着湖边的商业街瞎转。买了面包，吃了冰激凌，各种饮料，强烈推荐柠檬汁哦。
 沿着还剑湖又走了大半圈，已近凌晨，我们才打车回宾馆。当地小吃+善良的当地人+超出预期的木偶戏，让我对河内的印象很好。虽然他们的市建不太好，但是在这儿，我们真的玩得很高兴。说起来，我还有越南朋友在河内呢，读本科的时候我们班的留学生，和她的两个朋友，记得当时听他们背“郎骑竹马来”，还真的很惊讶呢。可惜他们回国后就再无联系了。
 以后有机会，一定要去西贡的。</description>
     </item>
+    
   </channel>
 </rss>

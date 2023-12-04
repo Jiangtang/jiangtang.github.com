@@ -1,53 +1,67 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SAS-L on A Hugo website</title>
+    <title>Sas L on Jiangtang Hu | 胡江堂</title>
     <link>/tags/sas-l/</link>
-    <description>Recent content in SAS-L on A Hugo website</description>
+    <description>Recent content in Sas L on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Wed, 06 Apr 2011 16:59:02 +0000</lastBuildDate>
-    <atom:link href="/tags/sas-l/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/sas-l/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>SASGF11流水帐（一）：4月3号-5号</title>
       <link>/2011/04/06/sasgf11%E6%B5%81%E6%B0%B4%E5%B8%90%E4%B8%804%E6%9C%883%E5%8F%B7-5%E5%8F%B7/</link>
       <pubDate>Wed, 06 Apr 2011 16:59:02 +0000</pubDate>
+      
       <guid>/2011/04/06/sasgf11%E6%B5%81%E6%B0%B4%E5%B8%90%E4%B8%804%E6%9C%883%E5%8F%B7-5%E5%8F%B7/</guid>
       <description>It’s wonderful. It’s awful. It’s wonderfully awful and awfully wonderful.
-这句话是拿来形容拉斯维加斯的。不过我喜欢这句话甚于维加斯本身，就直接拿来套用这几天在凯撒皇宫酒店（Caesars Palace Las Vegas Resort and Casino）参加SAS全球论坛(SAS Global Forum 2011, Apr 4-7, Las Vegas)的感受了，其中把awful改成awesome就是。
+ 这句话是拿来形容拉斯维加斯的。不过我喜欢这句话甚于维加斯本身，就直接拿来套用这几天在凯撒皇宫酒店（Caesars Palace Las Vegas Resort and Casino）参加SAS全球论坛(SAS Global Forum 2011, Apr 4-7, Las Vegas)的感受了，其中把awful改成awesome就是。
 首先，我入手一台Kindle啦。小号的那种，刚好可以给虎头用。虎头说：我还小，不能读书啦。好吧，老爸先帮你用着，不许偷懒哈。这台小玩意是下午参加一个invited focus discussion group时主办方给送的。
 还有，今天下午我终于做完了自己的演讲，整个人就轻松很多。不过轻松也不会去一层的赌场。不喜欢的东西，连尝试的心情都没有。按着倒序时间（美国当地时间），记些流水帐。
-4月5号，周二
-我住在凯撒旁边一个较便宜的酒店里,叫Harrah’s Las Vegas Resort and Casino。早上七点起来，八点去凯撒。先是SAS研发中心在秀SAS的新玩意，然后是一个所谓的科技独脚秀，非常厉害，那哥们，Don McMillan，据说是世界上唯一一个用PPT讲笑话的演员——慢着，这哥们是斯坦福大学EE的硕士，是AT&amp;amp;T的前工程师。不想废话的，直接去他的主页去看：
-http://www.TechnicallyFunny.com/
-这哥们真是让人人仰马翻，比如他讲到SAS Data Step就是SAS用户的国标舞步。回到正题，SAS研发中心的老大Keith Collins讲了下SAS发展的5个主要方面：
-1. high performance computing
+ 4月5号，周二
+ 我住在凯撒旁边一个较便宜的酒店里,叫Harrah&amp;#8217;s Las Vegas Resort and Casino。早上七点起来，八点去凯撒。先是SAS研发中心在秀SAS的新玩意，然后是一个所谓的科技独脚秀，非常厉害，那哥们，Don McMillan，据说是世界上唯一一个用PPT讲笑话的演员——慢着，这哥们是斯坦福大学EE的硕士，是AT&amp;amp;T的前工程师。不想废话的，直接去他的主页去看：
+ http://www.TechnicallyFunny.com/
+ 这哥们真是让人人仰马翻，比如他讲到SAS Data Step就是SAS用户的国标舞步。回到正题，SAS研发中心的老大Keith Collins讲了下SAS发展的5个主要方面：
+ 1. high performance computing
 2.process automation
 3.business visualization
 4.data management
 5.saas
-然后一些SAS研发的工程师就相应展示了一下SAS9.3的新功能，看着还是蛮振奋的，比如传统的proc reg加上HP（high performance， proc HPreg），就能够实现高性能计算了。上午还听了一场佛罗里达大学荣休教授Ramon Rittel关于SAS与线性模型(GLM)的专题报告，其中穿插些历史信息，最有八卦趣味。
-下午，前半部分是被邀请参加一个叫SAS BI Product Development的foucs group，主题是SAS BI产品的visualization和mobile computing，有近十位非SAS员工参加了这次讨论，由SAS公司的一些研发、产品与市场总监主持。
-下半场是我自己的演讲。
-晚上主要在social。先是SAS公司组织的一场mixer，里面还摆了几个赌桌，大伙凑一起吃东西，四处走走找人聊天，同时有SAS研发各个方向都摆了机器在秀东西（supp demo），北京研发的朋友也过来展示了一下他们在本地化/国际化方面做的工作。下午空闲的时候也去demo看了看，我最感兴趣的是clinical data integration、visualization和JMP。</description>
+ 然后一些SAS研发的工程师就相应展示了一下SAS9.3的新功能，看着还是蛮振奋的，比如传统的proc reg加上HP（high performance， proc HPreg），就能够实现高性能计算了。上午还听了一场佛罗里达大学荣休教授Ramon Rittel关于SAS与线性模型(GLM)的专题报告，其中穿插些历史信息，最有八卦趣味。
+下午，前半部分是被邀请参加一个叫SAS BI Product Development的foucs group，主题是SAS BI产品的visualization和mobile computing，有近十位非SAS员工参加了这次讨论，由SAS公司的一些研发、产品与市场总监主持。</description>
     </item>
+    
     <item>
       <title>SAS：人和书</title>
       <link>/2009/05/07/sas%E4%BA%BA%E5%92%8C%E4%B9%A6/</link>
       <pubDate>Thu, 07 May 2009 00:30:13 +0000</pubDate>
+      
       <guid>/2009/05/07/sas%E4%BA%BA%E5%92%8C%E4%B9%A6/</guid>
       <description>&lt;p&gt;我那&lt;a href=&#34;http://johnthu.spaces.live.com/&#34; target=&#34;_blank&#34;&gt;（所谓）技术博客&lt;/a&gt;好久没更新了。前些日子贴出一则&lt;a href=&#34;http://johnthu.spaces.live.com/blog/cns!2053CD511E6D5B1E!1097.entry&#34; target=&#34;_blank&#34;&gt;通告&lt;/a&gt;，说那个Windows Live Space从此停止更新，换了个新东家，技术路线有所偏倚，关于技术文章，想沉淀一段时间。以后我大概会开一个独立博客，跟这个生活博客还是要分开来。&lt;/p&gt;
-&lt;p&gt;闭门贴挂出来不多久，跟上海一位写SAS博客的朋友聊了聊，说些人生的坚持与选择，都是跟SAS有关的事，生出无限感慨。前天在SAS全球用户组SAS-L上面，一家POD出版社(Print-on-Demand Publisher)登出一则书讯，书是一个自称失业的SAS程序员写的。看介绍书非常有意思，就顺着链接找关于书和作者的更多信息。下面贴出来的《SAS与我》是作者的自述。这作者叫Shaoji Xu，在美国拿的PHD，这自述就写他失业后写SAS书的经过，第一句话就说，“写这本书的原因很简单：我失业了”。一样是SAS程序员，我大概能读出一些他跟SAS”情意绵绵”的趣味，以及一些长歌当哭的感触。 注释符号 &lt;em&gt;/**/&lt;/em&gt; 里面的内容是随手做的一些批注。&lt;/p&gt;
+
+&lt;p&gt;闭门贴挂出来不多久，跟上海一位写SAS博客的朋友聊了聊，说些人生的坚持与选择，都是跟SAS有关的事，生出无限感慨。前天在SAS全球用户组SAS-L上面，一家POD出版社(Print-on-Demand Publisher)登出一则书讯，书是一个自称失业的SAS程序员写的。看介绍书非常有意思，就顺着链接找关于书和作者的更多信息。下面贴出来的《SAS与我》是作者的自述。这作者叫Shaoji Xu，在美国拿的PHD，这自述就写他失业后写SAS书的经过，第一句话就说，“写这本书的原因很简单：我失业了”。一样是SAS程序员，我大概能读出一些他跟SAS&amp;#8221;情意绵绵&amp;#8221;的趣味，以及一些长歌当哭的感触。 注释符号 &lt;em&gt;/**/&lt;/em&gt; 里面的内容是随手做的一些批注。&lt;/p&gt;
+
 &lt;p align=&#34;center&#34;&gt;
   &amp;#8212;&amp;#8212;&amp;#8212;&amp;#8212;-&lt;br /&gt; SAS与我
 &lt;/p&gt;
+
 &lt;p align=&#34;center&#34;&gt;
   By Shaoji Xu&lt;br /&gt; &lt;a href=&#34;http://www.beauthor.com/book/sas/sasandi_c.htm&#34;&gt;http://www.beauthor.com/book/sas/sasandi_c.htm&lt;/a&gt;
 &lt;/p&gt;
+
 &lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;/*作者Shaoji Xu，在美国罗格斯大学(Rutgers University)拿的Ph.D，运筹学方向，他还有统计学的背景。刚写了两本书，被他称为“大姐”的&lt;em&gt;Understanding SAS&lt;/em&gt;，SAS入门书，和被他称为“小妹”的&lt;em&gt;Selected Papers on SAS&lt;/em&gt;，关于SAS应用技巧的一些专题。以前他跟人合作了一本《线性规划》（科学出版社，1990）。 &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;这两本SAS书放在一家叫“成家”&lt;a href=&#34;www.beauthor.com&#34; target=&#34;_self&#34;&gt;(&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;color: #000000;&#34;&gt;&lt;a href=&#34;www.beauthor.com&#34; target=&#34;_self&#34;&gt;&lt;a href=&#34;https://www.beauthor.com&#34;&gt;www.beauthor.com&lt;/a&gt;&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;color: #000000;&#34;&gt;&lt;a href=&#34;www.beauthor.com&#34; target=&#34;_self&#34;&gt;)&lt;/a&gt;的POD出版社(Print-on-Demand Publisher)上面。POD就是作者把书稿给出版社，出版社不审不校，觉得有市场就给申请书号做推广之类，有一本的需求就印出一本，然后与作者分成。 &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;这两本SAS书放在一家叫“成家”&lt;a href=&#34;www.beauthor.com&#34; target=&#34;_self&#34;&gt;(&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;color: #000000;&#34;&gt;&lt;a href=&#34;www.beauthor.com&#34; target=&#34;_self&#34;&gt;www.beauthor.com&lt;/a&gt;&lt;/span&gt;&lt;span style=&#34;color: #000000;&#34;&gt;&lt;a href=&#34;www.beauthor.com&#34; target=&#34;_self&#34;&gt;)&lt;/a&gt;的POD出版社(Print-on-Demand Publisher)上面。POD就是作者把书稿给出版社，出版社不审不校，觉得有市场就给申请书号做推广之类，有一本的需求就印出一本，然后与作者分成。 &lt;/span&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;又，&lt;em&gt;Understanding SAS&lt;/em&gt;这本书，&lt;/span&gt;&lt;a href=&#34;http://www.beauthor.com/book/sas/contents_u.htm &#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;目录&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: #000000;&#34;&gt;,&lt;/span&gt;&lt;a href=&#34;http://www.beauthor.com/book/sas/preface_u.htm &#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;前言&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: #000000;&#34;&gt;；&lt;em&gt;Selected Papers on SAS&lt;/em&gt;这本书，&lt;/span&gt;&lt;a href=&#34;http://www.beauthor.com/book/sas/contents.htm &#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;目录&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: #000000;&#34;&gt;,&lt;/span&gt;&lt;a href=&#34;http://www.beauthor.com/book/sas/preface.htm &#34; target=&#34;_blank&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;前言&lt;/span&gt;&lt;/a&gt;&lt;span style=&#34;color: #000000;&#34;&gt;。&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;《SAS与我》的英文版，见&lt;/span&gt;&lt;a href=&#34;http://www.beauthor.com/book/sas/sasandi.htm&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;http://www.beauthor.com/book/sas/sasandi.htm&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;color: #000000;&#34;&gt;*/&lt;/span&gt;&lt;/p&gt;</description>
+
+&lt;p&gt;&lt;span style=&#34;color: #000000;&#34;&gt;《SAS与我》的英文版，见&lt;/span&gt;&lt;a href=&#34;http://www.beauthor.com/book/sas/sasandi.htm&#34;&gt;&lt;span style=&#34;color: #000000;&#34;&gt;http://www.beauthor.com/book/sas/sasandi.htm&lt;/span&gt;&lt;/a&gt; &lt;span style=&#34;color: #000000;&#34;&gt;*/&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
+    
   </channel>
 </rss>

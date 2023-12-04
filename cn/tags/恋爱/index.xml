@@ -1,25 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>恋爱 on A Hugo website</title>
+    <title>恋爱 on Jiangtang Hu | 胡江堂</title>
     <link>/tags/%E6%81%8B%E7%88%B1/</link>
-    <description>Recent content in 恋爱 on A Hugo website</description>
+    <description>Recent content in 恋爱 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Sun, 24 May 2009 23:31:00 +0000</lastBuildDate>
-    <atom:link href="/tags/%E6%81%8B%E7%88%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/%E6%81%8B%E7%88%B1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>消暑之毛豆（外两篇）</title>
       <link>/2009/05/24/%E6%B6%88%E6%9A%91%E4%B9%8B%E6%AF%9B%E8%B1%86%E5%A4%96%E4%B8%A4%E7%AF%87/</link>
       <pubDate>Sun, 24 May 2009 23:31:00 +0000</pubDate>
+      
       <guid>/2009/05/24/%E6%B6%88%E6%9A%91%E4%B9%8B%E6%AF%9B%E8%B1%86%E5%A4%96%E4%B8%A4%E7%AF%87/</guid>
       <description>早上与Li跑菜市场，抓得一大堆毛豆回家。准备来做菜的，晚上左瞅瞅右瞅瞅，与Li商量说，“还是煮了吧。”于是上网看看盐水毛豆怎么做法，呼呼下锅。又想这方圆数里，只有人大的一辉博士来回方便，于是邀来一起吃毛豆消暑。
 昨晚夜深，呆万柳，与Crazy Hou、小裴抱半个西瓜，在他们公寓的小花园聊天，算是再感受了一把学生生活，噫。
-谈恋爱
-小明和小红谈恋爱。
+ 谈恋爱
+ 小明和小红谈恋爱。
 分宾主坐下。小明说：“要不您先谈？”
-无一字无出处
-昨天下午看一篇论文。最后只能说，这破文章，真是没有一个字没有出处。</description>
+ 无一字无出处
+ 昨天下午看一篇论文。最后只能说，这破文章，真是没有一个字没有出处。</description>
     </item>
+    
   </channel>
 </rss>

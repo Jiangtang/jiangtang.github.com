@@ -1,19 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>沈从文 on A Hugo website</title>
+    <title>沈从文 on Jiangtang Hu | 胡江堂</title>
     <link>/tags/%E6%B2%88%E4%BB%8E%E6%96%87/</link>
-    <description>Recent content in 沈从文 on A Hugo website</description>
+    <description>Recent content in 沈从文 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Sat, 04 Apr 2009 12:03:08 +0000</lastBuildDate>
-    <atom:link href="/tags/%E6%B2%88%E4%BB%8E%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/%E6%B2%88%E4%BB%8E%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>周末读书：沈从文和郁达夫</title>
       <link>/2009/04/04/%E5%91%A8%E6%9C%AB%E8%AF%BB%E4%B9%A6%E6%B2%88%E4%BB%8E%E6%96%87%E5%92%8C%E9%83%81%E8%BE%BE%E5%A4%AB/</link>
       <pubDate>Sat, 04 Apr 2009 12:03:08 +0000</pubDate>
+      
       <guid>/2009/04/04/%E5%91%A8%E6%9C%AB%E8%AF%BB%E4%B9%A6%E6%B2%88%E4%BB%8E%E6%96%87%E5%92%8C%E9%83%81%E8%BE%BE%E5%A4%AB/</guid>
-      <description>&lt;p&gt;/*周末兴致，诸君不妨与我一起读一篇民国时的作文。沈从文（1902－1988），14岁开始参军，浪迹于四川湖南诸省边区。21岁（1923年）开始自身闯荡北京，要做一个文学青年，自是一路碰壁，惶惶戚戚唧唧复唧唧。24年，他写信给几位著名作家，诉说自己的困境，其中包括本文的作者，郁达夫（1896－1945），当时是跟鲁迅齐名的名流，时任北京大学统计学讲师。11月13号，郁达夫根据来信的地址（北京沙滩），来沈从文的住所看他，沈从文跟他讲了自己想在北大读个学位，指望有个好奔头。见着了沈从文的困顿潦倒，郁达夫当晚就写了一篇《给一个文学青年的公开状》，发表在1924年11月16日的《晨报副刊》上。如果你是第一次读这篇文章，保证会对你的大脑有某些颠覆作用。*/&lt;/p&gt;</description>
+      <description>&lt;p&gt;/*周末兴致，诸君不妨与我一起读一篇民国时的作文。沈从文（1902－1988），14岁开始参军，浪迹于四川湖南诸省边区。21岁（1923年）开始自身闯荡北京，要做一个文学青年，自是一路碰壁，惶惶戚戚唧唧复唧唧。24年，他写信给几位著名作家，诉说自己的困境，其中包括本文的作者，郁达夫（1896－1945），当时是跟鲁迅齐名的名流，时任北京大学统计学讲师。11月13号，郁达夫根据来信的地址（北京沙滩），来沈从文的住所看他，沈从文跟他讲了自己想在北大读个学位，指望有个好奔头。见着了沈从文的困顿潦倒，郁达夫当晚就写了一篇《给一个文学青年的公开状》，发表在1924年11月16日的《晨报副刊》上。如果你是第一次读这篇文章，保证会对你的大脑有某些颠覆作用。*/&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
+    
   </channel>
 </rss>

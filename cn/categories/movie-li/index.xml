@@ -1,34 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>movie-li on A Hugo website</title>
+    <title>Movie Li on Jiangtang Hu | 胡江堂</title>
     <link>/categories/movie-li/</link>
-    <description>Recent content in movie-li on A Hugo website</description>
+    <description>Recent content in Movie Li on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Mon, 22 Jun 2009 22:03:00 +0000</lastBuildDate>
-    <atom:link href="/categories/movie-li/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/categories/movie-li/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Leave Out All the Rest</title>
       <link>/2009/06/22/leave-out-all-the-rest/</link>
       <pubDate>Mon, 22 Jun 2009 22:03:00 +0000</pubDate>
+      
       <guid>/2009/06/22/leave-out-all-the-rest/</guid>
       <description>最近疯狂地爱上了一首歌：Linkin Park的Leave Out All the Rest。听曲子的时候就非常喜欢，看到歌词之后更喜欢，忍不住翻译成中文。
 歌手： 林肯公园(Linkin Park)
 专辑： 暮光之城豪华版
 公司： Virgin Records(百代唱片)
 I dreamed I was missing, you were so scared
-But no one would listen, ’cause no one else cared
+But no one would listen, &amp;#8217;cause no one else cared
 After my dreaming, I woke with this fear
-What am I leaving when I’m done here?
-So if you’re asking me, I want you to know
-When my time comes, forget the wrong that I’ve done
+What am I leaving when I&amp;#8217;m done here?
+So if you&amp;#8217;re asking me, I want you to know
+When my time comes, forget the wrong that I&amp;#8217;ve done
 Help me leave behind some reasons to be missed</description>
     </item>
+    
     <item>
       <title>成为简奥斯汀</title>
       <link>/2009/04/07/%E6%88%90%E4%B8%BA%E7%AE%80%E5%A5%A5%E6%96%AF%E6%B1%80/</link>
       <pubDate>Tue, 07 Apr 2009 22:55:35 +0000</pubDate>
+      
       <guid>/2009/04/07/%E6%88%90%E4%B8%BA%E7%AE%80%E5%A5%A5%E6%96%AF%E6%B1%80/</guid>
       <description>看电影的乐趣，就在于投入。投入你的情感，扩张你的每一寸神经，去感受电影里面每一个人物（当然，更多的时候是主人公）的喜怒哀乐。不必把自己想象为男主角或是女主角，一个人不非得成为另一个人才能了解他。
 看奥斯汀有关的每一部电影，感觉都很好。像凯拉·奈特莉最新版的《傲慢与偏见》、像李安导演凯特·温斯蕾特主演的《理智与情感》、像前不久看的《奥斯汀书会》，当然，还有小时候看的老版的《傲慢与偏见》，估计是现在BBC系列的那一版，印象已不是很深了。
@@ -40,15 +46,16 @@ Help me leave behind some reasons to be missed</description>
 奥斯汀读书会：The Jane Austen Book Club (2007)
 导演： 罗宾·史威考德
 主演： 艾米莉·布朗特，休·丹西，玛丽亚·贝罗等
-**类型：**爱情 / 剧情
+类型：爱情 / 剧情
 上映日期： 2007年9月21日 美国
-**片长：**106min
+片长：106min
 成为简奥斯汀：Becoming Jane (2007)
 导演： 朱里安·杰拉德
 主演： 安妮·海瑟薇，詹姆斯·麦卡沃伊，朱丽·沃特斯等
 类型： 爱情 / 传记 / 剧情
 上映日期： 2007年3月9日 英国
-**片长：**120 min</description>
+片长：120 min</description>
     </item>
+    
   </channel>
 </rss>

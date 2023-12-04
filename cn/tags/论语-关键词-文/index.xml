@@ -1,27 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>《论语》-关键词-文 on A Hugo website</title>
+    <title>论语 关键词 文 on Jiangtang Hu | 胡江堂</title>
     <link>/tags/%E8%AE%BA%E8%AF%AD-%E5%85%B3%E9%94%AE%E8%AF%8D-%E6%96%87/</link>
-    <description>Recent content in 《论语》-关键词-文 on A Hugo website</description>
+    <description>Recent content in 论语 关键词 文 on Jiangtang Hu | 胡江堂</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Sat, 27 Jun 2009 21:42:00 +0000</lastBuildDate>
-    <atom:link href="/tags/%E8%AE%BA%E8%AF%AD-%E5%85%B3%E9%94%AE%E8%AF%8D-%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/tags/%E8%AE%BA%E8%AF%AD-%E5%85%B3%E9%94%AE%E8%AF%8D-%E6%96%87/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>《论语》周记：学而1.6:弟子规</title>
       <link>/2009/06/27/%E8%AE%BA%E8%AF%AD%E5%91%A8%E8%AE%B0%E5%AD%A6%E8%80%8C1.6%E5%BC%9F%E5%AD%90%E8%A7%84/</link>
       <pubDate>Sat, 27 Jun 2009 21:42:00 +0000</pubDate>
+      
       <guid>/2009/06/27/%E8%AE%BA%E8%AF%AD%E5%91%A8%E8%AE%B0%E5%AD%A6%E8%80%8C1.6%E5%BC%9F%E5%AD%90%E8%A7%84/</guid>
       <description>/《论语》周记：总论/
 《论语》胡说，每周(s)一句。左丘明不急，我也不急。学而1.6，孔子曰
-弟子，（汝should）
+ 弟子，（汝should）
 入则孝，出则弟；
 谨而信，泛爱众，而亲仁。
 行有余力，则以学文。
-孔子教育弟子在家孝顺父母，在外尊重他人；做人谨慎有信，博爱大众，但更要亲近其中的有德之人（仁者），——这些都践行无碍，那就再去学学《诗》《书》好了。前面的都是套话，有价值的是最后一句，先践行孝弟谨信爱众亲仁，然后再整书本（知识或者性情），孰本孰末，分得非常清楚。
+ 孔子教育弟子在家孝顺父母，在外尊重他人；做人谨慎有信，博爱大众，但更要亲近其中的有德之人（仁者），——这些都践行无碍，那就再去学学《诗》《书》好了。前面的都是套话，有价值的是最后一句，先践行孝弟谨信爱众亲仁，然后再整书本（知识或者性情），孰本孰末，分得非常清楚。
 孝弟谨信爱众亲仁都是很重要的话题，这段语录说得比较无趣，不提。
 或曰，“入则孝，出则弟”，描述的大概是人类最惨的景象之一：进门要交份子钱（孝敬钱），出门还要做小弟，噫。</description>
     </item>
+    
   </channel>
 </rss>

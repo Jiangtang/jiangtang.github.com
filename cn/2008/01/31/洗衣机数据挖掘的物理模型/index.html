@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-us">
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Hugo 0.120.4">
+<meta name="generator" content="Hugo 0.18.1" />
 
 
-<title>洗衣机，数据挖掘的物理模型 - A Hugo website</title>
-<meta property="og:title" content="洗衣机，数据挖掘的物理模型 - A Hugo website">
-
-
-  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+<title>洗衣机，数据挖掘的物理模型 - Jiangtang Hu | 胡江堂</title>
+<meta property="og:title" content="洗衣机，数据挖掘的物理模型 - Jiangtang Hu | 胡江堂">
 
 
 
@@ -22,8 +19,8 @@
 
 
 
-<link rel="stylesheet" href="/css/fonts.css" media="all">
-<link rel="stylesheet" href="/css/main.css" media="all">
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
 
 
 
@@ -32,8 +29,8 @@
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-  <a href="/" class="nav-logo">
-    <img src="/images/logo.png"
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
          width="50"
          height="50"
          alt="Logo">
@@ -41,7 +38,7 @@
 
   <ul class="nav-links">
     
-    <li><a href="/about/">About</a></li>
+    <li><a href="../../../../about/">About</a></li>
     
     <li><a href="https://github.com/jiangtang">GitHub</a></li>
     
@@ -63,34 +60,65 @@
     <h1 class="article-title">洗衣机，数据挖掘的物理模型</h1>
 
     
-    <span class="article-date">2008-01-31</span>
+    <span class="article-date">2008/01/31</span>
     
 
     <div class="article-content">
-      
-      <p>有文学某君，说我在<a href="http://johnthu.spaces.live.com" target="_blank">技术博客</a>写的那篇《<a href="http://johnthu.spaces.live.com/blog/cns!2053CD511E6D5B1E!386.entry" target="_blank">洗衣机，数据挖掘的物理模型</a>》居然也明白可读。真是莫大的鼓励，鉴于更多的朋友懒得点开的我的技术博客，索性全文转过。当然，引用自己写的东西而不注明出处，也算剽窃之一，第一行我给链接啦：</p>
+      <nav>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#洗衣机-数据挖掘的物理模型">洗衣机，数据挖掘的物理模型</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+<p>有文学某君，说我在<a href="http://johnthu.spaces.live.com" target="_blank">技术博客</a>写的那篇《<a href="http://johnthu.spaces.live.com/blog/cns!2053CD511E6D5B1E!386.entry" target="_blank">洗衣机，数据挖掘的物理模型</a>》居然也明白可读。真是莫大的鼓励，鉴于更多的朋友懒得点开的我的技术博客，索性全文转过。当然，引用自己写的东西而不注明出处，也算剽窃之一，第一行我给链接啦：</p>
+
 <blockquote>
-<h6 id="洗衣机数据挖掘的物理模型">洗衣机，数据挖掘的物理模型</h6>
-<p>昨天整洗衣机。看着大大小小新新旧旧，机身多赫然印一大字：<br>
+<h6 id="洗衣机-数据挖掘的物理模型">洗衣机，数据挖掘的物理模型</h6>
+
+<p>昨天整洗衣机。看着大大小小新新旧旧，机身多赫然印一大字：<br />
 <strong>Fuzzy</strong></p>
-<p>Fuzzy Logic，模糊逻辑控制，大概说&quot;只需按下启动键，从选择程序到漂洗、脱水，实现了全自动的控制。这种模糊逻辑控制的洗衣机可以自动检测洗衣内的衣物重量，从而自动选择水位和洗涤程序，这样不但大大简化了操作步骤，而且可以比较准确的配置水位和洗涤时间，节约了能源。&quot;</p>
+
+<p>Fuzzy Logic，模糊逻辑控制，大概说&rdquo;只需按下启动键，从选择程序到漂洗、脱水，实现了全自动的控制。这种模糊逻辑控制的洗衣机可以自动检测洗衣内的衣物重量，从而自动选择水位和洗涤程序，这样不但大大简化了操作步骤，而且可以比较准确的配置水位和洗涤时间，节约了能源。&rdquo;</p>
+
 <p>看了这些就乐了。原来洗衣机还是这么一个机器学习/数据挖掘的物理模型，一个分类模型吧，输入是一大堆衣物和污渍。一个好的分类模型（洗衣机）要把衣服和污渍尽可能地分离出来，这样洗衣机的输出就是一个二分类变量，比如1代表没有污渍的衣物，0代表污渍。对照洗衣机这么个物理模型，很多问题就可以说开去了。</p>
-<p>比如数据挖掘的流程。先从客户手里拿来数据，他们说这衣服你要洗成什么样什么样，如果他们没有见解，我们就说我们能把你们的衣服洗成如何如何。定义好问题，就得准备洗衣粉、脸盆之类的吧。衣服也要进行些预处理，比如一个小物件不适合放进洗衣机，就直接剔掉了。清洗数据，把衣服口袋里的钥匙、小纸条都掏出来，进行分组，比如牛仔裤放一起，床单被罩搁一块。还有一些肉眼就能识别的模式，比如那件裤子上粘的一块大口香糖，用手拨出来就是。诸如此类，数据可以丢进我们的洗衣机了。选用哪个模型？决策树？神经网络？手洗模式？儿童模式？还是Logistic回归？选上一个，我们来设置参数，洗衣机控制面板上那些按钮狂摁一通就是。有时还需要设置阀值，规定模型停止计算的条件，选&quot;洗衣定时&quot;就可以。不管了，把电脑合上，让它跑就是。一个小时后过去看看，电脑屏幕刷出一大块结果，说衣服洗好了。不满意，再加水添洗衣粉。如此反复，期限也快到了，衣服怎么着也得拿出来晾了。衣服洗好了，但还是乱七八糟地躺在洗衣机里，整理一下结果喽，以清晰的方式摆在衣架上，就等着人家来评估实施了。</p>
+
+<p>比如数据挖掘的流程。先从客户手里拿来数据，他们说这衣服你要洗成什么样什么样，如果他们没有见解，我们就说我们能把你们的衣服洗成如何如何。定义好问题，就得准备洗衣粉、脸盆之类的吧。衣服也要进行些预处理，比如一个小物件不适合放进洗衣机，就直接剔掉了。清洗数据，把衣服口袋里的钥匙、小纸条都掏出来，进行分组，比如牛仔裤放一起，床单被罩搁一块。还有一些肉眼就能识别的模式，比如那件裤子上粘的一块大口香糖，用手拨出来就是。诸如此类，数据可以丢进我们的洗衣机了。选用哪个模型？决策树？神经网络？手洗模式？儿童模式？还是Logistic回归？选上一个，我们来设置参数，洗衣机控制面板上那些按钮狂摁一通就是。有时还需要设置阀值，规定模型停止计算的条件，选&rdquo;洗衣定时&rdquo;就可以。不管了，把电脑合上，让它跑就是。一个小时后过去看看，电脑屏幕刷出一大块结果，说衣服洗好了。不满意，再加水添洗衣粉。如此反复，期限也快到了，衣服怎么着也得拿出来晾了。衣服洗好了，但还是乱七八糟地躺在洗衣机里，整理一下结果喽，以清晰的方式摆在衣架上，就等着人家来评估实施了。</p>
+
 <p>还拿洗衣机说事，为什么有些人那么相信挖掘模型？这个问题还可以这么表述，为什么我那么相信洗衣机，即使是我以前那台老破旧笨？</p>
+
 <ol>
 <li>数据量庞大，衣服床单一大堆，手工计算几乎不可能。要手洗，耗水耗时间，对我而言，洗干净也几乎不可能。还有，看大伙都用上数据挖掘了，我的衣服还手洗就显得落伍了；</li>
-<li>洗衣机自称&quot;模糊控制&quot;，挺咋呼的听着。决策树、神经网络、最大熵、支持向量机，一个个听着也是能耐大，衣服放进去，有指望；</li>
+<li>洗衣机自称&rdquo;模糊控制&rdquo;，挺咋呼的听着。决策树、神经网络、最大熵、支持向量机，一个个听着也是能耐大，衣服放进去，有指望；</li>
 <li>洗衣机跟所有算法一样，都是一个黑箱，把衣服丢进去，设好参数，就等着结果了。要是不满意，再把衣服丢到模型里跑。既然决定不手洗了，而且结果也一定要在某日赶出来，那么你总要把衣服拿出来晾，那时自己也会觉得这模型是好用啊。洗衣店为什么都用洗衣机？似乎手洗的客户不放心，不代表先进生产力。</li>
 </ol>
+
 <p>这样的附会可以一直说开去，大伙可以补充，懒得发挥了，随手记一些：</p>
+
 <ol>
 <li>一些小件衣物不适合放洗衣机，羽绒服最好也不要机洗，说明数据挖掘也不是什么都能对付；</li>
 <li>以前听一个商业案例，说某家的某款洗衣机可以洗土豆。好东西。</li>
 <li>Fuzzy听着挺厉害，现在还有厂家推出NEURO&amp;FUZZY的概念，好像是三洋吧，据说更加智能更加精确。然后LG也有CHAOS&amp;FUZZY，不知道是炒概念还是真有用。这些我是在说BI界的事，潮流瞬息万变。</li>
 <li>……</li>
 </ol>
-<p>吃饭去了。这篇随感写得挺顺，就是老把&quot;洗衣机&quot;敲成&quot;冰箱&quot;。一会想想冰箱像什么。</p>
-<p>*<strong>*****这篇小随感刚发布在<a href="http://groups.google.com/group/ttnn">TTNN</a>，留在这里做个备份。*</strong>*<strong>*</strong>*<strong>*</strong></blockquote></p>
+
+<p>吃饭去了。这篇随感写得挺顺，就是老把&rdquo;洗衣机&rdquo;敲成&rdquo;冰箱&rdquo;。一会想想冰箱像什么。</p>
+
+<p>*<strong>*</strong><strong>这篇小随感刚发布在<a href="http://groups.google.com/group/ttnn">TTNN</a>，留在这里做个备份。</strong>**<strong>*</strong>*<strong>*</strong></blockquote></p>
 </blockquote>
 
     </div>
@@ -103,9 +131,11 @@
 
       <footer class="footer">
         <ul class="footer-links">
-          
           <li>
-            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
           </li>
         </ul>
       </footer>
